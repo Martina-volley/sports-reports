@@ -2,15 +2,14 @@
 
 F1、MLB、NPB、CPBL、WBC 賽事深度分析報告，聚焦台灣視角。
 
-**網站首頁**：`https://Martina-volley.github.io/sports-reports`
-
----
+網站首頁：
+`https://你的帳號.github.io/sports-reports/`
 
 ## 資料夾結構
 
-```
+```text
 sports-reports/
-├── index.html              ← 目錄首頁（每次新增報告都要更新）
+├── index.html
 ├── f1/
 │   └── 2026/
 │       ├── miami-preview.html
@@ -20,15 +19,9 @@ sports-reports/
 │   └── 2026/
 │       └── ...
 └── assets/
-    └── og-image.png
+    ├── favicon.svg
+    └── site-preview.svg
 ```
-
-## 每次新增報告的步驟
-
-1. 在 Claude 生成 HTML 報告
-2. 將檔案依照命名規則放進對應資料夾
-3. 更新 `index.html`，在 `#report-grid` 內加入新的 `.report-card`
-4. Push 到 GitHub，約 1–2 分鐘後自動上線
 
 ## 檔名規則
 
@@ -40,33 +33,38 @@ sports-reports/
 | 棒球週報 | `mlb-taiwan-w{N}.html` | `mlb-taiwan-w20.html` |
 | 棒球專題 | `{主題}.html` | `wbc-analysis.html` |
 
-## 新增報告到 index.html
+## GitHub Pages 上線流程
 
-複製以下模板，貼到 `index.html` 的 `report-grid` 區塊內：
+1. 在 GitHub 建立 repo，例如 `sports-reports`
+2. 把這個資料夾內的內容放到 repo 根目錄
+3. Push 到 GitHub
+4. 到 GitHub 的 `Settings > Pages`
+5. `Source` 選 `Deploy from a branch`
+6. Branch 選 `main`，資料夾選 `/ (root)`
+7. 等 1 到 2 分鐘，網址會是 `https://你的帳號.github.io/sports-reports/`
 
-```html
-<a class="report-card"
-   href="f1/2026/FILENAME.html"
-   data-league="f1"
-   data-type="preview">
-  <div class="card-stripe" style="background: linear-gradient(90deg, #e8002d, #b44fff);"></div>
-  <div class="card-body">
-    <div class="card-meta">
-      <span class="type-tag tag-preview">預告報告</span>
-      <span class="card-date">2026.MM.DD</span>
-    </div>
-    <div class="card-title">🏁 城市名大獎賽</div>
-    <div class="card-desc">
-      Round N · 一句描述重點<br>
-      第二行補充
-    </div>
-    <div class="card-footer">
-      <span class="card-league">F1 2026 · Round N</span>
-      <span class="card-arrow">→</span>
-    </div>
-  </div>
-</a>
-```
+## 後續更新流程
 
-**data-league**：`f1` 或 `baseball`  
-**data-type**：`preview` / `race` / `press` / `sprint` / `baseball`
+1. 產生新報告 HTML
+2. 依規則命名檔案，放進對應資料夾
+3. 打開 `index.html`
+4. 在 `#report-grid` 內新增一張卡片
+5. 檢查首頁是否能點進新頁面
+6. `git add .`
+7. `git commit -m "add imola preview report"`
+8. `git push`
+9. 等 GitHub Pages 自動更新
+
+## 新報告上線檢查
+
+1. 檔名使用小寫英文與連字號
+2. `href` 使用相對路徑，例如 `f1/2026/imola-preview.html`
+3. HTML 有 `<meta charset="UTF-8" />`
+4. 中文在瀏覽器開啟正常，不是終端顯示亂碼
+5. 首頁卡片日期、類型、描述已更新
+6. 頁面內若有外部腳本，確認 CDN 可正常載入
+
+## index.html 卡片模板
+
+首頁已內建「新增卡片模板速查」區塊。
+新增報告時，直接打開 `index.html`，展開模板區塊，複製相符類型的卡片即可。

@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>運動賽事分析頻道 · 報告存檔</title>
   <meta name="description" content="F1、MLB、NPB、CPBL 賽事深度分析報告，聚焦台灣視角。" />
+  <meta name="theme-color" content="#0b0b12" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="運動賽事分析頻道 · 報告存檔" />
+  <meta property="og:description" content="F1、MLB、NPB、CPBL、WBC 賽事深度分析報告，聚焦台灣視角。" />
+  <meta property="og:image" content="assets/site-preview.svg" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="運動賽事分析頻道 · 報告存檔" />
+  <meta name="twitter:description" content="F1、MLB、NPB、CPBL、WBC 賽事深度分析報告，聚焦台灣視角。" />
+  <meta name="twitter:image" content="assets/site-preview.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <style>
     :root {
       --bg:     #0b0b12;
@@ -212,6 +223,50 @@
       display: none;
     }
 
+    /* ── TEMPLATE GUIDE ── */
+    .template-guide {
+      margin-top: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .template-guide summary {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      list-style: none;
+    }
+    .template-guide summary::-webkit-details-marker { display: none; }
+    .template-guide summary::after {
+      content: '展開模板';
+      float: right;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+    .template-guide[open] summary::after { content: '收合模板'; }
+    .template-guide p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .template-guide pre {
+      margin-top: 14px;
+      padding: 14px;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .template-guide code {
+      font-family: Consolas, 'Courier New', monospace;
+    }
+
     /* ── LATEST BADGE ── */
     .latest-dot {
       display: inline-block;
@@ -339,6 +394,102 @@
 
     </div>
     <div class="empty-state" id="empty-state">目前沒有符合篩選條件的報告</div>
+
+    <details class="template-guide">
+      <summary>新增卡片模板速查</summary>
+      <p>直接複製下面範例到上面的 <code>#report-grid</code> 內，再改檔名、日期、標題和描述即可。</p>
+      <pre><code>&lt;!-- F1 預告 --&gt;
+&lt;a class="report-card"
+   href="f1/2026/imola-preview.html"
+   data-league="f1"
+   data-type="preview"&gt;
+  &lt;div class="card-stripe" style="background: linear-gradient(90deg, #e8002d, #b44fff);"&gt;&lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;div class="card-meta"&gt;
+      &lt;span class="type-tag tag-preview"&gt;預告報告&lt;/span&gt;
+      &lt;span class="card-date"&gt;2026.05.01&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="card-title"&gt;🇮🇹 艾米利亞羅馬涅大獎賽&lt;/div&gt;
+    &lt;div class="card-desc"&gt;
+      Round 5 · Imola · 一句重點摘要&lt;br&gt;
+      第二行補充觀戰角度
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;span class="card-league"&gt;F1 2026 · Round 5&lt;/span&gt;
+      &lt;span class="card-arrow"&gt;→&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;!-- F1 賽後 --&gt;
+&lt;a class="report-card"
+   href="f1/2026/imola-race.html"
+   data-league="f1"
+   data-type="race"&gt;
+  &lt;div class="card-stripe" style="background: linear-gradient(90deg, #e8002d, #ff8c00);"&gt;&lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;div class="card-meta"&gt;
+      &lt;span class="type-tag tag-race"&gt;賽後分析&lt;/span&gt;
+      &lt;span class="card-date"&gt;2026.05.04&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="card-title"&gt;🏁 艾米利亞羅馬涅大獎賽賽後&lt;/div&gt;
+    &lt;div class="card-desc"&gt;
+      勝負關鍵、策略分水嶺、Top 10 排名變化&lt;br&gt;
+      聚焦領跑車隊與失誤轉折
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;span class="card-league"&gt;F1 2026 · Post-Race&lt;/span&gt;
+      &lt;span class="card-arrow"&gt;→&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;!-- F1 記者會 --&gt;
+&lt;a class="report-card"
+   href="f1/2026/imola-pressconf.html"
+   data-league="f1"
+   data-type="press"&gt;
+  &lt;div class="card-stripe" style="background: linear-gradient(90deg, #b44fff, #00d4ff);"&gt;&lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;div class="card-meta"&gt;
+      &lt;span class="type-tag tag-press"&gt;記者會重點&lt;/span&gt;
+      &lt;span class="card-date"&gt;2026.05.04&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="card-title"&gt;🎙 艾米利亞羅馬涅站記者會&lt;/div&gt;
+    &lt;div class="card-desc"&gt;
+      車手發言、車隊口徑、場外暗線一次整理&lt;br&gt;
+      適合 Podcast 或口播整理
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;span class="card-league"&gt;F1 2026 · Press Conference&lt;/span&gt;
+      &lt;span class="card-arrow"&gt;→&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;
+
+&lt;!-- 棒球報告 --&gt;
+&lt;a class="report-card"
+   href="baseball/2026/mlb-taiwan-w20.html"
+   data-league="baseball"
+   data-type="baseball"&gt;
+  &lt;div class="card-stripe" style="background: linear-gradient(90deg, #39d353, #00d4ff);"&gt;&lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;div class="card-meta"&gt;
+      &lt;span class="type-tag tag-baseball"&gt;棒球週報&lt;/span&gt;
+      &lt;span class="card-date"&gt;2026.05.10&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="card-title"&gt;⚾ 台灣球員 MLB 週報 W20&lt;/div&gt;
+    &lt;div class="card-desc"&gt;
+      打擊近況、投手用法、升降消息與觀察&lt;br&gt;
+      補充 NPB / CPBL 延伸脈絡
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+      &lt;span class="card-league"&gt;Baseball 2026 · Weekly Report&lt;/span&gt;
+      &lt;span class="card-arrow"&gt;→&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+    </details>
   </div>
 
 </div>

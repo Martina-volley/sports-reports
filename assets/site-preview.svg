@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0b12"/>
+      <stop offset="55%" stop-color="#14102a"/>
+      <stop offset="100%" stop-color="#1a0a10"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#e8002d" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e8002d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="72" y="76" width="1056" height="478" rx="28" fill="#13131e" stroke="#2a2a3e"/>
+  <text x="112" y="176" fill="#7a7a9a" font-size="28" font-family="Segoe UI, PingFang TC, Microsoft JhengHei, sans-serif" letter-spacing="5">SPORTS REPORT ARCHIVE</text>
+  <text x="112" y="276" fill="#e8e8f0" font-size="72" font-weight="800" font-family="Segoe UI, PingFang TC, Microsoft JhengHei, sans-serif">運動賽事分析頻道</text>
+  <text x="112" y="340" fill="#e8002d" font-size="38" font-weight="700" font-family="Segoe UI, PingFang TC, Microsoft JhengHei, sans-serif">F1 · MLB · NPB · CPBL · WBC</text>
+  <text x="112" y="410" fill="#e8e8f0" font-size="34" font-family="Segoe UI, PingFang TC, Microsoft JhengHei, sans-serif">台灣視角的靜態報告存檔與視覺化分析</text>
+  <rect x="112" y="462" width="208" height="48" rx="24" fill="#1a1a2a" stroke="#2a2a3e"/>
+  <text x="148" y="494" fill="#00d4ff" font-size="24" font-family="Segoe UI, PingFang TC, Microsoft JhengHei, sans-serif">GitHub Pages</text>
+  <circle cx="1035" cy="182" r="66" fill="#e8002d" fill-opacity="0.18"/>
+  <circle cx="1035" cy="182" r="28" fill="#e8002d"/>
+  <circle cx="954" cy="426" r="18" fill="#00d4ff"/>
+  <circle cx="1000" cy="426" r="18" fill="#39d353"/>
+  <circle cx="1046" cy="426" r="18" fill="#ffd700"/>
+</svg>
