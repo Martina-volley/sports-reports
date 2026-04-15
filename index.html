@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>運動賽事分析頻道 · 報告存檔</title>
+  <meta name="description" content="F1、MLB、NPB、CPBL 賽事深度分析報告，聚焦台灣視角。" />
+  <style>
+    :root {
+      --bg:     #0b0b12;
+      --card:   #13131e;
+      --card2:  #1a1a2a;
+      --border: #2a2a3e;
+      --accent: #e8002d;
+      --yellow: #ffd700;
+      --cyan:   #00d4ff;
+      --green:  #39d353;
+      --purple: #b44fff;
+      --orange: #ff8c00;
+      --text:   #e8e8f0;
+      --muted:  #7a7a9a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: linear-gradient(135deg, #0b0b12 0%, #14102a 50%, #0b0b12 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .site-header::before {
+      content: '';
+      position: absolute;
+      top: -60px; left: 50%;
+      transform: translateX(-50%);
+      width: 500px; height: 300px;
+      background: radial-gradient(circle, rgba(232,0,45,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .site-title {
+      font-size: clamp(22px, 4vw, 36px);
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .site-title span { color: var(--accent); }
+    .site-sub {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .header-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .hbadge {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .section { padding: 36px 0; border-bottom: 1px solid var(--border); }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── FILTER TABS ── */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .filter-btn {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 13px;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .filter-btn:hover { border-color: var(--accent); color: var(--text); }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* ── REPORT CARDS ── */
+    .report-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .report-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .report-card:hover {
+      border-color: #3a3a5e;
+      transform: translateY(-2px);
+    }
+    .card-stripe {
+      height: 4px;
+      width: 100%;
+    }
+    .card-body { padding: 16px 18px 18px; flex: 1; display: flex; flex-direction: column; }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .type-tag {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .tag-preview  { background: rgba(0,212,255,0.12); color: var(--cyan);   border: 1px solid rgba(0,212,255,0.25); }
+    .tag-race     { background: rgba(232,0,45,0.12);  color: var(--accent); border: 1px solid rgba(232,0,45,0.25); }
+    .tag-press    { background: rgba(180,79,255,0.12);color: var(--purple); border: 1px solid rgba(180,79,255,0.25); }
+    .tag-baseball { background: rgba(57,211,83,0.12); color: var(--green);  border: 1px solid rgba(57,211,83,0.25); }
+    .tag-sprint   { background: rgba(255,215,0,0.12); color: var(--yellow); border: 1px solid rgba(255,215,0,0.25); }
+    .card-date { font-size: 11px; color: var(--muted); margin-left: auto; }
+    .card-title {
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .card-footer {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-league {
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .card-arrow {
+      font-size: 14px;
+      color: var(--muted);
+      transition: color 0.2s, transform 0.2s;
+    }
+    .report-card:hover .card-arrow {
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 14px;
+      display: none;
+    }
+
+    /* ── LATEST BADGE ── */
+    .latest-dot {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-right: 4px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+    .stat-item { text-align: center; }
+    .stat-num { font-size: 24px; font-weight: 900; color: var(--cyan); display: block; }
+    .stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      .report-grid { grid-template-columns: 1fr; }
+      .stats-bar { gap: 16px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="site-header">
+  <div class="site-title">🏁 運動賽事<span>分析頻道</span></div>
+  <p class="site-sub">F1 · MLB · NPB · CPBL · WBC — 台灣視角深度報告</p>
+  <div class="header-badges">
+    <div class="hbadge">🇹🇼 繁體中文</div>
+    <div class="hbadge">📊 數據視覺化</div>
+    <div class="hbadge">🎙 Podcast 友善</div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- STATS -->
+  <div class="section">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-num" id="total-count">1</span>
+        <span class="stat-label">總報告數</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="f1-count">1</span>
+        <span class="stat-label">F1 報告</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="baseball-count">0</span>
+        <span class="stat-label">棒球報告</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2026</span>
+        <span class="stat-label">賽季</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- REPORTS -->
+  <div class="section">
+    <div class="section-title">所有報告</div>
+
+    <!-- Filter -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterReports('all', this)">全部</button>
+      <button class="filter-btn" onclick="filterReports('f1', this)">🏎 F1</button>
+      <button class="filter-btn" onclick="filterReports('baseball', this)">⚾ 棒球</button>
+      <button class="filter-btn" onclick="filterReports('preview', this)">預告報告</button>
+      <button class="filter-btn" onclick="filterReports('race', this)">賽後分析</button>
+    </div>
+
+    <!-- Cards -->
+    <!-- ════════════════════════════════════════════════
+         ▼▼▼ 新增報告時，在這裡加一個 .report-card ▼▼▼
+         data-league: f1 / baseball
+         data-type:   preview / race / press / sprint
+    ════════════════════════════════════════════════ -->
+    <div class="report-grid" id="report-grid">
+
+      <!-- 邁阿密站預告 -->
+      <a class="report-card"
+         href="f1/2026/miami-preview.html"
+         data-league="f1"
+         data-type="preview">
+        <div class="card-stripe" style="background: linear-gradient(90deg, #e8002d, #b44fff);"></div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="type-tag tag-preview">預告報告</span>
+            <span class="type-tag tag-sprint">Sprint</span>
+            <span class="card-date"><span class="latest-dot"></span>2026.04.15</span>
+          </div>
+          <div class="card-title">🌴 邁阿密大獎賽</div>
+          <div class="card-desc">
+            Round 4 · Sprint Weekend · Hard Rock Stadium<br>
+            Antonelli 領跑積分榜、Red Bull 大幅升級、Mercedes 雙龍內戰
+          </div>
+          <div class="card-footer">
+            <span class="card-league">F1 2026 · Round 4</span>
+            <span class="card-arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ══ 之後的報告加在這裡，複製上面的 <a> 區塊即可 ══ -->
+
+    </div>
+    <div class="empty-state" id="empty-state">目前沒有符合篩選條件的報告</div>
+  </div>
+
+</div>
+
+<footer>
+  運動賽事分析頻道 · 報告存檔 ▏ 資料來源：Formula1.com、Motorsport.com、MLB.com、CPBL.com.tw
+  <br>本站所有報告均為分析性內容，勝率預測僅供參考，不代表任何博彩賠率或投注建議。
+</footer>
+
+<script>
+  function filterReports(type, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const cards = document.querySelectorAll('.report-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const league = card.dataset.league;
+      const rtype  = card.dataset.type;
+      const show = type === 'all'
+        || type === league
+        || type === rtype;
+      card.style.display = show ? 'flex' : 'none';
+      if (show) visible++;
+    });
+    document.getElementById('empty-state').style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  // 動態統計數字
+  const cards = document.querySelectorAll('.report-card');
+  let f1 = 0, baseball = 0;
+  cards.forEach(c => {
+    if (c.dataset.league === 'f1') f1++;
+    if (c.dataset.league === 'baseball') baseball++;
+  });
+  document.getElementById('total-count').textContent = cards.length;
+  document.getElementById('f1-count').textContent = f1;
+  document.getElementById('baseball-count').textContent = baseball;
+</script>
+</body>
+</html>
