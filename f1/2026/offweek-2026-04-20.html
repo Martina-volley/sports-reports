@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 ▏休賽週 F1 新聞摘要（2026.04.20）</title>
+  <meta name="description" content="F1 2026 休賽週快報：FIA 4/20 能量管理規則會議、Red Bull 技術組大改組、車手休賽週動向與邁阿密站倒數。" />
+  <meta name="theme-color" content="#0b0b12" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 ▏休賽週 F1 新聞摘要（2026.04.20）" />
+  <meta property="og:description" content="FIA 能量管理規則會議、Red Bull 技術組改組、車手休賽週動向與邁阿密站倒數。" />
+  <meta property="og:image" content="../../assets/site-preview.svg" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #0b0b12;
+      --card: #13131e;
+      --card2: #1a1a2a;
+      --border: #2a2a3e;
+      --accent: #e8002d;
+      --yellow: #ffd700;
+      --cyan: #00d4ff;
+      --green: #39d353;
+      --purple: #b44fff;
+      --orange: #ff8c00;
+      --text: #e8e8f0;
+      --muted: #7a7a9a;
+      --mercedes: #27f4d2;
+      --ferrari: #e8002d;
+      --mclaren: #ff8000;
+      --redbull: #3671c6;
+      --haas: #b6babd;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0b0b12 0%, #121228 40%, #0e1624 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px 36px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(54,113,198,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--redbull);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      padding: 4px 14px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: clamp(26px, 4.5vw, 44px);
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+    .hero h1 span { color: var(--cyan); }
+    .hero .subtitle {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .hero-meta {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta-pill {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .meta-pill strong { color: var(--text); }
+
+    /* ── COUNTDOWN ── */
+    .countdown {
+      margin: 20px auto 0;
+      max-width: 520px;
+      background: linear-gradient(135deg, rgba(232,0,45,0.08), rgba(180,79,255,0.08));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+    }
+    .countdown .days {
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .countdown .cd-label {
+      text-align: left;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .countdown .cd-label strong {
+      display: block;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 2px;
+    }
+
+    /* ── CONTAINER ── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .section { padding: 36px 0; border-bottom: 1px solid var(--border); }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .section-title .accent { color: var(--cyan); }
+
+    /* ── NEWS CARDS ── */
+    .news-grid {
+      display: grid;
+      gap: 14px;
+    }
+    .news-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .news-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--cyan);
+    }
+    .news-card.priority::before { background: var(--accent); }
+    .news-card.redbull::before { background: var(--redbull); }
+    .news-card.ferrari::before { background: var(--ferrari); }
+    .news-card.mclaren::before { background: var(--mclaren); }
+    .news-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 2px 8px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    .tag-hot { background: rgba(232,0,45,0.14); color: var(--accent); border: 1px solid rgba(232,0,45,0.3); }
+    .tag-rule { background: rgba(255,140,0,0.14); color: var(--orange); border: 1px solid rgba(255,140,0,0.3); }
+    .tag-team { background: rgba(54,113,198,0.14); color: var(--redbull); border: 1px solid rgba(54,113,198,0.3); }
+    .tag-driver { background: rgba(180,79,255,0.14); color: var(--purple); border: 1px solid rgba(180,79,255,0.3); }
+    .tag-date { color: var(--muted); font-size: 11px; margin-left: auto; }
+    .news-title {
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .news-body {
+      color: #cfcfe0;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .news-body p + p { margin-top: 8px; }
+    .news-source {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .news-source a {
+      color: var(--cyan);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--cyan);
+    }
+    .news-source a:hover { opacity: 0.8; }
+
+    /* ── TEAM GRID ── */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .team-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--border);
+    }
+    .team-card.t-redbull { border-left-color: var(--redbull); }
+    .team-card.t-ferrari { border-left-color: var(--ferrari); }
+    .team-card.t-mclaren { border-left-color: var(--mclaren); }
+    .team-card.t-mercedes { border-left-color: var(--mercedes); }
+    .team-card.t-haas { border-left-color: var(--haas); }
+    .team-name {
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+    .team-note {
+      font-size: 13px;
+      color: #cfcfe0;
+      line-height: 1.6;
+    }
+
+    /* ── NEXT RACE ── */
+    .next-race {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .nr-flag {
+      font-size: 52px;
+      line-height: 1;
+    }
+    .nr-main { flex: 1; min-width: 200px; }
+    .nr-round {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .nr-title {
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+    .nr-sub {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .nr-stats {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .nr-stat { text-align: center; }
+    .nr-stat .num {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--cyan);
+      display: block;
+    }
+    .nr-stat .lab {
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* ── DISCLAIMER ── */
+    .disclaimer {
+      padding: 22px 20px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+      background: var(--card);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 16px 0 0;
+      color: var(--cyan);
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .back-link:hover { opacity: 0.8; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 26px; }
+      .countdown .days { font-size: 34px; }
+      .next-race { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-badge">休賽週快報</span>
+  <h1>F1 2026 <span>休賽週</span>新聞摘要</h1>
+  <p class="subtitle">FIA 能量管理規則最終會議日 · Red Bull 技術組改組 · 車手轉戰賽車場</p>
+  <div class="hero-meta">
+    <span class="meta-pill">📅 報告日期：<strong>2026.04.20</strong></span>
+    <span class="meta-pill">🏁 上站：<strong>日本 GP（3/29）</strong></span>
+    <span class="meta-pill">🌴 下站：<strong>邁阿密 GP（5/3）</strong></span>
+    <span class="meta-pill">⏱ 賽季進度：<strong>3/21 站完賽</strong></span>
+  </div>
+  <div class="countdown">
+    <div class="days">13</div>
+    <div class="cd-label">
+      <strong>距離邁阿密大獎賽</strong>
+      Round 4 · Sprint Weekend · Hard Rock Stadium
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- NEWS -->
+  <div class="section">
+    <div class="section-title">本週 <span class="accent">F1 重點新聞</span></div>
+    <div class="news-grid">
+
+      <!-- 1 -->
+      <div class="news-card priority">
+        <div class="news-head">
+          <span class="tag tag-hot">頭條</span>
+          <span class="tag tag-rule">規則變動</span>
+          <span class="tag-date">2026.04.20</span>
+        </div>
+        <div class="news-title">🔥 FIA 今日召開 2026 能量管理規則最終會議</div>
+        <div class="news-body">
+          <p>FIA 自 4 月 9 日起已與動力單元供應商召開第一輪規則檢討，隨後於 4/15、4/16、以及<strong>今日 4/20</strong> 連續召開第四次會議，將為 2026 新動力單元規則的細部調整做出最終決議。</p>
+          <p>核心議題是「降低電能釋放速度、提高能量回收量」，以解決三站賽後多位車手反映的能量耗盡（battery deployment drop-off）問題。任何調整都必須在邁阿密站前拍板，否則將影響車隊的軟體與策略準備時程。</p>
+        </div>
+        <div class="news-source">
+          來源：<a href="https://www.skysports.com/f1/news/12433/13528940/f1-2026-regulations-teams-to-meet-on-thursday-to-begin-talks-over-possible-tweaks-to-technical-rules-ahead-of-miami-grand-prix" target="_blank">Sky Sports F1</a> ▏<a href="https://www.gpfans.com/en/f1-news/1081717/f1-news-today-2026-farce-ferrari-formula-e-max-verstappen-nurburgring-qualifiers/" target="_blank">GPFans</a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="news-card redbull">
+        <div class="news-head">
+          <span class="tag tag-team">車隊動向</span>
+          <span class="tag-date">2026.04.17</span>
+        </div>
+        <div class="news-title">🔧 Red Bull 大規模技術組改組：Ferrari 主將跨隊加盟</div>
+        <div class="news-body">
+          <p>面對 2026 開季前三站的苦戰（車隊戰績落後 Haas），Red Bull 宣布技術部門結構大幅調整：現任 Head of Performance Engineering 的 <strong>Ben Waterhouse</strong> 升任 Chief Design Engineer；同時從 Ferrari 延攬 <strong>Andrea Landi</strong> 出任 Head of Performance，直接向 Waterhouse 匯報。</p>
+          <p>此改組亦為 2028 年即將離任的 Head of Race Engineering <strong>Gianpiero Lambiase（GP）</strong>提前鋪路，被外界視為 Red Bull 面對新規則挑戰的內部「地震式重組」。</p>
+        </div>
+        <div class="news-source">
+          來源：<a href="https://www.motorsportweek.com/2026/04/17/red-bull-make-major-technical-changes-to-f1-team/" target="_blank">Motorsport Week</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="news-card">
+        <div class="news-head">
+          <span class="tag tag-driver">車手動向</span>
+          <span class="tag-date">2026.04.18–19</span>
+        </div>
+        <div class="news-title">🏎️ Verstappen 出征 Nürburgring 24h 資格賽、Stroll 登場 GT World Challenge</div>
+        <div class="news-body">
+          <p>因 Bahrain 與 Saudi Arabia 兩站因中東局勢取消、形成長達 5 週的休賽期，多位車手把握空窗轉戰其他賽車活動：</p>
+          <p><strong>Max Verstappen</strong>（F1 2025 年度總冠軍）本週末（4/18–19）與奧地利搭檔 Lucas Auer 共駕 Mercedes-AMG GT3，出賽 <strong>Nürburgring 24 小時賽資格賽</strong>，為其 GT3 個人品牌練功。<br>
+          <strong>Lance Stroll</strong>（Aston Martin）則於 4/11–13 赴法國 Paul Ricard 出賽 <strong>GT World Challenge Europe 開幕站</strong>，達成個人 GT 國際賽初登場。</p>
+        </div>
+        <div class="news-source">
+          來源：<a href="https://www.skysports.com/f1/news/12433/13527290/f1-2026-what-teams-and-drivers-are-doing-during-enforced-april-break-after-race-cancellations-ahead-of-miami-gp" target="_blank">Sky Sports F1</a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="news-card">
+        <div class="news-head">
+          <span class="tag tag-driver">車手觀點</span>
+          <span class="tag-date">2026.04.19</span>
+        </div>
+        <div class="news-title">💬 Norris 狠批 2026 新規、Piastri：車子更靈活但跟車仍難</div>
+        <div class="news-body">
+          <p><strong>Lando Norris</strong>（McLaren、衛冕冠軍）於 Nürburgring 輪胎測試後直言新規令人「frustrated（感到挫折）」，對新動力單元的能量管理邏輯與車輛操控表達強烈不滿。</p>
+          <p><strong>Oscar Piastri</strong>（McLaren）則評價較為平衡：「2026 賽車更輕、更短、更窄，低速彎角更加靈活，但貼身跟車（following）的老問題依然存在。」三站下來，車手對新世代賽車的分歧評價，成為邁阿密站前的最大話題。</p>
+        </div>
+        <div class="news-source">
+          來源：<a href="https://www.gpfans.com/en/f1-news/1081774/lando-norris-f1-2026-regulations-criticism-nurburgring-test/" target="_blank">GPFans</a> ▏<a href="https://www.motorsportweek.com/2026/04/19/oscar-piastri-delivers-brutal-verdict-on-f1-2026-cars/" target="_blank">Motorsport Week</a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="news-card mclaren">
+        <div class="news-head">
+          <span class="tag tag-team">車隊動向</span>
+          <span class="tag-date">2026.04.18</span>
+        </div>
+        <div class="news-title">🥲 McLaren 第 1000 站慶祝打亂、Haas 面臨規則風險</div>
+        <div class="news-body">
+          <p>由於 Bahrain 與 Saudi Arabia 兩站取消，<strong>McLaren</strong> 原本規劃在該站慶祝車隊參賽 <strong>第 1000 場大獎賽</strong> 的計畫被迫延至邁阿密站，整套週末活動與贊助商合作重新排期。</p>
+          <p>另一方面，目前積分榜第 4 的 <strong>Haas</strong> 則警告：若 FIA 今日通過的能量管理規則調整幅度過大，可能削弱其 Ferrari 動力單元於電能部署上的相對優勢，直接衝擊邁阿密站表現。</p>
+        </div>
+        <div class="news-source">
+          來源：<a href="https://www.gpfans.com/en/f1-news/1081712/f1-mclaren-1000th-race-start-miami-grand-prix-celebrations-setback/" target="_blank">GPFans</a> ▏<a href="https://www.motorsportweek.com/2026/04/19/haas-faces-miami-gp-shake-up-amid-formula-1-energy-rule-uncertainty/" target="_blank">Motorsport Week</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TEAM MOVES -->
+  <div class="section">
+    <div class="section-title">主要<span class="accent"> 車隊工廠動向</span></div>
+    <div class="team-grid">
+
+      <div class="team-card t-redbull">
+        <div class="team-name" style="color: var(--redbull);">RED BULL</div>
+        <div class="team-note">
+          技術部大改組：Waterhouse 升任 Chief Design Engineer、Landi 從 Ferrari 加盟；休賽期主攻空力與懸吊升級，目標邁阿密站翻身。
+        </div>
+      </div>
+
+      <div class="team-card t-ferrari">
+        <div class="team-name" style="color: var(--ferrari);">FERRARI</div>
+        <div class="team-note">
+          4/9–10 於 Fiorano 測試場配合 Pirelli 進行 2026 <strong>濕地胎</strong> 開發測試，同時為邁阿密強日照高溫場地準備專屬冷卻套件。
+        </div>
+      </div>
+
+      <div class="team-card t-mercedes">
+        <div class="team-name" style="color: var(--mercedes);">MERCEDES</div>
+        <div class="team-note">
+          4/14–15 於 Nürburgring 進行 Pirelli <strong>乾地胎</strong> 開發測試。Antonelli 積分榜領跑，車隊主力放在穩定新動力單元的熱管理。
+        </div>
+      </div>
+
+      <div class="team-card t-mclaren">
+        <div class="team-name" style="color: var(--mclaren);">MCLAREN</div>
+        <div class="team-note">
+          與 Mercedes 同場 Pirelli 測試；Norris 對新規強烈不滿，但車隊在策略與空力表現仍具競爭力，第 1000 場慶祝改至邁阿密。
+        </div>
+      </div>
+
+      <div class="team-card t-haas">
+        <div class="team-name" style="color: var(--haas);">HAAS</div>
+        <div class="team-note">
+          目前積分榜第 4、力壓 Red Bull。密切觀察 4/20 能量規則會議結論，若規則大改將影響現有競爭優勢。
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-name">CADILLAC</div>
+        <div class="team-note">
+          新軍處女賽季三站下來表現優於預期，非「醜小鴨」；但工廠內部仍需大量性能提升才能真正挑戰中段班。
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NEXT RACE -->
+  <div class="section">
+    <div class="section-title">下一站 <span class="accent">邁阿密大獎賽</span> 倒數</div>
+    <div class="next-race">
+      <div class="nr-flag">🌴</div>
+      <div class="nr-main">
+        <div class="nr-round">Round 4 ▏Sprint Weekend</div>
+        <div class="nr-title">Miami Grand Prix 2026</div>
+        <div class="nr-sub">Hard Rock Stadium · 美國佛州 · 2026.05.01–05.03</div>
+      </div>
+      <div class="nr-stats">
+        <div class="nr-stat">
+          <span class="num">13</span>
+          <span class="lab">Days</span>
+        </div>
+        <div class="nr-stat">
+          <span class="num">SPR</span>
+          <span class="lab">Format</span>
+        </div>
+        <div class="nr-stat">
+          <span class="num">R4</span>
+          <span class="lab">Round</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 16px; font-size: 13px; color: var(--muted); line-height: 1.7;">
+      邁阿密站是 2026 賽季首個美洲回合、亦是本季第二個 Sprint 週末。FIA 能量管理規則若於今日確認調整，車隊須在 10 天內完成軟體更新、模擬器驗證與車手再適應；Red Bull 技術組新任命能否在美東啟動反攻，也是全場最大懸念。更完整的賽道與積分分析請參考 <a href="miami-preview.html" style="color: var(--cyan); text-decoration: none; border-bottom: 1px dotted var(--cyan);">邁阿密站預告報告</a>。
+    </p>
+    <a class="back-link" href="../../index.html">← 返回報告首頁</a>
+  </div>
+
+</div>
+
+<div class="disclaimer">
+  本報告勝率預測為綜合因素分析，僅供參考，不代表任何博彩賠率或投注建議。<br>
+  資料來源：Sky Sports F1、Motorsport Week、GPFans、ESPN F1、Formula1.com（截至 2026.04.20）
+</div>
+
+</body>
+</html>
