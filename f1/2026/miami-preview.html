@@ -3,1030 +3,565 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>F1 2026 ▏邁阿密大獎賽預告報告</title>
-  <meta name="description" content="F1 2026 邁阿密大獎賽預告，整理 Sprint 週末賽程、積分情勢、車隊升級與本站焦點對決。" />
+  <title>F1 2026 ▏邁阿密大獎賽預告報告（更新版 2026-04-27）</title>
+  <meta name="description" content="F1 2026 邁阿密大獎賽預告，整理 Sprint 週末賽程、積分情勢、McLaren 全新賽車、Ferrari 完整升級包首發與本站焦點對決。" />
   <meta name="theme-color" content="#0b0b12" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="F1 2026 ▏邁阿密大獎賽預告報告" />
-  <meta property="og:description" content="整理 Sprint 週末賽程、積分情勢、車隊升級與邁阿密站焦點對決。" />
-  <meta property="og:image" content="../../assets/site-preview.svg" />
-  <meta property="og:locale" content="zh_TW" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="F1 2026 ▏邁阿密大獎賽預告報告" />
-  <meta name="twitter:description" content="整理 Sprint 週末賽程、積分情勢、車隊升級與邁阿密站焦點對決。" />
-  <meta name="twitter:image" content="../../assets/site-preview.svg" />
-  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <style>
     :root {
-      --bg: #0b0b12;
-      --card: #13131e;
-      --card2: #1a1a2a;
-      --border: #2a2a3e;
-      --accent: #e8002d;
-      --yellow: #ffd700;
-      --cyan: #00d4ff;
-      --green: #39d353;
-      --purple: #b44fff;
-      --orange: #ff8c00;
-      --text: #e8e8f0;
-      --muted: #7a7a9a;
-      --mercedes: #27f4d2;
-      --ferrari: #e8002d;
-      --mclaren: #ff8000;
-      --redbull: #3671c6;
-      --alpine: #0093cc;
-      --williams: #64c4ff;
-      --aston: #358c75;
-      --haas: #b6babd;
-      --sauber: #52e252;
-      --rb: #6692ff;
+      --bg: #0b0b12; --card: #13131e; --card2: #1a1a2a; --border: #2a2a3e;
+      --accent: #e8002d; --yellow: #ffd700; --cyan: #00d4ff; --green: #39d353;
+      --purple: #b44fff; --orange: #ff8c00; --text: #e8e8f0; --muted: #7a7a9a;
+      --mercedes: #27f4d2; --ferrari: #e8002d; --mclaren: #ff8000; --redbull: #3671c6;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
-      line-height: 1.6;
-    }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI','PingFang TC','Microsoft JhengHei',sans-serif; line-height: 1.6; }
+    a { color: var(--cyan); text-decoration: none; } a:hover { text-decoration: underline; }
 
-    /* ── HERO ── */
+    .back-bar { background: var(--card); border-bottom: 1px solid var(--border); padding: 12px 24px; }
+    .back-link { font-size: 12px; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+    .back-link:hover { color: var(--text); }
+
     .hero {
-      background: linear-gradient(135deg, #0b0b12 0%, #14102a 40%, #1a0a10 100%);
+      background: linear-gradient(135deg,#0b0b12 0%,#1a0820 40%,#0b1220 70%,#0b0b12 100%);
       border-bottom: 1px solid var(--border);
-      padding: 48px 24px 36px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+      padding: 60px 24px 48px; text-align: center; position: relative; overflow: hidden;
     }
     .hero::before {
-      content: '';
-      position: absolute;
-      top: -80px; left: 50%;
-      transform: translateX(-50%);
-      width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(232,0,45,0.12) 0%, transparent 70%);
-      pointer-events: none;
+      content:''; position:absolute; top:-80px; left:50%; transform:translateX(-50%);
+      width:700px; height:400px;
+      background:radial-gradient(ellipse,rgba(232,0,45,.12) 0%,rgba(180,79,255,.06) 40%,transparent 70%);
+      pointer-events:none;
     }
-    .race-number {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 3px;
-      padding: 4px 14px;
-      border-radius: 2px;
-      margin-bottom: 12px;
-      text-transform: uppercase;
+    .hero-eyebrow { font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+    .hero-city {
+      font-size: clamp(42px,8vw,72px); font-weight:900; letter-spacing:-2px; line-height:1; margin-bottom:8px;
+      background:linear-gradient(135deg,#ff8c00 0%,#e8002d 50%,#b44fff 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
     }
-    .hero h1 {
-      font-size: clamp(28px, 5vw, 52px);
-      font-weight: 900;
-      letter-spacing: -1px;
-      line-height: 1.1;
-      margin-bottom: 8px;
-    }
-    .hero h1 span { color: var(--accent); }
-    .hero .subtitle {
-      font-size: 15px;
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
-    .hero-badges {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .badge {
-      background: var(--card2);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 6px 16px;
-      font-size: 13px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .badge-icon { font-size: 16px; }
+    .hero-subtitle { font-size:clamp(16px,3vw,22px); color:var(--text); font-weight:300; margin-bottom:24px; opacity:.9; }
+    .hero-badges { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
+    .badge { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:6px 16px; font-size:12px; font-weight:600; color:var(--muted); }
+    .badge.accent { border-color:var(--accent); color:var(--accent); }
+    .badge.sprint-badge { border-color:var(--purple); color:var(--purple); }
+    .badge.cyan { border-color:var(--cyan); color:var(--cyan); }
+    .hero-countdown { display:inline-block; background:linear-gradient(135deg,rgba(232,0,45,.15),rgba(180,79,255,.1)); border:1px solid rgba(232,0,45,.3); border-radius:12px; padding:12px 28px; font-size:14px; font-weight:700; color:var(--accent); letter-spacing:1px; }
+    .hero-updated { font-size:11px; color:var(--muted); margin-top:16px; }
 
-    /* ── LAYOUT ── */
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-    .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
-    .section:last-child { border-bottom: none; }
-    .section-title {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .section-title::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-    h2 { font-size: 22px; font-weight: 800; margin-bottom: 16px; }
-    h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
+    .container { max-width:980px; margin:0 auto; padding:0 20px; }
+    .section { padding:40px 0; border-bottom:1px solid var(--border); }
+    .section:last-child { border-bottom:none; }
+    .section-header { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+    .section-label { font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:var(--muted); }
+    .section-title { font-size:20px; font-weight:800; color:var(--text); }
 
-    /* ── GRID ── */
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-    @media (max-width: 768px) {
-      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-    }
+    .schedule-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; }
+    .session-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px 18px; display:flex; flex-direction:column; gap:6px; }
+    .session-card.sprint-session { border-color:rgba(180,79,255,.3); }
+    .session-card.race-session { border-color:rgba(232,0,45,.3); }
+    .session-day { font-size:10px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--muted); }
+    .session-name { font-size:15px; font-weight:700; color:var(--text); display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .session-tag { font-size:9px; padding:2px 7px; border-radius:4px; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+    .tag-sprint { background:rgba(180,79,255,.2); color:var(--purple); }
+    .tag-race   { background:rgba(232,0,45,.2);   color:var(--accent); }
+    .tag-new    { background:rgba(0,212,255,.2);   color:var(--cyan);   }
+    .session-times { display:flex; gap:16px; margin-top:4px; font-size:13px; }
+    .time-block { display:flex; flex-direction:column; }
+    .time-loc { font-size:10px; color:var(--muted); font-weight:600; }
+    .time-val { font-size:16px; font-weight:700; color:var(--text); }
+    .time-val.twn { color:var(--cyan); }
 
-    /* ── CARDS ── */
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-    }
-    .card-accent-top {
-      border-top: 3px solid var(--accent);
-    }
+    .sprint-box { background:linear-gradient(135deg,rgba(180,79,255,.1),rgba(232,0,45,.05)); border:1px solid rgba(180,79,255,.3); border-radius:12px; padding:20px 24px; margin-top:16px; }
+    .sprint-box h3 { color:var(--purple); font-size:16px; font-weight:800; margin-bottom:12px; }
+    .sprint-detail { font-size:13px; color:var(--text); line-height:1.75; }
 
-    /* ── CHART WRAPPER ── */
-    .chart-wrap {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 20px;
-    }
-    .chart-title {
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: var(--muted);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
+    .standings-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    @media(max-width:640px){.standings-grid{grid-template-columns:1fr;}}
+    .standings-list { display:flex; flex-direction:column; gap:8px; }
+    .driver-row { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:10px 14px; display:flex; align-items:center; gap:10px; }
+    .driver-pos { font-size:18px; font-weight:900; color:var(--muted); width:24px; text-align:center; flex-shrink:0; }
+    .driver-pos.p1{color:var(--yellow);} .driver-pos.p2{color:#c0c0c0;} .driver-pos.p3{color:#cd7f32;}
+    .driver-bar-wrap { flex:1; }
+    .driver-name { font-size:13px; font-weight:700; margin-bottom:4px; }
+    .driver-team { font-size:11px; color:var(--muted); }
+    .driver-bar-bg { height:4px; background:var(--border); border-radius:2px; margin-top:6px; }
+    .driver-bar { height:4px; border-radius:2px; }
+    .driver-pts { font-size:18px; font-weight:900; color:var(--text); flex-shrink:0; }
+    .chart-wrap { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; }
+    .chart-title { font-size:13px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:2px; margin-bottom:16px; }
 
-    /* ── SCHEDULE TABLE ── */
-    .schedule-table { width: 100%; border-collapse: collapse; }
-    .schedule-table th {
-      background: var(--card2);
-      padding: 10px 14px;
-      text-align: left;
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--muted);
-      border-bottom: 1px solid var(--border);
-    }
-    .schedule-table td {
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--border);
-      font-size: 14px;
-    }
-    .schedule-table tr:last-child td { border-bottom: none; }
-    .schedule-table tr:hover td { background: var(--card2); }
-    .tag {
-      display: inline-block;
-      padding: 2px 10px;
-      border-radius: 3px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-    .tag-sprint { background: rgba(255,215,0,0.15); color: var(--yellow); border: 1px solid rgba(255,215,0,0.3); }
-    .tag-quali { background: rgba(0,212,255,0.12); color: var(--cyan); border: 1px solid rgba(0,212,255,0.3); }
-    .tag-race { background: rgba(232,0,45,0.15); color: var(--accent); border: 1px solid rgba(232,0,45,0.3); }
-    .tag-fp { background: rgba(122,122,154,0.2); color: var(--muted); border: 1px solid var(--border); }
+    .data-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:10px; margin-bottom:20px; }
+    .data-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:14px 16px; text-align:center; }
+    .data-card .val { font-size:22px; font-weight:900; color:var(--cyan); line-height:1; margin-bottom:4px; }
+    .data-card .lbl { font-size:11px; color:var(--muted); font-weight:600; }
 
-    /* ── STANDINGS ROW ── */
-    .driver-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .driver-row:last-child { border-bottom: none; }
-    .pos-num {
-      font-size: 20px;
-      font-weight: 900;
-      width: 32px;
-      text-align: center;
-      color: var(--muted);
-    }
-    .pos-num.p1 { color: var(--yellow); }
-    .pos-num.p2 { color: #c0c0c0; }
-    .pos-num.p3 { color: #cd7f32; }
-    .team-bar {
-      width: 4px;
-      height: 40px;
-      border-radius: 2px;
-      flex-shrink: 0;
-    }
-    .driver-info { flex: 1; }
-    .driver-name { font-size: 15px; font-weight: 700; }
-    .driver-team { font-size: 12px; color: var(--muted); }
-    .driver-pts { font-size: 20px; font-weight: 900; }
+    .tyre-grid { display:flex; gap:12px; flex-wrap:wrap; }
+    .tyre-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:14px 18px; display:flex; align-items:center; gap:12px; flex:1; min-width:180px; }
+    .tyre-dot { width:36px; height:36px; border-radius:50%; border:3px solid transparent; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:14px; flex-shrink:0; }
+    .tyre-dot.hard{border-color:#e8e8f0;color:#e8e8f0;} .tyre-dot.medium{border-color:var(--yellow);color:var(--yellow);} .tyre-dot.soft{border-color:var(--accent);color:var(--accent);}
+    .tyre-name{font-size:14px;font-weight:700;} .tyre-code{font-size:12px;color:var(--muted);}
 
-    /* ── TEAM UPDATE CARDS ── */
-    .team-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    .team-card-header {
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .team-dot {
-      width: 12px; height: 12px;
-      border-radius: 50%;
-    }
-    .team-card-body { padding: 14px 20px 20px; }
-    .update-item {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 10px;
-      font-size: 13px;
-    }
-    .update-item::before {
-      content: '▸';
-      color: var(--accent);
-      flex-shrink: 0;
-      line-height: 1.6;
-    }
+    .team-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; }
+    .team-card { background:var(--card); border:1px solid var(--border); border-top-width:3px; border-radius:12px; padding:18px; transition:transform .2s,box-shadow .2s; }
+    .team-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3);}
+    .team-card.mercedes{border-top-color:var(--mercedes);} .team-card.ferrari{border-top-color:var(--ferrari);} .team-card.mclaren{border-top-color:var(--mclaren);} .team-card.redbull{border-top-color:var(--redbull);}
+    .team-name{font-size:14px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .team-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+    .team-outlook{font-size:10px;padding:3px 9px;border-radius:4px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-left:auto;}
+    .out-danger{background:rgba(232,0,45,.2);color:var(--accent);} .out-watch{background:rgba(255,140,0,.2);color:var(--orange);}
+    .out-hot{background:rgba(180,79,255,.2);color:var(--purple);} .out-rebuild{background:rgba(54,113,198,.2);color:var(--redbull);}
+    .team-desc{font-size:13px;color:#b8b8cc;line-height:1.65;margin-top:8px;}
+    .team-highlight{background:var(--card2);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:12px;color:var(--muted);display:flex;gap:8px;}
+    .team-highlight::before{content:'💡';flex-shrink:0;}
 
-    /* ── CIRCUIT FACTS ── */
-    .fact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-    @media (max-width: 600px) { .fact-grid { grid-template-columns: 1fr 1fr; } }
-    .fact-item {
-      background: var(--card2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px;
-      text-align: center;
-    }
-    .fact-value {
-      font-size: 22px;
-      font-weight: 900;
-      color: var(--cyan);
-      display: block;
-    }
-    .fact-label {
-      font-size: 11px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-top: 4px;
-    }
+    .pred-layout{display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:start;}
+    @media(max-width:640px){.pred-layout{grid-template-columns:1fr;}}
+    .pred-list{display:flex;flex-direction:column;gap:10px;}
+    .pred-row{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:12px;}
+    .pred-rank{font-size:22px;font-weight:900;width:28px;text-align:center;}
+    .pred-rank.r1{color:var(--yellow);} .pred-rank.r2{color:#c0c0c0;} .pred-rank.r3{color:#cd7f32;} .pred-rank.r4,.pred-rank.r5{color:var(--muted);}
+    .pred-info{flex:1;} .pred-driver{font-size:14px;font-weight:700;} .pred-team{font-size:11px;color:var(--muted);} .pred-pct{font-size:16px;font-weight:800;}
 
-    /* ── PREDICTION BLOCK ── */
-    .prediction-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .prediction-row:last-child { border-bottom: none; }
-    .pred-pos { width: 28px; font-size: 14px; font-weight: 900; color: var(--muted); text-align: center; }
-    .pred-driver { flex: 1; font-size: 14px; font-weight: 700; }
-    .pred-team-tag {
-      font-size: 11px;
-      padding: 2px 8px;
-      border-radius: 3px;
-      font-weight: 600;
-    }
-    .pred-pct {
-      font-size: 14px;
-      font-weight: 800;
-      width: 48px;
-      text-align: right;
-    }
-    .prob-bar-bg {
-      width: 100px;
-      height: 6px;
-      background: var(--border);
-      border-radius: 3px;
-      overflow: hidden;
-    }
-    .prob-bar-fill {
-      height: 100%;
-      border-radius: 3px;
-      transition: width 0.6s ease;
-    }
+    .duel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;}
+    .duel-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;}
+    .duel-label{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+    .duel-vs{font-size:16px;font-weight:800;color:var(--yellow);margin-bottom:8px;}
+    .duel-desc{font-size:13px;color:#b8b8cc;line-height:1.6;}
 
-    /* ── KEY BATTLES ── */
-    .battle-card {
-      background: var(--card2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px;
-    }
-    .battle-vs {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 12px;
-    }
-    .battle-driver {
-      text-align: center;
-      flex: 1;
-    }
-    .battle-driver-name { font-size: 15px; font-weight: 800; }
-    .battle-driver-team { font-size: 11px; color: var(--muted); }
-    .vs-tag {
-      font-size: 11px;
-      font-weight: 900;
-      color: var(--accent);
-      letter-spacing: 2px;
-      padding: 0 12px;
-    }
-    .battle-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
-
-    /* ── SPRINT BOX ── */
-    .sprint-explainer {
-      background: linear-gradient(135deg, rgba(255,215,0,0.06), rgba(255,140,0,0.06));
-      border: 1px solid rgba(255,215,0,0.2);
-      border-radius: 12px;
-      padding: 20px;
-    }
-    .sprint-title {
-      color: var(--yellow);
-      font-size: 16px;
-      font-weight: 800;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .sprint-content { font-size: 13px; color: var(--muted); line-height: 1.7; }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--card);
-      border-top: 1px solid var(--border);
-      padding: 24px;
-      text-align: center;
-      font-size: 12px;
-      color: var(--muted);
-    }
+    .disclaimer{background:var(--card2);border:1px solid var(--border);border-radius:10px;padding:14px 18px;font-size:12px;color:var(--muted);text-align:center;margin-top:32px;}
   </style>
 </head>
 <body>
 
+<div class="back-bar">
+  <a class="back-link" href="../../index.html">← 返回報告存檔</a>
+</div>
+
 <!-- HERO -->
 <div class="hero">
-  <div class="race-number">Round 4 · 2026 Season</div>
-  <h1>🌴 邁阿密<span>大獎賽</span></h1>
-  <p class="subtitle">Miami Grand Prix · Hard Rock Stadium · 2026.05.01–03</p>
+  <div class="hero-eyebrow">F1 2026 SEASON · RACE PREVIEW · 更新版</div>
+  <div class="hero-city">MIAMI</div>
+  <div class="hero-subtitle">邁阿密大獎賽 · Hard Rock Stadium</div>
   <div class="hero-badges">
-    <div class="badge"><span class="badge-icon">📍</span> Miami Gardens, Florida, USA</div>
-    <div class="badge"><span class="badge-icon">⚡</span> Sprint Weekend</div>
-    <div class="badge"><span class="badge-icon">🏎</span> 5.412 km × 57 laps</div>
-    <div class="badge"><span class="badge-icon">🕓</span> 距離開賽 18 天</div>
+    <span class="badge accent">🏁 Round 4 / 21</span>
+    <span class="badge sprint-badge">⚡ Sprint Weekend</span>
+    <span class="badge cyan">📅 5月1–3日</span>
+    <span class="badge">🌴 Miami Gardens, Florida</span>
+  </div>
+  <div class="hero-countdown">距離正賽開始 6 天 ▸ 2026 年 5 月 3 日 週日 16:00 EDT</div>
+  <div class="hero-updated">報告更新日期：2026-04-27 ｜ 本版新增：McLaren 全新賽車確認、Ferrari 完整升級包首發、FP1 延長至 90 分鐘</div>
+</div>
+
+<!-- SCHEDULE -->
+<div class="container">
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">SCHEDULE</span>
+    <h2 class="section-title">📅 Sprint 週末賽程時刻表</h2>
+  </div>
+  <div class="schedule-grid">
+    <div class="session-card">
+      <div class="session-day">FRIDAY · 5月1日（五）</div>
+      <div class="session-name">練習賽 FP1（延長版）<span class="session-tag tag-new">90 分鐘</span></div>
+      <div class="session-times">
+        <div class="time-block"><span class="time-loc">EDT</span><span class="time-val">17:00–18:30</span></div>
+        <div class="time-block"><span class="time-loc">台灣時間</span><span class="time-val twn">週六 05:00–06:30</span></div>
+      </div>
+    </div>
+    <div class="session-card sprint-session">
+      <div class="session-day">FRIDAY · 5月1日（五）</div>
+      <div class="session-name">Sprint 排位賽 SQ<span class="session-tag tag-sprint">SPRINT</span></div>
+      <div class="session-times">
+        <div class="time-block"><span class="time-loc">EDT</span><span class="time-val">21:30–22:14</span></div>
+        <div class="time-block"><span class="time-loc">台灣時間</span><span class="time-val twn">週六 09:30–10:14</span></div>
+      </div>
+    </div>
+    <div class="session-card sprint-session">
+      <div class="session-day">SATURDAY · 5月2日（六）</div>
+      <div class="session-name">Sprint 衝刺賽（8 圈）<span class="session-tag tag-sprint">SPRINT</span></div>
+      <div class="session-times">
+        <div class="time-block"><span class="time-loc">EDT</span><span class="time-val">17:00–18:00</span></div>
+        <div class="time-block"><span class="time-loc">台灣時間</span><span class="time-val twn">週日 05:00–06:00</span></div>
+      </div>
+    </div>
+    <div class="session-card">
+      <div class="session-day">SATURDAY · 5月2日（六）</div>
+      <div class="session-name">正式排位賽 Q1–Q3</div>
+      <div class="session-times">
+        <div class="time-block"><span class="time-loc">EDT</span><span class="time-val">21:00–22:00</span></div>
+        <div class="time-block"><span class="time-loc">台灣時間</span><span class="time-val twn">週日 09:00–10:00</span></div>
+      </div>
+    </div>
+    <div class="session-card race-session" style="grid-column:1/-1;">
+      <div class="session-day">SUNDAY · 5月3日（日）— 正賽日</div>
+      <div class="session-name">邁阿密大獎賽 — 57 圈 / 308.5 km<span class="session-tag tag-race">RACE</span></div>
+      <div class="session-times">
+        <div class="time-block"><span class="time-loc">EDT</span><span class="time-val">16:00</span></div>
+        <div class="time-block"><span class="time-loc">台灣時間</span><span class="time-val twn">週一 04:00（5月4日凌晨）</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="sprint-box">
+    <h3>⚡ Sprint 週末說明</h3>
+    <div class="sprint-detail">
+      本站為 2026 年第 2 個 Sprint 週末（首站：中國 GP）。FIA 特別核准本站 FP1 延長至 <strong>90 分鐘</strong>，原因有三：1) 五週空賽期後車隊需重新校調；2) 本賽季規則微調需要額外數據；3) Sprint 週末本身無第二次練習機會。Sprint 衝刺賽積分制度：前 8 名計分（8–7–6–5–4–3–2–1）。週末結束後若 Antonelli 保住領先，將以最大約 161 分的優勢進入歐洲賽季。
+    </div>
   </div>
 </div>
 
-<div class="container">
-
-  <!-- SECTION: SCHEDULE -->
-  <div class="section">
-    <div class="section-title">Weekend Schedule</div>
-    <h2>賽程時刻表</h2>
-    <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">所有時間為 EDT（美東夏令，UTC-4）· 台灣時間 EDT+12</p>
-    <div class="card">
-      <table class="schedule-table">
-        <thead>
-          <tr>
-            <th>日期</th>
-            <th>場次</th>
-            <th>EDT</th>
-            <th>台灣時間</th>
-            <th>類型</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>5/1 (五)</td>
-            <td>自由練習 FP1</td>
-            <td>12:30</td>
-            <td>5/2 00:30</td>
-            <td><span class="tag tag-fp">練習</span></td>
-          </tr>
-          <tr>
-            <td>5/1 (五)</td>
-            <td>衝刺排位賽 SQ</td>
-            <td>16:30</td>
-            <td>5/2 04:30</td>
-            <td><span class="tag tag-sprint">SPRINT</span></td>
-          </tr>
-          <tr>
-            <td>5/2 (六)</td>
-            <td>衝刺賽 Sprint Race</td>
-            <td>12:00</td>
-            <td>5/3 00:00</td>
-            <td><span class="tag tag-sprint">SPRINT</span></td>
-          </tr>
-          <tr>
-            <td>5/2 (六)</td>
-            <td>正式排位賽 Qualifying</td>
-            <td>16:00</td>
-            <td>5/3 04:00</td>
-            <td><span class="tag tag-quali">QUALI</span></td>
-          </tr>
-          <tr>
-            <td>5/3 (日)</td>
-            <td>🏆 正賽 Grand Prix</td>
-            <td>16:00</td>
-            <td>5/4 04:00</td>
-            <td><span class="tag tag-race">RACE</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<!-- STANDINGS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">STANDINGS</span>
+    <h2 class="section-title">📊 積分榜現況（前 3 站後）</h2>
   </div>
-
-  <!-- SECTION: STANDINGS -->
-  <div class="section">
-    <div class="section-title">Championship Standings · After Round 3</div>
-    <h2>積分榜現況（日本站後）</h2>
-    <div class="grid-2">
-      <!-- Driver Standings -->
-      <div>
-        <div class="chart-title">車手積分榜 TOP 8</div>
-        <div class="chart-wrap" style="padding:16px 20px;">
-          <div class="driver-row">
-            <div class="pos-num p1">1</div>
-            <div class="team-bar" style="background:var(--mercedes)"></div>
-            <div class="driver-info">
-              <div class="driver-name">Kimi Antonelli</div>
-              <div class="driver-team">Mercedes</div>
-            </div>
-            <div class="driver-pts" style="color:var(--yellow)">72</div>
+  <div class="standings-grid">
+    <div>
+      <div class="chart-title">車手積分榜 TOP 8</div>
+      <div class="standings-list">
+        <div class="driver-row">
+          <div class="driver-pos p1">1</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">Kimi Antonelli</div>
+            <div class="driver-team" style="color:var(--mercedes);">Mercedes-AMG Petronas</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:100%;background:var(--mercedes);"></div></div>
           </div>
-          <div class="driver-row">
-            <div class="pos-num p2">2</div>
-            <div class="team-bar" style="background:var(--mercedes)"></div>
-            <div class="driver-info">
-              <div class="driver-name">George Russell</div>
-              <div class="driver-team">Mercedes</div>
-            </div>
-            <div class="driver-pts" style="color:#c0c0c0">63</div>
-          </div>
-          <div class="driver-row">
-            <div class="pos-num p3">3</div>
-            <div class="team-bar" style="background:var(--ferrari)"></div>
-            <div class="driver-info">
-              <div class="driver-name">Charles Leclerc</div>
-              <div class="driver-team">Ferrari</div>
-            </div>
-            <div class="driver-pts" style="color:#cd7f32">49</div>
-          </div>
-          <div class="driver-row">
-            <div class="pos-num">4</div>
-            <div class="team-bar" style="background:var(--mclaren)"></div>
-            <div class="driver-info">
-              <div class="driver-name">Oscar Piastri</div>
-              <div class="driver-team">McLaren</div>
-            </div>
-            <div class="driver-pts">38</div>
-          </div>
-          <div class="driver-row">
-            <div class="pos-num">5</div>
-            <div class="team-bar" style="background:var(--ferrari)"></div>
-            <div class="driver-info">
-              <div class="driver-name">Lewis Hamilton</div>
-              <div class="driver-team">Ferrari</div>
-            </div>
-            <div class="driver-pts">33</div>
-          </div>
-          <div class="driver-row">
-            <div class="pos-num">6</div>
-            <div class="team-bar" style="background:var(--mclaren)"></div>
-            <div class="driver-info">
-              <div class="driver-name">Lando Norris</div>
-              <div class="driver-team">McLaren</div>
-            </div>
-            <div class="driver-pts">29</div>
-          </div>
-          <div class="driver-row">
-            <div class="pos-num">7</div>
-            <div class="team-bar" style="background:var(--redbull)"></div>
-            <div class="driver-info">
-              <div class="driver-name">Max Verstappen</div>
-              <div class="driver-team">Red Bull</div>
-            </div>
-            <div class="driver-pts">24</div>
-          </div>
-          <div class="driver-row">
-            <div class="pos-num">8</div>
-            <div class="team-bar" style="background:var(--ferrari)"></div>
-            <div class="driver-info">
-              <div class="driver-name">Oliver Bearman</div>
-              <div class="driver-team">Ferrari</div>
-            </div>
-            <div class="driver-pts">17</div>
-          </div>
+          <div class="driver-pts">72</div>
         </div>
-      </div>
-
-      <!-- Constructor Chart -->
-      <div>
-        <div class="chart-title">車隊積分榜</div>
-        <div class="chart-wrap">
-          <canvas id="constructorChart" height="280"></canvas>
-        </div>
-        <div class="sprint-explainer" style="margin-top:0;">
-          <div class="sprint-title">⭐ 里程碑</div>
-          <div class="sprint-content">
-            Antonelli 以 <strong style="color:var(--yellow)">19歲216天</strong> 成為有史以來最年輕的積分榜領先者。Mercedes 三輪比賽已拿下 <strong style="color:var(--mercedes)">2勝</strong>，完美開啟全新2026規則元年。
+        <div class="driver-row">
+          <div class="driver-pos p2">2</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">George Russell</div>
+            <div class="driver-team" style="color:var(--mercedes);">Mercedes-AMG Petronas</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:87.5%;background:var(--mercedes);"></div></div>
           </div>
+          <div class="driver-pts">63</div>
+        </div>
+        <div class="driver-row">
+          <div class="driver-pos p3">3</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">Charles Leclerc</div>
+            <div class="driver-team" style="color:var(--ferrari);">Scuderia Ferrari</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:68%;background:var(--ferrari);"></div></div>
+          </div>
+          <div class="driver-pts">49</div>
+        </div>
+        <div class="driver-row">
+          <div class="driver-pos">4</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">Lewis Hamilton</div>
+            <div class="driver-team" style="color:var(--ferrari);">Scuderia Ferrari</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:57%;background:var(--ferrari);"></div></div>
+          </div>
+          <div class="driver-pts">41</div>
+        </div>
+        <div class="driver-row">
+          <div class="driver-pos">5</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">Lando Norris</div>
+            <div class="driver-team" style="color:var(--mclaren);">McLaren F1 Team</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:35%;background:var(--mclaren);"></div></div>
+          </div>
+          <div class="driver-pts">25</div>
+        </div>
+        <div class="driver-row">
+          <div class="driver-pos">6</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">Oscar Piastri</div>
+            <div class="driver-team" style="color:var(--mclaren);">McLaren F1 Team</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:29%;background:var(--mclaren);"></div></div>
+          </div>
+          <div class="driver-pts">21</div>
+        </div>
+        <div class="driver-row">
+          <div class="driver-pos">7–8</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">其他車手</div>
+            <div class="driver-team">各隊</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:20%;background:var(--muted);"></div></div>
+          </div>
+          <div class="driver-pts">—</div>
+        </div>
+        <div class="driver-row">
+          <div class="driver-pos">9</div>
+          <div class="driver-bar-wrap">
+            <div class="driver-name">Max Verstappen</div>
+            <div class="driver-team" style="color:var(--redbull);">Oracle Red Bull Racing</div>
+            <div class="driver-bar-bg"><div class="driver-bar" style="width:17%;background:var(--redbull);"></div></div>
+          </div>
+          <div class="driver-pts">12</div>
         </div>
       </div>
     </div>
-
-    <!-- Driver Points Chart -->
-    <div class="chart-wrap" style="margin-top:20px;">
-      <div class="chart-title">車手積分對比（Top 8）</div>
-      <canvas id="driverChart" height="100"></canvas>
-    </div>
-  </div>
-
-  <!-- SECTION: CIRCUIT -->
-  <div class="section">
-    <div class="section-title">Circuit Guide</div>
-    <h2>邁阿密賽道解析</h2>
-    <div class="fact-grid" style="margin-bottom:20px;">
-      <div class="fact-item">
-        <span class="fact-value">5.412</span>
-        <div class="fact-label">賽道全長 (km)</div>
-      </div>
-      <div class="fact-item">
-        <span class="fact-value">57</span>
-        <div class="fact-label">總圈數</div>
-      </div>
-      <div class="fact-item">
-        <span class="fact-value">19</span>
-        <div class="fact-label">彎道數</div>
-      </div>
-      <div class="fact-item">
-        <span class="fact-value">3</span>
-        <div class="fact-label">DRS Zone</div>
-      </div>
-      <div class="fact-item">
-        <span class="fact-value">350+</span>
-        <div class="fact-label">最高速 (km/h)</div>
-      </div>
-      <div class="fact-item">
-        <span class="fact-value">308.3</span>
-        <div class="fact-label">比賽距離 (km)</div>
-      </div>
-    </div>
-
-    <div class="grid-2">
-      <div class="card">
-        <h3>🏎 賽道特性</h3>
-        <div style="font-size:14px; line-height:1.8;">
-          <p style="margin-bottom:10px;">Hard Rock Stadium 外圍的半街道半永久賽道，自 2022 年加入 F1 行事曆。三條長直線搭配三個 DRS Zone，理論上超車機會充裕——但實際上賽道整體較窄，排位賽成績對決賽影響巨大。</p>
-          <p style="margin-bottom:10px;">賽道大量使用輕骨材鋪設，摩擦係數偏低，輪胎退化（尤其前輪）是歷屆邁阿密賽的核心議題。熱帶高溫加速橡膠熱衰，可能誘發雙停站策略。</p>
-          <p>2026 新規的<strong style="color:var(--cyan)">主動式空力（Active Aero）</strong>在長直線段切換「Straight Mode」後可減少約 40% 下壓力，加速效益顯著，預計超車機會較 2025 年大幅增加。</p>
-        </div>
-      </div>
-      <div class="card">
-        <h3>🌡 氣象預報</h3>
-        <div style="font-size:14px; line-height:1.8; margin-bottom:14px;">
-          邁阿密 5 月初典型天氣：氣溫 <strong style="color:var(--orange)">27–32°C</strong>，濕度高，午後有零星陣雨機率（約 20–30%）。賽道溫度最高可達 <strong style="color:var(--accent)">45–50°C</strong>，對輪胎挑戰極大。
-        </div>
-        <h3>🛞 輪胎選擇（預計）</h3>
-        <div style="font-size:13px; color:var(--muted); line-height:1.8;">
-          <div>⬜ Hard (C2) — 安全墊底，長程策略</div>
-          <div>🟡 Medium (C3) — 主流正賽首停前選擇</div>
-          <div>🔴 Soft (C4) — 排位賽 / 衝刺賽主力，退化快</div>
-          <div style="margin-top:8px; font-size:12px;">預計主流策略：Medium → Hard（1停）或 Soft → Medium → Hard（2停）</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: SPRINT -->
-  <div class="section">
-    <div class="section-title">Sprint Weekend Format</div>
-    <h2>衝刺賽週末格式解析</h2>
-    <div class="sprint-explainer">
-      <div class="sprint-title">⚡ Sprint Weekend — 2026 規則下的差異</div>
-      <div class="sprint-content">
-        <strong style="color:var(--yellow)">衝刺賽不算積分榜主要積分，但影響節奏與心理戰。</strong>衝刺賽提供 1–8 名合共 8 分（1st = 8pts，依序遞減），正賽積分才是主要來源。<br><br>
-        2026 衝刺週末沒有第二次自由練習，車隊在 FP1 後直接進入衝刺排位賽，設定時間極短。<strong>新人與底盤靈敏度差的車隊會在此明顯吃虧</strong>，Mercedes 的 W16 在短時間調校上優勢可能更突出。<br><br>
-        衝刺賽距離約 100km（19 圈），紅旗機率較低但安全車頻率高；邁阿密以往正賽常有多次 VSC 進場，今年 Active Aero 系統的複雜度更可能衍生技術故障。
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: TEAM UPDATES -->
-  <div class="section">
-    <div class="section-title">April Break · Team Development</div>
-    <h2>四月空窗期各隊動向</h2>
-    <div class="grid-2">
-      <div class="team-card">
-        <div class="team-card-header" style="background: linear-gradient(135deg, rgba(39,244,210,0.1), transparent);">
-          <div class="team-dot" style="background:var(--mercedes)"></div>
-          <div style="font-weight:800; font-size:16px;">Mercedes</div>
-          <div style="margin-left:auto; font-size:12px; color:var(--green);">▲ 積分榜領先</div>
-        </div>
-        <div class="team-card-body">
-          <div class="update-item">以三輪全勝開局，工廠仍在持續優化 W16 的 ERS 能量回收效率，避免在高溫環境下過熱。</div>
-          <div class="update-item">Antonelli 正賽三站平均成績 P1.67，但車隊刻意壓低他在訪談中的聲量，避免引起針對性跟車攻擊。</div>
-          <div class="update-item">Russell 目前僅落後隊友 9 分，車隊內部策略分配（pit stop 時機）將在邁阿密進入博弈關鍵。</div>
-          <div class="update-item">Gianpiero Lambiase（Verstappen 工程師）2028 年將轉投 McLaren 擔任 CRO，此訊號對 Red Bull 2027–28 陣容是隱憂。</div>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-card-header" style="background: linear-gradient(135deg, rgba(255,128,0,0.1), transparent);">
-          <div class="team-dot" style="background:var(--mclaren)"></div>
-          <div style="font-weight:800; font-size:16px;">McLaren</div>
-          <div style="margin-left:auto; font-size:12px; color:var(--yellow);">▲ 升級攻勢</div>
-        </div>
-        <div class="team-card-body">
-          <div class="update-item">4/14–15 於 Nürburgring 進行乾胎測試，為邁阿密帶來針對性空力升級。</div>
-          <div class="update-item">Piastri 日本站 P2 終於完整地驗證了 MCL40 的單圈潛力，但與 Mercedes 仍有差距。</div>
-          <div class="update-item">Norris 三站最佳僅 P5，被質疑在 2026 新規賽車的適應速度不如隊友，邁阿密是關鍵表態時機。</div>
-          <div class="update-item">Andrea Stella 表示：「四月空窗期我們的優先級是縮短差距，而非守成。」</div>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-card-header" style="background: linear-gradient(135deg, rgba(232,0,45,0.1), transparent);">
-          <div class="team-dot" style="background:var(--ferrari)"></div>
-          <div style="font-weight:800; font-size:16px;">Ferrari</div>
-          <div style="margin-left:auto; font-size:12px; color:var(--orange);">▼ 一致性問題</div>
-        </div>
-        <div class="team-card-body">
-          <div class="update-item">4/9–10 Fiorano 雨胎測試（配合 Pirelli 2027 超中性胎研發），4/22 Monza filming day。</div>
-          <div class="update-item">Hamilton 三站表現：P3、P3、P3——穩定但缺乏突破，被外界戲稱「鐵 P3 車手」。本人回應：「我們的時代會來的。」</div>
-          <div class="update-item">Leclerc 積分第三，但排位賽速度領先 Hamilton，兩人默契仍在磨合。</div>
-          <div class="update-item">Bearman P5 已穩定貢獻積分，是 Ferrari 真正的驚喜之一。</div>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-card-header" style="background: linear-gradient(135deg, rgba(54,113,198,0.1), transparent);">
-          <div class="team-dot" style="background:var(--redbull)"></div>
-          <div style="font-weight:800; font-size:16px;">Red Bull</div>
-          <div style="margin-left:auto; font-size:12px; color:var(--accent);">🔧 大幅升級</div>
-        </div>
-        <div class="team-card-body">
-          <div class="update-item">RB22 比賽季初重量超標約 10kg，工廠趁空窗期進行輕量化重構，邁阿密視為「第二次發表」。</div>
-          <div class="update-item">車隊總監 Laurent Mekies 對升級幅度極度樂觀，但外界更謹慎——2026 規則帶來的空力失速問題需要時間完全理解。</div>
-          <div class="update-item">Verstappen 三站最佳 P7，對他的職業生涯而言是異常的開局。如升級失效，將引發更多「換隊」傳言。</div>
-          <div class="update-item">Lambiase 在合約期滿前仍留隊，但心理層面的動盪已不可避免地影響工程師團隊氛圍。</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: WIN PROBABILITY -->
-  <div class="section">
-    <div class="section-title">Race Prediction</div>
-    <h2>邁阿密站勝率預測</h2>
-    <div class="grid-2">
-      <div>
-        <div class="chart-wrap">
-          <div class="chart-title">邁阿密站奪冠機率分析</div>
-          <canvas id="probabilityChart" height="220"></canvas>
-        </div>
-      </div>
-      <div class="card" style="display:flex; flex-direction:column; gap:10px;">
-        <div class="chart-title" style="margin-bottom:4px;">預測排名 TOP 5</div>
-
-        <div class="prediction-row">
-          <div class="pred-pos" style="color:var(--yellow)">P1</div>
-          <div>
-            <div class="pred-driver">Kimi Antonelli</div>
-            <div style="font-size:11px; color:var(--mercedes);">Mercedes</div>
-          </div>
-          <div style="flex:1; display:flex; align-items:center; justify-content:flex-end; gap:10px;">
-            <div class="prob-bar-bg"><div class="prob-bar-fill" style="width:38%; background:var(--mercedes)"></div></div>
-            <div class="pred-pct" style="color:var(--mercedes)">38%</div>
-          </div>
-        </div>
-
-        <div class="prediction-row">
-          <div class="pred-pos" style="color:#c0c0c0">P2</div>
-          <div>
-            <div class="pred-driver">George Russell</div>
-            <div style="font-size:11px; color:var(--mercedes);">Mercedes</div>
-          </div>
-          <div style="flex:1; display:flex; align-items:center; justify-content:flex-end; gap:10px;">
-            <div class="prob-bar-bg"><div class="prob-bar-fill" style="width:28%; background:var(--mercedes)"></div></div>
-            <div class="pred-pct" style="color:var(--mercedes)">28%</div>
-          </div>
-        </div>
-
-        <div class="prediction-row">
-          <div class="pred-pos" style="color:#cd7f32">P3</div>
-          <div>
-            <div class="pred-driver">Charles Leclerc</div>
-            <div style="font-size:11px; color:var(--ferrari);">Ferrari</div>
-          </div>
-          <div style="flex:1; display:flex; align-items:center; justify-content:flex-end; gap:10px;">
-            <div class="prob-bar-bg"><div class="prob-bar-fill" style="width:16%; background:var(--ferrari)"></div></div>
-            <div class="pred-pct" style="color:var(--ferrari)">16%</div>
-          </div>
-        </div>
-
-        <div class="prediction-row">
-          <div class="pred-pos">P4</div>
-          <div>
-            <div class="pred-driver">Oscar Piastri</div>
-            <div style="font-size:11px; color:var(--mclaren);">McLaren</div>
-          </div>
-          <div style="flex:1; display:flex; align-items:center; justify-content:flex-end; gap:10px;">
-            <div class="prob-bar-bg"><div class="prob-bar-fill" style="width:10%; background:var(--mclaren)"></div></div>
-            <div class="pred-pct" style="color:var(--mclaren)">10%</div>
-          </div>
-        </div>
-
-        <div class="prediction-row">
-          <div class="pred-pos">P5</div>
-          <div>
-            <div class="pred-driver">Max Verstappen</div>
-            <div style="font-size:11px; color:var(--redbull);">Red Bull</div>
-          </div>
-          <div style="flex:1; display:flex; align-items:center; justify-content:flex-end; gap:10px;">
-            <div class="prob-bar-bg"><div class="prob-bar-fill" style="width:8%; background:var(--redbull)"></div></div>
-            <div class="pred-pct" style="color:var(--redbull)">8%</div>
-          </div>
-        </div>
-
-        <div style="margin-top:8px; padding:12px; background:var(--card2); border-radius:8px; font-size:12px; color:var(--muted);">
-          ⚠️ 勝率預測綜合當前戰力、賽道特性、升級進度及歷史排位優勢估算，不代表實際博彩賠率。
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: KEY BATTLES -->
-  <div class="section">
-    <div class="section-title">Key Storylines</div>
-    <h2>邁阿密四大焦點對決</h2>
-    <div class="grid-2">
-      <div class="battle-card">
-        <div class="battle-vs">
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--mercedes)">Antonelli</div>
-            <div class="battle-driver-team">Mercedes #2</div>
-          </div>
-          <div class="vs-tag">VS</div>
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--mercedes)">Russell</div>
-            <div class="battle-driver-team">Mercedes #63</div>
-          </div>
-        </div>
-        <div class="battle-desc">
-          車隊內部軍備競賽白熱化。Russell 在澳洲站贏得本季首勝，但後兩站均敗給隊友，積分差距擴大。邁阿密歷史上兩人勝負各有千秋，衝刺賽的排位優先順序將決定正賽前段策略。<strong style="color:var(--yellow)">最大焦點：pit stop 時機是否刻意製造落差？</strong>
-        </div>
-      </div>
-
-      <div class="battle-card">
-        <div class="battle-vs">
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--ferrari)">Hamilton</div>
-            <div class="battle-driver-team">Ferrari #44</div>
-          </div>
-          <div class="vs-tag">VS</div>
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--ferrari)">Leclerc</div>
-            <div class="battle-driver-team">Ferrari #16</div>
-          </div>
-        </div>
-        <div class="battle-desc">
-          Hamilton 加盟 Ferrari 的蜜月期是否消逝？三站 P3 雖穩但停滯，Leclerc 排位賽表現更為強勢。邁阿密是 Hamilton 的福地（2019、2021 年曾多次在美系賽道奪冠），但 SF-26 的底速設定更偏向 Leclerc 風格。<strong style="color:var(--accent)">關鍵：Ferrari 內部誰有優先策略支持？</strong>
-        </div>
-      </div>
-
-      <div class="battle-card">
-        <div class="battle-vs">
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--mclaren)">Piastri</div>
-            <div class="battle-driver-team">McLaren #81</div>
-          </div>
-          <div class="vs-tag">VS</div>
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--mclaren)">Norris</div>
-            <div class="battle-driver-team">McLaren #4</div>
-          </div>
-        </div>
-        <div class="battle-desc">
-          Piastri 已確立在 MCL40 的優勢，Norris 三站表現不如預期。邁阿密 Nürburgring 測試針對哪位車手的設定優化，將反映車隊內部的話語權移轉。<strong style="color:var(--orange)">邁阿密是 Norris 2026 反攻的最後機會之一。</strong>
-        </div>
-      </div>
-
-      <div class="battle-card">
-        <div class="battle-vs">
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--redbull)">Verstappen</div>
-            <div class="battle-driver-team">Red Bull #1</div>
-          </div>
-          <div class="vs-tag">VS</div>
-          <div class="battle-driver">
-            <div class="battle-driver-name" style="color:var(--yellow)">RB22 升級</div>
-            <div class="battle-driver-team">能否追上Mercedes？</div>
-          </div>
-        </div>
-        <div class="battle-desc">
-          Red Bull 的「第二次發表」備受期待，但升級能否真的縮小與 Mercedes 的差距？如果邁阿密升級失效，Verstappen 的耐心與 Red Bull 的人才流失壓力將同步爆發。<strong style="color:var(--redbull)">這是 Red Bull 能否留住衛冕軍心的生死戰。</strong>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION: SUMMARY -->
-  <div class="section">
-    <div class="section-title">Preview Summary</div>
-    <h2>邁阿密站總結展望</h2>
     <div class="chart-wrap">
-      <canvas id="summaryRadar" height="90"></canvas>
-    </div>
-    <div class="grid-3" style="margin-top:16px;">
-      <div class="card card-accent-top">
-        <h3>🔥 最大懸念</h3>
-        <p style="font-size:13px; color:var(--muted); line-height:1.7;">Red Bull RB22 升級包是否如 Mekies 所說「徹底蛻變」？若 Verstappen 能重返前三，2026 年冠軍戰局將重新洗牌；若依舊掙扎，將引爆車手與車隊之間的信任危機。</p>
-      </div>
-      <div class="card card-accent-top">
-        <h3>⚡ 衝刺賽重要性</h3>
-        <p style="font-size:13px; color:var(--muted); line-height:1.7;">邁阿密 Sprint Race 是衝刺積分與心理戰的結合。能在 19 圈內打亂對手節奏的車手，將在正賽策略上取得先機。Mercedes 雙龍的 Sprint 表現將是最值得追蹤的指標。</p>
-      </div>
-      <div class="card card-accent-top">
-        <h3>🌧 天氣變數</h3>
-        <p style="font-size:13px; color:var(--muted); line-height:1.7;">5 月邁阿密的午後雷陣雨機率不低，若出現降雨將大幅增加混亂機率。2026 主動式空力在濕地上的穩定性尚未有充分數據，可能導致意外事故增加。</p>
-      </div>
+      <div class="chart-title">車隊積分榜（前 3 站）</div>
+      <canvas id="constructorChart" height="250"></canvas>
     </div>
   </div>
+</div>
 
+<!-- CIRCUIT -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">CIRCUIT</span>
+    <h2 class="section-title">🗺 邁阿密賽道解析</h2>
+  </div>
+  <div class="data-cards">
+    <div class="data-card"><div class="val">5.412</div><div class="lbl">圈長 (km)</div></div>
+    <div class="data-card"><div class="val">57</div><div class="lbl">正賽圈數</div></div>
+    <div class="data-card"><div class="val">308.5</div><div class="lbl">總距離 (km)</div></div>
+    <div class="data-card"><div class="val">19</div><div class="lbl">彎道數</div></div>
+    <div class="data-card"><div class="val">3</div><div class="lbl">DRS 區域</div></div>
+    <div class="data-card"><div class="val">~30°C</div><div class="lbl">預計氣溫</div></div>
+  </div>
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;margin-bottom:16px;">
+    <p style="font-size:14px;color:#b8b8cc;line-height:1.75;">
+      邁阿密國際賽車場座落於 Hard Rock Stadium 停車場，為典型臨時賽道，設有三段 DRS 直線提供超車機會。19 個彎道融合<strong>高速技術段</strong>與<strong>慢速髮夾彎</strong>，需兼顧下壓力與牽引力的整體平衡設定。佛州高溫造成<strong>熱衰退</strong>壓力，但歷史數據顯示磨耗量受控，車手可在起步階段大力推進，賽事通常出現激烈的輪對輪對決。
+    </p>
+  </div>
+  <div class="chart-title" style="margin-bottom:12px;">Pirelli 2026 輪胎分配 — 最軟三款（C3/C4/C5）</div>
+  <div class="tyre-grid">
+    <div class="tyre-card">
+      <div class="tyre-dot hard">H</div>
+      <div><div class="tyre-name" style="color:#e8e8f0;">C3 — Hard（白）</div><div class="tyre-code">耐久抗熱；長停策略主力，預計首停後使用</div></div>
+    </div>
+    <div class="tyre-card">
+      <div class="tyre-dot medium">M</div>
+      <div><div class="tyre-name" style="color:var(--yellow);">C4 — Medium（黃）</div><div class="tyre-code">均衡選擇；Safety Car 時機換胎或免停挑戰</div></div>
+    </div>
+    <div class="tyre-card">
+      <div class="tyre-dot soft">S</div>
+      <div><div class="tyre-name" style="color:var(--accent);">C5 — Soft（紅）</div><div class="tyre-code">排位賽必備 / 起步絕佳；降解快但圈速最快</div></div>
+    </div>
+  </div>
+  <div style="background:rgba(255,215,0,.05);border:1px solid rgba(255,215,0,.2);border-radius:10px;padding:14px 18px;margin-top:14px;font-size:13px;color:#b8b8cc;">
+    <strong style="color:var(--yellow);">策略預測：</strong>主流選擇為 <strong>Soft 起步 → Hard 一停</strong>（約第 20–25 圈）；積極挑戰者可能採 <strong>Soft → Medium → Soft 兩停</strong>以換取賽道位置優勢。Safety Car 出現機率在市區風格賽道偏高，彈性策略團隊將佔優勢。
+  </div>
+</div>
+
+<!-- TEAMS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">TEAMS</span>
+    <h2 class="section-title">🏎 各主要車隊邁阿密站動向</h2>
+  </div>
+  <div class="team-grid">
+    <div class="team-card mclaren">
+      <div class="team-name"><div class="team-dot" style="background:var(--mclaren);"></div>McLaren F1 Team<span class="team-outfit out-hot" style="background:rgba(180,79,255,.2);color:var(--purple);font-size:10px;padding:3px 9px;border-radius:4px;font-weight:700;margin-left:auto;">🔥 最大變數</span></div>
+      <div class="team-desc">車隊主帥 <strong>Andrea Stella</strong> 正式確認帶來「<strong>完全全新的賽車</strong>」（completely new car）。MCL40 將在空氣動力學哲學上全面重構，邁阿密與加拿大兩站集中引入大量升級零件。儘管開季不順（Piastri 澳洲退賽、中國站雙車無法出發），日本站 Piastri 的 P2 完賽顯示潛力回升。</div>
+      <div class="team-highlight">Norris 在 2024 年邁阿密奪個人首勝，賽道熟悉度最高。全新升級加持下，這是本賽季最可能出現大驚喜的組合。</div>
+    </div>
+    <div class="team-card ferrari">
+      <div class="team-name"><div class="team-dot" style="background:var(--ferrari);"></div>Scuderia Ferrari<span class="team-outfit out-watch" style="background:rgba(255,140,0,.2);color:var(--orange);font-size:10px;padding:3px 9px;border-radius:4px;font-weight:700;margin-left:auto;">⬆ 重大升級首發</span></div>
+      <div class="team-desc">經 Monza 私下測試驗證，本站將推出「<strong>完整版 2026 賽車</strong>」，更換比例逾半數零件，包括新版「<strong>Macarena 旋轉翼</strong>」預計首次亮相競賽。Hamilton（41分）+ Leclerc（49分）合計 90 分，與 Mercedes 差距大，邁阿密若升級奏效可望大幅拉近。</div>
+      <div class="team-highlight">Macarena 旋轉翼已震驚業界，若帶來直線速度突破，將改寫整個賽季的競爭格局。Hamilton 在 Ferrari 首次征戰邁阿密，亦備受關注。</div>
+    </div>
+    <div class="team-card mercedes">
+      <div class="team-name"><div class="team-dot" style="background:var(--mercedes);"></div>Mercedes-AMG Petronas<span class="team-outfit out-danger" style="background:rgba(232,0,45,.2);color:var(--accent);font-size:10px;padding:3px 9px;border-radius:4px;font-weight:700;margin-left:auto;">👑 衛冕熱門</span></div>
+      <div class="team-desc">前三站全數制霸，Antonelli 72分 + Russell 63分，車隊積分領跑全場。目前優勢約半秒，五週空賽期使對手得以充分準備升級包，本站是 Mercedes 優勢是否延續的關鍵考驗。即便如此，現有車速優勢短期仍難被完全抹平。</div>
+      <div class="team-highlight">Antonelli 本賽季首次面對真正來自 McLaren 和 Ferrari 的全力衝擊，這場壓力考驗也是觀察新星韌性的最佳機會。</div>
+    </div>
+    <div class="team-card redbull">
+      <div class="team-name"><div class="team-dot" style="background:var(--redbull);"></div>Oracle Red Bull Racing<span class="team-outfit out-rebuild" style="background:rgba(54,113,198,.2);color:var(--redbull);font-size:10px;padding:3px 9px;border-radius:4px;font-weight:700;margin-left:auto;">🔧 重建中</span></div>
+      <div class="team-desc">主帥 <strong>Laurent Mekies</strong> 坦承「升級有幫助，但不要期待奇蹟」。Verstappen 積分 12 分排第 9，開季大幅落後近年水準。技術組人事大調整傳言持續，車隊文化與研發重心正在轉型，邁阿密是觀察復甦幅度的重要節點。</div>
+      <div class="team-highlight">Verstappen 是邁阿密賽道經驗最豐富的車手之一，若升級有效，仍有機會搶入 P5 以內積分。</div>
+    </div>
+  </div>
+</div>
+
+<!-- PREDICTION -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">PREDICTION</span>
+    <h2 class="section-title">🎯 正賽勝率預測分析</h2>
+  </div>
+  <div class="pred-layout">
+    <div class="chart-wrap" style="display:flex;align-items:center;justify-content:center;">
+      <canvas id="winChart" width="220" height="220"></canvas>
+    </div>
+    <div class="pred-list">
+      <div class="pred-row">
+        <div class="pred-rank r1">1</div>
+        <div class="pred-info"><div class="pred-driver">Kimi Antonelli</div><div class="pred-team" style="color:var(--mercedes);">Mercedes · 積分榜領先者</div></div>
+        <div class="pred-pct" style="color:var(--mercedes);">38%</div>
+      </div>
+      <div class="pred-row">
+        <div class="pred-rank r2">2</div>
+        <div class="pred-info"><div class="pred-driver">George Russell</div><div class="pred-team" style="color:var(--mercedes);">Mercedes · 積分榜 #2</div></div>
+        <div class="pred-pct" style="color:var(--mercedes);">20%</div>
+      </div>
+      <div class="pred-row">
+        <div class="pred-rank r3">3</div>
+        <div class="pred-info"><div class="pred-driver">Lando Norris</div><div class="pred-team" style="color:var(--mclaren);">McLaren · 全新升級 + 本地優勢</div></div>
+        <div class="pred-pct" style="color:var(--mclaren);">20%</div>
+      </div>
+      <div class="pred-row">
+        <div class="pred-rank r4">4</div>
+        <div class="pred-info"><div class="pred-driver">Charles Leclerc</div><div class="pred-team" style="color:var(--ferrari);">Ferrari · 完整升級首發</div></div>
+        <div class="pred-pct" style="color:var(--ferrari);">13%</div>
+      </div>
+      <div class="pred-row">
+        <div class="pred-rank r5">5</div>
+        <div class="pred-info"><div class="pred-driver">Lewis Hamilton</div><div class="pred-team" style="color:var(--ferrari);">Ferrari · Hamilton in Miami</div></div>
+        <div class="pred-pct" style="color:var(--ferrari);">6%</div>
+      </div>
+      <div style="padding:10px 14px;font-size:12px;color:var(--muted);">其他（含 Piastri、Verstappen 等）合計 3%</div>
+    </div>
+  </div>
+</div>
+
+<!-- DUELS -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">KEY BATTLES</span>
+    <h2 class="section-title">⚔️ 四大焦點對決</h2>
+  </div>
+  <div class="duel-grid">
+    <div class="duel-card">
+      <div class="duel-label">DUEL 1 · 隊內戰</div>
+      <div class="duel-vs">Antonelli vs. Russell</div>
+      <div class="duel-desc">積分差距 9 分（72 vs 63），Sprint 週末的高節奏格式可能加大隊內緊張程度。誰在 SQ 奪 Pole 就能主導週日的戰略選擇，Mercedes 自己的內戰是本週末最精彩看點之一。</div>
+    </div>
+    <div class="duel-card">
+      <div class="duel-label">DUEL 2 · 升級大戰</div>
+      <div class="duel-vs">McLaren 全新車 vs. Mercedes 優勢</div>
+      <div class="duel-desc">Stella 承諾的「完全全新 MCL40」若真正奏效，可能一舉縮短目前約半秒的差距。FP1 只有 90 分鐘，工程師幾乎沒有調整時間，升級效果將立刻見真章。</div>
+    </div>
+    <div class="duel-card">
+      <div class="duel-label">DUEL 3 · 地主情結</div>
+      <div class="duel-vs">Norris 的邁阿密記憶</div>
+      <div class="duel-desc">2024 年邁阿密，Norris 在此奪得個人 F1 首勝，對賽道瞭如指掌。本站帶著全新升級包回來，是他本賽季最有機會挑戰勝利的一站，也是向衛冕冠軍頭銜宣戰的最佳舞台。</div>
+    </div>
+    <div class="duel-card">
+      <div class="duel-label">DUEL 4 · 紅牛反擊</div>
+      <div class="duel-vs">Verstappen 的沉默反擊</div>
+      <div class="duel-desc">現任三屆冠軍積分僅 12 分排第 9，帶升級包出戰。Mekies 說「不要期待奇蹟」，但邁阿密的賽道特性偏向 Verstappen 的攻擊型駕駛風格，一個意外的 Q2 或穩定的積分完賽已足以拉高士氣。</div>
+    </div>
+  </div>
+</div>
+
+<!-- RADAR -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">COMPARISON</span>
+    <h2 class="section-title">📡 四隊六維雷達分析</h2>
+  </div>
+  <div class="chart-wrap" style="max-width:480px;margin:0 auto;">
+    <canvas id="radarChart" height="380"></canvas>
+  </div>
+  <div style="display:flex;justify-content:center;gap:20px;margin-top:14px;flex-wrap:wrap;font-size:13px;">
+    <span><span style="color:var(--mercedes);">●</span> Mercedes</span>
+    <span><span style="color:var(--ferrari);">●</span> Ferrari</span>
+    <span><span style="color:var(--mclaren);">●</span> McLaren</span>
+    <span><span style="color:var(--redbull);">●</span> Red Bull</span>
+  </div>
+</div>
+
+<!-- SOURCES -->
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">SOURCES</span>
+    <h2 class="section-title">📚 資料來源</h2>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;">
+    <a href="https://www.formula1.com/en/racing/2026/miami" target="_blank">formula1.com — Miami Grand Prix 2026 官方頁面</a>
+    <a href="https://www.skysports.com/f1/news/12433/13534965/f1-returns-at-miami-gp-with-talk-of-new-championship-starting-with-car-upgrades-expected-as-field-bids-to-catch-mercedes" target="_blank">Sky Sports — F1 returns at Miami GP with talk of 'new championship'</a>
+    <a href="https://www.skysports.com/f1/news/12433/13534874/miami-gp-2026-sprint-weekend-dates-schedule-weather-uk-start-time-and-how-to-watch-or-stream-f1-race-live-in-florida-on-sky-sports" target="_blank">Sky Sports — Miami GP 2026 Sprint weekend dates, schedule & times</a>
+    <a href="https://www.formula1.com/en/latest/article/stella-confirms-mclaren-are-set-to-deliver-a-completely-new-car-for-miami-and-canadian-grands-prix.3I3qbJJ2AiPnLaQVGyMW6K" target="_blank">formula1.com — Stella confirms McLaren's 'completely new car' for Miami & Canada</a>
+    <a href="https://www.gpfans.com/en/f1-news/1079807/mclaren-andrea-stella-f1-upgrades-miami-gp-ferrari-mercedes/" target="_blank">GPFans — McLaren boss announces major F1 upgrades for Miami</a>
+    <a href="https://www.f1oversteer.com/news/ferrari-will-finally-unleash-their-complete-2026-car-at-miami-grand-prix-after-successful-test/" target="_blank">F1 Oversteer — Ferrari to unleash complete 2026 car at Miami GP</a>
+    <a href="https://scuderiafans.com/ferrari-prepare-full-spec-2026-formula-1-car-debut-in-miami-to-challenge-mercedes-dominance/" target="_blank">ScuderiaFans — Ferrari prepare full-spec 2026 car for Miami</a>
+    <a href="https://www.news.gp/en/mekies-targets-step-forward-in-miami-but-tempers-red-bull-expectations" target="_blank">News.GP — Mekies: Miami upgrades should help Red Bull, but no miracles</a>
+    <a href="https://press.pirelli.com/a-sprint-n-soft-grand-prix-in-miami/" target="_blank">Pirelli Press — A "Sprint 'n' Soft" Grand Prix in Miami</a>
+    <a href="https://blog.f1livepulse.com/miami-grand-prix-preview-key-questions-f1-2026-resumption" target="_blank">F1 Live Pulse — 2026 Miami GP key questions before resumption</a>
+    <a href="https://www.formula1.com/en/latest/article/miami-grand-prix-fp1-session-extended-to-90-minutes.2x6NKQzFno8F7FAPPINsbo" target="_blank">formula1.com — Miami GP FP1 extended to 90 minutes</a>
+    <a href="https://www.gpfans.com/en/f1-news/1082396/f1-schedule-miami-grand-prix-2026-session-times-running-order/" target="_blank">GPFans — F1 Miami GP 2026 full schedule & session times</a>
+    <a href="https://blog.f1livepulse.com/pirelli-tyre-strategies-for-miami-and-montreal-2026" target="_blank">F1 Live Pulse — Pirelli tyre strategies for Miami & Montreal 2026</a>
+  </div>
+</div>
+
+<div class="disclaimer">
+  本報告勝率預測為綜合因素分析，僅供參考，不代表任何博彩賠率或投注建議。<br>
+  自動產出日期：2026-04-27 ｜ 所有數據以官方公告為準
+</div>
+<div style="height:48px;"></div>
 </div><!-- /container -->
 
-<footer>
-  F1 2026 邁阿密大獎賽預告報告 ▏ 2026.04.15 製作 ▏ 資料來源：Formula1.com、Motorsport.com、Sky Sports F1、PlanetF1
-  <br>本報告積分與預測數據基於日本站後最新資訊，勝率預測僅供參考。
-</footer>
-
-<!-- CHARTS -->
 <script>
-  Chart.defaults.color = '#7a7a9a';
-  Chart.defaults.font.family = "'Segoe UI', 'PingFang TC', sans-serif";
-
-  const borderRadius = 6;
-
-  // Constructor chart
-  new Chart(document.getElementById('constructorChart'), {
-    type: 'bar',
-    data: {
-      labels: ['Mercedes', 'Ferrari', 'McLaren', 'Red Bull', 'Alpine', 'Williams'],
-      datasets: [{
-        label: '積分',
-        data: [135, 99, 67, 34, 11, 7],
-        backgroundColor: ['#27f4d2cc', '#e8002dcc', '#ff8000cc', '#3671c6cc', '#0093cccc', '#64c4ffcc'],
-        borderColor:     ['#27f4d2',   '#e8002d',   '#ff8000',   '#3671c6',   '#0093cc',   '#64c4ff'],
-        borderWidth: 2,
-        borderRadius,
+// Constructor Chart
+(function(){
+  const ctx = document.getElementById('constructorChart');
+  if(!ctx) return;
+  new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels:['Mercedes','Ferrari','McLaren','Red Bull','其他'],
+      datasets:[{
+        label:'車隊積分',
+        data:[135,90,46,18,12],
+        backgroundColor:['rgba(39,244,210,.75)','rgba(232,0,45,.75)','rgba(255,128,0,.75)','rgba(54,113,198,.75)','rgba(122,122,154,.5)'],
+        borderColor:['#27f4d2','#e8002d','#ff8000','#3671c6','#7a7a9a'],
+        borderWidth:1, borderRadius:6
       }]
     },
-    options: {
-      indexAxis: 'y',
-      plugins: { legend: { display: false } },
-      scales: {
-        x: {
-          grid: { color: '#2a2a3e' },
-          ticks: { color: '#7a7a9a' },
-          border: { color: '#2a2a3e' }
-        },
-        y: {
-          grid: { display: false },
-          ticks: { color: '#e8e8f0', font: { weight: '700' } },
-          border: { color: '#2a2a3e' }
-        }
+    options:{
+      indexAxis:'y', responsive:true,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.parsed.x} 分`}}},
+      scales:{
+        x:{grid:{color:'rgba(42,42,62,.8)'},ticks:{color:'#7a7a9a',font:{size:11}},beginAtZero:true,max:160},
+        y:{grid:{display:false},ticks:{color:'#e8e8f0',font:{size:12,weight:'700'}}}
       }
     }
   });
+})();
 
-  // Driver chart
-  new Chart(document.getElementById('driverChart'), {
-    type: 'bar',
-    data: {
-      labels: ['Antonelli', 'Russell', 'Leclerc', 'Piastri', 'Hamilton', 'Norris', 'Verstappen', 'Bearman'],
-      datasets: [{
-        label: '積分',
-        data: [72, 63, 49, 38, 33, 29, 24, 17],
-        backgroundColor: [
-          '#27f4d2bb','#27f4d2bb','#e8002dbb','#ff8000bb',
-          '#e8002dbb','#ff8000bb','#3671c6bb','#e8002dbb'
-        ],
-        borderColor: [
-          '#27f4d2','#27f4d2','#e8002d','#ff8000',
-          '#e8002d','#ff8000','#3671c6','#e8002d'
-        ],
-        borderWidth: 2,
-        borderRadius,
+// Win Probability Donut
+(function(){
+  const ctx = document.getElementById('winChart');
+  if(!ctx) return;
+  new Chart(ctx, {
+    type:'doughnut',
+    data:{
+      labels:['Antonelli','Russell','Norris','Leclerc','Hamilton','其他'],
+      datasets:[{
+        data:[38,20,20,13,6,3],
+        backgroundColor:['rgba(39,244,210,.85)','rgba(39,244,210,.45)','rgba(255,128,0,.85)','rgba(232,0,45,.85)','rgba(232,0,45,.45)','rgba(122,122,154,.4)'],
+        borderColor:['#0b0b12'],
+        borderWidth:2, hoverOffset:6
       }]
     },
-    options: {
-      plugins: { legend: { display: false } },
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: { color: '#e8e8f0', font: { weight: '600' } },
-          border: { color: '#2a2a3e' }
-        },
-        y: {
-          grid: { color: '#2a2a3e' },
-          ticks: { color: '#7a7a9a' },
-          border: { color: '#2a2a3e' }
-        }
+    options:{
+      responsive:false, cutout:'62%',
+      plugins:{
+        legend:{position:'bottom',labels:{color:'#b8b8cc',font:{size:11},padding:10,boxWidth:12}},
+        tooltip:{callbacks:{label:c=>` ${c.parsed}% 勝率`}}
       }
     }
   });
+})();
 
-  // Probability doughnut
-  new Chart(document.getElementById('probabilityChart'), {
-    type: 'doughnut',
-    data: {
-      labels: ['Antonelli (MER)', 'Russell (MER)', 'Leclerc (FER)', 'Piastri (MCL)', 'Verstappen (RBR)', '其他'],
-      datasets: [{
-        data: [38, 28, 16, 10, 8, 0],
-        backgroundColor: ['#27f4d2','#27f4d266','#e8002d','#ff8000','#3671c6','#2a2a3e'],
-        borderColor: '#13131e',
-        borderWidth: 3,
-        hoverOffset: 8,
-      }]
-    },
-    options: {
-      cutout: '65%',
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: { color: '#e8e8f0', padding: 12, font: { size: 12 } }
-        }
-      }
-    }
-  });
-
-  // Radar summary
-  new Chart(document.getElementById('summaryRadar'), {
-    type: 'radar',
-    data: {
-      labels: ['排位賽速度', '正賽配速', '輪胎管理', '賽道歷史', '升級進度', '策略靈活度'],
-      datasets: [
-        {
-          label: 'Mercedes',
-          data: [95, 92, 88, 85, 85, 90],
-          borderColor: '#27f4d2', backgroundColor: '#27f4d230', borderWidth: 2, pointBackgroundColor: '#27f4d2'
-        },
-        {
-          label: 'Ferrari',
-          data: [82, 85, 80, 80, 78, 82],
-          borderColor: '#e8002d', backgroundColor: '#e8002d25', borderWidth: 2, pointBackgroundColor: '#e8002d'
-        },
-        {
-          label: 'McLaren',
-          data: [80, 82, 84, 82, 80, 80],
-          borderColor: '#ff8000', backgroundColor: '#ff800020', borderWidth: 2, pointBackgroundColor: '#ff8000'
-        },
-        {
-          label: 'Red Bull',
-          data: [70, 72, 75, 88, 82, 78],
-          borderColor: '#3671c6', backgroundColor: '#3671c620', borderWidth: 2, pointBackgroundColor: '#3671c6'
-        }
+// Radar Chart
+(function(){
+  const ctx = document.getElementById('radarChart');
+  if(!ctx) return;
+  new Chart(ctx, {
+    type:'radar',
+    data:{
+      labels:['單圈速度','高速下壓力','輪胎管理','直線車速','正賽節奏','升級潛力'],
+      datasets:[
+        {label:'Mercedes',data:[9.5,8.5,8.5,8,9,7],borderColor:'rgba(39,244,210,.9)',backgroundColor:'rgba(39,244,210,.1)',pointBackgroundColor:'#27f4d2',pointRadius:4,borderWidth:2},
+        {label:'Ferrari', data:[8,8,8,7.5,8,9],   borderColor:'rgba(232,0,45,.9)',  backgroundColor:'rgba(232,0,45,.08)', pointBackgroundColor:'#e8002d',pointRadius:4,borderWidth:2},
+        {label:'McLaren', data:[7.5,7.5,7.5,8.5,7.5,10],borderColor:'rgba(255,128,0,.9)',backgroundColor:'rgba(255,128,0,.08)',pointBackgroundColor:'#ff8000',pointRadius:4,borderWidth:2},
+        {label:'Red Bull',data:[6.5,7,7,8,6.5,6.5], borderColor:'rgba(54,113,198,.9)',backgroundColor:'rgba(54,113,198,.08)',pointBackgroundColor:'#3671c6',pointRadius:4,borderWidth:2}
       ]
     },
-    options: {
-      plugins: {
-        legend: { position: 'bottom', labels: { color: '#e8e8f0', padding: 16, font: { size: 12 } } }
-      },
-      scales: {
-        r: {
-          min: 60, max: 100,
-          grid: { color: '#2a2a3e' },
-          angleLines: { color: '#2a2a3e' },
-          ticks: { display: false },
-          pointLabels: { color: '#7a7a9a', font: { size: 12 } }
-        }
-      }
+    options:{
+      responsive:true,
+      plugins:{legend:{position:'bottom',labels:{color:'#b8b8cc',font:{size:12},padding:14,boxWidth:14}}},
+      scales:{r:{min:0,max:10,ticks:{stepSize:2,color:'#7a7a9a',font:{size:10},backdropColor:'transparent'},grid:{color:'rgba(42,42,62,.8)'},angleLines:{color:'rgba(42,42,62,.8)'},pointLabels:{color:'#e8e8f0',font:{size:12,weight:'700'}}}}
     }
   });
+})();
 </script>
 </body>
 </html>
