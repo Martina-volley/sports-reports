@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 ▏邁阿密大獎賽 賽後深度分析（2026-05-04）</title>
+  <meta name="description" content="F1 2026 邁阿密大獎賽賽後分析：Antonelli 三連勝、Norris 緊咬不放、Verstappen 罰時、Leclerc 後段惡夢，與下一站摩納哥預告。" />
+  <meta name="theme-color" content="#0b0b12" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #0b0b12; --card: #13131e; --card2: #1a1a2a; --border: #2a2a3e;
+      --accent: #e8002d; --yellow: #ffd700; --cyan: #00d4ff; --green: #39d353;
+      --purple: #b44fff; --orange: #ff8c00; --text: #e8e8f0; --muted: #7a7a9a;
+      --mercedes: #27f4d2; --ferrari: #e8002d; --mclaren: #ff8000; --redbull: #3671c6;
+      --williams: #64c4ff; --alpine: #ff87bc; --racingbulls: #6692ff; --astonmartin: #229971;
+      --haas: #b6babd; --sauber: #00e701;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI','PingFang TC','Microsoft JhengHei',sans-serif; line-height: 1.6; }
+    a { color: var(--cyan); text-decoration: none; } a:hover { text-decoration: underline; }
+
+    .back-bar { background: var(--card); border-bottom: 1px solid var(--border); padding: 12px 24px; }
+    .back-link { font-size: 12px; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+    .back-link:hover { color: var(--text); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg,#0b0b12 0%,#200a14 40%,#0b1228 70%,#0b0b12 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 24px 48px; text-align: center; position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content:''; position:absolute; top:-80px; left:50%; transform:translateX(-50%);
+      width:700px; height:400px;
+      background:radial-gradient(ellipse,rgba(232,0,45,.12) 0%,rgba(39,244,210,.08) 40%,transparent 70%);
+      pointer-events:none;
+    }
+    .hero-eyebrow { font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:var(--muted); margin-bottom:10px; position:relative; }
+    .hero-city {
+      font-size: clamp(42px,8vw,72px); font-weight:900; letter-spacing:-2px; line-height:1; margin-bottom:8px;
+      background:linear-gradient(135deg,#ff8c00 0%,#e8002d 50%,#27f4d2 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      position: relative;
+    }
+    .hero-subtitle { font-size:clamp(16px,3vw,22px); color:var(--text); font-weight:300; margin-bottom:24px; opacity:.92; position:relative; }
+    .hero-badges { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-bottom:28px; position:relative; }
+    .badge { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:6px 16px; font-size:12px; font-weight:600; color:var(--muted); }
+    .badge.race-badge { border-color:var(--accent); color:var(--accent); }
+    .badge.merc { border-color:var(--mercedes); color:var(--mercedes); }
+    .badge.cyan { border-color:var(--cyan); color:var(--cyan); }
+    .hero-winner-box { display:inline-block; background:linear-gradient(135deg,rgba(39,244,210,.15),rgba(255,215,0,.08)); border:1px solid rgba(39,244,210,.35); border-radius:14px; padding:18px 32px; position:relative; }
+    .hero-winner-eyebrow { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+    .hero-winner-name { font-size:28px; font-weight:900; color:var(--mercedes); letter-spacing:-1px; }
+    .hero-winner-meta { font-size:13px; color:var(--text); opacity:.85; margin-top:4px; }
+    .hero-updated { font-size:11px; color:var(--muted); margin-top:18px; position:relative; }
+    .next-pill { display:inline-block; margin-top:14px; background:rgba(180,79,255,.12); border:1px solid rgba(180,79,255,.3); color:var(--purple); padding:6px 14px; border-radius:20px; font-size:12px; font-weight:700; letter-spacing:1px; position:relative; }
+
+    .container { max-width:980px; margin:0 auto; padding:0 20px; }
+    .section { padding:40px 0; border-bottom:1px solid var(--border); }
+    .section:last-child { border-bottom:none; }
+    .section-header { display:flex; align-items:baseline; gap:12px; margin-bottom:24px; flex-wrap:wrap; }
+    .section-label { font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:var(--muted); }
+    .section-title { font-size:22px; font-weight:800; color:var(--text); }
+    .section-sub { font-size:13px; color:var(--muted); margin-top:4px; }
+
+    /* RESULTS BAR CHART */
+    .results-list { display:flex; flex-direction:column; gap:8px; }
+    .result-row {
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:12px 16px;
+      display:grid;
+      grid-template-columns: 36px 1fr auto;
+      gap:14px;
+      align-items:center;
+    }
+    .result-row.podium { border-color: rgba(255,215,0,.25); background: linear-gradient(90deg, rgba(255,215,0,.04), var(--card) 30%); }
+    .result-row.p1 { border-color: rgba(39,244,210,.4); }
+    .result-pos { font-size:22px; font-weight:900; color:var(--muted); text-align:center; }
+    .result-pos.gold{color:var(--yellow);} .result-pos.silver{color:#c0c0c0;} .result-pos.bronze{color:#cd7f32;}
+    .result-driver { display:flex; flex-direction:column; gap:6px; min-width:0; }
+    .driver-line { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .driver-name { font-size:14px; font-weight:700; color:var(--text); }
+    .driver-team-tag { font-size:10px; padding:1px 7px; border-radius:4px; font-weight:700; letter-spacing:.5px; }
+    .team-mer { background:rgba(39,244,210,.15); color:var(--mercedes); }
+    .team-fer { background:rgba(232,0,45,.15); color:var(--ferrari); }
+    .team-mcl { background:rgba(255,128,0,.15); color:var(--mclaren); }
+    .team-rbr { background:rgba(54,113,198,.18); color:var(--redbull); }
+    .team-wil { background:rgba(100,196,255,.15); color:var(--williams); }
+    .team-alp { background:rgba(255,135,188,.15); color:var(--alpine); }
+    .team-rb  { background:rgba(102,146,255,.15); color:var(--racingbulls); }
+    .penalty-tag { font-size:10px; padding:1px 7px; border-radius:4px; background:rgba(232,0,45,.18); color:var(--accent); font-weight:700; letter-spacing:.5px; }
+    .gap-bar-bg { height:6px; background:var(--border); border-radius:3px; overflow:hidden; }
+    .gap-bar { height:6px; border-radius:3px; }
+    .result-time { font-size:14px; font-weight:800; color:var(--text); white-space:nowrap; min-width:90px; text-align:right; }
+    .result-time .gap-label { font-size:10px; color:var(--muted); display:block; font-weight:600; letter-spacing:1px; }
+
+    /* TIMELINE */
+    .timeline { position:relative; padding-left:28px; }
+    .timeline::before { content:''; position:absolute; left:9px; top:6px; bottom:6px; width:2px; background:linear-gradient(180deg,var(--accent),var(--purple),var(--cyan)); border-radius:1px; }
+    .timeline-event { position:relative; margin-bottom:22px; }
+    .timeline-event::before {
+      content:''; position:absolute; left:-23px; top:6px; width:14px; height:14px; border-radius:50%;
+      background:var(--card); border:3px solid var(--accent); box-shadow:0 0 0 4px rgba(232,0,45,.15);
+    }
+    .timeline-event.purple::before { border-color:var(--purple); box-shadow:0 0 0 4px rgba(180,79,255,.15); }
+    .timeline-event.cyan::before   { border-color:var(--cyan);   box-shadow:0 0 0 4px rgba(0,212,255,.15); }
+    .timeline-event.green::before  { border-color:var(--green);  box-shadow:0 0 0 4px rgba(57,211,83,.15); }
+    .timeline-event.yellow::before { border-color:var(--yellow); box-shadow:0 0 0 4px rgba(255,215,0,.15); }
+    .timeline-lap { font-size:11px; font-weight:700; letter-spacing:2px; color:var(--muted); text-transform:uppercase; margin-bottom:4px; }
+    .timeline-title { font-size:15px; font-weight:800; color:var(--text); margin-bottom:4px; }
+    .timeline-desc { font-size:13px; color:var(--muted); line-height:1.7; }
+
+    /* STANDINGS */
+    .standings-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    @media(max-width:760px){.standings-grid{grid-template-columns:1fr;}}
+    .standings-list { display:flex; flex-direction:column; gap:8px; }
+    .driver-row {
+      background:var(--card); border:1px solid var(--border); border-radius:10px;
+      padding:10px 14px; display:flex; align-items:center; gap:10px;
+    }
+    .driver-row.leader { border-color: rgba(39,244,210,.35); background: linear-gradient(90deg,rgba(39,244,210,.06),var(--card) 35%); }
+    .driver-pos { font-size:18px; font-weight:900; color:var(--muted); width:24px; text-align:center; flex-shrink:0; }
+    .driver-pos.p1{color:var(--yellow);} .driver-pos.p2{color:#c0c0c0;} .driver-pos.p3{color:#cd7f32;}
+    .driver-bar-wrap { flex:1; min-width:0; }
+    .standings-driver-name { font-size:13px; font-weight:700; }
+    .standings-driver-team { font-size:11px; color:var(--muted); }
+    .standings-bar-bg { height:4px; background:var(--border); border-radius:2px; margin-top:6px; overflow:hidden; }
+    .standings-bar { height:4px; border-radius:2px; }
+    .driver-pts { font-size:18px; font-weight:900; color:var(--text); flex-shrink:0; }
+
+    .chart-wrap { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; }
+    .chart-title { font-size:13px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:2px; margin-bottom:16px; }
+
+    /* QUOTES */
+    .quotes-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+    .quote-card {
+      background: var(--card); border:1px solid var(--border); border-radius:12px;
+      padding:18px 20px; position:relative;
+    }
+    .quote-card.merc { border-color: rgba(39,244,210,.3); }
+    .quote-card.mcl  { border-color: rgba(255,128,0,.3); }
+    .quote-card.rbr  { border-color: rgba(54,113,198,.3); }
+    .quote-card.fer  { border-color: rgba(232,0,45,.3); }
+    .quote-author { font-size:13px; font-weight:800; color:var(--text); margin-bottom:2px; }
+    .quote-author-team { font-size:11px; color:var(--muted); margin-bottom:12px; }
+    .quote-en { font-size:13px; color:var(--text); font-style:italic; line-height:1.6; margin-bottom:8px; opacity:.95; }
+    .quote-zh { font-size:13px; color:var(--muted); line-height:1.7; padding-top:8px; border-top:1px dashed var(--border); }
+
+    /* NEXT TRACK */
+    .next-card {
+      background: linear-gradient(135deg, rgba(180,79,255,.08), rgba(232,0,45,.05));
+      border:1px solid rgba(180,79,255,.3);
+      border-radius:14px; padding:24px;
+    }
+    .next-card-header { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:18px; }
+    .next-track-name { font-size:24px; font-weight:900; color:var(--text); }
+    .next-track-name .flag { margin-right:6px; }
+    .next-meta { display:flex; gap:16px; flex-wrap:wrap; }
+    .next-meta-item { display:flex; flex-direction:column; }
+    .next-meta-lbl { font-size:10px; color:var(--muted); letter-spacing:2px; text-transform:uppercase; }
+    .next-meta-val { font-size:16px; font-weight:800; color:var(--text); }
+    .next-meta-val.purple { color:var(--purple); }
+    .next-features { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:16px; }
+    .feat-card { background:var(--card2); border:1px solid var(--border); border-radius:10px; padding:12px 14px; }
+    .feat-lbl { font-size:10px; color:var(--muted); letter-spacing:2px; text-transform:uppercase; margin-bottom:4px; }
+    .feat-val { font-size:14px; font-weight:700; color:var(--text); }
+
+    .win-pred-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin-top:18px; }
+    .pred-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 14px; text-align:center; }
+    .pred-driver { font-size:13px; font-weight:700; color:var(--text); margin-bottom:4px; }
+    .pred-team { font-size:10px; color:var(--muted); margin-bottom:8px; }
+    .pred-pct { font-size:22px; font-weight:900; }
+    .pred-pct.p1 { color:var(--yellow); }
+    .pred-pct.p2 { color:var(--mercedes); }
+    .pred-pct.p3 { color:var(--mclaren); }
+    .pred-pct.p4 { color:var(--ferrari); }
+
+    /* SOURCES */
+    .sources-list { display:flex; flex-direction:column; gap:8px; }
+    .source-item { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; font-size:12px; color:var(--muted); }
+    .source-item a { font-weight:600; }
+
+    /* MISC */
+    .insight-block { background:var(--card); border-left:3px solid var(--cyan); border-radius:8px; padding:14px 18px; margin-top:14px; }
+    .insight-block strong { color:var(--cyan); }
+    .insight-block.warn { border-left-color:var(--accent); }
+    .insight-block.warn strong { color:var(--accent); }
+    .insight-block.purple-l { border-left-color:var(--purple); }
+    .insight-block.purple-l strong { color:var(--purple); }
+    footer { background:var(--card); border-top:1px solid var(--border); padding:24px; text-align:center; font-size:12px; color:var(--muted); }
+  </style>
+</head>
+<body>
+
+<div class="back-bar">
+  <a class="back-link" href="../../index.html">← 回到報告首頁</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">F1 2026 · ROUND 4 · POST-RACE</div>
+  <div class="hero-city">MIAMI</div>
+  <div class="hero-subtitle">🏆 Antonelli 三連勝 · Norris 緊咬到終點 · Ferrari 罰時惡夢</div>
+  <div class="hero-badges">
+    <span class="badge race-badge">賽後深度分析</span>
+    <span class="badge merc">Mercedes 雙冠王</span>
+    <span class="badge cyan">距下站 20 天</span>
+  </div>
+  <div class="hero-winner-box">
+    <div class="hero-winner-eyebrow">RACE WINNER</div>
+    <div class="hero-winner-name">Kimi Antonelli</div>
+    <div class="hero-winner-meta">Mercedes · 從 Pole 至終點 · 第 3 連勝</div>
+  </div>
+  <div class="hero-updated">更新時間：2026-05-04（週一）</div>
+  <div class="next-pill">下一站 → Round 5 · Monaco GP · 2026-05-24</div>
+</div>
+
+<div class="container">
+
+  <!-- ── KEY TAKEAWAYS ── -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-label">EXECUTIVE BRIEF</div>
+        <div class="section-title">本場三大重點</div>
+      </div>
+    </div>
+    <div class="insight-block">
+      <strong>① Antonelli 締造歷史紀錄。</strong> 19 歲的 Mercedes 新秀贏下個人 F1 第三場分站冠軍，也是賽季開季 4 站第 3 勝；他成為 F1 史上首位「前三場 Pole 全部轉換為勝利」的車手。
+    </div>
+    <div class="insight-block purple-l">
+      <strong>② McLaren 真正的對手浮現。</strong> 賽前看好的 McLaren 雖在 Sprint 取勝、且 Norris 全程緊追到 +3.264 秒，但賽後 Norris 直言「Mercedes 跟我們一樣快」——衛冕王朝顯然遭遇真正威脅。
+    </div>
+    <div class="insight-block warn">
+      <strong>③ Verstappen / Leclerc 雙雙挨罰。</strong> Verstappen 出 pit lane 壓白線吃 5 秒罰時、Leclerc 賽末暴衝出界吃 20 秒罰時。Red Bull 與 Ferrari 同步陷入策略與紀律雙重危機，車隊積分榜也跟著動搖。
+    </div>
+  </div>
+
+  <!-- ── RESULTS CHART ── -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-label">RACE CLASSIFICATION</div>
+        <div class="section-title">完賽成績 Top 10</div>
+        <div class="section-sub">含賽後罰時調整 · 條狀長度代表與冠軍差距</div>
+      </div>
+    </div>
+    <div class="results-list">
+
+      <div class="result-row p1 podium">
+        <div class="result-pos gold">1</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Kimi Antonelli</span>
+            <span class="driver-team-tag team-mer">Mercedes</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:100%; background:var(--mercedes);"></div></div>
+        </div>
+        <div class="result-time">WINNER<span class="gap-label">FROM POLE</span></div>
+      </div>
+
+      <div class="result-row podium">
+        <div class="result-pos silver">2</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Lando Norris</span>
+            <span class="driver-team-tag team-mcl">McLaren</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:97%; background:var(--mclaren);"></div></div>
+        </div>
+        <div class="result-time">+3.264<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row podium">
+        <div class="result-pos bronze">3</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Oscar Piastri</span>
+            <span class="driver-team-tag team-mcl">McLaren</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:71%; background:var(--mclaren);"></div></div>
+        </div>
+        <div class="result-time">+27.092<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-pos">4</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">George Russell</span>
+            <span class="driver-team-tag team-mer">Mercedes</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:53%; background:var(--mercedes);"></div></div>
+        </div>
+        <div class="result-time">+43.051<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-pos">5</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Max Verstappen</span>
+            <span class="driver-team-tag team-rbr">Red Bull</span>
+            <span class="penalty-tag">+5s 罰時</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:47%; background:var(--redbull);"></div></div>
+        </div>
+        <div class="result-time">+48.949<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-pos">6</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Lewis Hamilton</span>
+            <span class="driver-team-tag team-fer">Ferrari</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:42%; background:var(--ferrari);"></div></div>
+        </div>
+        <div class="result-time">+53.753<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-pos">7</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Franco Colapinto</span>
+            <span class="driver-team-tag team-alp">Alpine</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:33%; background:var(--alpine);"></div></div>
+        </div>
+        <div class="result-time">+61.871<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-pos">8</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Charles Leclerc</span>
+            <span class="driver-team-tag team-fer">Ferrari</span>
+            <span class="penalty-tag">+20s 罰時</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:31%; background:var(--ferrari);"></div></div>
+        </div>
+        <div class="result-time">+64.245<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-pos">9</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Carlos Sainz</span>
+            <span class="driver-team-tag team-wil">Williams</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:13%; background:var(--williams);"></div></div>
+        </div>
+        <div class="result-time">+82.072<span class="gap-label">SECONDS</span></div>
+      </div>
+
+      <div class="result-row">
+        <div class="result-pos">10</div>
+        <div class="result-driver">
+          <div class="driver-line">
+            <span class="driver-name">Alex Albon</span>
+            <span class="driver-team-tag team-wil">Williams</span>
+          </div>
+          <div class="gap-bar-bg"><div class="gap-bar" style="width:5%; background:var(--williams);"></div></div>
+        </div>
+        <div class="result-time">+90.972<span class="gap-label">SECONDS</span></div>
+      </div>
+
+    </div>
+    <div class="insight-block">
+      <strong>策略亮點：</strong> Mercedes 以「大幅度 undercut（提前進站）」逆轉了賽中 Antonelli 與 Leclerc 之間的領先權；Antonelli 自承「想超越 Charles 時能量管理出了一點小錯，丟掉了位置給 Lando」，但仍憑進站時機把勝利穩穩拿下。
+    </div>
+  </div>
+
+  <!-- ── KEY EVENTS TIMELINE ── -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-label">RACE TIMELINE</div>
+        <div class="section-title">關鍵事件時間軸</div>
+        <div class="section-sub">本場 Safety Car、碰撞、罰時與策略決勝點</div>
+      </div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-event yellow">
+        <div class="timeline-lap">LAP 1 · Turn 1</div>
+        <div class="timeline-title">三車混戰：Antonelli vs Verstappen vs Leclerc</div>
+        <div class="timeline-desc">Antonelli 從 Pole 起跑後遭遇兩側夾擊，Verstappen 與 Mercedes 同時在 Turn 1 嚴重鎖死，Leclerc 趁亂搶進領先。</div>
+      </div>
+
+      <div class="timeline-event">
+        <div class="timeline-lap">LAP 1 · Turn 2</div>
+        <div class="timeline-title">Verstappen 360 度迴旋</div>
+        <div class="timeline-desc">Red Bull 王牌試圖救車，車身完整旋轉一圈後重回車陣後段。Hamilton 也在亂局中遭 Colapinto 撞擊。</div>
+      </div>
+
+      <div class="timeline-event green">
+        <div class="timeline-lap">EARLY LAPS</div>
+        <div class="timeline-title">Safety Car：Hadjar 與 Gasly 雙雙撞車</div>
+        <div class="timeline-desc">兩起獨立事故導致開賽不久即出 SC，車隊策略表全面重排，為後段戰術打下伏筆。</div>
+      </div>
+
+      <div class="timeline-event purple">
+        <div class="timeline-lap">MID-RACE</div>
+        <div class="timeline-title">Mercedes 大膽 Undercut</div>
+        <div class="timeline-desc">Antonelli 提前進站、利用新胎暖胎優勢殺回領先；同時 Norris、Piastri、Verstappen 都曾短暫率隊，領先車手換手多次。</div>
+      </div>
+
+      <div class="timeline-event warn">
+        <div class="timeline-lap">PIT EXIT</div>
+        <div class="timeline-title">Verstappen 5 秒罰時：壓 Pit Exit 白線</div>
+        <div class="timeline-desc">Stewards 判定其進站結束時越過 pit exit 白線，5 秒罰時讓他從第 4 直接掉到第 5。</div>
+      </div>
+
+      <div class="timeline-event warn">
+        <div class="timeline-lap">FINAL LAPS</div>
+        <div class="timeline-title">Leclerc 賽末惡夢：吃下 20 秒罰時</div>
+        <div class="timeline-desc">Ferrari 王牌在最後階段失誤、被 Stewards 處以重罰，從車陣中段滑落至 P8，原本可保第 5 的位置直接付諸流水。</div>
+      </div>
+
+      <div class="timeline-event cyan">
+        <div class="timeline-lap">FINAL LAP</div>
+        <div class="timeline-title">Antonelli vs Norris 終點對決</div>
+        <div class="timeline-desc">兩人甩開後車陣 25 秒以上，最後 5 圈 Norris 持續逼近，但 Mercedes 的能量管理與 tyre management 守住 3.264 秒勝出。</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STANDINGS ── -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-label">CHAMPIONSHIP STANDINGS</div>
+        <div class="section-title">2026 賽季積分榜更新</div>
+        <div class="section-sub">經過 4 站正賽（含本站邁阿密）</div>
+      </div>
+    </div>
+    <div class="standings-grid">
+      <!-- Drivers Top 8 -->
+      <div>
+        <div class="chart-title">🏎 車手榜 Top 8</div>
+        <div class="standings-list">
+          <div class="driver-row leader">
+            <div class="driver-pos p1">1</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">Kimi Antonelli</div>
+              <div class="standings-driver-team">Mercedes</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:100%; background:var(--mercedes);"></div></div>
+            </div>
+            <div class="driver-pts">100</div>
+          </div>
+          <div class="driver-row">
+            <div class="driver-pos p2">2</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">George Russell</div>
+              <div class="standings-driver-team">Mercedes</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:80%; background:var(--mercedes);"></div></div>
+            </div>
+            <div class="driver-pts">80</div>
+          </div>
+          <div class="driver-row">
+            <div class="driver-pos p3">3</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">Charles Leclerc</div>
+              <div class="standings-driver-team">Ferrari</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:62%; background:var(--ferrari);"></div></div>
+            </div>
+            <div class="driver-pts">62</div>
+          </div>
+          <div class="driver-row">
+            <div class="driver-pos">4</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">Lando Norris</div>
+              <div class="standings-driver-team">McLaren</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:58%; background:var(--mclaren);"></div></div>
+            </div>
+            <div class="driver-pts">58</div>
+          </div>
+          <div class="driver-row">
+            <div class="driver-pos">5</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">Oscar Piastri</div>
+              <div class="standings-driver-team">McLaren</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:48%; background:var(--mclaren);"></div></div>
+            </div>
+            <div class="driver-pts">48</div>
+          </div>
+          <div class="driver-row">
+            <div class="driver-pos">6</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">Lewis Hamilton</div>
+              <div class="standings-driver-team">Ferrari</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:38%; background:var(--ferrari);"></div></div>
+            </div>
+            <div class="driver-pts">38</div>
+          </div>
+          <div class="driver-row">
+            <div class="driver-pos">7</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">Max Verstappen</div>
+              <div class="standings-driver-team">Red Bull</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:24%; background:var(--redbull);"></div></div>
+            </div>
+            <div class="driver-pts">24</div>
+          </div>
+          <div class="driver-row">
+            <div class="driver-pos">8</div>
+            <div class="driver-bar-wrap">
+              <div class="standings-driver-name">Isack Hadjar</div>
+              <div class="standings-driver-team">Racing Bulls</div>
+              <div class="standings-bar-bg"><div class="standings-bar" style="width:14%; background:var(--racingbulls);"></div></div>
+            </div>
+            <div class="driver-pts">14</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Constructors Pie -->
+      <div>
+        <div class="chart-title">🏁 車隊榜 Top 5</div>
+        <div class="chart-wrap">
+          <canvas id="teamChart" height="240"></canvas>
+        </div>
+        <div class="insight-block">
+          <strong>Mercedes 領先 Ferrari 達 68 分，</strong>McLaren 雖擁 94 分但與第 2 仍有差距。Red Bull 開季慘澹，僅排在第 4 之後，正積極尋找升級方向。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── DRIVER QUOTES ── -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-label">PADDOCK VOICES</div>
+        <div class="section-title">賽後車手評語精選</div>
+      </div>
+    </div>
+    <div class="quotes-grid">
+      <div class="quote-card merc">
+        <div class="quote-author">Kimi Antonelli</div>
+        <div class="quote-author-team">🏆 Race Winner · Mercedes</div>
+        <div class="quote-en">"The pace was strong. I was able to stay close. The team did a great strategy. We did a massive undercut and we managed to bring it home, even though it was not easy."</div>
+        <div class="quote-zh">「賽車節奏很強，我能緊跟在前面。車隊策略非常出色，我們做了一個很大的 undercut，最後把勝利帶回來——雖然過程一點都不輕鬆。」</div>
+      </div>
+
+      <div class="quote-card mcl">
+        <div class="quote-author">Lando Norris</div>
+        <div class="quote-author-team">🥈 P2 · McLaren</div>
+        <div class="quote-en">"Mercedes are just as quick as us. When you look at the GPS from Ferrari and Red Bull, there are many places they are quicker than us. So we just did a very good job yesterday and in the Sprint to win."</div>
+        <div class="quote-zh">「Mercedes 跟我們一樣快。看 Ferrari 和 Red Bull 的 GPS 數據，他們在許多路段都比我們快。所以我們昨天和 Sprint 能贏，真的是把每件事都做對了。」</div>
+      </div>
+
+      <div class="quote-card merc">
+        <div class="quote-author">Kimi Antonelli</div>
+        <div class="quote-author-team">On Confidence · Mercedes</div>
+        <div class="quote-en">"I feel much more comfortable in the car, much more in control as well. And I think we're just going to keep trying our best."</div>
+        <div class="quote-zh">「我在車上感覺更舒服了，掌控感也更強。我們會繼續全力以赴。」</div>
+      </div>
+
+      <div class="quote-card mcl">
+        <div class="quote-author">McLaren Camp</div>
+        <div class="quote-author-team">Reality Check · Sky Sports</div>
+        <div class="quote-en">"Norris admits to McLaren 'reality check' as Verstappen hails 'incredible turnaround' at Red Bull."</div>
+        <div class="quote-zh">Norris 承認 McLaren 受到「現實打擊」；Verstappen 則稱 Red Bull「轉變令人難以置信」——本站之後雙陣營都有戰略反思空間。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NEXT TRACK PREVIEW ── -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-label">NEXT UP · ROUND 5</div>
+        <div class="section-title">下一站預告 · 摩納哥大獎賽</div>
+        <div class="section-sub">皇冠寶石、街道殺手、超車禁區</div>
+      </div>
+    </div>
+    <div class="next-card">
+      <div class="next-card-header">
+        <div class="next-track-name"><span class="flag">🇲🇨</span>Monaco GP</div>
+        <div class="next-meta">
+          <div class="next-meta-item"><div class="next-meta-lbl">Race Day</div><div class="next-meta-val">2026-05-24</div></div>
+          <div class="next-meta-item"><div class="next-meta-lbl">Days to Go</div><div class="next-meta-val purple">20 天</div></div>
+          <div class="next-meta-item"><div class="next-meta-lbl">Format</div><div class="next-meta-val">標準週末</div></div>
+        </div>
+      </div>
+
+      <div class="next-features">
+        <div class="feat-card"><div class="feat-lbl">Track</div><div class="feat-val">Circuit de Monaco</div></div>
+        <div class="feat-card"><div class="feat-lbl">Length</div><div class="feat-val">3.337 km · 78 圈</div></div>
+        <div class="feat-card"><div class="feat-lbl">Character</div><div class="feat-val">街道賽 / 低速彎極多</div></div>
+        <div class="feat-card"><div class="feat-lbl">Key Skill</div><div class="feat-val">排位賽決勝</div></div>
+      </div>
+
+      <div class="insight-block purple-l" style="margin-top:18px;">
+        <strong>策略觀察重點：</strong> 摩納哥幾乎沒有超車空間，<strong>排位賽前 3 名通常等於最終獎台</strong>。Mercedes 若能延續本季的單圈速度優勢，Antonelli 的衛冕氣勢將進一步擴大；McLaren 的低速彎下壓力是優勢項目，可望主場宿命般迎來反攻。Ferrari 與 Red Bull 此刻最需要的是一場乾淨無罰時的週末。
+      </div>
+
+      <div class="chart-title" style="margin-top:24px;">🎯 摩納哥勝率預測（綜合單圈速度、街道適應性、近期狀態）</div>
+      <div class="win-pred-grid">
+        <div class="pred-card">
+          <div class="pred-driver">L. Norris</div>
+          <div class="pred-team">McLaren</div>
+          <div class="pred-pct p3">28%</div>
+        </div>
+        <div class="pred-card">
+          <div class="pred-driver">K. Antonelli</div>
+          <div class="pred-team">Mercedes</div>
+          <div class="pred-pct p2">26%</div>
+        </div>
+        <div class="pred-card">
+          <div class="pred-driver">O. Piastri</div>
+          <div class="pred-team">McLaren</div>
+          <div class="pred-pct p3">18%</div>
+        </div>
+        <div class="pred-card">
+          <div class="pred-driver">C. Leclerc</div>
+          <div class="pred-team">Ferrari · 主場</div>
+          <div class="pred-pct p4">14%</div>
+        </div>
+        <div class="pred-card">
+          <div class="pred-driver">G. Russell</div>
+          <div class="pred-team">Mercedes</div>
+          <div class="pred-pct p2">8%</div>
+        </div>
+        <div class="pred-card">
+          <div class="pred-driver">其他</div>
+          <div class="pred-team">含 Verstappen / Hamilton</div>
+          <div class="pred-pct">6%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SOURCES ── -->
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-label">SOURCES</div>
+        <div class="section-title">資料來源</div>
+      </div>
+    </div>
+    <div class="sources-list">
+      <div class="source-item">🏆 <a href="https://www.formula1.com/en/latest/article/antonelli-wins-thrilling-miami-grand-prix-from-norris-and-piastri.2bxaKuYKJjxlXx8KOJf7lc" target="_blank">Formula1.com — Antonelli wins thrilling Miami Grand Prix from Norris and Piastri</a></div>
+      <div class="source-item">📊 <a href="https://www.formula1.com/en/results/2026/races/1284/miami/race-result" target="_blank">Formula1.com — Miami GP Race Result（官方 Top 20）</a></div>
+      <div class="source-item">⚖️ <a href="https://www.formula1.com/en/latest/article/verstappen-hit-with-penalty-for-pit-exit-breach-during-miami-grand-prix.y0KVGAbtL5liHWc02fZMB" target="_blank">Formula1.com — Verstappen hit with penalty for pit exit breach</a></div>
+      <div class="source-item">⚖️ <a href="https://www.formula1.com/en/latest/article/leclerc-penalised-by-miami-grand-prix-stewards-amid-multiple-post-race-investigations.2WRnpMfi71Yt8qT07r1eK0" target="_blank">Formula1.com — Leclerc penalised by Miami stewards</a></div>
+      <div class="source-item">📰 <a href="https://www.skysports.com/f1/news/12433/13539714/miami-gp-kimi-antonelli-holds-off-lando-norris-to-claim-third-successive-win-and-extend-championship-lead" target="_blank">Sky Sports — Antonelli holds off Norris to claim third successive win</a></div>
+      <div class="source-item">📈 <a href="https://racingnews365.com/2026-f1-championship-standings-after-miami-grand-prix" target="_blank">RacingNews365 — Adjusted 2026 F1 standings after Miami GP</a></div>
+      <div class="source-item">📈 <a href="https://www.si.com/onsi/f1/news/f1-standings-after-the-2026-miami-grand-prix" target="_blank">SI — F1 Standings After the 2026 Miami GP</a></div>
+      <div class="source-item">🗒 <a href="https://www.formula1.com/en/latest/article/antonelli-overjoyed-with-record-breaking-miami-win-but-knows-the-road-is-still-long-in-2026-title-race.1Bn4oOCY3QYSgHalec3riz" target="_blank">Formula1.com — Antonelli overjoyed with record-breaking Miami win</a></div>
+      <div class="source-item">🏁 <a href="https://www.formula1.com/en/latest/article/norris-beats-piastri-and-leclerc-to-victory-in-miami-sprint.4H4WI3lnIs7jOZ8lSBIp6X" target="_blank">Formula1.com — Norris beats Piastri and Leclerc to Sprint victory</a></div>
+      <div class="source-item">🏎 <a href="https://www.motorsport.com/f1/news/all-results-and-standings-from-the-2026-miami-f1-grand-prix/10817854/" target="_blank">Motorsport.com — All results and standings from 2026 Miami GP</a></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  運動賽事分析頻道 · F1 2026 Round 4 邁阿密 賽後分析<br>
+  本報告勝率預測為綜合因素分析，僅供參考，不代表任何博彩賠率或投注建議。
+</footer>
+
+<script>
+  // 車隊積分圓餅圖
+  const ctx = document.getElementById('teamChart');
+  if (ctx) {
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Mercedes', 'McLaren', 'Ferrari', 'Red Bull', 'Williams'],
+        datasets: [{
+          data: [180, 106, 100, 38, 18],
+          backgroundColor: ['#27f4d2', '#ff8000', '#e8002d', '#3671c6', '#64c4ff'],
+          borderColor: '#13131e',
+          borderWidth: 3,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: { color: '#e8e8f0', font: { size: 12 }, padding: 12 }
+          },
+          tooltip: {
+            callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed} pts` }
+          }
+        }
+      }
+    });
+  }
+</script>
+</body>
+</html>
