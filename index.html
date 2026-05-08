@@ -43,7 +43,7 @@
   <span class="ticker__live">● LIVE</span>
   <span><b data-bind="totalCount">--</b> reports archived</span>
   <span class="ticker__sep">|</span>
-  <span><b data-bind="f1Count">--</b> F1 · <b data-bind="baseballCount">--</b> baseball</span>
+  <span><b data-bind="f1Count">--</b> F1 | <b data-bind="worldcupCount">--</b> World Cup | <b data-bind="baseballCount">--</b> baseball</span>
   <span class="ticker__sep">|</span>
   <span>last update <b data-bind="latestDate">--</b></span>
   <span class="ticker__sep">|</span>
@@ -54,7 +54,8 @@
 <section class="scoreboard" aria-label="Site Stats">
   <div class="scoreboard__cell"><span class="scoreboard__label">總報告數</span><span class="scoreboard__value" data-bind="totalCount">--</span></div>
   <div class="scoreboard__cell"><span class="scoreboard__label">F1 報告</span><span class="scoreboard__value" data-bind="f1Count">--</span></div>
-  <div class="scoreboard__cell"><span class="scoreboard__label">棒球報告</span><span class="scoreboard__value" data-bind="baseballCount">--</span></div>
+  <div class="scoreboard__cell"><span class="scoreboard__label">World Cup</span><span class="scoreboard__value" data-bind="worldcupCount">--</span></div>
+  <div class="scoreboard__cell"><span class="scoreboard__label">Baseball</span><span class="scoreboard__value" data-bind="baseballCount">--</span></div>
   <div class="scoreboard__cell"><span class="scoreboard__label">最近更新</span><span class="scoreboard__value scoreboard__value--small" data-bind="latestDate">--</span></div>
 </section>
 
@@ -74,6 +75,7 @@
     <div class="filter__bar" id="filter-bar">
       <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
       <button class="filter-btn" type="button" data-filter="f1">F1</button>
+      <button class="filter-btn" type="button" data-filter="worldcup">WORLD CUP</button>
       <button class="filter-btn" type="button" data-filter="baseball">棒球</button>
       <button class="filter-btn" type="button" data-filter="preview">預告</button>
       <button class="filter-btn" type="button" data-filter="race">賽後</button>
@@ -105,6 +107,21 @@
 
 <!-- Build-time injected: keep the placeholder name unchanged (scripts/build-site.mjs) -->
 <script id="reports-data" type="application/json">[
+  {
+    "href": "worldcup/2026/world-cup-2026-preview.html",
+    "league": "worldcup",
+    "type": "briefing",
+    "date": "2026-05-08",
+    "title": "2026 世界盃前導新聞",
+    "kicker": "North America 2026",
+    "summary": "48 隊、104 場、16 座主辦城市，六月開踢前先抓住本屆世界盃最重要的看點。",
+    "secondary": "從賽制擴編、三國主辦到決賽落點，這篇先把追賽框架搭好。",
+    "seasonLabel": "WORLD CUP 2026 · 前導特輯",
+    "tagLabel": "前導新聞",
+    "accent": "briefing",
+    "featured": false,
+    "latest": false
+  },
   {
     "href": "f1/2026/canada-preview.html",
     "league": "f1",

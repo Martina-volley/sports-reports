@@ -265,6 +265,8 @@ a { color: inherit; }
 }
 .league-chip[data-league="f1"]    { box-shadow: 4px 4px 0 var(--orange); }
 .league-chip[data-league="f1"]    .league-chip__count { color: var(--orange); }
+.league-chip[data-league="worldcup"] { box-shadow: 4px 4px 0 var(--article-red, #c13a2a); }
+.league-chip[data-league="worldcup"] .league-chip__count { color: var(--article-red, #c13a2a); }
 .league-chip[data-league="mlb"]   { box-shadow: 4px 4px 0 var(--navy); }
 .league-chip[data-league="mlb"]   .league-chip__count { color: var(--navy); }
 .league-chip[data-league="npb"]   { box-shadow: 4px 4px 0 var(--red); }

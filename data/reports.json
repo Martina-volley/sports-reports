@@ -1,5 +1,20 @@
 [
   {
+    "href": "worldcup/2026/world-cup-2026-preview.html",
+    "league": "worldcup",
+    "type": "briefing",
+    "date": "2026-05-08",
+    "title": "2026 世界盃前導新聞",
+    "kicker": "North America 2026",
+    "summary": "48 隊、104 場、16 座主辦城市，六月開踢前先抓住本屆世界盃最重要的看點。",
+    "secondary": "從賽制擴編、三國主辦到決賽落點，這篇先把追賽框架搭好。",
+    "seasonLabel": "WORLD CUP 2026 · 前導特輯",
+    "tagLabel": "前導新聞",
+    "accent": "briefing",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/canada-preview.html",
     "league": "f1",
     "type": "preview",
