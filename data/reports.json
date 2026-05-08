@@ -29,7 +29,9 @@
     "tagLabel": "賽後分析",
     "accent": "race",
     "featured": false,
-    "latest": false
+    "latest": false,
+    "image": "assets/photos/miami-race-action.jpg",
+    "imageAlt": "賽車在看台前高速競逐的動態照片"
   },
   {
     "href": "f1/2026/miami-preview.html",
@@ -44,7 +46,9 @@
     "tagLabel": "預告報告",
     "accent": "preview",
     "featured": false,
-    "latest": false
+    "latest": false,
+    "image": "assets/photos/miami-preview-grandstand.jpg",
+    "imageAlt": "白天賽道與看台場景照片"
   },
   {
     "href": "f1/2026/offweek-2026-04-20.html",
@@ -59,6 +63,8 @@
     "tagLabel": "新聞摘要",
     "accent": "briefing",
     "featured": false,
-    "latest": false
+    "latest": false,
+    "image": "assets/photos/offweek-pit-lane.jpg",
+    "imageAlt": "停在 pit lane 的賽車照片"
   }
 ]
