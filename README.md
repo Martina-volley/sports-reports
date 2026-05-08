@@ -81,3 +81,35 @@ repo 已包含 GitHub Actions workflow：
 ```bash
 node scripts/build-site.mjs
 ```
+
+## 自動發布入口
+
+Claude 任務只需要把兩個檔案放進 `new_incoming/`：
+
+- `{slug}-{kind}.html`
+- `{slug}-{kind}.json`
+
+接著執行：
+
+```bash
+node scripts/publish-incoming.mjs
+```
+
+這個腳本會自動：
+
+1. 驗證 `html + json` 配對
+2. 把 HTML 複製到 `json.href` 指定的正式位置
+3. upsert `data/reports.json`
+4. 重建 `index.html`
+5. 清掉已處理的 `new_incoming` 檔案
+
+如果要連同 git 一起做：
+
+```bash
+node scripts/publish-incoming.mjs --commit --push
+```
+
+注意：
+
+- `--commit --push` 只會提交本次發布涉及的檔案
+- 如果 working tree 有其他無關修改，腳本會拒絕 commit，避免把設計中的變更一起送出

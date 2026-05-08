@@ -10,7 +10,7 @@ const templatePath = path.join(rootDir, "src", "index.template.html");
 const dataPath = path.join(rootDir, "data", "reports.json");
 const outputPath = path.join(rootDir, "index.html");
 
-function validateReport(report, index) {
+export function validateReport(report, index) {
   const required = ["href", "league", "type", "date", "title", "summary", "seasonLabel"];
 
   for (const key of required) {
@@ -24,7 +24,7 @@ function validateReport(report, index) {
   }
 }
 
-async function build() {
+export async function buildSite() {
   const [template, dataRaw] = await Promise.all([
     readFile(templatePath, "utf8"),
     readFile(dataPath, "utf8")
@@ -44,7 +44,11 @@ async function build() {
   console.log(`Built ${path.relative(rootDir, outputPath)} with ${normalized.length} reports.`);
 }
 
-build().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+const isEntrypoint = process.argv[1] && path.resolve(process.argv[1]) === __filename;
+
+if (isEntrypoint) {
+  buildSite().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
