@@ -72,6 +72,7 @@
     const accentMap = { f1: 'F1', baseball: 'BASEBALL', mlb: 'MLB', npb: 'NPB', cpbl: 'CPBL' };
     const leagueLabel = accentMap[r.league] || (r.league || '').toUpperCase();
     const seasonLabel = r.seasonLabel || '';
+    const featuredHref = escapeHtml(r.href || '#');
 
     const photo = renderPhoto(r, 'rookie portrait', 'photo--tall');
 
@@ -87,28 +88,30 @@
     ].filter(c => c.k === 'all' || c.n > 0 || c.k === 'f1');
 
     return `
-      <div class="rookie">
-        <div class="rookie__inner">
-          <div class="rookie__top">
-            <span>${escapeHtml(leagueLabel)} · ${escapeHtml(r.tagLabel || r.type || '')}</span>
-            <span class="rookie__round">${escapeHtml(seasonLabel || fmtDate(r.date))}</span>
+      <a class="rookie-link" href="${featuredHref}" aria-label="${escapeHtml(r.title || 'Featured report')}">
+        <div class="rookie">
+          <div class="rookie__inner">
+            <div class="rookie__top">
+              <span>${escapeHtml(leagueLabel)} · ${escapeHtml(r.tagLabel || r.type || '')}</span>
+              <span class="rookie__round">${escapeHtml(seasonLabel || fmtDate(r.date))}</span>
+            </div>
+            ${photo}
+            <div class="rookie__bottom">
+              <div class="rookie__title">${escapeHtml(r.title || '')}</div>
+              ${r.kicker ? `<div class="rookie__sub">${escapeHtml(r.kicker)}</div>` : ''}
+              ${cells.length ? `<div class="rookie__stats">${
+                cells.map(([k, v]) => `
+                  <div class="rookie__stat">
+                    <span class="rookie__stat-k">${escapeHtml(k)}</span>
+                    <span class="rookie__stat-v">${escapeHtml(v)}</span>
+                  </div>
+                `).join('')
+              }</div>` : ''}
+            </div>
           </div>
-          ${photo}
-          <div class="rookie__bottom">
-            <div class="rookie__title">${escapeHtml(r.title || '')}</div>
-            ${r.kicker ? `<div class="rookie__sub">${escapeHtml(r.kicker)}</div>` : ''}
-            ${cells.length ? `<div class="rookie__stats">${
-              cells.map(([k, v]) => `
-                <div class="rookie__stat">
-                  <span class="rookie__stat-k">${escapeHtml(k)}</span>
-                  <span class="rookie__stat-v">${escapeHtml(v)}</span>
-                </div>
-              `).join('')
-            }</div>` : ''}
-          </div>
+          <div class="rookie__foil">FEAT<br/>URED</div>
         </div>
-        <div class="rookie__foil">FEAT<br/>URED</div>
-      </div>
+      </a>
       <div class="featured__copy">
         <div class="featured__eyebrow">★ Featured · ${escapeHtml(fmtFullDate(r.date))}</div>
         <p class="featured__lead">
