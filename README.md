@@ -75,6 +75,15 @@ repo 已包含 GitHub Actions workflow：
 - `accent`
 - `featured`
 - `latest`
+- `image`
+- `imageAlt`
+
+## 額外資料
+
+- `data/schedule.json`
+  - 提供首頁的 schedule strip
+  - 若檔案存在，前端會自動讀取並顯示
+  - 若檔案不存在，首頁會自動隱藏該區塊
 
 ## 本機建置
 

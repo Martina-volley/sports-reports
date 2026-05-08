@@ -3,127 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>運動賽事分析頻道 | Reports Archive</title>
-  <meta name="description" content="F1、MLB、NPB、CPBL 報告存檔，整理成可持續更新的靜態發布站。" />
-  <meta name="theme-color" content="#101418" />
+  <title>運動賽事分析頻道 | The Sports·Report</title>
+  <meta name="description" content="F1、MLB、NPB、CPBL 報告存檔。" />
+  <meta name="theme-color" content="#1a1410" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="運動賽事分析頻道 | Reports Archive" />
-  <meta property="og:description" content="聚焦 F1 與棒球分析報告，首頁由資料檔自動生成，支援持續發布。" />
+  <meta property="og:title" content="運動賽事分析頻道 | The Sports·Report" />
+  <meta property="og:description" content="F1、棒球、台灣視角賽事分析。" />
   <meta property="og:image" content="assets/site-preview.svg" />
   <meta property="og:locale" content="zh_TW" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="運動賽事分析頻道 | Reports Archive" />
-  <meta name="twitter:description" content="聚焦 F1 與棒球分析報告，首頁由資料檔自動生成，支援持續發布。" />
-  <meta name="twitter:image" content="assets/site-preview.svg" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@500;700&family=Bevan&family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
-  <div class="page-noise" aria-hidden="true"></div>
 
-  <header class="hero">
-    <div class="hero__eyebrow">Sports Reports Archive</div>
-    <div class="hero__layout">
-      <div class="hero__copy">
-        <p class="hero__lead">F1、棒球、台灣視角賽事分析。</p>
-        <h1 class="hero__title">把報告整理成<br />能持續更新與自動發布的主站。</h1>
-        <p class="hero__body">
-          首頁卡片、統計數字與最新內容由資料檔產生，不需要再手動改整片版面。
-        </p>
-        <div class="hero__chips">
-          <span>Static Site</span>
-          <span>GitHub Pages</span>
-          <span>Data-driven Index</span>
-        </div>
-      </div>
-      <aside class="hero__spotlight" id="featured-report">
-        <div class="spotlight__label">Featured Report</div>
-        <div class="spotlight__loading">載入中...</div>
-      </aside>
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead__meta">
+    <span>VOL. XXIV · NO. <span data-bind="issueNo">04</span></span>
+    <span>運動賽事分析頻道 · 報告存檔</span>
+    <span data-bind="todayDate">2026 · 05 · 04</span>
+  </div>
+  <div class="masthead__title">
+    <div class="wordmark">
+      The&nbsp;Sports<span class="wordmark__dot">·</span>Report
     </div>
-  </header>
+    <div class="kicker">collector's series · iss. <span data-bind="issueNo">24</span></div>
+  </div>
+  <div class="masthead__leagues">
+    <span>F1 · MLB · NPB · CPBL</span>
+    <span>SET 2026 · <span data-bind="totalCount">--</span> OF 99</span>
+  </div>
+</header>
 
-  <main class="shell">
-    <section class="stats" aria-label="Site Stats">
-      <article class="stat-card">
-        <span class="stat-card__label">總報告數</span>
-        <strong class="stat-card__value" id="total-count">0</strong>
-      </article>
-      <article class="stat-card">
-        <span class="stat-card__label">F1 報告</span>
-        <strong class="stat-card__value" id="f1-count">0</strong>
-      </article>
-      <article class="stat-card">
-        <span class="stat-card__label">棒球報告</span>
-        <strong class="stat-card__value" id="baseball-count">0</strong>
-      </article>
-      <article class="stat-card">
-        <span class="stat-card__label">最近更新</span>
-        <strong class="stat-card__value stat-card__value--small" id="latest-date">--</strong>
-      </article>
-    </section>
+<!-- TICKER -->
+<div class="ticker" id="ticker">
+  <span class="ticker__live">● LIVE</span>
+  <span><b data-bind="totalCount">--</b> reports archived</span>
+  <span class="ticker__sep">|</span>
+  <span><b data-bind="f1Count">--</b> F1 · <b data-bind="baseballCount">--</b> baseball</span>
+  <span class="ticker__sep">|</span>
+  <span>last update <b data-bind="latestDate">--</b></span>
+  <span class="ticker__sep">|</span>
+  <span data-slot="nextEvent" hidden>next event <b data-bind="nextEvent">--</b></span>
+</div>
 
-    <section class="section">
-      <div class="section__intro">
-        <div>
-          <p class="section__eyebrow">Browse Reports</p>
-          <h2 class="section__title">用篩選快速切到你要的賽事類型</h2>
-        </div>
-        <p class="section__desc">
-          首頁內容由 `data/reports.json` 控制，版面只負責呈現，不再和資料綁死在一起。
-        </p>
-      </div>
+<!-- SCOREBOARD STATS -->
+<section class="scoreboard" aria-label="Site Stats">
+  <div class="scoreboard__cell"><span class="scoreboard__label">總報告數</span><span class="scoreboard__value" data-bind="totalCount">--</span></div>
+  <div class="scoreboard__cell"><span class="scoreboard__label">F1 報告</span><span class="scoreboard__value" data-bind="f1Count">--</span></div>
+  <div class="scoreboard__cell"><span class="scoreboard__label">棒球報告</span><span class="scoreboard__value" data-bind="baseballCount">--</span></div>
+  <div class="scoreboard__cell"><span class="scoreboard__label">最近更新</span><span class="scoreboard__value scoreboard__value--small" data-bind="latestDate">--</span></div>
+</section>
 
-      <div class="filter-bar" id="filter-bar">
-        <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
-        <button class="filter-btn" type="button" data-filter="f1">F1</button>
-        <button class="filter-btn" type="button" data-filter="baseball">棒球</button>
-        <button class="filter-btn" type="button" data-filter="preview">預告</button>
-        <button class="filter-btn" type="button" data-filter="race">賽後</button>
-        <button class="filter-btn" type="button" data-filter="briefing">摘要</button>
-      </div>
+<main class="shell">
 
-      <div class="report-grid" id="report-grid"></div>
-      <div class="empty-state" id="empty-state" hidden>目前沒有符合條件的報告。</div>
-    </section>
+  <!-- FEATURED ROOKIE CARD + COPY -->
+  <section class="featured" id="featured" aria-label="Featured Report">
+    <div class="featured__loading">載入中...</div>
+  </section>
 
-    <section class="section">
-      <div class="section__intro">
-        <div>
-          <p class="section__eyebrow">Publishing Flow</p>
-          <h2 class="section__title">之後的維護流程</h2>
-        </div>
-        <p class="section__desc">
-          加一篇報告時只需要補內容檔和資料檔，首頁與部署流程會一起跟上。
-        </p>
-      </div>
+  <!-- LEAGUE NAV / FILTER -->
+  <section class="filter" aria-label="Browse Reports">
+    <div class="filter__head">
+      <h2>本期報告</h2>
+      <span class="filter__hint">collect 'em all</span>
+    </div>
+    <div class="filter__bar" id="filter-bar">
+      <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
+      <button class="filter-btn" type="button" data-filter="f1">F1</button>
+      <button class="filter-btn" type="button" data-filter="baseball">棒球</button>
+      <button class="filter-btn" type="button" data-filter="preview">預告</button>
+      <button class="filter-btn" type="button" data-filter="race">賽後</button>
+      <button class="filter-btn" type="button" data-filter="briefing">摘要</button>
+    </div>
+  </section>
 
-      <div class="ops-grid">
-        <article class="ops-card">
-          <span class="ops-card__step">01</span>
-          <h3>新增報告 HTML</h3>
-          <p>把新內容放到對應目錄，例如 `f1/2026/` 或 `baseball/2026/`。</p>
-        </article>
-        <article class="ops-card">
-          <span class="ops-card__step">02</span>
-          <h3>更新資料檔</h3>
-          <p>在 `data/reports.json` 補上標題、日期、摘要與連結，首頁就知道要顯示什麼。</p>
-        </article>
-        <article class="ops-card">
-          <span class="ops-card__step">03</span>
-          <h3>Push 後自動部署</h3>
-          <p>GitHub Actions 會自動 build `index.html` 並發布到 GitHub Pages。</p>
-        </article>
-      </div>
-    </section>
-  </main>
+  <!-- CARD GRID -->
+  <section class="cards" aria-label="Reports">
+    <div class="card-grid" id="report-grid"></div>
+    <div class="empty-state" id="empty-state" hidden>目前沒有符合條件的報告。</div>
+  </section>
 
-  <footer class="site-footer">
-    <p>運動賽事分析頻道 · 報告存檔</p>
-    <p>資料來源包含 Formula1.com、Motorsport.com、MLB.com、CPBL.com.tw 等公開資訊。</p>
-  </footer>
+  <!-- SCHEDULE — TICKET STRIP -->
+  <section class="schedule" id="schedule" hidden>
+    <div class="schedule__head">
+      <h2>SCHEDULE · 票根</h2>
+      <span class="schedule__week" data-bind="weekLabel">--</span>
+    </div>
+    <div class="schedule__strip" id="schedule-strip"></div>
+  </section>
 
-  <script id="reports-data" type="application/json">__REPORTS_JSON__</script>
-  <script src="assets/site.js" defer></script>
+</main>
+
+<footer class="site-footer">
+  <span>THE SPORTS · REPORT — COLLECTOR'S SERIES</span>
+  <span>PRINTED ON THE INTERNET · 2026</span>
+</footer>
+
+<!-- Build-time injected: keep the placeholder name unchanged (scripts/build-site.mjs) -->
+<script id="reports-data" type="application/json">__REPORTS_JSON__</script>
+
+<script src="assets/site.js" defer></script>
 </body>
 </html>

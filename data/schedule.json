@@ -1,0 +1,7 @@
+[
+  { "league": "f1",   "round": "R5",  "date": "05·24", "name": "艾米利亞-羅馬涅大獎賽", "city": "Imola",   "day": "SUN" },
+  { "league": "cpbl", "round": "#54", "date": "05·11", "name": "統一獅 vs. 富邦悍將",   "city": "臺南",     "day": "TUE" },
+  { "league": "mlb",  "round": "—",   "date": "05·12", "name": "Dodgers vs. Mets",     "city": "LA",      "day": "TUE" },
+  { "league": "npb",  "round": "—",   "date": "05·13", "name": "阪神 vs. 巨人",         "city": "甲子園",   "day": "WED" },
+  { "league": "f1",   "round": "R6",  "date": "05·31", "name": "摩納哥大獎賽",           "city": "Monaco",  "day": "SUN" }
+]
