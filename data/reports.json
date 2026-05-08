@@ -12,7 +12,9 @@
     "tagLabel": "預告報告",
     "accent": "preview",
     "featured": true,
-    "latest": true
+    "latest": true,
+    "image": "assets/photos/canada-light-trails.jpg",
+    "imageAlt": "夜間賽道與看台光軌照片"
   },
   {
     "href": "f1/2026/miami-race.html",
