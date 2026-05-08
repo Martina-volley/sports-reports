@@ -14,6 +14,12 @@
 
 body.report-article {
   margin: 0;
+  --muted: #5b4637;
+  --text: #1a1410;
+  --border: rgba(26, 20, 16, 0.14);
+  --card: rgba(245, 236, 215, 0.92);
+  --card2: rgba(239, 228, 201, 0.96);
+  --bg: var(--article-paper);
   background: var(--article-paper);
   background-image:
     radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1.35px),
@@ -177,8 +183,9 @@ body.report-article {
 .report-article .hero-photo img {
   display: block;
   width: 100%;
-  max-height: 480px;
-  object-fit: cover;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   filter: sepia(0.22) saturate(1.05) contrast(1.02);
 }
 
