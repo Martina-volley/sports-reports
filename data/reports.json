@@ -1,0 +1,62 @@
+[
+  {
+    "href": "f1/2026/canada-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-05-08",
+    "title": "加拿大大獎賽 前瞻",
+    "kicker": "Sprint Weekend",
+    "summary": "Antonelli 百分大關領先，Mercedes 醞釀本季最大升級包，Hamilton 蒙特婁主場效應是最大外卡。",
+    "secondary": "Ferrari 與 McLaren 同步帶入新零件，車隊積分之爭恐在蒙特婁換位。",
+    "seasonLabel": "F1 2026 · Round 5",
+    "tagLabel": "預告報告",
+    "accent": "preview",
+    "featured": true,
+    "latest": true
+  },
+  {
+    "href": "f1/2026/miami-race.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-05-04",
+    "title": "邁阿密大獎賽 賽後分析",
+    "kicker": "Latest Drop",
+    "summary": "Antonelli 三連勝、Norris 緊追到 3.264 秒，Mercedes 雙車再度包辦前二。",
+    "secondary": "Verstappen 與 Leclerc 吃罰後，積分榜正式被拉開差距。",
+    "seasonLabel": "F1 2026 · Round 4",
+    "tagLabel": "賽後分析",
+    "accent": "race",
+    "featured": false,
+    "latest": false
+  },
+  {
+    "href": "f1/2026/miami-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-04-27",
+    "title": "邁阿密大獎賽 前瞻",
+    "kicker": "Sprint Weekend",
+    "summary": "Round 4 回到邁阿密，McLaren 新車首發、Ferrari 整包升級同步登場。",
+    "secondary": "本地作戰的 Norris 與持續擴大優勢的 Mercedes 是主要觀戰軸線。",
+    "seasonLabel": "F1 2026 · Round 4",
+    "tagLabel": "預告報告",
+    "accent": "preview",
+    "featured": false,
+    "latest": false
+  },
+  {
+    "href": "f1/2026/offweek-2026-04-20.html",
+    "league": "f1",
+    "type": "briefing",
+    "date": "2026-04-20",
+    "title": "休賽週 F1 新聞摘要",
+    "kicker": "Off Week Briefing",
+    "summary": "FIA 能量管理規則會議、Red Bull 技術組調整與邁阿密站前的格局重整。",
+    "secondary": "適合在比賽週開始前快速補齊背景脈絡。",
+    "seasonLabel": "F1 2026 · 休賽週",
+    "tagLabel": "新聞摘要",
+    "accent": "briefing",
+    "featured": false,
+    "latest": false
+  }
+]
