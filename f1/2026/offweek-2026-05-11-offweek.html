@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 休賽週快報 — 2026-05-11</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0d0d14;
+    color: #e8e8f0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: #3671c6; text-decoration: none; }
+  a:hover { text-decoration: underline; color: #5b97f5; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-bottom: 3px solid #3671c6;
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(54,113,198,0.15) 0%, transparent 70%);
+  }
+  .hero-tag {
+    display: inline-block;
+    background: linear-gradient(90deg, #7a7a9a, #3671c6);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(24px, 5vw, 40px);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .hero-date {
+    color: #8888aa;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .hero-countdown {
+    display: inline-block;
+    background: rgba(54,113,198,0.2);
+    border: 1px solid rgba(54,113,198,0.4);
+    border-radius: 12px;
+    padding: 12px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #7eb8ff;
+  }
+  .hero-countdown span { font-size: 13px; font-weight: 400; color: #8888aa; display: block; margin-top: 2px; }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
+  .section-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #5b7fa6;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1e2840;
+  }
+
+  /* ── NEWS CARDS ── */
+  .news-grid { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+  .news-card {
+    background: #12121f;
+    border: 1px solid #1e2840;
+    border-radius: 12px;
+    padding: 20px 24px;
+    transition: border-color 0.2s;
+  }
+  .news-card:hover { border-color: #3671c6; }
+  .news-card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 10px; }
+  .news-icon {
+    width: 40px; height: 40px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .news-card h3 { font-size: 16px; font-weight: 700; color: #e8e8f0; margin-bottom: 4px; }
+  .news-card p { font-size: 14px; color: #9999bb; line-height: 1.65; margin-bottom: 10px; }
+  .news-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .news-source {
+    font-size: 12px;
+    color: #5b7fa6;
+    background: rgba(54,113,198,0.08);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+  .news-tag {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .tag-regulation { background: rgba(255,165,0,0.15); color: #ffa500; }
+  .tag-team { background: rgba(54,198,113,0.12); color: #45c87a; }
+  .tag-standings { background: rgba(198,54,54,0.12); color: #e05555; }
+  .tag-calendar { background: rgba(150,54,198,0.12); color: #c278e8; }
+  .tag-preview { background: rgba(54,113,198,0.15); color: #7eb8ff; }
+
+  /* ── STANDINGS ── */
+  .standings-section { margin-bottom: 40px; }
+  .standings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media(max-width: 600px) { .standings-grid { grid-template-columns: 1fr; } }
+  .standings-box {
+    background: #12121f;
+    border: 1px solid #1e2840;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .standings-box h4 { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #5b7fa6; margin-bottom: 12px; }
+  .standing-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid #1a1a2e;
+    font-size: 13px;
+  }
+  .standing-row:last-child { border-bottom: none; }
+  .standing-pos { width: 20px; text-align: center; font-size: 11px; color: #555577; font-weight: 700; }
+  .standing-pos.p1 { color: #ffd700; }
+  .standing-pos.p2 { color: #c0c0c0; }
+  .standing-pos.p3 { color: #cd7f32; }
+  .standing-name { flex: 1; color: #d0d0e8; font-weight: 600; }
+  .standing-team { font-size: 11px; color: #666688; }
+  .standing-pts { font-weight: 700; color: #7eb8ff; font-size: 13px; }
+
+  /* ── NEXT RACE ── */
+  .next-race {
+    background: linear-gradient(135deg, #0f1e35, #0a1628);
+    border: 1px solid #1e3a5f;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .race-flag { font-size: 56px; }
+  .race-info { flex: 1; min-width: 200px; }
+  .race-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #3671c6; margin-bottom: 6px; }
+  .race-name { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+  .race-detail { font-size: 13px; color: #8888aa; margin-bottom: 8px; }
+  .race-facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .race-fact {
+    background: rgba(54,113,198,0.12);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    color: #9ab8e8;
+  }
+  .race-countdown-box { text-align: center; }
+  .race-days { font-size: 52px; font-weight: 900; color: #3671c6; line-height: 1; }
+  .race-days-label { font-size: 12px; color: #5b7fa6; margin-top: 4px; }
+
+  /* ── FOOTER ── */
+  .disclaimer {
+    font-size: 11px;
+    color: #44446a;
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid #1a1a2e;
+    line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">🏎 休賽週快報</div>
+  <h1>F1 2026 — 休賽週新聞摘要</h1>
+  <div class="hero-date">2026 年 5 月 11 日（週一）</div>
+  <div class="hero-countdown">
+    距加拿大大獎賽
+    <span>Round 5 · 蒙特婁 · 5 月 24 日</span>
+    <strong style="font-size:28px;color:#fff;">13 天</strong>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- NEWS SECTION -->
+  <div class="section-title">📰 本週重點新聞</div>
+  <div class="news-grid">
+
+    <!-- NEWS 1: FIA Regulation Changes -->
+    <div class="news-card">
+      <div class="news-card-header">
+        <div class="news-icon" style="background:rgba(255,165,0,0.12);">⚙️</div>
+        <div>
+          <span class="news-tag tag-regulation">法規動態</span>
+          <h3>FIA 與各車隊原則同意 2027 動力單元演進規則</h3>
+        </div>
+      </div>
+      <p>
+        5 月 8 日，國際汽車聯盟（FIA）召開線上會議，邀請各車隊總監、Formula One Management 及動力單元製造商代表共同參與。會議就 2027 賽季的演進性規則修訂達成原則共識：內燃引擎（ICE）輸出功率提升約 50kW，燃油流量隨之增加；同時，能量回收系統（ERS）部署功率降低約 50kW。這意味著目前 50-50 的混動功率分配將調整為更接近 60-40（ICE 較重），旨在讓賽車操控感更直覺、駕駛體驗更自然。此外，邁阿密賽事後已微調「超限截斷」（super-clipping）上限，從 250kW 提高至 350kW；後續進一步調整亦在評估中，包含起步安全性改善與濕地操控優化方案。
+      </p>
+      <div class="news-meta">
+        <span class="news-source">來源：
+          <a href="https://www.motorsportweek.com/2026/05/08/fia-announces-major-f1-pu-changes-for-2027/" target="_blank">Motorsport Week</a>
+          ／
+          <a href="https://www.formula1.com/en/latest/article/proposals-agreed-in-principle-for-further-evolutionary-changes-to-2026-regulations.2nNLMoEsoD8JYt9rb8zcJB" target="_blank">Formula1.com</a>
+          ／
+          <a href="https://www.fia.com/news/f1-proposals-agreed-principle-further-evolutionary-changes-2026-fia-formula-1-regulations" target="_blank">FIA 官方</a>
+        </span>
+      </div>
+    </div>
+
+    <!-- NEWS 2: Red Bull improvement -->
+    <div class="news-card">
+      <div class="news-card-header">
+        <div class="news-icon" style="background:rgba(54,113,198,0.12);">🐂</div>
+        <div>
+          <span class="news-tag tag-team">車隊動態</span>
+          <h3>Red Bull 展現正面跡象：低迷開季後終現曙光</h3>
+        </div>
+      </div>
+      <p>
+        歷經前幾站的開季困境後，Red Bull 在邁阿密週末釋出「重大指標」，暗示車隊正逐步找回競爭力。維斯塔潘在衝刺賽取得 P5，並在正賽排位賽以不到 0.2 秒之差追近桿位——相較季初與梅賽德斯的 0.6 秒差距，改善幅度明顯。車隊技術主管表示，邁阿密帶來的數據令他們對加拿大站以後的表現更有信心，預計蒙特婁的低下壓力特性將有利於 RB22 發揮潛力。
+      </p>
+      <div class="news-meta">
+        <span class="news-source">來源：
+          <a href="https://www.motorsportweek.com/2026/05/10/red-bull-flaunts-big-indication-to-vindicate-early-2026-f1-struggles/" target="_blank">Motorsport Week（2026-05-10）</a>
+        </span>
+      </div>
+    </div>
+
+    <!-- NEWS 3: Championship standings -->
+    <div class="news-card">
+      <div class="news-card-header">
+        <div class="news-icon" style="background:rgba(198,54,54,0.12);">🏆</div>
+        <div>
+          <span class="news-tag tag-standings">積分榜</span>
+          <h3>邁阿密賽後：Antonelli 以 100 分大幅領跑，梅賽德斯雙雄壟斷</h3>
+        </div>
+      </div>
+      <p>
+        邁阿密大獎賽後，Andrea Kimi Antonelli（梅賽德斯）以 100 分穩居車手榜首，對隊友 George Russell（80 分）建立 20 分領先優勢；Ferrari 的 Charles Leclerc 以 59 分排名第三，Lewis Hamilton 與 Lando Norris 以 51 分並列第四。Verstappen 暫居第七，積 26 分。車隊積分榜方面，梅賽德斯（180 分）以 70 分大幅領先 Ferrari（110 分），McLaren 以 94 分居第三。本賽季梅賽德斯迄今展現出優異的新規則適應力，是否有車隊能打破其主導地位，蒙特婁將是一大觀察點。
+      </p>
+      <div class="news-meta">
+        <span class="news-source">來源：
+          <a href="https://racingnews365.com/2026-f1-championship-standings-after-miami-grand-prix" target="_blank">RacingNews365</a>
+          ／
+          <a href="https://www.formula1.com/en/results/2026/races/1284/miami/race-result" target="_blank">Formula1.com 官方成績</a>
+        </span>
+      </div>
+    </div>
+
+    <!-- NEWS 4: Calendar update -->
+    <div class="news-card">
+      <div class="news-card-header">
+        <div class="news-icon" style="background:rgba(150,54,198,0.12);">📅</div>
+        <div>
+          <span class="news-tag tag-calendar">賽曆</span>
+          <h3>巴林與沙烏地阿拉伯站遭取消，FOM 考慮重新安排補賽</h3>
+        </div>
+      </div>
+      <p>
+        因中東地區持續衝突，原定於 4 月舉行的巴林大獎賽與沙烏地阿拉伯大獎賽雙雙取消，導致 2026 賽季 4 月份出現空白。Formula One Management（FOM）目前正評估是否將取消站次重新排入賽曆，或以其他場地補足，惟實際安排尚待確認。部分業內消息指出，巴林可能以「賽道交換」形式回歸，具體方案仍在協商中。
+      </p>
+      <div class="news-meta">
+        <span class="news-source">來源：
+          <a href="https://www.gpfans.com/us/f1-news/1083447/bahrain-grand-prix-saudi-return-f1-2026-calendar-swap/" target="_blank">GPFans</a>
+        </span>
+      </div>
+    </div>
+
+    <!-- NEWS 5: Canadian GP preview -->
+    <div class="news-card">
+      <div class="news-card-header">
+        <div class="news-icon" style="background:rgba(54,198,113,0.10);">🍁</div>
+        <div>
+          <span class="news-tag tag-preview">下站預告</span>
+          <h3>加拿大大獎賽預覽：蒙特婁「冠軍之牆」考驗梅賽德斯霸主地位</h3>
+        </div>
+      </div>
+      <p>
+        Round 5 加拿大大獎賽賽程為 5 月 22 至 24 日（週五至週日），本站亦設有衝刺賽周末。吉爾·維倫紐夫賽道全長 4.361 公里，特色為多個急煞減速區加上長直線，對煞車系統要求極高；標誌性的「冠軍之牆」（Wall of Champions）是眾多車手的噩夢。梅賽德斯與 Antonelli 仍是奪冠最大熱門，但低下壓力配置的賽道特性也讓 Verstappen 與 Red Bull 有望縮小差距。安全車出動概率高、輪胎策略多變，向來是蒙特婁的一大看點。
+      </p>
+      <div class="news-meta">
+        <span class="news-source">來源：
+          <a href="https://www.formula1.com/en/racing/2026/canada" target="_blank">Formula1.com</a>
+          ／
+          <a href="https://www.f1-fansite.com/f1-column/canadian-gp-2026-preview-odds-stats-and-main-contenders/" target="_blank">F1-Fansite</a>
+        </span>
+      </div>
+    </div>
+
+  </div><!-- /news-grid -->
+
+  <!-- STANDINGS -->
+  <div class="section-title">📊 邁阿密賽後積分榜</div>
+  <div class="standings-section">
+    <div class="standings-grid">
+      <div class="standings-box">
+        <h4>車手積分（Top 8）</h4>
+        <div class="standing-row"><span class="standing-pos p1">1</span><span class="standing-name">K. Antonelli<br><span class="standing-team">Mercedes</span></span><span class="standing-pts">100</span></div>
+        <div class="standing-row"><span class="standing-pos p2">2</span><span class="standing-name">G. Russell<br><span class="standing-team">Mercedes</span></span><span class="standing-pts">80</span></div>
+        <div class="standing-row"><span class="standing-pos p3">3</span><span class="standing-name">C. Leclerc<br><span class="standing-team">Ferrari</span></span><span class="standing-pts">59</span></div>
+        <div class="standing-row"><span class="standing-pos">4</span><span class="standing-name">L. Norris<br><span class="standing-team">McLaren</span></span><span class="standing-pts">51</span></div>
+        <div class="standing-row"><span class="standing-pos">5</span><span class="standing-name">L. Hamilton<br><span class="standing-team">Ferrari</span></span><span class="standing-pts">51</span></div>
+        <div class="standing-row"><span class="standing-pos">6</span><span class="standing-name">O. Piastri<br><span class="standing-team">McLaren</span></span><span class="standing-pts">43</span></div>
+        <div class="standing-row"><span class="standing-pos">7</span><span class="standing-name">M. Verstappen<br><span class="standing-team">Red Bull</span></span><span class="standing-pts">26</span></div>
+        <div class="standing-row"><span class="standing-pos">8</span><span class="standing-name">O. Bearman<br><span class="standing-team">Haas</span></span><span class="standing-pts">17</span></div>
+      </div>
+      <div class="standings-box">
+        <h4>車隊積分（Top 5）</h4>
+        <div class="standing-row"><span class="standing-pos p1">1</span><span class="standing-name">Mercedes</span><span class="standing-pts">180</span></div>
+        <div class="standing-row"><span class="standing-pos p2">2</span><span class="standing-name">Ferrari</span><span class="standing-pts">110</span></div>
+        <div class="standing-row"><span class="standing-pos p3">3</span><span class="standing-name">McLaren</span><span class="standing-pts">94</span></div>
+        <div class="standing-row"><span class="standing-pos">4</span><span class="standing-name">Red Bull</span><span class="standing-pts">26</span></div>
+        <div class="standing-row"><span class="standing-pos">5</span><span class="standing-name">Haas</span><span class="standing-pts">19</span></div>
+        <div class="standing-row" style="padding-top:16px;border-top:1px solid #1e2840;margin-top:8px;">
+          <span style="font-size:12px;color:#666688;line-height:1.5;">* 含邁阿密 Sprint 及正賽積分<br>* 部分車隊積分待官方最終確認</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEXT RACE -->
+  <div class="section-title">🍁 下一站預告</div>
+  <div class="next-race">
+    <div class="race-flag">🇨🇦</div>
+    <div class="race-info">
+      <div class="race-label">Round 5 · Sprint Weekend</div>
+      <div class="race-name">加拿大大獎賽</div>
+      <div class="race-detail">Circuit Gilles-Villeneuve，蒙特婁 · 5 月 22–24 日</div>
+      <div class="race-facts">
+        <span class="race-fact">70 圈</span>
+        <span class="race-fact">4.361 km</span>
+        <span class="race-fact">衝刺賽週末</span>
+        <span class="race-fact">高煞車負荷</span>
+        <span class="race-fact">Safety Car 高機率</span>
+      </div>
+    </div>
+    <div class="race-countdown-box">
+      <div class="race-days">13</div>
+      <div class="race-days-label">天後開戰</div>
+    </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    本報告為自動化新聞整理，資料來源為公開媒體報導。積分數據以邁阿密大獎賽後為基準，部分數字待官方最終確認。<br>
+    本報告勝率預測為綜合因素分析，僅供參考，不代表任何博彩賠率或投注建議。
+  </div>
+
+</div>
+</body>
+</html>

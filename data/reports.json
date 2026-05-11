@@ -1,18 +1,18 @@
 [
   {
-    "href": "worldcup/2026/world-cup-2026-preview.html",
-    "league": "worldcup",
-    "type": "briefing",
-    "date": "2026-05-08",
-    "title": "2026 世界盃前導新聞",
-    "kicker": "North America 2026",
-    "summary": "48 隊、104 場、16 座主辦城市，六月開踢前先抓住本屆世界盃最重要的看點。",
-    "secondary": "從賽制擴編、三國主辦到決賽落點，這篇先把追賽框架搭好。",
-    "seasonLabel": "WORLD CUP 2026 · 前導特輯",
-    "tagLabel": "前導新聞",
-    "accent": "briefing",
+    "href": "f1/2026/offweek-2026-05-11-offweek.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-05-11",
+    "title": "休賽週 F1 新聞摘要",
+    "kicker": "距加拿大站 13 天",
+    "summary": "FIA 原則同意 2027 動力規則演進；Red Bull 邁阿密現曙光；巴林、沙烏地賽事取消後賽曆調整評估中",
+    "secondary": "梅賽德斯積分榜壓倒性領跑，Antonelli 100 分領先 Russell 20 分；Ferrari、McLaren 追擊中",
+    "seasonLabel": "F1 2026 · 休賽週",
+    "tagLabel": "休賽週快報",
+    "accent": "linear-gradient(90deg, #7a7a9a, #3671c6)",
     "featured": false,
-    "latest": false
+    "latest": true
   },
   {
     "href": "f1/2026/canada-preview.html",
@@ -27,9 +27,24 @@
     "tagLabel": "預告報告",
     "accent": "preview",
     "featured": true,
-    "latest": true,
+    "latest": false,
     "image": "assets/photos/canada-light-trails.jpg",
     "imageAlt": "夜間賽道與看台光軌照片"
+  },
+  {
+    "href": "worldcup/2026/world-cup-2026-preview.html",
+    "league": "worldcup",
+    "type": "briefing",
+    "date": "2026-05-08",
+    "title": "2026 世界盃前導新聞",
+    "kicker": "North America 2026",
+    "summary": "48 隊、104 場、16 座主辦城市，六月開踢前先抓住本屆世界盃最重要的看點。",
+    "secondary": "從賽制擴編、三國主辦到決賽落點，這篇先把追賽框架搭好。",
+    "seasonLabel": "WORLD CUP 2026 · 前導特輯",
+    "tagLabel": "前導新聞",
+    "accent": "briefing",
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/miami-race.html",
