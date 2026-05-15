@@ -47,14 +47,12 @@
   /* ---------- stats ---------- */
   const totalCount    = reports.length;
   const f1Count       = reports.filter(r => r.league === 'f1').length;
-  const worldcupCount = reports.filter(r => r.league === 'worldcup').length;
   const baseballCount = reports.filter(r => r.league === 'baseball').length;
   const dates         = reports.map(r => r.date).filter(Boolean).sort();
   const latestDate    = dates.length ? dates[dates.length - 1] : null;
 
   setText('totalCount',    String(totalCount).padStart(2, '0'));
   setText('f1Count',       String(f1Count).padStart(2, '0'));
-  setText('worldcupCount', String(worldcupCount).padStart(2, '0'));
   setText('baseballCount', String(baseballCount).padStart(2, '0'));
   setText('latestDate',    fmtDate(latestDate));
   setText('issueNo',       String(totalCount).padStart(2, '0'));
@@ -71,10 +69,9 @@
   }
 
   function renderFeatured(r) {
-    const accentMap = { f1: 'F1', worldcup: 'WORLD CUP', baseball: 'BASEBALL', mlb: 'MLB', npb: 'NPB', cpbl: 'CPBL' };
+    const accentMap = { f1: 'F1', baseball: 'BASEBALL', mlb: 'MLB', npb: 'NPB', cpbl: 'CPBL' };
     const leagueLabel = accentMap[r.league] || (r.league || '').toUpperCase();
     const seasonLabel = r.seasonLabel || '';
-    const featuredHref = escapeHtml(r.href || '#');
 
     const photo = renderPhoto(r, 'rookie portrait', 'photo--tall');
 
@@ -84,37 +81,34 @@
     const chips = [
       { k: 'all',  label: '所有報告', n: totalCount },
       { k: 'f1',   label: 'F1',      n: f1Count },
-      { k: 'worldcup', label: 'WORLD CUP', n: worldcupCount },
       { k: 'mlb',  label: 'MLB',     n: reports.filter(x => x.league === 'mlb').length },
       { k: 'npb',  label: 'NPB',     n: reports.filter(x => x.league === 'npb').length },
       { k: 'cpbl', label: 'CPBL',    n: reports.filter(x => x.league === 'cpbl').length },
     ].filter(c => c.k === 'all' || c.n > 0 || c.k === 'f1');
 
     return `
-      <a class="rookie-link" href="${featuredHref}" aria-label="${escapeHtml(r.title || 'Featured report')}">
-        <div class="rookie">
-          <div class="rookie__inner">
-            <div class="rookie__top">
-              <span>${escapeHtml(leagueLabel)} · ${escapeHtml(r.tagLabel || r.type || '')}</span>
-              <span class="rookie__round">${escapeHtml(seasonLabel || fmtDate(r.date))}</span>
-            </div>
-            ${photo}
-            <div class="rookie__bottom">
-              <div class="rookie__title">${escapeHtml(r.title || '')}</div>
-              ${r.kicker ? `<div class="rookie__sub">${escapeHtml(r.kicker)}</div>` : ''}
-              ${cells.length ? `<div class="rookie__stats">${
-                cells.map(([k, v]) => `
-                  <div class="rookie__stat">
-                    <span class="rookie__stat-k">${escapeHtml(k)}</span>
-                    <span class="rookie__stat-v">${escapeHtml(v)}</span>
-                  </div>
-                `).join('')
-              }</div>` : ''}
-            </div>
+      <div class="rookie">
+        <div class="rookie__inner">
+          <div class="rookie__top">
+            <span>${escapeHtml(leagueLabel)} · ${escapeHtml(r.tagLabel || r.type || '')}</span>
+            <span class="rookie__round">${escapeHtml(seasonLabel || fmtDate(r.date))}</span>
           </div>
-          <div class="rookie__foil">FEAT<br/>URED</div>
+          ${photo}
+          <div class="rookie__bottom">
+            <div class="rookie__title">${escapeHtml(r.title || '')}</div>
+            ${r.kicker ? `<div class="rookie__sub">${escapeHtml(r.kicker)}</div>` : ''}
+            ${cells.length ? `<div class="rookie__stats">${
+              cells.map(([k, v]) => `
+                <div class="rookie__stat">
+                  <span class="rookie__stat-k">${escapeHtml(k)}</span>
+                  <span class="rookie__stat-v">${escapeHtml(v)}</span>
+                </div>
+              `).join('')
+            }</div>` : ''}
+          </div>
         </div>
-      </a>
+        <div class="rookie__foil">FEAT<br/>URED</div>
+      </div>
       <div class="featured__copy">
         <div class="featured__eyebrow">★ Featured · ${escapeHtml(fmtFullDate(r.date))}</div>
         <p class="featured__lead">
@@ -192,7 +186,7 @@
 
   function matchesFilter(r, filter) {
     if (!filter || filter === 'all') return true;
-    if (['f1', 'worldcup', 'baseball', 'mlb', 'npb', 'cpbl'].includes(filter)) return r.league === filter;
+    if (['f1', 'baseball', 'mlb', 'npb', 'cpbl'].includes(filter)) return r.league === filter;
     if (['preview', 'race', 'briefing'].includes(filter))           return r.type === filter || r.accent === filter;
     return true;
   }

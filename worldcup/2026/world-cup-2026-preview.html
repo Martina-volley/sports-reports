@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2026 &#19990;&#30028;&#30403;&#21069;&#23566;&#26032;&#32862;</title>
+  <title>2026 世界盃前導新聞 | The Sports·Report</title>
   <meta name="description" content="2026 FIFA World Cup preview on the new 48-team format, 104-match calendar, 16 host cities, and the biggest storylines before kick-off." />
   <meta name="theme-color" content="#1a1410" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="2026 World Cup Preview Feature" />
-  <meta property="og:description" content="A quick-start guide to the format, dates, host cities, and main storylines of the 2026 FIFA World Cup." />
+  <meta property="og:title" content="2026 世界盃前導新聞 | The Sports·Report" />
+  <meta property="og:description" content="48 隊、104 場、16 座主辦城市，六月開踢前先抓住本屆世界盃最重要的看點。" />
   <meta property="og:image" content="../../assets/site-preview.svg" />
   <meta property="og:locale" content="zh_TW" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="2026 World Cup Preview Feature" />
+  <meta name="twitter:title" content="2026 世界盃前導新聞 | The Sports·Report" />
   <meta name="twitter:description" content="A quick-start guide to the format, dates, host cities, and main storylines of the 2026 FIFA World Cup." />
   <meta name="twitter:image" content="../../assets/site-preview.svg" />
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
@@ -21,239 +21,301 @@
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@500;700&family=Bevan&family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../assets/article.css" />
   <style>
-    .report-article {
-      --article-red: #0f8f6f;
-      --article-orange: #d67d2f;
-      --article-mustard: #f1bb56;
-      --article-navy: #214f7a;
+    .worldcup-page {
+      --wc-green: #0f8f6f;
+      --wc-blue: #214f7a;
+      --wc-gold: #f1bb56;
     }
 
-    .wc-country-list {
-      margin: 0;
+    .worldcup-page .race-hero__city .accent,
+    .worldcup-page .race-hero__sub,
+    .worldcup-page .rule-head small,
+    .worldcup-page .signoff__stamp {
+      color: var(--wc-green);
+    }
+
+    .worldcup-page .article-hero {
+      box-shadow: 12px 12px 0 var(--wc-green);
+    }
+
+    .worldcup-page .countdown__badge,
+    .worldcup-page .news-item[data-accent="reg"] {
+      --item-accent: var(--wc-green);
+    }
+
+    .wc-facts {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 760px) {
+      .wc-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    .wc-fact {
+      border: 3px solid var(--ink);
+      background: var(--cream);
+      padding: 12px;
+      box-shadow: 4px 4px 0 var(--wc-gold);
+    }
+
+    .wc-fact span {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .wc-fact b {
+      display: block;
+      margin-top: 4px;
+      font-family: var(--font-bevan);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .wc-city-list {
+      margin: 8px 0 0;
       padding-left: 18px;
-      color: var(--article-soft);
-      line-height: 1.7;
+      color: var(--ink-soft);
+      line-height: 1.65;
+      font-family: var(--font-serif);
       font-size: 15px;
     }
 
-    .wc-country-list li + li {
-      margin-top: 6px;
-    }
-
-    .wc-inline-note {
-      color: var(--article-soft);
-      font-size: 15px;
-      line-height: 1.7;
+    .wc-source-list {
+      display: grid;
+      gap: 8px;
     }
   </style>
 </head>
-<body class="report-article">
+<body class="report-article worldcup-page">
 
-<header class="article-masthead">
-  <div class="article-masthead__meta">
+<header class="masthead masthead--compact">
+  <div class="masthead__meta">
     <span>VOL. XXIV - SPECIAL FILE</span>
     <span>2026 FIFA WORLD CUP - PREVIEW FEATURE</span>
     <span>UPDATED 2026.05.08</span>
   </div>
-  <div class="article-masthead__title">
-    <div class="article-wordmark">The&nbsp;Sports<span class="article-wordmark__dot">&middot;</span>Report</div>
-    <div class="article-kicker">world cup launch issue</div>
+  <div class="masthead__title">
+    <div class="wordmark">The&nbsp;Sports<span class="wordmark__dot">·</span>Report</div>
+    <a class="masthead__back" href="../../index.html">← 返回封面</a>
   </div>
-  <div class="article-masthead__foot">
-    <span>FOOTBALL - NORTH AMERICA 2026</span>
+  <div class="masthead__leagues">
+    <span>FOOTBALL · NORTH AMERICA 2026</span>
     <span>48 TEAMS / 104 MATCHES / 16 HOST CITIES</span>
   </div>
 </header>
 
-<div class="nav-back">
-  <a href="../../index.html">Back to Home</a>
-</div>
+<section class="article-hero article-hero--race">
+  <div class="article-hero__body">
+    <div class="race-hero__top">
+      <span class="race-hero__round">WORLD CUP <b>2026</b> · KICK-OFF GUIDE</span>
+      <span class="race-hero__date">Canada · Mexico · United States</span>
+    </div>
 
-<div class="hero">
-  <div class="race-number">World Cup 2026 / Lead Story / Kick-off Guide</div>
-  <h1>2026 &#19990;&#30028;&#30403;<span>&#21069;&#23566;&#26032;&#32862;</span></h1>
-  <p class="subtitle">A first look at the biggest structural shifts, host geography, and schedule logic before the tournament opens on 11 June 2026.</p>
-  <div class="hero-badges">
-    <div class="badge"><span>Dates</span> 2026.06.11 - 2026.07.19</div>
-    <div class="badge"><span>Hosts</span> Canada / Mexico / USA</div>
-    <div class="badge"><span>Format</span> 12 groups of four</div>
-    <div class="badge"><span>Final</span> New York New Jersey</div>
+    <div class="race-hero__splash">
+      <div class="race-hero__title-block">
+        <div class="race-hero__city">WORLD<span class="accent">·</span>CUP</div>
+        <h1 class="race-hero__h1">2026 世界盃前導新聞</h1>
+        <div class="race-hero__sub">the largest tournament yet</div>
+        <div class="race-hero__badges">
+          <span class="race-hero__badge">Teams · <b>48</b></span>
+          <span class="race-hero__badge">Matches · <b>104</b></span>
+          <span class="race-hero__badge">Hosts · <b>3 nations</b></span>
+          <span class="race-hero__badge">Cities · <b>16</b></span>
+        </div>
+      </div>
+
+      <div class="podium">
+        <div class="podium__head">
+          <span>STARTER PACK</span>
+          <small>WHAT CHANGED</small>
+        </div>
+        <div class="podium__row">
+          <div class="podium__pos podium__pos--p1">1</div>
+          <div>
+            <div class="podium__name">48 隊新賽制</div>
+            <div class="podium__team">12 groups of four · top 2 + best 8 thirds</div>
+          </div>
+          <div class="podium__gap">R32<small>NEW ROUND</small></div>
+        </div>
+        <div class="podium__row">
+          <div class="podium__pos podium__pos--p2">2</div>
+          <div>
+            <div class="podium__name">北美三國主辦</div>
+            <div class="podium__team">Canada · Mexico · United States</div>
+          </div>
+          <div class="podium__gap">16<small>CITIES</small></div>
+        </div>
+        <div class="podium__row">
+          <div class="podium__pos podium__pos--p3">3</div>
+          <div>
+            <div class="podium__name">104 場超長賽程</div>
+            <div class="podium__team">opening in Mexico City · final in New York New Jersey</div>
+          </div>
+          <div class="podium__gap">39<small>DAYS</small></div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+<div class="countdown">
+  <span class="countdown__badge">TOURNAMENT WINDOW</span>
+  <span>Opening match</span>
+  <span class="countdown__num">2026 · 06 · 11</span>
+  <span class="countdown__sep">|</span>
+  <span>Final</span>
+  <span class="countdown__num">2026 · 07 · 19</span>
 </div>
 
-<div class="container">
-  <section class="section">
-    <div class="section-title">Starter Pack</div>
-    <h2>The four numbers to remember first</h2>
-    <div class="fact-grid">
-      <div class="fact-item">
-        <span class="fact-label">Teams</span>
-        <span class="fact-value">48</span>
-      </div>
-      <div class="fact-item">
-        <span class="fact-label">Matches</span>
-        <span class="fact-value">104</span>
-      </div>
-      <div class="fact-item">
-        <span class="fact-label">Host Cities</span>
-        <span class="fact-value">16</span>
-      </div>
-      <div class="fact-item">
-        <span class="fact-label">Host Nations</span>
-        <span class="fact-value">3</span>
-      </div>
-    </div>
-    <div class="disclaimer">
-      This is the largest World Cup in tournament history. The expansion does not only add more teams; it also changes the pace of the group stage, the length of the knockout road, and the way fans will follow the event across North America.
-    </div>
-  </section>
+<main class="article-shell article-shell--race">
+  <article class="article-main">
+    <h2 class="rule-head">本屆重點 <small>the board</small></h2>
+    <p class="lede">
+      <span class="dropcap">世</span>界盃 2026 不只是擴編，而是整個追賽節奏重排。48 隊、104 場、三個主辦國與 16 座城市，會讓分組賽、旅行距離、淘汰賽籤表和轉播時段都成為賽事敘事的一部分。
+    </p>
 
-  <section class="section">
-    <div class="section-title">Main Angles</div>
-    <h2>Three themes that define the pre-tournament picture</h2>
-    <div class="grid-3">
-      <article class="battle-card">
-        <h3>1. The format is a real competitive shift</h3>
-        <p class="battle-desc">
-          The 2026 World Cup moves to 12 groups of four. The top two teams in each group plus the eight best third-placed teams advance to the round of 32, which means the eventual champion now has to win eight matches instead of seven.
+    <div class="wc-facts">
+      <div class="wc-fact"><span>Teams</span><b>48</b></div>
+      <div class="wc-fact"><span>Matches</span><b>104</b></div>
+      <div class="wc-fact"><span>Host Cities</span><b>16</b></div>
+      <div class="wc-fact"><span>Host Nations</span><b>3</b></div>
+    </div>
+
+    <article class="news-item" data-accent="reg">
+      <header class="news-item__head">
+        <span class="num">01</span>
+        <span class="tag">賽制</span>
+      </header>
+      <div class="news-item__body">
+        <h3 class="news-item__title">12 組 4 隊，冠軍路徑變成 8 場</h3>
+        <p class="news-item__text">
+          新賽制下，每組前兩名與八支最佳第三名晉級 32 強。這代表強隊在小組賽的容錯更高，但淘汰賽多一輪，板凳深度、恢復節奏和旅行安排的重要性會上升。
         </p>
-      </article>
-      <article class="battle-card">
-        <h3>2. Three-country hosting changes the tournament feel</h3>
-        <p class="battle-desc">
-          Canada, Mexico, and the United States split the hosting map. That is not just a branding note. Travel, local kick-off windows, and city-to-city rhythm will become a meaningful part of the story for both teams and fans.
+        <div class="news-item__sources">來源 · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums" target="_blank" rel="noreferrer">FIFA match schedule</a></div>
+      </div>
+    </article>
+
+    <article class="news-item" data-accent="team">
+      <header class="news-item__head">
+        <span class="num">02</span>
+        <span class="tag">主辦地圖</span>
+      </header>
+      <div class="news-item__body">
+        <h3 class="news-item__title">三國主辦讓城市節奏成為賽事變數</h3>
+        <p class="news-item__text">
+          加拿大、墨西哥、美國共同主辦，讓比賽橫跨多個氣候帶與時區。球隊不只要面對對手，也要管理旅行、恢復、訓練基地與跨城市移動。
         </p>
-      </article>
-      <article class="battle-card">
-        <h3>3. The schedule is already a major talking point</h3>
-        <p class="battle-desc">
-          With the calendar and venues now confirmed, the World Cup conversation has already moved beyond qualification. The next phase is about how the bracket, rest patterns, and host-city clusters shape the best paths through the field.
+        <div class="news-item__sources">來源 · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada" target="_blank" rel="noreferrer">FIFA hosts and cities</a></div>
+      </div>
+    </article>
+
+    <article class="news-item" data-accent="cal">
+      <header class="news-item__head">
+        <span class="num">03</span>
+        <span class="tag">賽程</span>
+      </header>
+      <div class="news-item__body">
+        <h3 class="news-item__title">開幕戰墨西哥城，決賽紐約新澤西</h3>
+        <p class="news-item__text">
+          2026 年 6 月 11 日開幕，7 月 19 日決賽。賽程長度與淘汰賽輪次增加，使得「哪一條籤表路徑最省移動」會成為正式開踢後的重要分析題。
         </p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-title">Tournament Map</div>
-    <h2>The key timeline checkpoints</h2>
-    <div class="card">
-      <table class="schedule-table">
-        <thead>
-          <tr>
-            <th>Stage</th>
-            <th>Date</th>
-            <th>What matters</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="tag">Opening</span></td>
-            <td>2026.06.11</td>
-            <td>The tournament opens in Mexico City and begins the 104-match run.</td>
-          </tr>
-          <tr>
-            <td><span class="tag">Groups</span></td>
-            <td>12 x 4</td>
-            <td>The top two teams in each group and the eight best third-placed teams move on.</td>
-          </tr>
-          <tr>
-            <td><span class="tag">Knockout</span></td>
-            <td>Round of 32</td>
-            <td>The expanded format means the champion now plays eight total matches.</td>
-          </tr>
-          <tr>
-            <td><span class="tag">Final</span></td>
-            <td>2026.07.19</td>
-            <td>The tournament closes in New York New Jersey.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-title">Host Cities</div>
-    <h2>How the 16-city map is split</h2>
-    <div class="grid-3">
-      <article class="team-card">
-        <div class="team-card-body">
-          <h3>Canada</h3>
-          <p class="wc-inline-note">Two cities create the northern edge of the tournament footprint.</p>
-          <ul class="wc-country-list">
-            <li>Toronto</li>
-            <li>Vancouver</li>
-          </ul>
-        </div>
-      </article>
-      <article class="team-card">
-        <div class="team-card-body">
-          <h3>Mexico</h3>
-          <p class="wc-inline-note">Three host cities, with Mexico City staging the opening match.</p>
-          <ul class="wc-country-list">
-            <li>Guadalajara</li>
-            <li>Mexico City</li>
-            <li>Monterrey</li>
-          </ul>
-        </div>
-      </article>
-      <article class="team-card">
-        <div class="team-card-body">
-          <h3>United States</h3>
-          <p class="wc-inline-note">The largest share of the event, spread across 11 cities.</p>
-          <ul class="wc-country-list">
-            <li>Atlanta / Boston / Dallas / Houston</li>
-            <li>Kansas City / Los Angeles / Miami</li>
-            <li>New York New Jersey / Philadelphia</li>
-            <li>San Francisco Bay Area / Seattle</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-title">Watch List</div>
-    <h2>What this new World Cup section should track next</h2>
-    <div class="card">
-      <div class="update-item">
-        <div class="pos-num p1">01</div>
-        <div>
-          <div class="driver-name">Group and bracket pressure points</div>
-          <div class="driver-team">Which clusters look overloaded, and where the most volatile routes through the knockout stage might emerge.</div>
-        </div>
+        <div class="news-item__sources">來源 · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/new-york-new-jersey-stadium-host-world-cup-2026-final" target="_blank" rel="noreferrer">FIFA final venue</a></div>
       </div>
-      <div class="update-item">
-        <div class="pos-num p2">02</div>
-        <div>
-          <div class="driver-name">Host-city atmosphere files</div>
-          <div class="driver-team">Venue identity, local weather, travel logic, and how each city could shape matchday feel.</div>
-        </div>
+    </article>
+
+    <h2 class="rule-head">追蹤清單 <small>next files</small></h2>
+    <div class="takeaways">
+      <p class="insight" data-tone="good"><span class="insight__num">①</span><strong>分組與籤表壓力點：</strong>找出最擁擠的賽程區段，以及淘汰賽可能出現的高風險路線。</p>
+      <p class="insight" data-tone="watch"><span class="insight__num">②</span><strong>主辦城市檔案：</strong>整理場館、天氣、旅行邏輯和比賽日氛圍。</p>
+      <p class="insight" data-tone="info"><span class="insight__num">③</span><strong>爭冠與黑馬分層：</strong>把熱門、第二梯隊和爆冷候選分成可追蹤的賽前棋盤。</p>
+    </div>
+  </article>
+
+  <aside class="article-aside">
+    <h2 class="rule-head">邊欄速查 <small>host map</small></h2>
+
+    <div class="aside-card">
+      <div class="aside-card__head">CANADA <small>2 CITIES</small></div>
+      <div class="aside-card__body">
+        <ul class="wc-city-list">
+          <li>Toronto</li>
+          <li>Vancouver</li>
+        </ul>
       </div>
-      <div class="update-item">
-        <div class="pos-num p3">03</div>
-        <div>
-          <div class="driver-name">Contender and dark-horse tiers</div>
-          <div class="driver-team">A clean pre-tournament board that separates favourites, second-line challengers, and upset candidates.</div>
+    </div>
+
+    <div class="aside-card">
+      <div class="aside-card__head">MEXICO <small>3 CITIES</small></div>
+      <div class="aside-card__body">
+        <ul class="wc-city-list">
+          <li>Guadalajara</li>
+          <li>Mexico City</li>
+          <li>Monterrey</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aside-card">
+      <div class="aside-card__head">UNITED STATES <small>11 CITIES</small></div>
+      <div class="aside-card__body">
+        <ul class="wc-city-list">
+          <li>Atlanta / Boston / Dallas / Houston</li>
+          <li>Kansas City / Los Angeles / Miami</li>
+          <li>New York New Jersey / Philadelphia</li>
+          <li>San Francisco Bay Area / Seattle</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="next-race-ticket">
+      <div class="next-race-ticket__perf"></div>
+      <div class="next-race-ticket__date">
+        <span class="next-race-ticket__day">THU</span>
+        <span class="next-race-ticket__num">11</span>
+        <span class="next-race-ticket__mon">JUN</span>
+      </div>
+      <div class="next-race-ticket__body">
+        <div class="next-race-ticket__round">OPENING MATCH</div>
+        <div class="next-race-ticket__name">Mexico City</div>
+        <div class="next-race-ticket__circuit">Estadio Azteca</div>
+        <div class="next-race-ticket__facts">
+          <span class="next-race-ticket__fact">World Cup 2026</span>
+          <span class="next-race-ticket__fact">Kick-off</span>
         </div>
       </div>
     </div>
-  </section>
+  </aside>
+</main>
 
-  <div class="disclaimer">
-    This page opens the World Cup section with a stable baseline. The next logical follow-ups are a group-stage watch guide, a host-city series, and a contender ranking package.
+<section class="article-shell" style="grid-template-columns:1fr;">
+  <div>
+    <h2 class="rule-head">資料來源 <small>sources</small></h2>
+    <div class="sources wc-source-list">
+      <div class="source"><span class="source__tag">FIFA</span><a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums" target="_blank" rel="noreferrer">Match schedule, fixtures and stadiums</a></div>
+      <div class="source"><span class="source__tag">FIFA</span><a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada" target="_blank" rel="noreferrer">Hosts, cities and tournament dates</a></div>
+      <div class="source"><span class="source__tag">FIFA</span><a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/new-york-new-jersey-stadium-host-world-cup-2026-final" target="_blank" rel="noreferrer">New York New Jersey to host the final</a></div>
+    </div>
   </div>
+</section>
+
+<div class="signoff">
+  <div>
+    <div>World Cup 2026 preview feature · updated 2026-05-08.</div>
+    <div>This page opens the World Cup section with a stable baseline for future group, city and contender reports.</div>
+  </div>
+  <div class="signoff__stamp">— kick-off file —</div>
 </div>
 
-<footer>
-  <p>2026 WORLD CUP PREVIEW FEATURE · UPDATED 2026-05-08</p>
-  <p>
-    Sources:
-    <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums" target="_blank" rel="noreferrer">FIFA Match Schedule</a>
-    ·
-    <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-2026-hosts-cities-dates-usa-mexico-canada" target="_blank" rel="noreferrer">FIFA Hosts, Cities and Format</a>
-    ·
-    <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/new-york-new-jersey-stadium-host-world-cup-2026-final" target="_blank" rel="noreferrer">FIFA Final Venue</a>
-  </p>
+<footer class="site-footer">
+  <span>THE SPORTS · REPORT — WORLD CUP FILE</span>
+  <span>PRINTED ON THE INTERNET · 2026</span>
 </footer>
 
 </body>
