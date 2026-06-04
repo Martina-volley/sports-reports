@@ -452,7 +452,24 @@ a { color: inherit; }
   border-radius: var(--wc-radius);
   padding: 18px 18px 12px;
   box-shadow: var(--wc-shadow);
+  border-top: 6px solid var(--group-accent, var(--wc-pitch));
+  overflow: hidden;
 }
+.wc-groups--draw .wc-group {
+  min-height: 286px;
+}
+.wc-group[data-accent="arg"] { --group-accent: #6CACE4; }
+.wc-group[data-accent="bel"] { --group-accent: #FAE042; }
+.wc-group[data-accent="bra"] { --group-accent: #009739; }
+.wc-group[data-accent="can"] { --group-accent: #D52B1E; }
+.wc-group[data-accent="eng"] { --group-accent: #CF142B; }
+.wc-group[data-accent="esp"] { --group-accent: #C60B1E; }
+.wc-group[data-accent="fra"] { --group-accent: #002395; }
+.wc-group[data-accent="ger"] { --group-accent: #DD0000; }
+.wc-group[data-accent="mex"] { --group-accent: #006847; }
+.wc-group[data-accent="ned"] { --group-accent: #FF7900; }
+.wc-group[data-accent="por"] { --group-accent: #006600; }
+.wc-group[data-accent="usa"] { --group-accent: #3C3B6E; }
 .wc-group__head {
   display: flex; justify-content: space-between; align-items: baseline;
   border-bottom: 2px solid var(--wc-ink);
@@ -466,7 +483,7 @@ a { color: inherit; }
   display: flex; align-items: center; gap: 8px;
 }
 .wc-group__name b {
-  background: var(--wc-pitch); color: white;
+  background: var(--group-accent, var(--wc-pitch)); color: white;
   padding: 2px 10px; border-radius: 6px;
   font-weight: 400;
 }
@@ -477,7 +494,7 @@ a { color: inherit; }
   font-weight: 600;
 }
 .wc-team {
-  display: grid; grid-template-columns: 22px 1fr 36px 36px;
+  display: grid; grid-template-columns: 22px minmax(0, 1fr) 64px 36px;
   gap: 10px; align-items: center;
   padding: 8px 0;
   border-bottom: 1px solid rgba(15,23,42,.06);
@@ -494,6 +511,7 @@ a { color: inherit; }
 .wc-team__name {
   font-weight: 700; font-size: 15px;
   display: flex; gap: 6px; align-items: center;
+  min-width: 0;
 }
 .wc-team__name .flag {
   width: 22px; height: 16px; border-radius: 3px;
@@ -503,6 +521,7 @@ a { color: inherit; }
 .wc-team__gd {
   font-family: var(--font-mono); font-size: 12px;
   color: var(--wc-ink-soft); text-align: right;
+  white-space: nowrap;
 }
 .wc-team__pts {
   font-family: var(--font-display);
@@ -526,6 +545,14 @@ a { color: inherit; }
 .wc-group__foot .ok .dot     { background: var(--wc-pitch); }
 .wc-group__foot .wait .dot   { background: var(--wc-sun-deep); }
 .wc-group__foot .out .dot    { background: var(--wc-mute); }
+.wc-group__link {
+  color: var(--group-accent, var(--wc-pitch-deep));
+  text-decoration: none;
+  font-weight: 800;
+}
+.wc-group__link:hover {
+  text-decoration: underline;
+}
 
 /* ── BRACKET ──────────────────────────────────────────────────────────── */
 .wc-bracket {
@@ -638,6 +665,61 @@ a { color: inherit; }
   padding-top: 8px; margin-top: 4px;
   display: flex; gap: 18px; flex-wrap: wrap;
   font-weight: 600;
+}
+
+/* ── COVERAGE DESK ───────────────────────────────────────────────────── */
+.wc-coverage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+@media (max-width: 980px) { .wc-coverage { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .wc-coverage { grid-template-columns: 1fr; } }
+
+.wc-coverage__card {
+  --coverage-c: var(--wc-pitch);
+  background: white;
+  border-radius: var(--wc-radius);
+  box-shadow: var(--wc-shadow);
+  border-top: 6px solid var(--coverage-c);
+  padding: 22px 20px 20px;
+}
+.wc-coverage__card[data-tone="pitch"] { --coverage-c: var(--wc-pitch); }
+.wc-coverage__card[data-tone="sky"] { --coverage-c: var(--wc-sky); }
+.wc-coverage__card[data-tone="tomato"] { --coverage-c: var(--wc-tomato); }
+.wc-coverage__card[data-tone="sun"] { --coverage-c: var(--wc-sun-deep); }
+.wc-coverage__kicker {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--coverage-c);
+  font-weight: 800;
+}
+.wc-coverage__card h3 {
+  margin: 8px 0 8px;
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: .02em;
+}
+.wc-coverage__card p {
+  margin: 0;
+  color: var(--wc-ink-soft);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.wc-coverage__card ul {
+  margin: 14px 0 0;
+  padding: 12px 0 0 18px;
+  border-top: 1px dashed rgba(15,23,42,.16);
+  color: var(--wc-ink);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.wc-path--coverage {
+  margin-top: 20px;
 }
 
 /* ── PROFILE CARDS (focus) ────────────────────────────────────────────── */
