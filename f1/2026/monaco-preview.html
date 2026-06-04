@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 Monaco Grand Prix Preview</title>
+  <meta name="description" content="2026 F1 摩納哥大獎賽賽前預告：台灣時間賽程、最新積分、賽道與輪胎脈絡、Monaco 兩停規則、四大車隊動向與排位戰前瞻。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 Monaco Grand Prix Preview" />
+  <meta property="og:description" content="摩納哥站回到六月首個週末，街道賽道、強制兩停與排位決勝，讓 Round 6 成為本季第一個真正的歐洲風格壓力測試。" />
+  <meta name="theme-color" content="#09111f" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --card: rgba(255, 252, 247, 0.84);
+      --line: rgba(23, 32, 51, 0.12);
+      --navy: #09111f;
+      --royal: #1f4d8f;
+      --gold: #b88a44;
+      --crimson: #a32035;
+      --shadow: 0 18px 48px rgba(9, 17, 31, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.78;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(184, 138, 68, 0.18), transparent 24%),
+        radial-gradient(circle at 85% 0%, rgba(31, 77, 143, 0.12), transparent 28%),
+        linear-gradient(180deg, #fbf7f1 0%, #f1ebe2 100%);
+    }
+    a { color: var(--royal); }
+    .hero {
+      padding: 64px 24px 56px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(9, 17, 31, 0.96), rgba(22, 32, 51, 0.84)),
+        linear-gradient(120deg, #0b1628, #15345f 52%, #5d1320 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin-top: 28px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 20px 0 12px;
+      max-width: 11ch;
+      font-size: clamp(36px, 6.2vw, 66px);
+      line-height: 1.05;
+    }
+    .hero p {
+      max-width: 780px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--crimson);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--gold);
+      background: rgba(184, 138, 68, 0.08);
+      font-size: 14px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+      font: 600 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .team-list {
+      display: grid;
+      gap: 16px;
+    }
+    .team-item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    .team-item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .forecast {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .forecast div {
+      padding: 16px 12px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(31,77,143,0.08), rgba(255,255,255,0.9));
+      text-align: center;
+    }
+    .forecast b {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 24px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    ol, ul { margin: 0; padding-left: 20px; }
+    .sources li { margin-bottom: 8px; }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+      .forecast { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+      .forecast { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 6 Preview</div>
+      <h1>摩納哥回到六月，排位戰再次決定週末上限</h1>
+      <p>2026 年 F1 歐洲賽季從摩納哥開場。這不是單純的歷史名站，而是本季第一個把低速機械抓地、牆邊容錯率、交通管理與強制兩停同時壓上桌面的週末。加拿大站後的性能版圖也讓這一站更尖銳：Mercedes 帶著最新升級領先而來，Ferrari 狀態回暖，McLaren 還在追縮差距，Red Bull 則希望把 Miami 的技術改版真正帶進街道賽。</p>
+      <div class="meta">
+        <span>發布日期：2026-06-01</span>
+        <span>賽事：Formula 1 Louis Vuitton Grand Prix de Monaco 2026</span>
+        <span>正賽時間：06-07 21:00（台灣）</span>
+        <span>Sprint：不適用</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Opening Thesis</div>
+      <div class="lede">
+        <p>摩納哥的老問題從來不是「誰最快」，而是「誰能在最窄的空間裡先把上限兌現」。F1 官方賽道頁面仍把這條 3.337 公里、78 圈、總里程 260.286 公里的街道賽道描述為幾乎沒有超車餘地的極限測試；這代表週六排位的重要性，仍遠高於絕大多數賽站。只要前排出發，車隊便能把整個週日策略主動權握在手上。</p>
+        <p>但 2026 的摩納哥又與往年不同。FIA 去年起已為摩納哥引入強制兩停規則，乾地情況下車手必須使用至少三套輪胎、且至少兩種不同乾胎配方。這不會抹去排位的重要性，卻會把 undercut、Safety Car、慢車列車與第二停窗口拉進決勝方程式。換句話說，排位仍是主角，但策略不再只是背景板。</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taiwan Schedule</div>
+        <h2>台灣時間賽程</h2>
+        <table>
+          <thead>
+            <tr><th>日期</th><th>時間</th><th>階段</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>06-05 週五</td><td>19:30</td><td>FP1</td><td>摩納哥首輪牆邊校正</td></tr>
+            <tr><td>06-05 週五</td><td>23:00</td><td>FP2</td><td>長距離與紅旗風險管理</td></tr>
+            <tr><td>06-06 週六</td><td>18:30</td><td>FP3</td><td>最後一次低速設定驗證</td></tr>
+            <tr><td>06-06 週六</td><td>22:00</td><td>Qualifying</td><td>本週末最關鍵一小時</td></tr>
+            <tr><td>06-07 週日</td><td>21:00</td><td>Race</td><td>78 圈，強制兩停</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Formula1.com 的 Monaco 全時程頁面標示賽道位於 UTC+2；本表已換算為 Asia/Taipei（UTC+8）。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Special Rule</div>
+        <h2>Monaco 兩停規則仍是本週最大變數</h2>
+        <p>摩納哥站不是 Sprint 週末，但有自己獨特的規則包。F1 官方解釋指出，乾地賽況下每位車手必須使用至少三套輪胎，並且至少涵蓋兩種不同 slick 配方；若違反，可能導致被加秒甚至取消成績。這使得後方車隊能更積極利用提早進站、刻意拉開 clean air，或在 Safety Car 期間壓縮第二停成本。</p>
+        <div class="chips">
+          <span class="chip">最低三套輪胎</span>
+          <span class="chip">乾地至少兩種乾胎</span>
+          <span class="chip">Safety Car 影響放大</span>
+          <span class="chip">排位仍最重要</span>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>車手積分前六</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>131</td></tr>
+            <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>88</td></tr>
+            <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>75</td></tr>
+            <tr><td>4</td><td>Lewis Hamilton</td><td>Ferrari</td><td>72</td></tr>
+            <tr><td>5</td><td>Lando Norris</td><td>McLaren</td><td>58</td></tr>
+            <tr><td>6</td><td>Oscar Piastri</td><td>McLaren</td><td>48</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Constructors</div>
+        <h2>車隊積分前五</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>219</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>147</td></tr>
+            <tr><td>3</td><td>McLaren</td><td>106</td></tr>
+            <tr><td>4</td><td>Red Bull Racing</td><td>57</td></tr>
+            <tr><td>5</td><td>Alpine</td><td>35</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Track Guide</div>
+        <h2>賽道解析</h2>
+        <p>Circuit de Monaco 的關鍵不是長直線，而是低速旋轉、過彎貼牆與節奏連續性。官方資料列出 3.337 公里、78 圈與 260.286 公里賽程，配上街道表面與極窄賽道寬度，讓車手需要更高前軸信心與更柔順的機械抓地輸出。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Tyre Angle</div>
+        <h2>輪胎脈絡</h2>
+        <p>Pirelli 與 F1 官方已確認 2026 賽季 slick 範圍為 C1 至 C5，去年使用過的 C6 不再進入 2026 驗證清單。F1 官方輪胎入門頁同時註明，摩納哥例外地會比一般週末多配一套 wet 以配合兩停規則。至 2026-06-01 為止，我沒有查到可搜尋、可直接驗證的本週末 Monaco 站 event-specific 乾胎三配方公告，因此本報不臆測確切編號。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Home Pressure</div>
+        <h2>地主壓力</h2>
+        <p>Leclerc 以 75 分居車手榜第三，回到主場後天然會被放進 pole 候選名單。摩納哥過往對單圈極限與牆邊節奏的要求，正是 Ferrari 這種需要把輪胎預熱與低速前軸一次做到位的車型最容易被放大檢驗的地方。</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Big Four Watch</div>
+      <h2>四大車隊動向</h2>
+      <div class="team-list">
+        <div class="team-item">
+          <strong>Mercedes：加拿大升級一炮而紅，但可靠度陰影還沒完全消失</strong>
+          <p>F1 官方 Tech Weekly 指出，Mercedes 在加拿大帶來從前翼到 diffuser 的整包更新，核心目標是擴大後軸下壓力分布，結果是 W17 在 Montreal 立即打出更明顯的性能優勢。問題在於 Russell 的加拿大正賽最終退賽，代表性能領先之後，能否把整個週末完整收掉，將成為摩納哥真正的考題。</p>
+        </div>
+        <div class="team-item">
+          <strong>Ferrari：Miami 大包更新後，近況更像「收斂」而不是爆發</strong>
+          <p>Ferrari 在 Miami 帶來大規模升級，官方技術分析認為這套更新的潛力還沒完全被看清；再加上「flip-flop」旋轉尾翼已正式留在車上，SF-26 的技術方向已經定型。加拿大站後 Hamilton 也明講，車隊在前置準備、工程協作與自己的設定適應上都在進步。這讓 Ferrari 以主場 Leclerc 加上回升中的 Hamilton，成為最可能切進第一排的非 Mercedes 勢力。</p>
+        </div>
+        <div class="team-item">
+          <strong>McLaren：連續更新仍在追趕，街道低速是驗貨時刻</strong>
+          <p>McLaren 在 Miami 先帶來大包升級，又在加拿大追加修改件，Norris 與 Piastri 當時都表示這些更新正在把車推向正確方向。問題是加拿大正賽的 intermediates 起跑決策讓整個週末失焦，真正的單圈戰力仍需要新樣本。摩納哥會把低速前軸信心、暖胎節奏與牆邊穩定性放到最大，因此這一站很適合判斷 McLaren 是否已經從「追近」進入「能爭 pole」的區間。</p>
+        </div>
+        <div class="team-item">
+          <strong>Red Bull：Miami 改版有效，但加拿大仍暴露平衡與駕駛舒適度問題</strong>
+          <p>Red Bull 在 Miami 進行了極大幅度改版，涵蓋前翼、煞車導流、地板、sidepods、engine cover、diffuser 與 rear wing，並搭配轉向感受修正；另有與 Ferrari 類似的旋轉尾翼方案同步上車。不過加拿大週末 Verstappen 與 Hadjar 仍談到跳動、難駕馭與週末感受不穩的問題。以摩納哥對低速機械抓地與車身服貼度的要求來看，Red Bull 要先把車開順，才談得上把 Miami 升級轉成真正的前排威脅。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Qualifying Projection</div>
+      <h2>排位預測</h2>
+      <p>若把官方最新積分、加拿大升級成果、Monaco 對低速抓地與排位權重的歷史特性放在一起看，Mercedes 仍是最穩的單圈基準；但 Leclerc 的主場單圈天花板，以及 Ferrari 最近的收斂速度，讓 pole 不會只是銀箭內戰。我傾向把 Russell、Antonelli、Leclerc 視為第一排候選核心，McLaren 的 Norris 是最可能打亂順序的人選。</p>
+      <div class="forecast">
+        <div><b>P1</b><span>George Russell</span></div>
+        <div><b>P2</b><span>Charles Leclerc</span></div>
+        <div><b>P3</b><span>Kimi Antonelli</span></div>
+        <div><b>P4</b><span>Lando Norris</span></div>
+        <div><b>P5</b><span>Lewis Hamilton</span></div>
+        <div><b>P6</b><span>Max Verstappen</span></div>
+      </div>
+      <div class="note">這是基於截至 2026-06-01 可驗證資訊所做的編輯部預測，不是投注建議。摩納哥的紅旗、交通與暖胎時機足以在最後一輪 Q3 完全改寫排序。</div>
+    </section>
+
+    <section class="card">
+      <div class="kicker">What Matters</div>
+      <h2>週末三個關鍵觀察</h2>
+      <ol>
+        <li>Mercedes 是否能把加拿大的更新優勢完整帶進低速街道賽，而不被可靠度或牆邊風險打斷。</li>
+        <li>Ferrari 的主場單圈表現，能否把 Leclerc 與 Hamilton 同時送進第二排內，甚至逼出第一排。</li>
+        <li>強制兩停規則會不會真的創造位置交換，或最終仍只是讓前排車隊以不同停站順序鎖住勝負。</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Sources</div>
+      <h2>資料來源</h2>
+      <ul class="sources">
+        <li><a href="https://www.fia.com/news/2026-fia-sporting-calendars-approved-world-motor-sport-council">FIA：2026 F1 官方賽曆（含 Monaco 06-05 至 06-07）</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/formula-1-louis-vuitton-grand-prix-de-monaco-2026.5eqj7xSRWW6dylGmncfs6T">Formula1.com：Monaco 2026 full timetable</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026/Monaco.html">Formula1.com：Monaco 2026 官方賽事頁與賽道資料</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/drivers">Formula1.com：2026 Drivers' Standings</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/team">Formula1.com：2026 Teams' Standings</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/fia-world-motor-sport-council-confirms-mandatory-two-stop-strategies-for.UUe16nwpOcqBe9f6PYgkq/">Formula1.com：Monaco 強制兩停規則</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/pirelli-confirm-2026-tyre-compounds-as-f1-gets-set-for-a-new-era-of.6la0zKVsCYwWk9AAISz4Yw">Formula1.com：Pirelli 2026 輪胎配方調整</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article.the-beginners-guide-to-formula-1-tyres.61SvF0Kfg29UR2SPhakDqd.html">Formula1.com：2026 輪胎配置與 Monaco 例外 wet 規則</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/tech-weekly-how-mercedes-hit-back-at-their-rivals-with-a-potent-canadian-grand-prix-upgrade-package.3gsbmXijbkdHgvf8V9msZ8">Formula1.com Tech Weekly：Mercedes 加拿大升級包</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/push-us-in-the-right-direction-norris-and-piastri-optimistic-as-mclaren-bring-more-upgrades-to-canada.72bxkELpoyIpEd0IOKMb77">Formula1.com：McLaren 加拿大追加升級</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/tech-weekly-why-there-should-be-more-to-come-from-ferraris-major-miami-upgrade-package.3bR9GGw2vicxyoVKbxhszt">Formula1.com Tech Weekly：Ferrari Miami 大包更新</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/vasseur-confirms-ferrari-will-keep-flip-flop-rear-wing-on-the-car-in-miami.5OP7HfoNZI1zvYkxXUBOA3.5OP7HfoNZI1zvYkxXUBOA3">Formula1.com：Ferrari flip-flop rear wing</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/hamilton-praises-ferrari-for-moving-mountains-behind-the-scenes-after-canada-breakthrough.56QKDEOpQT6Me2LsxHRsUF">Formula1.com：Hamilton 談 Ferrari 加拿大突破</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/tech-weekly-the-transformative-upgrades-that-contributed-to-red-bulls-dramatic-turnaround-in-miami.5lAsZJupFnu4uC0y2mpnbs">Formula1.com Tech Weekly：Red Bull Miami 大改版</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/know-we-can-do-better-verstappen-pushing-red-bull-despite-great-result-with-canada-podium.2jvRTJseIR5XHAJn63chxD">Formula1.com：Verstappen 加拿大站後談 Red Bull 狀態</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    以上內容依據 2026-06-01 Asia/Taipei 可查證資料整理。若 Pirelli 在賽前補發 Monaco 專屬乾胎三配方公告，輪胎段落應以該公告為最新準據。
+  </footer>
+</body>
+</html>

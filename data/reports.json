@@ -1,5 +1,50 @@
 [
   {
+    "href": "f1/2026/monaco-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-06-01",
+    "title": "F1 2026 Monaco Grand Prix Preview",
+    "kicker": "Street Circuit",
+    "summary": "Monaco opens the European stretch with a qualifying-first, two-stop strategic puzzle.",
+    "secondary": "This preview covers Taiwan schedule, standings, track notes, tyre context, big-four team trends, and a qualifying forecast.",
+    "seasonLabel": "F1 2026 Round 6",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #09111f 0%, #1f4d8f 52%, #b88a44 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
+    "href": "f1/2026/canada-fri.html",
+    "league": "f1",
+    "type": "fri",
+    "date": "2026-05-22",
+    "title": "F1 2026 加拿大大獎賽週五快報",
+    "kicker": "Sprint Weekend",
+    "summary": "蒙特婁衝刺週末開場，官方成績尚待 FP1 與 Sprint Qualifying 出爐。",
+    "secondary": "整理週末時程、積分壓力、賽道條件與今晚三個關鍵觀察點。",
+    "seasonLabel": "F1 2026 Round 5",
+    "tagLabel": "週五快報",
+    "accent": "linear-gradient(135deg, #f7f2ea 0%, #b42318 50%, #172033 100%)",
+    "featured": true,
+    "latest": false
+  },
+  {
+    "href": "f1/2026/canada-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-05-18",
+    "title": "F1 2026 Canadian Grand Prix Preview",
+    "kicker": "Sprint Weekend",
+    "summary": "Montreal opens its first Sprint weekend of the new 2026 rules era.",
+    "secondary": "This preview covers Taiwan schedule, standings, track notes, team trends, and a qualifying forecast.",
+    "seasonLabel": "F1 2026 Round 5",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #101722 0%, #d7263d 52%, #f4efe7 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/offweek-2026-05-11-offweek.html",
     "league": "f1",
     "type": "preview",
@@ -12,24 +57,7 @@
     "tagLabel": "休賽週快報",
     "accent": "linear-gradient(90deg, #7a7a9a, #3671c6)",
     "featured": false,
-    "latest": true
-  },
-  {
-    "href": "f1/2026/canada-preview.html",
-    "league": "f1",
-    "type": "preview",
-    "date": "2026-05-08",
-    "title": "加拿大大獎賽 前瞻",
-    "kicker": "Sprint Weekend",
-    "summary": "Antonelli 百分大關領先，Mercedes 醞釀本季最大升級包，Hamilton 蒙特婁主場效應是最大外卡。",
-    "secondary": "Ferrari 與 McLaren 同步帶入新零件，車隊積分之爭恐在蒙特婁換位。",
-    "seasonLabel": "F1 2026 · Round 5",
-    "tagLabel": "預告報告",
-    "accent": "preview",
-    "featured": true,
-    "latest": false,
-    "image": "assets/photos/canada-light-trails.jpg",
-    "imageAlt": "夜間賽道與看台光軌照片"
+    "latest": false
   },
   {
     "href": "worldcup/2026/world-cup-2026-preview.html",
