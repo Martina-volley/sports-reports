@@ -1,0 +1,95 @@
+{
+  "updated": "2026-06-04",
+  "timezone": "Asia/Taipei",
+  "rhythm": [
+    {
+      "phase": "pre_tournament",
+      "window": "2026-06-04 to 2026-06-10",
+      "cadence": "1 group preview or long read per day",
+      "publishingSlot": "20:00-22:00"
+    },
+    {
+      "phase": "group_stage",
+      "window": "2026-06-11 to 2026-06-27",
+      "cadence": "matchday preview at night, daily debrief after matches",
+      "publishingSlot": "Preview 20:00-22:00, Debrief 12:00-15:00"
+    },
+    {
+      "phase": "knockout_stage",
+      "window": "2026-06-28 to 2026-07-18",
+      "cadence": "preview every matchday, review selected matches",
+      "publishingSlot": "Preview previous night, Review after matchday"
+    },
+    {
+      "phase": "final_week",
+      "window": "2026-07-19 onward",
+      "cadence": "final preview, final review, tournament wrap",
+      "publishingSlot": "as match schedule allows"
+    }
+  ],
+  "items": [
+    {
+      "id": "group-a-preview",
+      "title": "A 組：主辦國、開幕戰，和一組不太安分的對手",
+      "type": "group_preview",
+      "status": "published",
+      "publishDate": "2026-06-04",
+      "slot": "published",
+      "href": "worldcup/2026/group-a-preview.html"
+    },
+    {
+      "id": "group-h-preview",
+      "title": "H 組：西班牙的控球、烏拉圭的刀口，和首次登場的島國夢",
+      "type": "group_preview",
+      "status": "published",
+      "publishDate": "2026-06-05",
+      "slot": "published",
+      "href": "worldcup/2026/group-h-preview.html"
+    },
+    {
+      "id": "format-long-read",
+      "title": "48 隊之後，世界盃變寬了嗎？",
+      "type": "deep_dive",
+      "status": "planned",
+      "publishDate": "2026-06-06",
+      "slot": "20:00-22:00",
+      "href": "worldcup/2026/format-long-read.html"
+    },
+    {
+      "id": "group-i-preview",
+      "title": "I 組：法國、塞內加爾、挪威與伊拉克",
+      "type": "group_preview",
+      "status": "planned",
+      "publishDate": "2026-06-07",
+      "slot": "20:00-22:00",
+      "href": "worldcup/2026/group-i-preview.html"
+    },
+    {
+      "id": "group-l-preview",
+      "title": "L 組：英格蘭、克羅埃西亞、迦納與巴拿馬",
+      "type": "group_preview",
+      "status": "planned",
+      "publishDate": "2026-06-08",
+      "slot": "20:00-22:00",
+      "href": "worldcup/2026/group-l-preview.html"
+    },
+    {
+      "id": "host-map-long-read",
+      "title": "三國十六城，誰的腿最累？",
+      "type": "deep_dive",
+      "status": "planned",
+      "publishDate": "2026-06-09",
+      "slot": "20:00-22:00",
+      "href": "worldcup/2026/host-map-long-read.html"
+    },
+    {
+      "id": "group-c-preview",
+      "title": "C 組：巴西、摩洛哥、海地與蘇格蘭",
+      "type": "group_preview",
+      "status": "planned",
+      "publishDate": "2026-06-10",
+      "slot": "20:00-22:00",
+      "href": "worldcup/2026/group-c-preview.html"
+    }
+  ]
+}
