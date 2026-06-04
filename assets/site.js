@@ -166,8 +166,9 @@
 
   function renderCards(filter, featured) {
     const featuredHref = featured && featured.href;
+    const shouldHideFeaturedCard = !filter || filter === 'all';
     const list = reports
-      .filter(r => !featuredHref || r.href !== featuredHref)
+      .filter(r => !shouldHideFeaturedCard || !featuredHref || r.href !== featuredHref)
       .filter(r => matchesFilter(r, filter));
 
     if (!list.length) {
