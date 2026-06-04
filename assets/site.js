@@ -62,13 +62,6 @@
 
   /* ---------- featured ---------- */
   const featuredEl = $('#featured');
-  const featured = reports.find(r => r.featured) || reports.find(r => r.latest) || reports[0];
-
-  if (!featured) {
-    featuredEl.innerHTML = '<div class="featured__loading">尚無報告。</div>';
-  } else {
-    featuredEl.innerHTML = renderFeatured(featured);
-  }
 
   function renderFeatured(r) {
     const accentMap = { f1: 'F1', baseball: 'BASEBALL', mlb: 'MLB', npb: 'NPB', cpbl: 'CPBL' };
@@ -155,9 +148,26 @@
   const grid = $('#report-grid');
   const empty = $('#empty-state');
 
-  function renderCards(filter) {
+  function getFeaturedForFilter(filter) {
+    const list = reports.filter(r => matchesFilter(r, filter));
+    return list.find(r => r.latest) || list[0] || null;
+  }
+
+  function renderIssue(filter) {
+    const featured = getFeaturedForFilter(filter);
+    if (!featured) {
+      featuredEl.innerHTML = '<div class="featured__loading">尚無報告。</div>';
+    } else {
+      featuredEl.innerHTML = renderFeatured(featured);
+    }
+
+    renderCards(filter, featured);
+  }
+
+  function renderCards(filter, featured) {
+    const featuredHref = featured && featured.href;
     const list = reports
-      .filter(r => !r.featured)        // featured already shown
+      .filter(r => !featuredHref || r.href !== featuredHref)
       .filter(r => matchesFilter(r, filter));
 
     if (!list.length) {
@@ -195,14 +205,14 @@
   }
 
   // initial render
-  renderCards('all');
+  renderIssue('all');
 
   // filter clicks
   $('#filter-bar').addEventListener('click', (e) => {
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
     $$('.filter-btn').forEach(b => b.classList.toggle('is-active', b === btn));
-    renderCards(btn.dataset.filter);
+    renderIssue(btn.dataset.filter);
   });
 
   // featured league chips → jump filter
