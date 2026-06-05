@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/monaco-fri.html",
+    "league": "f1",
+    "type": "fri",
+    "date": "2026-06-05",
+    "title": "F1 2026 摩納哥大獎賽週五前線：FP1、FP2 開跑前的四條主線",
+    "kicker": "Friday Dispatch",
+    "summary": "Monaco 週五開場版；官方練習成績尚未出爐，先看賽程、加拿大戰果與積分版圖。",
+    "secondary": "本報告整理台灣時間、官方現況、加拿大前十、積分榜與摩納哥關鍵變數。",
+    "seasonLabel": "F1 2026 Round 6",
+    "tagLabel": "週五開場",
+    "accent": "linear-gradient(135deg, #101828 0%, #8f1d3f 52%, #bc8b3f 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "worldcup/2026/group-h-preview.html",
     "league": "worldcup",
     "type": "preview",
@@ -12,7 +27,7 @@
     "tagLabel": "分組預覽",
     "accent": "linear-gradient(135deg, #C60B1E 0%, #FACC15 48%, #6CACE4 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "worldcup/2026/group-a-preview.html",

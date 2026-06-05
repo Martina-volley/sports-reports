@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 摩納哥大獎賽週五前線：FP1、FP2 開跑前的四條主線</title>
+  <meta name="description" content="2026 F1 摩納哥大獎賽週五開場版。官方練習成績尚未出爐，先看台灣時間賽程、加拿大站官方結果、積分版圖與摩納哥週末關鍵變數。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 摩納哥大獎賽週五前線：FP1、FP2 開跑前的四條主線" />
+  <meta property="og:description" content="摩納哥週末週五開場，官方 FP1、FP2 尚未開跑；先整理賽程、積分與重點觀戰線索。" />
+  <meta name="theme-color" content="#101828" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f5efe5;
+      --paper: rgba(255, 251, 247, 0.86);
+      --ink: #182230;
+      --muted: #667085;
+      --line: rgba(24, 34, 48, 0.12);
+      --navy: #101828;
+      --wine: #8f1d3f;
+      --gold: #bc8b3f;
+      --sea: #245e73;
+      --shadow: 0 20px 50px rgba(16, 24, 40, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.78;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(188, 139, 63, 0.18), transparent 25%),
+        radial-gradient(circle at 88% 0%, rgba(36, 94, 115, 0.14), transparent 30%),
+        linear-gradient(180deg, #fbf7f1 0%, #f1eade 100%);
+    }
+    a { color: #184e77; }
+    .hero {
+      padding: 58px 24px 52px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(188, 139, 63, 0.28), transparent 24%),
+        linear-gradient(135deg, rgba(16, 24, 40, 0.98), rgba(31, 46, 77, 0.88) 48%, rgba(143, 29, 63, 0.86) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 10ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 780px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--wine);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 14px;
+      padding: 15px 16px;
+      border-left: 4px solid var(--gold);
+      background: rgba(188, 139, 63, 0.1);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .source-list li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 40px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 6</div>
+      <h1>摩納哥週五前線<br />先看四條主線</h1>
+      <p>今天是 Asia/Taipei 時區的 2026 年 6 月 5 日週五，屬於 F1 摩納哥站比賽週末，因此本次不是 no-op。但在本報發出時，摩納哥當地仍是 6 月 5 日凌晨，官方 FP1、FP2 尚未開始，Formula1.com 的賽事頁面也仍顯示「No results available」，因此這份報告採用週五開場版：先整理賽程、上一站官方戰果、積分版圖與本日關鍵觀戰線索。</p>
+      <div class="meta">
+        <span>Published 2026-06-05</span>
+        <span>Asia/Taipei</span>
+        <span>Formula 1 Louis Vuitton Grand Prix de Monaco 2026</span>
+        <span>kind = fri</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>摩納哥是 2026 賽季第六站，也是歐洲段開場。官方 2026 賽曆與摩納哥站時程都確認本週末賽事日期為 6 月 5 日至 7 日，而週五排程包含 FP1 與 FP2。從台灣時間來看，這兩節練習將在今晚 19:30 與 23:00 依序開跑；真正的排位戰要等到週六晚間 22:00，正賽則是週日晚間 21:00。</p>
+        <p>由於今天清晨還沒有任何週末成績，因此積分榜暫時維持加拿大站後的官方狀態：Mercedes 以 219 分領跑車隊榜，Kimi Antonelli 以 131 分在車手榜擴大優勢。對摩納哥這種排位高度決定週末走向的街道賽來說，今天練習最重要的不是單圈榜首本身，而是誰能最快進入貼牆節奏、誰的慢速彎機械抓地最穩，以及哪支車隊能在不使用主動空力直線模式的條件下重新找到平衡。</p>
+      </div>
+      <div class="status">官方狀態註記：依 Formula1.com 摩納哥 2026 賽事頁面，本報發稿時 Practice 1 / Practice 2 尚未有任何正式分類成績，因此本文不虛構練習結果。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taiwan Schedule</div>
+        <h2>台灣時間賽程</h2>
+        <table>
+          <thead>
+            <tr><th>Session</th><th>摩納哥</th><th>台灣</th><th>重點</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>FP1</td><td>06-05 13:30</td><td>06-05 19:30</td><td>第一輪貼牆節奏與低速設定確認</td></tr>
+            <tr><td>FP2</td><td>06-05 17:00</td><td>06-05 23:00</td><td>長距離節奏與排位模擬開始交錯</td></tr>
+            <tr><td>FP3</td><td>06-06 12:30</td><td>06-06 18:30</td><td>最後一次排位前修正</td></tr>
+            <tr><td>Qualifying</td><td>06-06 16:00</td><td>06-06 22:00</td><td>摩納哥週末核心戰場</td></tr>
+            <tr><td>Race</td><td>06-07 15:00</td><td>06-07 21:00</td><td>78 圈正賽</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">時間依 Formula1.com 官方 timetable 與摩納哥站賽事頁面換算，摩納哥為 UTC+2，台灣為 UTC+8。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>加拿大站後積分前段</h2>
+        <table>
+          <thead>
+            <tr><th>車手榜</th><th>車隊</th><th>積分</th><th>差距</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kimi Antonelli</td><td>Mercedes</td><td>131</td><td>領先 Russell 43 分</td></tr>
+            <tr><td>George Russell</td><td>Mercedes</td><td>88</td><td>-</td></tr>
+            <tr><td>Charles Leclerc</td><td>Ferrari</td><td>75</td><td>落後 Russell 13 分</td></tr>
+            <tr><td>Lewis Hamilton</td><td>Ferrari</td><td>72</td><td>落後 Leclerc 3 分</td></tr>
+            <tr><td>Lando Norris</td><td>McLaren</td><td>58</td><td>落後 Hamilton 14 分</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">車隊榜前五：Mercedes 219、Ferrari 147、McLaren 106、Red Bull Racing 57、Alpine 35。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Last Round</div>
+        <h2>上一站加拿大官方前十</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>25</td></tr>
+            <tr><td>2</td><td>Lewis Hamilton</td><td>Ferrari</td><td>18</td></tr>
+            <tr><td>3</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>15</td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>12</td></tr>
+            <tr><td>5</td><td>Isack Hadjar</td><td>Red Bull Racing</td><td>10</td></tr>
+            <tr><td>6</td><td>Franco Colapinto</td><td>Alpine</td><td>8</td></tr>
+            <tr><td>7</td><td>Liam Lawson</td><td>Racing Bulls</td><td>6</td></tr>
+            <tr><td>8</td><td>Pierre Gasly</td><td>Alpine</td><td>4</td></tr>
+            <tr><td>9</td><td>Carlos Sainz</td><td>Williams</td><td>2</td></tr>
+            <tr><td>10</td><td>Oliver Bearman</td><td>Haas</td><td>1</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">加拿大站的直接後果，是 Antonelli 再拿 25 分擴大優勢；Russell、Norris 雙雙未完賽，讓 Mercedes 與 Ferrari 在進入摩納哥前的積分版圖明顯拉開。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Friday Watch</div>
+        <h2>今晚先看什麼</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 主動空力在摩納哥停用</strong>
+            <div>F1 官方說明指出，2026 年新規下的 Active Aero 在摩納哥因安全因素不啟用，整個週末等同鎖在高下壓角落模式。這會讓車隊更依賴低速機械抓地、轉向反應與煞車穩定性，而不是直線開翼效率。</div>
+          </div>
+          <div class="item">
+            <strong>2. Ferrari 主場壓力與機會同時升高</strong>
+            <div>Leclerc 回到主場，Hamilton 又剛在加拿大跑出 Ferrari 今年最具代表性的正賽之一。若 Ferrari 能在貼牆單圈上找到前軸信心，摩納哥比加拿大更像他們能直接爭杆位的位置。</div>
+          </div>
+          <div class="item">
+            <strong>3. Mercedes 要證明加拿大不是一次性高峰</strong>
+            <div>Antonelli 與 Russell 的積分優勢來自 Canada 的強勢週末，但摩納哥測的是完全不同的能力。今晚兩節練習若 Mercedes 仍能穩定佔據前排，冠軍敘事就會從「領先」轉成「真正統治」。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Weather</div>
+        <h2>天氣輪廓</h2>
+        <p>官方天氣預報認為週五將以乾地為主，氣溫約 17.5 至 20 度，雨機率約 30%。這不算典型濕滑週末，但在摩納哥，只要賽道表面有局部潮濕、霧氣或清晨冷鋒殘留，貼牆容錯就會立刻縮小。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Circuit</div>
+        <h2>賽道條件</h2>
+        <p>Circuit de Monaco 全長 3.337 公里、正賽 78 圈。這裡的重點不是絕對尾速，而是方向變換、慢速出彎牽引與駕駛信心。今天練習榜若出現大量黃旗或短暫紅旗，不會讓人意外。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Rank Shift</div>
+        <h2>積分變化焦點</h2>
+        <p>進入本週末前，Antonelli 領先 Russell 43 分，Russell 只領先 Leclerc 13 分，Hamilton 與 Leclerc 只差 3 分。也就是說，週六排位一旦出現失手，Ferrari 這對車手很可能率先互換隊內順序，並同時壓迫 Russell 的第二名位置。</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Editorial Note</div>
+      <h2>週五開場結論</h2>
+      <ol>
+        <li>這是一份開場版 Friday report，不是賽後 recap。原因很簡單：依摩納哥當地時間，官方練習尚未開始。</li>
+        <li>加拿大站把 Mercedes 推到更高的平台，也把 Ferrari 送進真正能施壓的追擊位置；McLaren 則需要在摩納哥把前排競爭力找回來。</li>
+        <li>今晚 FP1、FP2 真正要讀的訊號，是貼牆速度、黃旗頻率、軟胎單圈峰值與長run退化，而不是單看一張成績表。</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Sources</div>
+      <h2>資料來源</h2>
+      <ul class="source-list">
+        <li><a href="https://www.formula1.com/en/racing/2026">Formula 1 2026 Official Calendar</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/formula-1-louis-vuitton-grand-prix-de-monaco-2026.5eqj7xSRWW6dylGmncfs6T">Formula 1 Louis Vuitton Grand Prix de Monaco 2026 - full timetable</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026/Monaco.html">Monaco Grand Prix 2026 - F1 Race</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/what-is-the-weather-forecast-for-the-2026-monaco-grand-prix.4D3ZFQoOZ06eDclMWVlnOV">What is the weather forecast for the 2026 Monaco Grand Prix?</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/explained-why-active-aero-will-not-be-used-at-the-monaco-grand-prix.4nLtpjM9ZTUbPBQLmeAbj4">EXPLAINED: Why Active Aero will not be used at the Monaco Grand Prix</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-monaco-grand-prix.6augu7uTvHvJRRmoxT9O8n.6augu7uTvHvJRRmoxT9O8n">IT'S RACE WEEK: 5 storylines we're excited about ahead of the 2026 Monaco Grand Prix</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1285/canada/race-result">FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026 - RACE RESULT</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/drivers">2026 Drivers' Standings</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/team">2026 Teams' Standings</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    本文依 2026-06-05 Asia/Taipei 執行日期生成；若稍後 FP1、FP2 完成，應以後續 Saturday 或 race 報告更新正式成績敘事。
+  </footer>
+</body>
+</html>
