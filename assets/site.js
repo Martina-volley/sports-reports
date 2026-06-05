@@ -82,8 +82,11 @@
       { k: 'cpbl', label: 'CPBL',    n: reports.filter(x => x.league === 'cpbl').length },
     ].filter(c => c.k === 'all' || c.n > 0 || c.k === 'f1');
 
+    const rookieTag = r.href ? 'a' : 'div';
+    const rookieHref = r.href ? ` href="${escapeHtml(r.href)}"` : '';
+
     return `
-      <div class="rookie">
+      <${rookieTag} class="rookie"${rookieHref} aria-label="讀取 ${escapeHtml(r.title || 'featured report')}">
         <div class="rookie__inner">
           <div class="rookie__top">
             <span>${escapeHtml(leagueLabel)} · ${escapeHtml(r.tagLabel || r.type || '')}</span>
@@ -104,7 +107,7 @@
           </div>
         </div>
         <div class="rookie__foil">FEAT<br/>URED</div>
-      </div>
+      </${rookieTag}>
       <div class="featured__copy">
         <div class="featured__eyebrow">★ Featured · ${escapeHtml(fmtFullDate(r.date))}</div>
         <p class="featured__lead">

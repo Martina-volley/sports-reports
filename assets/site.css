@@ -161,6 +161,18 @@ a { color: inherit; }
   box-shadow: 12px 12px 0 var(--orange);
   position: relative;
   align-self: start;
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.rookie[href]:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 14px 14px 0 var(--red);
+}
+.rookie[href]:focus-visible {
+  outline: 4px solid var(--red);
+  outline-offset: 5px;
 }
 .rookie__inner { border: 3px solid var(--orange); margin: 6px; }
 
