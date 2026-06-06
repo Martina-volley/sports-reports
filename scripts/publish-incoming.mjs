@@ -139,6 +139,13 @@ function runCommand(command, commandArgs) {
   });
 }
 
+async function preflightGitAccess(allowedPaths) {
+  // Fail before mutating files if the automation environment cannot use git.
+  await runCommand("git", ["update-index", "--refresh"]);
+  const statusLines = await getGitStatusLines();
+  ensureNoUnrelatedGitChanges(statusLines, allowedPaths);
+}
+
 async function getGitStatusLines() {
   return new Promise((resolve, reject) => {
     const child = spawn("git", ["status", "--porcelain"], {
@@ -167,10 +174,6 @@ async function getGitStatusLines() {
       resolve(stdout.split(/\r?\n/).filter(Boolean));
     });
   });
-}
-
-function toRepoRelative(filePath) {
-  return path.relative(rootDir, filePath).replaceAll("\\", "/");
 }
 
 function ensureNoUnrelatedGitChanges(statusLines, allowedPaths) {
@@ -202,11 +205,18 @@ async function publish() {
   ]);
 
   for (const pair of pairs) {
+    publishedPaths.add(pair.report.href);
+  }
+
+  if (shouldCommit) {
+    await preflightGitAccess(publishedPaths);
+  }
+
+  for (const pair of pairs) {
     const targetPath = ensureInsideRoot(path.join(rootDir, pair.report.href));
     await mkdir(path.dirname(targetPath), { recursive: true });
     await copyFile(pair.htmlPath, targetPath);
     reportsByHref.set(pair.report.href, pair.report);
-    publishedPaths.add(toRepoRelative(targetPath));
   }
 
   const normalizedReports = normalizeFlags([...reportsByHref.values()]);
@@ -228,11 +238,10 @@ async function publish() {
     return;
   }
 
-  const allowedPaths = new Set(publishedPaths);
   const statusBeforeAdd = await getGitStatusLines();
-  ensureNoUnrelatedGitChanges(statusBeforeAdd, allowedPaths);
+  ensureNoUnrelatedGitChanges(statusBeforeAdd, publishedPaths);
 
-  await runCommand("git", ["add", ...[...allowedPaths].sort()]);
+  await runCommand("git", ["add", ...[...publishedPaths].sort()]);
   await runCommand("git", ["commit", "-m", `publish incoming reports (${pairs.length})`]);
 
   if (shouldPush) {
