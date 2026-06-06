@@ -61,7 +61,8 @@ const lines = [
   "",
   "1. 編輯 `data/worldcup-plan.json`。",
   "2. 執行 `node scripts/build-worldcup-plan.mjs` 重建本檔。",
-  "3. 單篇報導完成後，走 `new_incoming` 發布流程；若同時改 hub 或樣式，改用一般 commit/push。",
+  "3. 若只有單篇報導且有 `.html + .json` 配對，走 `new_incoming` 發布流程。",
+  "4. 若已直接更新正式頁面、`data/reports.json`、hub、plan 或樣式，改走一般 commit/push，不要再交給 `publish-incoming`。",
   ""
 ];
 

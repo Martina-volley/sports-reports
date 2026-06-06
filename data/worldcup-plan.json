@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04",
+  "updated": "2026-06-06",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -50,9 +50,9 @@
       "id": "format-long-read",
       "title": "48 隊之後，世界盃變寬了嗎？",
       "type": "deep_dive",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-06",
-      "slot": "20:00-22:00",
+      "slot": "published",
       "href": "worldcup/2026/format-long-read.html"
     },
     {
