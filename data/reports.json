@@ -1,5 +1,18 @@
 [
   {
+    "href": "f1/2026/monaco-sat.html",
+    "league": "f1",
+    "type": "sat",
+    "date": "2026-06-06",
+    "title": "F1 2026 摩納哥大獎賽週六焦點：Ferrari 先聲奪人，排位決戰前的三條主線",
+    "kicker": "Saturday Dispatch",
+    "summary": "Monaco 週六版；官方僅有 FP1、FP2，Ferrari 暫時掌握單圈節奏。",
+    "secondary": "整理週五前段成績、加拿大後積分壓力，以及今晚排位前最重要的三個觀察點。",
+    "seasonLabel": "F1 2026 · Round 6",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/monaco-fri.html",
     "league": "f1",
     "type": "fri",
@@ -12,7 +25,7 @@
     "tagLabel": "週五開場",
     "accent": "linear-gradient(135deg, #101828 0%, #8f1d3f 52%, #bc8b3f 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "worldcup/2026/group-h-preview.html",
