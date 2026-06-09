@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 摩納哥大獎賽週一回顧 | The Sports Report</title>
+  <meta name="description" content="Antonelli 在摩納哥完成五連勝，Hamilton 連兩站亞軍，Hadjar 首度代表紅牛站上頒獎台；本文整理前十、關鍵事件、積分榜、策略與下一站影響。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #09111f;
+      --panel: #101a2d;
+      --panel-2: #13213a;
+      --line: rgba(255, 255, 255, 0.12);
+      --text: #f5f7fb;
+      --muted: #a9b4c8;
+      --gold: #fbbf24;
+      --teal: #2dd4bf;
+      --red: #fb7185;
+      --silver: #dbe4f0;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(45, 212, 191, 0.18), transparent 28%),
+        radial-gradient(circle at top left, rgba(251, 191, 36, 0.18), transparent 24%),
+        linear-gradient(180deg, #07101d 0%, #0d1729 100%);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a { color: #8dd3ff; }
+    .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+    .hero {
+      padding: 48px 0 28px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow, .meta, .stamp, th, .sources li, .small {
+      font-family: "IBM Plex Mono", monospace;
+    }
+    .eyebrow {
+      color: var(--teal);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 10px 0 12px;
+      font-size: clamp(34px, 6vw, 62px);
+      line-height: 1.05;
+    }
+    .dek {
+      margin: 0;
+      max-width: 820px;
+      color: var(--silver);
+      font-size: 18px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      backdrop-filter: blur(8px);
+    }
+    .podium li, .takeaways li, .timeline li, .strategy li, .next-stop li { margin: 10px 0; }
+    .podium ol, .takeaways ul, .timeline ol, .strategy ul, .next-stop ul, .sources ul { margin: 12px 0 0; padding-left: 20px; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .stamp {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(251, 191, 36, 0.14);
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    main { padding: 28px 0 56px; }
+    section { margin-top: 26px; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
+    p { margin: 0 0 12px; color: var(--silver); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(10, 18, 32, 0.82);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .sources li { margin: 8px 0; font-size: 13px; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 18px 0 32px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 820px) {
+      .hero-grid, .grid-2 { grid-template-columns: 1fr; }
+      h1 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">F1 2026 Round 6 • Monday Review</div>
+      <h1>摩納哥的混亂下午，Antonelli 把五連勝帶出蒙地卡羅</h1>
+      <p class="dek">2026 年 6 月 7 日 Monaco 正賽由 Antonelli 從桿位控制節奏奪冠，Hamilton 靠 Ferrari 在安全車窗口的處理守住亞軍，Hadjar 在技術問題與賽後調查陰影下仍拿到紅牛生涯首座頒獎台。</p>
+      <div class="meta">
+        <span>發佈日期 2026-06-08</span>
+        <span>比賽日期 2026-06-07</span>
+        <span>地點 Circuit de Monaco</span>
+        <span>下一站 2026-06-14 Barcelona-Catalunya</span>
+      </div>
+      <span class="stamp">Official results and standings verified</span>
+
+      <div class="hero-grid">
+        <article class="card">
+          <h2>三個先看重點</h2>
+          <div class="takeaways">
+            <ul>
+              <li>Antonelli 完成跨中國、日本、邁阿密、加拿大到摩納哥的五連勝，車手積分以 156 分擴大到領先 Hamilton 66 分。</li>
+              <li>Monaco 戰局被安全車、紅旗、進站超速與重啟事故切碎，Norris、Leclerc、Verstappen 全部無法完賽，前線主要對手大量失血。</li>
+              <li>Ferrari 雖然沒拿到主場雙頒獎台，但 Hamilton 連兩站第二；Mercedes 244 分持續拉開車隊榜，Barcelona 會變成檢驗 Ferrari 與 McLaren 真實單圈與長距離速度的下一站。</li>
+            </ul>
+          </div>
+        </article>
+
+        <aside class="card">
+          <h2>頒獎台</h2>
+          <div class="podium">
+            <ol>
+              <li><strong>Kimi Antonelli</strong>，Mercedes，78 圈，2:23:31.243</li>
+              <li><strong>Lewis Hamilton</strong>，Ferrari，+6.271 秒</li>
+              <li><strong>Isack Hadjar</strong>，Red Bull Racing，+23.394 秒</li>
+            </ol>
+          </div>
+          <p class="small">Hamilton 拿下個人生涯第 8 次 Monaco 頒獎台；Hadjar 則完成加盟紅牛後的首座 F1 頒獎台。</p>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>官方正賽前十</h2>
+      <table>
+        <thead>
+          <tr><th>Pos</th><th>Driver</th><th>Team</th><th>Time / Gap</th><th>Pts</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>2:23:31.243</td><td>25</td></tr>
+          <tr><td>2</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+6.271s</td><td>18</td></tr>
+          <tr><td>3</td><td>Isack Hadjar</td><td>Red Bull Racing</td><td>+23.394s</td><td>15</td></tr>
+          <tr><td>4</td><td>Oscar Piastri</td><td>McLaren</td><td>+24.261s</td><td>12</td></tr>
+          <tr><td>5</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+26.553s</td><td>10</td></tr>
+          <tr><td>6</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+29.010s</td><td>8</td></tr>
+          <tr><td>7</td><td>Pierre Gasly</td><td>Alpine</td><td>+30.369s</td><td>6</td></tr>
+          <tr><td>8</td><td>Alexander Albon</td><td>Williams</td><td>+33.413s</td><td>4</td></tr>
+          <tr><td>9</td><td>Esteban Ocon</td><td>Haas</td><td>+37.140s</td><td>2</td></tr>
+          <tr><td>10</td><td>Fernando Alonso</td><td>Aston Martin</td><td>+41.899s</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p>第 11 到 16 名依序為 Bortoleto、Russell、Hulkenberg、Colapinto、Perez、Sainz；Leclerc、Stroll、Norris、Bearman、Bottas、Verstappen 未完成比賽。</p>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>關鍵事件時間線</h2>
+        <div class="timeline">
+          <ol>
+            <li>起跑前排的 Verstappen 在發車時失去動力，等同第一圈就退賽，Red Bull 立即失去最有力的勝場籌碼。</li>
+            <li>Antonelli 起跑順利，避開本季先前起步不穩的老問題，從領跑開始就能掌握輪胎與節奏。</li>
+            <li>Stroll 事故引出安全車，讓 Ferrari、McLaren、Mercedes 都在同一個窗口處理罰秒與輪胎；之後 Leclerc 在重啟後煞車失效撞牆，進一步演變成紅旗。</li>
+            <li>Norris 原本卡在 Gasly 後方，隨後因動力單元異常退賽；McLaren 的第 1000 場分站只剩 Piastri 追分。</li>
+            <li>Russell 先因進站超速吞 5 秒，再因未正確執行罰秒而被追加 drive-through，從原本有望站上頒獎台的局面掉到第 12。</li>
+            <li>最終 Hadjar 雖有可操控性與動力問題，且賽後因紅旗下程序被調查，但仍保住季軍。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>車隊策略與執行</h2>
+        <div class="strategy">
+          <ul>
+            <li><strong>Mercedes：</strong>Antonelli 幾乎整場都在乾淨空氣中跑自己的節奏，重點是兩次重啟都沒失手。另一邊 Russell 的 pit lane 超速與罰則執行失誤，直接把車隊本可再拉開的積分變成零分。</li>
+            <li><strong>Ferrari：</strong>安全車時雙車 double stack，讓 Hamilton 順便完成罰秒仍保住 P2，這是 Ferrari 這場最重要的策略收益。代價是 Leclerc 被排在後面，且他之後因煞車問題撞牆退賽。</li>
+            <li><strong>McLaren：</strong>Piastri 有把混亂轉成 12 分，但隊伍整週末都缺少前排節奏，Norris 的可靠度問題更讓他們在對 Mercedes 與 Ferrari 的追擊中再次失血。</li>
+            <li><strong>Red Bull / Racing Bulls：</strong>主隊靠 Hadjar 扛住戰果，但 Verstappen 首圈退賽使勝利窗口直接關閉；姊妹隊 Lawson、Lindblad 同進前六，是這個週末中段集團的最大贏家。</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>積分榜變化</h2>
+        <table>
+          <thead>
+            <tr><th colspan="3">車手榜 Top 8（Monaco 後）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>156</td></tr>
+            <tr><td>2</td><td>Lewis Hamilton</td><td>90</td></tr>
+            <tr><td>3</td><td>George Russell</td><td>88</td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>75</td></tr>
+            <tr><td>5</td><td>Oscar Piastri</td><td>60</td></tr>
+            <tr><td>6</td><td>Lando Norris</td><td>58</td></tr>
+            <tr><td>7</td><td>Max Verstappen</td><td>43</td></tr>
+            <tr><td>8</td><td>Isack Hadjar</td><td>29</td></tr>
+          </tbody>
+        </table>
+        <p>Antonelli 在 6 站後已把優勢擴大到 66 分；Hamilton 以連兩站亞軍反超 Russell，升上年度第 2。</p>
+      </article>
+
+      <article class="card">
+        <h2>車隊榜變化</h2>
+        <table>
+          <thead>
+            <tr><th colspan="3">車隊榜 Top 6（Monaco 後）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>244</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>165</td></tr>
+            <tr><td>3</td><td>McLaren</td><td>118</td></tr>
+            <tr><td>4</td><td>Red Bull Racing</td><td>72</td></tr>
+            <tr><td>5</td><td>Alpine</td><td>41</td></tr>
+            <tr><td>6</td><td>Racing Bulls</td><td>39</td></tr>
+          </tbody>
+        </table>
+        <p>Mercedes 即使只靠 Antonelli 一車得分，仍把對 Ferrari 的領先維持在 79 分；McLaren 與 Red Bull 兩隊都因 DNF 或節奏不足沒能有效回應。</p>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>車手與車隊觀察</h2>
+        <p><strong>Antonelli：</strong>官方賽後說法指出他在兩次重啟都把輪胎與節奏管理好，這種在 Monaco 近乎零失誤的控制力，已經不是只靠單圈快，而是完整冠軍級週末。</p>
+        <p><strong>Hamilton：</strong>Ferrari 雖然仍差 Mercedes 一步，但 Hamilton 連兩站站上頒獎台，代表低速機械抓地與比賽執行正在進步，Barcelona 會是更準確的壓力測試。</p>
+        <p><strong>Hadjar：</strong>在 drivability 問題、紅旗與賽後調查之間守住季軍，這是紅牛今年少數能正面收尾的星期天，也是他個人在大車隊最有說服力的一場。</p>
+        <p><strong>McLaren：</strong>Norris 直言可靠度已成優先修正項，Piastri 則承認整個週末都缺速度。這表示他們目前不是只欠執行，而是單純 pace 不夠。</p>
+      </article>
+
+      <article class="card">
+        <h2>下一站影響：Barcelona-Catalunya</h2>
+        <div class="next-stop">
+          <ul>
+            <li>下一站是 2026 年 6 月 12 日至 14 日的 Barcelona-Catalunya，和 Monaco 完全不同，會把高速彎穩定性、長距離輪胎退化與真實空力效率全部攤開。</li>
+            <li>Mercedes 要驗證 Antonelli 的五連勝是否已從街道賽優勢延伸成全面統治；Russell 則需要止血，否則車手榜會很快變成隊友單獨領跑。</li>
+            <li>Ferrari 若能把 Monaco 展現出的低速競爭力轉成 Barcelona 的全段速率，Hamilton 與 Leclerc 才有機會真正切入 Antonelli 的勝場範圍。</li>
+            <li>McLaren 的重點不是策略，而是先把 Norris 的可靠度與整體節奏找回來；若 Barcelona 仍落後，年度爭冠主軸會進一步向 Mercedes 傾斜。</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>資料來源</h2>
+      <div class="sources">
+        <ul>
+          <li>Formula 1 Official Race Hub: <a href="https://www.formula1.com/en/racing/2026/monaco" target="_blank" rel="noopener">Monaco Grand Prix 2026</a></li>
+          <li>Formula 1 Official Results: <a href="https://www.formula1.com/en/results/2026/races/1286/monaco/race-result" target="_blank" rel="noopener">Monaco Race Result</a></li>
+          <li>Formula 1 Official Standings: <a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noopener">Drivers' Standings</a></li>
+          <li>Formula 1 Official Standings: <a href="https://www.formula1.com/en/results/2026/team" target="_blank" rel="noopener">Teams' Standings</a></li>
+          <li>Formula 1 Race Summary: <a href="https://www.formula1.com/en/latest/article/monaco-lowdown-all-the-key-moments-as-antonelli-makes-it-five-wins-in-a-row-amid-plenty-of-drama.15V47eOZ3Gp6ZRRxg4F2TI" target="_blank" rel="noopener">All the key moments from the 2026 Monaco Grand Prix</a></li>
+          <li>Formula 1 Team Quotes: <a href="https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-monaco-2026.2jsmMDo57e454K9ymtAgMs" target="_blank" rel="noopener">What the teams said – Race day in Monaco</a></li>
+          <li>Formula 1 Penalties Round-up: <a href="https://www.formula1.com/en/latest/article/all-the-penalties-dished-out-at-the-2026-monaco-grand-prix.4QOQDEUjcA3Rp3pEz5iZFN" target="_blank" rel="noopener">All the penalties dished out at the Monaco Grand Prix</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">The Sports Report • F1 Monday Review • Monaco 2026</div>
+  </footer>
+</body>
+</html>
