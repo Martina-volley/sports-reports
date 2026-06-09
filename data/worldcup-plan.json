@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06",
+  "updated": "2026-06-09",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -59,27 +59,27 @@
       "id": "group-i-preview",
       "title": "I 組：法國、塞內加爾、挪威與伊拉克",
       "type": "group_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-07",
-      "slot": "20:00-22:00",
+      "slot": "published",
       "href": "worldcup/2026/group-i-preview.html"
     },
     {
       "id": "group-l-preview",
       "title": "L 組：英格蘭、克羅埃西亞、迦納與巴拿馬",
       "type": "group_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-08",
-      "slot": "20:00-22:00",
+      "slot": "published",
       "href": "worldcup/2026/group-l-preview.html"
     },
     {
       "id": "host-map-long-read",
       "title": "三國十六城，誰的腿最累？",
       "type": "deep_dive",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-09",
-      "slot": "20:00-22:00",
+      "slot": "published",
       "href": "worldcup/2026/host-map-long-read.html"
     },
     {

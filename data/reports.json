@@ -1,5 +1,20 @@
 [
   {
+    "href": "worldcup/2026/host-map-long-read.html",
+    "league": "worldcup",
+    "type": "briefing",
+    "date": "2026-06-09",
+    "title": "三國十六城，誰的腿最累？",
+    "kicker": "Host Map",
+    "summary": "2026 世界盃的地理不只是背景。三國十六城與 104 場賽程，會直接改變每支隊伍的恢復與節奏。",
+    "secondary": "從墨西哥城開幕到紐約紐澤西決賽，這屆賽事要處理的不只是對手，還有整張北美版圖。",
+    "tagLabel": "深度專題",
+    "seasonLabel": "WORLD CUP 2026 · Long Read 02",
+    "accent": "linear-gradient(135deg, #0F766E 0%, #22C55E 40%, #3B82F6 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/monaco-race.html",
     "league": "f1",
     "type": "race",
@@ -12,7 +27,22 @@
     "tagLabel": "賽後回顧",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 45%, #d97706 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
+  },
+  {
+    "href": "worldcup/2026/group-l-preview.html",
+    "league": "worldcup",
+    "type": "preview",
+    "date": "2026-06-08",
+    "title": "L 組：英格蘭、克羅埃西亞、迦納與巴拿馬",
+    "kicker": "Old Weight",
+    "summary": "英格蘭仍是 L 組頭號熱門，但首輪就碰克羅埃西亞，讓這組從第一晚開始就沒有慢熱空間。",
+    "secondary": "迦納與巴拿馬都不是陪榜角色，第二輪之後的積分表很可能讓最後一輪四隊都還在算路。",
+    "tagLabel": "分組預覽",
+    "seasonLabel": "WORLD CUP 2026 · Group L",
+    "accent": "linear-gradient(135deg, #1B365D 0%, #F59E0B 42%, #DC2626 100%)",
+    "featured": false,
+    "latest": false
   },
   {
     "href": "worldcup/2026/group-i-preview.html",
