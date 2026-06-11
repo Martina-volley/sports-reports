@@ -798,6 +798,76 @@ a.wc-coverage__card {
   margin-top: 20px;
 }
 
+.wc-series-index {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 8px 0 20px;
+}
+@media (max-width: 980px) { .wc-series-index { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .wc-series-index { grid-template-columns: 1fr; } }
+
+.wc-series-index__card {
+  --series-c: var(--wc-pitch);
+  display: block;
+  min-height: 100%;
+  background: white;
+  border: 1px solid rgba(15,23,42,.08);
+  border-top: 6px solid var(--series-c);
+  border-radius: var(--wc-radius);
+  box-shadow: var(--wc-shadow);
+  color: inherit;
+  padding: 20px 18px;
+  text-decoration: none;
+}
+.wc-series-index__card[data-tone="pitch"] { --series-c: var(--wc-pitch); }
+.wc-series-index__card[data-tone="sky"] { --series-c: var(--wc-sky); }
+.wc-series-index__card[data-tone="tomato"] { --series-c: var(--wc-tomato); }
+.wc-series-index__card[data-tone="sun"] { --series-c: var(--wc-sun-deep); }
+.wc-series-index__card:hover h3 {
+  color: var(--series-c);
+}
+.wc-series-index__kicker {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--series-c);
+}
+.wc-series-index__card h3 {
+  margin: 8px 0;
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: .02em;
+}
+.wc-series-index__card p {
+  margin: 0;
+  color: var(--wc-ink-soft);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.wc-series-index__card ul {
+  margin: 14px 0 0;
+  padding: 12px 0 0 18px;
+  border-top: 1px dashed rgba(15,23,42,.16);
+  color: var(--wc-ink);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.wc-series-index__cta {
+  display: inline-block;
+  margin-top: 14px;
+  border-bottom: 2px solid var(--series-c);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
 /* ── PROFILE CARDS (focus) ────────────────────────────────────────────── */
 .wc-profiles {
   display: grid;
