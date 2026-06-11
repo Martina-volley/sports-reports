@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-09",
+  "updated": "2026-06-11",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -86,9 +86,9 @@
       "id": "group-c-preview",
       "title": "C 組：巴西、摩洛哥、海地與蘇格蘭",
       "type": "group_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-10",
-      "slot": "20:00-22:00",
+      "slot": "published",
       "href": "worldcup/2026/group-c-preview.html"
     }
   ]
