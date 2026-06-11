@@ -21,6 +21,7 @@ function typeLabel(type) {
   return {
     group_preview: "分組預覽",
     deep_dive: "深度專題",
+    storyline: "焦點故事",
     matchday_preview: "賽前分析",
     daily_debrief: "賽後分析",
     tactical_review: "戰術回顧"
