@@ -11,8 +11,8 @@
     {
       "phase": "group_stage",
       "window": "2026-06-11 to 2026-06-27",
-      "cadence": "Taiwan-time workflow: previews are drafted at 17:30 before the overnight matches; post-match analysis is drafted at 09:00 after those matches land in Taiwan morning; Monday roundups stay as post-weekend debriefs.",
-      "publishingSlot": "Manual publish around lunch after reviewing queued drafts"
+      "cadence": "Taiwan-time workflow: same-day 17:30 previews before overnight matches; 09:00 post-match analysis after matches land in Taiwan morning; Monday roundups stay on Monday morning.",
+      "publishingSlot": "Manual publish after reviewing queued drafts; lunch for morning debriefs, evening for preview drafts when needed"
     },
     {
       "phase": "knockout_stage",
@@ -95,13 +95,9 @@
       "id": "opening-day-preview",
       "title": "開幕日賽前：A 組先開場，主辦國壓力從第一分鐘開始",
       "type": "matchday_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-11",
-      "draftDate": "2026-06-10",
-      "draftSlot": "17:30",
-      "publishSlot": "lunch",
-      "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "published",
       "href": "worldcup/2026/opening-day-preview.html"
     },
     {
@@ -123,11 +119,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-12",
-      "draftDate": "2026-06-11",
+      "draftDate": "2026-06-12",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/host-nations-first-look.html"
     },
     {
@@ -149,11 +145,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-13",
-      "draftDate": "2026-06-12",
+      "draftDate": "2026-06-13",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/group-c-d-opening-slate.html"
     },
     {
@@ -175,11 +171,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-14",
-      "draftDate": "2026-06-13",
+      "draftDate": "2026-06-14",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/group-e-f-opening-slate.html"
     },
     {
@@ -201,11 +197,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-15",
-      "draftDate": "2026-06-14",
+      "draftDate": "2026-06-15",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/group-g-h-opening-slate.html"
     },
     {
@@ -213,8 +209,8 @@
       "title": "開幕週末小結：主辦國壓力、強隊第一印象與冷門訊號",
       "type": "daily_debrief",
       "status": "planned",
-      "publishDate": "2026-06-16",
-      "draftDate": "2026-06-16",
+      "publishDate": "2026-06-15",
+      "draftDate": "2026-06-15",
       "draftSlot": "09:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
@@ -227,11 +223,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-16",
-      "draftDate": "2026-06-15",
+      "draftDate": "2026-06-16",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/group-i-j-opening-slate.html"
     },
     {
@@ -253,11 +249,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-17",
-      "draftDate": "2026-06-16",
+      "draftDate": "2026-06-17",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/group-k-l-opening-slate.html"
     },
     {
@@ -279,11 +275,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-18",
-      "draftDate": "2026-06-17",
+      "draftDate": "2026-06-18",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/matchday-two-a-b-preview.html"
     },
     {
@@ -305,11 +301,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-19",
-      "draftDate": "2026-06-18",
+      "draftDate": "2026-06-19",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/matchday-two-c-d-preview.html"
     },
     {
@@ -331,11 +327,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-20",
-      "draftDate": "2026-06-19",
+      "draftDate": "2026-06-20",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/matchday-two-e-f-preview.html"
     },
     {
@@ -357,11 +353,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-21",
-      "draftDate": "2026-06-20",
+      "draftDate": "2026-06-21",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/matchday-two-g-h-preview.html"
     },
     {
@@ -383,11 +379,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-22",
-      "draftDate": "2026-06-21",
+      "draftDate": "2026-06-22",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/matchday-two-i-j-preview.html"
     },
     {
@@ -395,8 +391,8 @@
       "title": "小組賽第二週小結：出線主動權、強隊修正與黑馬續航力",
       "type": "daily_debrief",
       "status": "planned",
-      "publishDate": "2026-06-23",
-      "draftDate": "2026-06-23",
+      "publishDate": "2026-06-22",
+      "draftDate": "2026-06-22",
       "draftSlot": "09:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
@@ -409,11 +405,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-23",
-      "draftDate": "2026-06-22",
+      "draftDate": "2026-06-23",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/matchday-two-k-l-preview.html"
     },
     {
@@ -435,11 +431,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-24",
-      "draftDate": "2026-06-23",
+      "draftDate": "2026-06-24",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/final-round-a-b-c-scenarios.html"
     },
     {
@@ -461,11 +457,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-25",
-      "draftDate": "2026-06-24",
+      "draftDate": "2026-06-25",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/final-round-d-e-f-scenarios.html"
     },
     {
@@ -487,11 +483,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-26",
-      "draftDate": "2026-06-25",
+      "draftDate": "2026-06-26",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/final-round-g-h-i-scenarios.html"
     },
     {
@@ -513,11 +509,11 @@
       "type": "matchday_preview",
       "status": "planned",
       "publishDate": "2026-06-27",
-      "draftDate": "2026-06-26",
+      "draftDate": "2026-06-27",
       "draftSlot": "17:30",
-      "publishSlot": "lunch",
+      "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "manual after draft",
       "href": "worldcup/2026/final-round-j-k-l-scenarios.html"
     },
     {

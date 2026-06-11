@@ -8,7 +8,7 @@
 | 階段 | 日期區間 | 節奏 | 建議發布時間 |
 | --- | --- | --- | --- |
 | pre_tournament | 2026-06-04 to 2026-06-10 | 1 group preview or long read per day | 20:00-22:00 |
-| group_stage | 2026-06-11 to 2026-06-27 | Taiwan-time workflow: previews are drafted at 17:30 before the overnight matches; post-match analysis is drafted at 09:00 after those matches land in Taiwan morning; Monday roundups stay as post-weekend debriefs. | Manual publish around lunch after reviewing queued drafts |
+| group_stage | 2026-06-11 to 2026-06-27 | Taiwan-time workflow: same-day 17:30 previews before overnight matches; 09:00 post-match analysis after matches land in Taiwan morning; Monday roundups stay on Monday morning. | Manual publish after reviewing queued drafts; lunch for morning debriefs, evening for preview drafts when needed |
 | knockout_stage | 2026-06-28 to 2026-07-18 | preview every matchday, review selected matches | Preview previous night, Review after matchday |
 | final_week | 2026-07-19 onward | final preview, final review, tournament wrap | as match schedule allows |
 
@@ -23,39 +23,39 @@
 | 2026-06-08 |  | published | 已發布 | 分組預覽 | L 組：英格蘭、克羅埃西亞、迦納與巴拿馬 | [open](../../worldcup/2026/group-l-preview.html) |
 | 2026-06-09 |  | published | 已發布 | 深度專題 | 三國十六城，誰的腿最累？ | [open](../../worldcup/2026/host-map-long-read.html) |
 | 2026-06-10 |  | published | 已發布 | 分組預覽 | C 組：巴西、摩洛哥、海地與蘇格蘭 | [open](../../worldcup/2026/group-c-preview.html) |
-| 2026-06-11 | 2026-06-10 17:30 | lunch | 企劃中 | 賽前分析 | 開幕日賽前：A 組先開場，主辦國壓力從第一分鐘開始 | [open](../../worldcup/2026/opening-day-preview.html) |
+| 2026-06-11 |  | published | 已發布 | 賽前分析 | 開幕日賽前：A 組先開場，主辦國壓力從第一分鐘開始 | [open](../../worldcup/2026/opening-day-preview.html) |
 | 2026-06-12 | 2026-06-12 09:00 | lunch | 企劃中 | 賽後分析 | 開幕日賽後：第一個結果如何改變 A 組壓力線 | [open](../../worldcup/2026/opening-day-debrief.html) |
-| 2026-06-12 | 2026-06-11 17:30 | lunch | 企劃中 | 賽前分析 | 三個主辦國同週登場：加拿大、美國與墨西哥的第一個考題 | [open](../../worldcup/2026/host-nations-first-look.html) |
+| 2026-06-12 | 2026-06-12 17:30 | manual after draft | 企劃中 | 賽前分析 | 三個主辦國同週登場：加拿大、美國與墨西哥的第一個考題 | [open](../../worldcup/2026/host-nations-first-look.html) |
 | 2026-06-13 | 2026-06-13 09:00 | lunch | 企劃中 | 賽後分析 | 主辦國首輪觀察：壓力、場面與小組秩序的第一個樣本 | [open](../../worldcup/2026/host-nations-first-debrief.html) |
-| 2026-06-13 | 2026-06-12 17:30 | lunch | 企劃中 | 賽前分析 | C、D 組賽前：巴西、美國組與 B 組交會的強度測試 | [open](../../worldcup/2026/group-c-d-opening-slate.html) |
+| 2026-06-13 | 2026-06-13 17:30 | manual after draft | 企劃中 | 賽前分析 | C、D 組賽前：巴西、美國組與 B 組交會的強度測試 | [open](../../worldcup/2026/group-c-d-opening-slate.html) |
 | 2026-06-14 | 2026-06-14 09:00 | lunch | 企劃中 | 賽後分析 | C、D 組賽後：熱門球隊有沒有真的踢出差距 | [open](../../worldcup/2026/group-c-d-opening-debrief.html) |
-| 2026-06-14 | 2026-06-13 17:30 | lunch | 企劃中 | 賽前分析 | E、F 組賽前：德國、荷蘭與日本的第一場答案 | [open](../../worldcup/2026/group-e-f-opening-slate.html) |
+| 2026-06-14 | 2026-06-14 17:30 | manual after draft | 企劃中 | 賽前分析 | E、F 組賽前：德國、荷蘭與日本的第一場答案 | [open](../../worldcup/2026/group-e-f-opening-slate.html) |
 | 2026-06-15 | 2026-06-15 09:00 | lunch | 企劃中 | 賽後分析 | E、F 組賽後：控球隊與反擊隊的第一輪落點 | [open](../../worldcup/2026/group-e-f-opening-debrief.html) |
-| 2026-06-15 | 2026-06-14 17:30 | lunch | 企劃中 | 賽前分析 | G、H 組賽前：西班牙、烏拉圭、比利時與埃及的節奏戰 | [open](../../worldcup/2026/group-g-h-opening-slate.html) |
-| 2026-06-16 | 2026-06-16 09:00 | lunch | 企劃中 | 賽後分析 | 開幕週末小結：主辦國壓力、強隊第一印象與冷門訊號 | [open](../../worldcup/2026/opening-weekend-roundup.html) |
-| 2026-06-16 | 2026-06-15 17:30 | lunch | 企劃中 | 賽前分析 | I、J 組賽前：法國與阿根廷的第一場，不只看球星 | [open](../../worldcup/2026/group-i-j-opening-slate.html) |
+| 2026-06-15 | 2026-06-15 09:00 | lunch | 企劃中 | 賽後分析 | 開幕週末小結：主辦國壓力、強隊第一印象與冷門訊號 | [open](../../worldcup/2026/opening-weekend-roundup.html) |
+| 2026-06-15 | 2026-06-15 17:30 | manual after draft | 企劃中 | 賽前分析 | G、H 組賽前：西班牙、烏拉圭、比利時與埃及的節奏戰 | [open](../../worldcup/2026/group-g-h-opening-slate.html) |
+| 2026-06-16 | 2026-06-16 17:30 | manual after draft | 企劃中 | 賽前分析 | I、J 組賽前：法國與阿根廷的第一場，不只看球星 | [open](../../worldcup/2026/group-i-j-opening-slate.html) |
 | 2026-06-17 | 2026-06-17 09:00 | lunch | 企劃中 | 賽後分析 | I、J 組賽後：法國、阿根廷與非洲球隊的對照樣本 | [open](../../worldcup/2026/group-i-j-opening-debrief.html) |
-| 2026-06-17 | 2026-06-16 17:30 | lunch | 企劃中 | 賽前分析 | K、L 組賽前：葡萄牙、英格蘭與克羅埃西亞的第一輪定位 | [open](../../worldcup/2026/group-k-l-opening-slate.html) |
+| 2026-06-17 | 2026-06-17 17:30 | manual after draft | 企劃中 | 賽前分析 | K、L 組賽前：葡萄牙、英格蘭與克羅埃西亞的第一輪定位 | [open](../../worldcup/2026/group-k-l-opening-slate.html) |
 | 2026-06-18 | 2026-06-18 09:00 | lunch | 企劃中 | 賽後分析 | K、L 組賽後：第一輪結束後的小組賽基準線 | [open](../../worldcup/2026/group-k-l-opening-debrief.html) |
-| 2026-06-18 | 2026-06-17 17:30 | lunch | 企劃中 | 賽前分析 | 第二輪賽前：A、B 組從試探進入壓力區 | [open](../../worldcup/2026/matchday-two-a-b-preview.html) |
+| 2026-06-18 | 2026-06-18 17:30 | manual after draft | 企劃中 | 賽前分析 | 第二輪賽前：A、B 組從試探進入壓力區 | [open](../../worldcup/2026/matchday-two-a-b-preview.html) |
 | 2026-06-19 | 2026-06-19 09:00 | lunch | 企劃中 | 賽後分析 | A、B 組第二輪賽後：出線主動權與第三名積分線 | [open](../../worldcup/2026/matchday-two-a-b-pressure.html) |
-| 2026-06-19 | 2026-06-18 17:30 | lunch | 企劃中 | 賽前分析 | C、D 組第二輪賽前：強隊修正與弱隊搶分窗口 | [open](../../worldcup/2026/matchday-two-c-d-preview.html) |
+| 2026-06-19 | 2026-06-19 17:30 | manual after draft | 企劃中 | 賽前分析 | C、D 組第二輪賽前：強隊修正與弱隊搶分窗口 | [open](../../worldcup/2026/matchday-two-c-d-preview.html) |
 | 2026-06-20 | 2026-06-20 09:00 | lunch | 企劃中 | 賽後分析 | C、D 組第二輪賽後：強隊修正與第三名積分線的第一個輪廓 | [open](../../worldcup/2026/matchday-two-c-d-adjustments.html) |
-| 2026-06-20 | 2026-06-19 17:30 | lunch | 企劃中 | 賽前分析 | E、F 組第二輪賽前：控球隊、反擊隊與出線主動權 | [open](../../worldcup/2026/matchday-two-e-f-preview.html) |
+| 2026-06-20 | 2026-06-20 17:30 | manual after draft | 企劃中 | 賽前分析 | E、F 組第二輪賽前：控球隊、反擊隊與出線主動權 | [open](../../worldcup/2026/matchday-two-e-f-preview.html) |
 | 2026-06-21 | 2026-06-21 09:00 | lunch | 企劃中 | 賽後分析 | E、F 組第二輪賽後：誰把出線主動權拿穩 | [open](../../worldcup/2026/matchday-two-e-f-adjustments.html) |
-| 2026-06-21 | 2026-06-20 17:30 | lunch | 企劃中 | 賽前分析 | G、H 組第二輪賽前：熱門隊伍是否能把差距踢出來 | [open](../../worldcup/2026/matchday-two-g-h-preview.html) |
+| 2026-06-21 | 2026-06-21 17:30 | manual after draft | 企劃中 | 賽前分析 | G、H 組第二輪賽前：熱門隊伍是否能把差距踢出來 | [open](../../worldcup/2026/matchday-two-g-h-preview.html) |
+| 2026-06-22 | 2026-06-22 09:00 | lunch | 企劃中 | 賽後分析 | 小組賽第二週小結：出線主動權、強隊修正與黑馬續航力 | [open](../../worldcup/2026/group-stage-week-two-roundup.html) |
 | 2026-06-22 | 2026-06-22 09:00 | lunch | 企劃中 | 賽後分析 | G、H 組第二輪賽後：熱門隊伍、黑馬與小組排序 | [open](../../worldcup/2026/matchday-two-g-h-adjustments.html) |
-| 2026-06-22 | 2026-06-21 17:30 | lunch | 企劃中 | 賽前分析 | I、J 組第二輪賽前：法國、阿根廷與非洲球隊的壓力差 | [open](../../worldcup/2026/matchday-two-i-j-preview.html) |
-| 2026-06-23 | 2026-06-23 09:00 | lunch | 企劃中 | 賽後分析 | 小組賽第二週小結：出線主動權、強隊修正與黑馬續航力 | [open](../../worldcup/2026/group-stage-week-two-roundup.html) |
-| 2026-06-23 | 2026-06-22 17:30 | lunch | 企劃中 | 賽前分析 | K、L 組第二輪賽前：葡萄牙與英格蘭能否提前整理局面 | [open](../../worldcup/2026/matchday-two-k-l-preview.html) |
+| 2026-06-22 | 2026-06-22 17:30 | manual after draft | 企劃中 | 賽前分析 | I、J 組第二輪賽前：法國、阿根廷與非洲球隊的壓力差 | [open](../../worldcup/2026/matchday-two-i-j-preview.html) |
+| 2026-06-23 | 2026-06-23 17:30 | manual after draft | 企劃中 | 賽前分析 | K、L 組第二輪賽前：葡萄牙與英格蘭能否提前整理局面 | [open](../../worldcup/2026/matchday-two-k-l-preview.html) |
 | 2026-06-24 | 2026-06-24 09:00 | lunch | 企劃中 | 賽後分析 | K、L 組第二輪賽後：第一階段出線版圖完成前的最後訊號 | [open](../../worldcup/2026/matchday-two-k-l-adjustments.html) |
-| 2026-06-24 | 2026-06-23 17:30 | lunch | 企劃中 | 賽前分析 | 最後一輪賽前：A、B、C 組的晉級線與第三名風險 | [open](../../worldcup/2026/final-round-a-b-c-scenarios.html) |
+| 2026-06-24 | 2026-06-24 17:30 | manual after draft | 企劃中 | 賽前分析 | 最後一輪賽前：A、B、C 組的晉級線與第三名風險 | [open](../../worldcup/2026/final-round-a-b-c-scenarios.html) |
 | 2026-06-25 | 2026-06-25 09:00 | lunch | 企劃中 | 賽後分析 | A、B、C 組收官賽後：誰晉級、誰被第三名規則卡住 | [open](../../worldcup/2026/final-round-a-b-c-debrief.html) |
-| 2026-06-25 | 2026-06-24 17:30 | lunch | 企劃中 | 賽前分析 | D、E、F 組收官賽前：誰需要贏，誰不能輸 | [open](../../worldcup/2026/final-round-d-e-f-scenarios.html) |
+| 2026-06-25 | 2026-06-25 17:30 | manual after draft | 企劃中 | 賽前分析 | D、E、F 組收官賽前：誰需要贏，誰不能輸 | [open](../../worldcup/2026/final-round-d-e-f-scenarios.html) |
 | 2026-06-26 | 2026-06-26 09:00 | lunch | 企劃中 | 賽後分析 | D、E、F 組收官賽後：淘汰邊緣與淘汰賽對位線索 | [open](../../worldcup/2026/final-round-d-e-f-debrief.html) |
-| 2026-06-26 | 2026-06-25 17:30 | lunch | 企劃中 | 賽前分析 | G、H、I 組最後一輪賽前：強隊輪換與淘汰邊緣的選擇 | [open](../../worldcup/2026/final-round-g-h-i-scenarios.html) |
+| 2026-06-26 | 2026-06-26 17:30 | manual after draft | 企劃中 | 賽前分析 | G、H、I 組最後一輪賽前：強隊輪換與淘汰邊緣的選擇 | [open](../../worldcup/2026/final-round-g-h-i-scenarios.html) |
 | 2026-06-27 | 2026-06-27 09:00 | lunch | 企劃中 | 賽後分析 | G、H、I 組收官賽後：熱門隊伍是否照劇本進入淘汰賽 | [open](../../worldcup/2026/final-round-g-h-i-debrief.html) |
-| 2026-06-27 | 2026-06-26 17:30 | lunch | 企劃中 | 賽前分析 | J、K、L 組收官賽前：小組賽最後一天與淘汰賽版圖 | [open](../../worldcup/2026/final-round-j-k-l-scenarios.html) |
+| 2026-06-27 | 2026-06-27 17:30 | manual after draft | 企劃中 | 賽前分析 | J、K、L 組收官賽前：小組賽最後一天與淘汰賽版圖 | [open](../../worldcup/2026/final-round-j-k-l-scenarios.html) |
 | 2026-06-28 | 2026-06-28 09:00 | lunch | 企劃中 | 賽後分析 | J、K、L 組收官賽後：小組賽總結與淘汰賽第一眼 | [open](../../worldcup/2026/final-round-j-k-l-group-stage-wrap.html) |
 
 ## 使用方式
