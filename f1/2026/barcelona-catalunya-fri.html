@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 巴塞隆納-加泰隆尼亞大獎賽週五快報</title>
+  <meta name="description" content="截至 2026-06-12 台北時間上午，官方結果頁仍未出現 FP1、FP2 成績；本篇整理 Barcelona-Catalunya 週末焦點、積分態勢與週五觀察點。" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --paper: rgba(255, 252, 247, 0.92);
+      --ink: #182230;
+      --muted: #5d6978;
+      --line: rgba(24, 34, 48, 0.12);
+      --navy: #0f172a;
+      --scarlet: #b42318;
+      --gold: #b9892f;
+      --teal: #1f6b6b;
+      --shadow: 0 24px 48px rgba(15, 23, 42, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.75;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(185, 137, 47, 0.18), transparent 24%),
+        radial-gradient(circle at 85% 0%, rgba(31, 107, 107, 0.14), transparent 28%),
+        linear-gradient(180deg, #fbf7f1 0%, #efe7da 100%);
+    }
+    a { color: #184e77; }
+    .hero {
+      padding: 56px 24px 48px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(185, 137, 47, 0.24), transparent 24%),
+        linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(23, 37, 84, 0.9) 46%, rgba(180, 35, 24, 0.84) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 30px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.36), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 11ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 760px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--scarlet);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 14px;
+      padding: 15px 16px;
+      border-left: 4px solid var(--gold);
+      background: rgba(185, 137, 47, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .source-list li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 40px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 7</div>
+      <h1>Barcelona 週五<br />先看脈絡</h1>
+      <p>今天是 2026 年 6 月 12 日週五，確實落在 F1 Barcelona-Catalunya 週末。不過截至台北時間上午 9 點 03 分，官方賽事頁的結果區仍顯示「No results available for this session」，意味著 FP1、FP2 尚未有可驗證成績。本篇 Friday Dispatch 因此不虛構圈速與排名，而是先整理賽道特性、冠軍戰走勢與今天最值得盯的三條主線。</p>
+      <div class="meta">
+        <span>Published 2026-06-12</span>
+        <span>Asia/Taipei</span>
+        <span>Formula 1 MSC Cruises Gran Premio de Barcelona-Catalunya 2026</span>
+        <span>kind = fri</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>F1 官方 2026 賽曆將 6 月 12 日到 14 日列為 Round 7 Barcelona-Catalunya，因此這次 automation 不是 no-op，而是標準的週五輸出。和上週 Monaco 早場 Friday dispatch 相同，這種週五上午版的工作重點不在「預報成績」，而在明確標示官方結果尚未釋出，避免把未發生的事情寫成已知事實。</p>
+        <p>車手積分方面，Kimi Antonelli 以 156 分領先，Lewis Hamilton 90 分升上第二，George Russell 88 分掉到第三；車隊榜則由 Mercedes 244 分居首，Ferrari 165 分追趕，McLaren 118 分仍在可追區。官方賽前文章把焦點放在 Antonelli 五連勝、Russell 想要一個「平順週末」、Leclerc 從 Monaco 煞車問題中反彈，以及 Red Bull 對高溫與輪胎表現仍有未知數。</p>
+      </div>
+      <div class="status">截至 2026-06-12 09:03（Asia/Taipei），官方賽事頁 Results 區塊仍顯示沒有 session 結果；本篇僅採用已公開且可驗證的官方資訊，不臆測 FP1、FP2 排名。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Weekend Frame</div>
+        <h2>這條賽道今天先看什麼</h2>
+        <table>
+          <thead>
+            <tr><th>指標</th><th>數據</th><th>意義</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>賽道長度</td><td>4.657 km</td><td>高速長彎多，對前左胎與整體平衡要求高。</td></tr>
+            <tr><td>彎角數</td><td>14</td><td>從 Turn 3、Turn 9 到末段連續彎，容易放大升級與輪胎退化差異。</td></tr>
+            <tr><td>超車難度</td><td>主要在 Turn 1</td><td>排位速度與長距離退化控制都會很關鍵。</td></tr>
+            <tr><td>安全車機率</td><td>50%</td><td>策略仍有變數，但不是典型街道賽那種高碰撞布局。</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">以上數據均來自 F1 官方 Barcelona-Catalunya 賽前 Need to Know 專文。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>進站前的積分壓力</h2>
+        <table>
+          <thead>
+            <tr><th>車手</th><th>車隊</th><th>積分</th><th>觀察</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kimi Antonelli</td><td>Mercedes</td><td>156</td><td>五連勝進站，已把優勢擴大到 66 分。</td></tr>
+            <tr><td>Lewis Hamilton</td><td>Ferrari</td><td>90</td><td>Monaco 再上頒獎台，升上年度第二。</td></tr>
+            <tr><td>George Russell</td><td>Mercedes</td><td>88</td><td>連兩站失分後，急需止血。</td></tr>
+            <tr><td>Charles Leclerc</td><td>Ferrari</td><td>75</td><td>Monaco 退賽後，這站以「找回穩定」為先。</td></tr>
+            <tr><td>Oscar Piastri</td><td>McLaren</td><td>60</td><td>2025 年巴塞隆納站勝者，仍是週末標尺之一。</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">車隊榜前四依序為 Mercedes 244、Ferrari 165、McLaren 118、Red Bull Racing 72。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Friday Watch</div>
+        <h2>三條最值得盯的主線</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. Mercedes 能不能把 Barcelona 變成 Antonelli 的第六勝起點？</strong>
+            <div>官方賽前稿直接把 Antonelli 的五連勝列為主旋律，Barcelona 這種傳統高速賽道會更像真正的性能測試。如果 Mercedes 在 FP1、FP2 就拿出穩定長距離節奏，本週末冠軍戰恐怕又會先被他們掌握。</div>
+          </div>
+          <div class="item">
+            <strong>2. Ferrari 的反彈會先出現在 Leclerc 還是 Hamilton？</strong>
+            <div>Leclerc 公開承認 Monaco 退賽「仍然很痛」，並透露會微調煞車設定；Hamilton 則帶著連續 podium 的氣勢來到西班牙。Ferrari 若想在車隊榜緊咬 Mercedes，今天自由練習就得先把單圈與長距離都壓進第一集團。</div>
+          </div>
+          <div class="item">
+            <strong>3. Red Bull 的高溫與輪胎問號，今天能不能解開？</strong>
+            <div>Verstappen 明講車隊對熱天、輪胎工作區仍有很多未知。Barcelona 一向是輪胎與前軸負荷的放大鏡，因此 FP1、FP2 最有價值的不是 headline lap，而是 Red Bull 是否能在高溫下維持連續圈速。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Form Guide</div>
+        <h2>從 Monaco 帶來的餘震</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>Russell：先求一個乾淨週末</strong>
+            <div>Russell 在官方訪談中直說自己「只想要一個平順週末」，因為中國、加拿大與日本各有技術或時機因素干擾，Miami、Monaco 又沒有把個人表現拉滿。這站若還失手，年度第二甚至可能被 Hamilton 拉開。</div>
+          </div>
+          <div class="item">
+            <strong>Leclerc：向前看，但煞車設定要調</strong>
+            <div>Leclerc 表示 Monaco 仍然刺痛，但 Barcelona 最好的療傷方式就是重新上場。他不預期 Ferrari 有「革命性」改善，卻承認會在煞車設定上做調整，這讓 Friday 練習的回饋特別重要。</div>
+          </div>
+          <div class="item">
+            <strong>中游戰：Racing Bulls 逼近 Alpine</strong>
+            <div>官方賽前稿指出 Racing Bulls 在 Monaco 雙車得分後，只差 Alpine 兩分。對於今天的自由練習而言，中游集團真正要比的不是最高圈速，而是誰能先把長距離節奏穩定到週日可得分的區間。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Need To Know</div>
+        <h2>輪胎與策略</h2>
+        <p>Pirelli 本週帶來 C2、C3、C4，比巴塞隆納慣例更軟一級，官方解讀是希望鼓勵更多進站與硬胎進入正賽策略。由於這條賽道瀝青粗、熱衰退高、前軸壓力大，自由練習的 long run 比單圈榜單更具預測力。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Track DNA</div>
+        <h2>為何 Barcelona 仍是標尺</h2>
+        <p>這裡不是最華麗的城市街道賽，也不是極端低抓地力賽道，但它幾乎什麼都測得到：高速彎穩定性、煞車進彎平衡、輪胎熱管理與升級套件真實效益。也因此，每年歐洲站初段來到 Barcelona，往往就能先看出誰的套件真的成熟。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">What Friday Means</div>
+        <h2>今天的讀法</h2>
+        <p>在官方成績尚未釋出前，週五上午版報告的作用不是搶圈速，而是設好判讀框架。等 FP1、FP2 結果上線後，真正要檢查的是 Mercedes 是否繼續穩、Ferrari 是否止血、Red Bull 是否解決高溫疑問，以及 McLaren 能不能把去年的 Barcelona 勝勢重新叫醒。</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Sources</div>
+      <h2>官方資料來源</h2>
+      <ul class="source-list">
+        <li><a href="https://www.formula1.com/en/racing/2026">Formula 1 2026 Official Calendar</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026/spain">Spanish Grand Prix 2026 - F1 Race</a>（官方頁面顯示 Results 尚無 session 成績）</li>
+        <li><a href="https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-barcelona-catalunya-grand-prix.51RmTAVS0jveoGWnBr9Ul">Need to Know: The most important facts, stats and trivia ahead of the 2026 Barcelona-Catalunya Grand Prix</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/im-dying-for-a-smooth-weekend-russell-vows-to-control-the-controllables-after-rollercoaster-run-of-races.1HpvyZGuRbW08jZmuHQsOb">George Russell vows to control the controllables after rollercoaster run of races</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/leclerc-admits-monaco-retirement-still-hurts-as-he-shares-update-on-brakes-issue.6zx8Yc4B3grGhFwLSHBtjM">Leclerc admits Monaco retirement still hurts as he shares update on brakes issue</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/still-many-unknowns-for-us-verstappen-coy-on-red-bulls-chances-in-barcelona.6J728UNjJxGaEAX1YBNG1n">Verstappen coy on Red Bull's chances in Barcelona</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/drivers">2026 Drivers' Standings</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/team">2026 Teams' Standings</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    本文依 2026-06-12 Asia/Taipei 上午可驗證的官方資訊撰寫；待 FP1、FP2 結果上線後，Saturday 與 race 報告才會進入正式成績分析。
+  </footer>
+</body>
+</html>

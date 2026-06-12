@@ -1,5 +1,35 @@
 [
   {
+    "href": "f1/2026/barcelona-catalunya-fri.html",
+    "league": "f1",
+    "type": "fri",
+    "date": "2026-06-12",
+    "title": "F1 2026 巴塞隆納-加泰隆尼亞大獎賽週五快報",
+    "kicker": "Friday Dispatch",
+    "summary": "官方結果尚未出現 FP1、FP2 成績，先看 Barcelona 週末脈絡與冠軍戰壓力。",
+    "secondary": "Antonelli 帶著五連勝與 66 分優勢進站，Ferrari 要求反彈，Red Bull 則先解高溫與輪胎問號。",
+    "seasonLabel": "F1 2026 Round 7",
+    "tagLabel": "週五快報",
+    "accent": "linear-gradient(135deg, #0f172a 0%, #1e3a8a 48%, #b42318 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
+    "href": "worldcup/2026/opening-day-debrief.html",
+    "league": "worldcup",
+    "type": "briefing",
+    "date": "2026-06-12",
+    "title": "開幕日賽後：第一個結果如何改變 A 組壓力線",
+    "kicker": "Opening Day Debrief",
+    "summary": "墨西哥在開幕戰以 2 比 0 擊敗南非，讓 A 組在韓國對捷克開踢前就先出現榜首與壓力分配。",
+    "secondary": "主辦國先拿到三分與淨勝球優勢，南非次輪容錯下降，而韓國與捷克的首戰也因此從搶分戰變成追榜首戰。",
+    "tagLabel": "賽後分析",
+    "seasonLabel": "WORLD CUP 2026 · Opening Day",
+    "accent": "linear-gradient(135deg, #166534 0%, #F97316 44%, #0F172A 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "worldcup/2026/opening-day-preview.html",
     "league": "worldcup",
     "type": "preview",
@@ -12,7 +42,7 @@
     "seasonLabel": "WORLD CUP 2026 · Opening Day",
     "accent": "linear-gradient(135deg, #15803D 0%, #F97316 46%, #0F172A 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "worldcup/2026/group-c-preview.html",
