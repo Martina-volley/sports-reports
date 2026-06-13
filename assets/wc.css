@@ -554,6 +554,95 @@ a { color: inherit; }
   text-decoration: underline;
 }
 
+.wc-groups--standings {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 760px) { .wc-groups--standings { grid-template-columns: 1fr; } }
+
+.wc-standings-card {
+  padding-bottom: 18px;
+}
+.wc-standings-card .wc-group__head {
+  align-items: flex-start;
+}
+.wc-standings-card .wc-group__city {
+  max-width: 220px;
+  text-align: right;
+  line-height: 1.4;
+}
+.wc-standings-table {
+  display: grid;
+  gap: 0;
+  width: 100%;
+}
+.wc-standings-row {
+  display: grid;
+  grid-template-columns: minmax(130px, 1fr) repeat(5, 34px) 44px;
+  gap: 8px;
+  align-items: center;
+  min-height: 36px;
+  border-bottom: 1px solid rgba(15,23,42,.07);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--wc-ink-soft);
+}
+.wc-standings-row:last-child {
+  border-bottom: 0;
+}
+.wc-standings-row > span:not(:first-child) {
+  text-align: right;
+}
+.wc-standings-row--head {
+  min-height: 28px;
+  color: var(--wc-mute);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.wc-standings-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  color: var(--wc-ink);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 800;
+}
+.wc-standings-team b {
+  width: 20px;
+  color: var(--group-accent, var(--wc-pitch));
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.wc-standings-points {
+  color: var(--wc-ink);
+  font-family: var(--font-display);
+  font-size: 22px;
+  letter-spacing: .02em;
+}
+@media (max-width: 520px) {
+  .wc-standings-card .wc-group__head {
+    display: block;
+  }
+  .wc-standings-card .wc-group__city {
+    margin-top: 6px;
+    max-width: none;
+    text-align: left;
+  }
+  .wc-standings-row {
+    grid-template-columns: minmax(110px, 1fr) repeat(4, 26px) 32px 36px;
+    gap: 5px;
+    font-size: 11px;
+  }
+  .wc-standings-team {
+    font-size: 13px;
+  }
+}
+
 .wc-feature-link {
   display: block;
   background:

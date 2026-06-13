@@ -560,6 +560,21 @@
     { id: "storylines", tags: ["焦點故事"] }
   ];
 
+  const groupTone = {
+    A: "mex",
+    B: "can",
+    C: "bra",
+    D: "usa",
+    E: "ger",
+    F: "ned",
+    G: "bel",
+    H: "esp",
+    I: "fra",
+    J: "arg",
+    K: "por",
+    L: "eng"
+  };
+
   const escapeHtml = (value) => String(value || "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
@@ -601,6 +616,41 @@
     target.setAttribute("data-live-reports", "true");
   };
 
+  const signed = (value) => Number(value) > 0 ? `+${value}` : String(value);
+
+  const standingsCardHtml = (group) => `
+    <article class="wc-group wc-standings-card" data-accent="${groupTone[group.id] || "mex"}">
+      <div class="wc-group__head">
+        <div class="wc-group__name"><b>${escapeHtml(group.id)}</b> ${escapeHtml(group.label || `Group ${group.id}`)}</div>
+        <div class="wc-group__city">${escapeHtml(group.note || "Current table")}</div>
+      </div>
+      <div class="wc-standings-table" role="table" aria-label="${escapeHtml(group.label || group.id)} standings">
+        <div class="wc-standings-row wc-standings-row--head" role="row">
+          <span>Team</span><span>P</span><span>W</span><span>D</span><span>L</span><span>GD</span><span>Pts</span>
+        </div>
+        ${(group.teams || []).map((team) => `
+          <div class="wc-standings-row" role="row">
+            <span class="wc-standings-team"><b>${team.rank}</b> <span>${escapeHtml(team.flag)}</span> ${escapeHtml(team.name)}</span>
+            <span>${team.played}</span>
+            <span>${team.won}</span>
+            <span>${team.drawn}</span>
+            <span>${team.lost}</span>
+            <span>${signed(team.gd)}</span>
+            <span class="wc-standings-points">${team.points}</span>
+          </div>
+        `).join("")}
+      </div>
+    </article>
+  `;
+
+  const renderStandings = (standings) => {
+    const target = document.querySelector("#groups .wc-groups");
+    if (!target || !standings.groups || !standings.groups.length) return;
+
+    target.innerHTML = standings.groups.map(standingsCardHtml).join("");
+    target.classList.add("wc-groups--standings");
+  };
+
   fetch("../../data/reports.json", { cache: "no-store" })
     .then((response) => {
       if (!response.ok) throw new Error(`reports fetch failed: ${response.status}`);
@@ -612,6 +662,16 @@
     })
     .catch((error) => {
       console.warn("World Cup Hub kept static series cards:", error);
+    });
+
+  fetch("../../data/worldcup-standings.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`standings fetch failed: ${response.status}`);
+      return response.json();
+    })
+    .then(renderStandings)
+    .catch((error) => {
+      console.warn("World Cup Hub kept static group board:", error);
     });
 })();
 </script>

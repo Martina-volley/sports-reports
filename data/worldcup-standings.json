@@ -1,0 +1,139 @@
+{
+  "updated": "2026-06-13",
+  "timezone": "Asia/Taipei",
+  "sourceNote": "Manual standings snapshot. Group A includes Mexico 2-0 South Africa and Korea Republic 2-1 Czechia. Group B includes Canada 1-1 Bosnia and Herzegovina.",
+  "groups": [
+    {
+      "id": "A",
+      "label": "Group A",
+      "note": "Mexico and Korea Republic lead after one match.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\uddf2\ud83c\uddfd", "name": "Mexico", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 2, "ga": 0, "gd": 2, "points": 3 },
+        { "rank": 2, "flag": "\ud83c\uddf0\ud83c\uddf7", "name": "Korea Republic", "played": 1, "won": 1, "drawn": 0, "lost": 0, "gf": 2, "ga": 1, "gd": 1, "points": 3 },
+        { "rank": 3, "flag": "\ud83c\udde8\ud83c\uddff", "name": "Czechia", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 1, "ga": 2, "gd": -1, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddff\ud83c\udde6", "name": "South Africa", "played": 1, "won": 0, "drawn": 0, "lost": 1, "gf": 0, "ga": 2, "gd": -2, "points": 0 }
+      ]
+    },
+    {
+      "id": "B",
+      "label": "Group B",
+      "note": "Canada and Bosnia opened with a 1-1 draw.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\udde8\ud83c\udde6", "name": "Canada", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 1, "ga": 1, "gd": 0, "points": 1 },
+        { "rank": 2, "flag": "\ud83c\udde7\ud83c\udde6", "name": "Bosnia & Herzegovina", "played": 1, "won": 0, "drawn": 1, "lost": 0, "gf": 1, "ga": 1, "gd": 0, "points": 1 },
+        { "rank": 3, "flag": "\ud83c\uddf6\ud83c\udde6", "name": "Qatar", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\udde8\ud83c\udded", "name": "Switzerland", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "C",
+      "label": "Group C",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\udde7\ud83c\uddf7", "name": "Brazil", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\uddf2\ud83c\udde6", "name": "Morocco", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\udded\ud83c\uddf9", "name": "Haiti", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\udff4", "name": "Scotland", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "D",
+      "label": "Group D",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\uddfa\ud83c\uddf8", "name": "United States", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\uddf5\ud83c\uddfe", "name": "Paraguay", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\udde6\ud83c\uddfa", "name": "Australia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddf9\ud83c\uddf7", "name": "Turkiye", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "E",
+      "label": "Group E",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\udde9\ud83c\uddea", "name": "Germany", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\udde8\ud83c\uddfc", "name": "Curacao", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\udde8\ud83c\uddee", "name": "Ivory Coast", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddea\ud83c\udde8", "name": "Ecuador", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "F",
+      "label": "Group F",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\uddf3\ud83c\uddf1", "name": "Netherlands", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\uddef\ud83c\uddf5", "name": "Japan", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\uddf8\ud83c\uddea", "name": "Sweden", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddf9\ud83c\uddf3", "name": "Tunisia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "G",
+      "label": "Group G",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\udde7\ud83c\uddea", "name": "Belgium", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\uddea\ud83c\uddec", "name": "Egypt", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\uddee\ud83c\uddf7", "name": "Iran", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddf3\ud83c\uddff", "name": "New Zealand", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "H",
+      "label": "Group H",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\uddea\ud83c\uddf8", "name": "Spain", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\udde8\ud83c\uddfb", "name": "Cape Verde", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\uddf8\ud83c\udde6", "name": "Saudi Arabia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddfa\ud83c\uddfe", "name": "Uruguay", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "I",
+      "label": "Group I",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\uddeb\ud83c\uddf7", "name": "France", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\uddf8\ud83c\uddf3", "name": "Senegal", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\uddf3\ud83c\uddf4", "name": "Norway", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddee\ud83c\uddf6", "name": "Iraq", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "J",
+      "label": "Group J",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\udde6\ud83c\uddf7", "name": "Argentina", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\udde9\ud83c\uddff", "name": "Algeria", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\udde6\ud83c\uddf9", "name": "Austria", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddef\ud83c\uddf4", "name": "Jordan", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "K",
+      "label": "Group K",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\uddf5\ud83c\uddf9", "name": "Portugal", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\udde8\ud83c\udde9", "name": "DR Congo", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\uddfa\ud83c\uddff", "name": "Uzbekistan", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\udde8\ud83c\uddf4", "name": "Colombia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    },
+    {
+      "id": "L",
+      "label": "Group L",
+      "note": "Awaiting opening matches.",
+      "teams": [
+        { "rank": 1, "flag": "\ud83c\udff4", "name": "England", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 2, "flag": "\ud83c\udded\ud83c\uddf7", "name": "Croatia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 3, "flag": "\ud83c\uddec\ud83c\udded", "name": "Ghana", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 },
+        { "rank": 4, "flag": "\ud83c\uddf5\ud83c\udde6", "name": "Panama", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "points": 0 }
+      ]
+    }
+  ]
+}
