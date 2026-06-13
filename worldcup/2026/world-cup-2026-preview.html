@@ -543,5 +543,78 @@
   </div>
 </footer>
 
+<script>
+(() => {
+  const toneByTag = {
+    "賽前分析": "pitch",
+    "賽後分析": "sky",
+    "深度專題": "tomato",
+    "焦點故事": "sun",
+    "分組預覽": "pitch",
+    "前導新聞": "sky"
+  };
+
+  const sections = [
+    { id: "deepdives", tags: ["深度專題"] },
+    { id: "coverage", tags: ["賽前分析", "賽後分析", "戰術回顧"] },
+    { id: "storylines", tags: ["焦點故事"] }
+  ];
+
+  const escapeHtml = (value) => String(value || "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+
+  const toHubHref = (href) => {
+    const parts = String(href || "").split("/");
+    return `./${parts[parts.length - 1]}`;
+  };
+
+  const cardHtml = (report) => {
+    const tag = report.tagLabel || report.type || "";
+    const tone = toneByTag[tag] || "pitch";
+    const kicker = [report.date, tag].filter(Boolean).join(" · ");
+    const summary = report.summary || report.secondary || "";
+
+    return `
+      <a class="wc-series-index__card" data-tone="${tone}" href="${toHubHref(report.href)}">
+        <span class="wc-series-index__kicker">${escapeHtml(kicker)}</span>
+        <h3>${escapeHtml(report.title)}</h3>
+        <p>${escapeHtml(summary)}</p>
+        <span class="wc-series-index__cta">Read report</span>
+      </a>
+    `;
+  };
+
+  const renderSection = (reports, sectionConfig) => {
+    const section = document.getElementById(sectionConfig.id);
+    const target = section && section.querySelector(".wc-series-index");
+    if (!target) return;
+
+    const items = reports
+      .filter((report) => sectionConfig.tags.includes(report.tagLabel))
+      .sort((a, b) => b.date.localeCompare(a.date) || a.href.localeCompare(b.href));
+
+    if (!items.length) return;
+    target.innerHTML = items.map(cardHtml).join("");
+    target.setAttribute("data-live-reports", "true");
+  };
+
+  fetch("../../data/reports.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`reports fetch failed: ${response.status}`);
+      return response.json();
+    })
+    .then((reports) => {
+      const worldCupReports = reports.filter((report) => report.league === "worldcup");
+      sections.forEach((sectionConfig) => renderSection(worldCupReports, sectionConfig));
+    })
+    .catch((error) => {
+      console.warn("World Cup Hub kept static series cards:", error);
+    });
+})();
+</script>
+
 </body>
 </html>
