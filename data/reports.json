@@ -1,5 +1,20 @@
 [
   {
+    "href": "worldcup/2026/host-nations-first-debrief.html",
+    "league": "worldcup",
+    "type": "briefing",
+    "date": "2026-06-13",
+    "title": "主辦國首輪觀察：壓力、場面與小組秩序的第一個樣本",
+    "kicker": "Host Nations Debrief",
+    "summary": "墨西哥先贏、加拿大戰平、美國大勝，三個主辦國首輪合計拿到 7 分，但真正的分野在於誰把主場壓力轉成了可複製的比賽秩序。",
+    "secondary": "墨西哥先拿結果，美國交出最完整內容，加拿大則把終結效率問題直接帶進下一輪；主辦國樣本已經開始分流。",
+    "tagLabel": "賽後分析",
+    "seasonLabel": "WORLD CUP 2026 | Host Nations",
+    "accent": "linear-gradient(135deg, #166534 0%, #0F172A 56%, #991B1B 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/barcelona-catalunya-fri.html",
     "league": "f1",
     "type": "fri",
@@ -12,7 +27,7 @@
     "tagLabel": "週五快報",
     "accent": "linear-gradient(135deg, #0f172a 0%, #1e3a8a 48%, #b42318 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "worldcup/2026/argentina-title-defense-story.html",
