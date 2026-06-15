@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 巴塞隆納-加泰隆尼亞大獎賽週一回顧 | The Sports Report</title>
+  <meta name="description" content="Lewis Hamilton 在 Barcelona-Catalunya 替 Ferrari 拿下首場正賽勝利，Antonelli 末段退賽讓年度爭冠重新收緊；本文整理官方前十、關鍵事件、積分榜變化、策略與下一站影響。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #07111d;
+      --panel: #0f1b2b;
+      --panel-2: #142235;
+      --line: rgba(255, 255, 255, 0.12);
+      --text: #f3f7fb;
+      --muted: #aab6c9;
+      --gold: #f59e0b;
+      --scarlet: #ef4444;
+      --sky: #38bdf8;
+      --silver: #dbe5f3;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(239, 68, 68, 0.18), transparent 28%),
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 26%),
+        linear-gradient(180deg, #06101b 0%, #0b1727 100%);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a { color: #93c5fd; }
+    .wrap { width: min(1100px, calc(100% - 32px)); margin: 0 auto; }
+    .hero {
+      padding: 48px 0 28px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow, .meta, .stamp, th, .sources li, .small {
+      font-family: "IBM Plex Mono", monospace;
+    }
+    .eyebrow {
+      color: var(--sky);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 10px 0 12px;
+      font-size: clamp(34px, 6vw, 62px);
+      line-height: 1.05;
+    }
+    .dek {
+      margin: 0;
+      max-width: 840px;
+      color: var(--silver);
+      font-size: 18px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.85fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      backdrop-filter: blur(8px);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .stamp {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(245, 158, 11, 0.14);
+      color: #fbbf24;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .takeaways ul, .podium ol, .timeline ol, .strategy ul, .next-stop ul, .sources ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+    .takeaways li, .podium li, .timeline li, .strategy li, .next-stop li { margin: 10px 0; }
+    main { padding: 28px 0 56px; }
+    section { margin-top: 26px; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
+    p { margin: 0 0 12px; color: var(--silver); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(8, 15, 28, 0.82);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      font-size: 14px;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .note {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(245, 158, 11, 0.08);
+      color: var(--silver);
+      font-size: 14px;
+    }
+    .sources li { margin: 8px 0; font-size: 13px; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 18px 0 32px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 820px) {
+      .hero-grid, .grid-2 { grid-template-columns: 1fr; }
+      h1 { font-size: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">F1 2026 Round 7 • Monday Review</div>
+      <h1>Hamilton 終於替 Ferrari 贏下一個星期天，Barcelona 把冠軍戰重新打開</h1>
+      <p class="dek">2026 年 6 月 14 日 Barcelona-Catalunya 正賽，Lewis Hamilton 靠 Ferrari 大膽的三停節奏拿下加盟後首場 Grand Prix 勝利；原本有機會穩收亞軍的 Kimi Antonelli 在倒數階段退賽，讓 Mercedes 雖仍領跑雙榜，但年度敘事不再只剩單向擴大。</p>
+      <div class="meta">
+        <span>發佈日期 2026-06-15</span>
+        <span>比賽日期 2026-06-14</span>
+        <span>地點 Circuit de Barcelona-Catalunya</span>
+        <span>下一站 2026-06-26 至 2026-06-28 Austria</span>
+      </div>
+      <span class="stamp">Official standings and race-day coverage verified</span>
+
+      <div class="hero-grid">
+        <article class="card">
+          <h2>三個先看重點</h2>
+          <div class="takeaways">
+            <ul>
+              <li>Hamilton 不只是拿到 Ferrari 首勝，而是靠純策略節奏把 Mercedes 正面打掉。官方 Barcelona lowdown 直指 Ferrari 提前切到三停，並在 Virtual Safety Car 窗口完成致勝一停。</li>
+              <li>Antonelli 本來只差把第二名帶回家，就能把積分優勢維持在舒服區間；但末段機械故障讓他本季首次沒看到方格旗，車手榜領先瞬間從 66 分縮到 41 分。</li>
+              <li>McLaren 雖然只帶回 Norris 第三、Piastri 第五，但至少把 Monaco 的低潮止血；真正被 Barcelona 完整照出弱點的是 Red Bull 在高耗能彎角的節奏上限，以及 Mercedes 在可靠度上突然冒出的裂縫。</li>
+            </ul>
+          </div>
+        </article>
+
+        <aside class="card">
+          <h2>頒獎台</h2>
+          <div class="podium">
+            <ol>
+              <li><strong>Lewis Hamilton</strong>，Ferrari</li>
+              <li><strong>George Russell</strong>，Mercedes</li>
+              <li><strong>Lando Norris</strong>，McLaren</li>
+            </ol>
+          </div>
+          <p class="small">這是 Hamilton 加盟 Ferrari 後第一場正賽勝利，也是自 1968 年以來首次英國車手包辦 F1 正賽前三名。</p>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>正賽前十</h2>
+      <table>
+        <thead>
+          <tr><th>Pos</th><th>Driver</th><th>Team</th><th>Points</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Lewis Hamilton</td><td>Ferrari</td><td>25</td><td>三停策略制勝，收下 Ferrari 首場 GP 勝利</td></tr>
+          <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>18</td><td>受惠隊友退賽回到亞軍</td></tr>
+          <tr><td>3</td><td>Lando Norris</td><td>McLaren</td><td>15</td><td>McLaren 在 Monaco 後成功止血</td></tr>
+          <tr><td>4</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>12</td><td>策略正確，但節奏無法跟前三抗衡</td></tr>
+          <tr><td>5</td><td>Oscar Piastri</td><td>McLaren</td><td>10</td><td>輪胎管理受挫，仍帶回雙車積分</td></tr>
+          <tr><td>6</td><td>Isack Hadjar</td><td>Red Bull Racing</td><td>8</td><td>起跑失誤後追進前六</td></tr>
+          <tr><td>7</td><td>Pierre Gasly</td><td>Alpine</td><td>6</td><td>Alpine 再靠 Gasly 穩定得分</td></tr>
+          <tr><td>8</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>4</td><td>依官方賽後積分增量與車隊戰報交叉確認</td></tr>
+          <tr><td>9</td><td>Liam Lawson</td><td>Racing Bulls</td><td>2</td><td>持續把中段積分留在車隊口袋</td></tr>
+          <tr><td>10</td><td>Franco Colapinto</td><td>Alpine</td><td>1</td><td>Alpine 第二車補上最後一分</td></tr>
+        </tbody>
+      </table>
+      <div class="note">註：F1 官方本站這次可直接驗證冠軍戰、關鍵事件與賽後車隊說法；P8 至 P10 則依官方車手榜、車隊榜分數增量與 race-day team quotes 交叉還原，屬來源推論而非單一結果頁逐列抄錄。</div>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>關鍵事件時間線</h2>
+        <div class="timeline">
+          <ol>
+            <li>Russell 從桿位起跑，Hamilton 夾在兩台 Mercedes 之間守住前段，前排秩序沒有在第一圈洗牌。</li>
+            <li>高溫與退化讓多數車隊原本預期兩停，但 Ferrari 比別人更早切到三停，主動把比賽從「輪胎保衛戰」改成「節奏衝刺戰」。</li>
+            <li>Antonelli 在第二與第三 stint 對 Russell 的威脅逐漸成形，Mercedes 內部互相消耗時，Hamilton 已經靠不同節奏把自己放在更好的窗口。</li>
+            <li>Virtual Safety Car 在 Hamilton 還有一停未做時出現，Ferrari 直接完成免費值最高的一次停站，讓 Hamilton 回到場上時不只沒掉出領先，還把局面鎖死。</li>
+            <li>Antonelli 倒數五圈超掉 Russell升上第二，但下一圈就因機械問題停在場邊，Mercedes 從可能的雙頒獎台變成只能接受亞軍。</li>
+            <li>Leclerc 在追回前六過程中又遭遇機械麻煩退賽，Ferrari 一勝一退；但 Hamilton 的勝場分量，足以讓這站成為 Ferrari 本季最具指標性的正賽。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>車隊策略與執行</h2>
+        <div class="strategy">
+          <ul>
+            <li><strong>Ferrari：</strong>這不是等安全車送禮，而是先用三停節奏把自己推到有資格吃到 VSC 紅利的位置。若只是跟著 Mercedes 兩停，Hamilton 很難純靠賽道位置反超。</li>
+            <li><strong>Mercedes：</strong>Russell 與 Antonelli 都有速度，但車隊沒把兩台車的節奏差異轉成控局優勢，反而在互相纏鬥時把戰略主動權送給 Ferrari。最後還被可靠度問題補上一刀。</li>
+            <li><strong>McLaren：</strong>Norris 接受「先穩穩帶回成績」的比賽，最終撿到一座關鍵頒獎台；Piastri 則整場都在輪胎管理上顯得掙扎，顯示他們仍未完全回到可以爭勝的長距離窗口。</li>
+            <li><strong>Red Bull：</strong>Verstappen 賽後直接承認車不夠快，高耗能彎角與高退化條件仍是硬傷。Hadjar 雖追回第六，但那是車手執行分，不是整體 package 已回到前線。</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>積分榜變化</h2>
+        <table>
+          <thead>
+            <tr><th colspan="3">車手榜 Top 10（Barcelona 後）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>156</td></tr>
+            <tr><td>2</td><td>Lewis Hamilton</td><td>115</td></tr>
+            <tr><td>3</td><td>George Russell</td><td>106</td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>75</td></tr>
+            <tr><td>5</td><td>Lando Norris</td><td>73</td></tr>
+            <tr><td>6</td><td>Oscar Piastri</td><td>68</td></tr>
+            <tr><td>7</td><td>Max Verstappen</td><td>55</td></tr>
+            <tr><td>8</td><td>Pierre Gasly</td><td>41</td></tr>
+            <tr><td>9</td><td>Isack Hadjar</td><td>34</td></tr>
+            <tr><td>10</td><td>Liam Lawson</td><td>28</td></tr>
+          </tbody>
+        </table>
+        <p>最大的變化不是榜首換人，而是 Antonelli 原本幾乎能把優勢維持在兩站以上的緩衝，現在只剩 41 分。Hamilton 這一勝把 Ferrari 重新塞回年度主線，Russell 也靠亞軍留在可追擊區。</p>
+      </article>
+
+      <article class="card">
+        <h2>車隊榜變化</h2>
+        <table>
+          <thead>
+            <tr><th colspan="3">車隊榜 Top 6（Barcelona 後）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>262</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>190</td></tr>
+            <tr><td>3</td><td>McLaren</td><td>141</td></tr>
+            <tr><td>4</td><td>Red Bull Racing</td><td>89</td></tr>
+            <tr><td>5</td><td>Alpine</td><td>57</td></tr>
+            <tr><td>6</td><td>Racing Bulls</td><td>41</td></tr>
+          </tbody>
+        </table>
+        <p>Mercedes 仍是雙榜第一，但 Barcelona 把他們的優勢從「統治」拉回「仍需防守」。Ferrari 靠 Hamilton 單車 25 分把差距縮到 72 分，McLaren 也至少重新把自己放回第三集團的穩固位置。</p>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>車手與車隊觀察</h2>
+        <p><strong>Hamilton：</strong>這場最重要的不是情緒，而是比賽形狀。當 Ferrari 願意主動把戰略押在更侵略的節奏上，Hamilton 仍然有能力把它完整兌現成勝場。</p>
+        <p><strong>Antonelli：</strong>速度與輪胎管理依舊像冠軍，但 Barcelona 是他本季第一次被可靠度拖回現實。接下來只要再出現一次零分，原本被拉開的車手榜就會變成真正的壓力戰。</p>
+        <p><strong>Russell：</strong>桿位、亞軍、仍在爭冠範圍內，看起來不差；但如果隊友退賽前已經有更好節奏，那 Russell 在本隊內部也得更快把周末轉成完全主導。</p>
+        <p><strong>McLaren：</strong>Norris 的第三名讓他回到 Leclerc 之前，但 Piastri 在 Barcelona 的高耗能條件下沒有解出答案，代表 McLaren 還沒完全拿回對 Mercedes 的長距離對抗力。</p>
+      </article>
+
+      <article class="card">
+        <h2>下一站影響：Austria</h2>
+        <div class="next-stop">
+          <ul>
+            <li>下一站是 2026 年 6 月 26 日到 6 月 28 日的奧地利站。官方 schedule 已將其列為 Round 8，之後緊接著就是 7 月 3 日到 7 月 5 日的英國站雙連戰。</li>
+            <li>對 Ferrari 而言，真正的考題是 Barcelona 這個勝場到底是單站完美命中，還是升級與戰略執行已經足以連續威脅 Mercedes。</li>
+            <li>對 Mercedes 而言，Austria 先要處理的是可靠度與隊內節奏分配。若 Antonelli 又快又能完賽，榜首仍穩；但若再出現一次零分，Hamilton 就會正式進入追擊半徑。</li>
+            <li>對 Red Bull 而言，Verstappen 口中的「高耗能賽道弱點」在奧地利未必同樣尖銳，這反而會是他們測試是否能立刻反彈的重要分站。</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>資料來源</h2>
+      <div class="sources">
+        <ul>
+          <li>Formula 1 Official Standings: <a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noopener">2026 Drivers' Standings</a></li>
+          <li>Formula 1 Official Standings: <a href="https://www.formula1.com/en/results/2026/team" target="_blank" rel="noopener">2026 Teams' Standings</a></li>
+          <li>Formula 1 Official Race Summary: <a href="https://www.formula1.com/en/latest/article/barcelona-lowdown-all-the-key-moments-as-hamilton-lands-sublime-maiden-win-with-ferrari-and-antonelli-retires.3uRBVUiY87JTLhM1l9G24K" target="_blank" rel="noopener">Barcelona lowdown: all the key moments</a></li>
+          <li>Formula 1 Official Team Quotes: <a href="https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-barcelona-catalunya-2026.4fWikDvJzMjVCrHCUNG4Hr" target="_blank" rel="noopener">What the teams said – Race day in Barcelona-Catalunya</a></li>
+          <li>Formula 1 Official Race Hub: <a href="https://www.formula1.com/en/racing/2026/spain" target="_blank" rel="noopener">Spanish Grand Prix 2026 race page</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">The Sports Report • F1 Monday Review • Barcelona-Catalunya 2026</div>
+  </footer>
+</body>
+</html>
