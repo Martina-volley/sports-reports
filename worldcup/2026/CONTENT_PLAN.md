@@ -1,20 +1,20 @@
-# World Cup 2026 發布規劃
+# World Cup 2026 內容計畫
 
-更新日期：2026-06-13
+更新日期：2026-06-17
 時區：Asia/Taipei
 
 ## 發布節奏
 
-| 階段 | 日期區間 | 節奏 | 建議發布時間 |
+| 階段 | 時間範圍 | 節奏 | 手動發布時段 |
 | --- | --- | --- | --- |
 | pre_tournament | 2026-06-04 to 2026-06-10 | 1 group preview or long read per day | 20:00-22:00 |
 | group_stage | 2026-06-11 to 2026-06-27 | Taiwan-time workflow: same-day 17:30 previews before overnight matches; 12:00 post-match analysis after late Taiwan-morning matches have finished; Monday roundups stay on Monday noon. | Manual publish after reviewing queued drafts; lunch/early afternoon for debriefs, evening for preview drafts when needed |
 | knockout_stage | 2026-06-28 to 2026-07-18 | preview every matchday, review selected matches | Preview previous night, Review after matchday |
 | final_week | 2026-07-19 onward | final preview, final review, tournament wrap | as match schedule allows |
 
-## 內容清單
+## 內容排程
 
-| 發布日 | 自動產稿時間 | 手動發布時段 | 狀態 | 類型 | 標題 | 連結 |
+| 發布日 | 自動產稿時間 | 發布時段 | 狀態 | 類型 | 標題 | 連結 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 2026-06-04 |  | published | 已發布 | 分組預覽 | A 組：主辦國、開幕戰，和一組不太安分的對手 | [open](../../worldcup/2026/group-a-preview.html) |
 | 2026-06-05 |  | published | 已發布 | 分組預覽 | H 組：西班牙的控球、烏拉圭的刀口，和首次登場的島國夢 | [open](../../worldcup/2026/group-h-preview.html) |
@@ -24,21 +24,21 @@
 | 2026-06-09 |  | published | 已發布 | 深度專題 | 三國十六城，誰的腿最累？ | [open](../../worldcup/2026/host-map-long-read.html) |
 | 2026-06-10 |  | published | 已發布 | 分組預覽 | C 組：巴西、摩洛哥、海地與蘇格蘭 | [open](../../worldcup/2026/group-c-preview.html) |
 | 2026-06-11 |  | published | 已發布 | 賽前分析 | 開幕日賽前：A 組先開場，主辦國壓力從第一分鐘開始 | [open](../../worldcup/2026/opening-day-preview.html) |
-| 2026-06-12 | 2026-06-12 12:00 | lunch | 企劃中 | 賽後分析 | 開幕日賽後：第一個結果如何改變 A 組壓力線 | [open](../../worldcup/2026/opening-day-debrief.html) |
-| 2026-06-12 | 2026-06-12 14:00 | evening | 企劃中 | 焦點故事 | 阿根廷衛冕路線：Messi 之後，誰替冠軍隊接住壓力 | [open](../../worldcup/2026/argentina-title-defense-story.html) |
-| 2026-06-12 | 2026-06-12 17:30 | manual after draft | 企劃中 | 賽前分析 | 三個主辦國同週登場：加拿大、美國與墨西哥的第一個考題 | [open](../../worldcup/2026/host-nations-first-look.html) |
-| 2026-06-13 | 2026-06-13 12:00 | lunch | 企劃中 | 賽後分析 | 主辦國首輪觀察：壓力、場面與小組秩序的第一個樣本 | [open](../../worldcup/2026/host-nations-first-debrief.html) |
-| 2026-06-13 | 2026-06-13 17:30 | manual after draft | 企劃中 | 賽前分析 | C、D 組賽前：巴西、美國組與 B 組交會的強度測試 | [open](../../worldcup/2026/group-c-d-opening-slate.html) |
-| 2026-06-14 | 2026-06-14 12:00 | lunch | 企劃中 | 賽後分析 | C、D 組賽後：熱門球隊有沒有真的踢出差距 | [open](../../worldcup/2026/group-c-d-opening-debrief.html) |
-| 2026-06-14 | 2026-06-14 14:00 | evening | 企劃中 | 焦點故事 | H、I、L 組為什麼像淘汰賽預演 | [open](../../worldcup/2026/power-groups-story.html) |
-| 2026-06-14 | 2026-06-14 17:30 | manual after draft | 企劃中 | 賽前分析 | E、F 組賽前：德國、荷蘭與日本的第一場答案 | [open](../../worldcup/2026/group-e-f-opening-slate.html) |
-| 2026-06-15 | 2026-06-15 12:00 | lunch | 企劃中 | 賽後分析 | E、F 組賽後：控球隊與反擊隊的第一輪落點 | [open](../../worldcup/2026/group-e-f-opening-debrief.html) |
-| 2026-06-15 | 2026-06-15 12:00 | lunch | 企劃中 | 賽後分析 | 開幕週末小結：主辦國壓力、強隊第一印象與冷門訊號 | [open](../../worldcup/2026/opening-weekend-roundup.html) |
-| 2026-06-15 | 2026-06-15 17:30 | manual after draft | 企劃中 | 賽前分析 | G、H 組賽前：西班牙、烏拉圭、比利時與埃及的節奏戰 | [open](../../worldcup/2026/group-g-h-opening-slate.html) |
-| 2026-06-16 | 2026-06-16 14:00 | evening | 企劃中 | 深度專題 | VAR、補時與判罰尺度：48 隊世界盃的裁判壓力 | [open](../../worldcup/2026/var-referee-long-read.html) |
-| 2026-06-16 | 2026-06-16 17:30 | manual after draft | 企劃中 | 賽前分析 | I、J 組賽前：法國與阿根廷的第一場，不只看球星 | [open](../../worldcup/2026/group-i-j-opening-slate.html) |
-| 2026-06-17 | 2026-06-17 12:00 | lunch | 企劃中 | 賽後分析 | I、J 組賽後：法國、阿根廷與非洲球隊的對照樣本 | [open](../../worldcup/2026/group-i-j-opening-debrief.html) |
-| 2026-06-17 | 2026-06-17 14:00 | evening | 企劃中 | 焦點故事 | 新面孔的爆冷路線：首次登場球隊能走多遠 | [open](../../worldcup/2026/newcomers-upset-story.html) |
+| 2026-06-12 | 2026-06-12 12:00 | lunch | 已發布 | 賽後分析 | 開幕日賽後：第一個結果如何改變 A 組壓力線 | [open](../../worldcup/2026/opening-day-debrief.html) |
+| 2026-06-12 | 2026-06-12 14:00 | evening | 已發布 | 焦點故事 | 阿根廷衛冕路線：Messi 之後，誰替冠軍隊接住壓力 | [open](../../worldcup/2026/argentina-title-defense-story.html) |
+| 2026-06-12 | 2026-06-12 17:30 | manual after draft | 已發布 | 賽前分析 | 三個主辦國同週登場：加拿大、美國與墨西哥的第一個考題 | [open](../../worldcup/2026/host-nations-first-look.html) |
+| 2026-06-13 | 2026-06-13 12:00 | lunch | 已發布 | 賽後分析 | 主辦國首輪觀察：壓力、場面與小組秩序的第一個樣本 | [open](../../worldcup/2026/host-nations-first-debrief.html) |
+| 2026-06-13 | 2026-06-13 17:30 | manual after draft | 已發布 | 賽前分析 | C、D 組賽前：巴西、美國組與 B 組交會的強度測試 | [open](../../worldcup/2026/group-c-d-opening-slate.html) |
+| 2026-06-14 | 2026-06-14 12:00 | lunch | 已發布 | 賽後分析 | C、D 組賽後：熱門球隊有沒有真的踢出差距 | [open](../../worldcup/2026/group-c-d-opening-debrief.html) |
+| 2026-06-14 | 2026-06-14 14:00 | evening | 已發布 | 焦點故事 | H、I、L 組為什麼像淘汰賽預演 | [open](../../worldcup/2026/power-groups-story.html) |
+| 2026-06-14 | 2026-06-14 17:30 | manual after draft | 已發布 | 賽前分析 | E、F 組賽前：德國、荷蘭與日本的第一場答案 | [open](../../worldcup/2026/group-e-f-opening-slate.html) |
+| 2026-06-15 | 2026-06-15 12:00 | lunch | 已發布 | 賽後分析 | E、F 組賽後：控球隊與反擊隊的第一輪落點 | [open](../../worldcup/2026/group-e-f-opening-debrief.html) |
+| 2026-06-15 | 2026-06-15 12:00 | lunch | 已發布 | 賽後分析 | 開幕週末小結：主辦國壓力、強隊第一印象與冷門訊號 | [open](../../worldcup/2026/opening-weekend-roundup.html) |
+| 2026-06-15 | 2026-06-15 17:30 | manual after draft | 已發布 | 賽前分析 | G、H 組賽前：西班牙、烏拉圭、比利時與埃及的節奏戰 | [open](../../worldcup/2026/group-g-h-opening-slate.html) |
+| 2026-06-16 | 2026-06-16 14:00 | evening | 已發布 | 深度專題 | VAR、補時與判罰尺度：48 隊世界盃的裁判壓力 | [open](../../worldcup/2026/var-referee-long-read.html) |
+| 2026-06-16 | 2026-06-16 17:30 | manual after draft | 已發布 | 賽前分析 | I、J 組賽前：法國與阿根廷的第一場，不只看球星 | [open](../../worldcup/2026/group-i-j-opening-slate.html) |
+| 2026-06-17 | 2026-06-17 12:00 | lunch | 已發布 | 賽後分析 | I、J 組賽後：法國、阿根廷與非洲球隊的對照樣本 | [open](../../worldcup/2026/group-i-j-opening-debrief.html) |
+| 2026-06-17 | 2026-06-17 14:00 | evening | 已發布 | 焦點故事 | 新面孔的爆冷路線：首次登場球隊能走多遠 | [open](../../worldcup/2026/newcomers-upset-story.html) |
 | 2026-06-17 | 2026-06-17 17:30 | manual after draft | 企劃中 | 賽前分析 | K、L 組賽前：葡萄牙、英格蘭與克羅埃西亞的第一輪定位 | [open](../../worldcup/2026/group-k-l-opening-slate.html) |
 | 2026-06-18 | 2026-06-18 12:00 | lunch | 企劃中 | 賽後分析 | K、L 組賽後：第一輪結束後的小組賽基準線 | [open](../../worldcup/2026/group-k-l-opening-debrief.html) |
 | 2026-06-18 | 2026-06-18 14:00 | evening | 企劃中 | 深度專題 | 首次登場的國家：48 隊賽制真正打開了什麼門 | [open](../../worldcup/2026/debutants-long-read.html) |
@@ -67,7 +67,7 @@
 
 ## 使用方式
 
-1. 編輯 `data/worldcup-plan.json`。
-2. 執行 `node scripts/build-worldcup-plan.mjs` 重建本檔。
-3. 單篇報導以 `.html + .json` 配對寫入 `new_incoming`，再由發布流程處理。
-4. 若已直接更新正式頁面、`data/reports.json`、hub、plan 或樣式，改走一般 commit/push，不要交給 `publish-incoming`。
+1. 修改 `data/worldcup-plan.json`。
+2. 執行 `node scripts/build-worldcup-plan.mjs` 重新產生本表。
+3. 新產生的 `.html + .json` 應放入 `new_incoming`，檢查後再手動發布。
+4. 發布後須檢查 `data/reports.json`、Hub 與 plan 狀態，再 commit/push。

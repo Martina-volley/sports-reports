@@ -8,23 +8,27 @@ const rootDir = path.resolve(__dirname, "..");
 const dataPath = path.join(rootDir, "data", "worldcup-plan.json");
 const outputPath = path.join(rootDir, "worldcup", "2026", "CONTENT_PLAN.md");
 
+function zh(value) {
+  return value;
+}
+
 function statusLabel(status) {
   return {
-    published: "已發布",
-    ready: "待發布",
-    planned: "企劃中",
-    draft: "草稿中"
+    published: zh("\u5df2\u767c\u5e03"),
+    ready: zh("\u5f85\u767c\u5e03"),
+    planned: zh("\u4f01\u5283\u4e2d"),
+    draft: zh("\u8349\u7a3f\u4e2d")
   }[status] || status;
 }
 
 function typeLabel(type) {
   return {
-    group_preview: "分組預覽",
-    deep_dive: "深度專題",
-    storyline: "焦點故事",
-    matchday_preview: "賽前分析",
-    daily_debrief: "賽後分析",
-    tactical_review: "戰術回顧"
+    group_preview: zh("\u5206\u7d44\u9810\u89bd"),
+    deep_dive: zh("\u6df1\u5ea6\u5c08\u984c"),
+    storyline: zh("\u7126\u9ede\u6545\u4e8b"),
+    matchday_preview: zh("\u8cfd\u524d\u5206\u6790"),
+    daily_debrief: zh("\u8cfd\u5f8c\u5206\u6790"),
+    tactical_review: zh("\u6230\u8853\u56de\u9867")
   }[type] || type;
 }
 
@@ -35,9 +39,7 @@ function draftLabel(item) {
   return [item.draftDate, item.draftSlot].filter(Boolean).join(" ");
 }
 
-const raw = await readFile(dataPath, "utf8");
-const plan = JSON.parse(raw);
-const items = [...plan.items].sort((a, b) => {
+function compareItems(a, b) {
   const byDate = a.publishDate.localeCompare(b.publishDate);
   if (byDate !== 0) {
     return byDate;
@@ -45,37 +47,41 @@ const items = [...plan.items].sort((a, b) => {
 
   const byDraft = (a.draftSlot || "").localeCompare(b.draftSlot || "");
   return byDraft || a.id.localeCompare(b.id);
-});
+}
+
+const raw = await readFile(dataPath, "utf8");
+const plan = JSON.parse(raw);
+const items = [...plan.items].sort(compareItems);
 
 const lines = [
-  "# World Cup 2026 發布規劃",
+  "# World Cup 2026 \u5167\u5bb9\u8a08\u756b",
   "",
-  `更新日期：${plan.updated}`,
-  `時區：${plan.timezone}`,
+  `\u66f4\u65b0\u65e5\u671f\uff1a${plan.updated}`,
+  `\u6642\u5340\uff1a${plan.timezone}`,
   "",
-  "## 發布節奏",
+  "## \u767c\u5e03\u7bc0\u594f",
   "",
-  "| 階段 | 日期區間 | 節奏 | 建議發布時間 |",
+  "| \u968e\u6bb5 | \u6642\u9593\u7bc4\u570d | \u7bc0\u594f | \u624b\u52d5\u767c\u5e03\u6642\u6bb5 |",
   "| --- | --- | --- | --- |",
   ...plan.rhythm.map((row) =>
     `| ${row.phase} | ${row.window} | ${row.cadence} | ${row.publishingSlot} |`
   ),
   "",
-  "## 內容清單",
+  "## \u5167\u5bb9\u6392\u7a0b",
   "",
-  "| 發布日 | 自動產稿時間 | 手動發布時段 | 狀態 | 類型 | 標題 | 連結 |",
+  "| \u767c\u5e03\u65e5 | \u81ea\u52d5\u7522\u7a3f\u6642\u9593 | \u767c\u5e03\u6642\u6bb5 | \u72c0\u614b | \u985e\u578b | \u6a19\u984c | \u9023\u7d50 |",
   "| --- | --- | --- | --- | --- | --- | --- |",
   ...items.map((item) => {
     const link = item.href ? `[open](../../${item.href})` : "";
     return `| ${item.publishDate} | ${draftLabel(item)} | ${item.publishSlot || item.slot || ""} | ${statusLabel(item.status)} | ${typeLabel(item.type)} | ${item.title} | ${link} |`;
   }),
   "",
-  "## 使用方式",
+  "## \u4f7f\u7528\u65b9\u5f0f",
   "",
-  "1. 編輯 `data/worldcup-plan.json`。",
-  "2. 執行 `node scripts/build-worldcup-plan.mjs` 重建本檔。",
-  "3. 單篇報導以 `.html + .json` 配對寫入 `new_incoming`，再由發布流程處理。",
-  "4. 若已直接更新正式頁面、`data/reports.json`、hub、plan 或樣式，改走一般 commit/push，不要交給 `publish-incoming`。",
+  "1. \u4fee\u6539 `data/worldcup-plan.json`\u3002",
+  "2. \u57f7\u884c `node scripts/build-worldcup-plan.mjs` \u91cd\u65b0\u7522\u751f\u672c\u8868\u3002",
+  "3. \u65b0\u7522\u751f\u7684 `.html + .json` \u61c9\u653e\u5165 `new_incoming`\uff0c\u6aa2\u67e5\u5f8c\u518d\u624b\u52d5\u767c\u5e03\u3002",
+  "4. \u767c\u5e03\u5f8c\u9808\u6aa2\u67e5 `data/reports.json`\u3001Hub \u8207 plan \u72c0\u614b\uff0c\u518d commit/push\u3002",
   ""
 ];
 
