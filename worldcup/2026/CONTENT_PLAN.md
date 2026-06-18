@@ -1,6 +1,6 @@
 # World Cup 2026 內容計畫
 
-更新日期：2026-06-17
+更新日期：2026-06-18
 時區：Asia/Taipei
 
 ## 發布節奏
@@ -39,10 +39,10 @@
 | 2026-06-16 | 2026-06-16 17:30 | manual after draft | 已發布 | 賽前分析 | I、J 組賽前：法國與阿根廷的第一場，不只看球星 | [open](../../worldcup/2026/group-i-j-opening-slate.html) |
 | 2026-06-17 | 2026-06-17 12:00 | lunch | 已發布 | 賽後分析 | I、J 組賽後：法國、阿根廷與非洲球隊的對照樣本 | [open](../../worldcup/2026/group-i-j-opening-debrief.html) |
 | 2026-06-17 | 2026-06-17 14:00 | evening | 已發布 | 焦點故事 | 新面孔的爆冷路線：首次登場球隊能走多遠 | [open](../../worldcup/2026/newcomers-upset-story.html) |
-| 2026-06-17 | 2026-06-17 17:30 | manual after draft | 企劃中 | 賽前分析 | K、L 組賽前：葡萄牙、英格蘭與克羅埃西亞的第一輪定位 | [open](../../worldcup/2026/group-k-l-opening-slate.html) |
-| 2026-06-18 | 2026-06-18 12:00 | lunch | 企劃中 | 賽後分析 | K、L 組賽後：第一輪結束後的小組賽基準線 | [open](../../worldcup/2026/group-k-l-opening-debrief.html) |
-| 2026-06-18 | 2026-06-18 14:00 | evening | 企劃中 | 深度專題 | 首次登場的國家：48 隊賽制真正打開了什麼門 | [open](../../worldcup/2026/debutants-long-read.html) |
-| 2026-06-18 | 2026-06-18 17:30 | manual after draft | 企劃中 | 賽前分析 | 第二輪賽前：A、B 組從試探進入壓力區 | [open](../../worldcup/2026/matchday-two-a-b-preview.html) |
+| 2026-06-17 | 2026-06-17 17:30 | manual after draft | 已發布 | 賽前分析 | K、L 組賽前：葡萄牙、英格蘭與克羅埃西亞的第一輪定位 | [open](../../worldcup/2026/group-k-l-opening-slate.html) |
+| 2026-06-18 | 2026-06-18 12:00 | lunch | 已發布 | 賽後分析 | K、L 組賽後：第一輪結束後的小組賽基準線 | [open](../../worldcup/2026/group-k-l-opening-debrief.html) |
+| 2026-06-18 | 2026-06-18 14:00 | evening | 已發布 | 深度專題 | 首次登場的國家：48 隊賽制真正打開了什麼門 | [open](../../worldcup/2026/debutants-long-read.html) |
+| 2026-06-18 | 2026-06-18 17:30 | manual after draft | 已發布 | 賽前分析 | 第二輪賽前：A、B 組從試探進入壓力區 | [open](../../worldcup/2026/matchday-two-a-b-preview.html) |
 | 2026-06-19 | 2026-06-19 12:00 | lunch | 企劃中 | 賽後分析 | A、B 組第二輪賽後：出線主動權與第三名積分線 | [open](../../worldcup/2026/matchday-two-a-b-pressure.html) |
 | 2026-06-19 | 2026-06-19 14:00 | evening | 企劃中 | 焦點故事 | USMNT 的主場壓力：黃金世代必須回答的問題 | [open](../../worldcup/2026/usmnt-pressure-story.html) |
 | 2026-06-19 | 2026-06-19 17:30 | manual after draft | 企劃中 | 賽前分析 | C、D 組第二輪賽前：強隊修正與弱隊搶分窗口 | [open](../../worldcup/2026/matchday-two-c-d-preview.html) |

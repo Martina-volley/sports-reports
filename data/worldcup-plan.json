@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17",
+  "updated": "2026-06-18",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -138,13 +138,13 @@
       "id": "debutants-long-read",
       "title": "首次登場的國家：48 隊賽制真正打開了什麼門",
       "type": "deep_dive",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-18",
       "draftDate": "2026-06-18",
       "draftSlot": "14:00",
       "publishSlot": "evening",
       "timezone": "Asia/Taipei",
-      "slot": "manual evening publish",
+      "slot": "evening",
       "href": "worldcup/2026/debutants-long-read.html"
     },
     {
@@ -338,7 +338,7 @@
       "id": "group-k-l-opening-slate",
       "title": "K、L 組賽前：葡萄牙、英格蘭與克羅埃西亞的第一輪定位",
       "type": "matchday_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-17",
       "draftDate": "2026-06-17",
       "draftSlot": "17:30",
@@ -351,20 +351,20 @@
       "id": "group-k-l-opening-debrief",
       "title": "K、L 組賽後：第一輪結束後的小組賽基準線",
       "type": "daily_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-18",
       "draftDate": "2026-06-18",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "lunch",
       "href": "worldcup/2026/group-k-l-opening-debrief.html"
     },
     {
       "id": "matchday-two-a-b-preview",
       "title": "第二輪賽前：A、B 組從試探進入壓力區",
       "type": "matchday_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-18",
       "draftDate": "2026-06-18",
       "draftSlot": "17:30",
