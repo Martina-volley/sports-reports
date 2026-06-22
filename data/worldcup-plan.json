@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18",
+  "updated": "2026-06-22",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -151,13 +151,13 @@
       "id": "usmnt-pressure-story",
       "title": "USMNT 的主場壓力：黃金世代必須回答的問題",
       "type": "storyline",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-19",
       "draftDate": "2026-06-19",
       "draftSlot": "14:00",
       "publishSlot": "evening",
       "timezone": "Asia/Taipei",
-      "slot": "manual evening publish",
+      "slot": "evening",
       "href": "worldcup/2026/usmnt-pressure-story.html"
     },
     {
@@ -377,20 +377,20 @@
       "id": "matchday-two-a-b-pressure",
       "title": "A、B 組第二輪賽後：出線主動權與第三名積分線",
       "type": "daily_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-19",
       "draftDate": "2026-06-19",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "lunch",
       "href": "worldcup/2026/matchday-two-a-b-pressure.html"
     },
     {
       "id": "matchday-two-c-d-preview",
       "title": "C、D 組第二輪賽前：強隊修正與弱隊搶分窗口",
       "type": "matchday_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-19",
       "draftDate": "2026-06-19",
       "draftSlot": "17:30",
@@ -403,13 +403,13 @@
       "id": "matchday-two-c-d-adjustments",
       "title": "C、D 組第二輪賽後：強隊修正與第三名積分線的第一個輪廓",
       "type": "daily_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-20",
       "draftDate": "2026-06-20",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "lunch",
       "href": "worldcup/2026/matchday-two-c-d-adjustments.html"
     },
     {
