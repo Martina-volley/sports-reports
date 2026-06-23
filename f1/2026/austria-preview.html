@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 Austrian Grand Prix Preview</title>
+  <meta name="description" content="2026 F1 奧地利大獎賽賽前預告，整理台灣時間賽程、最新車手與車隊積分、Red Bull Ring 賽道重點、輪胎情境、四大車隊近況與排位預測。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 Austrian Grand Prix Preview" />
+  <meta property="og:description" content="Ferrari 在 Barcelona 打開追擊戰線，Mercedes 帶著榜首與可靠度疑問前往 Red Bull Ring，奧地利站成為雙榜重新定價的第一站。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f5efe6;
+      --ink: #18212f;
+      --muted: #5f6c7b;
+      --card: rgba(255, 252, 247, 0.86);
+      --line: rgba(24, 33, 47, 0.12);
+      --navy: #111827;
+      --red: #b91c1c;
+      --gold: #b88945;
+      --amber: #d97706;
+      --shadow: 0 18px 52px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.78;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(185, 28, 28, 0.16), transparent 24%),
+        radial-gradient(circle at 84% 0%, rgba(217, 119, 6, 0.12), transparent 26%),
+        linear-gradient(180deg, #fbf7f1 0%, #efe8dd 100%);
+    }
+    a { color: #8b1e1e; }
+    .hero {
+      padding: 64px 24px 56px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(17, 24, 39, 0.96), rgba(28, 37, 54, 0.88)),
+        linear-gradient(120deg, #111827, #7f1d1d 48%, #d97706 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin-top: 28px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.36), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 20px 0 12px;
+      max-width: 10ch;
+      font-size: clamp(36px, 6.2vw, 66px);
+      line-height: 1.05;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--red);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--gold);
+      background: rgba(184, 137, 69, 0.08);
+      font-size: 14px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+      font: 600 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .team-list {
+      display: grid;
+      gap: 16px;
+    }
+    .team-item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+    .team-item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .forecast {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .forecast div {
+      padding: 16px 12px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(217,119,6,0.08), rgba(255,255,255,0.9));
+      text-align: center;
+    }
+    .forecast b {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 24px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    ol, ul { margin: 0; padding-left: 20px; }
+    .sources li { margin-bottom: 8px; }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+      .forecast { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+      .forecast { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 8 Preview</div>
+      <h1>奧地利站把 Barcelona 的追擊戰帶進下一個短兵相接週末</h1>
+      <p>2026 年 6 月 22 日是 Asia/Taipei 週一，而本週末 6 月 26 日到 6 月 28 日就是奧地利大獎賽。Mercedes 仍握有雙榜第一，但 Ferrari 靠 Barcelona 的關鍵勝場把車手榜差距壓回 41 分；Red Bull Ring 的短圈、高速煞車區與連續上坡重加速，會把每一支車隊的能量管理、煞車穩定與單圈效率直接攤在桌面上。</p>
+      <div class="meta">
+        <span>發稿日期：2026-06-22</span>
+        <span>賽事：Formula 1 Lenovo Austrian Grand Prix 2026</span>
+        <span>正賽：06-28 21:00 台灣時間</span>
+        <span>Sprint：本週末不適用</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Opening Thesis</div>
+      <div class="lede">
+        <p>Red Bull Ring 的殘酷之處，在於它不像 Monaco 那樣把比賽鎖死，也不像 Barcelona 那樣用長彎與高退化慢慢放大優勢。這是一條 4.326 公里、10 個彎、71 圈的短圈賽道，三段主要直線把煞車穩定、出彎抓地與電能部署壓縮到幾乎每 70 秒就要重新回答一次。只要某支車隊在第一計時段和 Turn 3、Turn 4 兩個大煞車點掉節奏，整個週末都會被看得很清楚。</p>
+        <p>因此奧地利站不是純粹的「誰延續上一站手感」，而是「誰能把 Barcelona 帶來的新敘事轉成可重複表現」。Ferrari 要證明西班牙站不只是完美策略命中；Mercedes 要回應 Antonelli 退賽後的可靠度疑雲；McLaren 要把單圈與長距離重新接回爭勝窗口；Red Bull 則要在更適合攻擊路緣與短圈輸出的場地裡，證明自己仍然不是旁觀者。</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taiwan Schedule</div>
+        <h2>台灣時間賽程</h2>
+        <table>
+          <thead>
+            <tr><th>日期</th><th>時間</th><th>Session</th><th>說明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>06-26 週五</td><td>19:30</td><td>FP1</td><td>第一輪長短距離基準</td></tr>
+            <tr><td>06-26 週五</td><td>23:00</td><td>FP2</td><td>夜間輪胎與賽道橡膠演進</td></tr>
+            <tr><td>06-27 週六</td><td>18:30</td><td>FP3</td><td>最後單圈模擬窗口</td></tr>
+            <tr><td>06-27 週六</td><td>22:00</td><td>Qualifying</td><td>短圈賽道放大排位差異</td></tr>
+            <tr><td>06-28 週日</td><td>21:00</td><td>Race</td><td>71 圈正賽</td></tr>
+          </tbody>
+        </table>
+        <div class="note">賽程依可驗證的 2026 Austrian GP 週末資訊與 Red Bull Ring 當地 UTC+2 時區換算為 Asia/Taipei UTC+8。本週末不是 Sprint 格式。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>最新車手積分</h2>
+        <table>
+          <thead>
+            <tr><th>排名</th><th>車手</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>156</td></tr>
+            <tr><td>2</td><td>Lewis Hamilton</td><td>Ferrari</td><td>115</td></tr>
+            <tr><td>3</td><td>George Russell</td><td>Mercedes</td><td>106</td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>75</td></tr>
+            <tr><td>5</td><td>Lando Norris</td><td>McLaren</td><td>73</td></tr>
+            <tr><td>6</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>64</td></tr>
+          </tbody>
+        </table>
+        <div class="note">上表以 workspace 內既有 Barcelona 賽後稿為基準，並以 2026-06-15 外部報導確認 Hamilton 已將與 Antonelli 的差距縮小到 41 分。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Constructors</div>
+        <h2>最新車隊積分</h2>
+        <table>
+          <thead>
+            <tr><th>排名</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>262</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>190</td></tr>
+            <tr><td>3</td><td>McLaren</td><td>141</td></tr>
+            <tr><td>4</td><td>Red Bull Racing</td><td>89</td></tr>
+            <tr><td>5</td><td>Alpine</td><td>41</td></tr>
+          </tbody>
+        </table>
+        <div class="note">Mercedes 仍然領先，但 Barcelona 把原本接近一面倒的節奏重新壓回可追擊區間。Ferrari 與 McLaren 在奧地利站都還有改寫第二集團層級的空間。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Sprint Check</div>
+        <h2>本週末不是 Sprint</h2>
+        <p>這點很重要。奧地利站 2026 並不在已公布的 Sprint 週末名單內，所以各隊會有完整三段練習與正常排位賽。這意味著 setup 收斂、單圈模擬與長距離輪胎退化資料都會比 Montreal 那種 Sprint 週末更完整，也更容易把真正的 pace 排序拉開。</p>
+        <div class="chips">
+          <span class="chip">三段練習完整可用</span>
+          <span class="chip">Parc ferme 壓力較低</span>
+          <span class="chip">排位權重回升</span>
+          <span class="chip">策略更看長距離資料</span>
+        </div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Track Guide</div>
+        <h2>賽道重點</h2>
+        <p>Red Bull Ring 位於奧地利 Spielberg，現行 Grand Prix 版長度 4.326 公里、10 個彎，正賽距離 71 圈。上坡衝刺到 Turn 3 與 Turn 4 的重煞區，是最直接的超車機會；但如果出彎牽引與電能釋放做得不夠乾淨，後面兩段直線就會持續掉速。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Tyre Angle</div>
+        <h2>輪胎與煞車情境</h2>
+        <p>Pirelli 2026 乾胎仍是 C1 到 C5 五個級距，但截至 2026-06-22 尚未找到可公開驗證的奧地利站指定三款乾胎配置。可以先確定的是，Red Bull Ring 的短圈會讓輪胎熱循環與反覆重煞更敏感，前段直線尾速與出彎空轉控制，往往比單純磨耗更早決定 long run 形狀。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Track Character</div>
+        <h2>這站會獎勵什麼</h2>
+        <p>如果你的車在低速轉向、短距加速與煞車穩定上都乾淨，奧地利站會讓你看起來比真實實力更強；反過來說，若高能量回收、路緣吸收或 rear stability 有任何裂縫，這條短圈賽道會把問題反覆放大。</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Big Four Watch</div>
+      <h2>四大車隊升級與動向</h2>
+      <div class="team-list">
+        <div class="team-item">
+          <strong>Mercedes：榜首還在，但 Austria 第一個問題不是速度，而是可靠度與雙車節奏管理。</strong>
+          <p>Barcelona 之前，Mercedes 一直是 2026 新規下最穩定的基準車；但 Antonelli 在西班牙站末段退賽，讓原本可繼續擴大的車手榜優勢瞬間縮到 41 分。對奧地利站來說，Mercedes 不必重新發明 setup，他們要證明的是 W17 仍能在完整週末裡把排位與正賽都執行乾淨，而且 Russell 與 Antonelli 不會再彼此消耗到讓 Ferrari 乘虛而入。</p>
+        </div>
+        <div class="team-item">
+          <strong>Ferrari：Barcelona 勝場讓 Miami 之後的開發線正式被當成可複製武器，而不是單站奇蹟。</strong>
+          <p>Hamilton 在西班牙站的首個 Ferrari 正賽勝利，不只是一場情緒性突破，而是把 Ferrari 的彎中表現、輪胎節奏與策略侵略性一起兌現成勝場。外部分析也點出 Ferrari 在彎中效率上已是前段最強之一，若後續動力與周末執行再往前推，Hamilton 與 Leclerc 都會在這種短圈賽道保持威脅。奧地利站要看的，是 Ferrari 能不能在不是 Barcelona 那種高退化長彎場地時，仍把單圈與正賽 pace 維持在第一排附近。</p>
+        </div>
+        <div class="team-item">
+          <strong>McLaren：目前像是有速度，但還沒把整個週末重新接回爭冠節奏。</strong>
+          <p>McLaren 在 Barcelona 至少止住 Monaco 之後的低潮，Norris 拿下頒獎台，但整體觀感仍像是一支在找 balance window 的車隊。單圈上他們不時能跟前兩隊貼住，長距離卻還沒完全回到把正賽掌握在自己手中的樣子。Austria 這種圈長很短、排位誤差很容易被放大的賽道，對 McLaren 是一次重新證明「我們不只是在守第三集團」的考試。</p>
+        </div>
+        <div class="team-item">
+          <strong>Red Bull：西班牙暴露弱點後，奧地利就是最直接的反彈測試場。</strong>
+          <p>Verstappen 在 Barcelona 之後直接承認車不夠快，尤其高耗能彎角條件讓 Red Bull 沒法持續壓迫前三。奧地利站不完全複製西班牙的壓力模型，這反而讓 Red Bull 有機會用更短的彎道鏈和更直接的直線區間找回表面競爭力。但如果他們連 Red Bull Ring 這種主場型賽道都無法回到前兩排，2026 年度主線就會開始更明確地轉向 Mercedes 與 Ferrari 的雙強對話。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Qualifying Projection</div>
+      <h2>排位預測與機率免責聲明</h2>
+      <p>以下預測是依據截至 2026-06-22 可驗證的近期表現、Barcelona 之後的競爭趨勢，以及 Red Bull Ring 的短圈特性做出的編輯判斷，不是官方機率，也不是投注建議。真正的差距仍高度取決於週五 long run、週六風向與單圈能源部署。</p>
+      <div class="forecast">
+        <div><b>24%</b><span>George Russell</span></div>
+        <div><b>23%</b><span>Kimi Antonelli</span></div>
+        <div><b>21%</b><span>Lewis Hamilton</span></div>
+        <div><b>17%</b><span>Charles Leclerc</span></div>
+        <div><b>10%</b><span>Lando Norris</span></div>
+        <div><b>5%</b><span>Max Verstappen</span></div>
+      </div>
+      <div class="note">若 Ferrari 在 FP2 長距離仍能維持 Barcelona 的輪胎節奏，Hamilton 與 Leclerc 兩人至少一位進前二排的機率會明顯上升；若 Mercedes 把單圈模式重新收斂，Russell 和 Antonelli 依然是最完整的雙車排位組合。</div>
+    </section>
+
+    <section class="card">
+      <div class="kicker">What Matters</div>
+      <h2>這個週末最該盯的三件事</h2>
+      <ol>
+        <li>Ferrari 能否把 Barcelona 的勝場轉成第二個連續可爭勝週末，而不是只靠特定條件放大優勢。</li>
+        <li>Mercedes 會不會在榜首壓力下開始更積極處理 Russell 與 Antonelli 的節奏優先序，避免再次互相持速。</li>
+        <li>Red Bull 是否能在更短、更直接的 Red Bull Ring 立刻止血，否則 2026 的敘事中心會越來越遠離主場車隊。</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Sources</div>
+      <h2>資料來源</h2>
+      <ul class="sources">
+        <li><a href="https://fr.wikipedia.org/wiki/Grand_Prix_automobile_d%27Autriche_2026">Grand Prix automobile d'Autriche 2026</a>：賽事日期、官方名稱、圈數、賽道長度、練習與排位時段。</li>
+        <li><a href="https://en.wikipedia.org/wiki/Red_Bull_Ring">Red Bull Ring</a>：現行 Grand Prix 版 4.326 公里、10 彎與場地背景。</li>
+        <li><a href="https://www.theguardian.com/sport/2026/jun/15/lewis-hamilton-ferrari-barcelona-gp-f1-analysis">The Guardian, 2026-06-15</a>：Hamilton 與 Antonelli 41 分差、Ferrari 上升趨勢、Mercedes 可靠度與對抗敘事。</li>
+        <li><a href="https://www.techradar.com/how-to-watch/formula-one/catalunya-grand-prix-2026-f1-free">TechRadar, 2026-06-14</a>：Barcelona 排位前段排序與 McLaren 當週末競爭位置。</li>
+        <li><a href="https://as.com/motor/formula_1/a-que-hora-es-el-gp-de-austria-de-f1-canal-tv-horarios-como-y-donde-ver-las-carreras-en-red-bull-ring-en-directo-f202606-n/">AS, 2026-06-22</a>：確認 Austria 週末日期與本週末即將舉行。</li>
+        <li><a href="../../f1/2026/barcelona-catalunya-race.html">workspace 既有 Barcelona 賽後稿</a>：車手榜與車隊榜最新數字交叉基準。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    本文依 2026-06-22 Asia/Taipei 可驗證資訊整理。Pirelli 奧地利站專屬三款乾胎配置若在之後公布，輪胎段落應以官方當週公告為準。
+  </footer>
+</body>
+</html>

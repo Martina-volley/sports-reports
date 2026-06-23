@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22",
+  "updated": "2026-06-23",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -494,7 +494,7 @@
       "id": "matchday-two-k-l-preview",
       "title": "K、L 組第二輪賽前：葡萄牙與英格蘭能否提前整理局面",
       "type": "matchday_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-23",
       "draftDate": "2026-06-23",
       "draftSlot": "17:30",

@@ -1,5 +1,35 @@
 [
   {
+    "href": "worldcup/2026/matchday-two-k-l-preview.html",
+    "league": "worldcup",
+    "date": "2026-06-23",
+    "title": "K、L 組第二輪賽前：葡萄牙與英格蘭能否提前整理局面",
+    "kicker": "Matchday Preview",
+    "summary": "K、L 組第二輪把兩種壓力放在同一天：英格蘭與哥倫比亞想提早控盤，葡萄牙與克羅埃西亞則必須先止血。",
+    "secondary": "依 2026 年 6 月 23 日 K、L 組第二輪賽程整理，聚焦英格蘭、加納、葡萄牙與哥倫比亞的局面控制戰。",
+    "tagLabel": "賽前分析",
+    "seasonLabel": "WORLD CUP 2026 | Groups K-L",
+    "accent": "linear-gradient(135deg, #0F172A 0%, #1D4ED8 44%, #7C2D12 100%)",
+    "featured": false,
+    "latest": true,
+    "type": "preview"
+  },
+  {
+    "href": "f1/2026/austria-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-06-22",
+    "title": "F1 2026 Austrian Grand Prix Preview",
+    "kicker": "Red Bull Ring",
+    "summary": "Austria opens a short-lap showdown with Ferrari chasing Mercedes after Barcelona.",
+    "secondary": "This preview covers Taiwan schedule, standings, track notes, tyre context, big-four team trends, and a qualifying outlook.",
+    "seasonLabel": "F1 2026 Round 8",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #111827 0%, #b91c1c 46%, #d97706 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "worldcup/2026/group-stage-week-two-roundup.html",
     "league": "worldcup",
     "date": "2026-06-22",
@@ -11,7 +41,7 @@
     "seasonLabel": "WORLD CUP 2026 | Group Stage",
     "accent": "linear-gradient(135deg, #0F172A 0%, #059669 45%, #F97316 100%)",
     "featured": false,
-    "latest": true,
+    "latest": false,
     "type": "briefing"
   },
   {
