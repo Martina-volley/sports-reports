@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23",
+  "updated": "2026-06-25",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -507,13 +507,13 @@
       "id": "matchday-two-k-l-adjustments",
       "title": "K、L 組第二輪賽後：第一階段出線版圖完成前的最後訊號",
       "type": "daily_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-24",
       "draftDate": "2026-06-24",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "manual lunch publish",
+      "slot": "lunch",
       "href": "worldcup/2026/matchday-two-k-l-adjustments.html"
     },
     {
