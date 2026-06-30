@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 British Grand Prix Preview</title>
+  <meta name="description" content="F1 2026 英國大獎賽賽前預告，整理 Silverstone 衝刺週末賽程、台灣時間、最新積分、賽道與輪胎重點、四大車隊動向與排位戰預測。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 British Grand Prix Preview" />
+  <meta property="og:description" content="Silverstone 衝刺週末登場，Mercedes 帶著奧地利 1-3 士氣領跑積分，Red Bull 升級套件逼近前排，Ferrari 與 McLaren 也在高速彎場尋找翻盤節奏。" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --paper: rgba(255, 251, 245, 0.9);
+      --ink: #172033;
+      --muted: #5f6b7c;
+      --line: rgba(23, 32, 51, 0.12);
+      --navy: #0f172a;
+      --blue: #1d4ed8;
+      --red: #9f1239;
+      --gold: #b7791f;
+      --shadow: 0 20px 56px rgba(15, 23, 42, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(29, 78, 216, 0.14), transparent 24%),
+        radial-gradient(circle at 88% 0%, rgba(159, 18, 57, 0.11), transparent 26%),
+        linear-gradient(180deg, #fcfaf6 0%, #efe8dd 100%);
+    }
+    a { color: #8b1e3f; }
+    .hero {
+      padding: 68px 24px 56px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(22, 33, 62, 0.9)),
+        linear-gradient(120deg, #0f172a, #1d4ed8 44%, #9f1239 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin-top: 28px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.42), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow, .kicker {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .eyebrow {
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.08);
+    }
+    .kicker {
+      color: var(--red);
+      border: 1px solid rgba(159, 18, 57, 0.12);
+      background: rgba(159, 18, 57, 0.05);
+    }
+    h1 {
+      margin: 20px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(36px, 6.2vw, 66px);
+      line-height: 1.05;
+    }
+    .hero p {
+      max-width: 840px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 20px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--gold);
+      background: rgba(183, 121, 31, 0.08);
+      font-size: 14px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.78);
+      font: 600 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .team-list {
+      display: grid;
+      gap: 16px;
+    }
+    .team-item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.78);
+    }
+    .team-item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .forecast {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .forecast div {
+      padding: 16px 12px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(29,78,216,0.08), rgba(255,255,255,0.94));
+      text-align: center;
+    }
+    .forecast b {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 24px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .sources li { margin-bottom: 8px; }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half { grid-column: span 12; }
+      .lede { columns: 1; }
+      .forecast { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+      .forecast { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 9 Preview</div>
+      <h1>Silverstone 進入衝刺週末 英國站把高速彎與更新節奏一起放大</h1>
+      <p>台灣時間 2026 年 6 月 29 日週一，F1 官方賽曆確認本週末將舉行英國大獎賽，且 Silverstone 也是 2026 年衝刺賽週末之一。Mercedes 帶著奧地利站 1-3 完賽與雙積分優勢北上，Red Bull 依靠最新升級把差距壓到可攻擊範圍，Ferrari 則要在高速彎與長距離輪胎管理中重整節奏；McLaren 雖然積分仍緊咬第二集團，但真正的焦點是他們能否把 Silverstone 的高負載快彎優勢轉成前排單圈。</p>
+      <div class="meta">
+        <span>發稿日：2026-06-29</span>
+        <span>站別：FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026</span>
+        <span>正賽：07-05 21:00 台灣時間</span>
+        <span>Sprint：本週適用</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Opening Thesis</div>
+      <div class="lede">
+        <p>Silverstone 的關鍵從來不只是速度，而是高速彎中車身平台是否穩定、前軸能否在連續變向保持銳利，以及輪胎在長時間高能量輸出後是否還能留下最後一圈的抓地力。官方賽道資料顯示這條賽道全長 5.891 公里、52 圈、總距離 306.198 公里，Maggotts、Becketts、Abbey 這種高速方向切換會直接放大底板效率、懸吊機械平衡與輪胎熱衰退管理。</p>
+        <p>這也讓英國站成為一場把車隊真實更新成效攤在陽光下的比賽。Mercedes 目前以 302 分領先車隊榜，Antonelli 與 Russell 分居車手榜前二；Ferrari 雖仍是最直接追兵，但奧地利站暴露出高溫下的配速與過熱問題；Red Bull 則在主場靠底板與後懸吊升級把差距縮到最後一成；McLaren 雖沒有公開被官方點名的大規模新套件，但既有高速彎能力和 Norris、Piastri 的單圈天花板，仍讓他們是排位戰不能低估的一組。</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taiwan Schedule</div>
+        <h2>英國站賽程與台灣時間</h2>
+        <table>
+          <thead>
+            <tr><th>日期</th><th>時間</th><th>Session</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>07-03 週五</td><td>18:30</td><td>FP1</td><td>唯一完整練習時段，衝刺週末的基準設定窗口</td></tr>
+            <tr><td>07-03 週五</td><td>22:30</td><td>Sprint Qualifying</td><td>當晚就決定衝刺賽起跑序</td></tr>
+            <tr><td>07-04 週六</td><td>18:00</td><td>Sprint</td><td>短程積分戰，對輪胎與節奏判斷很敏感</td></tr>
+            <tr><td>07-04 週六</td><td>22:00</td><td>Qualifying</td><td>正賽排位，Silverstone 高速彎穩定度是分水嶺</td></tr>
+            <tr><td>07-05 週日</td><td>21:00</td><td>Race</td><td>52 圈正賽</td></tr>
+          </tbody>
+        </table>
+        <div class="note">官方 F1 頁面列出的 Silverstone track time 為英國夏令時間，本文已換算為 Asia/Taipei。換算基準為英國夏令時間 UTC+1、台灣時間 UTC+8。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>最新積分形勢</h2>
+        <table>
+          <thead>
+            <tr><th>車手榜</th><th>積分</th><th>車隊榜</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kimi Antonelli</td><td>171</td><td>Mercedes</td><td>302</td></tr>
+            <tr><td>George Russell</td><td>131</td><td>Ferrari</td><td>204</td></tr>
+            <tr><td>Lewis Hamilton</td><td>125</td><td>McLaren</td><td>159</td></tr>
+            <tr><td>Oscar Piastri</td><td>80</td><td>Red Bull Racing</td><td>115</td></tr>
+            <tr><td>Lando Norris</td><td>79</td><td>--</td><td>--</td></tr>
+            <tr><td>Charles Leclerc</td><td>79</td><td>--</td><td>--</td></tr>
+            <tr><td>Max Verstappen</td><td>73</td><td>--</td><td>--</td></tr>
+          </tbody>
+        </table>
+        <div class="note">積分為官方 F1 Results 頁面在奧地利站後的更新值。Mercedes 目前在車隊榜領先 Ferrari 98 分，Antonelli 則以 40 分優勢領跑車手榜。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Circuit & Tyres</div>
+        <h2>賽道解析與輪胎情境</h2>
+        <p>Silverstone 的速度感來自一連串幾乎沒有喘息時間的高速方向切換。Abbey 到 Farm 的進場速度、Maggotts-Becketts-Chapel 的橫向負載，以及 Stowe 之前的進攻角度，會讓車隊在低風阻與高速穩定之間被迫做出非常精細的平衡。這條賽道不是單純拚尾速，而是比誰能在高能量輪胎循環裡保住前軸精準度。</p>
+        <div class="chips">
+          <span class="chip">賽道長度：5.891 km</span>
+          <span class="chip">正賽圈數：52</span>
+          <span class="chip">總距離：306.198 km</span>
+          <span class="chip">高速彎負載極高</span>
+        </div>
+        <p>截至 2026-06-29，本文未查到可公開驗證的英國站 Pirelli 乾地配方公告，因此不直接寫入 C1/C2/C3 或其他組合，以免把尚未正式對外的資訊當作已確認事實。可確定的是，Silverstone 對前輪外側與整體熱管理一向嚴苛，若週末氣溫偏高，長距離配速與過熱控制會比純單圈峰值更重要。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Sprint Context</div>
+        <h2>衝刺週末如何改變比賽</h2>
+        <p>英國站官方賽程已列出 Sprint Qualifying 與 Sprint，代表 Silverstone 不是傳統三練排位週末，而是只有一節自由練習就要直接進入封閉式設定節奏。這會放大兩類車隊的優勢：一類是基礎設定窗口很寬、可以快速把車放進工作區的車隊；另一類是衝刺排位單圈特別強，能在週五晚間就把位置卡在前面、減少週六晚間壓力的車手。</p>
+        <p>對目前四大車隊來說，Mercedes 的穩定度與 Red Bull 新套件的單圈潛力，會讓週五 Sprint Qualifying 很有戲；Ferrari 若仍需用較多時間處理過熱或長距離平衡，單節練習的容錯就會比一般週末更低；McLaren 則要把高速彎抓地力盡快轉成可重複的排位圈，不然衝刺格式會讓調整空間被大幅壓縮。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Big Four Watch</div>
+        <h2>四大車隊最新動向</h2>
+        <div class="team-list">
+          <div class="team-item">
+            <strong>Mercedes</strong>
+            <div>奧地利站 George Russell 從桿位拿下勝利，Antonelli 追回到 P3，官方賽後報導明確形容這是 Barcelona 之後的「bounce back」。Toto Wolff 也點出 Mercedes 現階段的核心是車隊冠軍積分效率，Silverstone 這種高速彎場若延續奧地利的輪胎持久度與節奏控制，兩台車都具備前兩排與雙頒獎台條件。</div>
+          </div>
+          <div class="team-item">
+            <strong>Ferrari</strong>
+            <div>Ferrari 仍是積分榜第二，但奧地利站暴露出兩個壓力點：一是 Vasseur 直言比賽問題在於沒有 Mercedes 與 Verstappen 的配速，二是高溫條件下輪胎衰退與過熱讓他們不得不三停。另一方面，Wolff 在 6 月 29 日的訪談中也提到 Ferrari 2026 目前採取相當積極的升級節奏，這讓 Silverstone 成為驗證更新是否真的換來高速彎效率、還是只是提前消耗開發資源的關鍵週末。</div>
+          </div>
+          <div class="team-item">
+            <strong>Red Bull Racing</strong>
+            <div>Red Bull 在奧地利主場帶來本季幅度最大的升級之一，官方報導直接點名包含底板與後懸吊變更，目標是性能與可靠度同步提升。結果也很直接：Verstappen 拿到 2026 最佳名次 P2，Laurent Mekies 甚至說這是本季毫無疑問最強的一場。如果這套件在 Silverstone 這種高速連續彎也有效，Red Bull 會是真正打亂 Mercedes 排位節奏的第一順位。</div>
+          </div>
+          <div class="team-item">
+            <strong>McLaren</strong>
+            <div>截至發稿，官方可公開驗證的最新 F1 內容沒有像 Ferrari、Red Bull 那樣點名 McLaren 在 Silverstone 前夕帶來特定大套件；較穩妥的解讀是，McLaren 目前更像靠既有高速彎效率與 Norris、Piastri 的單圈上限維持競爭力。F1 Fantasy 在英奧雙站前瞻中特別提醒 Silverstone 這類攻擊性賽道會獎勵高 race pace 車輛，這對 McLaren 不是壞消息，但要把它轉成前排位置，仍需週五就找到穩定的空力工作區。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Qualifying Outlook</div>
+        <h2>排位戰預測</h2>
+        <p>以下不是博彩建議，而是根據 2026-06-29 前可驗證的官方賽程、積分與奧地利站後車隊動向所做的編輯部預測。Silverstone 的單圈會把高速彎底板效率與駕駛進彎信心放到最大，因此我更看重奧地利站展現的車身穩定性與更新效果，而不是只看單站最終名次。</p>
+        <div class="forecast">
+          <div><b>32%</b>George Russell<br />主場氣勢與奧地利桿位勝仗延續</div>
+          <div><b>28%</b>Max Verstappen<br />Red Bull 新套件若延續效率，最有機會打亂 Mercedes</div>
+          <div><b>22%</b>Lewis Hamilton<br />Silverstone 歷史戰績與 Ferrari 高速彎潛力仍在</div>
+          <div><b>18%</b>Lando Norris<br />McLaren 若在唯一練習迅速進入甜蜜點，單圈爆發力仍足以搶 front row</div>
+        </div>
+        <div class="note">免責聲明：以上百分比為新聞分析用途的主觀機率，不代表官方預測、投注建議或任何保證結果。衝刺週末只有一節練習，週五晚間的風向、溫度與紅旗都可能大幅改變排位版圖。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.formula1.com/en/racing/2026/great-britain">Formula 1 官方英國站頁面</a>：站別日期、Silverstone 賽道規格、Sprint 週末賽程。</li>
+          <li><a href="https://www.formula1.com/en/results/2026/drivers">Formula 1 官方 2026 車手積分</a>：英國站前最新車手榜。</li>
+          <li><a href="https://www.formula1.com/en/results/2026/team">Formula 1 官方 2026 車隊積分</a>：英國站前最新車隊榜。</li>
+          <li><a href="https://www.formula1.com/en/latest/article/wolff-reflects-on-russell-and-mercedes-austrian-gp-bounce-back-as-he-highlights-where-the-race-was-lost-for-antonelli.4sq99ciF0Zgsq3TnEv09WB">Formula 1 官方：Wolff 談 Mercedes 在奧地利站反彈</a>。</li>
+          <li><a href="https://www.formula1.com/en/latest/article/you-have-to-do-it-at-the-right-time-wolff-thinks-ferrari-might-run-out-of-update-spending-after-throwing-things-at-their-car.7cmEak70Xhh1G7WhFnyhLr">Formula 1 官方：Wolff 談 Ferrari 的積極升級節奏</a>。</li>
+          <li><a href="https://www.formula1.com/en/latest/article/it-was-not-a-good-fight-vasseur-explains-main-issue-behind-ferraris-struggles-in-austrian-grand-prix.5XW4G2FJyvBMxRSaHqGQ5S">Formula 1 官方：Vasseur 解釋 Ferrari 奧地利站配速問題</a>。</li>
+          <li><a href="https://www.formula1.com/en/latest/article/mekies-hails-verstappen-for-undoubtedly-the-strongest-race-of-the-season-in-austria.3jXcO8zceZHoz0KXKYFysS">Formula 1 官方：Red Bull 奧地利站升級與 Verstappen 表現</a>。</li>
+          <li><a href="https://www.formula1.com/en/latest/article/f1-fantasy-strategist-preview-what-you-need-to-know-for-the-austrian-and-british-grands-prix.7yYgbG8H68QiUuaLs02QKs">Formula 1 官方：奧地利與英國站前瞻的 Silverstone 競技特徵補充</a>。</li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文依 2026-06-29 可公開驗證資料編寫；若車隊在週四至週五公布額外升級或輪胎公告，應以後續官方資訊為準。
+  </footer>
+</body>
+</html>

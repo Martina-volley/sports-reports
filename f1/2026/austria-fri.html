@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 奧地利站週五前線：高溫、升級與冠軍追擊線</title>
+  <meta name="description" content="2026 年 6 月 26 日奧地利站週五版。官方結果頁於本次執行時仍顯示沒有可用成績，先整理 Red Bull Ring 賽道條件、Mercedes 對 Ferrari 的積分差、高溫 heat hazard 與各隊升級重點。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --paper: rgba(255, 252, 247, 0.92);
+      --ink: #18212f;
+      --muted: #5f6c7b;
+      --line: rgba(24, 33, 47, 0.12);
+      --night: #111827;
+      --scarlet: #b91c1c;
+      --amber: #c27b22;
+      --ice: #d9ecff;
+      --shadow: 0 20px 52px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.78;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(185, 28, 28, 0.15), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(194, 123, 34, 0.14), transparent 24%),
+        linear-gradient(180deg, #fbf7f1 0%, #eee6da 100%);
+    }
+    a { color: #8b1e1e; }
+    .hero {
+      padding: 60px 24px 52px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.08), transparent 26%),
+        linear-gradient(135deg, rgba(17, 24, 39, 0.98), rgba(30, 41, 59, 0.92) 44%, rgba(127, 29, 29, 0.86) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 11ch;
+      font-size: clamp(38px, 6vw, 70px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--scarlet);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(194, 123, 34, 0.1);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .cooling {
+      background: linear-gradient(180deg, rgba(217,236,255,0.9), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 8 | Friday Dispatch</div>
+      <h1>奧地利站週五前線</h1>
+      <p>2026 年 6 月 26 日，F1 回到 Red Bull Ring。這份週五版不是成績回顧，而是開場前線整理：官方奧地利站結果頁在本次執行時仍顯示沒有可用成績，因此真正已可驗證的訊號來自賽程、積分榜、車隊升級、輪胎配置與 heat hazard 高溫警示。</p>
+      <div class="meta">
+        <span>發布日期：2026-06-26</span>
+        <span>賽事：Formula 1 Lenovo Austrian Grand Prix 2026</span>
+        <span>kind = fri</span>
+        <span>地點：Red Bull Ring, Spielberg</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>截至本次自動化執行時，官方奧地利站頁面已確認本週末為 2026 年第 8 站，賽程為 6 月 26 日至 6 月 28 日；但同一頁的 Results 區塊仍顯示「No results available for this session」。這代表目前最可靠的 Friday 報告寫法，不是硬寫尚未發布的 FP1、FP2 成績，而是先把週末背景、積分壓力與技術變量整理清楚。</p>
+        <p>冠軍戰表面上仍由 Mercedes 控盤，但已經不是單線敘事。Kimi Antonelli 以 156 分領先車手榜，Lewis Hamilton 115 分追到 41 分差，George Russell 106 分緊跟；車隊榜則是 Mercedes 262 分、Ferrari 190 分、McLaren 141 分。Barcelona 之後，奧地利站的關鍵問題變成 Ferrari 能否把上一站的勝利延長成連續壓迫，以及 Red Bull 在主場升級後能不能重新回到前排。</p>
+      </div>
+      <div class="status">執行時驗證重點：官方賽曆確認 2026-06-26 屬於奧地利站週五；官方奧地利站結果區仍無成績；本報告因此採用「週五開場前線」格式，而不是虛構未發布的練習賽名次。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taipei Schedule</div>
+        <h2>台灣時間賽程</h2>
+        <table>
+          <thead>
+            <tr><th>日期</th><th>台灣時間</th><th>Session</th><th>說明</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>06-26 週五</td><td>17:30</td><td>FP1</td><td>Red Bull Ring 週末首段 60 分鐘</td></tr>
+            <tr><td>06-26 週五</td><td>21:00</td><td>FP2</td><td>長距離與輪胎熱衰退觀察窗</td></tr>
+            <tr><td>06-27 週六</td><td>16:30</td><td>FP3</td><td>最後排位前修正</td></tr>
+            <tr><td>06-27 週六</td><td>20:00</td><td>Qualifying</td><td>短圈排位，容錯率很低</td></tr>
+            <tr><td>06-28 週日</td><td>19:00</td><td>Race</td><td>71 圈正賽</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">以上台灣時間為依官方頁面列出的奧地利當地時間，在夏令時間下加 6 小時換算而得。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Circuit Frame</div>
+        <h2>Red Bull Ring 週末條件</h2>
+        <table>
+          <thead>
+            <tr><th>指標</th><th>數值</th><th>對週五的意義</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>單圈長度</td><td>4.326 km</td><td>圈速短，細節誤差會被放大成排位差距</td></tr>
+            <tr><td>正賽圈數</td><td>71</td><td>總距離不長，但節奏壓力高</td></tr>
+            <tr><td>海拔</td><td>約 660 公尺</td><td>空氣較薄，下壓力與煞車冷卻管理都更敏感</td></tr>
+            <tr><td>賽道性格</td><td>Stop-and-go</td><td>重煞、再加速多，後胎熱壓與牽引力是主題</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">官方與 Pirelli 都把奧地利描述成高海拔、重煞點密集、熱衰退以溫度為主的賽道。</div>
+      </article>
+
+      <article class="card half cooling">
+        <div class="kicker">Heat Hazard</div>
+        <h2>這個週末先被高溫定義</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>週五就可能是 31°C、賽道 51°C</strong>
+            <div>官方天氣預報寫明週五無雨、最高 31°C，賽道溫度可能到 51°C；週六、週日更上看 32°C。</div>
+          </div>
+          <div class="item">
+            <strong>FIA 已宣布 heat hazard</strong>
+            <div>只要賽前預報顯示 Sprint 或正賽熱指數將超過 31°C，FIA 就可宣布 heat hazard。奧地利站已符合條件，車隊必須安裝 Driver Cooling System。</div>
+          </div>
+          <div class="item">
+            <strong>冷卻背心不是噱頭，是實際變數</strong>
+            <div>核心冷卻系統需裝車，車手是否穿戴背心仍可自行決定。這讓週五練習不只是在找圈速，也是在測試散熱與舒適度。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>進站前的積分線</h2>
+        <table>
+          <thead>
+            <tr><th>車手榜前六</th><th>車隊</th><th>積分</th><th>訊號</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Kimi Antonelli</td><td>Mercedes</td><td>156</td><td>Barcelona 退賽後仍保有 41 分領先</td></tr>
+            <tr><td>Lewis Hamilton</td><td>Ferrari</td><td>115</td><td>Barcelona 奪冠後成最接近追兵</td></tr>
+            <tr><td>George Russell</td><td>Mercedes</td><td>106</td><td>若 Antonelli 再失分，Russell 也會回到主戰線</td></tr>
+            <tr><td>Charles Leclerc</td><td>Ferrari</td><td>75</td><td>需要把升級轉成穩定完賽與頒獎台</td></tr>
+            <tr><td>Lando Norris</td><td>McLaren</td><td>73</td><td>仍在 Ferrari 後方咬住第二集團</td></tr>
+            <tr><td>Oscar Piastri</td><td>McLaren</td><td>68</td><td>高溫週末與冷卻系統使用決策值得看</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">車隊榜前四：Mercedes 262、Ferrari 190、McLaren 141、Red Bull Racing 89。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Friday Watchlist</div>
+        <h2>週五要看什麼，不看什麼</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. Ferrari 能不能把 Barcelona 的單站勝利變成連續施壓</strong>
+            <div>Ferrari 帶來動力單元升級，Leclerc 直接說車隊在每個零件上都「pushing like crazy」。如果這套升級能同時解決速度與可靠度，Hamilton 對 Antonelli 的 41 分差會開始有壓縮空間。</div>
+          </div>
+          <div class="item">
+            <strong>2. Mercedes 的領先，現在比較像防守而不是巡航</strong>
+            <div>Antonelli 已公開承認爭冠「not going to be a walk in the park」。他仍領先，但 Barcelona 退賽讓 Ferrari 看到了入口，週五最重要的不是單圈第一，而是長距離節奏與系統穩定度沒有再出現意外。</div>
+          </div>
+          <div class="item">
+            <strong>3. Red Bull 主場升級到底能不能把他們帶回前兩排</strong>
+            <div>Verstappen 對主場更新包的說法很直接：希望它能帶來更多性能。這不是誇張宣言，而是承認目前基準速度還不夠。若週五兩段練習仍追不上 Ferrari 與 Mercedes，主場週末可能很快轉為守勢。</div>
+          </div>
+          <div class="item">
+            <strong>4. 這份 Friday 報告不該假裝已經有成績</strong>
+            <div>官方結果頁仍是空白，所以此刻最值得信任的是條件與結構，而不是未經驗證的圈速傳聞。等官方 FP1、FP2 成績發布後，週六版本才適合進一步重排速度階層。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Tyres</div>
+        <h2>輪胎是週五真正的技術主角</h2>
+        <p>Pirelli 為奧地利帶來最軟配置：C3 硬胎、C4 中性胎、C5 軟胎。官方說法很清楚，這裡的磨耗關鍵不是純磨損，而是熱衰退。高溫、舊瀝青、連續重煞與再加速，會讓週五的長距離模擬比單圈排名更能定義週末走向。</p>
+        <p>如果賽道週五就衝到 51°C，車隊不只要看最快圈，也要看後胎在第二段與第三段長 run 的掉速幅度。這正是 Ferrari、Mercedes、McLaren 能否把實戰節奏區分開來的地方。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Editorial Angle</div>
+        <h2>週五版結論</h2>
+        <p>奧地利站週五開場最值得記住的一句話不是誰最快，而是現在還沒有官方成績。這不是資訊不足，而是資訊邊界明確。明確的邊界反而讓週五版更容易看出真正的主題：Ferrari 的追擊是否延續、Mercedes 的領先是否開始鬆動、Red Bull 的主場升級是不是只夠止血，以及 heat hazard 會不會把整個週末的體能與輪胎策略都往極端條件推。</p>
+        <p>如果今晚 FP1、FP2 官方成績出爐，週六版的重點就會從「誰帶著什麼問題進場」切換成「誰已經把問題解掉一半」。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.formula1.com/en/racing/2026" target="_blank" rel="noreferrer">Formula1.com 2026 Official Calendar</a></li>
+          <li><a href="https://www.formula1.com/en/racing/2026/austria" target="_blank" rel="noreferrer">Formula1.com Austrian Grand Prix 2026 race page</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noreferrer">Formula1.com 2026 Drivers' Standings</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/team" target="_blank" rel="noreferrer">Formula1.com 2026 Teams' Standings</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/not-going-to-be-a-walk-in-the-park-antonelli-reflects-on-title-chances-and-mercedes-intra-team-rules-heading-to-austria.29un2rUPtPAUC4FpszpfTg" target="_blank" rel="noreferrer">Antonelli on title fight and Mercedes intra-team rules</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/leclerc-admits-ferrari-have-been-pushing-like-crazy-to-deliver-power-unit-update-in-austria.25OokiBOGBDr43i6wnVFjh" target="_blank" rel="noreferrer">Leclerc on Ferrari power unit update</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/verstappen-explains-hopes-for-red-bull-upgrade-package-at-teams-important-home-race-in-austria.7olvWXQEMJEiaaPmKmbf0S" target="_blank" rel="noreferrer">Verstappen on Red Bull's Austria upgrades</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-austrian-grand-prix.2bhUStvp9xxGLpN2gvTeib" target="_blank" rel="noreferrer">Pirelli tyre compounds for Austria 2026</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-is-the-weather-forecast-for-the-2026-austrian-grand-prix.2TVNgkHQmZqNgF652EIbPO" target="_blank" rel="noreferrer">Official Austrian Grand Prix weather forecast</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/explained-what-does-the-austrian-gp-heat-hazard-declaration-mean-and-how-are-the-drivers-affected.6gn3KIPTusK31IKGa5aoKQ" target="_blank" rel="noreferrer">F1 explanation of the Austrian GP heat hazard declaration</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本頁為自動化產出之 Friday dispatch。若官方 FP1、FP2 成績在此後發布，應以官方更新版本為準。
+  </footer>
+</body>
+</html>
