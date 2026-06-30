@@ -44,11 +44,13 @@
         {
           "id": "r32-04",
           "date": "2026-06-30",
-          "status": "scheduled",
+          "status": "final",
           "teamA": "Netherlands",
           "teamB": "Morocco",
-          "time": "09:00 UTC+8",
-          "note": "R32"
+          "note": "Morocco advance on penalties",
+          "scoreA": "1",
+          "scoreB": "1",
+          "winner": "Morocco"
         },
         {
           "id": "r32-05",
@@ -169,7 +171,7 @@
           "date": "2026-07-04",
           "status": "pending",
           "teamA": "Canada",
-          "teamB": "TBD",
+          "teamB": "Morocco",
           "note": "R16 path"
         },
         {
