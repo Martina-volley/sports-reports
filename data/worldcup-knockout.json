@@ -1,0 +1,224 @@
+{
+  "updated": "2026-06-30",
+  "timezone": "Asia/Taipei",
+  "title": "2026 World Cup Knockout Bracket",
+  "note": "Initial knockout board for Hub layout review. Matchups and winners can be adjusted after each manual publish check.",
+  "rounds": [
+    {
+      "id": "r32",
+      "label": "Round of 32",
+      "matches": [
+        {
+          "id": "r32-01",
+          "date": "2026-06-28",
+          "status": "final",
+          "teamA": "Canada",
+          "teamB": "South Africa",
+          "scoreA": "1",
+          "scoreB": "0",
+          "winner": "Canada",
+          "note": "Canada advance"
+        },
+        {
+          "id": "r32-02",
+          "date": "2026-06-28",
+          "status": "final",
+          "teamA": "Brazil",
+          "teamB": "Japan",
+          "scoreA": "2",
+          "scoreB": "1",
+          "winner": "Brazil",
+          "note": "Brazil advance"
+        },
+        {
+          "id": "r32-03",
+          "date": "2026-06-29",
+          "status": "final",
+          "teamA": "Paraguay",
+          "teamB": "Germany",
+          "scoreA": "pens",
+          "scoreB": "",
+          "winner": "Paraguay",
+          "note": "Paraguay advance on penalties"
+        },
+        {
+          "id": "r32-04",
+          "date": "2026-06-30",
+          "status": "scheduled",
+          "teamA": "Ivory Coast",
+          "teamB": "Norway",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-05",
+          "date": "2026-06-30",
+          "status": "scheduled",
+          "teamA": "France",
+          "teamB": "Sweden",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-06",
+          "date": "2026-06-30",
+          "status": "scheduled",
+          "teamA": "Mexico",
+          "teamB": "Ecuador",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-07",
+          "date": "2026-07-01",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-08",
+          "date": "2026-07-01",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-09",
+          "date": "2026-07-02",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-10",
+          "date": "2026-07-02",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-11",
+          "date": "2026-07-03",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R32"
+        },
+        {
+          "id": "r32-12",
+          "date": "2026-07-03",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R32"
+        }
+      ]
+    },
+    {
+      "id": "r16",
+      "label": "Round of 16",
+      "matches": [
+        {
+          "id": "r16-01",
+          "date": "2026-07-04",
+          "status": "pending",
+          "teamA": "Canada",
+          "teamB": "TBD",
+          "note": "R16 path"
+        },
+        {
+          "id": "r16-02",
+          "date": "2026-07-04",
+          "status": "pending",
+          "teamA": "Brazil",
+          "teamB": "TBD",
+          "note": "R16 path"
+        },
+        {
+          "id": "r16-03",
+          "date": "2026-07-05",
+          "status": "pending",
+          "teamA": "Paraguay",
+          "teamB": "TBD",
+          "note": "R16 path"
+        },
+        {
+          "id": "r16-04",
+          "date": "2026-07-05",
+          "status": "pending",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "note": "R16 path"
+        }
+      ]
+    },
+    {
+      "id": "qf",
+      "label": "Quarterfinals",
+      "matches": [
+        {
+          "id": "qf-01",
+          "date": "2026-07-09",
+          "status": "pending",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "note": "Quarterfinal path"
+        },
+        {
+          "id": "qf-02",
+          "date": "2026-07-10",
+          "status": "pending",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "note": "Quarterfinal path"
+        }
+      ]
+    },
+    {
+      "id": "sf",
+      "label": "Semifinals",
+      "matches": [
+        {
+          "id": "sf-01",
+          "date": "2026-07-14",
+          "status": "pending",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "note": "Semifinal path"
+        },
+        {
+          "id": "sf-02",
+          "date": "2026-07-15",
+          "status": "pending",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "note": "Semifinal path"
+        }
+      ]
+    },
+    {
+      "id": "final",
+      "label": "Final",
+      "matches": [
+        {
+          "id": "final-01",
+          "date": "2026-07-19",
+          "status": "pending",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "note": "Final"
+        }
+      ]
+    }
+  ]
+}

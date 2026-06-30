@@ -1183,3 +1183,18 @@ a.wc-coverage__card {
   .wc-nav { padding: 12px 18px; }
   .wc-section { margin-top: 44px; }
 }
+
+.wc-bracket__game--played {
+  border-top: 4px solid var(--wc-pitch);
+}
+.wc-bracket__team--winner span,
+.wc-bracket__team--winner strong {
+  color: var(--wc-pitch-deep);
+  font-weight: 900;
+}
+.wc-bracket[data-live-bracket="true"] .wc-bracket__col {
+  justify-content: flex-start;
+}
+.wc-bracket[data-live-bracket="true"] .wc-bracket__game {
+  min-height: 92px;
+}

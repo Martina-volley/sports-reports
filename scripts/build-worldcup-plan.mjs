@@ -28,7 +28,12 @@ function typeLabel(type) {
     storyline: zh("\u7126\u9ede\u6545\u4e8b"),
     matchday_preview: zh("\u8cfd\u524d\u5206\u6790"),
     daily_debrief: zh("\u8cfd\u5f8c\u5206\u6790"),
-    tactical_review: zh("\u6230\u8853\u56de\u9867")
+    tactical_review: zh("\u6230\u8853\u56de\u9867"),
+    knockout_preview: zh("\u6dd8\u6c70\u8cfd\u524d\u5206\u6790"),
+    knockout_debrief: zh("\u6dd8\u6c70\u8cfd\u5f8c\u5206\u6790"),
+    match_focus: zh("\u55ae\u5834\u6df1\u5ea6"),
+    bracket_watch: zh("\u7c64\u8868\u8ffd\u8e64"),
+    final_week_preview: zh("\u6c7a\u8cfd\u9031\u524d\u77bb")
   }[type] || type;
 }
 
