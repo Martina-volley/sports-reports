@@ -2,7 +2,7 @@
   "updated": "2026-06-30",
   "timezone": "Asia/Taipei",
   "title": "2026 World Cup Knockout Bracket",
-  "note": "Initial knockout board for Hub layout review. Matchups and winners can be adjusted after each manual publish check.",
+  "note": "Unfinished fixtures show Taiwan local time (UTC+8). Matchups and winners can be adjusted after each manual publish check.",
   "rounds": [
     {
       "id": "r32",
@@ -45,45 +45,45 @@
           "id": "r32-04",
           "date": "2026-06-30",
           "status": "scheduled",
-          "teamA": "Ivory Coast",
-          "teamB": "Norway",
-          "time": "TBD",
+          "teamA": "Netherlands",
+          "teamB": "Morocco",
+          "time": "09:00 UTC+8",
           "note": "R32"
         },
         {
           "id": "r32-05",
-          "date": "2026-06-30",
+          "date": "2026-07-01",
           "status": "scheduled",
-          "teamA": "France",
-          "teamB": "Sweden",
-          "time": "TBD",
+          "teamA": "Ivory Coast",
+          "teamB": "Norway",
+          "time": "01:00 UTC+8",
           "note": "R32"
         },
         {
           "id": "r32-06",
-          "date": "2026-06-30",
+          "date": "2026-07-01",
           "status": "scheduled",
-          "teamA": "Mexico",
-          "teamB": "Ecuador",
-          "time": "TBD",
+          "teamA": "France",
+          "teamB": "Sweden",
+          "time": "04:30 UTC+8",
           "note": "R32"
         },
         {
           "id": "r32-07",
           "date": "2026-07-01",
           "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "TBD",
+          "teamA": "Mexico",
+          "teamB": "Ecuador",
+          "time": "09:00 UTC+8",
           "note": "R32"
         },
         {
           "id": "r32-08",
-          "date": "2026-07-01",
+          "date": "2026-07-02",
           "status": "scheduled",
           "teamA": "TBD",
           "teamB": "TBD",
-          "time": "TBD",
+          "time": "00:00 UTC+8",
           "note": "R32"
         },
         {
@@ -92,7 +92,7 @@
           "status": "scheduled",
           "teamA": "TBD",
           "teamB": "TBD",
-          "time": "TBD",
+          "time": "04:00 UTC+8",
           "note": "R32"
         },
         {
@@ -101,7 +101,7 @@
           "status": "scheduled",
           "teamA": "TBD",
           "teamB": "TBD",
-          "time": "TBD",
+          "time": "08:00 UTC+8",
           "note": "R32"
         },
         {
@@ -110,7 +110,7 @@
           "status": "scheduled",
           "teamA": "TBD",
           "teamB": "TBD",
-          "time": "TBD",
+          "time": "03:00 UTC+8",
           "note": "R32"
         },
         {
@@ -119,7 +119,43 @@
           "status": "scheduled",
           "teamA": "TBD",
           "teamB": "TBD",
-          "time": "TBD",
+          "time": "07:00 UTC+8",
+          "note": "R32"
+        },
+        {
+          "id": "r32-13",
+          "date": "2026-07-03",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "11:00 UTC+8",
+          "note": "R32"
+        },
+        {
+          "id": "r32-14",
+          "date": "2026-07-04",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "02:00 UTC+8",
+          "note": "R32"
+        },
+        {
+          "id": "r32-15",
+          "date": "2026-07-04",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "06:00 UTC+8",
+          "note": "R32"
+        },
+        {
+          "id": "r32-16",
+          "date": "2026-07-04",
+          "status": "scheduled",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "09:30 UTC+8",
           "note": "R32"
         }
       ]
