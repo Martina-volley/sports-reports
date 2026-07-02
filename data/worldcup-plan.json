@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30",
+  "updated": "2026-07-02",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -624,52 +624,52 @@
       "id": "r32-early-debrief",
       "title": "32 強第一波賽後：Canada、Brazil 與 Paraguay 先改寫籤表",
       "type": "knockout_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-30",
       "draftDate": "2026-06-30",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
+      "slot": "published",
       "href": "worldcup/2026/r32-early-debrief.html"
     },
     {
       "id": "r32-june30-preview",
       "title": "32 強 06/30 賽前：France、Mexico 與 Ivory Coast 的淘汰賽壓力",
       "type": "knockout_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-06-30",
       "draftDate": "2026-06-30",
       "draftSlot": "17:30",
       "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual after draft",
+      "slot": "published",
       "href": "worldcup/2026/r32-june30-preview.html"
     },
     {
       "id": "r32-july1-debrief",
       "title": "32 強中段賽後：熱門隊是否避開第一輪陷阱",
       "type": "knockout_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-01",
       "draftDate": "2026-07-01",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
+      "slot": "published",
       "href": "worldcup/2026/r32-july1-debrief.html"
     },
     {
       "id": "r32-july1-preview",
       "title": "32 強 07/01 賽前：下半區籤表與第三名球隊的求生路線",
       "type": "knockout_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-01",
       "draftDate": "2026-07-01",
       "draftSlot": "17:30",
       "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual after draft",
+      "slot": "published",
       "href": "worldcup/2026/r32-july1-preview.html"
     },
     {

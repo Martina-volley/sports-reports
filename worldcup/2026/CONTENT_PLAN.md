@@ -1,6 +1,6 @@
 # World Cup 2026 內容計畫
 
-更新日期：2026-06-30
+更新日期：2026-07-02
 時區：Asia/Taipei
 
 ## 發布節奏
@@ -64,10 +64,10 @@
 | 2026-06-27 | 2026-06-27 12:00 | lunch | 已發布 | 賽後分析 | G、H、I 組收官賽後：熱門隊伍是否照劇本進入淘汰賽 | [open](../../worldcup/2026/final-round-g-h-i-debrief.html) |
 | 2026-06-27 | 2026-06-27 17:30 | manual after draft | 已發布 | 賽前分析 | J、K、L 組收官賽前：小組賽最後一天與淘汰賽版圖 | [open](../../worldcup/2026/final-round-j-k-l-scenarios.html) |
 | 2026-06-28 | 2026-06-28 12:00 | lunch | 已發布 | 賽後分析 | J、K、L 組收官賽後：小組賽總結與淘汰賽第一眼 | [open](../../worldcup/2026/final-round-j-k-l-group-stage-wrap.html) |
-| 2026-06-30 | 2026-06-30 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 32 強第一波賽後：Canada、Brazil 與 Paraguay 先改寫籤表 | [open](../../worldcup/2026/r32-early-debrief.html) |
-| 2026-06-30 | 2026-06-30 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 32 強 06/30 賽前：France、Mexico 與 Ivory Coast 的淘汰賽壓力 | [open](../../worldcup/2026/r32-june30-preview.html) |
-| 2026-07-01 | 2026-07-01 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 32 強中段賽後：熱門隊是否避開第一輪陷阱 | [open](../../worldcup/2026/r32-july1-debrief.html) |
-| 2026-07-01 | 2026-07-01 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 32 強 07/01 賽前：下半區籤表與第三名球隊的求生路線 | [open](../../worldcup/2026/r32-july1-preview.html) |
+| 2026-06-30 | 2026-06-30 12:00 | lunch | 已發布 | 淘汰賽後分析 | 32 強第一波賽後：Canada、Brazil 與 Paraguay 先改寫籤表 | [open](../../worldcup/2026/r32-early-debrief.html) |
+| 2026-06-30 | 2026-06-30 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 32 強 06/30 賽前：France、Mexico 與 Ivory Coast 的淘汰賽壓力 | [open](../../worldcup/2026/r32-june30-preview.html) |
+| 2026-07-01 | 2026-07-01 12:00 | lunch | 已發布 | 淘汰賽後分析 | 32 強中段賽後：熱門隊是否避開第一輪陷阱 | [open](../../worldcup/2026/r32-july1-debrief.html) |
+| 2026-07-01 | 2026-07-01 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 32 強 07/01 賽前：下半區籤表與第三名球隊的求生路線 | [open](../../worldcup/2026/r32-july1-preview.html) |
 | 2026-07-02 | 2026-07-02 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 32 強後段賽後：誰把 R16 對位變成硬仗 | [open](../../worldcup/2026/r32-late-debrief.html) |
 | 2026-07-03 | 2026-07-03 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 32 強收官：淘汰賽第一輪完整復盤與 R16 第一眼 | [open](../../worldcup/2026/r32-final-debrief.html) |
 | 2026-07-03 | 2026-07-03 17:30 | manual after draft | 企劃中 | 籤表追蹤 | 16 強籤表總覽：強隊路徑、黑馬續航與最硬對位 | [open](../../worldcup/2026/r16-bracket-preview.html) |
