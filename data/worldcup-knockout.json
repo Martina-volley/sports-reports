@@ -1,8 +1,8 @@
 {
-  "updated": "2026-06-30",
+  "updated": "2026-07-02",
   "timezone": "Asia/Taipei",
   "title": "2026 World Cup Knockout Bracket",
-  "note": "Unfinished fixtures show Taiwan local time (UTC+8). Matchups and winners can be adjusted after each manual publish check.",
+  "note": "Knockout bracket snapshot after the July 1 Asia/Taipei Round of 32 slate. Unfinished fixtures show Taiwan local time (UTC+8).",
   "rounds": [
     {
       "id": "r32",
@@ -55,29 +55,35 @@
         {
           "id": "r32-05",
           "date": "2026-07-01",
-          "status": "scheduled",
-          "teamA": "Ivory Coast",
+          "status": "final",
+          "teamA": "Cote d'Ivoire",
           "teamB": "Norway",
-          "time": "01:00 UTC+8",
-          "note": "R32"
+          "note": "Norway advance",
+          "scoreA": "1",
+          "scoreB": "2",
+          "winner": "Norway"
         },
         {
           "id": "r32-06",
           "date": "2026-07-01",
-          "status": "scheduled",
+          "status": "final",
           "teamA": "France",
           "teamB": "Sweden",
-          "time": "04:30 UTC+8",
-          "note": "R32"
+          "note": "France advance",
+          "scoreA": "3",
+          "scoreB": "0",
+          "winner": "France"
         },
         {
           "id": "r32-07",
           "date": "2026-07-01",
-          "status": "scheduled",
+          "status": "final",
           "teamA": "Mexico",
           "teamB": "Ecuador",
-          "time": "09:00 UTC+8",
-          "note": "R32"
+          "note": "Mexico advance",
+          "scoreA": "2",
+          "scoreB": "0",
+          "winner": "Mexico"
         },
         {
           "id": "r32-08",
@@ -172,6 +178,7 @@
           "status": "pending",
           "teamA": "Canada",
           "teamB": "Morocco",
+          "time": "TBD",
           "note": "R16 path"
         },
         {
@@ -180,6 +187,7 @@
           "status": "pending",
           "teamA": "Brazil",
           "teamB": "TBD",
+          "time": "TBD",
           "note": "R16 path"
         },
         {
@@ -188,14 +196,52 @@
           "status": "pending",
           "teamA": "Paraguay",
           "teamB": "TBD",
+          "time": "TBD",
           "note": "R16 path"
         },
         {
           "id": "r16-04",
           "date": "2026-07-05",
           "status": "pending",
+          "teamA": "Norway",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R16 path"
+        },
+        {
+          "id": "r16-05",
+          "date": "2026-07-06",
+          "status": "pending",
+          "teamA": "France",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "R16 path"
+        },
+        {
+          "id": "r16-06",
+          "date": "2026-07-06",
+          "status": "pending",
+          "teamA": "Mexico",
+          "teamB": "TBD",
+          "time": "TBD",
+          "note": "Winner of England / DR Congo"
+        },
+        {
+          "id": "r16-07",
+          "date": "2026-07-07",
+          "status": "pending",
           "teamA": "TBD",
           "teamB": "TBD",
+          "time": "TBD",
+          "note": "R16 path"
+        },
+        {
+          "id": "r16-08",
+          "date": "2026-07-07",
+          "status": "pending",
+          "teamA": "TBD",
+          "teamB": "TBD",
+          "time": "TBD",
           "note": "R16 path"
         }
       ]
