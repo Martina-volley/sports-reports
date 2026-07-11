@@ -68,13 +68,13 @@
 | 2026-06-30 | 2026-06-30 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 32 強 06/30 賽前：France、Mexico 與 Ivory Coast 的淘汰賽壓力 | [open](../../worldcup/2026/r32-june30-preview.html) |
 | 2026-07-01 | 2026-07-01 12:00 | lunch | 已發布 | 淘汰賽後分析 | 32 強中段賽後：熱門隊是否避開第一輪陷阱 | [open](../../worldcup/2026/r32-july1-debrief.html) |
 | 2026-07-01 | 2026-07-01 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 32 強 07/01 賽前：下半區籤表與第三名球隊的求生路線 | [open](../../worldcup/2026/r32-july1-preview.html) |
-| 2026-07-02 | 2026-07-02 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 32 強後段賽後：誰把 R16 對位變成硬仗 | [open](../../worldcup/2026/r32-late-debrief.html) |
-| 2026-07-03 | 2026-07-03 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 32 強收官：淘汰賽第一輪完整復盤與 R16 第一眼 | [open](../../worldcup/2026/r32-final-debrief.html) |
-| 2026-07-03 | 2026-07-03 17:30 | manual after draft | 企劃中 | 籤表追蹤 | 16 強籤表總覽：強隊路徑、黑馬續航與最硬對位 | [open](../../worldcup/2026/r16-bracket-preview.html) |
-| 2026-07-04 | 2026-07-04 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 16 強第一波賽後：淘汰賽真正開始懲罰細節 | [open](../../worldcup/2026/r16-first-debrief.html) |
-| 2026-07-04 | 2026-07-04 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 16 強第二波賽前：輪換、體能與教練先手 | [open](../../worldcup/2026/r16-second-preview.html) |
-| 2026-07-05 | 2026-07-05 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 16 強第二波賽後：八強版圖開始成形 | [open](../../worldcup/2026/r16-second-debrief.html) |
-| 2026-07-08 | 2026-07-08 17:30 | manual after draft | 企劃中 | 籤表追蹤 | 八強前瞻：半區強弱、旅行成本與決賽路徑 | [open](../../worldcup/2026/r16-quarterfinal-paths.html) |
+| 2026-07-02 | 2026-07-02 12:00 | lunch | 已發布 | 淘汰賽後分析 | 32 強後段賽後：誰把 R16 對位變成硬仗 | [open](../../worldcup/2026/r32-late-debrief.html) |
+| 2026-07-03 | 2026-07-03 12:00 | lunch | 已發布 | 淘汰賽後分析 | 32 強收官：淘汰賽第一輪完整復盤與 R16 第一眼 | [open](../../worldcup/2026/r32-final-debrief.html) |
+| 2026-07-03 | 2026-07-03 17:30 | manual after draft | 已發布 | 籤表追蹤 | 16 強籤表總覽：強隊路徑、黑馬續航與最硬對位 | [open](../../worldcup/2026/r16-bracket-preview.html) |
+| 2026-07-04 | 2026-07-04 12:00 | lunch | 已發布 | 淘汰賽後分析 | 16 強第一波賽後：淘汰賽真正開始懲罰細節 | [open](../../worldcup/2026/r16-first-debrief.html) |
+| 2026-07-04 | 2026-07-04 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 16 強第二波賽前：輪換、體能與教練先手 | [open](../../worldcup/2026/r16-second-preview.html) |
+| 2026-07-05 | 2026-07-05 12:00 | lunch | 已發布 | 淘汰賽後分析 | 16 強第二波賽後：八強版圖開始成形 | [open](../../worldcup/2026/r16-second-debrief.html) |
+| 2026-07-08 | 2026-07-08 17:30 | manual after draft | 已發布 | 籤表追蹤 | 八強前瞻：半區強弱、旅行成本與決賽路徑 | [open](../../worldcup/2026/r16-quarterfinal-paths.html) |
 | 2026-07-11 | 2026-07-11 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 八強最後兩戰賽前：四強門票與半區壓力 | [open](../../worldcup/2026/qf-final-preview.html) |
 | 2026-07-12 | 2026-07-12 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 八強收官賽後：四強版圖與冠軍路徑重排 | [open](../../worldcup/2026/qf-final-debrief.html) |
 | 2026-07-14 | 2026-07-14 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 四強第一戰賽前：第一張決賽門票 | [open](../../worldcup/2026/semifinal-first-preview.html) |
