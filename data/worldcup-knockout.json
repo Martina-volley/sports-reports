@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-02",
+  "updated": "2026-07-11",
   "timezone": "Asia/Taipei",
   "title": "2026 World Cup Knockout Bracket",
-  "note": "Knockout bracket snapshot after the July 1 Asia/Taipei Round of 32 slate. Unfinished fixtures show Taiwan local time (UTC+8).",
+  "note": "Knockout bracket snapshot through France and Spain reaching the semifinals. Remaining quarterfinal fixtures show Taiwan local time (UTC+8).",
   "rounds": [
     {
       "id": "r32",
@@ -47,10 +47,10 @@
           "status": "final",
           "teamA": "Netherlands",
           "teamB": "Morocco",
-          "note": "Morocco advance on penalties",
           "scoreA": "1",
           "scoreB": "1",
-          "winner": "Morocco"
+          "winner": "Morocco",
+          "note": "Morocco advance on penalties"
         },
         {
           "id": "r32-05",
@@ -58,10 +58,10 @@
           "status": "final",
           "teamA": "Cote d'Ivoire",
           "teamB": "Norway",
-          "note": "Norway advance",
           "scoreA": "1",
           "scoreB": "2",
-          "winner": "Norway"
+          "winner": "Norway",
+          "note": "Norway advance"
         },
         {
           "id": "r32-06",
@@ -69,10 +69,10 @@
           "status": "final",
           "teamA": "France",
           "teamB": "Sweden",
-          "note": "France advance",
           "scoreA": "3",
           "scoreB": "0",
-          "winner": "France"
+          "winner": "France",
+          "note": "France advance"
         },
         {
           "id": "r32-07",
@@ -80,91 +80,21 @@
           "status": "final",
           "teamA": "Mexico",
           "teamB": "Ecuador",
-          "note": "Mexico advance",
           "scoreA": "2",
           "scoreB": "0",
-          "winner": "Mexico"
+          "winner": "Mexico",
+          "note": "Mexico advance"
         },
         {
           "id": "r32-08",
           "date": "2026-07-02",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "00:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-09",
-          "date": "2026-07-02",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "04:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-10",
-          "date": "2026-07-02",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "08:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-11",
-          "date": "2026-07-03",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "03:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-12",
-          "date": "2026-07-03",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "07:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-13",
-          "date": "2026-07-03",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "11:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-14",
-          "date": "2026-07-04",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "02:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-15",
-          "date": "2026-07-04",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "06:00 UTC+8",
-          "note": "R32"
-        },
-        {
-          "id": "r32-16",
-          "date": "2026-07-04",
-          "status": "scheduled",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "time": "09:30 UTC+8",
-          "note": "R32"
+          "status": "final",
+          "teamA": "England",
+          "teamB": "DR Congo",
+          "scoreA": "2",
+          "scoreB": "1",
+          "winner": "England",
+          "note": "England advance"
         }
       ]
     },
@@ -175,74 +105,90 @@
         {
           "id": "r16-01",
           "date": "2026-07-04",
-          "status": "pending",
+          "status": "final",
           "teamA": "Canada",
           "teamB": "Morocco",
-          "time": "TBD",
-          "note": "R16 path"
+          "scoreA": "0",
+          "scoreB": "3",
+          "winner": "Morocco",
+          "note": "Morocco advance"
         },
         {
           "id": "r16-02",
           "date": "2026-07-04",
-          "status": "pending",
-          "teamA": "Brazil",
-          "teamB": "TBD",
-          "time": "TBD",
-          "note": "R16 path"
+          "status": "final",
+          "teamA": "France",
+          "teamB": "Paraguay",
+          "scoreA": "1",
+          "scoreB": "0",
+          "winner": "France",
+          "note": "France advance"
         },
         {
           "id": "r16-03",
           "date": "2026-07-05",
-          "status": "pending",
-          "teamA": "Paraguay",
-          "teamB": "TBD",
-          "time": "TBD",
-          "note": "R16 path"
+          "status": "final",
+          "teamA": "Mexico",
+          "teamB": "England",
+          "scoreA": "2",
+          "scoreB": "3",
+          "winner": "England",
+          "note": "England advance"
         },
         {
           "id": "r16-04",
           "date": "2026-07-05",
-          "status": "pending",
-          "teamA": "Norway",
-          "teamB": "TBD",
-          "time": "TBD",
-          "note": "R16 path"
+          "status": "final",
+          "teamA": "Brazil",
+          "teamB": "Norway",
+          "scoreA": "1",
+          "scoreB": "2",
+          "winner": "Norway",
+          "note": "Norway advance"
         },
         {
           "id": "r16-05",
           "date": "2026-07-06",
-          "status": "pending",
-          "teamA": "France",
+          "status": "final",
+          "teamA": "Spain",
           "teamB": "TBD",
-          "time": "TBD",
-          "note": "R16 path"
+          "scoreA": "",
+          "scoreB": "",
+          "winner": "Spain",
+          "note": "Spain advance"
         },
         {
           "id": "r16-06",
           "date": "2026-07-06",
-          "status": "pending",
-          "teamA": "Mexico",
+          "status": "final",
+          "teamA": "Belgium",
           "teamB": "TBD",
-          "time": "TBD",
-          "note": "Winner of England / DR Congo"
+          "scoreA": "",
+          "scoreB": "",
+          "winner": "Belgium",
+          "note": "Belgium advance"
         },
         {
           "id": "r16-07",
           "date": "2026-07-07",
-          "status": "pending",
-          "teamA": "TBD",
+          "status": "final",
+          "teamA": "Argentina",
           "teamB": "TBD",
-          "time": "TBD",
-          "note": "R16 path"
+          "scoreA": "",
+          "scoreB": "",
+          "winner": "Argentina",
+          "note": "Argentina advance"
         },
         {
           "id": "r16-08",
           "date": "2026-07-07",
-          "status": "pending",
-          "teamA": "TBD",
+          "status": "final",
+          "teamA": "Switzerland",
           "teamB": "TBD",
-          "time": "TBD",
-          "note": "R16 path"
+          "scoreA": "",
+          "scoreB": "",
+          "winner": "Switzerland",
+          "note": "Switzerland advance"
         }
       ]
     },
@@ -252,19 +198,43 @@
       "matches": [
         {
           "id": "qf-01",
-          "date": "2026-07-09",
-          "status": "pending",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "note": "Quarterfinal path"
+          "date": "2026-07-10",
+          "status": "final",
+          "teamA": "France",
+          "teamB": "Morocco",
+          "scoreA": "2",
+          "scoreB": "0",
+          "winner": "France",
+          "note": "France advance to semifinals"
         },
         {
           "id": "qf-02",
-          "date": "2026-07-10",
-          "status": "pending",
-          "teamA": "TBD",
-          "teamB": "TBD",
-          "note": "Quarterfinal path"
+          "date": "2026-07-11",
+          "status": "final",
+          "teamA": "Spain",
+          "teamB": "Belgium",
+          "scoreA": "2",
+          "scoreB": "1",
+          "winner": "Spain",
+          "note": "Spain advance to semifinals"
+        },
+        {
+          "id": "qf-03",
+          "date": "2026-07-12",
+          "status": "scheduled",
+          "teamA": "Norway",
+          "teamB": "England",
+          "time": "05:00 UTC+8",
+          "note": "Quarterfinal"
+        },
+        {
+          "id": "qf-04",
+          "date": "2026-07-12",
+          "status": "scheduled",
+          "teamA": "Argentina",
+          "teamB": "Switzerland",
+          "time": "10:00 UTC+8",
+          "note": "Quarterfinal"
         }
       ]
     },
@@ -276,16 +246,18 @@
           "id": "sf-01",
           "date": "2026-07-14",
           "status": "pending",
-          "teamA": "TBD",
-          "teamB": "TBD",
+          "teamA": "France",
+          "teamB": "Spain",
+          "time": "TBD",
           "note": "Semifinal path"
         },
         {
           "id": "sf-02",
           "date": "2026-07-15",
           "status": "pending",
-          "teamA": "TBD",
-          "teamB": "TBD",
+          "teamA": "Norway / England",
+          "teamB": "Argentina / Switzerland",
+          "time": "TBD",
           "note": "Semifinal path"
         }
       ]
