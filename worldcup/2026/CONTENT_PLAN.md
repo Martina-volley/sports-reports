@@ -1,6 +1,6 @@
 # World Cup 2026 內容計畫
 
-更新日期：2026-07-11
+更新日期：2026-07-16
 時區：Asia/Taipei
 
 ## 發布節奏
@@ -75,12 +75,12 @@
 | 2026-07-04 | 2026-07-04 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 16 強第二波賽前：輪換、體能與教練先手 | [open](../../worldcup/2026/r16-second-preview.html) |
 | 2026-07-05 | 2026-07-05 12:00 | lunch | 已發布 | 淘汰賽後分析 | 16 強第二波賽後：八強版圖開始成形 | [open](../../worldcup/2026/r16-second-debrief.html) |
 | 2026-07-08 | 2026-07-08 17:30 | manual after draft | 已發布 | 籤表追蹤 | 八強前瞻：半區強弱、旅行成本與決賽路徑 | [open](../../worldcup/2026/r16-quarterfinal-paths.html) |
-| 2026-07-11 | 2026-07-11 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 八強最後兩戰賽前：四強門票與半區壓力 | [open](../../worldcup/2026/qf-final-preview.html) |
-| 2026-07-12 | 2026-07-12 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 八強收官賽後：四強版圖與冠軍路徑重排 | [open](../../worldcup/2026/qf-final-debrief.html) |
-| 2026-07-14 | 2026-07-14 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 四強第一戰賽前：第一張決賽門票 | [open](../../worldcup/2026/semifinal-first-preview.html) |
-| 2026-07-15 | 2026-07-15 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 四強第一戰賽後：決賽隊伍如何過關 | [open](../../worldcup/2026/semifinal-first-debrief.html) |
-| 2026-07-15 | 2026-07-15 17:30 | manual after draft | 企劃中 | 淘汰賽前分析 | 四強第二戰賽前：教練先手與決賽路口 | [open](../../worldcup/2026/semifinal-second-preview.html) |
-| 2026-07-16 | 2026-07-16 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 四強收官賽後：決賽對位與戰術代價 | [open](../../worldcup/2026/semifinal-final-debrief.html) |
+| 2026-07-11 | 2026-07-11 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 八強最後兩戰賽前：四強門票與半區壓力 | [open](../../worldcup/2026/qf-final-preview.html) |
+| 2026-07-12 | 2026-07-12 12:00 | lunch | 已發布 | 淘汰賽後分析 | 八強收官賽後：四強版圖與冠軍路徑重排 | [open](../../worldcup/2026/qf-final-debrief.html) |
+| 2026-07-14 | 2026-07-14 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 四強第一戰賽前：第一張決賽門票 | [open](../../worldcup/2026/semifinal-first-preview.html) |
+| 2026-07-15 | 2026-07-15 12:00 | lunch | 已發布 | 淘汰賽後分析 | 四強第一戰賽後：決賽隊伍如何過關 | [open](../../worldcup/2026/semifinal-first-debrief.html) |
+| 2026-07-15 | 2026-07-15 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 四強第二戰賽前：教練先手與決賽路口 | [open](../../worldcup/2026/semifinal-second-preview.html) |
+| 2026-07-16 | 2026-07-16 12:00 | lunch | 已發布 | 淘汰賽後分析 | 四強收官賽後：決賽對陣與季軍戰分流 | [open](../../worldcup/2026/semifinal-final-debrief.html) |
 | 2026-07-17 | 2026-07-17 17:30 | manual after draft | 企劃中 | 決賽週前瞻 | 決賽週前瞻：季軍戰、決賽與最後敘事線 | [open](../../worldcup/2026/final-week-preview.html) |
 | 2026-07-19 | 2026-07-19 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 季軍戰賽後：輪換、心態與世代交接 | [open](../../worldcup/2026/third-place-debrief.html) |
 | 2026-07-19 | 2026-07-19 17:30 | manual after draft | 企劃中 | 決賽週前瞻 | 決賽賽前：冠軍九十分鐘前的最後拆解 | [open](../../worldcup/2026/final-preview.html) |

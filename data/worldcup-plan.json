@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-16",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -767,79 +767,85 @@
       "id": "qf-final-preview",
       "title": "八強最後兩戰賽前：四強門票與半區壓力",
       "type": "knockout_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-11",
       "draftDate": "2026-07-11",
       "draftSlot": "17:30",
       "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual after draft",
-      "href": "worldcup/2026/qf-final-preview.html"
+      "slot": "published",
+      "href": "worldcup/2026/qf-final-preview.html",
+      "updated": "2026-07-16"
     },
     {
       "id": "qf-final-debrief",
       "title": "八強收官賽後：四強版圖與冠軍路徑重排",
       "type": "knockout_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-12",
       "draftDate": "2026-07-12",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
-      "href": "worldcup/2026/qf-final-debrief.html"
+      "slot": "published",
+      "href": "worldcup/2026/qf-final-debrief.html",
+      "updated": "2026-07-16"
     },
     {
       "id": "semifinal-first-preview",
       "title": "四強第一戰賽前：第一張決賽門票",
       "type": "knockout_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-14",
       "draftDate": "2026-07-14",
       "draftSlot": "17:30",
       "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual after draft",
-      "href": "worldcup/2026/semifinal-first-preview.html"
+      "slot": "published",
+      "href": "worldcup/2026/semifinal-first-preview.html",
+      "updated": "2026-07-16"
     },
     {
       "id": "semifinal-first-debrief",
       "title": "四強第一戰賽後：決賽隊伍如何過關",
       "type": "knockout_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-15",
       "draftDate": "2026-07-15",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
-      "href": "worldcup/2026/semifinal-first-debrief.html"
+      "slot": "published",
+      "href": "worldcup/2026/semifinal-first-debrief.html",
+      "updated": "2026-07-16"
     },
     {
       "id": "semifinal-second-preview",
       "title": "四強第二戰賽前：教練先手與決賽路口",
       "type": "knockout_preview",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-15",
       "draftDate": "2026-07-15",
       "draftSlot": "17:30",
       "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual after draft",
-      "href": "worldcup/2026/semifinal-second-preview.html"
+      "slot": "published",
+      "href": "worldcup/2026/semifinal-second-preview.html",
+      "updated": "2026-07-16"
     },
     {
       "id": "semifinal-final-debrief",
-      "title": "四強收官賽後：決賽對位與戰術代價",
+      "title": "四強收官賽後：決賽對陣與季軍戰分流",
       "type": "knockout_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-16",
       "draftDate": "2026-07-16",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
-      "href": "worldcup/2026/semifinal-final-debrief.html"
+      "slot": "published",
+      "href": "worldcup/2026/semifinal-final-debrief.html",
+      "updated": "2026-07-16"
     },
     {
       "id": "final-week-preview",
