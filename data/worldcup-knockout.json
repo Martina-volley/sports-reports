@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-16",
+  "updated": "2026-07-20",
   "timezone": "Asia/Taipei",
   "title": "2026 World Cup Knockout Bracket",
-  "note": "Knockout bracket snapshot through both semifinals. Final and third-place fixtures show Taiwan local time (UTC+8).",
+  "note": "Final tournament snapshot. Spain beat Argentina after extra time to win the 2026 World Cup, and England beat France in the third-place playoff.",
   "rounds": [
     {
       "id": "r32",
@@ -277,11 +277,13 @@
         {
           "id": "third-01",
           "date": "2026-07-19",
-          "status": "scheduled",
+          "status": "final",
           "teamA": "France",
           "teamB": "England",
-          "time": "05:00 UTC+8",
-          "note": "Third-place playoff"
+          "scoreA": "4",
+          "scoreB": "6",
+          "winner": "England",
+          "note": "England finish third"
         }
       ]
     },
@@ -292,11 +294,13 @@
         {
           "id": "final-01",
           "date": "2026-07-20",
-          "status": "scheduled",
+          "status": "final",
           "teamA": "Spain",
           "teamB": "Argentina",
-          "time": "03:00 UTC+8",
-          "note": "Final"
+          "scoreA": "1",
+          "scoreB": "0",
+          "winner": "Spain",
+          "note": "Spain win the World Cup after extra time"
         }
       ]
     }

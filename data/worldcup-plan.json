@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16",
+  "updated": "2026-07-20",
   "timezone": "Asia/Taipei",
   "rhythm": [
     {
@@ -851,66 +851,71 @@
       "id": "final-week-preview",
       "title": "決賽週前瞻：季軍戰、決賽與最後敘事線",
       "type": "final_week_preview",
-      "status": "planned",
+      "status": "superseded",
       "publishDate": "2026-07-17",
       "draftDate": "2026-07-17",
       "draftSlot": "17:30",
       "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual after draft",
-      "href": "worldcup/2026/final-week-preview.html"
+      "slot": "included in final-debrief",
+      "href": "worldcup/2026/final-week-preview.html",
+      "updated": "2026-07-20"
     },
     {
       "id": "third-place-debrief",
       "title": "季軍戰賽後：輪換、心態與世代交接",
       "type": "knockout_debrief",
-      "status": "planned",
+      "status": "superseded",
       "publishDate": "2026-07-19",
       "draftDate": "2026-07-19",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
-      "href": "worldcup/2026/third-place-debrief.html"
+      "slot": "included in final-debrief",
+      "href": "worldcup/2026/third-place-debrief.html",
+      "updated": "2026-07-20"
     },
     {
       "id": "final-preview",
       "title": "決賽賽前：冠軍九十分鐘前的最後拆解",
       "type": "final_week_preview",
-      "status": "planned",
+      "status": "superseded",
       "publishDate": "2026-07-19",
       "draftDate": "2026-07-19",
       "draftSlot": "17:30",
       "publishSlot": "manual after draft",
       "timezone": "Asia/Taipei",
-      "slot": "manual after draft",
-      "href": "worldcup/2026/final-preview.html"
+      "slot": "included in final-debrief",
+      "href": "worldcup/2026/final-preview.html",
+      "updated": "2026-07-20"
     },
     {
       "id": "final-debrief",
-      "title": "決賽賽後：冠軍如何誕生，亞軍差在哪一步",
+      "title": "決賽賽後：Spain 如何用 106 分鐘完成世界盃收官",
       "type": "knockout_debrief",
-      "status": "planned",
+      "status": "published",
       "publishDate": "2026-07-20",
       "draftDate": "2026-07-20",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
-      "href": "worldcup/2026/final-debrief.html"
+      "slot": "published",
+      "href": "worldcup/2026/final-debrief.html",
+      "updated": "2026-07-20"
     },
     {
       "id": "tournament-wrap",
       "title": "世界盃總結：冠軍路徑、賽制答案與四年後問題",
       "type": "bracket_watch",
-      "status": "planned",
+      "status": "superseded",
       "publishDate": "2026-07-21",
       "draftDate": "2026-07-21",
       "draftSlot": "12:00",
       "publishSlot": "lunch",
       "timezone": "Asia/Taipei",
-      "slot": "lunch",
-      "href": "worldcup/2026/tournament-wrap.html"
+      "slot": "included in final-debrief",
+      "href": "worldcup/2026/tournament-wrap.html",
+      "updated": "2026-07-20"
     }
   ]
 }

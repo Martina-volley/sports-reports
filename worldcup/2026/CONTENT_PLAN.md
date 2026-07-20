@@ -1,6 +1,6 @@
 # World Cup 2026 內容計畫
 
-更新日期：2026-07-16
+更新日期：2026-07-20
 時區：Asia/Taipei
 
 ## 發布節奏
@@ -81,11 +81,11 @@
 | 2026-07-15 | 2026-07-15 12:00 | lunch | 已發布 | 淘汰賽後分析 | 四強第一戰賽後：決賽隊伍如何過關 | [open](../../worldcup/2026/semifinal-first-debrief.html) |
 | 2026-07-15 | 2026-07-15 17:30 | manual after draft | 已發布 | 淘汰賽前分析 | 四強第二戰賽前：教練先手與決賽路口 | [open](../../worldcup/2026/semifinal-second-preview.html) |
 | 2026-07-16 | 2026-07-16 12:00 | lunch | 已發布 | 淘汰賽後分析 | 四強收官賽後：決賽對陣與季軍戰分流 | [open](../../worldcup/2026/semifinal-final-debrief.html) |
-| 2026-07-17 | 2026-07-17 17:30 | manual after draft | 企劃中 | 決賽週前瞻 | 決賽週前瞻：季軍戰、決賽與最後敘事線 | [open](../../worldcup/2026/final-week-preview.html) |
-| 2026-07-19 | 2026-07-19 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 季軍戰賽後：輪換、心態與世代交接 | [open](../../worldcup/2026/third-place-debrief.html) |
-| 2026-07-19 | 2026-07-19 17:30 | manual after draft | 企劃中 | 決賽週前瞻 | 決賽賽前：冠軍九十分鐘前的最後拆解 | [open](../../worldcup/2026/final-preview.html) |
-| 2026-07-20 | 2026-07-20 12:00 | lunch | 企劃中 | 淘汰賽後分析 | 決賽賽後：冠軍如何誕生，亞軍差在哪一步 | [open](../../worldcup/2026/final-debrief.html) |
-| 2026-07-21 | 2026-07-21 12:00 | lunch | 企劃中 | 籤表追蹤 | 世界盃總結：冠軍路徑、賽制答案與四年後問題 | [open](../../worldcup/2026/tournament-wrap.html) |
+| 2026-07-17 | 2026-07-17 17:30 | manual after draft | superseded | 決賽週前瞻 | 決賽週前瞻：季軍戰、決賽與最後敘事線 | [open](../../worldcup/2026/final-week-preview.html) |
+| 2026-07-19 | 2026-07-19 12:00 | lunch | superseded | 淘汰賽後分析 | 季軍戰賽後：輪換、心態與世代交接 | [open](../../worldcup/2026/third-place-debrief.html) |
+| 2026-07-19 | 2026-07-19 17:30 | manual after draft | superseded | 決賽週前瞻 | 決賽賽前：冠軍九十分鐘前的最後拆解 | [open](../../worldcup/2026/final-preview.html) |
+| 2026-07-20 | 2026-07-20 12:00 | lunch | 已發布 | 淘汰賽後分析 | 決賽賽後：Spain 如何用 106 分鐘完成世界盃收官 | [open](../../worldcup/2026/final-debrief.html) |
+| 2026-07-21 | 2026-07-21 12:00 | lunch | superseded | 籤表追蹤 | 世界盃總結：冠軍路徑、賽制答案與四年後問題 | [open](../../worldcup/2026/tournament-wrap.html) |
 
 ## 使用方式
 
