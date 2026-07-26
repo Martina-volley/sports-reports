@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 匈牙利站週日焦點：Norris 站上桿位，冠軍戰帶著 Mercedes 優勢進入正賽</title>
+  <meta name="description" content="2026 年 7 月 26 日台北時間 F1 匈牙利站週日版回顧。官方正賽成績尚未上線，本文整理排位結果、發車前十、關鍵事件與最新積分版圖。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f5efe7;
+      --paper: rgba(255, 252, 246, 0.95);
+      --ink: #172033;
+      --muted: #5e6877;
+      --line: rgba(23, 32, 51, 0.12);
+      --wine: #8f1d2c;
+      --teal: #0f766e;
+      --gold: #b58b46;
+      --night: #111827;
+      --shadow: 0 24px 64px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 8% 10%, rgba(15, 118, 110, 0.14), transparent 22%),
+        radial-gradient(circle at 92% 0%, rgba(143, 29, 44, 0.14), transparent 24%),
+        linear-gradient(180deg, #fbf7f1 0%, #efe6da 100%);
+    }
+    a { color: var(--wine); }
+    .hero {
+      padding: 64px 24px 50px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.08), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.9) 42%, rgba(143,29,44,0.9) 100%);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 14px;
+      max-width: 11ch;
+      font-size: clamp(38px, 6vw, 66px);
+      line-height: 1.05;
+    }
+    .hero p {
+      max-width: 860px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.93);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--wine);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--gold);
+      background: rgba(181, 139, 70, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.76);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .alert {
+      background: linear-gradient(180deg, rgba(254,242,242,0.95), rgba(255,255,255,0.92));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 11 | Sunday Dispatch</div>
+      <h1>匈牙利站週日焦點：Norris 領銜發車，冠軍戰等著看 Mercedes 怎麼守</h1>
+      <p>台北時間 2026 年 7 月 26 日，F1 來到 Hungaroring 正賽日。官方 Hungarian Grand Prix 結果頁在本次執行時仍顯示沒有可用 session result，因此這份 race 版本明確以已發布的排位、處罰公告、官方賽前稿與最新積分榜為資料邊界，不虛構完賽名次。</p>
+      <div class="meta">
+        <span>日期：2026-07-26</span>
+        <span>站別：Hungarian Grand Prix</span>
+        <span>kind = race</span>
+        <span>資料邊界：官方正賽成績未上線</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>2026 年賽曆顯示匈牙利站為 7 月 24 日至 7 月 26 日，符合這次 automation 的週日觸發條件。執行時可驗證的官方資料包括 Hungary race page、排位賽報導、兩則發車處罰公告，以及車手和車隊積分榜。</p>
+        <p>關鍵限制同樣需要寫清楚：Formula1.com 的匈牙利站官方正賽結果頁在這次執行當下仍未提供完成後分類，因此本文不提供虛構的完賽前十，而是整理「發車前十」、「賽前戰術焦點」與「如果結果出現最值得追的積分變化」。</p>
+      </div>
+      <div class="status">執行備註：本篇屬於週日版 race dispatch，但資料狀態仍是賽前到發車前；若官方成績稍後上線，需再以正式完賽結果覆寫。</div>
+    </section>
+
+    <section class="grid" style="margin-top: 18px;">
+      <article class="card">
+        <div class="kicker">Grid Top 10</div>
+        <h2>官方可驗證的發車前十：Norris 在前，Hamilton 與 Antonelli 因處罰後退</h2>
+        <table>
+          <thead>
+            <tr><th>位置</th><th>車手</th><th>車隊</th><th>依據</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>官方排位報導確認桿位</td></tr>
+            <tr><td>2</td><td>Charles Leclerc</td><td>Ferrari</td><td>Hamilton 退三位後遞補</td></tr>
+            <tr><td>3</td><td>Oscar Piastri</td><td>McLaren</td><td>排位報導名列前段</td></tr>
+            <tr><td>4</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>Hamilton 處罰後上升</td></tr>
+            <tr><td>5</td><td>Lewis Hamilton</td><td>Ferrari</td><td>官方公告退三位</td></tr>
+            <tr><td>6</td><td>George Russell</td><td>Mercedes</td><td>無新增處罰</td></tr>
+            <tr><td>7</td><td>Kimi Antonelli</td><td>Mercedes</td><td>官方公告退三位</td></tr>
+            <tr><td>8</td><td>Isack Hadjar</td><td>Racing Bulls</td><td>依處罰後排序上升</td></tr>
+            <tr><td>9</td><td>Arvid Lindblad</td><td>Red Bull Racing</td><td>依處罰後排序上升</td></tr>
+            <tr><td>10</td><td>Nico Hulkenberg</td><td>Sauber</td><td>依處罰後排序上升</td></tr>
+          </tbody>
+        </table>
+        <p class="mini-note">註：前十為依官方排位報導與兩則官方罰退公告整理的發車順序，不是完賽名次。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Race Storylines</div>
+        <h2>三條主線把匈牙利正賽的張力全部拉滿</h2>
+        <div class="stack">
+          <div class="item alert">
+            <strong>1. McLaren 終於把週末速度兌現到桿位</strong>
+            <div>Norris 在官方排位稿裡拿下 pole，Piastri 也維持在前排。Hungaroring 超車難度高，McLaren 若能守住起跑節奏，這會是他們改寫賽季走勢最直接的一站。</div>
+          </div>
+          <div class="item">
+            <strong>2. Mercedes 積分優勢不小，但起跑位置不再理想</strong>
+            <div>Antonelli 仍以 204 分領跑年度，Russell 154 分緊追，但兩名 Mercedes 車手都不是最佳發車格局。Antonelli 因排位阻擋被退三位，Russell 又在排位階段提到冷卻與抓地問題，正賽能否反打會決定冠軍差距是縮是放。</div>
+          </div>
+          <div class="item">
+            <strong>3. Ferrari 的窗口已經打開</strong>
+            <div>Hamilton 本來排在前列，卻因阻擋 Colapinto 被退三位；Leclerc 則因此升上第二。Ferrari 目前車隊榜落後 Mercedes 73 分，匈牙利若雙車都在前段完賽，將是暑休前最有希望追回分差的節點。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Championship</div>
+        <h2>正賽開跑前的積分版圖</h2>
+        <table>
+          <thead>
+            <tr><th>車手榜</th><th>車手</th><th>分數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>204</td></tr>
+            <tr><td>2</td><td>Lewis Hamilton</td><td>159</td></tr>
+            <tr><td>3</td><td>George Russell</td><td>154</td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>126</td></tr>
+            <tr><td>5</td><td>Lando Norris</td><td>103</td></tr>
+            <tr><td>6</td><td>Oscar Piastri</td><td>92</td></tr>
+            <tr><td>7</td><td>Max Verstappen</td><td>91</td></tr>
+          </tbody>
+        </table>
+        <table style="margin-top: 16px;">
+          <thead>
+            <tr><th>車隊榜</th><th>車隊</th><th>分數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>358</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>285</td></tr>
+            <tr><td>3</td><td>McLaren</td><td>195</td></tr>
+            <tr><td>4</td><td>Red Bull Racing</td><td>151</td></tr>
+            <tr><td>5</td><td>Alpine</td><td>61</td></tr>
+            <tr><td>6</td><td>Racing Bulls</td><td>61</td></tr>
+          </tbody>
+        </table>
+        <p class="mini-note">目前最大差距是 Mercedes 對 Ferrari 的 73 分，以及 Antonelli 對 Hamilton 的 45 分。正賽若出現前二集團互卡，暑休前的兩條冠軍線都可能縮窄。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sunday Analysis</div>
+        <h2>真正值得看的不是誰快一圈，而是誰能在 Budapest 的低超車環境把排位優勢換成整段節奏</h2>
+        <div class="lede">
+          <p>Hungaroring 一向要求車隊把輪胎管理、起跑程序與 undercut 反應全部做到精準。McLaren 這次終於把單圈速度轉成桿位與前排，但他們年度積分落在第三，意味著 Norris 與 Piastri 必須把「前排起跑」轉成「雙車高分」，否則仍難一次追近 Mercedes 與 Ferrari。</p>
+          <p>Mercedes 這邊則是另一種壓力。Antonelli 目前仍掌握年度主導權，但從前面空氣掉到中前段車陣後，他的比賽就不再只是控場，而是要處理 dirty air、進站窗與對手 undercut。Russell 雖然起跑比隊友前，但週末對平衡的抱怨已經浮出檯面，若無法在第一 stint 咬住 Ferrari，車手榜第二的位置還有變數。</p>
+          <p>Ferrari 反而可能是週日最有操作空間的車隊。Leclerc 直接受益於 Hamilton 的罰退升上第一排，等於一開賽就有把 Norris 壓進戰術戰的機會；Hamilton 從第五起跑，若第一圈處理得好，雙車就有機會同時卡進 podium 甚至挑戰勝利。對 Ferrari 而言，這種「賽前位置略優於積分現況」的周日，往往是最有價值的追分窗口。</p>
+          <p>Red Bull 的看點則是 Verstappen 與 Lindblad 是否能在排位不是最強的週末，用比賽節奏偷回來。由於官方完賽結果尚未上線，這份報告先把勝負邏輯寫清楚：起跑守位、第一波進站、以及安全車時機，會比純粹尾速更重要。</p>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Key Events</div>
+        <h2>目前已確認的關鍵事件</h2>
+        <ol>
+          <li>Norris 在官方排位報導中奪下匈牙利站桿位，McLaren 佔據發車主動權。</li>
+          <li>Hamilton 因在排位阻擋 Franco Colapinto，被官方裁定退後三位發車。</li>
+          <li>Antonelli 因阻擋 Max Verstappen，同樣被官方裁定退後三位發車。</li>
+          <li>Russell 在週末前公開談到心理層面的冠軍壓力，顯示 Mercedes 內部也在處理 title fight 的長線負荷。</li>
+        </ol>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">What Changes After The Flag</div>
+        <h2>官方結果一旦上線，最先要追的積分影響</h2>
+        <ul>
+          <li>Antonelli 若無法壓在 Hamilton 前面，45 分領先可能第一次出現明顯鬆動。</li>
+          <li>Ferrari 若雙車都在前五，73 分車隊差距會開始被快速吃掉。</li>
+          <li>McLaren 若拿不下至少一台頒獎台，Norris 的 pole 對年度積分幫助就會偏有限。</li>
+          <li>Red Bull 與 Racing Bulls 都有機會在中前段靠策略拿分，影響下游車隊排序。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ul class="sources">
+          <li><a href="https://www.formula1.com/en/racing/2026" target="_blank" rel="noreferrer">Formula 1 2026 official calendar</a></li>
+          <li><a href="https://www.formula1.com/en/racing/2026/hungary" target="_blank" rel="noreferrer">Hungarian Grand Prix 2026 race page</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/norris-on-pole-as-hamilton-and-antonelli-hit-with-grid-drops-following.3b0PwwZJjS8UjS8rb6V5z5" target="_blank" rel="noreferrer">Official qualifying report: Norris on pole, Hamilton and Antonelli get grid drops</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/hamilton-handed-three-place-grid-drop-for-colapinto-impeding-during.6o0YL7bPCc9QwC5R0KEtqy" target="_blank" rel="noreferrer">Official grid penalty: Hamilton three-place drop</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/antonelli-gets-three-place-grid-penalty-for-verstappen-impeding-in.5YWoDgEm84vvPttRYoIo5T" target="_blank" rel="noreferrer">Official grid penalty: Antonelli three-place drop</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/toughest-battle-ive-had-psychologically-russell-opens-up-on-title-fight-struggles-ahead-of-hungarian-gp.JH7ULoF7XCekoFJvm5rHZ" target="_blank" rel="noreferrer">George Russell on title-fight pressure ahead of Hungary</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noreferrer">2026 Drivers' Standings</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/team" target="_blank" rel="noreferrer">2026 Teams' Standings</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>F1 Weekend Daily Report automation | Sunday dispatch written to new_incoming</footer>
+</body>
+</html>
