@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 荷蘭大獎賽賽後：Norris 在混亂 Zandvoort 完成連勝 | The Sports Report</title>
+  <meta name="description" content="整理 2026 荷蘭大獎賽官方結果、紅旗與 VSC 關鍵事件、Sprint 週末積分變化、車隊策略與 Monza 前瞻。" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --paper: rgba(255, 252, 247, 0.96);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --accent: #9f1239;
+      --deep: #111827;
+      --gold: #b7791f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.78;
+      background:
+        radial-gradient(circle at top left, rgba(14, 116, 144, 0.14), transparent 24%),
+        radial-gradient(circle at top right, rgba(245, 158, 11, 0.16), transparent 22%),
+        linear-gradient(180deg, #fbf7f2 0%, #e7dcc9 100%);
+    }
+    a { color: var(--accent); }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+    }
+    .nav a {
+      color: var(--ink);
+      font: 800 14px/1.2 Arial, sans-serif;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding-bottom: 36px;
+    }
+    .hero {
+      margin: 28px 0 22px;
+      padding: 52px 36px;
+      border-radius: 0 0 26px 26px;
+      color: #fff;
+      background: linear-gradient(135deg, #111827 0%, #0f766e 44%, #c2410c 100%);
+      box-shadow: 0 24px 64px rgba(17, 24, 39, 0.2);
+    }
+    .eyebrow {
+      font: 800 13px/1.2 Arial, sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.82;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5.6vw, 70px);
+      line-height: 0.98;
+    }
+    .lead {
+      max-width: 920px;
+      margin: 0;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      font: 800 12px/1 Arial, sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    section {
+      margin: 22px 0;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--paper);
+      box-shadow: 0 16px 40px rgba(17, 24, 39, 0.08);
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+    .num {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--deep);
+      color: #fff;
+      font: 900 15px/1 Arial, sans-serif;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(26px, 3vw, 42px);
+      line-height: 1.12;
+    }
+    p { margin: 12px 0; font-size: 18px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffaf3;
+    }
+    .stat span {
+      display: block;
+      font: 800 12px/1.2 Arial, sans-serif;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .stat strong {
+      display: block;
+      margin: 6px 0 4px;
+      font-size: 28px;
+      line-height: 1.05;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      overflow: hidden;
+      border-radius: 16px;
+      background: #fff;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 15px;
+    }
+    th {
+      font: 800 12px/1.2 Arial, sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: #f8f3ea;
+    }
+    tr:last-child td { border-bottom: none; }
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+    li { margin: 8px 0; }
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .panel h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      background: rgba(183, 121, 31, 0.08);
+      font-size: 15px;
+    }
+    .sources li {
+      word-break: break-word;
+    }
+    .footer {
+      padding: 12px 0 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 820px) {
+      .hero { padding: 38px 24px; }
+      section { padding: 24px; }
+      .stats, .grid-two { grid-template-columns: 1fr; }
+      .section-head { grid-template-columns: 1fr; }
+      .num { width: 40px; height: 40px; }
+      th, td { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="../../index.html">The Sports Report</a>
+    <a href="../../index.html#report-grid">All F1 reports</a>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Dutch GP Monday Review · 2026-08-24 Asia/Taipei</div>
+      <h1>Norris 在 Zandvoort 混戰完成連勝，McLaren 真的把追擊線重新拉起來</h1>
+      <p class="lead">2026 年 8 月 23 日的荷蘭大獎賽不是單純的桿位轉勝，而是一場被雨勢、紅旗、雙停節奏與 VSC 再度洗牌的比賽。Norris 扛住 Antonelli 的重啟超車、在第二輪策略後把位置搶回來，再頂住 Mercedes 的新胎反撲，讓 McLaren 在 Sprint 週末把爭冠壓力延續到 Monza。</p>
+      <div class="chips">
+        <span class="chip">Winner · Norris</span>
+        <span class="chip">Verstappen DNF</span>
+        <span class="chip">Sprint Weekend</span>
+        <span class="chip">Next · Monza</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-head">
+        <div class="num">01</div>
+        <div>
+          <h2>賽事總結</h2>
+          <p>這場 Dutch GP 的核心不是 Norris 從頭帶到尾，而是他在兩次比賽重置後，還能把節奏重新接回自己手上。正式起跑後第一圈，Verstappen 在主場最後一場 Zandvoort 正賽就因濕滑白線失控重撞，紅旗讓比賽被整個切開。站在那個時間點，原本最穩的應該是 Mercedes，因為 Antonelli 在第二次靜止起跑直接吃掉 Norris，之後又一度把差距拉開。</p>
+          <p>但 McLaren 真正做對的，是讓 Norris 的第二段與第三段留在可以主動進攻的位置。當 Antonelli 進入第二輪 hard tyre stint 後開始抱怨後輪，Norris 很快把差距壓回攻擊範圍，接著在 Turn 1 完成關鍵超車，順手把暫時領跑的 Hamilton 也一併處理掉。後段 Ocon 停車引發的 VSC 給了 Mercedes 補上 soft 的機會，可 Norris 即使沒進站，仍把 11.536 秒優勢守到終點。</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span>Winner</span>
+          <strong>Norris</strong>
+          <div>2:04:44.859</div>
+        </div>
+        <div class="stat">
+          <span>Margin</span>
+          <strong>11.536s</strong>
+          <div>勝過 Antonelli</div>
+        </div>
+        <div class="stat">
+          <span>Big Shock</span>
+          <strong>Verstappen DNF</strong>
+          <div>首圈撞車紅旗</div>
+        </div>
+        <div class="stat">
+          <span>Next Race</span>
+          <strong>Italy</strong>
+          <div>2026-09-04 至 2026-09-06</div>
+        </div>
+      </div>
+      <p>Mercedes 雙車第二、第三其實不差，但氣氛和結果都帶著遺憾。Antonelli 原本看起來有機會把勝利帶走，卻在輪胎退化與 Norris 的攻擊節奏前守不住；Russell 先被 Piastri 在重啟時超掉，之後又成了車隊 team order 的執行者，最後還得用舊胎硬擋住兩台 Ferrari，才把第三名留住。</p>
+      <p>Ferrari 則是另一種典型的「正賽比排位更好，但還不夠乾淨」週末。Hamilton 與 Leclerc 的 pace 足夠把頒獎台變成現實威脅，Hamilton 甚至一度靠延後進站領跑；但車隊自己的評估也很直接，問題不只是策略視窗難讀，更是週六排位沒有先把自己放到對的位置。</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">02</div>
+        <div>
+          <h2>正賽前十</h2>
+          <p>以下依 Formula1.com 官方正賽成績頁整理。</p>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Time / Gap</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>2:04:44.859</td><td>25</td></tr>
+          <tr><td>2</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+11.536s</td><td>18</td></tr>
+          <tr><td>3</td><td>George Russell</td><td>Mercedes</td><td>+15.906s</td><td>15</td></tr>
+          <tr><td>4</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+16.755s</td><td>12</td></tr>
+          <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>+17.258s</td><td>10</td></tr>
+          <tr><td>6</td><td>Oscar Piastri</td><td>McLaren</td><td>+32.332s</td><td>8</td></tr>
+          <tr><td>7</td><td>Liam Lawson</td><td>Red Bull Racing</td><td>+79.915s</td><td>6</td></tr>
+          <tr><td>8</td><td>Nico Hulkenberg</td><td>Audi</td><td>+1 lap</td><td>4</td></tr>
+          <tr><td>9</td><td>Fernando Alonso</td><td>Aston Martin</td><td>+1 lap</td><td>2</td></tr>
+          <tr><td>10</td><td>Pierre Gasly</td><td>Alpine</td><td>+1 lap</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <div class="note">官方結果頁同時註記：Lawson 與 Colapinto 因黃旗違規各罰 10 秒，Sainz 因造成碰撞加罰 10 秒。Lawson 仍保住第七，Gasly 維持第十。</div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">03</div>
+        <div>
+          <h2>關鍵事件</h2>
+          <p>勝負走向由幾個很明確的節點決定。</p>
+        </div>
+      </div>
+      <ul>
+        <li>賽前與起跑：因賽前雨勢與賽道局部積水，比賽先在 Safety Car 後進行編隊圈。多數前排車手起步用 medium，Norris 守住第一個彎角，但 Antonelli 已在起跑時吃掉 Russell。</li>
+        <li>第一圈紅旗：Verstappen 在主直道濕滑白線上失控重撞，紅旗立刻中止比賽。這不只讓紅牛主場主線瞬間消失，也讓前段車隊能重設輪胎與節奏。</li>
+        <li>靜止重啟：Antonelli 第二次起跑直接超過 Norris，Piastri 也越過 Russell 升到第三，Mercedes 與 McLaren 形成新的策略交錯。</li>
+        <li>第一輪停站後：Russell 先換 hard，Piastri 的慢停讓他失去原本對 Russell 的位置優勢；Antonelli 與 Norris 同圈進站後，Hamilton 以較長第一段暫時接管領先，Ferrari 開始測試不同策略窗口。</li>
+        <li>決勝超車：Lap 52 前後，Antonelli 後輪退化明顯，Norris 在 Turn 1 把 Mercedes 吃掉，隨後也解決當時仍在前方的 Hamilton，重新拿回實際領先。</li>
+        <li>VSC 與隊內指令：Ocon 停車引發 VSC，Antonelli 換上 soft 追擊；Mercedes 隨後讓 Russell 讓位，把 Antonelli 送到第二，但 Russell 必須用舊胎擋住 Hamilton 和 Leclerc，才守住雙頒獎台。</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">04</div>
+        <div>
+          <h2>積分榜變化</h2>
+          <p>這是 Sprint 週末，以下括號增量為相較 2026-07-26 匈牙利站後的整個週末總增量，而不只週日正賽。</p>
+        </div>
+      </div>
+      <div class="grid-two">
+        <div class="panel">
+          <h3>車手榜前七</h3>
+          <ul>
+            <li>1. Kimi Antonelli 242 分（+23）</li>
+            <li>2. George Russell 183 分（+23）</li>
+            <li>3. Lewis Hamilton 183 分（+14）</li>
+            <li>4. Lando Norris 159 分（+31）</li>
+            <li>5. Charles Leclerc 155 分（+17）</li>
+            <li>6. Max Verstappen 112 分（+3）</li>
+            <li>7. Oscar Piastri 104 分（+8）</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>車隊榜前六</h3>
+          <ul>
+            <li>1. Mercedes 425 分（+46）</li>
+            <li>2. Ferrari 338 分（+31）</li>
+            <li>3. McLaren 263 分（+43）</li>
+            <li>4. Red Bull Racing 186 分（+9）</li>
+            <li>5. Racing Bulls 66 分（+0）</li>
+            <li>6. Alpine 63 分（+2）</li>
+          </ul>
+        </div>
+      </div>
+      <p>Norris 這個週末雖然沒有把 Antonelli 的車手榜差距真正打進「單站可翻」範圍，但 +31 分代表 McLaren 至少把追擊節奏重新變成可持續的故事線。更重要的是，Russell 與 Hamilton 現在同分 183，年度第二名已不再只是 Ferrari 守勢問題，而是 Mercedes 與 Ferrari 都在爭一條真正能對 Antonelli 施壓的副線。</p>
+      <p>車隊榜方面，Mercedes 仍有 87 分優勢，但 McLaren 靠 43 分把自己重新推近 Ferrari。Red Bull 則在 Verstappen 零分下，只靠 Lawson 與 Sprint 分數拿到 9 分，第四名位置暫時還穩，卻明顯失去主場放大追擊的機會。</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">05</div>
+        <div>
+          <h2>策略與車隊觀察</h2>
+          <p>這場不是典型的一停教科書，而是被天氣、紅旗與三種輪胎一起攪亂的策略比賽。</p>
+        </div>
+      </div>
+      <p><strong>McLaren：</strong>Norris 的勝利當然靠車手本身執行，但車隊也做對了一件關鍵事，就是在他沒有於 VSC 進站的情況下，不被新胎恐慌打亂。Andrea Stella 在官方賽後說得很坦白，McLaren 最近兩站其實都不是最快的車，但他們靠週末執行把分數撈滿。這句話很重要，因為它說明 McLaren 現在的追擊，不是建立在絕對性能回到領先，而是建立在「先別浪費可得分數」的成熟度。</p>
+      <p><strong>Mercedes：</strong>Antonelli 的重啟起跑和整體節奏仍像冠軍候選人，但 Norris 能重新追上並在場上直接超過他，說明 Mercedes 沒有把優勢維持到最後。VSC 下換 soft 是合理的進攻選擇，team order 讓 Russell 交位給 Antonelli 也合理，可代價是 Russell 接著得在壓力極大的狀況下替車隊收尾。從結果看，Mercedes 仍最大化拿分；從觀感看，他們已經開始進入真正需要管理雙車角色的階段。</p>
+      <p><strong>Ferrari：</strong>Hamilton 一度靠延長第一段領跑，Leclerc 也多次展現較好的單圈節奏，但 Ferrari 官方總結直接點出這站更缺的是排位速度而不是正賽速度。這個判斷很準，因為他們若週六再往前一排，週日很可能就不是在追 Russell，而是在跟 Norris、Antonelli 直接爭勝。</p>
+      <p><strong>Red Bull Racing：</strong>週末真正毀掉紅牛的不是策略，而是 pace 不夠加上 Verstappen 首圈出局。官方賽後引述也直接承認，他們沒有與前排爭勝的速度。Lawson 仍替車隊救回第七，至少避免主場全失，但比起 Hungary 那種週日長距離回溫，Zandvoort 更像把 RB22 的上限重新壓回現實。</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">06</div>
+        <div>
+          <h2>車手與車隊觀察</h2>
+          <p>荷蘭站讓幾條下半季主線變得更清楚。</p>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Norris：</strong>連兩場週日正賽勝利比單站冠軍更重要，因為這證明 Hungary 不是一次性爆點。若 Monza 仍能保持可爭勝節奏，McLaren 的年度敘事就會從「回到前排」正式升級成「開始追人」。</li>
+        <li><strong>Antonelli：</strong>他仍是榜首，而且整體週末依舊高產，但 Zandvoort 顯示領跑與守勝不是同一回事。當輪胎開始掉、對手能在場上真正貼近時，他還需要更多面對壓迫的應對樣本。</li>
+        <li><strong>Russell：</strong>第三名與 Sprint 勝利讓他在分數上很硬，但隊內角色正在變複雜。若 Mercedes 之後更常在臨場決策裡偏向 Antonelli，Russell 要處理的不只外部對手，還有自己在車隊內的定位。</li>
+        <li><strong>Ferrari：</strong>Hamilton 與 Russell 同分是荷蘭站後最實際的新訊號。這代表 Ferrari 雖仍落後 Mercedes，但 Hamilton 至少還在能對年度第二、甚至更高位置施壓的帶寬內。</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">07</div>
+        <div>
+          <h2>下一站影響</h2>
+          <p>官方賽曆顯示，下一場是 2026-09-04 至 2026-09-06 的義大利大獎賽 Monza。</p>
+        </div>
+      </div>
+      <ul>
+        <li>Monza 會直接檢查 McLaren 的直線效率與低阻設定是否足夠延續勝勢。若 Norris 再拿一場高效率賽道勝利，下半季車手榜追擊才會第一次出現真正的數學壓迫感。</li>
+        <li>Mercedes 雖然雙車再上頒獎台，但 Zandvoort 已經提醒他們，現在不是只有可靠度問題，還有臨場決策與雙車排序問題。Monza 這類 overtaking 更真實的場地，隊內先後手會更難藏。</li>
+        <li>Ferrari 進入主場前得到一個偏正面的訊號：race pace 足夠，短板更像排位。若能在 Monza 週六先把位置站穩，Hamilton 與 Leclerc 兩台車都能真正切入爭勝圈。</li>
+        <li>Red Bull 對 Monza 的期待反而要先從找回可預測的單圈與煞車穩定性開始。Verstappen 在荷蘭站的零分，讓紅牛接下來比較現實的任務，不是直接談冠軍，而是先把每個能得的 podium 機會拿回來。</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">08</div>
+        <div>
+          <h2>資料來源</h2>
+          <p>以下來源皆為本次執行時可公開驗證的最新頁面。</p>
+        </div>
+      </div>
+      <ul class="sources">
+        <li><a href="https://www.formula1.com/en/racing/2026" target="_blank" rel="noopener">Formula 1 official 2026 race calendar</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026/netherlands" target="_blank" rel="noopener">Formula 1 official Dutch Grand Prix 2026 race hub</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1292/netherlands/race-result" target="_blank" rel="noopener">Formula 1 official Dutch Grand Prix race result</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-results" target="_blank" rel="noopener">Formula 1 official Dutch Grand Prix sprint result</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/norris-wins-dramatic-dutch-grand-prix-from-antonelli-and-russell-as-verstappen-crashes-out.Zn7iYevVGp5eHzFkTEAz7" target="_blank" rel="noopener">Formula 1 race report: Norris wins dramatic Dutch Grand Prix from Antonelli and Russell as Verstappen crashes out</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-the-netherlands-2026.1GTy1x6hObFlkGkaXKqhNS" target="_blank" rel="noopener">Formula 1 team quotes: What the teams said – Race day in the Netherlands</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/verstappen-reacts-to-dramatic-dutch-gp-crash-as-he-sums-up-disappointing-home-weekend.6nrEOE03YhjdJy6shRzAf1" target="_blank" rel="noopener">Formula 1 follow-up: Verstappen reacts to Dutch GP crash</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noopener">Formula 1 official 2026 drivers' standings</a></li>
+        <li><a href="https://www.formula1.com/en/teams/mclaren" target="_blank" rel="noopener">Formula 1 team page: McLaren 2026 season points</a></li>
+        <li><a href="https://www.formula1.com/en/teams/ferrari" target="_blank" rel="noopener">Formula 1 team page: Ferrari 2026 season points</a></li>
+        <li><a href="https://www.formula1.com/en/teams/red-bull-racing" target="_blank" rel="noopener">Formula 1 team page: Red Bull Racing 2026 season points</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026/italy" target="_blank" rel="noopener">Formula 1 official Italian Grand Prix 2026 race hub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="footer">Built for Monday review automation · UTF-8 output in new_incoming</div>
+</body>
+</html>

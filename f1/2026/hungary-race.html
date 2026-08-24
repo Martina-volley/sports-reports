@@ -3,52 +3,412 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>F1 2026 匈牙利站週日焦點：Norris 桿位出發，Mercedes 與 Ferrari 都被迫追節奏 | The Sports Report</title>
-  <meta name="description" content="Norris 掌握桿位，但 Hungaroring 的正賽勝負不只看起跑。輪胎退化、交通、進站窗口與 Mercedes 的雙車壓力，會決定誰能把排位速度轉成積分。" />
-  <meta name="theme-color" content="#111827" />
+  <title>F1 2026 匈牙利大獎賽賽後：Norris 終結 McLaren 正賽勝荒 | The Sports Report</title>
+  <meta name="description" content="整理 2026 匈牙利大獎賽官方結果、關鍵事件、策略差異、積分榜變化與夏休前展望。" />
   <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
   <style>
-    :root { --ink:#172033; --muted:#5f6b7a; --paper:rgba(255,252,246,.96); --line:rgba(23,32,51,.14); --red:#9f1239; --night:#111827; }
-    * { box-sizing:border-box; }
-    body { margin:0; color:var(--ink); font-family:"Noto Serif TC","PingFang TC","Microsoft JhengHei",serif; line-height:1.82; background:radial-gradient(circle at 8% 8%, rgba(29,78,216,.11), transparent 24%), radial-gradient(circle at 92% 0%, rgba(159,18,57,.13), transparent 22%), linear-gradient(180deg,#fbf7f1 0%,#eee4d8 100%); }
-    a { color:var(--red); }
-    .nav { display:flex; justify-content:space-between; gap:16px; padding:18px 24px; background:rgba(255,255,255,.76); border-bottom:1px solid var(--line); position:sticky; top:0; backdrop-filter:blur(12px); z-index:3; }
-    .nav a { text-decoration:none; font-weight:800; }
-    .wrap { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
-    .hero { color:#fff; margin:28px auto; border-radius:0 0 24px 24px; padding:58px 42px; background:linear-gradient(135deg, #111827 0%, #0f766e 42%, #8f1d2c 100%); box-shadow:0 24px 64px rgba(17,24,39,.18); }
-    .eyebrow { text-transform:uppercase; letter-spacing:.14em; font:800 13px/1.4 Arial,sans-serif; opacity:.88; }
-    h1 { margin:18px 0 14px; font-size:clamp(36px,6vw,76px); line-height:.98; letter-spacing:0; }
-    .lead { max-width:900px; font-size:20px; margin:0; color:rgba(255,255,255,.9); }
-    .chips { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
-    .chip { padding:8px 12px; border:1px solid rgba(255,255,255,.28); border-radius:999px; background:rgba(255,255,255,.10); font:800 13px/1 Arial,sans-serif; }
-    section { background:var(--paper); border:1px solid var(--line); border-radius:20px; padding:34px; margin:22px 0; box-shadow:0 18px 44px rgba(17,24,39,.08); }
-    .head { display:grid; grid-template-columns:56px 1fr; gap:18px; align-items:start; margin-bottom:18px; }
-    .num { width:46px; height:46px; display:grid; place-items:center; border-radius:12px; background:var(--night); color:#fff; font:900 15px/1 Arial,sans-serif; }
-    h2 { margin:0; font-size:clamp(25px,3.2vw,42px); line-height:1.18; letter-spacing:0; }
-    .stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin:22px 0; }
-    .stat { border:1px solid var(--line); border-radius:16px; padding:16px; background:#fffaf2; }
-    .stat b { display:block; font-size:26px; line-height:1.1; margin:5px 0; }
-    .stat span { font:900 12px/1 Arial,sans-serif; color:var(--muted); text-transform:uppercase; letter-spacing:.12em; }
-    p { font-size:18px; margin:14px 0; }
-    ul { margin:10px 0 0; padding-left:22px; }
-    li { margin:8px 0; }
-    .foot { text-align:center; padding:34px; }
-    @media (max-width:760px){ .nav{display:block}.hero{padding:42px 24px}.stats{grid-template-columns:1fr 1fr} section{padding:24px}.head{grid-template-columns:1fr}.num{width:40px;height:40px} }
+    :root {
+      --paper: rgba(255, 252, 247, 0.96);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --accent: #9f1239;
+      --deep: #111827;
+      --gold: #b7791f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.78;
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.14), transparent 24%),
+        radial-gradient(circle at top right, rgba(159, 18, 57, 0.14), transparent 22%),
+        linear-gradient(180deg, #fbf7f2 0%, #eadfce 100%);
+    }
+    a { color: var(--accent); }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+    }
+    .nav a {
+      color: var(--ink);
+      font: 800 14px/1.2 Arial, sans-serif;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding-bottom: 36px;
+    }
+    .hero {
+      margin: 28px 0 22px;
+      padding: 52px 36px;
+      border-radius: 0 0 26px 26px;
+      color: #fff;
+      background: linear-gradient(135deg, #111827 0%, #0f766e 44%, #9f1239 100%);
+      box-shadow: 0 24px 64px rgba(17, 24, 39, 0.2);
+    }
+    .eyebrow {
+      font: 800 13px/1.2 Arial, sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.82;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5.6vw, 70px);
+      line-height: 0.98;
+    }
+    .lead {
+      max-width: 900px;
+      margin: 0;
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      font: 800 12px/1 Arial, sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    section {
+      margin: 22px 0;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--paper);
+      box-shadow: 0 16px 40px rgba(17, 24, 39, 0.08);
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+    .num {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--deep);
+      color: #fff;
+      font: 900 15px/1 Arial, sans-serif;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(26px, 3vw, 42px);
+      line-height: 1.12;
+    }
+    p { margin: 12px 0; font-size: 18px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffaf3;
+    }
+    .stat span {
+      display: block;
+      font: 800 12px/1.2 Arial, sans-serif;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .stat strong {
+      display: block;
+      margin: 6px 0 4px;
+      font-size: 28px;
+      line-height: 1.05;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      overflow: hidden;
+      border-radius: 16px;
+      background: #fff;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 15px;
+    }
+    th {
+      font: 800 12px/1.2 Arial, sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: #f8f3ea;
+    }
+    tr:last-child td { border-bottom: none; }
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+    li { margin: 8px 0; }
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .panel h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      background: rgba(183, 121, 31, 0.08);
+      font-size: 15px;
+    }
+    .sources li {
+      word-break: break-word;
+    }
+    .footer {
+      padding: 12px 0 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 820px) {
+      .hero { padding: 38px 24px; }
+      section { padding: 24px; }
+      .stats, .grid-two { grid-template-columns: 1fr; }
+      .section-head { grid-template-columns: 1fr; }
+      .num { width: 40px; height: 40px; }
+      th, td { font-size: 14px; }
+    }
   </style>
 </head>
 <body>
-<nav class="nav"><a href="../../index.html">The Sports Report</a><a href="../../index.html#report-grid">All F1 reports</a></nav>
-<main class="wrap">
-  <header class="hero">
-    <div class="eyebrow">Hungarian GP Race Focus · 2026-07-26</div>
-    <h1>F1 2026 匈牙利站週日焦點：Norris 桿位出發，Mercedes 與 Ferrari 都被迫追節奏</h1>
-    <p class="lead">Norris 掌握桿位，但 Hungaroring 的正賽勝負不只看起跑。輪胎退化、交通、進站窗口與 Mercedes 的雙車壓力，會決定誰能把排位速度轉成積分。</p>
-    <div class="chips"><span class="chip">Norris pole</span><span class="chip">Mercedes pressure</span><span class="chip">Ferrari strategy</span><span class="chip">Hungaroring traffic</span></div>
-  </header>
-  <section><div class="head"><div class="num">01</div><h2>Norris 的優勢是真實的，但這站最怕被節奏反咬</h2></div><div class="stats"><div class="stat"><span>Pole</span><b>Norris</b><small>前排主動權</small></div><div class="stat"><span>Track</span><b>Low passing</b><small>位置價值高</small></div><div class="stat"><span>Threat</span><b>Mercedes</b><small>長距離穩定性</small></div><div class="stat"><span>Variable</span><b>Pit window</b><small>策略可能改寫排序</small></div></div><p>Hungaroring 的桿位價值很高，因為後車即使有速度，也不容易在連續彎區找到乾淨攻擊點。Norris 最大任務是把起跑與第一段輪胎管理連在一起：只要能把前方空氣握住，McLaren 就能讓 Mercedes 與 Ferrari 被迫先做策略選擇。</p><p>問題在於，這條賽道也很容易讓領先者被輪胎節奏反咬。如果 Norris 太早推過頭，中段 stint 可能讓後方車隊用 undercut 或延後進站製造壓力。這不是單圈速度比賽，而是誰能把 70 圈切成最少風險的幾段。</p></section>
-<section><div class="head"><div class="num">02</div><h2>Mercedes 與 Ferrari 的共同難題：不能等，也不能亂賭</h2></div><p>Mercedes 仍握有年度主線優勢，但 Hungary 不是可以用純速度硬超的地方。如果 Russell 或 Antonelli 被困在車流裡，車隊就必須靠進站節奏把空氣搶回來。</p><p>Ferrari 的難題類似，但容錯更小。若 Leclerc 或隊友無法在第一圈改善位置，紅軍很可能只能等待安全車或輪胎衰退差。這種情境下，Hungary 正賽最值得看的不是誰最快，而是哪支車隊最早看懂輪胎曲線。</p></section>
-  <section><div class="head"><div class="num">SRC</div><h2>Sources</h2></div><ul><li><a href="https://www.formula1.com/en/racing/2026/Hungary" target="_blank" rel="noopener">Formula 1: 2026 Hungarian Grand Prix schedule and results</a></li><li><a href="https://www.fia.com/events/fia-formula-one-world-championship/season-2026/2026-hungarian-grand-prix" target="_blank" rel="noopener">FIA: 2026 Hungarian Grand Prix event documents</a></li></ul></section>
-</main>
-<footer class="foot"><a href="../../index.html">Back to The Sports Report</a></footer>
+  <nav class="nav">
+    <a href="../../index.html">The Sports Report</a>
+    <a href="../../index.html#report-grid">All F1 reports</a>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Hungarian GP Monday Review · 2026-07-27 Asia/Taipei</div>
+      <h1>McLaren 終於開胡，Norris 在匈牙利站頂住亂流奪勝</h1>
+      <p class="lead">2026 年 7 月 26 日的 Hungaroring 正賽把三支前段車隊的長處與弱點一次攤開：Norris 把 pole 轉成 McLaren 本季首場正賽勝利，Verstappen 在機械抱怨中守住第二，Antonelli 則替 Mercedes 把冠軍積分安全帶進夏休。</p>
+      <div class="chips">
+        <span class="chip">Winner · Norris</span>
+        <span class="chip">Piastri DNF</span>
+        <span class="chip">Russell Recovery</span>
+        <span class="chip">Next · Netherlands</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-head">
+        <div class="num">01</div>
+        <div>
+          <h2>賽事總結</h2>
+          <p>Norris 雖然起跑後在二號彎失守，一度被隊友 Piastri 超車，但 McLaren 在第二輪停站選擇先收 Piastri、放 Norris 進乾淨空氣拉圈速，成功把戰局翻回來。Piastri 隨後在套圈車流中與 Carlos Sainz 發生碰觸，之後又遭遇變速箱故障退賽，讓原本看似雙車包辦前二的局面瞬間崩解。</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span>Winner</span>
+          <strong>Norris</strong>
+          <div>1:39:56.180</div>
+        </div>
+        <div class="stat">
+          <span>Margin</span>
+          <strong>15.080s</strong>
+          <div>勝過 Verstappen</div>
+        </div>
+        <div class="stat">
+          <span>Big Swing</span>
+          <strong>Piastri DNF</strong>
+          <div>領跑後退賽</div>
+        </div>
+        <div class="stat">
+          <span>Next Race</span>
+          <strong>Netherlands</strong>
+          <div>2026-08-21 至 2026-08-23</div>
+        </div>
+      </div>
+      <p>Red Bull 把週六的低潮轉成週日的實戰速度。Verstappen 雖然在官方賽報中被記錄到無線電抱怨阻尼與換檔問題，但仍靠正確的時機與穩定節奏拿下第二；Hadjar 再進前六，代表紅牛體系在夏休前已經把單圈不穩定，部分轉化成長距離競爭力。</p>
+      <p>Mercedes 這站像是把整個賽季的縮影濃縮在 70 圈裡。Antonelli 因黃旗違規在排位後被罰退三位，最後仍追到第三；Russell 則因 anti-stall 觸發一度掉到隊尾，最終追回第七。速度與搶分能力都在，但執行與可靠性仍讓他們無法輕鬆帶走週末。</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">02</div>
+        <div>
+          <h2>正賽前十</h2>
+          <p>以下依 Formula1.com 官方正賽成績頁整理。</p>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Time / Gap</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>1:39:56.180</td><td>25</td></tr>
+          <tr><td>2</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>+15.080s</td><td>18</td></tr>
+          <tr><td>3</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+18.728s</td><td>15</td></tr>
+          <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>+23.840s</td><td>12</td></tr>
+          <tr><td>5</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+24.540s</td><td>10</td></tr>
+          <tr><td>6</td><td>Isack Hadjar</td><td>Red Bull Racing</td><td>+55.488s</td><td>8</td></tr>
+          <tr><td>7</td><td>George Russell</td><td>Mercedes</td><td>+57.503s</td><td>6</td></tr>
+          <tr><td>8</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+1 lap</td><td>4</td></tr>
+          <tr><td>9</td><td>Nico Hulkenberg</td><td>Audi</td><td>+1 lap</td><td>2</td></tr>
+          <tr><td>10</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+1 lap</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <div class="note">官方結果頁另註記：Hamilton 因 pit lane 超速被加罰五秒；Bearman 因無視藍旗被加罰五秒。兩項處分未改變前十名單。</div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">03</div>
+        <div>
+          <h2>關鍵事件</h2>
+          <p>影響勝負與積分面的主要轉折如下。</p>
+        </div>
+      </div>
+      <ul>
+        <li>起跑第一圈：Norris 從 pole 出發，但在二號彎被 Piastri 反超，McLaren 一度形成隊內 1-2，但順序不是預期的 Norris 在前。</li>
+        <li>中段第一個策略分水嶺：Hamilton 率先進站，把 Ferrari 的兩停節奏提前，也迫使前段集團更早進入 undercut / overcut 計算。</li>
+        <li>比賽中段決勝點：McLaren 先收 Piastri 第二停，讓 Norris 取得乾淨空氣；Piastri 回到賽道後卡進套圈車流，並與 Sainz 發生接觸，直接把領先權拱手讓出。</li>
+        <li>最後 15 圈：Piastri 因變速箱故障退賽，McLaren 從穩定雙車高分轉成 Norris 單車收割，但仍拿到本季正賽首勝。</li>
+        <li>Mercedes 兩極化：Antonelli 從受罰後的更差起跑位置追回頒獎台，Russell 則在 anti-stall 失誤掉到第 19 後追回第七，保住車隊榜領先。</li>
+        <li>紅牛中場突破：Verstappen 克服機械抱怨衝上第二，Hadjar 拿下第六，讓 Red Bull Racing 單站進帳 26 分，成為前四隊中單站收分最高者。</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">04</div>
+        <div>
+          <h2>積分榜變化</h2>
+          <p>以下以 2026-07-27 讀到的官方積分榜為準，括號內為相較比利時站後的增量。</p>
+        </div>
+      </div>
+      <div class="grid-two">
+        <div class="panel">
+          <h3>車手榜前六</h3>
+          <ul>
+            <li>1. Kimi Antonelli 219 分（+15）</li>
+            <li>2. Lewis Hamilton 169 分（+10）</li>
+            <li>3. George Russell 160 分（+6）</li>
+            <li>4. Charles Leclerc 138 分（+12）</li>
+            <li>5. Lando Norris 128 分（+25）</li>
+            <li>6. Max Verstappen 109 分（+18）</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>車隊榜前六</h3>
+          <ul>
+            <li>1. Mercedes 379 分（+21）</li>
+            <li>2. Ferrari 307 分（+22）</li>
+            <li>3. McLaren 220 分（+25）</li>
+            <li>4. Red Bull Racing 177 分（+26）</li>
+            <li>5. Racing Bulls 66 分（+5）</li>
+            <li>6. Alpine 61 分（+0）</li>
+          </ul>
+        </div>
+      </div>
+      <p>Norris 這 25 分最直接的效果，是把自己推上車手榜第五，並讓 McLaren 把與 Ferrari 的差距縮到 87 分。Red Bull 雖然仍落後 McLaren，但這站的 26 分說明他們在週日長距離已經能穩定跟前段三隊同台競爭。</p>
+      <p>中段車隊的變化更明顯。Racing Bulls 靠 Lawson 第八與 Lindblad 第十的雙積分，從與 Alpine 同分變成單獨第五；Audi 也靠 Hulkenberg 的第九，把 Williams 壓回第九名。</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">05</div>
+        <div>
+          <h2>策略與車隊觀察</h2>
+          <p>這一站的差距，主要不是誰最會跑第一段，而是誰在第二段之後更能利用乾淨空氣、交通處理與輪胎切換。</p>
+        </div>
+      </div>
+      <p><strong>McLaren：</strong>Andrea Stella 在官方車隊引述裡把這場定義為策略與運動原則都執行到位的一戰。這個說法基本成立，因為先收 Piastri 的第二停確實改寫了隊內勝負；但反面是，若沒有那次交通與碰觸，McLaren 也未必能如此乾淨地把勝利留給 Norris。Piastri 自述換上 Hard 後就失去節奏，代表 McLaren 雖然升級後有取勝速度，輪胎工作區仍不完全穩定。</p>
+      <p><strong>Red Bull Racing：</strong>Verstappen 在官方賽報中明確抱怨阻尼與換檔，但紅牛仍靠比賽節奏拿到第二，Hadjar 甚至把連續前六延長到七場。這顯示 RB22 在單圈設定不理想時，仍有靠正賽策略與輪胎管理救回週末的能力。</p>
+      <p><strong>Mercedes：</strong>Toto Wolff 在官方引述中點出 Russell 的 anti-stall 問題與可靠性仍是夏休重點。車隊仍領先雙榜，但匈牙利站再次說明 Mercedes 的速度優勢，並沒有大到可以無痛吸收執行失誤。</p>
+      <p><strong>Ferrari：</strong>Ferrari 透過 Hamilton 早停啟動整個前段停站鏈，也成功把 Leclerc 與 Hamilton 都放進前五。但起跑掉位、回到賽道後的攻防，以及 Hamilton 的 pit lane 超速處分，讓這套策略少了最後的收尾。</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">06</div>
+        <div>
+          <h2>下一站影響</h2>
+          <p>官方賽曆顯示，夏休後下一場是 2026-08-21 至 2026-08-23 的荷蘭大獎賽。</p>
+        </div>
+      </div>
+      <ul>
+        <li>McLaren 帶著本季首場正賽勝利進入夏休，最大的收穫不是 25 分本身，而是證明升級包已足夠支撐正式比賽取勝。</li>
+        <li>Mercedes 雖然仍領先車手榜與車隊榜，但匈牙利站把可靠性與起跑執行問題再度放大，夏休後若同樣出現失誤，積分緩衝不算絕對安全。</li>
+        <li>Red Bull 近四站的長距離競爭力明顯提升，若 Zandvoort 能把週六單圈整合好，Verstappen 會是比匈牙利更直接的爭勝威脅。</li>
+        <li>中段車隊方面，Racing Bulls 現在已經壓過 Alpine；夏休後的開發效率，很可能決定第五名究竟是短暫易手，還是正式換班。</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">07</div>
+        <div>
+          <h2>資料來源</h2>
+          <p>以下來源皆為本次執行時可公開驗證的最新頁面。</p>
+        </div>
+      </div>
+      <ul class="sources">
+        <li><a href="https://www.formula1.com/en/results/2026/races/1291/hungary/race-result" target="_blank" rel="noopener">Formula 1 Official Results: Hungarian Grand Prix 2026 race result</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/norris-beats-verstappen-and-antonelli-to-victory-in-dramatic-hungarian-gp.5JQmohRAKABD2asRsMWogj.5JQmohRAKABD2asRsMWogj" target="_blank" rel="noopener">Formula 1 race report: Norris beats Verstappen and Antonelli to victory in dramatic Hungarian GP</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-hungary-2026.40qHMaNrP6jNXwrULAwt9J" target="_blank" rel="noopener">Formula 1 team quotes: What the teams said – Race day in Hungary</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/piastri-reacts-to-getting-taken-out-by-a-backmarker-in-unusual-hungarian-gp-incident.7D4Ic8FN4rvg9rvqzY2cbW" target="_blank" rel="noopener">Formula 1 follow-up: Piastri reacts to backmarker contact and retirement</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noopener">Formula 1 official 2026 drivers' standings</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/team" target="_blank" rel="noopener">Formula 1 official 2026 teams' standings</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026" target="_blank" rel="noopener">Formula 1 official 2026 race calendar</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/antonelli-hit-with-grid-penalty-for-hungarian-gp-after-yellow-flag-breach-in-qualifying.1C9AT9OzLEOIUNzDfTsgdL.1C9AT9OzLEOIUNzDfTsgdL" target="_blank" rel="noopener">Formula 1 steward report summary: Antonelli grid penalty before the race</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="footer">Built for Monday review automation · UTF-8 output in new_incoming</div>
 </body>
 </html>
