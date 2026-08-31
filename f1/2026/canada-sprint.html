@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 加拿大站 Sprint 日：Russell 先扛住隊內碰撞，再把桿位留在 Mercedes | The Sports Report</title>
+  <meta name="description" content="回填 2026 加拿大站 Sprint 日報，整理官方 Sprint、排位賽結果，與 Mercedes 內戰後的積分與正賽格局。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 加拿大站 Sprint 日：Russell 先扛住隊內碰撞，再把桿位留在 Mercedes" />
+  <meta property="og:description" content="Russell 先在 Sprint 擋住 Antonelli 與 Norris，再用最後一圈把正賽桿位留在 Mercedes 手上。" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f7efe3;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #162133;
+      --muted: #617086;
+      --line: rgba(22, 33, 51, 0.12);
+      --deep: #0f172a;
+      --red: #a61d33;
+      --gold: #bc8a3f;
+      --teal: #0f766e;
+      --shadow: 0 18px 44px rgba(15, 23, 42, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.76;
+      background:
+        radial-gradient(circle at top left, rgba(166, 29, 51, 0.12), transparent 24%),
+        radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 28%),
+        linear-gradient(180deg, #fbf6ef 0%, #ede1d0 100%);
+    }
+    a { color: var(--red); }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+    }
+    .nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font: 800 14px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.04em;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+    .hero {
+      margin: 26px 0 22px;
+      padding: 48px 34px;
+      border-radius: 0 0 28px 28px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 90% 12%, rgba(255,255,255,0.12), transparent 20%),
+        linear-gradient(135deg, #111827 0%, #134e4a 46%, #9f1239 100%);
+      box-shadow: 0 24px 60px rgba(17, 24, 39, 0.18);
+    }
+    .eyebrow {
+      font: 800 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.84;
+    }
+    h1 {
+      margin: 16px 0 12px;
+      font-size: clamp(34px, 5.6vw, 70px);
+      line-height: 1.02;
+    }
+    .lead {
+      max-width: 920px;
+      margin: 0;
+      font-size: 19px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      font: 800 12px/1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    section {
+      margin: 22px 0;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 14px;
+    }
+    .num {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--deep);
+      color: #fff;
+      font: 900 15px/1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 {
+      margin: 0;
+      font-size: clamp(26px, 3vw, 40px);
+      line-height: 1.12;
+    }
+    p {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffaf4;
+    }
+    .stat span {
+      display: block;
+      font: 800 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .stat strong {
+      display: block;
+      margin: 6px 0 4px;
+      font-size: 28px;
+      line-height: 1.05;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 15px;
+    }
+    th {
+      background: #f8f1e6;
+      color: var(--muted);
+      font: 800 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    tr:last-child td { border-bottom: none; }
+    .grid-two {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .panel h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+    li { margin: 8px 0; }
+    .note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      background: rgba(188, 138, 63, 0.1);
+      font-size: 15px;
+    }
+    .sources li { word-break: break-word; }
+    .footer {
+      padding: 12px 0 26px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      .hero { padding: 38px 24px; }
+      section { padding: 24px; }
+      .stats, .grid-two { grid-template-columns: 1fr; }
+      .section-head { grid-template-columns: 1fr; }
+      .num { width: 40px; height: 40px; }
+      th, td, p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="../../index.html">The Sports Report</a>
+    <a href="../../index.html#report-grid">All F1 reports</a>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Canadian GP Sprint Dispatch · Backfill for 2026-05-24 Asia/Taipei</div>
+      <h1>Russell 先扛住隊內肉搏<br />再把桿位留在 Mercedes</h1>
+      <p class="lead">這篇是補稿，但資料不是補想像。2026 加拿大站 Sprint 日的官方結果已經把主線講得很清楚：Mercedes 在唯一練習、Sprint Qualifying、Sprint、正賽排位四個節點都站在最前面，可真正讓週末變緊的，不是圈速本身，而是 Russell 與 Antonelli 在短程賽已經先把隊內冠軍線撞出火花。</p>
+      <div class="chips">
+        <span class="chip">Sprint Winner · Russell</span>
+        <span class="chip">Pole · 1:12.578</span>
+        <span class="chip">Front Row Lockout</span>
+        <span class="chip">Title Gap · 20 to 18</span>
+      </div>
+    </header>
+
+    <section>
+      <div class="section-head">
+        <div class="num">01</div>
+        <div>
+          <h2>一天兩張成績單，Mercedes 先吵起來，也先把主導權拿走</h2>
+          <p>加拿大站是 2026 年的 Sprint 週末，節奏本來就比一般分站更殘酷。Mercedes 先在唯一一節練習讓 Antonelli 與 Russell 包辦前二，接著 Russell 以 1 分 12 秒 965 拿下 Sprint Pole。真正的轉折發生在 Sprint 正賽：Russell 雖然守住領先，但第 6 圈開始就和 Antonelli 進入輪對輪近身戰，兩人碰輪後，Antonelli 一度被擠上草地，Norris 也趁勢撿到第二名。</p>
+          <p>這段對 Mercedes 來說既是警報，也是好消息。警報是隊內爭冠真的不再只是積分表上的數字；好消息則是，兩位車手在情緒最熱的幾小時後，又一起把正賽前排鎖回來。Russell 晚上在 Q3 最後一擊跑出 1 分 12 秒 578，以 0.068 秒再壓過 Antonelli。換句話說，Mercedes 不只沒被白天那次碰撞拖垮，反而把它硬轉成了前排 1-2 的氣勢。</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span>FP1</span>
+          <strong>Antonelli</strong>
+          <div>1:13.402，Mercedes 前二</div>
+        </div>
+        <div class="stat">
+          <span>Sprint</span>
+          <strong>Russell</strong>
+          <div>23 圈，28:50.951</div>
+        </div>
+        <div class="stat">
+          <span>Qualifying</span>
+          <strong>Russell</strong>
+          <div>1:12.578 桿位</div>
+        </div>
+        <div class="stat">
+          <span>Standings</span>
+          <strong>18 分</strong>
+          <div>Russell 追到只差 Antonelli 18 分</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">02</div>
+        <div>
+          <h2>Sprint 前八：Russell 守住，McLaren 兩車都把分數吃滿</h2>
+          <p>如果只看 Sprint 名次，Mercedes 還是贏家；但若從整體週末趨勢來看，McLaren 其實也沒空手而回。Norris 與 Piastri 拿到第二、第四，兩車合計 12 分，等於把 Ferrari 原本在車隊榜的 16 分優勢先削到只剩 11 分。</p>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Time / Gap</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>George Russell</td><td>Mercedes</td><td>28:50.951</td><td>8</td></tr>
+          <tr><td>2</td><td>Lando Norris</td><td>McLaren</td><td>+1.272s</td><td>7</td></tr>
+          <tr><td>3</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+1.843s</td><td>6</td></tr>
+          <tr><td>4</td><td>Oscar Piastri</td><td>McLaren</td><td>+9.797s</td><td>5</td></tr>
+          <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>+9.929s</td><td>4</td></tr>
+          <tr><td>6</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+10.545s</td><td>3</td></tr>
+          <tr><td>7</td><td>Max Verstappen</td><td>Red Bull</td><td>+15.935s</td><td>2</td></tr>
+          <tr><td>8</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+29.710s</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <div class="note">依加拿大站前的官方積分基線計算，Antonelli 從 100 分升到 106 分，Russell 從 80 分升到 88 分，車手榜差距由 20 分縮到 18 分。</div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">03</div>
+        <div>
+          <h2>正賽前十格位：Mercedes 再次 1-2，McLaren 緊貼在第二排</h2>
+          <p>晚上的排位結果把週日結構釘得更清楚。Russell 不是靠白天的 Sprint 吃老本，而是在 Q3 最後一圈重新搶回主導權。Antonelli 只慢 0.068 秒，Norris 與 Piastri 也都留在一個可以直接施壓的距離。Ferrari 則是 Hamilton 第五、Leclerc 第八，單圈節奏沒有完全對齊。</p>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Grid</th>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>George Russell</td><td>Mercedes</td><td>1:12.578</td></tr>
+          <tr><td>2</td><td>Kimi Antonelli</td><td>Mercedes</td><td>1:12.646</td></tr>
+          <tr><td>3</td><td>Lando Norris</td><td>McLaren</td><td>1:12.729</td></tr>
+          <tr><td>4</td><td>Oscar Piastri</td><td>McLaren</td><td>1:12.781</td></tr>
+          <tr><td>5</td><td>Lewis Hamilton</td><td>Ferrari</td><td>1:12.868</td></tr>
+          <tr><td>6</td><td>Max Verstappen</td><td>Red Bull</td><td>1:12.907</td></tr>
+          <tr><td>7</td><td>Isack Hadjar</td><td>Red Bull</td><td>1:12.935</td></tr>
+          <tr><td>8</td><td>Charles Leclerc</td><td>Ferrari</td><td>1:12.976</td></tr>
+          <tr><td>9</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>1:13.280</td></tr>
+          <tr><td>10</td><td>Franco Colapinto</td><td>Alpine</td><td>1:13.697</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">04</div>
+        <div>
+          <h2>三個真正會延續到正賽的週六訊號</h2>
+        </div>
+      </div>
+      <div class="grid-two">
+        <article class="panel">
+          <h3>Mercedes 的問題不是快不快，而是怎麼讓兩台車一起活到終點</h3>
+          <p>從 FP1 到排位，Mercedes 一直都在最前面。可 Sprint 已經證明，當 Russell 與 Antonelli 同時有機會拿分、也同時覺得自己比較快時，內耗風險會比外敵更直接。正賽前排 1-2 很漂亮，但進 Turn 1 後怎麼管理，才是 Toto Wolff 真正要處理的事。</p>
+        </article>
+        <article class="panel">
+          <h3>McLaren 沒搶到頭條，卻把自己放在最會收割的位置</h3>
+          <p>Norris 在 Sprint 正是靠 Mercedes 碰撞撿到第二，晚上又把正賽第三格穩穩拿住。Piastri 也一直跟在旁邊。這代表只要前排再有一次猶豫或互卡，McLaren 兩台車都在最短路徑上。</p>
+        </article>
+        <article class="panel">
+          <h3>Ferrari 還在場，但週六節奏沒有完全接上</h3>
+          <p>Hamilton 在 Sprint 掉到第六，排位則回到第五，算是把損失先止住；Leclerc 則是 Sprint 第五、排位第八。Ferrari 不是沒速度，而是目前還沒有把單圈與短程節奏同時鎖進同一個工作窗。</p>
+        </article>
+        <article class="panel">
+          <h3>中段班的亮點是 Lindblad 與 Colapinto</h3>
+          <p>Lindblad 在 Sprint 搶到第八分，排位又進前十；Colapinto 也把 Alpine 帶進第十。這種週末往往不只看四大車隊，因為安全車或前排事故一來，這些中段起跑位就會立刻變得很有價值。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">05</div>
+        <div>
+          <h2>積分影響：Mercedes 內戰縮小，Ferrari 對 McLaren 的緩衝也被吃掉</h2>
+        </div>
+      </div>
+      <ul>
+        <li>車手榜方面，Antonelli 雖然還是領先，但 Russell 靠 Sprint 8 分對 6 分，差距已從 20 分縮到 18 分。</li>
+        <li>Leclerc 與 Hamilton 各拿 4 分、3 分，Ferrari Sprint 單日共進帳 7 分。</li>
+        <li>McLaren 兩車拿到 12 分，等於先把 Ferrari 對 McLaren 的車隊榜領先從 16 分壓到 11 分。</li>
+        <li>正賽發車格則讓 Mercedes 再次握住最大主動權，但這個主動權同時也把隊內風險放到最前排。</li>
+      </ul>
+      <div class="note">這篇回填稿只使用已能驗證的官方結果、官方賽後報導與加拿大站前的既有積分基線；沒有補寫當下不存在的即時反應，也沒有把後來的正賽結果倒灌回週六敘事。</div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">06</div>
+        <div>
+          <h2>資料來源</h2>
+        </div>
+      </div>
+      <ol class="sources">
+        <li><a href="https://www.formula1.com/en/latest/article/formula-1-reveals-calendar-for-2026-season.YctbMZWqBvrgyddrnauo8.YctbMZWqBvrgyddrnauo8" target="_blank" rel="noopener noreferrer">Formula 1 2026 calendar</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026/canada" target="_blank" rel="noopener noreferrer">Formula 1 Lenovo Grand Prix du Canada 2026 schedule and results hub</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1285/canada/practice/1" target="_blank" rel="noopener noreferrer">Canadian GP 2026 Practice 1 official classification</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/russell-grabs-pole-position-in-canada-sprint-qualifying-ahead-of-antonelli-and-norris.7Fm9bjk84nwzOysiMriBCs" target="_blank" rel="noopener noreferrer">Sprint Qualifying report: Russell ahead of Antonelli and Norris</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1285/canada/sprint-qualifying" target="_blank" rel="noopener noreferrer">Canadian GP 2026 Sprint Qualifying official classification</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/russell-clings-on-to-win-canada-sprint-after-clashing-with-antonelli.6Ggn92sBNEdqizMYOT44fb" target="_blank" rel="noopener noreferrer">Sprint report: Russell beats Norris and Antonelli after Mercedes clash</a></li>
+        <li><a href="https://www.formula1.com/en/results/2025/races/1285/canada/sprint-results" target="_blank" rel="noopener noreferrer">Canadian GP 2026 Sprint official classification</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/russell-denies-mercedes-rival-antonelli-pole-position-for-canadian-grand-prix-with-last-gasp-effort.5b91PZNqJKlwMzExUu9twT" target="_blank" rel="noopener noreferrer">Qualifying report: Russell secures Canadian GP pole</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-canadian-grand-prix-2026.3E6do0IXSg2EAW3WbuShR2" target="_blank" rel="noopener noreferrer">Official grid: who starts where in Montreal</a></li>
+      </ol>
+    </section>
+
+    <div class="footer">
+      Backfill generated on 2026-08-31 Asia/Taipei for the missed Canada Sprint article slot.
+    </div>
+  </main>
+</body>
+</html>

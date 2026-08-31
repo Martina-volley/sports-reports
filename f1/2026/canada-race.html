@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 加拿大大獎賽賽後：Antonelli 四連勝到手，Russell 退賽讓 Mercedes 內戰直接變調 | The Sports Report</title>
+  <meta name="description" content="補產 2026 加拿大大獎賽賽後回顧，整理官方前十、關鍵事件、積分榜變化、車隊策略與摩納哥站前瞻。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 加拿大大獎賽賽後：Antonelli 四連勝到手，Russell 退賽讓 Mercedes 內戰直接變調" />
+  <meta property="og:description" content="Antonelli 在蒙特婁收下四連勝，但真正決定戰局的是 Russell 動力單元退賽，以及 McLaren 在變天前的錯誤起跑判斷。" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4ece0;
+      --paper: rgba(255, 251, 245, 0.95);
+      --ink: #182233;
+      --muted: #5b6777;
+      --line: rgba(24, 34, 51, 0.12);
+      --deep: #101828;
+      --red: #a61d33;
+      --gold: #b8873b;
+      --teal: #0f766e;
+      --blue: #1d4ed8;
+      --shadow: 0 20px 48px rgba(16, 24, 40, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at top left, rgba(29, 78, 216, 0.12), transparent 24%),
+        radial-gradient(circle at top right, rgba(166, 29, 51, 0.14), transparent 24%),
+        linear-gradient(180deg, #faf5ed 0%, #eadcca 100%);
+    }
+    a { color: var(--red); }
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+    }
+    .nav a {
+      color: var(--ink);
+      text-decoration: none;
+      font: 800 14px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.04em;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding-bottom: 44px;
+    }
+    .hero {
+      margin: 26px 0 22px;
+      padding: 48px 34px;
+      border-radius: 0 0 28px 28px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 84% 18%, rgba(255,255,255,0.14), transparent 18%),
+        linear-gradient(135deg, #111827 0%, #143c7d 44%, #9f1239 100%);
+      box-shadow: 0 24px 60px rgba(17, 24, 39, 0.18);
+    }
+    .eyebrow {
+      font: 800 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.84;
+    }
+    h1 {
+      margin: 16px 0 12px;
+      font-size: clamp(34px, 5.6vw, 68px);
+      line-height: 1.04;
+    }
+    .lead {
+      max-width: 920px;
+      margin: 0;
+      font-size: 19px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+      font: 800 12px/1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    section {
+      margin: 22px 0;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(26px, 3vw, 40px);
+      line-height: 1.12;
+    }
+    p {
+      margin: 12px 0;
+      font-size: 18px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffaf4;
+    }
+    .stat span {
+      display: block;
+      font: 800 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .stat strong {
+      display: block;
+      margin: 6px 0 4px;
+      font-size: 28px;
+      line-height: 1.05;
+    }
+    .takeaways {
+      display: grid;
+      gap: 14px;
+    }
+    .insight {
+      margin: 0;
+      padding: 18px 18px 18px 58px;
+      border-radius: 18px;
+      background: #fff;
+      position: relative;
+    }
+    .insight__num {
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      font: 900 24px/1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      color: var(--red);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #fff;
+    }
+    th, td {
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 16px;
+    }
+    th {
+      font: 800 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-transform: uppercase;
+      background: #f8f1e8;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+    .timeline-item {
+      padding: 16px 18px;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 16px 16px 0;
+      background: rgba(29, 78, 216, 0.06);
+    }
+    .timeline-item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-size: 17px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+    li {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+    .sources li {
+      word-break: break-word;
+    }
+    @media (max-width: 860px) {
+      .stats, .two-col { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 38px 22px; }
+      .wrap { width: min(100% - 20px, 1120px); }
+      section { padding: 22px 18px; }
+      .stats, .two-col { grid-template-columns: 1fr; }
+      th, td { font-size: 14px; padding: 12px 10px; }
+      p { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="../../index.html">← 返回首頁</a>
+    <a href="#sources">資料來源</a>
+  </nav>
+
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">F1 2026 · Round 5 · Canadian Grand Prix · Race Review</div>
+      <h1>加拿大站不是 Antonelli 一個人的秀，真正把戰局切開的是 Russell 退賽</h1>
+      <p class="lead">
+        Kimi Antonelli 在蒙特婁收下 2026 年第 4 場連續正賽勝利，但這場比賽的轉折點不是單圈速度，而是 Mercedes 內戰打到第 30 圈後突然中斷，McLaren 又在乾濕交界時做錯了起跑輪胎判斷。
+      </p>
+      <div class="chips">
+        <span class="chip">Winner · Antonelli</span>
+        <span class="chip">P2 · Hamilton</span>
+        <span class="chip">P3 · Verstappen</span>
+        <span class="chip">Race Day · 2026-05-24</span>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span>Official Result</span>
+          <strong>1:28:15.758</strong>
+          Antonelli 完成 68 圈奪冠。
+        </div>
+        <div class="stat">
+          <span>Winning Margin</span>
+          <strong>10.768 秒</strong>
+          Hamilton 拿下 Ferrari 代表作等級的亞軍。
+        </div>
+        <div class="stat">
+          <span>Championship Swing</span>
+          <strong>+43 分</strong>
+          Antonelli 對 Russell 的車手榜領先擴大到 43 分。
+        </div>
+        <div class="stat">
+          <span>Weekend Format</span>
+          <strong>Sprint</strong>
+          Russell 先拿 Sprint 勝利，正賽卻零分收場。
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>這場比賽先看三件事</h2>
+      <div class="takeaways">
+        <p class="insight"><span class="insight__num">1</span><strong>Mercedes 先內耗，然後只剩 Antonelli 能把局收乾淨。</strong> Russell 從桿位掉到後面後追回領先，兩台銀箭在前段一路換位、鎖死、並排，節奏很硬。比賽到第 30 圈突然因 Russell 動力單元問題中止，Mercedes 少了本來最穩的雙保險，Antonelli 才真正把比賽接管。</p>
+        <p class="insight"><span class="insight__num">2</span><strong>McLaren 把好好的開局自己打散。</strong> Norris 發車衝上第一，但車隊選擇讓 Norris 與 Piastri 起跑用半雨胎，雨勢卻在起跑前後快速退去，兩車很快都得進站換回光頭胎。Norris 後面還遇到散熱清理與終端變速箱故障，Piastri 則因碰撞 Albon 吃到 10 秒罰時。</p>
+        <p class="insight"><span class="insight__num">3</span><strong>Ferrari 與 Red Bull 都拿到能帶去摩納哥的訊號。</strong> Hamilton 拿下加盟 Ferrari 後最佳正賽成績，Verstappen 也終於站上 2026 年首座頒獎台。這兩隊雖然還沒完全追上 Mercedes，但至少證明加拿大不是只有一支車隊在跑。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>正賽前十</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Driver</th>
+            <th>Team</th>
+            <th>Time / Gap</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>1:28:15.758</td><td>25</td></tr>
+          <tr><td>2</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+10.768s</td><td>18</td></tr>
+          <tr><td>3</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>+11.276s</td><td>15</td></tr>
+          <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>+44.151s</td><td>12</td></tr>
+          <tr><td>5</td><td>Isack Hadjar</td><td>Red Bull Racing</td><td>+1 lap</td><td>10</td></tr>
+          <tr><td>6</td><td>Franco Colapinto</td><td>Alpine</td><td>+1 lap</td><td>8</td></tr>
+          <tr><td>7</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+1 lap</td><td>6</td></tr>
+          <tr><td>8</td><td>Pierre Gasly</td><td>Alpine</td><td>+1 lap</td><td>4</td></tr>
+          <tr><td>9</td><td>Carlos Sainz</td><td>Williams</td><td>+1 lap</td><td>2</td></tr>
+          <tr><td>10</td><td>Oliver Bearman</td><td>Haas</td><td>+1 lap</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p class="note">備註：Bortoleto 賽後因 VSC 違規被加罰 5 秒，但不影響前十名次。</p>
+    </section>
+
+    <section>
+      <h2>關鍵事件時間線</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>起跑前後：McLaren 壓錯天氣。</strong>
+          Norris 與 Piastri 都以半雨胎起跑，但場地乾得比預期快，Norris 雖在第一彎後衝上領先，兩台車卻都得在前兩圈內提早回 pit 換胎，等於把原本前排起跑的優勢一次吐回去。
+        </div>
+        <div class="timeline-item">
+          <strong>前 30 圈：Russell 與 Antonelli 正面互咬。</strong>
+          Mercedes 兩名車手反覆交換領先，過程中都有鎖死、跑大與並排畫面。這段纏鬥是整場正賽速度最高、風險也最大的核心段落。
+        </div>
+        <div class="timeline-item">
+          <strong>第 30 圈：Russell 動力單元故障退賽。</strong>
+          原本最像能跟 Antonelli 拚到終點的人直接退場，Russell 也從 Sprint 冠軍、正賽桿位與領跑圈段，一口氣掉成正賽零分。
+        </div>
+        <div class="timeline-item">
+          <strong>中後段：Hamilton 守住 Ferrari 週末高點。</strong>
+          Hamilton 在 Russell 退賽後卡進第二集團最前端，最後守住 Verstappen，替 Ferrari 拿到本季目前最有說服力的一場正賽。
+        </div>
+        <div class="timeline-item">
+          <strong>另一條事故線：Piastri 撞上 Albon、Norris 也沒撐到最後。</strong>
+          Piastri 在髮夾彎鎖死後碰上 Albon，讓 Williams 退賽，自己再吃 10 秒罰時；Norris 後面則因先清理散熱器、再出現終端變速箱故障而退賽，McLaren 星期天直接空手。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>積分榜變化</h2>
+      <div class="two-col">
+        <div class="card">
+          <p><strong>車手榜最直接的變化只有一個：</strong> Antonelli 靠這場勝利把自己對 Russell 的領先擴大到 43 分。這不是靠對手慢慢掉，而是 Russell 在最可能拿大分的週末突然零分，差距一次被拉開。</p>
+          <p><strong>Hamilton 這個亞軍也很值錢。</strong> 官方 lowdown 與車隊賽後說法都把這站定義成 Ferrari 至今最完整的一個週末之一，因為 Hamilton 不只站上頒獎台，Leclerc 也把車帶回第四。</p>
+        </div>
+        <div class="card">
+          <p><strong>中段集團則是 Alpine 與 Racing Bulls 收到明顯回報。</strong> Alpine 兩車進分後，車隊賽後確認自己擴大了車隊榜第 5 名優勢；Racing Bulls 也在 Lawson 第 7 名的加持下升上第 6。</p>
+          <p><strong>McLaren 的分數沒有完全歸零週末。</strong> 他們 Sprint 還拿到 Norris 第 2、Piastri 第 4，但正賽雙車失手，等於把原本可用來追 Mercedes 的完整週末只留下星期六那半天。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>策略與執行</h2>
+      <div class="two-col">
+        <div class="card">
+          <p><strong>Mercedes：</strong> Toto Wolff 賽後明講，低溫與大風讓輪胎暖胎很難，但車隊很快確認一停才是正解。真正的麻煩不是策略方向，而是兩台車在前面彼此消耗後，Russell 的電池組問題直接摧毀了原本可能的一二名。</p>
+          <p><strong>Ferrari：</strong> 這站沒有靠奇招，重點是把週末乾淨做完。Hamilton 從自由練習到正賽都有競爭力，Leclerc 雖然一整週不舒服，仍把大分帶回家。</p>
+        </div>
+        <div class="card">
+          <p><strong>McLaren：</strong> 決定賽前 5 分鐘換上半雨胎，是整場最傷的一步。車還沒真正展開 race pace，位置就先沒了，後面又碰上機械與碰撞問題，整個正賽幾乎沒有重建空間。</p>
+          <p><strong>Red Bull／Alpine：</strong> Verstappen 認為最近兩站已經比前面更接近領先集團；Alpine 則靠 Colapinto 第 6、Gasly 第 8 吃下 12 分，這種執行力對中段車隊最實際。</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>車手與車隊觀察</h2>
+      <ul>
+        <li><strong>Antonelli：</strong> 這場不是單純「從頭帶到尾」的輕鬆勝利，他前段真的得先扛住隊友，再把輪胎與節奏整理回來，冠軍含金量比最終差距看起來更高。</li>
+        <li><strong>Russell：</strong> 能拿 Sprint 冠軍、正賽桿位，也能跟 Antonelli 正面換位到第 30 圈，速度沒有輸，但機械退賽讓整個週末只剩零分，這種落差最傷冠軍線。</li>
+        <li><strong>Hamilton：</strong> Ferrari 這季一直在等一場真正站得住腳的星期天，加拿大這場就是。官方賽後甚至把它形容成他加盟後最佳週末之一，這比單看 P2 更重要。</li>
+        <li><strong>Verstappen 與 Hadjar：</strong> Red Bull 終於同場交出像樣回報，Verstappen 拿到本季首頒獎台，Hadjar 也用第 5 名補上第二車分數。</li>
+        <li><strong>Colapinto：</strong> Alpine 升級後的紅利還在延續，加拿大第 6 名再刷個人 F1 最佳完賽，這不是偶發爆點了。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>下一站影響：摩納哥會把這些問題再放大一次</h2>
+      <p>下一站是 2026 年 6 月 7 日的摩納哥大獎賽。加拿大證明 Mercedes 在低抓地與變化條件下還能把速度做出來，但 Russell 的可靠度問題必須先解；不然 Antonelli 再快，車隊也很難每次都用單車收尾。</p>
+      <p>Ferrari 看到的是希望。Hamilton 的速度與 Leclerc 的回收能力，到了低速彎密集、排位重要性極高的摩納哥，理論上只會更有戲。McLaren 則得先把策略判斷與暖胎問題處理好，因為摩納哥不像加拿大，位置丟了之後更難救。</p>
+      <p>中段集團方面，Racing Bulls 自認升級在低速彎有效，Alpine 也剛把 P5 優勢再拉開。換句話說，摩納哥不只看前排，後段積分席次也很可能比加拿大更擠。</p>
+    </section>
+
+    <section id="sources">
+      <h2>資料來源</h2>
+      <ul class="sources">
+        <li><a href="https://www.formula1.com/en/results/2026/races/1285/canada/race-result">Formula 1 Official Results: Canadian Grand Prix 2026 Race Result</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1285/canada/fastest-laps">Formula 1 Official Results: Canadian Grand Prix 2026 Fastest Laps</a></li>
+        <li><a href="https://www.formula1.com/en/racing/2026/canada">Formula 1 Race Hub: Canadian Grand Prix 2026</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/antonelli-wins-dramatic-canadian-grand-prix-as-russell-retires-amid-thrilling-mercedes-battle.MzvclJaqCidlYMUXonuDq">Official race report: Antonelli wins dramatic Canadian Grand Prix</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/canada-lowdown-all-the-key-moments-as-antonelli-extends-points-lead-while-hamilton-hits-his-stride.6yBdr6JfbGunQBMGhzdErw">Official lowdown: all the key moments from the 2026 Canadian Grand Prix</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-canada-2026.4HbLpruv73CXucAxpxWGgC">Official team quotes: Race day in Canada 2026</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/russell-clings-on-to-win-canada-sprint-after-clashing-with-antonelli.6Ggn92sBNEdqizMYOT44fb">Official sprint report: Russell wins Canada Sprint</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 荷蘭站週六：Russell 先收 Sprint，Norris 再把正賽桿位從雨邊搶回來</title>
+  <meta name="description" content="荷蘭站週六把 Zandvoort 的兩張臉一次攤開。Russell 上午先把 Sprint 勝利帶走，Norris 下午又在雨線壓近時搶下正賽桿位，Mercedes、McLaren、Ferrari 的差距仍緊到沒有一隊能放心。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 荷蘭站週六：Russell 先收 Sprint，Norris 再把正賽桿位從雨邊搶回來" />
+  <meta property="og:description" content="Russell 在 24 圈 Sprint 穩住全場，Norris 則在正賽排位最後幾分鐘逆轉 Russell 與 Antonelli，週六把週日發車格與前線壓力一起定型。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --paper: rgba(255, 251, 246, 0.95);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --blue: #1d4ed8;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(29, 78, 216, 0.13), transparent 23%),
+        radial-gradient(circle at 88% 0%, rgba(194, 65, 12, 0.14), transparent 28%),
+        linear-gradient(180deg, #fbf7f2 0%, #ece3d8 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(29,78,216,0.82) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 860px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 12 | Saturday Dispatch</div>
+      <h1>荷蘭站週六把兩件事一起講清楚：Russell 有分數，Norris 有桿位</h1>
+      <p>這篇是補稿，對應 2026 年 8 月 22 日的荷蘭站週六內容。George Russell 上午先把 24 圈 Sprint 從桿位一路守成冠軍，幫 Mercedes 多拿 8 分；到了下午正賽排位，Lando Norris 又在雨勢快進場時刷出 1 分 11 秒 163，把週日第一格搶回 McLaren。一天跑完，Mercedes 沒有失手，McLaren 也沒有退後，Ferrari 甚至一直卡在可以直接伸手碰前排的位置。</p>
+      <div class="meta">
+        <span>文章日期｜2026-08-22</span>
+        <span>補稿生成｜2026-08-31 Asia/Taipei</span>
+        <span>賽事｜Formula 1 Heineken Dutch Grand Prix 2026</span>
+        <span>kind = sat</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>荷蘭站週六屬於 Sprint 週末最密的一天，上午先跑 24 圈 Sprint，下午再決定正賽發車順位。官方結果顯示 Russell 先把 Sprint Pole 換成勝利，Leclerc 在第 18 圈超過 Norris 搶下第二；幾個小時後，Norris 又在雨線壓進來的最後幾分鐘反手拿下正賽桿位，Russell 與 Antonelli 排在後面咬得很緊。</p>
+        <p>這一天真正重要的不是誰單獨贏下一個時段，而是前四排力量幾乎沒有拉開。Sprint 有積分，Qualifying 決定週日起跑位，兩件事合在一起看，Mercedes 週六過得最穩，但 McLaren 仍握有週日發車的最佳刀口。</p>
+      </div>
+      <div class="status">資料邊界：本文以 Formula1.com 官方賽事頁、Sprint 成績頁、正賽 Qualifying 成績頁，以及官方 Sprint 與 Qualifying 報導為準。積分影響只敘述週六 Sprint 已經實際發出的分數，不把週日結果提前寫進週六稿。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Sprint Result</div>
+        <h2>Sprint 前十：Russell 穩住領跑，Leclerc 在後段把 Norris 拿下來</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>差距</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>George Russell</td><td>Mercedes</td><td>30:25.318</td><td>8</td></tr>
+            <tr><td>2</td><td>Charles Leclerc</td><td>Ferrari</td><td>+1.360s</td><td>7</td></tr>
+            <tr><td>3</td><td>Lando Norris</td><td>McLaren</td><td>+5.196s</td><td>6</td></tr>
+            <tr><td>4</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+5.581s</td><td>5</td></tr>
+            <tr><td>5</td><td>Oscar Piastri</td><td>McLaren</td><td>+10.185s</td><td>4</td></tr>
+            <tr><td>6</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>+10.529s</td><td>3</td></tr>
+            <tr><td>7</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+12.188s</td><td>2</td></tr>
+            <tr><td>8</td><td>Pierre Gasly</td><td>Alpine</td><td>+42.510s</td><td>1</td></tr>
+            <tr><td>9</td><td>Gabriel Bortoleto</td><td>Audi</td><td>+44.437s</td><td>0</td></tr>
+            <tr><td>10</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+44.971s</td><td>0</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">關鍵變化出在第 18 圈，Leclerc 從 Turn 1 內線超掉 Norris 拿下第二。Russell 則在前方一路穩住，並在雨點剛落下時收下勝利。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Qualifying</div>
+        <h2>正賽排位前十：Norris 在天氣變臉前先拿走第一格</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>Q3</th><th>圈數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>1:11.163</td><td>21</td></tr>
+            <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>1:11.265</td><td>20</td></tr>
+            <tr><td>3</td><td>Kimi Antonelli</td><td>Mercedes</td><td>1:11.296</td><td>21</td></tr>
+            <tr><td>4</td><td>Oscar Piastri</td><td>McLaren</td><td>1:11.305</td><td>21</td></tr>
+            <tr><td>5</td><td>Lewis Hamilton</td><td>Ferrari</td><td>1:11.494</td><td>25</td></tr>
+            <tr><td>6</td><td>Charles Leclerc</td><td>Ferrari</td><td>1:11.558</td><td>23</td></tr>
+            <tr><td>7</td><td>Max Verstappen</td><td>Red Bull Racing</td><td>1:11.618</td><td>22</td></tr>
+            <tr><td>8</td><td>Liam Lawson</td><td>Red Bull Racing</td><td>1:11.733</td><td>25</td></tr>
+            <tr><td>9</td><td>Gabriel Bortoleto</td><td>Audi</td><td>1:12.079</td><td>22</td></tr>
+            <tr><td>10</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>1:12.185</td><td>22</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">官方排位報導指出，Q3 最後五分鐘雨開始落下，Russell 已經把圈速再往前推一步，但 Norris 在更差的抓地條件下還能再進一步，硬是把桿位搶下來。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Saturday Read</div>
+        <h2>週六三條主線</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. Russell 把自己從追擊者推回最正中央</strong>
+            <div>週五拿 Sprint Pole 還只是起手式，真正有價值的是 Russell 在 24 圈 Sprint 裡沒讓 Norris 或 Ferrari 把他拖進失誤區。這 8 分雖然不足以翻動整個車手榜，但至少證明 Mercedes 不只 Antonelli 能拿分，Russell 也還在冠軍線上。</div>
+          </div>
+          <div class="item">
+            <strong>2. Norris 沒把上午的第三名拖成下午的退步</strong>
+            <div>Leclerc 上午超掉 Norris，等於先把 McLaren 的 Sprint 收成往下壓了一格。不過 Norris 在正賽排位立刻回手，用一圈更乾淨也更敢壓的 Q3 最後單圈拿下桿位。McLaren 沒有用週六早上的失分換來週六下午的保守。</div>
+          </div>
+          <div class="item">
+            <strong>3. Ferrari 一直都在前排附近，但還差最後一下</strong>
+            <div>Leclerc 的 Sprint 第二名很扎實，Hamilton 也有 Sprint 第七與正賽排位第五。不過到了真正決定週日第一排的時候，Ferrari 兩台車都還是少了最後半步。這不是崩盤，而是他們整天都在門口，卻沒有真正把門踢開。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Points Shift</div>
+        <h2>週六積分影響</h2>
+        <p>Sprint 已經把小幅積分變化提前發出去。Russell 比 Antonelli 多拿 3 分，Leclerc 比 Hamilton 多拿 5 分，Norris 則替 McLaren 先收下 6 分。這些分數本身不大，但荷蘭站前線差距本來就沒有大到能讓任何一隊忽略 Sprint。對 Mercedes 來說，最有價值的是兩台車都在前八；對 Ferrari 來說，Leclerc 的 Sprint 第二讓他們保住了週末的直接壓力；對 McLaren 來說，真正的翻盤點仍是 Norris 週日從第一格起跑。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Weather</div>
+        <h2>天氣沒有真的下來，卻把排位節奏全改掉</h2>
+        <p>官方報導最關鍵的一句不是雨下多大，而是雨在 Q3 最後五分鐘開始掉。這讓大家都知道最後一輪可能只有一次機會。Norris 就是在這種幾乎沒有修正空間的情況下，把最終圈做完整。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Red Bull</div>
+        <h2>Verstappen 主場仍沒回到最前列</h2>
+        <p>Verstappen 在 Sprint 拿到第 6，也在正賽排位排第 7。對一般車手來說不算災難，但對 Zandvoort 主場與 Red Bull 這樣的期待值來說，這代表他週日得先處理前面六台車，才談得到比賽主導權。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Sunday Hook</div>
+        <h2>週日起跑重點</h2>
+        <p>前四格依序是 Norris、Russell、Antonelli、Piastri。這個排列讓週日第一圈不只是 McLaren 對 Mercedes，也是 Norris 能不能先把 Russell 壓在後面，以及 Antonelli 能不能直接切進隊友身前。Ferrari 兩台車從第 5、第 6 起跑，還保有用策略翻前排的空間。</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="kicker">Sources</div>
+      <h2>資料來源</h2>
+      <ol class="sources">
+        <li><a href="https://www.formula1.com/en/racing/2026/netherlands" target="_blank" rel="noreferrer">Formula1.com Dutch Grand Prix 2026 race page</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1292/netherlands/sprint-results" target="_blank" rel="noreferrer">Official Sprint results: Dutch Grand Prix 2026</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1292/netherlands/qualifying" target="_blank" rel="noreferrer">Official Qualifying results: Dutch Grand Prix 2026</a></li>
+        <li><a href="https://www.formula1.com/en/results/2026/races/1292/netherlands/starting-grid" target="_blank" rel="noreferrer">Official starting grid: Dutch Grand Prix 2026</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/russell-surges-to-victory-in-zandvoort-sprint-ahead-of-leclerc-and-norris.3evWfVZ0yONnfGGp3t8qyK" target="_blank" rel="noreferrer">Official Sprint report: Russell wins at Zandvoort</a></li>
+        <li><a href="https://www.formula1.com/en/latest/article/norris-denies-russell-pole-position-in-gripping-conclusion-to-qualifying-for-dutch-grand-prix.2DoHZDC14R5tY7ygGaHCz" target="_blank" rel="noreferrer">Official Qualifying report: Norris takes Dutch GP pole</a></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    本文對應 2026-08-22 荷蘭站週六稿，於 2026-08-31 Asia/Taipei 補產生；目前荷蘭站週末缺稿已補齊。
+  </footer>
+</body>
+</html>

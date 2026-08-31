@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/canada-race.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-08-31",
+    "title": "F1 2026 加拿大大獎賽賽後：Antonelli 四連勝到手，Russell 退賽讓 Mercedes 內戰直接變調",
+    "kicker": "Monday Review",
+    "summary": "Antonelli 在蒙特婁收下四連勝，但真正決定戰局的是 Russell 動力單元退賽，以及 McLaren 在變天前的錯誤起跑判斷。",
+    "secondary": "本文整理加拿大站官方前十、關鍵事故、積分榜變化、車隊策略執行，以及這個 Sprint 週末對摩納哥站的直接影響。",
+    "seasonLabel": "F1 2026 | Canadian GP",
+    "tagLabel": "賽後",
+    "accent": "race",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/netherlands-race.html",
     "league": "f1",
     "type": "race",
@@ -12,7 +27,22 @@
     "tagLabel": "賽後",
     "accent": "race",
     "featured": false,
-    "latest": true
+    "latest": false
+  },
+  {
+    "href": "f1/2026/netherlands-sat.html",
+    "league": "f1",
+    "type": "sat",
+    "date": "2026-08-22",
+    "title": "F1 2026 荷蘭站週六：Russell 先收 Sprint，Norris 再把正賽桿位從雨邊搶回來",
+    "kicker": "Saturday Dispatch",
+    "summary": "Russell 上午先守住 Sprint 勝利，Norris 下午又在雨線壓近時拿下正賽桿位，荷蘭站週六把積分與發車格一起拉到最緊。",
+    "secondary": "Mercedes 過得最穩，McLaren 拿到週日第一格，Ferrari 則整天都卡在可以直接撕開前排的位置。",
+    "seasonLabel": "F1 2026 Round 12",
+    "tagLabel": "週六焦點",
+    "accent": "linear-gradient(135deg, #111827 0%, #1d4ed8 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/netherlands-fri.html",
@@ -1251,6 +1281,21 @@
     "seasonLabel": "F1 2026 Round 6",
     "tagLabel": "賽前預告",
     "accent": "linear-gradient(135deg, #09111f 0%, #1f4d8f 52%, #b88a44 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
+    "href": "f1/2026/canada-sprint.html",
+    "league": "f1",
+    "type": "sprint",
+    "date": "2026-05-24",
+    "title": "F1 2026 加拿大站 Sprint 日：Russell 先扛住隊內碰撞，再把桿位留在 Mercedes",
+    "kicker": "Sprint Dispatch",
+    "summary": "Russell 先在 Sprint 守住 Antonelli 與 Norris，晚上再把桿位搶回來，Mercedes 也把隊內冠軍線推得更緊。",
+    "secondary": "本文整理加拿大站官方 Sprint、排位前十、Mercedes 碰撞後的主線，以及對車手與車隊積分的直接影響。",
+    "seasonLabel": "F1 2026 Round 5",
+    "tagLabel": "Sprint 日報",
+    "accent": "linear-gradient(135deg, #111827 0%, #134e4a 46%, #9f1239 100%)",
     "featured": false,
     "latest": false
   },
