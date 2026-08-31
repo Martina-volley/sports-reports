@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 Barcelona-Catalunya Grand Prix Preview</title>
+  <meta name="description" content="F1 2026 巴塞隆納-加泰隆尼亞大獎賽補稿預告：台灣時間賽程、截至 2026-08-31 的最新積分、賽道與輪胎重點、四大車隊升級脈絡與排位戰前瞻。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 Barcelona-Catalunya Grand Prix Preview" />
+  <meta property="og:description" content="這是一篇補稿。賽程與輪胎設定對應 2026 巴塞隆納站當週公告，積分與整季走勢則核對到 2026-08-31。" />
+  <meta name="theme-color" content="#1d2334" />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe7;
+      --ink: #182030;
+      --muted: #5a6677;
+      --panel: rgba(255, 252, 247, 0.88);
+      --line: rgba(24, 32, 48, 0.12);
+      --navy: #1d2334;
+      --red: #ba3d2f;
+      --gold: #b8893f;
+      --teal: #2f6f73;
+      --shadow: 0 20px 48px rgba(20, 28, 44, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at top left, rgba(184, 137, 63, 0.16), transparent 26%),
+        radial-gradient(circle at 85% 10%, rgba(47, 111, 115, 0.12), transparent 24%),
+        linear-gradient(180deg, #f8f3eb 0%, #efe7dc 100%);
+    }
+    a { color: #1d4f89; }
+    .hero {
+      padding: 68px 24px 56px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(18, 24, 38, 0.96), rgba(29, 35, 52, 0.9)),
+        linear-gradient(115deg, #121826, #7f1f24 48%, #d18b2f 100%);
+    }
+    .hero-inner,
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow,
+    .pill,
+    th {
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 14px;
+      max-width: 10ch;
+      font-size: clamp(36px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 760px;
+      margin: 0 0 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 18px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    main { padding: 34px 0 58px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--red);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    p { margin: 0 0 14px; }
+    p:last-child { margin-bottom: 0; }
+    .lede {
+      font-size: 18px;
+      color: var(--muted);
+    }
+    .note {
+      padding: 16px 18px;
+      border-left: 4px solid var(--gold);
+      border-radius: 16px;
+      background: rgba(184, 137, 63, 0.08);
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    th, td {
+      padding: 10px 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .tiny {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .forecast {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .forecast div {
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(24, 32, 48, 0.05);
+      border: 1px solid rgba(24, 32, 48, 0.08);
+    }
+    .forecast strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 20px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .source-list li {
+      word-break: break-word;
+    }
+    @media (max-width: 920px) {
+      .half,
+      .third { grid-column: span 12; }
+      .forecast { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 54px; }
+      .wrap,
+      .hero-inner { width: min(100% - 24px, 1120px); }
+      .card { padding: 20px; border-radius: 22px; }
+      .forecast { grid-template-columns: 1fr; }
+      table { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Backfill Preview</div>
+      <h1>巴塞隆納不是休息站，是真實速度的公開審判</h1>
+      <p>這篇是 2026 巴塞隆納-加泰隆尼亞大獎賽的補稿預告。賽程、輪胎與升級內容對應當週官方公告；積分表與季中走勢則更新到 2026 年 8 月 31 日，讓這篇漏掉的週一預告，至少還保留現在回頭看仍有價值的脈絡。</p>
+      <div class="meta">
+        <span class="pill">原定發稿：2026-06-08</span>
+        <span class="pill">資料核對：2026-08-31</span>
+        <span class="pill">Round 7</span>
+        <span class="pill">Sprint：不適用</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid">
+      <article class="card">
+        <div class="kicker">Weekend Frame</div>
+        <h2>為什麼這站在 2026 年特別重要</h2>
+        <p class="lede">巴塞隆納向來不是只看單圈的地方。長彎、前輪磨耗、連續高速段，加上車隊對這條賽道熟到不能再熟，會把空力效率、輪胎管理和能量部署一次攤開。F1 官方在 6 月 9 日的賽前資訊裡點得很直白：Kimi Antonelli 帶著五連勝與 66 分優勢進站，其他人如果還想把 2026 年變成真正的冠軍戰，這裡就是要開始追的地方。</p>
+        <p>因為這篇是補稿，本文把兩件事分開處理：賽程與賽道條件維持當週視角；積分、車隊位置與賽季脈絡則採 2026 年 8 月 31 日仍可驗證的最新官方數據。這樣寫不算完美，但至少不會拿過期數字裝成即時新聞。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Taiwan Time</div>
+        <h2>本週末賽程</h2>
+        <table>
+          <thead>
+            <tr><th>環節</th><th>當地時間</th><th>台灣時間</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>練習 1</td><td>6/12（五）13:30</td><td>6/12（五）19:30</td></tr>
+            <tr><td>練習 2</td><td>6/12（五）17:00</td><td>6/12（五）23:00</td></tr>
+            <tr><td>練習 3</td><td>6/13（六）12:30</td><td>6/13（六）18:30</td></tr>
+            <tr><td>排位賽</td><td>6/13（六）16:00</td><td>6/13（六）22:00</td></tr>
+            <tr><td>正賽</td><td>6/14（日）15:00</td><td>6/14（日）21:00</td></tr>
+          </tbody>
+        </table>
+        <p class="tiny">西班牙 6 月為 UTC+2，台灣為 UTC+8，因此需加 6 小時。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Sprint Check</div>
+        <h2>這站沒有 Sprint</h2>
+        <p>2026 年巴塞隆納站是標準賽制週末，不是 Sprint 站。也就是說，車隊有三段自由練習，排位賽和正賽之間沒有額外短程賽干擾。對帶大型升級來的車隊來說，這種週末很重要，因為可以多拿一整個練習時段去驗證新套件，而不是邊猜邊鎖車。</p>
+        <div class="note">如果你只想抓一個觀戰焦點，那就是星期六晚上 10 點的排位賽。這條賽道能追車，但真正決定正賽節奏的，往往還是前兩排起跑位置和第一彎能不能守住。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>車手積分</h2>
+        <p>以下為 Formula1.com 截至 2026-08-31 的官方最新車手積分。因為這是補稿，表格反映的是目前賽季版圖，不是假裝回到 6 月當天。</p>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>242</td></tr>
+            <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>183</td></tr>
+            <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>183</td></tr>
+            <tr><td>4</td><td>Lando Norris</td><td>McLaren</td><td>159</td></tr>
+            <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>155</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Constructors</div>
+        <h2>車隊積分</h2>
+        <p>截至 2026-08-31，Mercedes 仍在兩榜最穩，Ferrari 和 McLaren 是最接近的追兵，Red Bull 則還在追趕前段開發節奏。</p>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>425</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>338</td></tr>
+            <tr><td>3</td><td>McLaren</td><td>263</td></tr>
+            <tr><td>4</td><td>Red Bull Racing</td><td>186</td></tr>
+            <tr><td>5</td><td>Racing Bulls</td><td>66</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Track Notes</div>
+        <h2>賽道解析：這條路線專門拆穿紙上談兵</h2>
+        <p>Barcelona-Catalunya 全長 4.657 公里、14 個彎、正賽 66 圈。這條賽道最麻煩的地方，不在於某一個單一大魔王，而是它幾乎沒有真正能讓車喘口氣的段落。長距離高速右彎會把前左輪胎一直磨下去，最後一段取消減速彎後，平均速度更高，車輛如果前軸不穩，整圈都會被拖慢。</p>
+        <p>官方賽道指南把它稱作檢驗真實競爭力的地方，這句話不算誇張。因為高速、低速、牽引、煞車、輪胎熱衰退都在同一圈裡，哪支車隊靠單一條件吃飯，到了這裡通常會被看穿。超車主要還是第一彎，但現在車手靠近最後一個高速右彎時能更貼近前車，進主直道前的能量回收和 Overtake Mode 觸發，會直接影響第一彎的攻防難度。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Tyre Story</div>
+        <h2>輪胎與策略</h2>
+        <p>Pirelli 為 2026 巴塞隆納站帶來 C2、C3、C4，分別作為硬胎、中性胎、軟胎。官方特別指出，這比這條賽道慣常配置更軟一級，而且當週預報偏熱，這讓前輪磨耗和熱衰退不太可能被輕鬆帶過。</p>
+        <p>另一篇官方輪胎分析也直接提醒：巴塞隆納一向是輪胎管理重地，尤其今年新規車在能量部署和輪胎理解之間還在找平衡，這站很容易把一停理論和實際可行性分開。換句話說，排位快是一回事，能不能讓軟胎活夠久、又不把中性胎提前燒掉，是另一回事。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Noisy Garage</div>
+        <h2>四大車隊動向</h2>
+        <h3>Mercedes</h3>
+        <p>Barcelona 站帶來的是更新後的後翼，中心線小翼片用來提高下壓與阻力比。這代表 Mercedes 當時仍把重點放在高速穩定與整體效率，而且官方在進站前已是積分領先者，心態更像鞏固優勢，不是豪賭翻盤。</p>
+        <h3>Ferrari</h3>
+        <p>Ferrari 在這站一口氣丟出最多新件：前翼、整套地板、側箱肩部與可樂瓶區域一起調整。這不是小修小補，而是想把中高速彎的下壓和氣流品質一次拉上去。回頭看，這也是 Ferrari 能在之後把 Mercedes 壓力真正做出來的重要節點。</p>
+        <h3>McLaren</h3>
+        <p>McLaren 當週只有前翼端板更新，但別把「只有一項」理解成保守。英國站後，Andrea Stella 已坦白車隊在開發戰上落後 Mercedes 和 Ferrari，大方向已經重整，匈牙利才會開始看到第一波成果。把這條線往回接，Barcelona 更像是轉向前的最後一次局部修補。</p>
+        <h3>Red Bull</h3>
+        <p>Red Bull 在 Barcelona 針對前翼與端板交界幾何下手，目標是局部下壓與氣流穩定。它的味道很明確：先把前軸反應拉回來，再決定後面要不要做更大幅度的套件推進。這種改法在巴塞隆納很容易被放大，因為只要前軸信心差一點，第三彎和第九彎就會直接把圈速吐回去。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Qualifying Lens</div>
+        <h2>排位戰預測：桿位要先看 Mercedes，正賽別太早把 Ferrari 排除</h2>
+        <p>如果只看原定發稿週能掌握到的訊號，Antonelli 的五連勝、Mercedes 的積分優勢，以及 Barcelona 對高速穩定與輪胎管理的要求，會讓 Mercedes 成為最合理的桿位熱門。Ferrari 則是那個最像真挑戰者的對象，原因不是情緒，而是他們真的帶了這個週末最完整的一套升級。</p>
+        <p>McLaren 在單圈的上限依然不能小看，但從 Stella 7 月初的說法回推，Barcelona 當週的車還沒走到真正修正後的版本；Red Bull 則更像需要靠車手把前段的問題補掉。這會把預測收斂成很典型的 Catalunya 公式：Mercedes 先搶前排，Ferrari 靠正賽節奏逼近，McLaren 等待輪胎與策略窗口，Red Bull 靠 Max Verstappen 的個人圈扛住上半場。</p>
+        <div class="forecast">
+          <div><strong>34%</strong><span>Antonelli</span></div>
+          <div><strong>24%</strong><span>Hamilton</span></div>
+          <div><strong>16%</strong><span>Leclerc</span></div>
+          <div><strong>14%</strong><span>Norris</span></div>
+          <div><strong>12%</strong><span>Verstappen</span></div>
+        </div>
+        <p class="tiny">上列百分比是依官方賽前資訊、賽道特性與車隊升級脈絡整理出的編輯部情境估計，不是投注建議，也不是任何官方機率模型。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">What Matters</div>
+        <h2>觀戰重點三件事</h2>
+        <ul>
+          <li>Ferrari 的大包升級，能不能在 Barcelona 這種放大鏡型賽道上直接交出圈速，而不是只停在模擬器裡好看。</li>
+          <li>Mercedes 的後翼更新，是否能讓 Antonelli 在長彎段維持優勢，同時不把輪胎壓垮。</li>
+          <li>McLaren 與 Red Bull 會不會把比賽拖進策略戰。若前排差距沒有拉開，這條賽道的前輪熱衰退會讓一停和兩停的邊界變得很有戲。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ul class="source-list">
+          <li><a href="https://www.formula1.com/en/racing/2026" target="_blank" rel="noopener">Formula 1 官方 2026 賽曆</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-barcelona-catalunya-grand-prix-and-how-can-i-watch-it.40dETRutNpu6YrQSZYIfSW.40dETRutNpu6YrQSZYIfSW" target="_blank" rel="noopener">Formula 1 官方 Barcelona-Catalunya 2026 賽前時程</a></li>
+          <li><a href="https://www.formula1.com/en/racing/2026/barcelona-catalunya" target="_blank" rel="noopener">Formula 1 官方 Barcelona-Catalunya 2026 賽事頁</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-circuit-de-barcelona-catalunya.7i1UoRE8Za0Jk4LI0r68qk.7i1UoRE8Za0Jk4LI0r68qk" target="_blank" rel="noopener">Formula 1 官方賽道指南：Circuit de Barcelona-Catalunya</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-barcelona-catalunya-grand-prix.2wVnaPZmlQUuj9P72FrjuA.2wVnaPZmlQUuj9P72FrjuA" target="_blank" rel="noopener">Formula 1 官方輪胎配置：Barcelona-Catalunya 2026</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/the-key-challenge-f1-teams-will-need-to-get-to-grips-with-in-sundays-barcelona-catalunya-grand-prix.6Wu7w5DNSGOnt6y6FgZIpe.6Wu7w5DNSGOnt6y6FgZIpe" target="_blank" rel="noopener">Formula 1 官方輪胎挑戰分析：Barcelona-Catalunya 2026</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-upgrades-have-each-team-brought-to-the-barcelona-catalunya-grand-prix.77PmwSOI3Sxsn79sS1uhAK.77PmwSOI3Sxsn79sS1uhAK" target="_blank" rel="noopener">Formula 1 官方升級總表：Barcelona-Catalunya 2026</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/when-mclaren-should-see-first-results-of-redirected-upgrade-approach.2aUAEOb0CMFbVDfPd9CrBr" target="_blank" rel="noopener">Formula 1 官方：McLaren 開發方向調整</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noopener">Formula 1 官方 2026 車手積分</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/team" target="_blank" rel="noopener">Formula 1 官方 2026 車隊積分</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
