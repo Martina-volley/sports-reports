@@ -15,6 +15,21 @@
     "latest": true
   },
   {
+    "href": "f1/2026/netherlands-fri.html",
+    "league": "f1",
+    "type": "fri",
+    "date": "2026-08-21",
+    "title": "F1 2026 荷蘭站週五：Antonelli 先拿 FP1，Russell 再把 Sprint Pole 從 Zandvoort 帶走",
+    "kicker": "Friday Dispatch",
+    "summary": "Antonelli 先在唯一練習領跑，Russell 再以 0.041 秒壓過 Norris 拿下 Sprint Pole，荷蘭站週五把前段差距擠到只剩幾百分之一秒。",
+    "secondary": "Mercedes 搶到週五焦點，但 McLaren、Ferrari 與 Verstappen 的主場壓力都還留在可反撲範圍內。",
+    "seasonLabel": "F1 2026 Round 12",
+    "tagLabel": "週五快報",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/netherlands-preview.html",
     "league": "f1",
     "type": "preview",
