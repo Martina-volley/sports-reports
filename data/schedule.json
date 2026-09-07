@@ -1,8 +1,5 @@
 [
-  { "league": "f1",   "round": "R5",  "date": "05-24", "name": "加拿大大獎賽",         "city": "Montreal", "day": "SUN" },
-  { "league": "cpbl", "round": "#54", "date": "05-11", "name": "統一獅 vs. 富邦悍將", "city": "台南",     "day": "TUE" },
-  { "league": "mlb",  "round": "-",   "date": "05-12", "name": "Dodgers vs. Mets",   "city": "LA",       "day": "TUE" },
-  { "league": "npb",  "round": "-",   "date": "05-13", "name": "阪神 vs. 巨人",       "city": "甲子園",   "day": "WED" },
-  { "league": "f1",   "round": "R6",  "date": "06-07", "name": "摩納哥大獎賽",         "city": "Monaco",   "day": "SUN" },
-  { "league": "f1",   "round": "R7",  "date": "06-14", "name": "巴塞隆納-加泰隆尼亞大獎賽", "city": "Barcelona", "day": "SUN" }
+  { "league": "f1", "round": "R14", "date": "09-13", "name": "西班牙大獎賽", "city": "Madrid", "day": "SUN" },
+  { "league": "f1", "round": "R15", "date": "09-26", "name": "亞塞拜然大獎賽", "city": "Baku", "day": "SAT" },
+  { "league": "f1", "round": "R16", "date": "10-04", "name": "巴林大獎賽（馬來西亞）", "city": "Sepang", "day": "SUN" }
 ]

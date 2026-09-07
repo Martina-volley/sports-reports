@@ -61,6 +61,28 @@ function ensureMatchingBasename(metadataPath, htmlPath, href) {
   }
 }
 
+function validateRacePublishDate(report, html, sourceName) {
+  if (report.type !== "race") {
+    return;
+  }
+
+  const eventDateMatch = html.match(/(20\d{2}) 年 (\d{1,2}) 月 (\d{1,2}) 日/);
+  if (!eventDateMatch) {
+    throw new Error(`${sourceName} race article must include its event date`);
+  }
+
+  const [, year, month, day] = eventDateMatch;
+  const eventDate = Date.UTC(Number(year), Number(month) - 1, Number(day));
+  const publishDate = Date.parse(`${report.date}T00:00:00Z`);
+  const daysAfterRace = (publishDate - eventDate) / 86_400_000;
+
+  if (daysAfterRace < 0 || daysAfterRace > 2) {
+    throw new Error(
+      `${sourceName} date ${report.date} is ${daysAfterRace} days after race date ${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}; expected 0-2 days`
+    );
+  }
+}
+
 async function readReports() {
   const raw = await readFile(reportsPath, "utf8");
   const reports = JSON.parse(raw);
@@ -92,6 +114,9 @@ async function collectIncomingPairs() {
     } catch {
       throw new Error(`Missing HTML pair for ${jsonName}`);
     }
+
+    const html = await readFile(htmlPath, "utf8");
+    validateRacePublishDate(metadata, html, jsonName);
 
     pairs.push({
       metadataPath,

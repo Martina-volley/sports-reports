@@ -1,9 +1,24 @@
 [
   {
-    "href": "f1/2026/great-britain-race.html",
+    "href": "f1/2026/italy-race.html",
     "league": "f1",
     "type": "race",
     "date": "2026-09-07",
+    "title": "F1 2026 義大利大獎賽賽後：Antonelli 從第 19 位逆襲主場奪冠",
+    "kicker": "Monday Review",
+    "summary": "Antonelli 從第 19 位發車逆襲封王，Russell 完成 Mercedes 一、二，Leclerc 首圈退賽讓 Ferrari 的 Monza 主場週末失色。",
+    "secondary": "本文整理 Monza 官方前十、紅旗與重啟、McLaren 隊內攻防、最新積分榜，以及西班牙站前的直接影響。",
+    "seasonLabel": "F1 2026 | Italian GP",
+    "tagLabel": "賽後",
+    "accent": "race",
+    "featured": false,
+    "latest": true
+  },
+  {
+    "href": "f1/2026/great-britain-race.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-07-06",
     "title": "F1 2026 英國大獎賽賽後：Leclerc 首勝，最後一部 Safety Car 改寫銀石頒獎台",
     "kicker": "Monday Review",
     "summary": "Leclerc 在 Silverstone 拿下本季首勝；Antonelli 的輪罩損傷、Verstappen 退賽與 Ferrari 的晚停策略，讓 Russell 意外升上第二。",
@@ -12,7 +27,7 @@
     "tagLabel": "賽後",
     "accent": "race",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/canada-race.html",
