@@ -1,5 +1,31 @@
 [
   {
+    "href": "f1/2026/hungary-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-09-14",
+    "title": "F1 2026 匈牙利大獎賽預告（補稿）：高下壓力與輪胎策略的考驗",
+    "kicker": "Race Preview · 補稿",
+    "summary": "回看 Hungaroring 當週焦點：McLaren 新底板、四大車隊高下壓力升級，以及排位與進站策略的取捨。",
+    "secondary": "收錄台灣時間賽程、輪胎配置、四大車隊升級與排位展望；積分另列 9 月 14 日官方快照。",
+    "seasonLabel": "F1 2026 | Hungarian GP",
+    "tagLabel": "賽前補稿",
+    "accent": "preview",
+    "featured": false,
+    "latest": false
+  },
+  {
+    "href": "f1/2026/spain-race.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-09-14",
+    "title": "F1 2026 西班牙站賽後：Antonelli 第八勝，Norris 錯失領先",
+    "summary": "Antonelli 在 Madring 奪下本季第八勝，Verstappen 第二、Norris 第三。回顧 VSC 進站轉折、車隊輪胎策略與雙榜積分變化。",
+    "seasonLabel": "F1 2026 · Round 14",
+    "latest": true,
+    "featured": false
+  },
+  {
     "href": "f1/2026/belgium-preview.html",
     "league": "f1",
     "type": "preview",
@@ -12,7 +38,7 @@
     "tagLabel": "賽前補稿",
     "accent": "preview",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/italy-race.html",
@@ -345,6 +371,19 @@
     "latest": false
   },
   {
+    "href": "f1/2026/great-britain-fri.html",
+    "league": "f1",
+    "type": "fri",
+    "date": "2026-07-03",
+    "title": "F1 2026 英國站週五：Hamilton 以 0.011 秒奪 Sprint 桿位",
+    "summary": "Hamilton 包辦唯一一節練習與 Sprint 排位最快，Antonelli 僅差 0.011 秒，Verstappen 排第三。週五未發積分，爭冠差距維持不變。",
+    "seasonLabel": "F1 2026 · 第 9 站",
+    "kicker": "英國站週五回顧",
+    "tagLabel": "練習與 Sprint 排位",
+    "latest": false,
+    "featured": false
+  },
+  {
     "href": "worldcup/2026/r16-bracket-preview.html",
     "league": "worldcup",
     "type": "preview",
@@ -493,6 +532,19 @@
     "featured": false,
     "latest": false,
     "type": "briefing"
+  },
+  {
+    "href": "f1/2026/austria-sat.html",
+    "league": "f1",
+    "type": "sat",
+    "date": "2026-06-27",
+    "title": "F1 2026 奧地利站週六：Russell 奪桿，黃旗打亂 Antonelli 最後一圈",
+    "summary": "Russell 以 1:06.113 拿下桿位，Leclerc、Hamilton 分居第二、第三。Verstappen 撞車引發黃旗，Antonelli 放棄最後一圈，排位第四。",
+    "seasonLabel": "F1 2026 · 第 8 站",
+    "kicker": "奧地利站週六回顧",
+    "tagLabel": "排位回顧",
+    "latest": false,
+    "featured": false
   },
   {
     "href": "worldcup/2026/final-round-g-h-i-debrief.html",
