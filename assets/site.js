@@ -243,7 +243,7 @@
     sec.hidden = false;
 
     const accentByLeague = {
-      f1: 'var(--orange)', cpbl: 'var(--green)', mlb: 'var(--navy)',
+      f1: 'var(--orange)', cpbl: '#27AE60', mlb: 'var(--navy)',
       npb: 'var(--red)', baseball: 'var(--mustard)', worldcup: '#00A86B',
     };
 
