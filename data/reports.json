@@ -1,5 +1,20 @@
 [
   {
+    "href": "cpbl/2026/week-sep8-17-standings.html",
+    "league": "cpbl",
+    "type": "standings",
+    "date": "2026-09-18",
+    "title": "中職上周戰績總結：兄弟四連勝重返下半季龍頭",
+    "summary": "涵蓋 9/8–9/17。中信兄弟拿下四連勝、9/17 逆轉統一後以 27-21 暫居下半季第一；樂天桃猿退居第二（勝差 0.5）。",
+    "seasonLabel": "CPBL 2026 · 下半季戰績週報",
+    "kicker": "中華職棒 · 上周戰績",
+    "secondary": "附下半季／全年戰績表，來源 NOWnews、CPBL 官方戰績與賽程頁。",
+    "tagLabel": "戰績總結",
+    "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
     "href": "f1/2026/max-vs-100-feature.html",
     "league": "f1",
     "type": "feature",
@@ -11,8 +26,8 @@
     "seasonLabel": "F1 2026 | Special Feature",
     "tagLabel": "特別報導",
     "accent": "linear-gradient(135deg, #111827 0%, #1e3a8a 46%, #b42318 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/hungary-preview.html",
