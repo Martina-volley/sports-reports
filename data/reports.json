@@ -30,6 +30,21 @@
     "latest": false
   },
   {
+    "href": "volleyball/2026/2026-09-indoor-schedule.html",
+    "league": "volleyball",
+    "type": "briefing",
+    "date": "2026-09-18",
+    "title": "2026年9月室內排球月賽程：五洲洲際賽決戰 LA28／2027 World Cup",
+    "summary": "9月主軸是男女國家隊洲際錦標賽；VNL 已結束。亞洲男排福岡賽日本奪冠並直通 LA28；歐非中北美南美男排賽事仍在進行。",
+    "seasonLabel": "Volleyball 2026 · 9月賽程",
+    "kicker": "月賽程",
+    "secondary": "依據 FIVB 官方洲際賽說明與 AVC／相關聯盟公開資訊整理，可核對來源附於文內。",
+    "tagLabel": "賽程",
+    "accent": "linear-gradient(135deg, #0f766e 0%, #155e75 50%, #1e3a8a 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/hungary-preview.html",
     "league": "f1",
     "type": "preview",
