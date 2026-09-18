@@ -14,6 +14,8 @@
   --green:    #2f6b4f;
   --navy:     #1c3a5e;
   --mustard:  #e0a458;
+  --vb-sun:   #FF7A1A;
+  --vb-coast: #0B6E99;
 
   --font-hand:   'Patrick Hand', system-ui, sans-serif;
   --font-marker: 'Caveat', cursive;
@@ -125,7 +127,7 @@ a { color: inherit; }
 .league-rail__btn[data-league="f1"].is-active { box-shadow: inset 0 -4px 0 var(--orange); }
 .league-rail__btn[data-league="worldcup"].is-active { box-shadow: inset 0 -4px 0 var(--green); }
 .league-rail__btn[data-league="cpbl"].is-active { box-shadow: inset 0 -4px 0 var(--green); }
-.league-rail__btn[data-league="volleyball"].is-active { box-shadow: inset 0 -4px 0 #7C3AED; }
+.league-rail__btn[data-league="volleyball"].is-active { box-shadow: inset 0 -4px 0 var(--vb-coast); }
 
 /* ==========================================================================
    SCOREBOARD STATS
@@ -398,7 +400,7 @@ a { color: inherit; }
 .card[data-accent="race"]     { --card-accent: var(--orange); }
 .card[data-accent="preview"]  { --card-accent: var(--green); }
 .card[data-accent="briefing"] { --card-accent: var(--navy); }
-.card[data-league="volleyball"] { --card-accent: #7C3AED; }
+.card[data-league="volleyball"] { --card-accent: var(--vb-sun); }
 
 .card__media {
   position: relative; aspect-ratio: 16 / 9;

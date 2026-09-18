@@ -48,7 +48,7 @@
   const totalCount     = reports.length;
   const f1Count        = reports.filter(r => r.league === 'f1').length;
   const worldcupCount  = reports.filter(r => r.league === 'worldcup').length;
-  const baseballCount  = reports.filter(r => r.league === 'baseball').length;
+  const cpblCount      = reports.filter(r => r.league === 'cpbl' || r.league === 'baseball').length;
   const volleyballCount = reports.filter(r => r.league === 'volleyball').length;
   const dates          = reports.map(r => r.date).filter(Boolean).sort();
   const latestDate     = dates.length ? dates[dates.length - 1] : null;
@@ -56,7 +56,7 @@
   setText('totalCount',     String(totalCount).padStart(2, '0'));
   setText('f1Count',        String(f1Count).padStart(2, '0'));
   setText('worldcupCount',  String(worldcupCount).padStart(2, '0'));
-  setText('baseballCount',  String(baseballCount).padStart(2, '0'));
+  setText('cpblCount',      String(cpblCount).padStart(2, '0'));
   setText('volleyballCount', String(volleyballCount).padStart(2, '0'));
   setText('latestDate',     fmtDate(latestDate));
   setText('issueNo',        String(totalCount).padStart(2, '0'));
