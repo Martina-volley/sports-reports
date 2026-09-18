@@ -116,12 +116,15 @@
         </p>
         ${r.secondary ? `<p class="featured__lead" style="margin-top:14px;font-size:17px">${escapeHtml(r.secondary)}</p>` : ''}
         <div class="featured__leagues">
-          ${chips.map(c => `
-            <a class="league-chip" href="#" data-league="${c.k}" data-filter-jump="${c.k}">
+          ${chips.map(c => {
+            const isActive = c.k === currentLeague ? ' is-active' : '';
+            return `
+            <a class="league-chip${isActive}" href="#" data-league="${c.k}" data-filter-jump="${c.k}">
               ${escapeHtml(c.label)}
               <span class="league-chip__count">· ${String(c.n).padStart(2, '0')}</span>
             </a>
-          `).join('')}
+          `;
+          }).join('')}
         </div>
         ${r.href ? `<a class="featured__cta" href="${escapeHtml(r.href)}">→ 讀全文</a>` : ''}
       </div>
@@ -207,9 +210,8 @@
 
   function renderCards(featured) {
     const featuredHref = featured && featured.href;
-    const shouldHideFeaturedCard = currentLeague === 'all' && currentType === 'all';
     const allFiltered = getFilteredReports(currentLeague, currentType)
-      .filter(r => !shouldHideFeaturedCard || !featuredHref || r.href !== featuredHref);
+      .filter(r => !featuredHref || r.href !== featuredHref);
 
     if (!allFiltered.length) {
       grid.innerHTML = '';

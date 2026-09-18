@@ -298,13 +298,27 @@ a { color: inherit; }
 .league-chip[data-league="mlb"]   .league-chip__count { color: var(--navy); }
 .league-chip[data-league="npb"]   { box-shadow: 4px 4px 0 var(--red); }
 .league-chip[data-league="npb"]   .league-chip__count { color: var(--red); }
-.league-chip[data-league="cpbl"]  { 
+.league-chip[data-league="cpbl"]  { box-shadow: 4px 4px 0 #27AE60; }
+.league-chip[data-league="cpbl"]  .league-chip__count { color: #27AE60; }
+.league-chip[data-league="cpbl"].is-active,
+.league-chip[data-league="cpbl"][aria-current] { 
   background: #27AE60; 
   border-color: #1B3A6B;
   color: #fff;
   box-shadow: 5px 5px 0 #FFB703; 
 }
-.league-chip[data-league="cpbl"]  .league-chip__count { color: #FFB703; }
+.league-chip[data-league="cpbl"].is-active .league-chip__count,
+.league-chip[data-league="cpbl"][aria-current] .league-chip__count { color: #FFB703; }
+.league-chip[data-league="volleyball"] { box-shadow: 4px 4px 0 var(--vb-sun); }
+.league-chip[data-league="volleyball"] .league-chip__count { color: var(--vb-sun); }
+.league-chip[data-league="volleyball"].is-active,
+.league-chip[data-league="volleyball"][aria-current] {
+  background: var(--vb-sun);
+  color: #fff;
+  box-shadow: 5px 5px 0 var(--vb-coast);
+}
+.league-chip[data-league="volleyball"].is-active .league-chip__count,
+.league-chip[data-league="volleyball"][aria-current] .league-chip__count { color: var(--vb-coast); }
 .league-chip[data-league="all"]   { box-shadow: 4px 4px 0 var(--ink); }
 .league-chip[data-league="all"]   .league-chip__count { color: var(--ink); }
 
