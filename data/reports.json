@@ -47,6 +47,21 @@
     "latest": false
   },
   {
+    "href": "volleyball/2026/2026-09-avp-chicago-league-championships.html",
+    "league": "volleyball",
+    "type": "briefing",
+    "date": "2026-09-18",
+    "title": "AVP 芝加哥落幕：Brasher／Cruz 收下聯盟賽冠軍，Dalhausser／Crabb 衛冕成功",
+    "summary": "2026 Progressive AVP League Championships 於芝加哥 Oak Street Beach 結束。女網 Austin Aces 直落二擊敗头号種子 Palm Beach；男網 Palm Beach 連霸聯盟賽冠軍。",
+    "seasonLabel": "AVP 2026 · League Championships",
+    "kicker": "沙排 · 芝加哥",
+    "secondary": "依據 AVP 官方賽後稿與賽果整理；來源附於文內。",
+    "tagLabel": "沙排",
+    "accent": "linear-gradient(135deg, #FF7A1A 0%, #0B6E99 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "volleyball/2026/2026-09-indoor-schedule.html",
     "league": "volleyball",
     "type": "briefing",
@@ -87,8 +102,8 @@
     "kicker": "Monday Review · 馬德里首戰",
     "image": "assets/media/f1/madrid-gp-2026-cover.jpg",
     "imageAlt": "Madrid GP 2026 city circuit race scene",
-    "latest": true,
-    "featured": true
+    "latest": false,
+    "featured": false
   },
   {
     "href": "f1/2026/belgium-preview.html",
