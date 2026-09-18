@@ -45,20 +45,22 @@
   }
 
   /* ---------- stats ---------- */
-  const totalCount    = reports.length;
-  const f1Count       = reports.filter(r => r.league === 'f1').length;
-  const worldcupCount = reports.filter(r => r.league === 'worldcup').length;
-  const baseballCount = reports.filter(r => r.league === 'baseball').length;
-  const dates         = reports.map(r => r.date).filter(Boolean).sort();
-  const latestDate    = dates.length ? dates[dates.length - 1] : null;
+  const totalCount     = reports.length;
+  const f1Count        = reports.filter(r => r.league === 'f1').length;
+  const worldcupCount  = reports.filter(r => r.league === 'worldcup').length;
+  const baseballCount  = reports.filter(r => r.league === 'baseball').length;
+  const volleyballCount = reports.filter(r => r.league === 'volleyball').length;
+  const dates          = reports.map(r => r.date).filter(Boolean).sort();
+  const latestDate     = dates.length ? dates[dates.length - 1] : null;
 
-  setText('totalCount',    String(totalCount).padStart(2, '0'));
-  setText('f1Count',       String(f1Count).padStart(2, '0'));
-  setText('worldcupCount', String(worldcupCount).padStart(2, '0'));
-  setText('baseballCount', String(baseballCount).padStart(2, '0'));
-  setText('latestDate',    fmtDate(latestDate));
-  setText('issueNo',       String(totalCount).padStart(2, '0'));
-  setText('todayDate',     fmtFullDate(new Date().toISOString().slice(0, 10)));
+  setText('totalCount',     String(totalCount).padStart(2, '0'));
+  setText('f1Count',        String(f1Count).padStart(2, '0'));
+  setText('worldcupCount',  String(worldcupCount).padStart(2, '0'));
+  setText('baseballCount',  String(baseballCount).padStart(2, '0'));
+  setText('volleyballCount', String(volleyballCount).padStart(2, '0'));
+  setText('latestDate',     fmtDate(latestDate));
+  setText('issueNo',        String(totalCount).padStart(2, '0'));
+  setText('todayDate',      fmtFullDate(new Date().toISOString().slice(0, 10)));
 
   /* ---------- featured ---------- */
   const featuredEl = $('#featured');
@@ -77,10 +79,9 @@
       { k: 'all',  label: '所有報告', n: totalCount },
       { k: 'f1',   label: 'F1',      n: f1Count },
       { k: 'worldcup', label: 'World Cup', n: worldcupCount },
-      { k: 'mlb',  label: 'MLB',     n: reports.filter(x => x.league === 'mlb').length },
-      { k: 'npb',  label: 'NPB',     n: reports.filter(x => x.league === 'npb').length },
       { k: 'cpbl', label: 'CPBL',    n: reports.filter(x => x.league === 'cpbl').length },
-    ].filter(c => c.k === 'all' || c.n > 0 || c.k === 'f1');
+      { k: 'volleyball', label: 'Volleyball', n: volleyballCount },
+    ].filter(c => c.k === 'all' || c.n > 0);
 
     const rookieTag = r.href ? 'a' : 'div';
     const rookieHref = r.href ? ` href="${escapeHtml(r.href)}"` : '';
@@ -147,87 +148,168 @@
     return `<div class="${cls}" data-placeholder="${escapeHtml(placeholder)}"></div>`;
   }
 
+  /* ---------- league + type state ---------- */
+  let currentLeague = 'all';
+  let currentType = 'all';
+  let currentPage = 1;
+  const PAGE_SIZE = 12;
+
+  const leagueLabels = {
+    all: ['全部賽事', "collect 'em all — 但仍先看清楚屬於哪條線"],
+    f1: ['F1 存檔', 'engine notes · 2026'],
+    worldcup: ['World Cup 存檔', 'pitch-side briefings'],
+    cpbl: ['CPBL 存檔', '白晝球場文章 · 入口仍共用殼'],
+    volleyball: ['Volleyball 存檔', 'Vball 線併入同一主版面']
+  };
+
   /* ---------- card grid ---------- */
   const grid = $('#report-grid');
   const empty = $('#empty-state');
+  const pager = $('#pager');
+  const prevBtn = $('#prev-page');
+  const nextBtn = $('#next-page');
+  const currentPageEl = $('#current-page');
+  const totalPagesEl = $('#total-pages');
 
-  function getFeaturedForFilter(filter) {
-    const list = reports.filter(r => matchesFilter(r, filter));
+  function getFeaturedForScope(league, type) {
+    const list = getFilteredReports(league, type);
     return list.find(r => r.latest) || list[0] || null;
   }
 
-  function renderIssue(filter) {
-    const featured = getFeaturedForFilter(filter);
+  function getFilteredReports(league, type) {
+    return reports.filter(r => {
+      const leagueMatch = league === 'all' || r.league === league;
+      const typeMatch = type === 'all' || r.type === type || r.accent === type;
+      return leagueMatch && typeMatch;
+    });
+  }
+
+  function renderHub() {
+    // Update hub title
+    const [title, subtitle] = leagueLabels[currentLeague] || leagueLabels.all;
+    $('#hub-title').textContent = title;
+    $('#hub-subtitle').textContent = subtitle;
+
+    // Render featured
+    const featured = getFeaturedForScope(currentLeague, currentType);
     if (!featured) {
       featuredEl.innerHTML = '<div class="featured__loading">尚無報告。</div>';
     } else {
       featuredEl.innerHTML = renderFeatured(featured);
     }
 
-    renderCards(filter, featured);
+    // Render cards with pagination
+    renderCards(featured);
   }
 
-  function renderCards(filter, featured) {
+  function renderCards(featured) {
     const featuredHref = featured && featured.href;
-    const shouldHideFeaturedCard = !filter || filter === 'all';
-    const list = reports
-      .filter(r => !shouldHideFeaturedCard || !featuredHref || r.href !== featuredHref)
-      .filter(r => matchesFilter(r, filter));
+    const shouldHideFeaturedCard = currentLeague === 'all' && currentType === 'all';
+    const allFiltered = getFilteredReports(currentLeague, currentType)
+      .filter(r => !shouldHideFeaturedCard || !featuredHref || r.href !== featuredHref);
 
-    if (!list.length) {
+    if (!allFiltered.length) {
       grid.innerHTML = '';
       empty.hidden = false;
+      pager.hidden = true;
       return;
     }
     empty.hidden = true;
 
-    grid.innerHTML = list.map(r => `
-      <a class="card" href="${escapeHtml(r.href || '#')}" data-accent="${escapeHtml(r.accent || r.type || '')}">
+    // Pagination
+    const totalPages = Math.ceil(allFiltered.length / PAGE_SIZE);
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = start + PAGE_SIZE;
+    const pageReports = allFiltered.slice(start, end);
+
+    grid.innerHTML = pageReports.map(r => `
+      <a class="card" href="${escapeHtml(r.href || '#')}" 
+         data-accent="${escapeHtml(r.accent || r.type || '')}"
+         data-league="${escapeHtml(r.league || '')}">
+        <div class="card__media">${renderCardMedia(r)}</div>
         <div class="card__head">
           <span>${escapeHtml((r.league || '').toUpperCase())} · ${escapeHtml(r.tagLabel || r.type || '')}</span>
           <span>${escapeHtml(fmtDate(r.date))}</span>
         </div>
-        ${renderPhoto(r, 'photo')}
         <div class="card__body">
           <h3 class="card__title">${escapeHtml(r.title || '')}</h3>
           <p class="card__summary">${escapeHtml(r.summary || '')}</p>
           <div class="card__meta">
-            <div class="card__meta-cell"><span>SET</span> ${String(totalCount).padStart(2,'0')}</div>
-            <div class="card__meta-cell"><span>NO</span> ${escapeHtml(reports.indexOf(r).toString().padStart(2,'0'))}</div>
-            ${r.seasonLabel ? `<div class="card__meta-cell"><span>SSN</span> ${escapeHtml(r.seasonLabel.split('·').pop().trim())}</div>` : ''}
+            <div class="card__meta-cell"><span>DATE</span> ${escapeHtml(fmtDate(r.date))}</div>
+            ${r.seasonLabel ? `<div class="card__meta-cell"><span>SSN</span> ${escapeHtml(r.seasonLabel.split('·').pop().trim().slice(0,8))}</div>` : ''}
           </div>
         </div>
       </a>
     `).join('');
+
+    // Update pager
+    if (totalPages > 1) {
+      pager.hidden = false;
+      currentPageEl.textContent = currentPage;
+      totalPagesEl.textContent = totalPages;
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+    } else {
+      pager.hidden = true;
+    }
   }
 
-  function matchesFilter(r, filter) {
-    if (!filter || filter === 'all') return true;
-    if (['f1', 'worldcup', 'baseball', 'mlb', 'npb', 'cpbl'].includes(filter)) return r.league === filter;
-    if (['preview', 'race', 'briefing'].includes(filter))           return r.type === filter || r.accent === filter;
-    return true;
+  function renderCardMedia(r) {
+    if (r.image) {
+      const alt = escapeHtml(r.imageAlt || r.title || '');
+      return `<img src="${escapeHtml(r.image)}" alt="${alt}" loading="lazy" />`;
+    }
+    return ''; // Empty 16:9 slot with CSS placeholder
   }
 
   // initial render
-  renderIssue('all');
+  renderHub();
 
-  // filter clicks
-  $('#filter-bar').addEventListener('click', (e) => {
-    const btn = e.target.closest('.filter-btn');
-    if (!btn) return;
-    $$('.filter-btn').forEach(b => b.classList.toggle('is-active', b === btn));
-    renderIssue(btn.dataset.filter);
+  // league rail clicks
+  document.querySelectorAll('.league-rail__btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.league-rail__btn').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      currentLeague = btn.dataset.league;
+      currentPage = 1;
+      renderHub();
+    });
   });
 
-  // featured league chips → jump filter
+  // type chips clicks
+  document.querySelectorAll('.type-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.type-chip').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      currentType = btn.dataset.type;
+      currentPage = 1;
+      renderHub();
+    });
+  });
+
+  // pagination
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderHub();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+  nextBtn.addEventListener('click', () => {
+    currentPage++;
+    renderHub();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // featured league chips → jump to league rail
   document.addEventListener('click', (e) => {
     const chip = e.target.closest('[data-filter-jump]');
     if (!chip) return;
     e.preventDefault();
     const target = chip.dataset.filterJump;
-    const btn = $$(`#filter-bar .filter-btn`).find(b => b.dataset.filter === target);
+    const btn = $$('.league-rail__btn').find(b => b.dataset.league === target);
     if (btn) btn.click();
-    document.getElementById('filter-bar').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   /* ---------- schedule (optional, from data/schedule.json) ---------- */

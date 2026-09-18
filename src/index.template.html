@@ -43,12 +43,31 @@
   <span class="ticker__live">● LIVE</span>
   <span><b data-bind="totalCount">--</b> reports archived</span>
   <span class="ticker__sep">|</span>
-  <span><b data-bind="f1Count">--</b> F1 | <b data-bind="worldcupCount">--</b> World Cup | <b data-bind="baseballCount">--</b> baseball</span>
+  <span><b data-bind="f1Count">--</b> F1 | <b data-bind="worldcupCount">--</b> World Cup | <b data-bind="baseballCount">--</b> baseball | <b data-bind="volleyballCount">--</b> volleyball</span>
   <span class="ticker__sep">|</span>
   <span>last update <b data-bind="latestDate">--</b></span>
   <span class="ticker__sep">|</span>
   <span data-slot="nextEvent" hidden>next event <b data-bind="nextEvent">--</b></span>
 </div>
+
+<!-- LEAGUE RAIL -->
+<nav class="league-rail" aria-label="聯盟切換">
+  <button class="league-rail__btn is-active" type="button" data-league="all">
+    全部<small>瀏覽總覽</small>
+  </button>
+  <button class="league-rail__btn" type="button" data-league="f1">
+    F1<small>F1 REPORTS</small>
+  </button>
+  <button class="league-rail__btn" type="button" data-league="worldcup">
+    WORLD CUP<small>67 REPORTS</small>
+  </button>
+  <button class="league-rail__btn" type="button" data-league="cpbl">
+    CPBL<small>活潑白晝</small>
+  </button>
+  <button class="league-rail__btn" type="button" data-league="volleyball">
+    VOLLEYBALL<small>VBALL 線</small>
+  </button>
+</nav>
 
 <!-- SCOREBOARD STATS -->
 <section class="scoreboard" aria-label="Site Stats">
@@ -66,20 +85,17 @@
     <div class="featured__loading">載入中...</div>
   </section>
 
-  <!-- LEAGUE NAV / FILTER -->
-  <section class="filter" aria-label="Browse Reports">
-    <div class="filter__head">
-      <h2>本期報告</h2>
-      <span class="filter__hint">collect 'em all</span>
+  <!-- HUB HEADER -->
+  <section class="hub-head">
+    <div>
+      <h2 id="hub-title">全部賽事</h2>
+      <p id="hub-subtitle">collect 'em all — 但仍先看清楚屬於哪條線</p>
     </div>
-    <div class="filter__bar" id="filter-bar">
-      <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
-      <button class="filter-btn" type="button" data-filter="f1">F1</button>
-      <button class="filter-btn" type="button" data-filter="worldcup">WORLD CUP</button>
-      <button class="filter-btn" type="button" data-filter="baseball">棒球</button>
-      <button class="filter-btn" type="button" data-filter="preview">預告</button>
-      <button class="filter-btn" type="button" data-filter="race">賽後</button>
-      <button class="filter-btn" type="button" data-filter="briefing">摘要</button>
+    <div class="type-chips" id="type-chips" aria-label="類型次篩">
+      <button class="type-chip is-active" type="button" data-type="all">全部類型</button>
+      <button class="type-chip" type="button" data-type="preview">預告</button>
+      <button class="type-chip" type="button" data-type="race">賽後</button>
+      <button class="type-chip" type="button" data-type="briefing">摘要</button>
     </div>
   </section>
 
@@ -87,6 +103,13 @@
   <section class="cards" aria-label="Reports">
     <div class="card-grid" id="report-grid"></div>
     <div class="empty-state" id="empty-state" hidden>目前沒有符合條件的報告。</div>
+    
+    <!-- PAGER -->
+    <div class="pager" id="pager" hidden>
+      <button class="pager__btn" type="button" id="prev-page">← 上一頁</button>
+      <span class="pager__info"><span id="current-page">1</span> / <span id="total-pages">1</span></span>
+      <button class="pager__btn pager__btn--primary" type="button" id="next-page">載入下一批 →</button>
+    </div>
   </section>
 
   <!-- SCHEDULE — TICKET STRIP -->
