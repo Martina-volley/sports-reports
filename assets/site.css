@@ -14,6 +14,8 @@
   --green:    #2f6b4f;
   --navy:     #1c3a5e;
   --mustard:  #e0a458;
+  --vb-sun:   #FF7A1A;
+  --vb-coast: #0B6E99;
 
   --font-hand:   'Patrick Hand', system-ui, sans-serif;
   --font-marker: 'Caveat', cursive;
@@ -99,6 +101,33 @@ a { color: inherit; }
   font-family: var(--font-bevan); letter-spacing: .16em;
 }
 .ticker__sep { opacity: .4; }
+
+/* ==========================================================================
+   LEAGUE RAIL — PRIMARY IA
+   ========================================================================== */
+
+.league-rail {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--ink); color: var(--cream);
+  border-bottom: 4px solid var(--mustard);
+  padding: 10px 20px;
+  display: flex; gap: 8px; overflow-x: auto;
+  font-family: var(--font-mono);
+}
+.league-rail__btn {
+  flex: 0 0 auto; border: 2px solid transparent; background: transparent;
+  color: var(--cream); font-family: var(--font-bevan); font-size: 15px;
+  letter-spacing: .06em; padding: 10px 14px; cursor: pointer; text-transform: uppercase;
+}
+.league-rail__btn small {
+  display: block; font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: .12em; opacity: .7; margin-top: 2px; font-weight: 400;
+}
+.league-rail__btn.is-active { background: var(--cream); color: var(--ink); }
+.league-rail__btn[data-league="f1"].is-active { box-shadow: inset 0 -4px 0 var(--orange); }
+.league-rail__btn[data-league="worldcup"].is-active { box-shadow: inset 0 -4px 0 var(--green); }
+.league-rail__btn[data-league="cpbl"].is-active { box-shadow: inset 0 -4px 0 var(--green); }
+.league-rail__btn[data-league="volleyball"].is-active { box-shadow: inset 0 -4px 0 var(--vb-coast); }
 
 /* ==========================================================================
    SCOREBOARD STATS
@@ -277,11 +306,35 @@ a { color: inherit; }
 .featured__cta {
   margin-top: 18px;
   font-family: var(--font-mono); font-size: 11px;
-  letter-spacing: .18em; text-transform: uppercase; color: var(--ink-soft);
+  letter-spacing: .18em; text-transform: uppercase;   color: var(--ink-soft);
 }
 
 /* ==========================================================================
-   FILTER BAR
+   HUB HEADER — LEAGUE SCOPE + TYPE CHIPS
+   ========================================================================== */
+
+.hub-head {
+  margin-top: 32px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px;
+  align-items: flex-end;
+  border-bottom: 5px double var(--ink); padding-bottom: 12px;
+}
+.hub-head h2 {
+  font-family: var(--font-bevan); font-size: 34px; margin: 0; line-height: 1.1;
+}
+.hub-head p {
+  margin: 4px 0 0; font-family: var(--font-marker); color: var(--red); font-size: 22px;
+}
+.type-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.type-chip {
+  border: 2px solid var(--ink); background: var(--cream); font-family: var(--font-mono);
+  font-size: 11px; letter-spacing: .1em; padding: 7px 10px; cursor: pointer;
+  text-transform: uppercase;
+}
+.type-chip.is-active { background: var(--ink); color: var(--cream); }
+
+/* ==========================================================================
+   FILTER BAR (deprecated in hub mode, kept for fallback)
    ========================================================================== */
 
 .filter { margin-top: 44px; }
@@ -347,6 +400,35 @@ a { color: inherit; }
 .card[data-accent="race"]     { --card-accent: var(--orange); }
 .card[data-accent="preview"]  { --card-accent: var(--green); }
 .card[data-accent="briefing"] { --card-accent: var(--navy); }
+.card[data-league="volleyball"] { --card-accent: var(--vb-sun); }
+
+.card__media {
+  position: relative; aspect-ratio: 16 / 9;
+  border-bottom: 3px solid var(--ink);
+  background: var(--mustard);
+  overflow: hidden;
+}
+.card__media img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+  display: block;
+  filter: grayscale(.35) contrast(1.15) saturate(.7) sepia(.18);
+}
+.card__media::after {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(26,20,16,.55) 1px, transparent 1.5px);
+  background-size: 4px 4px;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.card__media:not(:has(img))::before {
+  content: "[ 16:9 PHOTOR ]";
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: .15em;
+  color: var(--ink); text-align: center;
+  background: repeating-linear-gradient(135deg, rgba(26,20,16,.18) 0 6px, transparent 6px 12px), var(--mustard);
+}
 
 .card__head {
   background: var(--card-accent, var(--ink));
@@ -521,6 +603,29 @@ a { color: inherit; }
   font-family: var(--font-marker); font-size: 22px;
   color: var(--ink-soft);
 }
+
+/* ==========================================================================
+   PAGER
+   ========================================================================== */
+
+.pager {
+  margin-top: 26px; display: flex; justify-content: center; gap: 10px; align-items: center;
+  font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em;
+}
+.pager__btn {
+  border: 2px solid var(--ink); background: var(--cream); padding: 10px 14px;
+  font-family: var(--font-mono); cursor: pointer; box-shadow: 3px 3px 0 var(--ink);
+  font-size: 12px; letter-spacing: .12em;
+}
+.pager__btn:disabled {
+  opacity: .4; cursor: not-allowed;
+}
+.pager__btn--primary { background: var(--ink); color: var(--cream); }
+.pager__info { padding: 0 10px; }
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 
 .site-footer {
   margin: 44px 36px 0;
