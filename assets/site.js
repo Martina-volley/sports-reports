@@ -143,7 +143,10 @@
     const placeholder = (r.kicker || r.tagLabel || r.type || fallbackLabel).toString().slice(0, 28);
     if (r.image) {
       const alt = escapeHtml(r.imageAlt || r.title || '');
-      return `<div class="${cls}"><img src="${escapeHtml(r.image)}" alt="${alt}" loading="lazy" /></div>`;
+      const src = escapeHtml(r.image);
+      const srcset = r.srcset ? ` srcset="${escapeHtml(r.srcset)}"` : '';
+      const sizes = r.sizes ? ` sizes="${escapeHtml(r.sizes)}"` : '';
+      return `<div class="${cls}"><img src="${src}"${srcset}${sizes} alt="${alt}" loading="lazy" /></div>`;
     }
     return `<div class="${cls}" data-placeholder="${escapeHtml(placeholder)}"></div>`;
   }
@@ -257,7 +260,11 @@
   function renderCardMedia(r) {
     if (r.image) {
       const alt = escapeHtml(r.imageAlt || r.title || '');
-      return `<img src="${escapeHtml(r.image)}" alt="${alt}" loading="lazy" />`;
+      const src = escapeHtml(r.image);
+      // Optional srcset for 1x/2x variants (e.g. "path/image.jpg" + "path/image@2x.jpg")
+      const srcset = r.srcset ? ` srcset="${escapeHtml(r.srcset)}"` : '';
+      const sizes = r.sizes ? ` sizes="${escapeHtml(r.sizes)}"` : '';
+      return `<img src="${src}"${srcset}${sizes} alt="${alt}" loading="lazy" />`;
     }
     return ''; // Empty 16:9 slot with CSS placeholder
   }
