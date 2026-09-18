@@ -1,5 +1,20 @@
 [
   {
+    "href": "cpbl/2026/dragons-brothers-sep19-matchup.html",
+    "league": "cpbl",
+    "type": "matchup",
+    "date": "2026-09-18",
+    "title": "對決卡：味全龍客場挑戰中信兄弟｜大巨蛋兩連戰",
+    "summary": "下半季龍頭兄弟迎戰全年龍頭味全，9/19–9/20 大巨蛋兩連戰。近況與利害一次看完。",
+    "seasonLabel": "CPBL 2026 · 系列對決卡",
+    "kicker": "中華職棒 · 對決卡",
+    "secondary": "周末主打：龍象大戰。先發待公告。",
+    "tagLabel": "對決卡",
+    "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
     "href": "cpbl/2026/week-sep8-17-standings.html",
     "league": "cpbl",
     "type": "standings",
@@ -11,8 +26,8 @@
     "secondary": "附下半季／全年戰績表，來源 NOWnews、CPBL 官方戰績與賽程頁。",
     "tagLabel": "戰績總結",
     "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/max-vs-100-feature.html",
