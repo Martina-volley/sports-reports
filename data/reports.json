@@ -26,6 +26,8 @@
     "seasonLabel": "F1 2026 | Special Feature",
     "tagLabel": "特別報導",
     "accent": "linear-gradient(135deg, #111827 0%, #1e3a8a 46%, #b42318 100%)",
+    "image": "assets/media/f1/race-moment.jpg",
+    "imageAlt": "F1 race moment - intense competition on track",
     "featured": false,
     "latest": false
   },
@@ -52,8 +54,10 @@
     "title": "F1 2026 西班牙站賽後：Antonelli 第八勝，Norris 錯失領先",
     "summary": "Antonelli 在 Madring 奪下本季第八勝，Verstappen 第二、Norris 第三。回顧 VSC 進站轉折、車隊輪胎策略與雙榜積分變化。",
     "seasonLabel": "F1 2026 · Round 14",
+    "image": "assets/media/f1/madrid-gp-2026-cover.jpg",
+    "imageAlt": "Madrid GP 2026 city circuit race scene",
     "latest": false,
-    "featured": false
+    "featured": true
   },
   {
     "href": "f1/2026/belgium-preview.html",
@@ -82,6 +86,8 @@
     "seasonLabel": "F1 2026 | Italian GP",
     "tagLabel": "賽後",
     "accent": "race",
+    "image": "assets/media/f1/city-circuit-energy.jpg",
+    "imageAlt": "F1 city circuit racing energy and atmosphere",
     "featured": false,
     "latest": false
   },
