@@ -86,7 +86,6 @@ a { color: inherit; }
   line-height: .85;
   letter-spacing: -.02em;
   max-width: 100%;
-  overflow-wrap: break-word;
 }
 .wordmark__dot { color: var(--red); }
 
@@ -703,9 +702,9 @@ a { color: inherit; }
   bottom: max(14px, var(--safe-b)) !important;
   right: max(14px, var(--safe-r)) !important;
 }
-.tweak-mini button {
-  min-height: var(--touch);
-  min-width: var(--touch);
+@media (max-width: 720px) {
+  /* Demo filter overlay covers cards at phone widths; hide on mobile RWD. */
+  .tweak-mini { display: none !important; }
 }
 
 @media (max-width: 720px) {
@@ -786,12 +785,16 @@ a { color: inherit; }
   .card__summary { font-size: 16px; }
 
   .ticker { gap: 10px; padding-top: 8px; padding-bottom: 8px; }
+
+  .wordmark {
+    font-size: clamp(24px, 8vw, 40px);
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 390px) {
   :root { --page-pad: 12px; }
 
-  .wordmark { font-size: clamp(28px, 11vw, 40px); }
   .masthead__meta { font-size: 10px; letter-spacing: .12em; }
   .league-rail__btn { font-size: 14px; padding: 10px 12px; }
 }
