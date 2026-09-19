@@ -554,3 +554,109 @@ body.vb-page--indoor .vb-eyebrow {
   color: var(--vb-coast);
   text-align: right;
 }
+
+/* ==========================================================================
+   MOBILE RWD — Bug3 glance (viewport-fit / safe-area / overflow / 44px)
+   Breakpoints: ~390 / ~430; tablet (≥720) restores multi-column
+   ========================================================================== */
+
+html {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+@supports not (overflow-x: clip) {
+  html { overflow-x: hidden; }
+}
+
+body.vb-page {
+  overflow-x: clip;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.vb-nav {
+  padding-top: max(14px, env(safe-area-inset-top, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  min-width: 0;
+}
+
+.vb-nav__brand {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.vb-nav__back {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+}
+
+.vb-hero,
+.vb-focus,
+.vb-shell,
+.vb-brief-wrap {
+  min-width: 0;
+}
+
+.vb-focus,
+.vb-focus__img {
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+}
+
+.vb-focus__img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.vb-shell {
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-bottom: max(72px, calc(48px + env(safe-area-inset-bottom, 0px)));
+}
+
+.vb-brief-wrap {
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-bottom: max(72px, calc(48px + env(safe-area-inset-bottom, 0px)));
+}
+
+@media (max-width: 720px) {
+  .vb-hero { grid-template-columns: 1fr; }
+  .vb-focus {
+    border-left: 0;
+    border-top: 3px solid var(--vb-coast);
+    min-height: 0;
+  }
+  .vb-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vb-hero__body { padding: 22px 16px 24px; }
+  .vb-title { font-size: clamp(28px, 8vw, 40px); }
+}
+
+@media (max-width: 430px) {
+  .vb-nav { gap: 10px; }
+  .vb-nav__brand { font-size: clamp(15px, 4.4vw, 20px); }
+  .vb-stats { gap: 8px; }
+  .vb-stat { padding: 12px; }
+  .vb-stat__value { font-size: 28px; }
+  .vb-team__score { font-size: 44px; }
+  .vb-team__name { font-size: 18px; }
+  .vb-match { padding: 12px; box-shadow: 0 6px 0 rgba(255,122,26,.28); }
+  .vb-section__title { font-size: 22px; }
+  .vb-row { box-shadow: 4px 4px 0 var(--vb-sun); }
+}
+
+@media (max-width: 390px) {
+  .vb-stats { grid-template-columns: 1fr; }
+  .vb-setrow { grid-template-columns: 44px 1fr 44px; gap: 6px; }
+}
+
+@media (min-width: 720px) {
+  .vb-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}

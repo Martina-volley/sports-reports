@@ -22,11 +22,28 @@
   --font-bevan:  'Bevan', 'Alfa Slab One', serif;
   --font-serif:  'DM Serif Display', Georgia, serif;
   --font-mono:   'IBM Plex Mono', ui-monospace, monospace;
+
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+  --page-pad: 36px;
+  --touch: 44px;
 }
 
 * { box-sizing: border-box; }
 
-html, body { margin: 0; padding: 0; }
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body { margin: 0; padding: 0; overflow-x: clip; }
+@supports not (overflow-x: clip) {
+  html, body { overflow-x: hidden; }
+}
 
 body {
   background: var(--paper);
@@ -47,7 +64,7 @@ a { color: inherit; }
 
 .masthead {
   border-bottom: 5px double var(--ink);
-  padding: 18px 36px 6px;
+  padding: max(18px, var(--safe-t)) max(var(--page-pad), var(--safe-r)) 6px max(var(--page-pad), var(--safe-l));
 }
 
 .masthead__meta {
@@ -65,9 +82,11 @@ a { color: inherit; }
 
 .wordmark {
   font-family: var(--font-bevan);
-  font-size: clamp(48px, 9vw, 96px);
+  font-size: clamp(32px, 8vw, 96px);
   line-height: .85;
   letter-spacing: -.02em;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 .wordmark__dot { color: var(--red); }
 
@@ -91,7 +110,7 @@ a { color: inherit; }
 
 .ticker {
   background: var(--ink); color: var(--cream);
-  padding: 10px 18px;
+  padding: 10px max(18px, var(--safe-r)) 10px max(18px, var(--safe-l));
   display: flex; gap: 22px; align-items: center; flex-wrap: wrap;
   font-family: var(--font-mono); font-size: 13px; letter-spacing: .12em;
 }
@@ -107,17 +126,23 @@ a { color: inherit; }
    ========================================================================== */
 
 .league-rail {
-  position: sticky; top: 0; z-index: 20;
+  position: sticky; top: var(--safe-t); z-index: 20;
   background: var(--ink); color: var(--cream);
   border-bottom: 4px solid var(--mustard);
-  padding: 10px 20px;
-  display: flex; gap: 8px; overflow-x: auto;
+  padding: 10px max(20px, var(--safe-r)) 10px max(20px, var(--safe-l));
+  display: flex; flex-wrap: nowrap; gap: 8px;
+  overflow-x: auto; overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
   font-family: var(--font-mono);
+  scrollbar-width: thin;
 }
 .league-rail__btn {
   flex: 0 0 auto; border: 2px solid transparent; background: transparent;
   color: var(--cream); font-family: var(--font-bevan); font-size: 15px;
   letter-spacing: .06em; padding: 10px 14px; cursor: pointer; text-transform: uppercase;
+  min-height: var(--touch); min-width: var(--touch);
+  white-space: nowrap;
 }
 .league-rail__btn small {
   display: block; font-family: var(--font-mono); font-size: 10px;
@@ -134,7 +159,7 @@ a { color: inherit; }
    ========================================================================== */
 
 .scoreboard {
-  margin: 24px 36px 0;
+  margin: 24px max(var(--page-pad), var(--safe-r)) 0 max(var(--page-pad), var(--safe-l));
   background: var(--ink);
   padding: 14px;
   border: 4px solid var(--ink);
@@ -164,7 +189,7 @@ a { color: inherit; }
    SHELL
    ========================================================================== */
 
-.shell { padding: 0 36px; }
+.shell { padding: 0 max(var(--page-pad), var(--safe-r)) 0 max(var(--page-pad), var(--safe-l)); }
 
 /* ==========================================================================
    FEATURED — ROOKIE CARD + COPY
@@ -172,10 +197,12 @@ a { color: inherit; }
 
 .featured {
   margin-top: 32px;
-  display: grid; grid-template-columns: 460px 1fr; gap: 28px;
+  display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr); gap: 28px;
+  min-width: 0;
 }
 @media (max-width: 900px) {
   .featured { grid-template-columns: 1fr; }
+  .featured .photo--tall { aspect-ratio: 16 / 9; }
 }
 .featured__loading {
   font-family: var(--font-mono); font-size: 12px; letter-spacing: .18em;
@@ -194,6 +221,8 @@ a { color: inherit; }
   display: block;
   text-decoration: none;
   transition: transform .12s ease, box-shadow .12s ease;
+  max-width: 100%;
+  min-width: 0;
 }
 .rookie[href]:hover {
   transform: translate(-2px, -2px);
@@ -224,8 +253,9 @@ a { color: inherit; }
 }
 .rookie__title {
   font-family: var(--font-bevan);
-  font-size: 30px; line-height: 1;
+  font-size: clamp(22px, 6vw, 30px); line-height: 1.1;
   letter-spacing: -.01em;
+  overflow-wrap: anywhere;
 }
 .rookie__sub {
   font-family: var(--font-marker);
@@ -258,7 +288,7 @@ a { color: inherit; }
 }
 
 /* feature copy column */
-.featured__copy { font-family: var(--font-serif); }
+.featured__copy { font-family: var(--font-serif); min-width: 0; }
 .featured__eyebrow {
   font-family: var(--font-mono);
   font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
@@ -287,7 +317,10 @@ a { color: inherit; }
   letter-spacing: .04em;
   font-size: 16px;
   text-decoration: none; color: var(--ink);
-  display: inline-flex; gap: 8px; align-items: baseline;
+  display: inline-flex; gap: 8px; align-items: center;
+  min-height: var(--touch);
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 .league-chip__count {
   font-family: var(--font-mono); font-size: 12px;
@@ -326,6 +359,7 @@ a { color: inherit; }
   margin-top: 18px;
   font-family: var(--font-mono); font-size: 11px;
   letter-spacing: .18em; text-transform: uppercase;   color: var(--ink-soft);
+  display: inline-flex; align-items: center; min-height: var(--touch);
 }
 
 /* ==========================================================================
@@ -349,6 +383,8 @@ a { color: inherit; }
   border: 2px solid var(--ink); background: var(--cream); font-family: var(--font-mono);
   font-size: 11px; letter-spacing: .1em; padding: 7px 10px; cursor: pointer;
   text-transform: uppercase;
+  min-height: var(--touch); min-width: var(--touch);
+  flex: 0 0 auto; white-space: nowrap;
 }
 .type-chip.is-active { background: var(--ink); color: var(--cream); }
 
@@ -399,7 +435,7 @@ a { color: inherit; }
 .cards { margin-top: 22px; }
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 22px;
 }
 
@@ -462,8 +498,9 @@ a { color: inherit; }
 .card__title {
   margin: 8px 0 0;
   font-family: var(--font-bevan);
-  font-size: 24px; line-height: 1.05;
+  font-size: clamp(20px, 5.4vw, 24px); line-height: 1.15;
   padding: 0 4px;
+  overflow-wrap: anywhere;
 }
 .card__summary {
   margin: 8px 4px 0;
@@ -630,11 +667,13 @@ a { color: inherit; }
 .pager {
   margin-top: 26px; display: flex; justify-content: center; gap: 10px; align-items: center;
   font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em;
+  flex-wrap: wrap;
 }
 .pager__btn {
   border: 2px solid var(--ink); background: var(--cream); padding: 10px 14px;
   font-family: var(--font-mono); cursor: pointer; box-shadow: 3px 3px 0 var(--ink);
   font-size: 12px; letter-spacing: .12em;
+  min-height: var(--touch); min-width: var(--touch);
 }
 .pager__btn:disabled {
   opacity: .4; cursor: not-allowed;
@@ -647,21 +686,121 @@ a { color: inherit; }
    ========================================================================== */
 
 .site-footer {
-  margin: 44px 36px 0;
-  padding: 14px 18px;
+  margin: 44px max(var(--page-pad), var(--safe-r)) 0 max(var(--page-pad), var(--safe-l));
+  padding: 14px 18px max(14px, var(--safe-b));
   background: var(--ink); color: var(--cream);
   font-family: var(--font-mono); font-size: 11px; letter-spacing: .18em;
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
 }
 
 /* ==========================================================================
-   RESPONSIVE
+   RESPONSIVE — Bug3 mobile RWD (hub)
+   Breakpoints: ~390 / ~430 phones; tablet (≥720) back to multi-column
    ========================================================================== */
 
+.tweak-mini {
+  max-width: calc(100vw - 28px - var(--safe-l) - var(--safe-r));
+  bottom: max(14px, var(--safe-b)) !important;
+  right: max(14px, var(--safe-r)) !important;
+}
+.tweak-mini button {
+  min-height: var(--touch);
+  min-width: var(--touch);
+}
+
 @media (max-width: 720px) {
-  .masthead, .scoreboard, .shell, .site-footer { margin-left: 18px; margin-right: 18px; }
-  .masthead { padding: 14px 0 6px; }
-  .scoreboard { grid-template-columns: repeat(2, 1fr); }
-  .ticker { font-size: 11px; gap: 12px; padding: 8px 14px; }
-  .schedule__strip { grid-template-columns: 1fr 1fr; }
+  :root { --page-pad: 16px; }
+
+  .masthead {
+    margin-left: 0; margin-right: 0;
+    padding: max(14px, var(--safe-t)) max(var(--page-pad), var(--safe-r)) 6px max(var(--page-pad), var(--safe-l));
+  }
+  .scoreboard {
+    margin-left: max(var(--page-pad), var(--safe-l));
+    margin-right: max(var(--page-pad), var(--safe-r));
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shell {
+    margin-left: 0; margin-right: 0;
+    padding-left: max(var(--page-pad), var(--safe-l));
+    padding-right: max(var(--page-pad), var(--safe-r));
+  }
+  .site-footer {
+    margin-left: max(var(--page-pad), var(--safe-l));
+    margin-right: max(var(--page-pad), var(--safe-r));
+  }
+  .ticker { font-size: 11px; gap: 12px; }
+  .schedule__strip { grid-template-columns: 1fr; }
+
+  .card-grid { grid-template-columns: 1fr; }
+  .featured { grid-template-columns: 1fr; gap: 20px; }
+  .featured .photo,
+  .featured .photo--tall { aspect-ratio: 16 / 9; }
+
+  .featured__leagues,
+  .type-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    padding-bottom: 6px;
+  }
+
+  .featured__lead { text-align: start; }
+  .featured__lead .dropcap { font-size: 48px; }
+
+  .rookie {
+    border-width: 6px;
+    box-shadow: 8px 8px 0 var(--orange);
+  }
+  .rookie[href]:hover { box-shadow: 10px 10px 0 var(--red); }
+  .rookie__foil {
+    top: 8px; right: 8px;
+    width: 48px; height: 48px;
+    font-size: 10px;
+  }
+  .rookie__top { flex-wrap: wrap; gap: 6px; font-size: 15px; }
+  .rookie__stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .hub-head h2 { font-size: clamp(24px, 7vw, 34px); }
+  .kicker { font-size: 22px; }
+
+  .filter-btn { min-height: var(--touch); min-width: var(--touch); }
+}
+
+@media (max-width: 430px) {
+  :root { --page-pad: 14px; }
+
+  .scoreboard { gap: 10px; padding: 10px; }
+  .scoreboard__value { font-size: 30px; }
+  .scoreboard__value--small { font-size: 18px; padding-top: 4px; }
+
+  .rookie__title { font-size: clamp(20px, 6.4vw, 26px); }
+  .rookie__sub { font-size: 22px; }
+  .rookie__stats { gap: 6px; font-size: 10px; }
+  .featured__lead { font-size: 17px; line-height: 1.55; }
+
+  .card { box-shadow: 4px 4px 0 var(--card-accent, var(--ink)); }
+  .card__summary { font-size: 16px; }
+
+  .ticker { gap: 10px; padding-top: 8px; padding-bottom: 8px; }
+}
+
+@media (max-width: 390px) {
+  :root { --page-pad: 12px; }
+
+  .wordmark { font-size: clamp(28px, 11vw, 40px); }
+  .masthead__meta { font-size: 10px; letter-spacing: .12em; }
+  .league-rail__btn { font-size: 14px; padding: 10px 12px; }
+}
+
+@media (min-width: 720px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  }
+  .schedule__strip {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
 }
