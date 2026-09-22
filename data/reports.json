@@ -1,5 +1,35 @@
 [
   {
+    "href": "cpbl/2026/brothers-rakuten-sep24-matchup.html",
+    "league": "cpbl",
+    "type": "matchup",
+    "date": "2026-09-21",
+    "title": "對決卡：兄弟＠桃猿｜桃園 9/24–25（下半季 1 vs 2）",
+    "summary": "截至 9/20 賽後，兄弟 30-21 領先，桃猿 26-22、勝差 2.5。收官週前最後一次龍頭互咬；先發待定。",
+    "seasonLabel": "CPBL 2026 · 系列對決卡",
+    "kicker": "中華職棒 · 對決卡",
+    "secondary": "下半季 1 vs 2；先發待定。",
+    "tagLabel": "對決卡",
+    "accent": "linear-gradient(135deg, #27AE60 0%, #1B3A6B 50%, #E85D04 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
+    "href": "cpbl/2026/week-sep15-20-report.html",
+    "league": "cpbl",
+    "type": "report",
+    "date": "2026-09-21",
+    "title": "中職周報：兄弟單週全勝登頂，下半季領先桃猿 2.5 場",
+    "summary": "中信兄弟 5 戰全勝、連 3 場再見，重返並拉開下半季龍頭；樂天桃猿中段連敗後 9/20 大勝止血，仍居第二。截至 9/20 賽後。",
+    "seasonLabel": "CPBL 2026 · 下半季周報",
+    "kicker": "中華職棒 · 周報",
+    "secondary": "9/15–9/20；兄弟週成績 5-0。",
+    "tagLabel": "周報",
+    "accent": "linear-gradient(135deg, #27AE60 0%, #1B3A6B 50%, #E85D04 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "cpbl/2026/dragons-brothers-sep19-matchup.html",
     "league": "cpbl",
     "type": "matchup",
@@ -11,8 +41,8 @@
     "secondary": "周末主打：龍象大戰。先發待定。",
     "tagLabel": "對決卡",
     "accent": "linear-gradient(135deg, #27AE60 0%, #1B3A6B 50%, #E85D04 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "cpbl/2026/week-sep8-17-standings.html",
