@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 亞塞拜然站週五：Russell 兩節練習全拿，Mercedes 先在 Baku 立下基準</title>
+  <meta name="description" content="亞塞拜然大獎賽週五快報。Russell 包辦週四 FP1、FP2 頭名，Mercedes 先在 Baku 街道賽建立速度優勢；Antonelli 液壓故障中斷 FP1、火損換引擎延後 FP2，仍回到第二；週六比賽倒數計時。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 亞塞拜然站週五：Russell 兩節練習全拿，Mercedes 先在 Baku 立下基準" />
+  <meta property="og:description" content="週四兩節練習結束，Russell 兩場領跑、Antonelli 克服液壓與動力單元問題回到 P2，Mercedes 在 Baku 街道展現單圈速度；週五排位、週六正賽壓力正式開始。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 15 | Friday Dispatch</div>
+      <h1>亞塞拜然站週五：Mercedes 先把 Baku 速度基準立起來</h1>
+      <p>週四 FP1、FP2 結束，George Russell 兩節練習都跑最快，Kimi Antonelli 雖然遭遇液壓故障與動力單元更換，仍在 FP2 回到第二。這是週四–週六格式的第一天，Mercedes 先把街道賽單圈速度立起來，Verstappen 與 Leclerc 也留在前三行列，但 McLaren 遇上車身問題、中段車隊有人撞牆有人換件。週五排位、週六正賽的壓力，現在才真正開始。</p>
+      <div class="meta">
+        <span>文章日期｜2026-09-25</span>
+        <span>賽事｜Formula 1 Qatar Airways Azerbaijan Grand Prix 2026</span>
+        <span>kind = fri</span>
+        <span>地點｜Baku City Circuit</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>亞塞拜然大獎賽是 2026 賽季第 15 站，因為週日 9 月 27 日是亞塞拜然國家紀念日，整個週末提前一天進行，改成週四–週六格式：週四跑 FP1 與 FP2、週五跑 FP3 與排位、週六下午正賽。</p>
+        <p>本篇對應的週五快報，涵蓋週四已經完成的兩節練習賽官方成績。FP1 與 FP2 都已有 Formula1.com 官方結果頁與官方報導，Russell 兩場領跑確立，Antonelli 克服液壓與動力單元問題回到第二，Verstappen、Leclerc、Hamilton 都留在前五。這是一份以已驗證結果為基礎的 Friday dispatch，而非賽前預測稿。</p>
+      </div>
+      <div class="status">資料邊界：本文以 Formula1.com 官方賽曆、亞塞拜然站賽事頁、FP1 結果頁、FP2 結果頁、官方 FP1 報導、官方 FP2 報導、車隊週四談話、Antonelli 與 Mercedes 反思文章，以及 The Athletic 週六賽程解釋為準。文中提及 Antonelli 領先積分差距引用自官方 Antonelli 反思報導。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Session One</div>
+        <h2>FP1 前十：Russell 先立下第一條基準線</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>George Russell</td><td>Mercedes</td><td>1:45.387</td><td>主直線尾流助攻</td></tr>
+            <tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td><td>+0.400</td><td>抱怨車身抖動</td></tr>
+            <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>+0.404</td><td>中性胎成績</td></tr>
+            <tr><td>4</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+0.437</td><td>中性胎成績</td></tr>
+            <tr><td>5</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+0.878</td><td>液壓故障提前結束</td></tr>
+            <tr><td>6</td><td>Oscar Piastri</td><td>McLaren</td><td>+0.991</td><td>車身修復耗時</td></tr>
+            <tr><td>7</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+1.053</td><td>回歸自己座車</td></tr>
+            <tr><td>8</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+1.214</td><td>曾衝出緩衝區</td></tr>
+            <tr><td>9</td><td>Esteban Ocon</td><td>Haas</td><td>+1.237</td><td>維修區出口停車後復原</td></tr>
+            <tr><td>10</td><td>Gabriel Bortoleto</td><td>Audi</td><td>+1.301</td><td>流線與氣動測試配件</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">Antonelli 在 25 分鐘時停在 Turn 7 外圈，觸發 VSC，官方報導確認液壓問題。Sainz 的 Williams 後煞車起火早退。Hulkenberg Audi 在時段尾聲停在 Turn 4 外，也觸發 VSC。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Session Two</div>
+        <h2>FP2 前十：Russell 再領跑，Antonelli 回到第二</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>George Russell</td><td>Mercedes</td><td>1:43.347</td><td>軟胎連續推進</td></tr>
+            <tr><td>2</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+0.552</td><td>換動力單元延後出場</td></tr>
+            <tr><td>3</td><td>Max Verstappen</td><td>Red Bull</td><td>+0.827</td><td>後軸抓地仍有問題</td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>+1.126</td><td>需要縮小差距</td></tr>
+            <tr><td>5</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+1.318</td><td>輪胎溫度窗口關鍵</td></tr>
+            <tr><td>6</td><td>Lando Norris</td><td>McLaren</td><td>+1.484</td><td>FP1 車身問題修復</td></tr>
+            <tr><td>7</td><td>Pierre Gasly</td><td>Alpine</td><td>+1.496</td><td>單圈節奏穩定上升</td></tr>
+            <tr><td>8</td><td>Oscar Piastri</td><td>McLaren</td><td>+1.510</td><td>扎帶臨時修復底板</td></tr>
+            <tr><td>9</td><td>Isack Hadjar</td><td>Red Bull</td><td>+1.521</td><td>FP1 變速箱問題已修</td></tr>
+            <tr><td>10</td><td>Esteban Ocon</td><td>Haas</td><td>+1.943</td><td>連兩時段前十</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">Lindblad 在 Turn 8-9-10 複合彎撞牆兩次，觸發紅旗，是本週末第一起撞牆事故。Bearman 的 Haas 引擎故障停在緩衝區。Antonelli 因 FP1 液壓漏油引發火損，預防性更換動力單元，錯過 FP2 前半。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Track Read</div>
+        <h2>週四三條主線</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. Mercedes 先把 Baku 單圈速度基準立起來，但對手還沒真正發力</strong>
+            <div>Russell 兩節練習都跑最快，FP2 領先 Antonelli 超過半秒，但 Mercedes 副領隊 Bradley Lord 也承認，其他車隊在軟胎推進階段還沒拿出全部速度，McLaren 與 Red Bull 帶來大幅升級，真正差距要等排位才會顯影。</div>
+          </div>
+          <div class="item">
+            <strong>2. Antonelli 克服液壓與動力單元問題，仍在 FP2 回到第二</strong>
+            <div>Antonelli 在 FP1 約 25 分鐘時液壓故障停車，FP2 又因火損預防性更換動力單元，錯過前半時段。他在有限圈數內跑出 1:43.899 排第二，證明速度依然在手，但街道賽少跑圈數會直接影響信心累積。官方報導確認他帶著馬德里勝利後 81 分優勢進入本週末。</div>
+          </div>
+          <div class="item">
+            <strong>3. McLaren 遭遇車身問題，Lindblad 再度週四撞牆</strong>
+            <div>McLaren 兩台車在 FP1 都遇上車身鬆脫與底板問題，FP2 用扎帶臨時修復。Norris 與 Piastri 雖然回到前十，但與 Russell 差距超過一秒。Racing Bulls 的 Lindblad 在 FP2 撞牆，這是他連續第二場大獎賽週四撞車，錯失關鍵圈數累積。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Circuit + Schedule</div>
+        <h2>Baku 週四–週六格式與台北時間對照</h2>
+        <table>
+          <thead>
+            <tr><th>日期</th><th>時間（台北）</th><th>Session</th><th>註記</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>09-24 週四</td><td>16:30</td><td>FP1（已完成）</td><td>Russell 1:45.387 最快</td></tr>
+            <tr><td>09-24 週四</td><td>20:00</td><td>FP2（已完成）</td><td>Russell 1:43.347 再領跑</td></tr>
+            <tr><td>09-25 週五</td><td>16:30</td><td>FP3</td><td>最後調校視窗</td></tr>
+            <tr><td>09-25 週五</td><td>20:00</td><td>Qualifying</td><td>決定週六正賽起跑位置</td></tr>
+            <tr><td>09-26 週六</td><td>19:00</td><td>Race</td><td>51 圈正賽，6.003 km 街道</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">週日 9 月 27 日是亞塞拜然國家紀念日，紀念 2020 年第二次納戈爾諾-卡拉巴赫戰爭陣亡將士，因此正賽改到週六舉行。官方賽道資訊：51 圈、賽道長 6.003 公里、總距離 306.049 公里、圈速紀錄 1:43.009（Leclerc 2019）。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Team Highlights</div>
+        <h2>車隊週四亮點與問題</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>Mercedes：速度領先，但 Antonelli 損失圈數</strong>
+            <div>Russell 兩節練習都最快，單圈與長距離節奏都不錯。Antonelli 液壓故障與動力單元更換耗掉大量時段，但仍回到 P2，展現速度與復原能力。</div>
+          </div>
+          <div class="item">
+            <strong>Red Bull：Verstappen 抱怨車身，Hadjar 變速箱耽誤 FP1</strong>
+            <div>Verstappen 兩節都在前三，但持續抱怨後軸抖動與抓地問題。Hadjar 手腕傷癒復出，FP1 遇變速箱問題只跑幾圈排 P20，FP2 修復後回到 P9。</div>
+          </div>
+          <div class="item">
+            <strong>Ferrari：乾淨的週四，但需要縮小差距</strong>
+            <div>Leclerc 與 Hamilton 都沒遇上機械問題，FP1 用中性胎排 P3、P4，FP2 也留在前五。Leclerc 表示缺速度，需要晚上挖數據找時間。</div>
+          </div>
+          <div class="item">
+            <strong>McLaren：車身問題拖累 FP1，FP2 扎帶臨時修復</strong>
+            <div>Norris 與 Piastri 在 FP1 都遇車身鬆脫與底板問題，FP2 用扎帶暫時修復，但與領先差距超過一秒。Rob Marshall 強調還在調校升級套件，相信排位能縮小差距。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Incidents</div>
+        <h2>週四事故與機械問題清單</h2>
+        <ul>
+          <li><strong>Antonelli 液壓故障（FP1）</strong>：約 25 分鐘時停在 Turn 7，觸發 VSC，提前結束 FP1。</li>
+          <li><strong>Sainz 煞車起火（FP1）</strong>：Williams 後煞車起火，無線電故障無法即時通報車隊，約 15 分鐘後返回。</li>
+          <li><strong>Hulkenberg 停車（FP1）</strong>：時段尾聲停在 Turn 4 外，觸發 VSC。</li>
+          <li><strong>Antonelli 動力單元更換（FP2）</strong>：FP1 液壓漏油引發火損，預防性更換動力單元，錯過 FP2 前半。</li>
+          <li><strong>Lindblad 撞牆（FP2）</strong>：Turn 8-9-10 複合彎撞牆兩次，觸發紅旗，連續第二場大獎賽週四撞車。</li>
+          <li><strong>Bearman 引擎故障（FP2）</strong>：Haas 引擎問題停在緩衝區，無法完成低油與高油測試。</li>
+        </ul>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Midfield Battle</div>
+        <h2>中段亮點</h2>
+        <p>Haas 的 Ocon 連兩時段前十，車隊平衡與煞車問題明顯改善。Audi 帶來大幅升級，FP1 用氣動測試配件與流線塗料蒐集數據，Bortoleto 與 Hulkenberg 分別在兩節進前十。Alpine 的 Gasly 在 FP2 排 P7，證明法國車隊週末節奏穩定上升。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Notable Quotes</div>
+        <h2>車手談話</h2>
+        <p><strong>Russell：</strong>「這是正面的第一天，單圈有競爭力，正賽節奏與 McLaren、Red Bull 接近。差距會在排位縮小，還有很多工作要做。」</p>
+        <p><strong>Antonelli：</strong>「損失圈數從來不理想，尤其在街道賽，但我覺得這是不錯的復原。車感不錯，還有幾個地方要調，期待明天。」</p>
+        <p><strong>Verstappen：</strong>「今天還算不錯，車子感覺還可以。我們在微調一些細節找更多速度，對車隊來說是個好開始。升級運作正常，看起來我們能爭領獎台。」</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Friday Preview</div>
+        <h2>週五（台北時間今晚）要看什麼</h2>
+        <p>FP3（16:30 台北時間）是最後調校視窗，車隊會把 FP1、FP2 數據轉成排位設定。排位（20:00 台北時間）直接決定週六正賽起跑位置，Russell 是否能把練習優勢轉成 Pole、Antonelli 能否補回損失的圈數信心、McLaren 與 Red Bull 的升級能否在單圈發力，都會在今晚揭曉。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.formula1.com/en/racing/2026/azerbaijan" target="_blank" rel="noreferrer">Formula1.com Azerbaijan Grand Prix 2026 race page</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1295/azerbaijan/practice/1" target="_blank" rel="noreferrer">Official FP1 results: Azerbaijan Grand Prix 2026</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1295/azerbaijan/practice/2" target="_blank" rel="noreferrer">Official FP2 results: Azerbaijan Grand Prix 2026</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/fp1-russell-leads-opening-azerbaijan-gp-practice-from-verstappen-as-antonelli-suffers-hydraulic-issue.1vpwyIqrue0aq0qtifIKCC" target="_blank" rel="noreferrer">Official FP1 report: Russell leads opening Azerbaijan GP practice from Verstappen as Antonelli suffers hydraulic issue</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/fp2-russell-leads-antonelli-and-verstappen-in-second-azerbaijan-gp-practice.37CqNf2uaAyxvDPmvbt3Iw" target="_blank" rel="noreferrer">Official FP2 report: Russell leads Antonelli and Verstappen in second Azerbaijan GP practice</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-the-teams-said-thursday-in-azerbaijan-2026.33OCsmiNRhHcKRHaPJB9m7" target="_blank" rel="noreferrer">What the teams said – Thursday in Azerbaijan</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/feel-like-it-was-a-good-recovery-antonelli-and-mercedes-reflect-on-practice-running-in-azerbaijan.c0c4kn5SnpEwnolbCZye1" target="_blank" rel="noreferrer">'Feel like it was a good recovery' – Antonelli and Mercedes reflect on practice running in Azerbaijan</a></li>
+          <li><a href="https://www.nytimes.com/athletic/7622925/2026/09/23/f1-azerbaijan-gp-schedule-saturday" target="_blank" rel="noreferrer">The Athletic: Why is the Azerbaijan Grand Prix on a Saturday? F1 Baku schedule explained</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文對應 2026-09-25 亞塞拜然站週五快報，涵蓋週四已完成的 FP1 與 FP2 官方成績；週五排位與週六正賽將另行發稿。
+  </footer>
+</body>
+</html>
