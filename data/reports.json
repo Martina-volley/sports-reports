@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/azerbaijan-sat.html",
+    "league": "f1",
+    "type": "sat",
+    "date": "2026-09-26",
+    "title": "亞塞拜然站週六：Russell 桿位領先近 0.9 秒，Antonelli Q1 撞牆掉到第 16",
+    "kicker": "Saturday Dispatch",
+    "summary": "Russell 以 1:42.526 拿下本季第五桿，領先 Leclerc 0.837 秒；Antonelli 在 Q1 撞牆提前出局，積分領先者週六從第 16 格起跑。",
+    "secondary": "FP3 由 Verstappen 最快，排位卻遇動力單元問題掉到第 8；Hadjar 復出搶第四，Piastri 與 Leclerc 僅差 0.001 秒。",
+    "seasonLabel": "F1 2026 Round 15",
+    "tagLabel": "週六焦點",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
     "href": "f1/2026/azerbaijan-fri.html",
     "league": "f1",
     "type": "fri",
@@ -12,7 +27,7 @@
     "tagLabel": "週五快報",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "cpbl/2026/brothers-rakuten-sep24-matchup.html",
@@ -26,7 +41,7 @@
     "secondary": "周末主打：猿象互咬。先發待定。",
     "tagLabel": "對決卡",
     "accent": "linear-gradient(135deg, #27AE60 0%, #1B3A6B 50%, #E85D04 100%)",
-    "featured": true,
+    "featured": false,
     "latest": false
   },
   {
