@@ -11,8 +11,8 @@
     "seasonLabel": "F1 2026 Round 15",
     "tagLabel": "賽後",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "volleyball/2026/2026-09-asian-games-mens-prelim-schedule.html",
@@ -26,8 +26,8 @@
     "secondary": "預賽行事曆與中華台北三場對戰；來源附於文內。",
     "tagLabel": "賽程",
     "accent": "linear-gradient(135deg, #0B6E99 0%, #084E6E 50%, #142033 100%)",
-    "featured": false,
-    "latest": false
+    "featured": true,
+    "latest": true
   },
   {
     "href": "f1/2026/azerbaijan-sat.html",
