@@ -15,6 +15,21 @@
     "latest": true
   },
   {
+    "href": "volleyball/2026/2026-09-asian-games-mens-prelim-schedule.html",
+    "league": "volleyball",
+    "type": "briefing",
+    "date": "2026-09-27",
+    "title": "亞運男排預賽行事曆：9/27 開打，中華台北 D 組先戰中國",
+    "summary": "2026 愛知名古屋亞運男子排球預賽 9/27–29。中華台北在 D 組，依序對中國、韓國、菲律賓。",
+    "seasonLabel": "Asian Games 2026 · Men",
+    "kicker": "室內 · 亞運男排",
+    "secondary": "預賽行事曆與中華台北三場對戰；來源附於文內。",
+    "tagLabel": "賽程",
+    "accent": "linear-gradient(135deg, #0B6E99 0%, #084E6E 50%, #142033 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/azerbaijan-sat.html",
     "league": "f1",
     "type": "sat",
