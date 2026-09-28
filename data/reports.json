@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/bahrain-malaysia-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-09-28",
+    "title": "F1 2026 巴林大獎賽（馬來西亞）賽前：雪邦回歸，Antonelli 66 分領先迎戰濕熱長距離",
+    "kicker": "Sepang · Race Preview",
+    "summary": "Baku 後 Russell 把領先縮到 66 分；下一站巴林大獎賽移師雪邦，Sepang 的長直道、濕熱與陣雨會直接考驗輪胎與雙車執行。",
+    "secondary": "本文整理台灣時間賽程、賽後積分、Sepang 賽道重點、四大車隊動向與排位觀察；事實以可核對來源為準。",
+    "seasonLabel": "F1 2026 Round 16",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 48%, #c2410c 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
     "href": "f1/2026/azerbaijan-race.html",
     "league": "f1",
     "type": "race",
@@ -26,8 +41,8 @@
     "secondary": "預賽行事曆與中華台北三場對戰；來源附於文內。",
     "tagLabel": "賽程",
     "accent": "linear-gradient(135deg, #0B6E99 0%, #084E6E 50%, #142033 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/azerbaijan-sat.html",
