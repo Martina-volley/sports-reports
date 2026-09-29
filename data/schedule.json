@@ -1,10 +1,10 @@
 [
-  { "league": "f1", "round": "R15", "date": "09-26", "name": "亞塞拜然大獎賽", "city": "Baku", "day": "SAT" },
   { "league": "f1", "round": "R16", "date": "10-04", "name": "巴林大獎賽（馬來西亞）", "city": "Sepang", "day": "SUN" },
   { "league": "f1", "round": "R17", "date": "10-11", "name": "新加坡大獎賽", "city": "Marina Bay", "day": "SUN" },
   { "league": "f1", "round": "R18", "date": "10-25", "name": "美國大獎賽", "city": "Austin", "day": "SUN" },
   { "league": "f1", "round": "R19", "date": "11-01", "name": "墨西哥城大獎賽", "city": "Mexico City", "day": "SUN" },
   { "league": "f1", "round": "R20", "date": "11-08", "name": "聖保羅大獎賽", "city": "São Paulo", "day": "SUN" },
   { "league": "f1", "round": "R21", "date": "11-21", "name": "拉斯維加斯大獎賽", "city": "Las Vegas", "day": "SAT" },
-  { "league": "f1", "round": "R22", "date": "11-29", "name": "卡達大獎賽", "city": "Lusail", "day": "SUN" }
+  { "league": "f1", "round": "R22", "date": "11-29", "name": "卡達大獎賽", "city": "Lusail", "day": "SUN" },
+  { "league": "f1", "round": "R23", "date": "12-06", "name": "阿布達比大獎賽", "city": "Yas Marina", "day": "SUN" }
 ]
