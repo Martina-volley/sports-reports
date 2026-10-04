@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/bahrain-malaysia-race.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-10-04",
+    "title": "巴林站週日：Verstappen 本季首桿，Hamilton 前線，Antonelli 升第三格起跑",
+    "kicker": "Race Day Dispatch",
+    "summary": "週六排位由 Verstappen 以 1:35.130 拿下本季首桿（生涯第 49 桿），Hamilton 差 0.298 秒排第二；Hadjar 排位第三因動力單元罰 5 格掉到第 8，Antonelli 升第三格起跑。",
+    "secondary": "FP3 由 Antonelli 最快（1:36.302）；罰格後正式起跑格已出爐。正賽 2026 年 10 月 4 日台灣時間 15:00 尚未開跑，本稿不含正賽結果。",
+    "seasonLabel": "F1 2026 Round 16",
+    "tagLabel": "週日焦點",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
     "href": "f1/2026/bahrain-malaysia-sat.html",
     "league": "f1",
     "type": "sat",
@@ -11,8 +26,8 @@
     "seasonLabel": "F1 2026 Round 16",
     "tagLabel": "週六焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/bahrain-malaysia-fri.html",
