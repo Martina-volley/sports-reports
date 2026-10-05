@@ -1,5 +1,35 @@
 [
   {
+    "href": "f1/2026/bahrain-malaysia-review.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-10-05",
+    "title": "F1 2026 巴林（馬來西亞）正賽：Verstappen 雨戰首勝，Antonelli 守住亞軍、Russell 退賽領先擴大到 84 分",
+    "kicker": "Monday Review",
+    "summary": "雨中延遲的巴林大獎賽（馬來西亞），Verstappen 從失去領先到奪回勝利、拿下本季首勝。Antonelli 守住第二、積分擴大到 320 分。",
+    "secondary": "Russell 在第三位時動力單元故障退賽、積分凍結在 236 分、落後 84 分。Ferrari 雙車賭錯輪胎從後段追回頒獎台，Hamilton 第三、Leclerc 第四。",
+    "seasonLabel": "F1 2026 Round 16",
+    "tagLabel": "賽後回顧",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
+    "href": "f1/2026/singapore-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-10-05",
+    "title": "F1 2026 新加坡大獎賽賽前：首次 Sprint 週末，Antonelli 84 分領先迎戰 Marina Bay 夜間街道賽",
+    "kicker": "Marina Bay · Race Preview",
+    "summary": "新加坡大獎賽首次採用 Sprint 週末格式，Marina Bay 街道賽在夜間燈光下進行、全長 4.927 公里、正賽 62 圈。",
+    "secondary": "巴林站後 Antonelli 領先擴大到 84 分、七站剩 175 分可爭。濕熱環境與高體能需求會直接考驗車隊執行力，Verstappen 首勝後氣勢回升。",
+    "seasonLabel": "F1 2026 Round 17",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 48%, #c2410c 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/bahrain-malaysia-race.html",
     "league": "f1",
     "type": "race",
@@ -12,7 +42,7 @@
     "tagLabel": "週日焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": true,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/bahrain-malaysia-sat.html",
