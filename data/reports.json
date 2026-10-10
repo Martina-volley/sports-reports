@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/singapore-fri.html",
+    "league": "f1",
+    "type": "fri",
+    "date": "2026-10-09",
+    "title": "新加坡站週五：Russell 獨領 FP1、Verstappen 拿下 Sprint 桿位",
+    "kicker": "Friday Dispatch",
+    "summary": "Sprint 週末僅一次練習，Russell 1:32.274 最快；Sprint 排位 Verstappen 1:31.156 搶桿，Russell 第二、Antonelli 第七。",
+    "secondary": "Antonelli 領先 84 分但排位僅第七，週六 Sprint 街道賽超車難。Russell 因巴林引擎退賽受罰，週日正賽將從排尾起跑。",
+    "seasonLabel": "F1 2026 Round 17",
+    "tagLabel": "週五快報",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/bahrain-malaysia-review.html",
     "league": "f1",
     "type": "race",
@@ -12,7 +27,7 @@
     "tagLabel": "賽後回顧",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/singapore-preview.html",
