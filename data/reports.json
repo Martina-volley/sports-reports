@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/singapore-race.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-10-11",
+    "title": "新加坡站週日：Verstappen 桿位、Ferrari 緊跟，Russell 排尾追分",
+    "kicker": "Race Day Dispatch",
+    "summary": "Verstappen 以 1:31.373 拿下新加坡桿位，領先 Leclerc 0.054 秒，Hamilton 第三、Antonelli 第四。Russell 因動力單元罰 40 格從第 21 起跑，Hadjar 排位無成績排第 22。",
+    "secondary": "Sprint 由 Verstappen 贏下，Russell 首圈撞牆。正賽 2026 年 10 月 11 日台灣時間 20:00 尚未開跑，本稿不含正賽結果。",
+    "seasonLabel": "F1 2026 Round 17",
+    "tagLabel": "週日焦點",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
     "href": "f1/2026/singapore-sat.html",
     "league": "f1",
     "type": "sat",
@@ -12,7 +27,7 @@
     "tagLabel": "週六焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/singapore-fri.html",
@@ -71,7 +86,7 @@
     "seasonLabel": "F1 2026 Round 16",
     "tagLabel": "週日焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
-    "featured": true,
+    "featured": false,
     "latest": false
   },
   {

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 新加坡站週日：Verstappen 桿位、Ferrari 緊跟，Russell 排尾追分</title>
+  <meta name="description" content="新加坡大獎賽（Marina Bay）週日 Race Day Dispatch。正賽 2026 年 10 月 11 日台灣時間 20:00 開跑，截至本稿尚未進行。Verstappen 以 1:31.373 拿下桿位，Leclerc 差 0.054 秒，Hamilton 第三；Russell 罰 40 格、Hadjar 無成績，兩人排尾。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 新加坡站週日：Verstappen 桿位、Ferrari 緊跟，Russell 排尾追分" />
+  <meta property="og:description" content="Sprint 與排位已結束，官方暫定起跑格出爐。正賽 2026 年 10 月 11 日 20:00 尚未進行，本稿不含正賽結果。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 14ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 860px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 17 | Race Day Dispatch</div>
+      <h1>Verstappen 桿位，Ferrari 緊跟，Russell 排尾追分</h1>
+      <p>新加坡大獎賽正賽 2026 年 10 月 11 日台灣時間 20:00 開跑，本稿執行時尚未進行。Max Verstappen 以 1:31.373 拿下桿位，領先 Leclerc 0.054 秒，Hamilton 第三。Sprint 也是 Verstappen 贏。Russell 因動力單元零件超配額罰 40 格，從第 21 起跑；Hadjar 排位沒有成績，排第 22。積分領先的 Antonelli 排第四。</p>
+      <div class="meta">
+        <span>文章日期｜2026-10-11</span>
+        <span>賽事｜Formula 1 Singapore Airlines Singapore Grand Prix 2026</span>
+        <span>kind = race</span>
+        <span>地點｜Marina Bay Street Circuit</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>新加坡大獎賽是 2026 賽季第 17 站，採 Sprint 週末。週五 FP1 與 Sprint 排位、週六 Sprint 與正賽排位都已結束，FIA 官方成績與暫定起跑格可核對。</p>
+        <p>正賽 2026 年 10 月 11 日 20:00（新加坡與台灣同為 UTC+8）開跑，共 62 圈，截至本稿尚未進行。本篇只寫已結束的 Sprint、排位與起跑格，不寫正賽勝負、名次或完賽時間。</p>
+      </div>
+      <div class="status">資料邊界：以 FIA 官方文件（Sprint 結果、排位結果、暫定起跑格、積分）與 Formula1.com 報導為準，輔以 BBC Sport、Sky Sports、The Race 交叉核對。起跑格為 FIA 於 2026-10-11 03:00（文件 75）發布的暫定版，之後若有更動，以官方最終起跑格為準。正賽結果待賽後另行發稿。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Qualifying Q3</div>
+        <h2>排位前十：Verstappen 領先 0.054 秒</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Max Verstappen</td><td>Red Bull</td><td>1:31.373</td><td>桿位，生涯第 50 桿、新加坡首桿</td></tr>
+            <tr><td>2</td><td>Charles Leclerc</td><td>Ferrari</td><td>+0.054</td><td>1:31.427，最後一圈才升上第二</td></tr>
+            <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+0.123</td><td>1:31.496，Q1、Q2 都是最快</td></tr>
+            <tr><td>4</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+0.189</td><td>1:31.562，積分榜領先者</td></tr>
+            <tr><td>5</td><td>Lando Norris</td><td>McLaren</td><td>+0.339</td><td>1:31.712</td></tr>
+            <tr><td>6</td><td>George Russell</td><td>Mercedes</td><td>+0.374</td><td>1:31.747，罰 40 格，正式起跑第 21</td></tr>
+            <tr><td>7</td><td>Oscar Piastri</td><td>McLaren</td><td>+0.487</td><td>1:31.860，Russell 罰格後升第 6</td></tr>
+            <tr><td>8</td><td>Pierre Gasly</td><td>Alpine</td><td>+0.852</td><td>1:32.225</td></tr>
+            <tr><td>9</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+0.996</td><td>1:32.369</td></tr>
+            <tr><td>10</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+1.408</td><td>1:32.781</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">Q1 出局：Alonso、Albon、Stroll、Pérez、Bottas、Hadjar。Q2 出局：Hülkenberg、Bearman、Ocon、Sainz、Bortoleto、Colapinto。來源：FIA 排位最終成績、Formula1.com。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Saturday Sprint</div>
+        <h2>Sprint 前八：Verstappen 贏，Russell 首圈撞牆</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Max Verstappen</td><td>Red Bull</td><td>39:48.162</td><td>8 分，桿位起跑</td></tr>
+            <tr><td>2</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+2.591</td><td>7 分，從第 6 起跑，最快圈 1:45.457</td></tr>
+            <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>+16.871</td><td>6 分</td></tr>
+            <tr><td>4</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+17.238</td><td>5 分，從第 7 起跑</td></tr>
+            <tr><td>5</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+20.632</td><td>4 分</td></tr>
+            <tr><td>6</td><td>Oliver Bearman</td><td>Haas</td><td>+24.321</td><td>3 分</td></tr>
+            <tr><td>7</td><td>Nico Hülkenberg</td><td>Audi</td><td>+27.525</td><td>2 分</td></tr>
+            <tr><td>8</td><td>Lando Norris</td><td>McLaren</td><td>+28.272</td><td>1 分，終盤與 Piastri 相撞</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">20 圈，降雨使起跑延後約 30 分鐘。Russell 起跑後一度超過 Verstappen，首圈最後一個彎失控撞牆；Piastri 被分類第 14。官方成績共 9 人標 DNF。來源：FIA Sprint 最終成績、Formula1.com、BBC Sport。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Race Day Read</div>
+        <h2>週日三條主線</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 桿位在手，起步是 Verstappen 的疑慮</strong>
+            <div>Verstappen 第一輪 Q3 就跑出 1:31.373，之後沒被超過。這是他生涯第 50 桿，也是新加坡首桿。Sprint 他說起步「horrendous」，是靠 Russell 在最後一彎撞牆才領先。Sky Sports 指出，新加坡第一彎不必重煞，起步慢了很難在彎前補回來。</div>
+          </div>
+          <div class="item">
+            <strong>2. Ferrari 兩台車排第二、第三</strong>
+            <div>Hamilton 在 Q1、Q2 都最快，Q3 最終差 0.123 秒，第二輪沒能進步。Leclerc 最後一圈進步，把 Hamilton 擠到第三。Hamilton 在 Sprint 從第六起跑拿第二；排位後他說要贏 Verstappen 很難，但兩台 Ferrari 有機會一起施壓。</div>
+          </div>
+          <div class="item">
+            <strong>3. Russell 與 Hadjar 排尾，Antonelli 前面少了對手</strong>
+            <div>Russell 排位第六，但 Mercedes 換了第 5 顆內燃機、第 5 顆渦輪、第 5 組排氣和第 4 顆 MGU-K，累計罰 40 格，正式起跑第 21。Antonelli 排第四，積分領先 Russell 89 分。街道賽超車困難，Russell 能追回多少，要看安全車與策略。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Penalties &amp; Changes</div>
+        <h2>罰格與起跑格異動</h2>
+        <ul>
+          <li><strong>George Russell（Mercedes）</strong>：FIA 文件 20，動力單元超配額，累計罰 40 格。排位第 6，起跑第 21。</li>
+          <li><strong>Isack Hadjar（Red Bull）</strong>：Sprint 因動力單元問題退賽；排位 Q1 變速箱故障，沒有計時成績。stewards 文件 71 准許他起跑，排第 22。Red Bull 領隊 Mekies 說，這個週末「沒給他任何發揮速度的機會」。</li>
+          <li><strong>Fernando Alonso（Aston Martin）</strong>：車隊宣布依車手回饋更換動力單元。FIA 暫定起跑格與 Formula1.com 仍列第 16、未註明罰格；部分媒體（如 Grande Prêmio）報他降到第 21。本稿以官方暫定格為準，最終以 FIA 公布為準。</li>
+          <li><strong>Carlos Sainz（Williams）</strong>：Sprint 前因參數變更違反 parc fermé，被罰從 pit lane 起跑。該罰則只適用 Sprint，正賽排第 13。</li>
+        </ul>
+        <div class="mini-note">來源：FIA 文件 20、37、71 與暫定起跑格（文件 75）、Formula1.com、The Race、Grande Prêmio。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Starting Grid</div>
+        <h2>官方暫定起跑格（22 車）</h2>
+        <table>
+          <thead>
+            <tr><th>格位</th><th>車手</th><th>車隊</th><th>排位成績</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Max Verstappen</td><td>Red Bull</td><td>1:31.373</td><td>桿位</td></tr>
+            <tr><td>2</td><td>Charles Leclerc</td><td>Ferrari</td><td>1:31.427</td><td></td></tr>
+            <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>1:31.496</td><td></td></tr>
+            <tr><td>4</td><td>Kimi Antonelli</td><td>Mercedes</td><td>1:31.562</td><td></td></tr>
+            <tr><td>5</td><td>Lando Norris</td><td>McLaren</td><td>1:31.712</td><td></td></tr>
+            <tr><td>6</td><td>Oscar Piastri</td><td>McLaren</td><td>1:31.860</td><td>Russell 罰格後升格</td></tr>
+            <tr><td>7</td><td>Pierre Gasly</td><td>Alpine</td><td>1:32.225</td><td></td></tr>
+            <tr><td>8</td><td>Liam Lawson</td><td>Racing Bulls</td><td>1:32.369</td><td></td></tr>
+            <tr><td>9</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>1:32.781</td><td></td></tr>
+            <tr><td>10</td><td>Nico Hülkenberg</td><td>Audi</td><td>1:32.784</td><td></td></tr>
+            <tr><td>11</td><td>Oliver Bearman</td><td>Haas</td><td>1:32.908</td><td></td></tr>
+            <tr><td>12</td><td>Esteban Ocon</td><td>Haas</td><td>1:33.323</td><td></td></tr>
+            <tr><td>13</td><td>Carlos Sainz</td><td>Williams</td><td>1:33.526</td><td>pit lane 罰則只適用 Sprint</td></tr>
+            <tr><td>14</td><td>Gabriel Bortoleto</td><td>Audi</td><td>1:33.658</td><td></td></tr>
+            <tr><td>15</td><td>Franco Colapinto</td><td>Alpine</td><td>1:33.787</td><td>Q2 最後一圈擦牆</td></tr>
+            <tr><td>16</td><td>Fernando Alonso</td><td>Aston Martin</td><td>1:34.223</td><td>已宣布換動力單元，官方暫定格未列罰格</td></tr>
+            <tr><td>17</td><td>Alexander Albon</td><td>Williams</td><td>1:34.289</td><td></td></tr>
+            <tr><td>18</td><td>Lance Stroll</td><td>Aston Martin</td><td>1:34.946</td><td></td></tr>
+            <tr><td>19</td><td>Sergio Pérez</td><td>Cadillac</td><td>1:35.123</td><td></td></tr>
+            <tr><td>20</td><td>Valtteri Bottas</td><td>Cadillac</td><td>1:35.984</td><td></td></tr>
+            <tr><td>21</td><td>George Russell</td><td>Mercedes</td><td>1:31.747</td><td>排位第 6，罰 40 格</td></tr>
+            <tr><td>22</td><td>Isack Hadjar</td><td>Red Bull</td><td>無成績</td><td>排位未計時，stewards 准許起跑</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">依 FIA 暫定起跑格（文件 75，2026-10-11 03:00）與 Formula1.com 起跑格頁整理。Alonso 若之後被官方加罰，起跑格會再變動。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings Reminder</div>
+        <h2>Sprint 後的積分榜</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>積分</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>325</td><td>領先 Russell 89 分</td></tr>
+            <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>236</td><td>Sprint 首圈撞牆，0 分</td></tr>
+            <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>221</td><td></td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>197</td><td></td></tr>
+            <tr><td>5</td><td>Max Verstappen</td><td>Red Bull</td><td>196</td><td>與 Leclerc 差 1 分</td></tr>
+            <tr><td>6</td><td>Lando Norris</td><td>McLaren</td><td>189</td><td></td></tr>
+            <tr><td>7</td><td>Oscar Piastri</td><td>McLaren</td><td>128</td><td></td></tr>
+            <tr><td>8</td><td>Isack Hadjar</td><td>Red Bull</td><td>96</td><td></td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">車隊榜（Sprint 後）：Mercedes 561、Ferrari 418、McLaren 317、Red Bull 306、Racing Bulls 94。Sprint 計入：Verstappen +8、Hamilton +7、Leclerc +6、Antonelli +5。來源：FIA 文件 67。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Team Highlights</div>
+        <h2>車隊看點</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>Red Bull：一台桿位，一台排尾</strong>
+            <div>Verstappen 桿位又贏 Sprint，一週前剛贏下巴林大獎賽（馬來西亞）。Hadjar 週末兩次遇機械問題，從第 22 起跑，目標是回到積分區。</div>
+          </div>
+          <div class="item">
+            <strong>Ferrari：兩台車都在前三</strong>
+            <div>Hamilton 與 Leclerc 都在桿位 0.123 秒內。兩人都還在找本季第二勝，車隊有兩台車可以分工壓 Verstappen。</div>
+          </div>
+          <div class="item">
+            <strong>Mercedes：一前一後</strong>
+            <div>Antonelli 第四起跑，保住積分領先；Russell 要從第 21 追。Mercedes 車隊積分仍領先 Ferrari 143 分。</div>
+          </div>
+          <div class="item">
+            <strong>McLaren：Sprint 內鬨後同排起跑</strong>
+            <div>Norris 與 Piastri 在 Sprint 終盤相撞。正賽兩人排第五、第六，同在第三排。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Weather</div>
+        <h2>天氣</h2>
+        <p>預報不一致。Sky Sports 預期正賽為乾地；Formula1.com 賽前看點仍提醒有再降雨的可能。週六 Sprint 才因降雨延後 30 分鐘開跑，下雨與否會直接影響策略。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Tyres &amp; Strategy</div>
+        <h2>輪胎與策略</h2>
+        <p>Pirelli 帶 C3（Hard）、C4（Medium）、C5（Soft）。一停仍是主流，Medium 與 Hard 是基準，Soft 今年被更多車隊考慮。進站會損失不少時間，安全車出現的機率也高，進站時機比單純的磨耗更關鍵。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Race Hook</div>
+        <h2>正賽要看什麼</h2>
+        <p>第一，Verstappen 的起步。第二，Ferrari 兩台車怎麼分工。第三，Russell 從第 21 追，第四，Hadjar 從最後一排回到積分區。最後是 Alonso 的起跑格有沒有被官方修正。以上都是賽前觀察點，不是預測。</p>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Schedule</div>
+        <h2>週日賽程（台灣時間）</h2>
+        <table>
+          <thead>
+            <tr><th>日期</th><th>時間</th><th>Session</th><th>備註</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10-10 週六</td><td>—</td><td>Sprint（20 圈）</td><td>已結束，Verstappen 贏</td></tr>
+            <tr><td>10-10 週六</td><td>—</td><td>Qualifying</td><td>已結束，Verstappen 桿位</td></tr>
+            <tr><td>10-11 週日</td><td>20:00</td><td>Race（62 圈）</td><td>尚未進行，本稿不含結果</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">新加坡與台灣同為 UTC+8，開賽時間直接對應。正賽時間依 Formula1.com 與 Sky Sports；Sprint 當日因雨延後約 30 分鐘。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Not Yet Happened</div>
+        <h2>本稿沒有的東西</h2>
+        <p>正賽尚未進行。本篇沒有正賽名次、完賽時間、最快圈、安全車或退賽資訊，也不推測誰會贏。正賽結果會在賽後另行發稿，數字以 FIA 官方成績為準。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_final_qualifying_classification.pdf" target="_blank" rel="noreferrer">FIA：Qualifying Final Classification</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_provisional_starting_grid.pdf" target="_blank" rel="noreferrer">FIA：Provisional Starting Grid（文件 75）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_decision_-_permission_to_start.pdf" target="_blank" rel="noreferrer">FIA：Permission to start（文件 71，Hadjar）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_infringement_-_car_63_-_changes_to_pu_elements.pdf" target="_blank" rel="noreferrer">FIA：Car 63 PU elements（文件 20，Russell 罰 40 格）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_infringement_-_car_55_-_changes_made_during_parc_ferme.pdf" target="_blank" rel="noreferrer">FIA：Car 55 parc fermé（文件 37，Sainz，Sprint）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_final_sprint_classification.pdf" target="_blank" rel="noreferrer">FIA：Sprint Final Classification</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_singapore_grand_prix_-_championship_points_after_sprint.pdf" target="_blank" rel="noreferrer">FIA：Championship Points after Sprint（文件 67）</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1296/singapore/starting-grid" target="_blank" rel="noreferrer">Formula1.com：Singapore GP 2026 Starting Grid</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/verstappen-beats-leclerc-to-pole-position-for-the-singapore-gp.7yum1V3S9aSTyj3Zzzs0Y9" target="_blank" rel="noreferrer">Formula1.com：Qualifying report，Verstappen beats Leclerc to pole</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/verstappen-wins-dramatic-rain-hit-singapore-sprint-as-russell-crashes-and-mclarens-collide.4r90mH2skljBa5sinFAsyp" target="_blank" rel="noreferrer">Formula1.com：Sprint report</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/hadjar-really-p-d-to-miss-out-on-singapore-qualifying-as-reliability-woes-continue.4kqEILdQ3b5m391JE11XXy" target="_blank" rel="noreferrer">Formula1.com：Hadjar 排位故障</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-to-watch-for-in-the-singapore-grand-prix.3sJXqpx3NdOWrrjnXZ7h0d" target="_blank" rel="noreferrer">Formula1.com：What To Watch For in the Singapore GP</a></li>
+          <li><a href="https://www.bbc.com/sport/formula1/articles/cwn73gmz78reo" target="_blank" rel="noreferrer">BBC Sport：Verstappen wins sprint after Russell crashes out</a></li>
+          <li><a href="https://www.skysports.com/f1/news/13597106/singapore-gp-can-charles-leclerc-and-lewis-hamilton-work-together-to-beat-max-verstappen-in-sundays-race" target="_blank" rel="noreferrer">Sky Sports：Singapore GP 賽前分析</a></li>
+          <li><a href="https://www.the-race.com/formula-1/f1-2026-singapore-grand-prix-starting-grid-after-two-penalties/" target="_blank" rel="noreferrer">The Race：Starting grid after two penalties</a></li>
+          <li><a href="https://grandepremio.com/en/f1/aston-martin-confirms-alonso-engine-change-after-singapore-qualifying-struggles/" target="_blank" rel="noreferrer">Grande Prêmio：Aston Martin confirms Alonso engine change</a></li>
+          <li><a href="../../f1/2026/singapore-sat.html">新加坡站週六快報</a></li>
+          <li><a href="../../f1/2026/singapore-fri.html">新加坡站週五快報</a></li>
+          <li><a href="../../f1/2026/singapore-preview.html">新加坡站 Preview</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文對應 2026-10-11 新加坡站週日 Race Day Dispatch，涵蓋已結束的 Sprint、排位與官方暫定起跑格；正賽尚未進行，結果將另行發稿。
+  </footer>
+</body>
+</html>
