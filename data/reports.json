@@ -1,5 +1,35 @@
 [
   {
+    "href": "f1/2026/austin-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-10-12",
+    "title": "F1 2026 美國大獎賽賽前：Antonelli 102 分領先、冠軍幾乎確定，Red Bull 追近 McLaren 至 7 分",
+    "kicker": "Austin · Race Preview",
+    "summary": "美國大獎賽在 Circuit of the Americas（Austin）舉辦、全長 5.513 公里、正賽 56 圈、正常週末格式（非 Sprint）。",
+    "secondary": "新加坡站後 Antonelli 領先 Russell 102 分、六站剩 150 分可爭、冠軍幾乎確定。Verstappen 連勝兩站後氣勢回升，Red Bull 車隊積分追近 McLaren 至 7 分。",
+    "seasonLabel": "F1 2026 Round 18",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 48%, #c2410c 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
+    "href": "f1/2026/singapore-review.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-10-12",
+    "title": "F1 2026 新加坡大獎賽正賽：Verstappen 連勝兩站，Antonelli 第三、領先擴大到 102 分",
+    "kicker": "Monday Review",
+    "summary": "新加坡大獎賽正賽 62 圈，Verstappen 從桿位起跑控制全場、拿下新加坡首勝與連續兩站勝利。Leclerc 第二、Antonelli 第三。",
+    "secondary": "Russell 從第 19 格追到第九拿 2 分。Antonelli 領先 Russell 102 分，六站剩 150 分可爭、冠軍幾乎確定。Hamilton 輪胎策略失誤從第三掉到第六。",
+    "seasonLabel": "F1 2026 Round 17",
+    "tagLabel": "賽後回顧",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/singapore-race.html",
     "league": "f1",
     "type": "race",
@@ -11,8 +41,8 @@
     "seasonLabel": "F1 2026 Round 17",
     "tagLabel": "週日焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/singapore-sat.html",
