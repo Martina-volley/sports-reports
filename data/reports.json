@@ -1,5 +1,19 @@
 [
   {
+    "href": "cpbl/2026/taiwan-series-g4.html",
+    "league": "cpbl",
+    "type": "game",
+    "date": "2026-10-22",
+    "title": "兄弟 G4 拒絕被橫掃，台灣大賽延長到 G5",
+    "summary": "中信兄弟在 10/21 台灣大賽 G4 延長到 11 局，靠詹子賢再見安打以 5:4 擊敗味全龍，拿下系列賽第一勝，把比數追成 1:3，系列賽進入 G5。",
+    "seasonLabel": "CPBL 2026 · 台灣大賽",
+    "kicker": "中華職棒 · 台灣大賽",
+    "tagLabel": "台灣大賽 G4",
+    "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
+    "featured": true,
+    "latest": true
+  },
+  {
     "href": "cpbl/2026/taiwan-series-g1-g3.html",
     "league": "cpbl",
     "type": "standings",
@@ -11,8 +25,8 @@
     "secondary": "資料區間 2026-09-22 ～ 2026-10-20。下半季最終戰績、全年戰績、挑戰賽與台灣大賽 G1–G3。",
     "tagLabel": "台灣大賽",
     "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
-    "featured": true,
-    "latest": true
+    "featured": false,
+    "latest": false
   },
   {
     "href": "f1/2026/austin-preview.html",
