@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/austin-fri.html",
+    "league": "f1",
+    "type": "fri",
+    "date": "2026-10-23",
+    "title": "美國站週五：Austin 還沒開練，Antonelli 領先 102 分、本週第一次有封王機會",
+    "kicker": "Friday Dispatch",
+    "summary": "R18 美國站是標準週末，不是衝刺賽。台灣時間週六 01:30 才跑 FP1，本稿沒有練習成績。",
+    "secondary": "新加坡站後 Antonelli 340 分、領先 Russell 102 分。官方寫明，他本週第一次有數學上封王的機會。車隊第三 McLaren 領先 Red Bull 7 分。",
+    "seasonLabel": "F1 2026 Round 18",
+    "tagLabel": "週五快報",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "cpbl/2026/taiwan-series-g4.html",
     "league": "cpbl",
     "type": "game",
@@ -11,7 +26,7 @@
     "tagLabel": "台灣大賽 G4",
     "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
     "featured": true,
-    "latest": true
+    "latest": false
   },
   {
     "href": "cpbl/2026/taiwan-series-g1-g3.html",
