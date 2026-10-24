@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/austin-sat.html",
+    "league": "f1",
+    "type": "sat",
+    "date": "2026-10-24",
+    "title": "美國站週六：Leclerc 連兩節最快，FP3 與排位在週日凌晨",
+    "kicker": "Saturday Dispatch",
+    "summary": "FP1、FP2 都是 Leclerc 最快（1:36.052、1:35.291）。Antonelli 在 FP2 差 0.042 秒。FP3 與排位在台灣時間週日凌晨，本稿沒有這兩節成績。",
+    "secondary": "Lindblad 罰退 5 格、Colapinto 罰退 10 格、Bortoleto 罰退 20 格並依規定從排尾起跑。正式起跑格要等排位結束才套用。",
+    "seasonLabel": "F1 2026 Round 18",
+    "tagLabel": "週六焦點",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/austin-fri.html",
     "league": "f1",
     "type": "fri",
@@ -12,7 +27,7 @@
     "tagLabel": "週五快報",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "cpbl/2026/taiwan-series-g4.html",
