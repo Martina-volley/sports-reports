@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/austin-sun.html",
+    "league": "f1",
+    "type": "sun",
+    "date": "2026-10-25",
+    "title": "美國站週日：Antonelli 1:34.035 桿位，Verstappen 前排，正賽週一凌晨",
+    "kicker": "Sunday Dispatch",
+    "summary": "Antonelli 以 1:34.035 拿下桿位，Verstappen 差 0.179 秒，Hadjar 第三。FP3 是 Hamilton 最快。正賽週一 04:00，本稿沒有完賽名次。",
+    "secondary": "Lindblad 排位第九、罰退 5 格。Colapinto 第十四、罰退 10 格。Bortoleto 第十三，從排尾起跑。前八名不受這三張罰格影響。",
+    "seasonLabel": "F1 2026 Round 18",
+    "tagLabel": "週日焦點",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/austin-sat.html",
     "league": "f1",
     "type": "sat",
@@ -12,7 +27,7 @@
     "tagLabel": "週六焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/austin-fri.html",
