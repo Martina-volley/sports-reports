@@ -1,5 +1,4 @@
 [
-  { "league": "f1", "round": "R18", "date": "10-25", "name": "美國大獎賽", "city": "Austin", "day": "SUN" },
   { "league": "f1", "round": "R19", "date": "11-01", "name": "墨西哥城大獎賽", "city": "Mexico City", "day": "SUN" },
   { "league": "f1", "round": "R20", "date": "11-08", "name": "聖保羅大獎賽", "city": "São Paulo", "day": "SUN" },
   { "league": "f1", "round": "R21", "date": "11-21", "name": "拉斯維加斯大獎賽", "city": "Las Vegas", "day": "SAT" },
