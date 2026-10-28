@@ -1,5 +1,35 @@
 [
   {
+    "href": "cpbl/2026/season-2026-summary.html",
+    "league": "cpbl",
+    "type": "summary",
+    "date": "2026-10-28",
+    "title": "2026 中職球季總結：龍隊年度王，兄弟從墊底一路追到 G6",
+    "summary": "中華職棒 37 年（2026）例行賽 10/6 打完，味全龍拿下上半季冠軍和全年第 1，10/26 再以 4:2 擊敗中信兄弟，奪下年度總冠軍。",
+    "seasonLabel": "CPBL 2026 · 球季總結",
+    "kicker": "味全下半季只贏 28 場，仍靠上半季的底子穩住全年第 1。",
+    "secondary": "兄弟上半季墊底，下半季封王，一路打進台灣大賽。",
+    "tagLabel": "球季總結",
+    "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
+    "href": "cpbl/2026/taiwan-series-summary.html",
+    "league": "cpbl",
+    "type": "summary",
+    "date": "2026-10-28",
+    "title": "味全龍 4:2 擊敗兄弟封王，隊史第 6 冠；梅賽鍶 8 局無失分拿下台灣大賽 MVP",
+    "summary": "味全龍 10/26 在台北大巨蛋以 6:0 擊敗中信兄弟，系列賽 4 勝 2 敗，拿下 2026 年度總冠軍，是隊史第 6 冠、重返中職後的第 2 冠。",
+    "seasonLabel": "CPBL 2026 · 台灣大賽",
+    "kicker": "龍隊 2023 年在天母拿下重返中職的第一冠，今年在大巨蛋拿到第二冠。",
+    "secondary": "梅賽鍶 G6 投 8 局無失分，系列賽 2 勝，防禦率 0.64，同時獲選台灣大賽 MVP 與單場 MVP。",
+    "tagLabel": "台灣大賽總結",
+    "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
+    "featured": true,
+    "latest": false
+  },
+  {
     "href": "f1/2026/austin-review.html",
     "league": "f1",
     "type": "race",
@@ -12,7 +42,7 @@
     "tagLabel": "賽後回顧",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/mexico-city-preview.html",
@@ -85,7 +115,7 @@
     "kicker": "中華職棒 · 台灣大賽",
     "tagLabel": "台灣大賽 G4",
     "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
-    "featured": true,
+    "featured": false,
     "latest": false
   },
   {
