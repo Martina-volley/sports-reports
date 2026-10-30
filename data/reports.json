@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/mexico-city-fri.html",
+    "league": "f1",
+    "type": "daily",
+    "date": "2026-10-30",
+    "title": "墨西哥城週五：練習還沒開始，Antonelli 第九名就有機會封王",
+    "kicker": "Friday Dispatch",
+    "summary": "R19 墨西哥城是標準週末。本站賽程表正賽日是 11-01 週日，台灣時間開跑是 11 月 2 日週一 04:00。FP1 在週六 02:30，本稿沒有練習成績。",
+    "secondary": "奧斯汀後 Antonelli 365 分、領先 Russell 123 分。第九名就有機會封王。週四他因病缺席媒體日，車隊說預計週五回來。",
+    "seasonLabel": "F1 2026 Round 19",
+    "tagLabel": "週五快報",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "cpbl/2026/season-2026-summary.html",
     "league": "cpbl",
     "type": "summary",
@@ -12,7 +27,7 @@
     "tagLabel": "球季總結",
     "accent": "linear-gradient(135deg, #0B1F3A 0%, #C8102E 48%, #F5C518 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "cpbl/2026/taiwan-series-summary.html",

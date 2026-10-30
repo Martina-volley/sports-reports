@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>墨西哥城週五：練習還沒開始，Antonelli 第九名就有機會封王</title>
+  <meta name="description" content="2026 年 10 月 30 日 F1 墨西哥城站週五開場。標準週末，不是衝刺賽。台灣時間週六 02:30 才跑 FP1。Antonelli 領先 123 分，第九名就有機會封王。週四他因病缺席媒體日。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 19 | Friday Dispatch</div>
+      <h1>還沒開練，第九名就能封王</h1>
+      <p>2026 年 10 月 30 日台灣時間下午，Autódromo Hermanos Rodríguez 還沒有 F1 練習。FP1 要到週六凌晨 2:30 才開始。這站是 R19，標準週末，不是衝刺賽。奧斯汀之後 Kimi Antonelli 365 分，領先 George Russell 123 分。Formula1.com 寫，第九名就有機會封王。週四他因病缺席媒體日。</p>
+      <div class="meta">
+        <span>日期｜2026-10-30</span>
+        <span>賽事｜Formula 1 Gran Premio de la Ciudad de México 2026</span>
+        <span>kind = fri</span>
+        <span>地點｜Autódromo Hermanos Rodríguez, Mexico City</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>官方時刻表把本週末列為 10 月 30 日到 11 月 1 日，正賽 71 圈或 120 分鐘，當地時間週日 14:00。本站 <code>data/schedule.json</code> 的下一站仍是 R19 墨西哥城大獎賽，日期 11-01、週日。兩邊的正賽日都是 2026-11-01。台灣是 UTC+8，墨西哥城比 UTC 慢 6 小時，正賽落到台灣時間 11 月 2 日週一 04:00。</p>
+        <p>截至本稿發稿，FP1 還沒開始。Formula1.com 賽事頁的成績區寫著沒有本節結果。練習、排位、正賽名次都不寫。</p>
+      </div>
+      <div class="status">資料邊界：賽程用 Formula1.com 全文時刻表，並對過本站賽程表的 11-01 週日。積分前段用本站奧斯汀週一回顧的賽後加法，再用 10 月 28 日 Race Week、10 月 29 日 Need to Know 核對領先分差與車隊同分。賽道與輪胎用賽事頁、Need to Know、Pirelli 10 月 28 日預告。天氣用 Formula1.com 週末預報。時程官方註明仍可能更動。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taipei Schedule</div>
+        <h2>台灣時間賽程</h2>
+        <table>
+          <thead>
+            <tr><th>台灣時間</th><th>墨西哥城當地</th><th>Session</th><th>註記</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10-31 週六 02:30–03:30</td><td>10-30 週五 12:30–13:30</td><td>FP1</td><td>60 分鐘，週末第一段練習</td></tr>
+            <tr><td>10-31 週六 06:00–07:00</td><td>10-30 週五 16:00–17:00</td><td>FP2</td><td>60 分鐘</td></tr>
+            <tr><td>11-01 週日 01:30–02:30</td><td>10-31 週六 11:30–12:30</td><td>FP3</td><td>60 分鐘，最後練習</td></tr>
+            <tr><td>11-01 週日 05:00–06:00</td><td>10-31 週六 15:00–16:00</td><td>Qualifying</td><td>決定週日發車位</td></tr>
+            <tr><td>11-02 週一 04:00</td><td>11-01 週日 14:00</td><td>Race</td><td>71 圈或 120 分鐘</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">換算基準：官方時刻表寫墨西哥城比 UTC 慢 6 小時。台灣 UTC+8，當地時間加 14 小時。本站賽程表的 11-01 週日，指的是官方正賽日，不是台灣的開跑日。ESPN 的 GMT 時刻與這張表一致：FP1 18:30 GMT、正賽 20:00 GMT。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Circuit Frame</div>
+        <h2>墨西哥城週末條件</h2>
+        <table>
+          <thead>
+            <tr><th>項目</th><th>官方數字</th><th>出處</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>賽道長度</td><td>4.304 km</td><td>賽事頁、Need to Know</td></tr>
+            <tr><td>正賽圈數</td><td>71 圈</td><td>賽事頁；距離 305.354 km</td></tr>
+            <tr><td>單圈紀錄</td><td>1:17.774</td><td>Valtteri Bottas，Mercedes，2021</td></tr>
+            <tr><td>首場大獎賽</td><td>1963</td><td>賽事頁、Need to Know</td></tr>
+            <tr><td>最多勝場</td><td>Max Verstappen 5 勝</td><td>Need to Know</td></tr>
+            <tr><td>最多桿位</td><td>Jim Clark 4 次</td><td>Need to Know</td></tr>
+            <tr><td>2025 年超車</td><td>97 次</td><td>Need to Know</td></tr>
+            <tr><td>進站時間損失</td><td>21.78 秒</td><td>Need to Know</td></tr>
+            <tr><td>安全車／虛擬安全車</td><td>60%／60%</td><td>近五屆墨西哥站</td></tr>
+            <tr><td>桿位到第一彎</td><td>830 公尺</td><td>Need to Know</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">近五屆墨西哥站冠軍：2025 Norris、2024 Sainz、2023 到 2021 都是 Verstappen。近五屆桿位：2025 Norris、2024 Sainz、2023 Leclerc、2022 Verstappen、2021 Bottas。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Title Window</div>
+        <h2>123 分領先，第九名就是封王線</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>奧斯汀把他的領先拉到 123 分</strong>
+            <div>車手榜前段：Antonelli 365、Russell 242、Lewis Hamilton 241、Max Verstappen 236、Charles Leclerc 233。第二到第五差在 10 分以內，Need to Know 也是這樣寫。</div>
+          </div>
+          <div class="item">
+            <strong>官方把封王條件寫成名次</strong>
+            <div>Need to Know：再拿 2 分，也就是第九名，就有機會本週封王。若一分都沒有，Russell 和 Hamilton 都沒贏，他仍可封王。Race Week 補了第十名：Hamilton 贏、他拿第十，仍夠；Russell 贏、他只拿第十，這條線就斷。</div>
+          </div>
+          <div class="item">
+            <strong>冠軍還沒定案</strong>
+            <div>含本站還有 5 站，都是標準週末。每站冠軍 25 分，五站最多 125 分，多於目前的 123 分差距。他本週沒拿到那 2 分，後面四站仍有數學空間。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>R18 奧斯汀站後車手榜</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>365</td></tr>
+            <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>242</td></tr>
+            <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>241</td></tr>
+            <tr><td>4</td><td>Max Verstappen</td><td>Red Bull</td><td>236</td></tr>
+            <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>233</td></tr>
+            <tr><td>6</td><td>Lando Norris</td><td>McLaren</td><td>211</td></tr>
+            <tr><td>7</td><td>Oscar Piastri</td><td>McLaren</td><td>144</td></tr>
+            <tr><td>8</td><td>Isack Hadjar</td><td>Red Bull</td><td>105</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">數字來自本站奧斯汀週一回顧：美國站前榜加上該站完賽積分。領先 123 分與 Need to Know、BBC 10 月 29 日稿一致。第九起同一篇回顧寫 Liam Lawson 77、Pierre Gasly 42。這次沒有對到美國站後的新 FIA 積分 PDF。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Constructors</div>
+        <h2>R18 後車隊榜</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車隊</th><th>積分</th><th>與前一段</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>607</td><td>—</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>474</td><td>落後 133</td></tr>
+            <tr><td>3</td><td>Red Bull</td><td>355</td><td>與 McLaren 同分，官方列第三</td></tr>
+            <tr><td>4</td><td>McLaren</td><td>355</td><td>同分，第二名次數較少</td></tr>
+            <tr><td>5</td><td>Racing Bulls</td><td>102</td><td>Need to Know</td></tr>
+            <tr><td>6</td><td>Alpine</td><td>69</td><td>落後 Racing Bulls 33</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">355 這個同分，以及 Red Bull 因第二名次數較多而排第三，出自 10 月 28 日 Race Week。Need to Know 也寫 Red Bull 追平 McLaren 後升上第三。Racing Bulls 102、Alpine 69 只取 Need to Know 寫出的數字。Haas、Audi 以下沒有完整官方榜，不補。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Friday Watchlist</div>
+        <h2>開練前要盯的四件事</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 封王線綁的是名次，不是他會不會贏</strong>
+            <div>第九名就有機會封王，不管 Russell 跑第幾。第十名只在 Hamilton 贏、或兩人都沒贏時夠用。Russell 若贏、他只拿第十或更後面，冠軍就留到後面。BBC 的說法相同：Russell 贏要第九，Hamilton 贏要第十。</div>
+          </div>
+          <div class="item">
+            <strong>2. 週四媒體日，領跑者沒出現</strong>
+            <div>BBC 10 月 29 日：Antonelli 因病毒性疾病，FIA 同意他週四不用出席。Mercedes 說「預計他明天回來」。練習是週五 18:30 GMT。Cadillac 的 Bottas 也不適，車隊說這是預防，目前不影響週末其餘行程。本稿發在 FP1 之前，沒有兩人已上車的後續確認。</div>
+          </div>
+          <div class="item">
+            <strong>3. 賽道重鋪了一大段，輪胎是本季最軟的一組</strong>
+            <div>Pirelli 10 月 28 日：硬胎 C3 兩套、中性胎 C4 三套、軟胎 C5 八套。去年硬胎用過 C2，今年改成連續三個最軟配方。重鋪涵蓋第 16 彎到第 1 彎，以及第 7 彎到第 16 彎，第一區大致沒動。一停是基準方向，後軸負荷最大，軟胎 C5 也可能進正賽。進 Q3 的人另有一套軟胎。乾地正賽至少要用兩種乾胎。</div>
+          </div>
+          <div class="item">
+            <strong>4. FP1 有新人，Perez 這週是第 300 場發車</strong>
+            <div>Race Week：Nikola Tsolov 代 Racing Bulls、Freddie Slater 代 Audi，兩人都是第一次上 FP1。Fred Vesti（Mercedes）、Leonardo Fornaroli（McLaren）、Jak Crawford（Aston Martin）、Luke Browning（Williams）、Colton Herta（Cadillac）也會練。Sergio Perez 本週日是生涯第 300 場正賽發車。BBC 寫，Cadillac 週三宣布他續約至少到 2029。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Track Notes</div>
+        <h2>高海拔把下壓力吃掉</h2>
+        <p>賽事頁寫，這條賽道海拔超過 2 公里。空氣稀，彎裡抓地不夠。舊的 Peraltada 被切開，賽道改穿一座舊棒球場，頒獎台就在體育場裡。Need to Know 另寫 7,200 英尺、氣壓少約兩成，所以極速很高。Race Week 寫 2,200 公尺，是賽曆最高；下一站 Interlagos 約 800 公尺。同一篇把設定說成：尾翼開到摩納哥那種下壓力，車子的反應卻像蒙札。</p>
+        <p>Jolyon Palmer 在 Need to Know 的點評：因為空氣稀，下壓力要開到最大，車還是覺得抓地不夠。前半圈的大煞車區難，中段容易鬆。路緣能壓多少，早點摸清楚；壓太多，車會不穩。最後一區很碎，體育場段感覺很慢。倒數第二個右彎看起來沒事，牆近、抓地低，反而是最容易撞的地方。第一彎前那 830 公尺，Pirelli 說週初抓地不夠時，鎖死的風險會變高。</p>
+        <div class="mini-note">海拔寫法不一致：賽事頁是「超過 2 公里」，Need to Know 是 7,200 英尺，Race Week 是 2,200 公尺。本稿並列，不合成一個新數字。Pirelli 新聞稿寫的是海拔超過 2,000 公尺。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Weather</div>
+        <h2>週五降雨 30%，正賽目前 0%</h2>
+        <ul>
+          <li>週五 FP1、FP2：日間最高 25°C，夜間最低 12–13°C。風約 5 km/h，陣風可到 30 km/h。降雨機率 30%。官方寫大體偏乾、雲量多。</li>
+          <li>週六 FP3、排位：13°C 到 27°C。賽道溫度可能超過 40–45°C。降雨機率 20%。風約 10 km/h。早上若前一天有下雨，有起霧的可能。</li>
+          <li>週日正賽：13°C 到 27°C。降雨機率 0%。風平均約 8 km/h，陣風 25–30 km/h。晴的話賽道溫度可能到 45°C。</li>
+        </ul>
+        <div class="mini-note">以上為 Formula1.com 墨西哥城週末天氣預報。若週末更新，以賽事頁最新預報為準。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Austin Recap</div>
+        <h2>上一站一行</h2>
+        <p>奧斯汀：Antonelli 從桿位一停贏下 56 圈，Leclerc 第二、Verstappen 第三；Russell 第八、Hamilton 第四，本站沒有封王，領先擴大到 123 分。</p>
+        <div class="mini-note">名次與分差見本站 <a href="./austin-review.html">奧斯汀週一回顧</a>。賽前整理見 <a href="./mexico-city-preview.html">墨西哥城預告</a>。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">What This Friday Is</div>
+        <h2>這份週五稿不寫成績</h2>
+        <p>台灣的週五下午，墨西哥城的週五練習還沒到。第一個可核對的速度，要等週六 02:30 的 FP1。在那之前，這站的問題已經定了：Antonelli 週四沒出席，週五能不能回到車上；第九名夠不夠讓冠軍在這裡結束。</p>
+        <p>重鋪留下的第一區舊路面，會先出現在週六凌晨的長距離。單圈排名可以等 FP3 和排位。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.formula1.com/en/latest/article/formula-1-gran-premio-de-la-ciudad-de-mexico-2026.14b3wTWzNNLJ5Wd8cG7HCQ" target="_blank" rel="noreferrer">Formula1.com：2026 Mexico City Grand Prix full timetable（墨西哥城比 UTC 慢 6 小時，正賽 11 月 1 日 14:00）</a></li>
+          <li><a href="https://www.formula1.com/en/racing/2026/mexico" target="_blank" rel="noreferrer">Formula1.com：Mexico City Grand Prix 2026（4.304 km、71 圈、305.354 km、海拔逾 2 公里；成績區無本節結果）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-mexico-city-grand-prix.7n5BnpkqmEkgJR61h8yqGv" target="_blank" rel="noreferrer">Formula1.com，2026-10-29：Need to Know（封王條件、7,200 英尺、830 公尺、輪胎與 Palmer 點評）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-mexico-city-grand-prix.3qhXiCGvBjL6deUeE7qpvT" target="_blank" rel="noreferrer">Formula1.com，2026-10-28：Race Week（第十名條件、車隊 355 同分、FP1 新人、Perez 第 300 場、海拔 2,200 公尺）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-mexico-city-grand-prix.3a3o08HqrmdQ9IqXYUwJrH" target="_blank" rel="noreferrer">Formula1.com，2026-10-28：C3／C4／C5 套數，以及乾地至少兩種乾胎</a></li>
+          <li><a href="https://press.pirelli.com/mexico-new-asphalt-and-the-softest-compound-trio/" target="_blank" rel="noreferrer">Pirelli，2026-10-28：重鋪範圍、最軟三配方、海拔超過 2,000 公尺</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-is-the-weather-forecast-for-the-2026-mexico-city-grand-prix.3KktGrfJjMyHWilzlrQGK6" target="_blank" rel="noreferrer">Formula1.com：墨西哥城週末天氣預報</a></li>
+          <li><a href="https://www.bbc.com/sport/formula1/articles/cke8rlrrzpqyo" target="_blank" rel="noreferrer">BBC，2026-10-29：Antonelli、Bottas 缺席週四媒體日；Perez 續約至少到 2029</a></li>
+          <li><a href="https://www.espn.com/f1/story/_/id/50250142/mexico-city-grand-prix-2026-race-f1-start-s-how-watch-schedule-tv-channel-live-stream-predictions" target="_blank" rel="noreferrer">ESPN：GMT 時刻對照。FP1 18:30、正賽 20:00，領先 123 分</a></li>
+          <li><a href="./austin-review.html">本站：奧斯汀週一回顧（名次與賽後積分加法）</a></li>
+          <li><a href="./mexico-city-preview.html">本站：墨西哥城賽前預告</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文為 Friday dispatch，截至 2026-10-30 Asia/Taipei 下午可驗證資訊整理。墨西哥城賽道時段尚未開始，不含練習成績。
+  </footer>
+</body>
+</html>
