@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>墨西哥城週日：Hamilton 1:16.514 桿位，Russell 差 0.009 秒，正賽週一凌晨</title>
+  <meta name="description" content="2026 年 11 月 1 日 F1 墨西哥城週日。FP3 Norris 最快（1:17.600），只比 Antonelli 快 0.001 秒。排位 Hamilton 桿位 1:16.514，Russell 差 0.009 秒，Leclerc 第三。正賽週一 04:00，本稿不含完賽名次。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 19 | Sunday Dispatch</div>
+      <h1>Hamilton 拿到桿位</h1>
+      <p>台灣時間 11 月 1 日週日上午，FP3 和排位都已結束。Lewis Hamilton 以 1:16.514 拿下桿位，George Russell 差 0.009 秒。Charles Leclerc 第三，1:16.633。這是 Hamilton 生涯第 105 桿，也是他為 Ferrari 拿的第一桿。上一桿在 2023 年匈牙利站。正賽是週一 04:00，本稿沒有完賽名次。</p>
+      <div class="meta">
+        <span>日期｜2026-11-01</span>
+        <span>賽事｜Formula 1 Gran Premio de la Ciudad de México 2026</span>
+        <span>kind = sun</span>
+        <span>地點｜Autódromo Hermanos Rodríguez, Mexico City</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>R19 墨西哥城是 10 月 30 日到 11 月 1 日的標準週末，不是衝刺賽。週五、週六稿都已上架。墨西哥城比 UTC 慢 6 小時，台灣快 14 小時。FP3 在台灣時間週日 01:30–02:30，排位在 05:00–06:00。發稿時兩節成績都已公佈。排位用的是 FIA 檔案 46，標題是暫定分類。同一組名次與圈速，也出現在 FIA 11 月 1 日的排位新聞，以及 Formula1.com 排位報導。</p>
+        <p>正賽是週一 04:00，墨西哥城週日 14:00，71 圈或 120 分鐘。本站賽程表的 R19 日期是 11-01、週日，指的是這個官方正賽日。這一節還沒跑。完賽名次、冠軍有沒有在本站決定，本稿都不寫。</p>
+      </div>
+      <div class="status">資料邊界：FP3 名次、差距與圈數用 FIA 檔案 43（當地 12:47）。前段對過 Formula1.com FP3 報導。排位全表用 FIA 檔案 46（當地 16:21），前十與過程對過 FIA 排位新聞、Formula1.com 排位報導。車手說法用 FIA 排位後記者會。罰格用 Formula1.com 引述的賽會裁決，以及週六稿已核過的 Bottas 檔案 17。正賽時間用 Formula1.com 時刻表與 FIA 時刻表第 2 版，再對本站 schedule.json 的 11-01 週日。截至 2026-11-01 09:40（Asia/Taipei）。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Practice Three</div>
+        <h2>FP3 前十：Norris 領先 0.001 秒</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>圈數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>1:17.600</td><td>26</td></tr>
+            <tr><td>2</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+0.001</td><td>24</td></tr>
+            <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>+0.117</td><td>21</td></tr>
+            <tr><td>4</td><td>Oscar Piastri</td><td>McLaren</td><td>+0.195</td><td>20</td></tr>
+            <tr><td>5</td><td>Max Verstappen</td><td>Red Bull</td><td>+0.351</td><td>21</td></tr>
+            <tr><td>6</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+0.469</td><td>18</td></tr>
+            <tr><td>7</td><td>George Russell</td><td>Mercedes</td><td>+0.507</td><td>27</td></tr>
+            <tr><td>8</td><td>Isack Hadjar</td><td>Red Bull</td><td>+0.509</td><td>19</td></tr>
+            <tr><td>9</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+0.513</td><td>28</td></tr>
+            <tr><td>10</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+0.537</td><td>29</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">FIA 成績表共 22 人，檔案時間 12:47。Norris 的 1:17.600 記在 12:27:50。Antonelli 的 1:17.601 記在 12:17:31。第七到第十只差 0.030 秒。第十一到第二十：Hülkenberg +0.960（32 圈）、Colapinto +1.052（31）、Gasly +1.074（26）、Alonso +1.250（25）、Bearman +1.327（22）、Sainz +1.614（22）、Albon +1.701（26）、Stroll +1.776（21）、Hirakawa +1.904（32）、Bottas +2.742（22）。Bortoleto 2 圈、Perez 1 圈，都沒有成績。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Qualifying</div>
+        <h2>排位前十：Hamilton 領先 0.009 秒</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>差距</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Lewis Hamilton</td><td>Ferrari</td><td>1:16.514</td><td>桿位</td></tr>
+            <tr><td>2</td><td>George Russell</td><td>Mercedes</td><td>1:16.523</td><td>+0.009</td></tr>
+            <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>1:16.633</td><td>+0.119</td></tr>
+            <tr><td>4</td><td>Max Verstappen</td><td>Red Bull</td><td>1:16.692</td><td>+0.178</td></tr>
+            <tr><td>5</td><td>Kimi Antonelli</td><td>Mercedes</td><td>1:16.707</td><td>+0.193</td></tr>
+            <tr><td>6</td><td>Lando Norris</td><td>McLaren</td><td>1:16.824</td><td>+0.310</td></tr>
+            <tr><td>7</td><td>Isack Hadjar</td><td>Red Bull</td><td>1:16.900</td><td>+0.386</td></tr>
+            <tr><td>8</td><td>Liam Lawson</td><td>Racing Bulls</td><td>1:17.029</td><td>+0.515</td></tr>
+            <tr><td>9</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>1:17.117</td><td>+0.603</td></tr>
+            <tr><td>10</td><td>Pierre Gasly</td><td>Alpine</td><td>1:17.153</td><td>+0.639</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">前十是 Q3 成績。前五名在 0.193 秒以內。Hamilton 的桿位圈記在 16:07:12，Russell 的 1:16.523 記在 16:06:53。Verstappen 的最快圈在 16:00:44，最後一圈沒有留在成績上。這張表還沒套罰格。檔案 46 標題是暫定分類。FIA 新聞與 Formula1.com 用的是同一組圈速。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Sunday Read</div>
+        <h2>排位結束後能確定的三件事</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 練習是 Norris，桿位是 Hamilton</strong>
+            <div>FP3 最後幾分鐘，Norris 以 1:17.600 壓過 Antonelli，差距 0.001 秒。Hamilton 那一節只排第六，1:18.069，差 0.469 秒。排位 Q3 他寫下 1:16.514。Formula1.com 寫這是生涯第 105 桿，上一桿在 2023 年匈牙利站，也是他加入 Ferrari 之後的第一桿。</div>
+          </div>
+          <div class="item">
+            <strong>2. 前排差 0.009 秒，第二排是 Leclerc</strong>
+            <div>Russell 一度排到最前面。Hamilton 的下一圈快了 0.009 秒。Leclerc 1:16.633，第三，差 0.119 秒。他在記者會說，Q3 第一趟他曾經最快，最後一圈自己沒做好。Verstappen 第四，1:16.692。FIA 寫他最後一圈在第 13 彎鎖死，又遇到 Norris，那圈放棄。</div>
+          </div>
+          <div class="item">
+            <strong>3. Piastri 停在 Q2，Hirakawa 留下排位</strong>
+            <div>Formula1.com 把 Piastri 的 Q2 出局稱為這一節最大的意外。他 FP3 第四，排位第十三，1:17.646。Q2 晉級線是 Gasly 的 1:17.278，他差 0.368 秒。Hirakawa 代 Ocon 跑完這個週末，第一次排位第十九，1:18.958。週五 FP1 他已經開過這輛 Haas。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Outside Q3</div>
+        <h2>第十一名以後</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>差距</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>11</td><td>Nico Hülkenberg</td><td>Audi</td><td>1:17.306</td><td>+0.792</td></tr>
+            <tr><td>12</td><td>Franco Colapinto</td><td>Alpine</td><td>1:17.640</td><td>+1.126</td></tr>
+            <tr><td>13</td><td>Oscar Piastri</td><td>McLaren</td><td>1:17.646</td><td>+1.132</td></tr>
+            <tr><td>14</td><td>Gabriel Bortoleto</td><td>Audi</td><td>1:17.680</td><td>+1.166</td></tr>
+            <tr><td>15</td><td>Oliver Bearman</td><td>Haas</td><td>1:18.083</td><td>+1.569</td></tr>
+            <tr><td>16</td><td>Carlos Sainz</td><td>Williams</td><td>1:18.885</td><td>+2.371</td></tr>
+            <tr><td>17</td><td>Alexander Albon</td><td>Williams</td><td>1:18.630</td><td>+2.116</td></tr>
+            <tr><td>18</td><td>Fernando Alonso</td><td>Aston Martin</td><td>1:18.908</td><td>+2.394</td></tr>
+            <tr><td>19</td><td>Ryo Hirakawa</td><td>Haas</td><td>1:18.958</td><td>+2.444</td></tr>
+            <tr><td>20</td><td>Lance Stroll</td><td>Aston Martin</td><td>1:19.072</td><td>+2.558</td></tr>
+            <tr><td>21</td><td>Sergio Perez</td><td>Cadillac</td><td>1:19.105</td><td>+2.591</td></tr>
+            <tr><td>22</td><td>Valtteri Bottas</td><td>Cadillac</td><td>1:19.852</td><td>+3.338</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">第十一到第十六是 Q2 成績，第十七到第二十二是 Q1 成績。Hülkenberg 比 Gasly 的 Q2 1:17.278 慢 0.028 秒，沒進前十。Piastri 只比 Colapinto 慢 0.006 秒，但離晉級線還有 0.368 秒。Sainz 的 Q1 是 1:18.521，比自己的 Q2 快，也比 Albon 的 Q1 快；他進了 Q2，分類仍用 Q2 的 1:18.885，所以排第十六。Formula1.com 寫，這是他本季第 14 次排位贏過 Albon。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Penalties</div>
+        <h2>三張罰單都還沒排成 22 格</h2>
+        <ul>
+          <li><strong>Max Verstappen（Red Bull）</strong>：排位第四。FP2 與 Lawson 的接觸，賽會各罰退 1 格，各記 1 點。FIA 排位新聞寫，他會掉到 Antonelli 後面。Formula1.com 的影片說明寫，正賽從第五位發車。</li>
+          <li><strong>Liam Lawson（Racing Bulls）</strong>：排位第八，同樣罰退 1 格、記 1 點。Formula1.com 寫，Lindblad 會從第九升到第八，Gasly 仍是第十。Lawson 因此排到第九。</li>
+          <li><strong>Valtteri Bottas（Cadillac）</strong>：排位第二十二，1:19.852。檔案 17 仍是下一場他出賽的正賽罰退 50 格。他排位有成績，起跑格依 B2.5.4b.iv 分配。這條週六稿已經寫過，裁決沒有撤銷。</li>
+        </ul>
+        <div class="mini-note">賽會文字寫，兩人都承認那個動作不必要，也很笨拙。處分從警告升到罰格，因為當天車隊經理會議已經警告過。以上是排位名次加上已公佈的後果，不是賽會的 22 格起跑表。截稿時沒有改用另一份正式起跑格。若之後還有新的處分，以官方起跑格為準。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Session Notes</div>
+        <h2>成績表外面的幾筆</h2>
+        <ul>
+          <li><strong>FP3</strong>：當地 11:30 開跑。Hirakawa 第一個出坑。Bortoleto 早段動力單元冒煙，2 圈，沒有成績；排位他仍跑進 Q2，第十四。Perez 沒有單圈，Cadillac 在排位前預防性更換動力單元。他後來在 Q1 排第二十一。</li>
+          <li><strong>Russell 的無線電</strong>：Formula1.com 寫，他第一趟軟胎做出 1:18.107，說第 12 彎很糟，車尾沒有。FP3 他第七。排位他第二。</li>
+          <li><strong>Q2 與 Q3</strong>：分類表上，Q2 最快是 Norris 的 1:16.728。他的 Q3 是 1:16.824，記在 15:59:38，正式名次第六。Russell 的 Q3 比自己的 Q2 1:17.027 快 0.504 秒。Hadjar 第七。Formula1.com 寫他 Q3 第一圈有失誤，沒有把時間救回來。</li>
+          <li><strong>Alonso</strong>：Q1 只有 4 圈，1:18.908，時間 15:03:34，第十八。Formula1.com 排位報導寫，Aston Martin 要他放棄這一節，懷疑是與 ERS 有關的水壓問題。官方影片標題另寫，Q1 因他停在賽道上而出紅旗。兩則都記在這裡，本稿不補影片裡沒有寫出的過程。</li>
+          <li><strong>Hamilton 的 Q1</strong>：檔案 46 把他的 Q1 記成 1:17.341，百分比 100。Q2 是 1:16.953。桿位是 Q3 的 1:16.514。成績表把這圈標成桿位圈，平均速度 202.504 km/h。</li>
+        </ul>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">What They Said</div>
+        <h2>當天原話，只留判斷</h2>
+        <p><strong>Lewis Hamilton：</strong>這一圈感覺很好，一時說不出話。週末很難。昨天車子停下，他沒有跑到長距離。Q2 開頭那圈沒抓到。在墨西哥拿到桿位，他覺得特別。他說這是 Ferrari 的第一桿，第 105 桿。最後一圈他覺得很乾淨，過了前三彎之後沒有再丟時間。正賽的重油與設定，他說今晚還是估計。</p>
+        <p><strong>George Russell：</strong>Q3 之前，他不覺得自己有在前三的節奏裡。最後一圈突然合起來。前排他收下。他說自己改掉準備圈，車隊仍要跑，結果多帶一圈的油。他認為那個油量比 0.009 秒的桿位差距還大。這是他的判斷，不是測量值。</p>
+        <p><strong>Charles Leclerc：</strong>他說自己沒有做好，出坑圈很難把胎溫放進窗口。從第三位起跑，他覺得不算太差。比賽配速他有信心。超車他覺得很難，第 3 彎之後的順位可能就留在那裡。這是賽前判斷。</p>
+        <div class="mini-note">以上為 FIA 排位後記者會的中文節錄，不是逐字對照。英文原文以該頁為準。Russell 說冠軍很有可能本週定案，那句放在積分卡，不放在這裡當規則。</div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Title Math</div>
+        <h2>積分沒動，條件沒變</h2>
+        <p>正賽還沒跑。奧斯汀站後仍是 Antonelli 365、Russell 242，差距 123。週五稿已核過的條件也沒變：第九名就有機會封王。Russell 若贏、他只拿第十或更後面，這條線就斷。</p>
+        <p>排位現況：Hamilton 桿位，Russell 第二。Antonelli 排位第五；Verstappen 的 1 格罰單生效後，FIA 寫 Antonelli 會排到他前面。這是起跑格，不是完賽名次。</p>
+        <div class="mini-note">Russell 在記者會說，冠軍很有可能本週就定了，在他心裡差不多已經定了。那是他的判斷。積分條件沒有因為這句話改變。分差沿用本站週五稿與奧斯汀週一回顧。</div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Front Row</div>
+        <h2>發車前排</h2>
+        <p>排位第一排：Hamilton、Russell，差距 0.009 秒。排位第二排：Leclerc、Verstappen。前排兩人不在這張 1 格罰單裡。</p>
+        <p>FIA 寫 Verstappen 會掉到 Antonelli 後面。Formula1.com 影片說明寫他從第五位發車。第二排因此會是 Leclerc 與 Antonelli。本稿不自排後面 18 格。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Race Preview</div>
+        <h2>正賽還沒開始</h2>
+        <p>台灣時間 11 月 2 日週一 04:00 開跑，墨西哥城週日 14:00，71 圈或 120 分鐘。Formula1.com 時刻表與 Hamilton 排位後訪問的收尾，都是這個當地時間。</p>
+        <p>誰完賽、誰拿分、冠軍有沒有在墨西哥城決定，都要等這 71 圈跑完。本稿在週日上午發出，寫不到。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Schedule</div>
+        <h2>台灣時間對照</h2>
+        <table>
+          <thead>
+            <tr><th>台灣時間</th><th>墨西哥城當地</th><th>Session</th><th>本稿狀態</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10-31 週六 02:30–03:30</td><td>10-30 週五 12:30–13:30</td><td>FP1</td><td>已結束，見週六稿</td></tr>
+            <tr><td>10-31 週六 06:00–07:00</td><td>10-30 週五 16:00–17:00</td><td>FP2</td><td>已結束，見週六稿</td></tr>
+            <tr><td>11-01 週日 01:30–02:30</td><td>10-31 週六 11:30–12:30</td><td>FP3</td><td>已結束，Norris 最快</td></tr>
+            <tr><td>11-01 週日 05:00–06:00</td><td>10-31 週六 15:00–16:00</td><td>Qualifying</td><td>已結束，Hamilton 桿位</td></tr>
+            <tr><td>11-02 週一 04:00</td><td>11-01 週日 14:00</td><td>Race（71 圈或 120 分鐘）</td><td>尚未開始，無完賽名次</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">換算基準與週五、週六稿相同：官方時刻表寫墨西哥城比 UTC 慢 6 小時，台灣 UTC+8，當地時間加 14 小時。本站 schedule.json 的 R19 是 11-01、週日，與時刻表的正賽日同一天。時程官方註明仍可能更動。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_free_practice_3_classification.pdf" target="_blank" rel="noreferrer">FIA，檔案 43，2026-10-31 12:47：FP3 成績分類（Norris 1:17.600；Bortoleto、Perez 無成績）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/fp3-norris-pips-antonelli-and-leclerc-to-top-spot-in-final-practice-for-mexico-city-gp.1s5lDqpwmCBl5aqSGq4Ffn" target="_blank" rel="noreferrer">Formula1.com：FP3 報導（0.001 秒、11:30 開跑、Hirakawa 代 Ocon、Russell 第 12 彎無線電、Perez 預防性換動力單元）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_provisional_qualifying_classification.pdf" target="_blank" rel="noreferrer">FIA，檔案 46，2026-10-31 16:21：暫定排位分類（Hamilton 1:16.514，202.504 km/h）</a></li>
+          <li><a href="https://www.fia.com/news/f1-hamilton-claims-first-ferrari-pole-position-thrilling-mexico-city-qualifying" target="_blank" rel="noreferrer">FIA，2026-11-01：排位新聞（差 0.009 秒；Verstappen 罰退 1 格，掉到 Antonelli 後面；第 13 彎鎖死）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/hamilton-clinches-first-pole-with-ferrari-in-qualifying-at-the-mexico-city-gp.4GffzFhlnOxOjbHHMc0AJI" target="_blank" rel="noreferrer">Formula1.com：排位報導（第 105 桿、Piastri 第十三、Lawson 與 Lindblad 的格子、Alonso 水壓、Hirakawa 第十九）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/wow-hamilton-reacts-to-special-maiden-pole-with-ferrari-at-mexico-city-gp.1S7nqyX2uIPgZomeRkneq4" target="_blank" rel="noreferrer">Formula1.com：Hamilton 排位後反應（上一桿在 2023 匈牙利站；正賽當地 14:00）</a></li>
+          <li><a href="https://www.fia.com/news/f1-2026-mexico-city-grand-prix-post-qualifying-press-conference-transcript" target="_blank" rel="noreferrer">FIA，2026-11-01：排位後記者會（Hamilton、Russell、Leclerc）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/verstappen-and-lawson-get-grid-penalties-after-clumsy-mexico-city-practice-clash.2m2ey8Pl7g5IfQfGeepilD" target="_blank" rel="noreferrer">Formula1.com：Verstappen、Lawson 各罰退 1 格，各記 1 點</a></li>
+          <li><a href="https://www.formula1.com/en/video/verstappen-explains-what-killed-his-final-lap-in-q3.1880606500824149280" target="_blank" rel="noreferrer">Formula1.com 影片：Verstappen 排位第四，正賽從第五位發車</a></li>
+          <li><a href="https://www.formula1.com/en/video/2026-mexico-city-gp-qualifying-session-red-flagged-as-alonso-stops-on-track-in-q1.1880608164799838703" target="_blank" rel="noreferrer">Formula1.com 影片標題：Q1 因 Alonso 停在賽道上而出紅旗</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/formula-1-gran-premio-de-la-ciudad-de-mexico-2026.14b3wTWzNNLJ5Wd8cG7HCQ" target="_blank" rel="noreferrer">Formula1.com：墨西哥城時刻表（正賽 11 月 1 日 14:00，比 UTC 慢 6 小時，71 圈或 120 分鐘）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_timetable_v2.pdf" target="_blank" rel="noreferrer">FIA，檔案 4：時刻表第 2 版（FP3 11:30、排位 15:00、正賽 14:00）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_infringement_-_car_77_-_pu_elements.pdf" target="_blank" rel="noreferrer">FIA，檔案 17：Bottas 罰退 50 格</a></li>
+          <li><a href="./mexico-city-sat.html">墨西哥城週六稿</a></li>
+          <li><a href="./mexico-city-fri.html">墨西哥城週五稿（積分與封王條件）</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文對應 2026-11-01 墨西哥城週日快報。含已結束的 FP3 與排位。正賽（週一 04:00）尚未開始，不含完賽名次。
+  </footer>
+</body>
+</html>
