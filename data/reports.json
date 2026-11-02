@@ -1,5 +1,35 @@
 [
   {
+    "href": "f1/2026/mexico-city-review.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-11-02",
+    "title": "F1 2026 墨西哥城大獎賽正賽：Verstappen 贏 0.799 秒，Antonelli 第三封王",
+    "kicker": "Monday Review",
+    "summary": "2026 年 11 月 1 日墨西哥城 71 圈，Verstappen 從第五位發車獲勝，Hamilton 第二、差 0.799 秒。Antonelli 第三，車手冠軍確定。",
+    "secondary": "他 20 歲又 68 天，是最年輕的車手冠軍。Mercedes 630 分，領先 Ferrari 126 分，車隊冠軍還沒定。最快圈是 Hamilton 第 50 圈 1:19.268。",
+    "seasonLabel": "F1 2026 Round 19",
+    "tagLabel": "賽後回顧",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
+    "href": "f1/2026/sao-paulo-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-11-02",
+    "title": "F1 2026 聖保羅大獎賽賽前：車手冠軍已定，車隊榜還差 126 分",
+    "kicker": "São Paulo · Race Preview",
+    "summary": "R20 聖保羅 11 月 6 日到 8 日，不是衝刺賽。71 圈、4.309 公里。台灣時間正賽 11 月 9 日週一 01:00。",
+    "secondary": "Antonelli 380 分，車手冠軍已定。Verstappen 261，只比 Hamilton 多 2 分。Mercedes 領先 Ferrari 126 分。",
+    "seasonLabel": "F1 2026 Round 20",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 48%, #c2410c 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/mexico-city-sun.html",
     "league": "f1",
     "type": "sun",
@@ -12,7 +42,7 @@
     "tagLabel": "週日焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/mexico-city-sat.html",
