@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聖保羅週六：Antonelli FP2 1:10.763，Norris FP1 領先 0.082 秒</title>
+  <meta name="description" content="2026 年 11 月 7 日 F1 聖保羅週六。FP1 是 Norris 1:11.717，Antonelli 差 0.082 秒。FP2 是 Antonelli 1:10.763。FP1 有一次紅旗。FP3 與排位還沒跑，本稿不含這兩節成績。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 20 | Saturday Dispatch</div>
+      <h1>Antonelli 把 FP2 跑進 1:10</h1>
+      <p>台灣時間 11 月 7 日週六上午，Autódromo José Carlos Pace 的 FP1、FP2 都已經結束。FP1 最快是 Lando Norris，1:11.717，Kimi Antonelli 差 0.082 秒。FP2 最快是 Antonelli，1:10.763，Norris 差 0.253 秒。FP1 有一次紅旗，Freddie Slater 的 Audi 停在第 9 彎之後。這一節後來跑完。FP3 是今天 22:30，排位是週日 02:00。這兩節還沒跑。本稿沒有排位名次，也沒有桿位。</p>
+      <div class="meta">
+        <span>日期｜2026-11-07</span>
+        <span>賽事｜Formula 1 MSC Cruises Grande Premio de Sao Paulo 2026</span>
+        <span>kind = sat</span>
+        <span>地點｜Autódromo José Carlos Pace, São Paulo</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>R20 聖保羅是 11 月 6 日到 8 日的標準週末，不是衝刺賽。週五開場稿已上架，當時還沒有練習成績。聖保羅比台灣慢 11 小時。FIA 時刻表第 3 版把 FP1 定在當地週五 12:30–13:30，FP2 定在 16:00–17:00。兩節分類都已發出，發稿時和 Formula1.com 成績頁對得上。</p>
+        <p>FP3 是今天 22:30–23:30，排位是週日 02:00–03:00，正賽是週一 01:00。正賽 71 圈或 120 分鐘，當地週日 14:00。這三節的名次、圈速、桿位與完賽結果，本稿都不寫。</p>
+      </div>
+      <div class="status">資料邊界：名次、差距、圈數與最快圈時間用 FIA 檔案 17（FP1 分類，當地 13:48）與檔案 22（FP2 分類，當地 17:17）。過程用 Formula1.com 的 FP1、FP2 報導，以及 FIA 的 FP2 新聞稿。紅旗位置用 Cadillac 練習筆記。罰格、罰款與譴責用賽會裁決原文。刪圈用檔案 18、19、23。賽程用時刻表第 3 版。積分沿用週五稿已核過的官方榜，練習不計分。Formula1.com 的 FP1 報導有一句寫維修區綠燈在當地 16:00。分類最快圈在 13:11，檔案 17 於 13:48 發出。本稿的 FP1 時刻用時刻表和分類。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Practice One</div>
+        <h2>FP1 前十：Norris 領先 0.082 秒</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>圈數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>1:11.717</td><td>33</td></tr>
+            <tr><td>2</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+0.082</td><td>32</td></tr>
+            <tr><td>3</td><td>Max Verstappen</td><td>Red Bull</td><td>+0.236</td><td>29</td></tr>
+            <tr><td>4</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+0.324</td><td>31</td></tr>
+            <tr><td>5</td><td>George Russell</td><td>Mercedes</td><td>+0.386</td><td>30</td></tr>
+            <tr><td>6</td><td>Isack Hadjar</td><td>Red Bull</td><td>+0.439</td><td>25</td></tr>
+            <tr><td>7</td><td>Gabriele Mini</td><td>Alpine</td><td>+0.852</td><td>28</td></tr>
+            <tr><td>8</td><td>Gabriel Bortoleto</td><td>Audi</td><td>+0.897</td><td>30</td></tr>
+            <tr><td>9</td><td>Franco Colapinto</td><td>Alpine</td><td>+0.937</td><td>34</td></tr>
+            <tr><td>10</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+0.998</td><td>32</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">FIA 分類共 22 人。Norris 的 1:11.717 記在 13:11:03。Antonelli 是 1:11.799，13:06:16。Verstappen 是 1:11.953，12:57:00，後來沒有再加快。第十一到第二十二：Leonardo Fornaroli +1.116（28 圈）、Oliver Bearman +1.120（27）、Fernando Alonso +1.300（26）、Arvid Lindblad +1.321（32）、Valtteri Bottas +1.654（16）、Alexander Albon +1.794（18）、Luke Browning +1.874（12）、Rafael Camara +1.979（30）、Lance Stroll +2.043（28）、Colton Herta +2.558（31）、Dino Beganovic +2.640（11）、Freddie Slater +3.249（7）。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Practice Two</div>
+        <h2>FP2 前十：Antonelli 1:10.763</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>圈數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>1:10.763</td><td>37</td></tr>
+            <tr><td>2</td><td>Lando Norris</td><td>McLaren</td><td>+0.253</td><td>31</td></tr>
+            <tr><td>3</td><td>Max Verstappen</td><td>Red Bull</td><td>+0.259</td><td>23</td></tr>
+            <tr><td>4</td><td>George Russell</td><td>Mercedes</td><td>+0.273</td><td>35</td></tr>
+            <tr><td>5</td><td>Oscar Piastri</td><td>McLaren</td><td>+0.321</td><td>32</td></tr>
+            <tr><td>6</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+0.450</td><td>35</td></tr>
+            <tr><td>7</td><td>Charles Leclerc</td><td>Ferrari</td><td>+0.720</td><td>33</td></tr>
+            <tr><td>8</td><td>Gabriel Bortoleto</td><td>Audi</td><td>+1.017</td><td>33</td></tr>
+            <tr><td>9</td><td>Isack Hadjar</td><td>Red Bull</td><td>+1.076</td><td>33</td></tr>
+            <tr><td>10</td><td>Oliver Bearman</td><td>Haas</td><td>+1.228</td><td>36</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">Antonelli 的 1:10.763 記在 16:27:59。Norris 1:11.016（16:26:49），Verstappen 1:11.022（16:27:31），兩人差 0.006 秒。Russell 1:11.036（16:26:14），比 Norris 慢 0.020 秒。前四名收到 0.273 秒。第十一到第二十一：Colapinto +1.233（33）、Lindblad +1.245（36）、Lawson +1.279（36）、Pierre Gasly +1.346（37）、Alonso +1.775（34）、Camara +1.798（30）、Carlos Sainz +1.979（33）、Stroll +2.179（31）、Albon +2.190（37）、Sergio Perez +2.553（34）、Bottas +2.620（33）。Nico Hulkenberg 沒有列在分類上，沒有成績時間。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Saturday Read</div>
+        <h2>兩節跑完後能確定的三件事</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 兩節最快的人不同，FP2 前段很近</strong>
+            <div>FP1 是 Norris，領先 Antonelli 0.082 秒，前三名收到 0.236 秒。FP2 是 Antonelli。1:10.763 比 FP1 全場最快再快 0.954 秒。Norris、Verstappen、Russell 落在 0.253 到 0.273 秒。官方單圈紀錄仍是 Bottas 2018 年的 1:10.540。1:10.763 比它慢 0.223 秒。練習圈和正賽圈條件不同，這只是對照。</div>
+          </div>
+          <div class="item">
+            <strong>2. FP1 有六名正選沒開車</strong>
+            <div>Piastri、Gasly、Hulkenberg、Sainz、Leclerc、Perez 那一節在場邊。Camara 不是這一節的代打。週五稿已寫，他本週頂 Esteban Ocon 的位子。他 FP1 第十八、30 圈，FP2 第十六、30 圈。FP2 正選回到車上，Hulkenberg 仍沒有成績。</div>
+          </div>
+          <div class="item">
+            <strong>3. 紅旗沒有讓 FP1 提前結束</strong>
+            <div>Slater 7 圈，最快圈 1:14.966，時間 12:38:25，最後一名。分類在 13:48 發出，22 人都有時間。FP2 分類在 17:17 發出，21 人有時間。Gasly 的最快圈在 16:40:21，Hamilton 有一圈出界刪在 16:59:57。這一節也跑到收尾。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">FP1 Line-up</div>
+        <h2>六個位子換了人</h2>
+        <ul>
+          <li><strong>McLaren：</strong>Leonardo Fornaroli 代 Oscar Piastri，第十一，+1.116，28 圈。Norris 照常，第一。</li>
+          <li><strong>Alpine：</strong>Gabriele Mini 代 Pierre Gasly，第七，+0.852。比 Franco Colapinto 快 0.085 秒。Colapinto 照常，第九。</li>
+          <li><strong>Audi：</strong>Freddie Slater 代 Nico Hulkenberg，第二十二，7 圈。Gabriel Bortoleto 照常，第八。</li>
+          <li><strong>Cadillac：</strong>Colton Herta 代 Sergio Perez，第二十，31 圈。Valtteri Bottas 開自己的車，第十五，16 圈。</li>
+          <li><strong>Williams：</strong>Luke Browning 代 Carlos Sainz，第十七，12 圈，比 Alexander Albon 慢 0.080 秒。Albon 照常，第十六，18 圈。</li>
+          <li><strong>Ferrari：</strong>Dino Beganovic 代 Charles Leclerc，第二十一，11 圈。Lewis Hamilton 照常，第四。</li>
+        </ul>
+        <div class="mini-note">代打對應出自 Formula1.com 的 FP1 報導。名次與圈數出自 FIA 分類。Haas 的 Camara 本週上場，Bearman 照常，第十二。Mercedes、Red Bull、Aston Martin、Racing Bulls 兩名正選都跑了 FP1。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Session Notes</div>
+        <h2>成績表外面的幾筆</h2>
+        <ul>
+          <li><strong>FP1 紅旗：</strong>Formula1.com 寫，開賽不久 Slater 停在賽道上，賽會出示紅旗。他上週在墨西哥城也因可靠度少跑。Cadillac 練習筆記寫，他停在第 9 彎之後。檔案 19 在 12:41 刪掉 Colapinto、Albon 通過第 9 彎雙黃旗的圈。稍後還有別的雙黃旗刪圈，不是都算在這一次。</li>
+          <li><strong>Albon：</strong>同一篇 FP1 報導寫，大約還剩 20 分鐘時，他失去轉向助力，把車停到賽道外。分類是第十六，18 圈，最快圈 13:02:36。</li>
+          <li><strong>Verstappen：</strong>他是第一個換上軟胎的人，做出 1:11.953。報導寫，他在無線電裡說降檔不能接受。後段又抱怨方向盤愈來愈重。這圈就是他的 FP1 成績，12:57:00。</li>
+          <li><strong>Antonelli 的 FP1：</strong>中性胎先做出 1:12.789，再改到 1:12.777。換軟胎的第一圈在第 1 彎鎖死、跑寬，下一圈 1:11.799。Norris 隨後以 1:11.717 超過，這時間留到方格旗。</li>
+          <li><strong>Beganovic：</strong>報導寫，問題讓底板拆下來一段時間，行程被打斷。11 圈，最快圈 12:55:50，第二十一。</li>
+          <li><strong>FP2 與 Hulkenberg：</strong>開跑時間是當地 16:00。Pierre Gasly 用硬胎先做出 1:14.165。Charles Leclerc 用中性胎快了約 0.6 秒。Antonelli 隨後 1:11.857。Hadjar 回報開始下毛雨。Audi 確認 Hulkenberg 不出場，車隊還在查 FP1 讓 Slater 停下來的問題。FIA 新聞稿寫的是同一件事。分類沒有他的時間。</li>
+          <li><strong>FP2 後段：</strong>還剩約 35 分鐘時，Russell 做出 1:11.036，一度第一，接著被 Norris 與 Verstappen 超過。三人之間收到 0.020 秒。Antonelli 再降到 1:10.763，是這天下午第一個進到 1:10 的人。軟胎性能段做完，名次沒有再被改寫。Hadjar 的成績時間停在 16:22:06，第九。</li>
+        </ul>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Stewards</div>
+        <h2>已裁決的三張，和還沒有的一張</h2>
+        <ul>
+          <li><strong>George Russell（Mercedes）：</strong>檔案 15，FP1 期間做成，時間 13:16。事實是用了第 6 具內燃機。配額 4 具。違反 B8.2.2a（併 B8.2.3）。裁決是他參加的下一場正賽罰退 5 格，依據 B8.2.8b。檔案 14 寫，他本站帶著第 6 具新內燃機，之前用過 5 具。排位還沒跑。本稿不排發車位。</li>
+          <li><strong>同份技術報告裡、沒有超額的一人：</strong>Camara 換上一具動力單元附屬零件。之前用過 5 具，本季允許 6 具。技術代表寫明符合 B8.2.2g。不是罰單。</li>
+          <li><strong>Franco Colapinto（Alpine）：</strong>檔案 16。FP1 13:10，維修區 80.6 km/h。本站限速 80 km/h。罰款對象是 BWT Alpine F1 Team，100 歐元。不是罰格。</li>
+          <li><strong>Rafael Camara（Haas）：</strong>檔案 25，當地 18:04。FP2 16:31，第 15 彎不必要地妨礙 16 號車 Leclerc，違反 B4.1.1。處分是駕駛譴責，本季第 1 次。賽會寫，車隊多次提醒 Leclerc 正在跑飛馳圈，Camara 仍把車晃進賽車線。Leclerc 往右閃，有一大段車身出了賽道。練習妨礙通常是警告，這次賽會認為該記譴責。不是罰格。召集是檔案 20、21，當地 17:40 到賽會。</li>
+          <li><strong>Perez 還沒有罰單：</strong>Cadillac 練習筆記引他的話，要不要再換一具引擎、因而吃罰格，今晚才討論，還沒決定。本稿不寫一張還沒有的罰單。</li>
+        </ul>
+        <div class="mini-note">刪圈另有三份檔案。檔案 18 是 FP1 沒有用到賽道，彎位在第 1、7、10、12 彎，含 Herta 12:35:52 的 1:53.366。他的成績圈 13:09:48 不在這份名單。檔案 19 是 FP1 雙黃旗。檔案 23 是 FP2 第 1 彎與第 4 彎出界，含 Hamilton 16:59:57。兩節的最快圈都不在刪除名單。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Home Debut And The Licence</div>
+        <h2>Camara 兩節都跑完，Herta 的 1 分還沒有官方入帳</h2>
+        <p>Camara 的 FP1 是 1:13.696，第十八。FP2 是 1:12.561，第十六，30 圈。Formula1.com 寫，這是他第一次開 2026 年的 F1 賽車，主場觀眾在場。妨礙那張譴責已經做成，見上節。他的 FP2 成績圈在 16:28:31，早於 16:31 的事件時間。Leclerc 的成績圈在 16:38:05，1:11.483，第七。</p>
+        <p>Formula1.com 的 FP2 報導寫，Leclerc 在大直線上被 Camara 影響，賽道工程師說那一圈因此多了約 0.2 秒。賽會把地點記在第 15 彎、16:31。本稿不把 0.2 秒從 1:11.483 減掉，也不改寫他的名次。</p>
+        <p>Herta 開 Perez 的車，31 圈，第二十，1:14.275。週五稿寫，他還差最後 1 分超級駕照，條件是 100 公里，而且這節不能出事。賽道一圈 4.309 公里。他有一圈在第 1 彎鎖死、跑寬，檔案 18 刪的是另一圈慢圈。這批賽會檔案沒有一份寫這 1 分已經入帳。本稿不把他記成已經拿到超級駕照。</p>
+        <div class="mini-note">Bortoleto 兩節都在前十：FP1 第八，FP2 第八，1:11.780，33 圈。這是主場成績，不是正賽名次。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">What They Said</div>
+        <h2>只留已經寫下來的三句</h2>
+        <p><strong>George Russell：</strong>Formula1.com 引他的話。新加坡之後、賽季結束前，本來就要找一站吃罰格。車隊覺得這裡合適。五個位置看起來沒有那麼糟，他們會試著搶回來。罰退 5 格的裁決見檔案 15。發車位要等排位。</p>
+        <p><strong>Max Verstappen：</strong>FP1 報導寫，他稱降檔不能接受。同一節後段，方向盤愈來愈重。這是報導對無線電的轉述，不是賽會紀錄。</p>
+        <p><strong>Lando Norris：</strong>McLaren 練習報告引他的話。FP1 比預期好。FP2 對上 Mercedes 更難一點，相對其他車仍看起來有速度。他並說週六預期會很濕。這句是他的判斷。週五稿的官方預報仍是：週六降雨機率 50%，較可能從當地 14:00 之後開始。FP3 在 11:30，排位在 15:00，排位落在那個窗口裡。</p>
+        <div class="mini-note">以上是英文報導的中文節錄，不是逐字對照。原文以各頁為準。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">McLaren Parts</div>
+        <h2>新翼與底板，Piastri 硬胎慢漏氣</h2>
+        <p>McLaren 練習報告寫，MCL40 帶來前翼、後翼，以及一小部分底板。FP1 兩車都先裝空氣動力耙。Norris 用新後翼，Fornaroli 留舊的，用來對照。兩人也比較不同翼片角度的新舊前翼。</p>
+        <p>FP2 兩人先用硬胎，Norris 換上新底板。Piastri 那組硬胎慢漏氣，長距離因此改掉。排位模擬之後，Piastri 用軟胎，Norris 回到硬胎。報告寫，後段有幾滴雨，賽道變滑，沒有打亂行程。Norris FP2 第二，Piastri 第五。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Title Math</div>
+        <h2>積分沒動</h2>
+        <p>正賽還沒跑。週五稿核過的榜仍是 Antonelli 380，車手冠軍已定。Verstappen 261，只比 Hamilton 多 2 分。Mercedes 630，Ferrari 504，差 126。</p>
+        <p>練習不計分。本站 Mercedes 要比 Ferrari 至少多 3 分，才碰到週五稿寫的那條封王線。Russell 的 5 格要等排位名次才知道發車位。現在還沒有新的積分。</p>
+        <div class="mini-note">積分與 3 分門檻沿用本站 <a href="./sao-paulo-fri.html">聖保羅週五稿</a>。本站沒有新的完賽積分。</div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Still Ahead</div>
+        <h2>排位在週日凌晨</h2>
+        <p>FP3 台灣時間今天 22:30，聖保羅週六 11:30。排位台灣時間週日 02:00，當地週六 15:00。時刻表第 3 版就是這兩個當地時間。</p>
+        <p>排位成績、桿位、Russell 罰格套用後的發車位，都要等那一節結束。本稿在 11 月 7 日台灣時間上午發出，寫不到。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Both Sessions Ran</div>
+        <h2>兩節都跑完</h2>
+        <p>FP1 分類在 13:48 發出，22 人都有時間。紅旗之後 Norris 的 1:11.717 留到結束。</p>
+        <p>FP2 分類在 17:17 發出。Hulkenberg 沒有成績，其餘 21 人有時間。中段的妨礙裁決沒有讓這一節提前結束。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Schedule</div>
+        <h2>台灣時間還剩哪些</h2>
+        <table>
+          <thead>
+            <tr><th>台灣時間</th><th>聖保羅當地</th><th>Session</th><th>本稿狀態</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>11-06 週五 23:30–11-07 週六 00:30</td><td>11-06 週五 12:30–13:30</td><td>FP1</td><td>已結束，開賽不久紅旗，成績見上表</td></tr>
+            <tr><td>11-07 週六 03:00–04:00</td><td>11-06 週五 16:00–17:00</td><td>FP2</td><td>已結束，Hulkenberg 無成績，成績見上表</td></tr>
+            <tr><td>11-07 週六 22:30–23:30</td><td>11-07 週六 11:30–12:30</td><td>FP3</td><td>尚未開始，無成績</td></tr>
+            <tr><td>11-08 週日 02:00–03:00</td><td>11-07 週六 15:00–16:00</td><td>Qualifying</td><td>尚未開始，無桿位、無發車位</td></tr>
+            <tr><td>11-09 週一 01:00</td><td>11-08 週日 14:00</td><td>Race</td><td>尚未開始，無完賽名次</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">換算基準與週五稿相同：時刻表第 3 版的當地時間加 11 小時。聖保羅比 UTC 慢 3 小時，台灣是 UTC+8。正賽 71 圈或 120 分鐘。時程官方註明仍可能更動。本站賽程表的 11-08 週日，指的是官方正賽日。Porsche 與 Brazil Junior Trophy 不是 F1 項目。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_free_practice_1_classification.pdf" target="_blank" rel="noreferrer">FIA，檔案 17，2026-11-06 13:48：FP1 成績分類（Norris 1:11.717，33 圈）</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_free_practice_2_classification.pdf" target="_blank" rel="noreferrer">FIA，檔案 22，2026-11-06 17:17：FP2 成績分類（Antonelli 1:10.763，37 圈；21 人有時間）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/fp1-norris-leads-antonelli-and-verstappen-in-opening-sao-paulo-gp-practice-session.3GXL3rAROwHsLxnxn9hReY" target="_blank" rel="noreferrer">Formula1.com：FP1 報導（六名正選沒開車、Slater 紅旗、Albon 失去轉向助力、Verstappen 降檔、Beganovic 底板）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/fp2-antonelli-tops-the-times-from-norris-in-second-practice-at-sao-paulo-gp.27XFbTG9Lji18qmtHbCJUA" target="_blank" rel="noreferrer">Formula1.com：FP2 報導（16:00 開跑、Hulkenberg 不出場、1:10.763、Leclerc 與 Camara）</a></li>
+          <li><a href="https://www.fia.com/news/f1-antonelli-leads-norris-and-verstappen-sao-paulo-fp2" target="_blank" rel="noreferrer">FIA，2026-11-06：FP2 新聞稿（陰天、毛雨、Hulkenberg 留在車庫、Leclerc 約慢 0.2 秒）</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1299/brazil/practice/1" target="_blank" rel="noreferrer">Formula1.com：2026 São Paulo Grand Prix Practice 1</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1299/brazil/practice/2" target="_blank" rel="noreferrer">Formula1.com：2026 São Paulo Grand Prix Practice 2</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_new_pu_elements_for_this_competition.pdf" target="_blank" rel="noreferrer">FIA，檔案 14：Russell 第 6 具內燃機，超出配額。Camara 的附屬零件在配額內</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_63_-_changes_to_pu_element.pdf" target="_blank" rel="noreferrer">FIA，檔案 15：Russell 罰退 5 格</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_43_-_pit_lane_speeding.pdf" target="_blank" rel="noreferrer">FIA，檔案 16：Colapinto FP1 維修區 80.6 km/h，Alpine 罰 100 歐元</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_free_practice_1_deleted_lap_times.pdf" target="_blank" rel="noreferrer">FIA，檔案 18：FP1 出界刪圈</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_free_practice_1_deleted_lap_times_-_double_yellow.pdf" target="_blank" rel="noreferrer">FIA，檔案 19：FP1 雙黃旗刪圈</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_summons_-_car_51_-_alleged_impeding_of_car_16.pdf" target="_blank" rel="noreferrer">FIA，檔案 20：召集 Camara，16:31 第 15 彎</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_summons_-_car_16_-_alleged_impeding_by_car_51.pdf" target="_blank" rel="noreferrer">FIA，檔案 21：召集 Leclerc，同一事件</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_free_practice_2_deleted_lap_times.pdf" target="_blank" rel="noreferrer">FIA，檔案 23：FP2 出界刪圈</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_51_-_unnecessarily_impeding_of_car_16.pdf" target="_blank" rel="noreferrer">FIA，檔案 25：Camara 駕駛譴責，本季第 1 次</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_timetable_v3.pdf" target="_blank" rel="noreferrer">FIA，檔案 5：時刻表第 3 版（FP1 12:30、FP2 16:00、FP3 11:30、排位 15:00、正賽 14:00）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/well-try-and-come-back-through-russell-set-for-grid-penalty-at-sao-paulo-grand-prix.6hsUcdvDTFFezGL53SAODZ" target="_blank" rel="noreferrer">Formula1.com：Russell 談為何在聖保羅吃這張 5 格罰單</a></li>
+          <li><a href="https://www.mclaren.com/racing/formula-1/2026/sao-paulo-grand-prix/practice-report/" target="_blank" rel="noreferrer">McLaren：聖保羅練習報告（新翼、底板、Piastri 慢漏氣、Norris 引述）</a></li>
+          <li><a href="https://www.pitpass.com/84070/Sao-Paulo-Grand-Prix-Practice-team-notes-Cadillac" target="_blank" rel="noreferrer">Pitpass 轉載 Cadillac 練習筆記（Slater 停在第 9 彎後、Perez 尚未決定是否再換引擎）</a></li>
+          <li><a href="./sao-paulo-fri.html">聖保羅週五開場稿（積分、3 分門檻、單圈紀錄、週六降雨窗口）</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文對應 2026-11-07 聖保羅週六快報。只含已結束的 FP1、FP2。FP3（今天 22:30）與排位（週日 02:00）尚未開始，不含這兩節成績。
+  </footer>
+</body>
+</html>
