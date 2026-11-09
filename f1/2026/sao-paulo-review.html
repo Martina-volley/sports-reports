@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 2026 聖保羅大獎賽正賽：Norris 贏 14.602 秒，Mercedes 封車隊冠軍 | The Sports Report</title>
+  <meta name="description" content="2026 年 11 月 8 日聖保羅 71 圈，Norris 從桿位獲勝，1:35:23.504，Verstappen 差 14.602 秒。最終分類 Lawson 第七、Leclerc 第八。Mercedes 車隊冠軍確定。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="F1 2026 聖保羅大獎賽正賽：Norris 贏 14.602 秒，Mercedes 封車隊冠軍" />
+  <meta property="og:description" content="Norris 1:35:23.504 贏下 71 圈。Verstappen 從第 21 位發車跑到第二。Hadjar 第三。賽後 5 秒把 Leclerc 從第七調到第八。Mercedes 652 分，車隊冠軍確定。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 16ch;
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.06;
+    }
+    .hero p {
+      max-width: 860px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    p { margin: 0 0 14px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack { display: grid; gap: 14px; }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .status {
+      margin-top: 8px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(15, 118, 110, 0.08);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    ol, ul { margin: 0; padding-left: 20px; }
+    li + li { margin-top: 8px; }
+    .sources li { margin-bottom: 8px; word-break: break-word; }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 20 | Monday Review</div>
+      <h1>Norris 從桿位獲勝，車隊冠軍定了</h1>
+      <p>2026 年 11 月 8 日，聖保羅大獎賽跑完 71 圈。Lando Norris 從桿位發車，以 1:35:23.504 獲勝，領先 Max Verstappen 14.602 秒。Isack Hadjar 第三。George Russell 第四、Kimi Antonelli 第五，Mercedes 車隊冠軍確定。Verstappen 從第 21 位發車。</p>
+      <div class="meta">
+        <span>發稿日期：2026-11-09</span>
+        <span>賽事：Formula 1 MSC Cruises Grande Prêmio de São Paulo 2026</span>
+        <span>地點：Autódromo José Carlos Pace, São Paulo</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Race Summary</div>
+      <div class="lede">
+        <p>Norris 拿 25 分，Verstappen 18 分，Hadjar 15 分。Russell 12 分，Antonelli 10 分，Oscar Piastri 8 分。Liam Lawson 第六個完賽積分是 6 分，Charles Leclerc 是 4 分。Lewis Hamilton 第九、2 分，跑 70 圈。Nico Hülkenberg 第十、1 分，也是 70 圈。前八名都跑滿 71 圈。</p>
+        <p>週日稿的暫定起跑格是檔案 51。正賽用的是檔案 59，2026-11-08 13:00，最終起跑格。桿位仍是 Norris 的 1:27.470。Antonelli 第二、Lawson 第三。Russell 排位第二，5 格之後在第七。Leclerc 排位第四，10 格之後在第十四。Verstappen 30 格，第 21 位。Hamilton 75 格，第 20 位。這場是雨戰，中間轉乾，結尾再下雨。FIA 寫 Norris 本季第 3 勝。</p>
+      </div>
+      <div class="status">資料邊界：名次、圈數、時間、積分用 FIA Document 81（2026-11-08 18:45，最終分類）。Document 70（15:55）是暫定分類。Antonelli、Leclerc、Oliver Bearman 的 5 秒是賽後加上去的，只改了 Leclerc 與 Lawson 的名次。過程用 FIA 2026-11-08 賽後新聞。那篇新聞末尾的名次表仍是罰前順序，Leclerc 第七、Lawson 第八，Antonelli 的差距寫 36.017 秒。本稿名次不用那張表。Formula1.com 成績頁發稿時顯示 No results available，完賽表不以那一頁為準。Stroll 退賽原因，兩份官方文字都沒有寫零件或事故，本稿不補。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Top 10 Finishers</div>
+        <h2>正賽前十</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>差距</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>1:35:23.504</td><td>25</td></tr>
+            <tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td><td>+14.602</td><td>18</td></tr>
+            <tr><td>3</td><td>Isack Hadjar</td><td>Red Bull</td><td>+24.485</td><td>15</td></tr>
+            <tr><td>4</td><td>George Russell</td><td>Mercedes</td><td>+33.991</td><td>12</td></tr>
+            <tr><td>5</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+41.017</td><td>10</td></tr>
+            <tr><td>6</td><td>Oscar Piastri</td><td>McLaren</td><td>+56.475</td><td>8</td></tr>
+            <tr><td>7</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+75.402</td><td>6</td></tr>
+            <tr><td>8</td><td>Charles Leclerc</td><td>Ferrari</td><td>+78.586</td><td>4</td></tr>
+            <tr><td>9</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+1 圈</td><td>2</td></tr>
+            <tr><td>10</td><td>Nico Hülkenberg</td><td>Audi</td><td>+1 圈</td><td>1</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">第 11 到第 17 是 70 圈：Lindblad（Racing Bulls）、Alonso（Aston Martin）、Colapinto（Alpine）、Gasly（Alpine）、Albon（Williams）、Bortoleto（Audi）、Bearman（Haas，1:36:55.215）。第 18 到第 20 是 69 圈：Perez（Cadillac）、Sainz（Williams）、Camara（Haas）。Camara 是本週末 F1 首秀，Formula1.com 寫他第 20。最快圈：Antonelli，第 55 圈 1:12.689，213.407 km/h。第五名積分是 10，表上沒有另加 1 分。星號在 Antonelli、Leclerc、Bearman，對應檔案 80、79、78。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Penalties</div>
+        <h2>罰則改了誰的名次</h2>
+        <table>
+          <thead>
+            <tr><th>車手</th><th>處分</th><th>檔案</th><th>最終名次</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Charles Leclerc</td><td>賽後加 5 秒</td><td>79</td><td>第八，4 分。暫定是第七、6 分。</td></tr>
+            <tr><td>Liam Lawson</td><td>沒有新的罰秒</td><td>—</td><td>第七，6 分。暫定是第八、4 分。</td></tr>
+            <tr><td>Kimi Antonelli</td><td>賽後加 5 秒</td><td>80</td><td>仍是第五，10 分。差距從 36.017 變成 41.017。</td></tr>
+            <tr><td>Oliver Bearman</td><td>賽後加 5 秒</td><td>78</td><td>仍是第十七，0 分。</td></tr>
+            <tr><td>Nico Hülkenberg</td><td>場上 10 秒</td><td>71</td><td>第十，1 分。時間與暫定分類相同。</td></tr>
+            <tr><td>Alexander Albon</td><td>場上 5 秒，2 點</td><td>67</td><td>第十五，0 分。12 個月內累計 3 點。</td></tr>
+            <tr><td>Lewis Hamilton</td><td>不再追究</td><td>65</td><td>第九，2 分。位置已還回去。</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">Leclerc 的 5 秒來自第 12 彎與 Lawson 的接觸。賽會寫接觸不大，但 Lawson 因此被干擾，Leclerc 後來超了過去。濕地與接觸程度把處分從 10 秒降到 5 秒。暫定分類 Leclerc 落後 73.586 秒，加 5 秒是 78.586，慢過 Lawson 的 75.402，所以名次對調。Antonelli 是 15:36 從維修區放出來，路徑上有 Colapinto。他在濕滑的維修區一度失控，得閃碰撞。Bearman 是 15:25 放車時 Leclerc 已在維修區，Leclerc 得煞車並往右牆閃。Hülkenberg 在第 1 彎外線超 Colapinto 時出界並保持領先，10 秒已在場上執行。Albon 在第 2 彎出界、第 3 彎回到 Gasly 前面，Gasly 得煞車。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Race Turning Points</div>
+        <h2>三個決定結果的時刻</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 第一圈：Antonelli 領先，Lawson 第二</strong>
+            <div>Antonelli 從第二位發車，第 1 彎取得領先。Norris 從桿位掉下去。Lawson 從外側繞過 McLaren，第 2 彎升上第二。Hamilton 從第 20 位發車，第一圈結束時第九。FIA 寫這是他第 400 場 Formula 1 出賽。Verstappen 從第 21 位發車，同一段升到第 13。Hamilton 在第 5 彎想超 Bearman，被擠出賽道，後來把位置還回去，掉到第 11。Document 65 的裁決是不再追究。</div>
+          </div>
+          <div class="item">
+            <strong>2. 第 20 圈：Antonelli 在第 1 彎打滑，Norris 領先</strong>
+            <div>中性雨胎在變乾的賽道上過熱。Norris、Hadjar、Russell 接連超掉 Lawson，Verstappen 也超了過去。Hamilton 在第 14 圈結束前進站換軟胎，是第一個換光頭胎的人。Norris、Russell、Hadjar 在第 16 圈結束前進站。Russell 出維修區打滑，短暫擦到牆。Antonelli 與 Verstappen 留到第 17 圈結束。Antonelli 還在最前面，Norris 把差距收到大約 2 秒。第 20 圈 Antonelli 在第 1 彎打滑，Norris 取得領先。他下一圈同一彎跑寬，Hadjar 升上第二，接著又掉到 Verstappen 後面。第 23 圈賽道宣布全乾，Overtake Mode 開啟。當時 Norris 領先 Hadjar 3.3 秒。</div>
+          </div>
+          <div class="item">
+            <strong>3. 結尾再下雨，賽後 5 秒改了第七名</strong>
+            <div>第 38 圈 Verstappen 在第 1 彎超掉 Hadjar，升上第二。Norris 領先超過 9 秒。第 61 圈結束，Russell 與 Alonso 第一批換回中性雨胎。Hamilton 在第 12 彎上坡打滑、擦牆，仍進站，最後第九。Russell 的中性雨胎多跑一圈之後，車隊叫 Antonelli 把第四讓回去。終點是 Norris、Verstappen、Hadjar、Russell、Antonelli、Piastri。旗幟時 Leclerc 在倒數第二圈超掉 Lawson。Document 79 的 5 秒加在賽後，最終分類 Lawson 第七、Leclerc 第八。FIA 新聞的名次表還沒有這 5 秒。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Team Outcomes</div>
+        <h2>各車隊本站得分</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>Mercedes：22 分。車隊冠軍定了。</strong>
+            <div>Russell 12，Antonelli 10。Document 82 的車隊總分是 652。賽前週日稿寫的是 630。Ferrari 本站 6 分，總分 510。領先從 126 分拉成 142 分。剩下三站都不是衝刺賽，單站最高 43 分，三站 129。142 多過 129。</div>
+          </div>
+          <div class="item">
+            <strong>Red Bull：33 分，本站最高。</strong>
+            <div>Verstappen 18，Hadjar 15。兩人都在頒獎台。FIA 寫這是 Hadjar 本季第二座頒獎台。總分 415，仍是第三。McLaren 也拿 33 分，Norris 25、Piastri 8，總分 398。兩隊的差距維持 17 分。</div>
+          </div>
+          <div class="item">
+            <strong>Ferrari：6 分。Leclerc 的 2 分在賽後沒了。</strong>
+            <div>Hamilton 第九、2 分。Leclerc 若維持旗幟時的第七是 6 分，賽後 5 秒之後是 4 分。車隊本站合計 6，不是 8。總分 510，第二。與 Mercedes 的差是 142 分。</div>
+          </div>
+          <div class="item">
+            <strong>Racing Bulls 6 分，Audi 1 分。其餘本站 0 分。</strong>
+            <div>Lawson 因 Leclerc 被加秒而升到第七、6 分。Lindblad 第十一、0 分，從第 18 位發車。Hülkenberg 第十、1 分，10 秒已在場上執行。Alpine、Haas、Williams、Aston Martin、Cadillac 本站 0 分。Stroll 完成 30 圈、DNF，時間 43:24.700。Bottas 0 圈、DNS。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Starting Grid</div>
+        <h2>檔案 59：最終 22 格</h2>
+        <p>這張表取代週日稿的檔案 51。多出來的罰格是 Lindblad 與 Bortoleto，各 10 格，檔案 56、57，週日上午做成。Lindblad 是第 7 具內燃機、第 6 具渦輪。Bortoleto 是第 6 具能量儲存、第 6 具控制電子。兩人都從第 18、第 19 位發車。檔案 51 裡 Lindblad 在第十二、Bortoleto 在第十九。</p>
+        <table>
+          <thead>
+            <tr><th>起跑</th><th>車手</th><th>車隊</th><th>完賽</th><th>罰格</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>1</td><td>—</td></tr>
+            <tr><td>2</td><td>Kimi Antonelli</td><td>Mercedes</td><td>5</td><td>—</td></tr>
+            <tr><td>3</td><td>Liam Lawson</td><td>Racing Bulls</td><td>7</td><td>—</td></tr>
+            <tr><td>4</td><td>Nico Hülkenberg</td><td>Audi</td><td>10</td><td>—</td></tr>
+            <tr><td>5</td><td>Isack Hadjar</td><td>Red Bull</td><td>3</td><td>—</td></tr>
+            <tr><td>6</td><td>Oliver Bearman</td><td>Haas</td><td>17</td><td>—</td></tr>
+            <tr><td>7</td><td>George Russell</td><td>Mercedes</td><td>4</td><td>5 格</td></tr>
+            <tr><td>8</td><td>Fernando Alonso</td><td>Aston Martin</td><td>12</td><td>—</td></tr>
+            <tr><td>9</td><td>Alexander Albon</td><td>Williams</td><td>15</td><td>—</td></tr>
+            <tr><td>10</td><td>Oscar Piastri</td><td>McLaren</td><td>6</td><td>—</td></tr>
+            <tr><td>11</td><td>Rafael Camara</td><td>Haas</td><td>20</td><td>—</td></tr>
+            <tr><td>12</td><td>Carlos Sainz</td><td>Williams</td><td>19</td><td>—</td></tr>
+            <tr><td>13</td><td>Franco Colapinto</td><td>Alpine</td><td>13</td><td>—</td></tr>
+            <tr><td>14</td><td>Charles Leclerc</td><td>Ferrari</td><td>8</td><td>10 格</td></tr>
+            <tr><td>15</td><td>Pierre Gasly</td><td>Alpine</td><td>14</td><td>—</td></tr>
+            <tr><td>16</td><td>Lance Stroll</td><td>Aston Martin</td><td>DNF</td><td>—</td></tr>
+            <tr><td>17</td><td>Valtteri Bottas</td><td>Cadillac</td><td>DNS</td><td>—</td></tr>
+            <tr><td>18</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>11</td><td>10 格</td></tr>
+            <tr><td>19</td><td>Gabriel Bortoleto</td><td>Audi</td><td>16</td><td>10 格</td></tr>
+            <tr><td>20</td><td>Lewis Hamilton</td><td>Ferrari</td><td>9</td><td>75 格</td></tr>
+            <tr><td>21</td><td>Max Verstappen</td><td>Red Bull</td><td>2</td><td>30 格</td></tr>
+            <tr><td>22</td><td>Sergio Perez</td><td>Cadillac</td><td>18</td><td>30 格</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">完賽欄用 Document 81。Bottas 發車前被推離格子。Formula1.com 賽後稿寫車上有問題。官方影片頁寫，車隊換正賽胎時右後輪螺帽拆不下來。Stroll 完成 30 圈後退賽。賽後稿只寫他再度在比賽中途退賽，沒有寫原因。Verstappen 的起跑格沒有印圈速。他的排位時間在檔案 50，是 Q1 的 1:31.238。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Updated Standings</div>
+        <h2>賽後積分（R20 後）</h2>
+        <p>總分用 FIA Document 82，2026-11-08 18:50。本站欄是最終分類的積分，不是暫定分類。前十車手與前四車隊，都對得上週日稿的賽前數字再加這一站。</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px;">
+          <div>
+            <h3>車手積分前十</h3>
+            <table>
+              <thead>
+                <tr><th>排名</th><th>車手</th><th>車隊</th><th>積分</th><th>本站</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>390</td><td>+10</td></tr>
+                <tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td><td>279</td><td>+18</td></tr>
+                <tr><td>3</td><td>George Russell</td><td>Mercedes</td><td>262</td><td>+12</td></tr>
+                <tr><td>4</td><td>Lewis Hamilton</td><td>Ferrari</td><td>261</td><td>+2</td></tr>
+                <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>249</td><td>+4</td></tr>
+                <tr><td>6</td><td>Lando Norris</td><td>McLaren</td><td>246</td><td>+25</td></tr>
+                <tr><td>7</td><td>Oscar Piastri</td><td>McLaren</td><td>152</td><td>+8</td></tr>
+                <tr><td>8</td><td>Isack Hadjar</td><td>Red Bull</td><td>122</td><td>+15</td></tr>
+                <tr><td>9</td><td>Liam Lawson</td><td>Racing Bulls</td><td>89</td><td>+6</td></tr>
+                <tr><td>10</td><td>Pierre Gasly</td><td>Alpine</td><td>42</td><td>+0</td></tr>
+              </tbody>
+            </table>
+            <div class="mini-note">Antonelli 390，第二名 Verstappen 279，差 111 分。車手冠軍在墨西哥城已經結束，這 10 分不改變頭銜。第二名的差距變了：賽前 Verstappen 只比 Hamilton 多 2 分。賽後他領先 Russell 17 分、領先 Hamilton 18 分。Russell 從第四升到第三，比 Hamilton 多 1 分。Norris 本站 25 分，與 Leclerc 的差從 24 分縮成 3 分。</div>
+          </div>
+          <div>
+            <h3>車隊積分前四</h3>
+            <table>
+              <thead>
+                <tr><th>排名</th><th>車隊</th><th>積分</th><th>本站</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Mercedes</td><td>652</td><td>+22</td></tr>
+                <tr><td>2</td><td>Ferrari</td><td>510</td><td>+6</td></tr>
+                <tr><td>3</td><td>Red Bull</td><td>415</td><td>+33</td></tr>
+                <tr><td>4</td><td>McLaren</td><td>398</td><td>+33</td></tr>
+              </tbody>
+            </table>
+            <div class="mini-note">Mercedes 領先 Ferrari 142 分。剩下拉斯維加斯、卡達、阿布達比。三站都不是衝刺賽。一位車手最高 25 分，沒有最快圈加分，車隊單站最高按 25+18＝43。三站 129 分。129 少於 142。Ferrari 三站都拿 1-2、Mercedes 都是 0，也只到 639，還少 13 分。車隊冠軍確定。FIA 賽後新聞寫還有兩站。2026 賽曆頁在聖保羅之後仍列這三站。本稿用賽曆。用兩站算也已經封了，但站數以賽曆為準。Red Bull 與 McLaren 仍差 17 分。Racing Bulls 官方 114。Document 82 註記 Audi 對義大利站 Document 69 有上訴意願。那份註記不改聖保羅名次。652 與 510 用的是這張表。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">What It Means</div>
+        <h2>這場比賽的意義</h2>
+        <p>車手冠軍沒有新的變化。Antonelli 仍是 390 分。變的是車隊冠軍，以及第二名後面那 2 分。Russell 現在第三，262，比 Hamilton 多 1 分。Verstappen 的第二名領先是 17 分，不是 2 分。Norris 從桿位拿下本季第 3 勝，與第五名 Leclerc 只差 3 分。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Next Round</div>
+        <h2>下一站：拉斯維加斯</h2>
+        <p>R21 拉斯維加斯大獎賽，11 月 19 日到 21 日。正賽 50 圈。不是衝刺賽。台灣時間是 11 月 22 日週日 12:00。賽前整理見拉斯維加斯預告。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Quote</div>
+        <h2>賽後原話</h2>
+        <p>Norris 說這場很硬。起步不是最好，條件一直在變。濕地換光頭胎很難，尤其還在追領先。他今天沒犯錯，需要速度的時候有速度。很高興回到頒獎台最高那階。這段出自 Formula1.com，這裡是中文譯意。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Weekend So Far</div>
+        <h2>本週末已發的聖保羅稿</h2>
+        <ul>
+          <li><a href="../../f1/2026/sao-paulo-preview.html">賽前預告</a>：賽程、賽道，以及入站時差 126 分的車隊榜。</li>
+          <li><a href="../../f1/2026/sao-paulo-fri.html">週五</a>：練習還沒開始。多拿 3 分就碰到封王線。</li>
+          <li><a href="../../f1/2026/sao-paulo-sat.html">週六</a>：FP1、FP2。Antonelli 的 1:10.763。</li>
+          <li><a href="../../f1/2026/sao-paulo-sun.html">週日</a>：FP3 與排位。Norris 桿位 1:27.470。該稿的起跑格是檔案 51，正賽用檔案 59。</li>
+          <li><a href="../../f1/2026/las-vegas-preview.html">下一站</a>：拉斯維加斯週一預告。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_final_race_classification.pdf" target="_blank" rel="noopener">FIA，Document 81，2026-11-08 18:45：最終完賽分類。71 圈、305.879 公里</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_provisional_race_classification.pdf" target="_blank" rel="noopener">FIA，Document 70，2026-11-08 15:55：暫定分類。Leclerc 第七、Antonelli +36.017</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_championship_points.pdf" target="_blank" rel="noopener">FIA，Document 82，2026-11-08 18:50：車手榜與車隊榜。Mercedes 652，Ferrari 510</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_final_starting_grid.pdf" target="_blank" rel="noopener">FIA，Document 59，2026-11-08 13:00：最終起跑格</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_16_-_causing_a_collision.pdf" target="_blank" rel="noopener">FIA，Document 79，18:18：16 號車 Leclerc 造成碰撞，賽後加 5 秒</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_12_-_unsafe_release.pdf" target="_blank" rel="noopener">FIA，Document 80，18:23：12 號車 Antonelli 不安全放車，賽後加 5 秒</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_87_-_unsafe_release.pdf" target="_blank" rel="noopener">FIA，Document 78，18:12：87 號車 Bearman 不安全放車，賽後加 5 秒</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_27_-_leaving_the_track_and_gaining_an_advantage.pdf" target="_blank" rel="noopener">FIA，Document 71，15:58：27 號車 Hülkenberg 出界並獲利，10 秒</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_23_-_rejoining_the_track_unsafely.pdf" target="_blank" rel="noopener">FIA，Document 67，15:42：23 號車 Albon 不安全回到賽道，5 秒、2 點</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_decision_-_car_44_-_alleged_leaving_the_track_and_gaining_an_advantage.pdf" target="_blank" rel="noopener">FIA，Document 65，15:37：44 號車 Hamilton，裁決不再追究</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_41_-_changes_to_pu_elements.pdf" target="_blank" rel="noopener">FIA，Document 56：Lindblad 罰退 10 格</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_infringement_-_car_5_-_changes_to_pu_elements.pdf" target="_blank" rel="noopener">FIA，Document 57：Bortoleto 罰退 10 格</a></li>
+          <li><a href="https://www.fia.com/news/f1-norris-triumphs-sao-paulo-mercedes-secure-2026-constructors-championship" target="_blank" rel="noopener">FIA，2026-11-08：賽後新聞。進站圈數、打滑、車隊指令、第 3 勝、第 400 場出賽。文末名次表是罰前</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI" target="_blank" rel="noopener">Formula1.com 賽後稿：Bottas 發車前被推離、Stroll 中途退賽、Camara 第 20、Norris 原話</a></li>
+          <li><a href="https://www.formula1.com/en/video/bottas-left-frustrated-as-hes-unable-to-start-the-race-at-interlagos.1881314471908098470" target="_blank" rel="noopener">Formula1.com 影片頁：右後輪螺帽拆不下來，Bottas 沒有發車</a></li>
+          <li><a href="https://www.fia.com/events/fia-formula-one-world-championship/season-2026/2026-fia-formula-one-world-championship" target="_blank" rel="noopener">FIA：2026 賽曆。聖保羅之後是拉斯維加斯、卡達、阿布達比</a></li>
+          <li><a href="../../f1/2026/sao-paulo-sun.html">workspace：聖保羅週日稿。賽前積分與檔案 51</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    名次與積分以 FIA Document 81、82 為準（2026-11-08）。FIA 賽後新聞的名次表是罰前順序。
+  </footer>
+</body>
+</html>

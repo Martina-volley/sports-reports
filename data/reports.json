@@ -1,5 +1,35 @@
 [
   {
+    "href": "f1/2026/las-vegas-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-11-09",
+    "title": "F1 2026 拉斯維加斯大獎賽賽前：車隊冠軍已定，第二名還差 17 分",
+    "kicker": "Las Vegas · Race Preview",
+    "summary": "R21 拉斯維加斯 11 月 19 日到 21 日，不是衝刺賽。50 圈、6.201 公里。台灣時間正賽 11 月 22 日週日 12:00。",
+    "secondary": "Antonelli 390 分，車手冠軍已定。Verstappen 279，Russell 262，差 17 分。Mercedes 已封車隊冠軍，領先 Ferrari 142 分。",
+    "seasonLabel": "F1 2026 Round 21",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 48%, #c2410c 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
+    "href": "f1/2026/sao-paulo-review.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-11-09",
+    "title": "F1 2026 聖保羅大獎賽正賽：Norris 贏 14.602 秒，Mercedes 封車隊冠軍",
+    "kicker": "Monday Review",
+    "summary": "2026 年 11 月 8 日聖保羅 71 圈，Norris 從桿位獲勝，1:35:23.504。Verstappen 第二、差 14.602 秒，Hadjar 第三。Mercedes 車隊冠軍確定。",
+    "secondary": "最終分類把 Leclerc 從第七調到第八。他賽後加 5 秒，Lawson 升上第七、6 分。Antonelli 也加 5 秒，仍是第五。Russell 262 分，超前 Hamilton 的 261。",
+    "seasonLabel": "F1 2026 Round 20",
+    "tagLabel": "賽後回顧",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/sao-paulo-sun.html",
     "league": "f1",
     "type": "sun",
@@ -12,7 +42,7 @@
     "tagLabel": "週日焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/sao-paulo-sat.html",
