@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/las-vegas-fri.html",
+    "league": "f1",
+    "type": "daily",
+    "date": "2026-11-20",
+    "title": "拉斯維加斯週五：FP1 還沒有成績，第二名還差 17 分",
+    "kicker": "Friday Dispatch",
+    "summary": "R21 拉斯維加斯是夜間街道賽，不是衝刺賽。台灣時間今天 08:30 的 FP1 與 12:00 的 FP2，官方成績頁都還沒有結果。",
+    "secondary": "車手冠軍、車隊冠軍都已結束。Verstappen 279，Russell 262，差 17 分。這週追得過，但第二名定不下來。Mercedes 領先 Ferrari 142 分。",
+    "seasonLabel": "F1 2026 Round 21",
+    "tagLabel": "週五快報",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/las-vegas-preview.html",
     "league": "f1",
     "type": "preview",
@@ -27,7 +42,7 @@
     "tagLabel": "賽後回顧",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/sao-paulo-sun.html",

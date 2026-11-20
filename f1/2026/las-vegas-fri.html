@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>拉斯維加斯週五：FP1 還沒有成績，第二名還差 17 分</title>
+  <meta name="description" content="2026 年 11 月 20 日 F1 拉斯維加斯站週五開場。夜間街道賽，不是衝刺賽。FP1、FP2 官方成績頁都還沒有結果。Verstappen 領先 Russell 17 分。車手冠軍與車隊冠軍都已結束。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 21 | Friday Dispatch</div>
+      <h1>成績還沒出來，第二名差 17 分</h1>
+      <p>2026 年 11 月 20 日台灣時間上午，Las Vegas Strip Circuit 的練習分類還沒有公布。FP1 排在當地週四 16:30，台灣時間今天 08:30。Formula1.com 的 FP1、FP2 成績頁都寫沒有結果。這站是 R21，夜間街道賽，50 圈，不是衝刺賽。Kimi Antonelli 的車手冠軍、Mercedes 的車隊冠軍都已經結束。Max Verstappen 279 分，George Russell 262 分，差 17 分。</p>
+      <div class="meta">
+        <span>日期｜2026-11-20</span>
+        <span>賽事｜Formula 1 Heineken Las Vegas Grand Prix 2026</span>
+        <span>kind = fri</span>
+        <span>地點｜Las Vegas Strip Circuit, Las Vegas</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>官方時刻表把本週末列為 11 月 19 日到 21 日。F1 項目是三次練習、排位、正賽。正賽 50 圈或 120 分鐘，當地時間週六 20:00。本站 <code>data/schedule.json</code> 的下一站是 R21 拉斯維加斯大獎賽，日期 11-21、週六。兩邊的正賽日都是 2026-11-21。台灣是 UTC+8，官方寫拉斯維加斯比 UTC 慢 8 小時，正賽落到台灣時間 11 月 22 日週日 12:00。</p>
+        <p>截至本稿核對成績頁，FP1 與 FP2 都沒有分類。時刻表的 FP1 是當地週四 16:30–17:30。台灣時間 11 月 20 日上午，這一節的時段已經到了，名次與圈速仍不寫。FP2 要到今天 12:00 才開始。排位與正賽也不在這份週五稿裡。</p>
+      </div>
+      <div class="status">資料邊界：賽程用 Formula1.com 全文時刻表，並對過本站賽程表的 11-21 週六。積分用本站聖保羅週一回顧，來源是 FIA Document 82（2026-11-08）。聖保羅之後沒有再比完一站。賽道、輪胎用賽事頁、Need to Know、輪胎文與數字稿。天氣用 Formula1.com 週末預報。Piastri 的 10 格是 Formula1.com 引 McLaren 的確認，不是賽會已經公告的起跑格。時程官方註明仍可能更動。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taipei Schedule</div>
+        <h2>台灣時間賽程</h2>
+        <table>
+          <thead>
+            <tr><th>台灣時間</th><th>拉斯維加斯當地</th><th>Session</th><th>註記</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>11-20 週五 08:30–09:30</td><td>11-19 週四 16:30–17:30</td><td>FP1</td><td>60 分鐘。成績頁尚無分類</td></tr>
+            <tr><td>11-20 週五 12:00–13:00</td><td>11-19 週四 20:00–21:00</td><td>FP2</td><td>60 分鐘。還沒開始</td></tr>
+            <tr><td>11-21 週六 08:30–09:30</td><td>11-20 週五 16:30–17:30</td><td>FP3</td><td>60 分鐘，最後練習</td></tr>
+            <tr><td>11-21 週六 12:00–13:00</td><td>11-20 週五 20:00–21:00</td><td>Qualifying</td><td>決定週六發車位</td></tr>
+            <tr><td>11-22 週日 12:00–14:00</td><td>11-21 週六 20:00–22:00</td><td>Race</td><td>50 圈或 120 分鐘</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">換算基準：官方時刻表寫拉斯維加斯比 UTC 慢 8 小時。台灣 UTC+8，當地時間加 16 小時。本站賽程表的 11-21 週六，指的是官方正賽日，不是台灣的開跑日。週四兩節練習都落到台灣時間週五白天。F1 Academy 與車手遊行不列在這張表。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Circuit Frame</div>
+        <h2>Strip 賽道的官方數字</h2>
+        <table>
+          <thead>
+            <tr><th>項目</th><th>官方數字</th><th>出處</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>賽道長度</td><td>6.201 km</td><td>賽事頁、時刻表、Need to Know</td></tr>
+            <tr><td>彎數</td><td>17 個</td><td>賽事頁、賽道指南</td></tr>
+            <tr><td>正賽圈數</td><td>50 圈</td><td>比賽距離 309.958 km</td></tr>
+            <tr><td>單圈紀錄</td><td>1:33.365</td><td>Max Verstappen，Red Bull，2025</td></tr>
+            <tr><td>首場大獎賽</td><td>2023</td><td>賽事頁、Need to Know</td></tr>
+            <tr><td>最多勝場</td><td>Verstappen 2 勝</td><td>2023、2025。2024 是 Russell</td></tr>
+            <tr><td>最多桿位</td><td>3 人各 1 次</td><td>Leclerc、Russell、Norris</td></tr>
+            <tr><td>2023 年超車</td><td>181 次</td><td>數字稿。該季單站最多</td></tr>
+            <tr><td>進站時間損失</td><td>19.96 秒</td><td>Need to Know，含 2.5 秒作業</td></tr>
+            <tr><td>安全車／虛擬安全車</td><td>33%／67%</td><td>前三屆拉斯維加斯站</td></tr>
+            <tr><td>桿位到第一彎</td><td>160 公尺</td><td>Need to Know，煞車點</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">近三屆冠軍：2025 Verstappen、2024 Russell、2023 Verstappen。近三屆桿位：2025 Norris、2024 Russell、2023 Leclerc。數字稿另寫，大道約 2 公里，全長只短過 Spa；2024 年 Alexander Albon 在這裡跑到 368.9 km/h；賽道靠 1,750 盞臨時燈。這三個數字都是既有紀錄，不是 2026 年的速度預測。1981、1982 年的 Caesars Palace 大獎賽是另一條賽道。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Title Window</div>
+        <h2>17 分領先，這週追得過，定不下來</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>兩個冠軍都已經結束</strong>
+            <div>Antonelli 390 分，領先第二名 111 分。剩下三站都不是衝刺賽，一位車手最多再拿 75 分。Mercedes 652、Ferrari 510，差 142。單站最高按 25 加 18，是 43 分。三站合計 129。142 多過 129。</div>
+          </div>
+          <div class="item">
+            <strong>第二名這週會動，但封不了</strong>
+            <div>Verstappen 279，Russell 262，差 17。Hamilton 261，再少 1 分。單站最高 25 分。Russell 要超前，這週得分必須比 Verstappen 多至少 18 分。Hamilton 要多至少 19 分。打完這站還有兩站，最多 50 分。Verstappen 就算再拿 25、後面兩人掛零，領先也只到 42，仍少於 50。</div>
+          </div>
+          <div class="item">
+            <strong>第五、第六這週超不了第二名</strong>
+            <div>Leclerc 249，落後 30。Norris 246，落後 33。兩人就算拿 25、Verstappen 拿 0，仍分別少 5 分、8 分。Piastri 152，落後 127，75 分不夠。第二到第六的分差是 33 分，Race Week 也是這個數字。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>R20 聖保羅後車手榜</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>390</td></tr>
+            <tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td><td>279</td></tr>
+            <tr><td>3</td><td>George Russell</td><td>Mercedes</td><td>262</td></tr>
+            <tr><td>4</td><td>Lewis Hamilton</td><td>Ferrari</td><td>261</td></tr>
+            <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>249</td></tr>
+            <tr><td>6</td><td>Lando Norris</td><td>McLaren</td><td>246</td></tr>
+            <tr><td>7</td><td>Oscar Piastri</td><td>McLaren</td><td>152</td></tr>
+            <tr><td>8</td><td>Isack Hadjar</td><td>Red Bull</td><td>122</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">數字來自本站聖保羅週一回顧，對應 FIA Document 82。第九名 Lawson 89、第十名 Gasly 42。聖保羅本站積分：Norris 25、Verstappen 18、Hadjar 15、Russell 12、Antonelli 10、Piastri 8、Lawson 6、Leclerc 4、Hamilton 2。沒有最快圈加分。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Constructors</div>
+        <h2>R20 後車隊榜</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車隊</th><th>積分</th><th>與前一段</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>652</td><td>—</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>510</td><td>落後 142</td></tr>
+            <tr><td>3</td><td>Red Bull</td><td>415</td><td>落後 Ferrari 95</td></tr>
+            <tr><td>4</td><td>McLaren</td><td>398</td><td>落後 Red Bull 17</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">車隊榜照 Document 82，不由車手積分加總。Mercedes 390 加 262 等於 652，Ferrari 261 加 249 等於 510，McLaren 246 加 152 等於 398，這三隊對得上。Red Bull 兩人是 401，車隊榜是 415。週一回顧沒有補這 14 分的出處，本稿也不補。單站最高 43 分。95 與 112 都大於 43，這週沒有車隊能超車 Ferrari 的第二名。Red Bull 與 McLaren 只差 17，第三名這週會動。Racing Bulls 114，與 McLaren 差 284，三站最多 129，進不了前四。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Friday Watchlist</div>
+        <h2>開練成績出來前要盯的四件事</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 第二名綁的是分差，不是誰先贏這站</strong>
+            <div>17 分小於 25 分，所以 Russell 或 Hamilton 這週有路徑超前。條件很窄：Russell 至少要比 Verstappen 多 18 分，Hamilton 至少多 19 分。後面還有卡達、阿布達比。這站打完，第二名仍不會定案。車隊榜相反，Ferrari 的第二名這週守得住，Red Bull 對 McLaren 的 17 分守不住。</div>
+          </div>
+          <div class="item">
+            <strong>2. Piastri 預計罰退 10 格，練習先試新零件</strong>
+            <div>Formula1.com 寫，McLaren 確認 Piastri 因可靠度問題換新的內燃機。本季額度 4 具，再換就超過，罰退 10 格。他和 Norris 也會換新渦輪，兩人都還在額度內，這個更換不罰。McLaren 說渦輪的預期增益相對小。巴西那週的新前翼是朝 2027 做的。這週再加新底板，也有減阻方案，練習先跑，再決定排位與正賽用不用。正式起跑格要等排位與賽會文件。本稿不寫格子。</div>
+          </div>
+          <div class="item">
+            <strong>3. FP1 由 Hirakawa 代 Bearman，Camara 留在車上</strong>
+            <div>Haas 確認 Rafael Camara 本週出賽，與 Oliver Bearman 搭檔。他 21 歲，這是第二個 F1 週末。聖保羅他完賽第 20。Ryo Hirakawa 在 FP1 替換 Bearman，這是他本季第 4 次 FP1。墨西哥城那站他代 Esteban Ocon 出賽，以第十名拿 1 分。Ocon 不會回到這台車上。FP1 的 Haas 組合是 Camara 與 Hirakawa，不是 Bearman。</div>
+          </div>
+          <div class="item">
+            <strong>4. 輪胎是 C3、C4、C5，紙上最快是一停</strong>
+            <div>硬胎 C3 兩套、中性胎 C4 三套、軟胎 C5 八套。中性雨胎與全雨胎都備著。進 Q3 的人另有一套軟胎。乾地正賽至少要用兩種乾胎。Pirelli 寫，除了中段幾個高速彎，輪胎負荷不高。低抓地、低溫下可能再出現粒化，磨損主要是機械性的。長直線接重煞車，鎖死會留下平斑。紙上最快是一停，三種乾胎都可能用上，C5 也能跑正賽的一節。出維修區之後有一段長路，胎溫掉得快，先停的優勢會變小。去年排位下過雨。今年這三天的官方預報目前都是 0%。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Track Notes</div>
+        <h2>下壓力要砍，出彎決定長直線</h2>
+        <p>賽事頁寫，這條 17 彎的街道賽在市中心，經過 Caesars Palace、Bellagio、Venetian。平均速度接近 Monza。正賽在週六晚上、燈光下進行。賽道指南把超車模式的偵測點放在第 16 彎出口，啟動線在通往第 17 彎的直線上。前一圈得在偵測點與前車相距 1 秒以內，下一圈才開得了。</p>
+        <p>Jolyon Palmer 在 Need to Know 的點評：長直線配慢彎，下壓力得砍，車本來就會不穩，氣溫再低，胎溫更難維持。第 6 彎進第 7 彎是最重的煞車區之一，先通過一段長的左彎再踩煞車，內側前輪容易鎖死。第 12 彎卡在兩條長直線中間，煞車與出彎要同時顧，這裡出錯的代價大。有煞車、有出彎牽引力，長直線才有速度。</p>
+        <div class="mini-note">Need to Know 把桿位到第一彎煞車點寫成 160 公尺。前三屆的安全車機率 33%、虛擬安全車 67%。進站損失 19.96 秒。這些都是賽前統計，不是這週的預測。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Weather</div>
+        <h2>三天降雨都是 0%，氣溫最高 14°C</h2>
+        <ul>
+          <li>FP1、FP2（官方預報的週四）：內文寫 3.6°C 到 14.3°C。風平均約 9 km/h，陣風可到 25.2 km/h。降雨 0%。摘要列的最高溫是 14°C、最低 3°C。這兩節落到台灣時間今天白天。</li>
+          <li>FP3、排位（官方預報的週五）：內文寫 4°C 到 13°C，賽道溫度大約 25°C。風平均約 7 km/h，陣風可到 20 km/h。降雨 0%。摘要列最高 12°C、最低 4°C。這兩節落到台灣時間週六。</li>
+          <li>正賽（官方預報的週六）：內文寫早上 5°C 到下午 11°C，賽道溫度大約 20°C。風平均約 8 km/h，陣風可到 18 km/h。降雨 0%。摘要列最高 11°C、最低 5°C。台灣時間是週日中午。</li>
+        </ul>
+        <div class="mini-note">以上為 Formula1.com 拉斯維加斯週末天氣預報。內文與文末摘要的溫度整數不完全相同，本稿並列。去年排位下過雨，今年這份預報目前沒有雨。若週末更新，以賽事頁最新預報為準。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Sao Paulo Recap</div>
+        <h2>上一站一行</h2>
+        <p>聖保羅：Norris 從桿位贏下 71 圈，1:35:23.504，Verstappen 從第 21 位發車跑到第二，差 14.602 秒。Hadjar 第三。Russell 第四、Antonelli 第五，Mercedes 車隊冠軍確定。最終分類 Lawson 第七、Leclerc 第八。</p>
+        <div class="mini-note">名次與分差見本站 <a href="./sao-paulo-review.html">聖保羅週一回顧</a>。賽前整理見 <a href="./las-vegas-preview.html">拉斯維加斯預告</a>。預告發在 11 月 9 日，賽程與積分已經在裡面。本稿補上輪胎、天氣，以及 Piastri 的罰格與 FP1 的 Haas 組合。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">What This Friday Is</div>
+        <h2>這份週五稿不寫成績</h2>
+        <p>台灣的週五上午，官方還沒有公布 FP1 分類。第一個可核對的速度，要等成績頁更新。在那之前，這站的問題已經定了：Russell 或 Hamilton 能不能在 17 分、18 分的差距裡超前；Red Bull 與 McLaren 的 17 分，會不會先在車隊榜第三名換人。</p>
+        <p>低溫、低抓地、長直線，會先出現在今天的兩節練習。單圈排名可以等週六的 FP3 和排位。正賽是 50 圈，台灣時間週日 12:00。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.formula1.com/en/latest/article/formula-1-heineken-las-vegas-grand-prix-2026.1qmWzcBwKK5hkTbYbhVC22" target="_blank" rel="noreferrer">Formula1.com：2026 Las Vegas Grand Prix full timetable（拉斯維加斯比 UTC 慢 8 小時；50 圈、6.201 公里；正賽 11 月 21 日 20:00）</a></li>
+          <li><a href="https://www.formula1.com/en/racing/2026/las-vegas" target="_blank" rel="noreferrer">Formula1.com：Las Vegas Grand Prix 2026（6.201 km、50 圈、309.958 km、17 彎、2023 首屆、Verstappen 2025 年 1:33.365；成績區無本節結果）</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/1" target="_blank" rel="noreferrer">Formula1.com：拉斯維加斯 FP1 成績頁。發稿時沒有本節結果</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/2" target="_blank" rel="noreferrer">Formula1.com：拉斯維加斯 FP2 成績頁。發稿時沒有本節結果</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-las-vegas-grand-prix.6ynxQ4e9Z7F1o2Uijhh1FK" target="_blank" rel="noreferrer">Formula1.com：Need to Know（160 公尺、33%／67%、19.96 秒、近三屆、Palmer 點評、Pirelli 一停）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-las-vegas-grand-prix.1HEaoIW48MVZs9cAT7rP2w" target="_blank" rel="noreferrer">Formula1.com：C3／C4／C5 套數、乾地至少兩種乾胎、粒化與先停優勢</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/in-numbers-the-incredible-statistics-behind-the-las-vegas-grand-prix-so-far.2m4dpEWvQHHxVEtNRY4MCR" target="_blank" rel="noreferrer">Formula1.com：約 2 公里大道、長度只短過 Spa、2023 年 181 次超車、Albon 2024 年 368.9 km/h、1,750 盞燈</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/circuit-guide-everything-you-need-to-know-about-the-las-vegas-strip-circuit.1W9ULMy0aEkvfsJ9tRzItg" target="_blank" rel="noreferrer">Formula1.com：賽道指南。超車模式偵測點在第 16 彎出口</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-is-the-weather-forecast-for-the-2026-las-vegas-grand-prix.1ki78WcweOZ8vq2zQ1HOJX" target="_blank" rel="noreferrer">Formula1.com：拉斯維加斯週末天氣預報。三天降雨 0%</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/its-race-week-5-storylines-were-excited-about-ahead-of-the-2026-las-vegas-grand-prix.3fjavheTbHD8fjZI0i7BWd" target="_blank" rel="noreferrer">Formula1.com：Race Week。第二到第六差 33 分；Red Bull 領先 McLaren 17 分</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/piastri-set-for-10-place-grid-penalty-at-las-vegas-grand-prix.5eT1wWFQzCfOS6W2tvTtLk" target="_blank" rel="noreferrer">Formula1.com：McLaren 確認 Piastri 換新內燃機，預計罰退 10 格。渦輪在額度內</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/haas-confirm-camara-to-race-for-the-team-in-las-vegas-as-hirakawa-returns-for-fp1-appearance.2as7TuSF4UHgXczZlu4245" target="_blank" rel="noreferrer">Formula1.com：Camara 本週出賽。Hirakawa 在 FP1 代 Bearman</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_championship_points.pdf" target="_blank" rel="noreferrer">FIA，Document 82：聖保羅後積分。Antonelli 390，Verstappen 279，Russell 262，Mercedes 652</a></li>
+          <li><a href="./sao-paulo-review.html">本站：聖保羅週一回顧（名次與賽後積分）</a></li>
+          <li><a href="./las-vegas-preview.html">本站：拉斯維加斯賽前預告（2026-11-09）</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文為 Friday dispatch，截至 2026-11-20 Asia/Taipei 上午可驗證資訊整理。官方成績頁沒有 FP1、FP2 分類，不含練習名次與圈速。
+  </footer>
+</body>
+</html>
