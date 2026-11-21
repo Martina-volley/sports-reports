@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>拉斯維加斯週六：Russell FP3 1:34.041，FP2 濕地 1:47.272</title>
+  <meta name="description" content="2026 年 11 月 21 日 F1 拉斯維加斯週六。FP1 沒有官方單圈時間。FP2 濕地是 George Russell 1:47.272。FP3 是 Russell 1:34.041，Kimi Antonelli 差 0.911 秒。排位與正賽不在本稿。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 21 | Saturday Dispatch</div>
+      <h1>Russell 的 1:34.041</h1>
+      <p>台灣時間 11 月 21 日週六上午，Las Vegas Strip Circuit 的 FP1、FP2、FP3 都已經結束。FP1 沒有官方單圈時間。FP2 最快是 George Russell，1:47.272，濕地，Pierre Gasly 差 0.071 秒。FP3 最快仍是 Russell，1:34.041，Kimi Antonelli 差 0.911 秒。分類在台灣時間 09:45 發出。排位是今天 12:00，正賽是週日 12:00。排位名次、桿位、發車位與完賽結果，本稿都不寫。</p>
+      <div class="meta">
+        <span>日期｜2026-11-21</span>
+        <span>賽事｜Formula 1 Heineken Las Vegas Grand Prix 2026</span>
+        <span>kind = sat</span>
+        <span>地點｜Las Vegas Strip Circuit, Las Vegas</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>R21 拉斯維加斯是 11 月 19 日到 21 日的夜間街道賽，不是衝刺賽。週五開場稿已上架，當時練習成績頁還沒有分類。拉斯維加斯比 UTC 慢 8 小時，台灣是 UTC+8，當地時間加 16 小時。FIA 時刻表第 3 版把 FP1 留在當地週四 16:30–17:30，FP2 留在 20:00–21:00。兩節的時段都已經過了。</p>
+        <p>FP3 是今天 08:30–09:30，排位是今天 12:00–13:00，正賽是週日 12:00。正賽 50 圈或 120 分鐘，當地週六 20:00。時刻表第 3 版把 FP3 標成固定結束。檔案 33 在當地 17:45 發出，就是台灣時間 09:45。排位成績頁此刻仍寫沒有結果。時間都以台灣時間記載，當地時間附在賽程表。</p>
+      </div>
+      <div class="status">資料邊界：FP2 名次、差距、圈數與時間用 FIA 檔案 15（FP2 分類，當地 11 月 19 日 21:20）。FP3 用檔案 33（當地 11 月 20 日 17:45）。兩份都對過 Formula1.com 成績頁。FP1 的 Formula1.com 成績頁沒有分類，FIA 新聞稿寫沒有官方單圈時間；圈數只引自該稿，不當成名次。過程用 Formula1.com 與 FIA 的 FP1、FP2 報導。FP3 沒有等到官方過程稿，只寫分類與已公布的召集。罰格用檔案 14、16、17、18、19、20。刪圈用檔案 11、22、23。檔案 33 發出時，清單上還沒有 FP3 刪圈文件，不寫這一節刪了哪些圈。賽程用時刻表第 3 版。積分沿用週五稿，練習不計分。Verstappen 的 FP2 圈數有兩種官方寫法，見下文，不把其中一種改成另一種。召集不是裁決，不寫還沒有的罰單。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Practice One</div>
+        <h2>FP1：沒有單圈時間</h2>
+        <p>Formula1.com 的 FP1 成績頁寫沒有結果。FIA 新聞稿寫，車手有跑探測圈，沒有官方單圈時間。開賽時降雨風險 70%，綠燈是當地週四 16:30。賽道濕、溫度低。方格旗揮下時，成績板仍然沒有時間。</p>
+        <table>
+          <thead>
+            <tr><th>新聞稿順序</th><th>車手</th><th>車隊</th><th>圈數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Sergio Perez</td><td>Cadillac</td><td>1</td></tr>
+            <tr><td>2</td><td>Ryo Hirakawa</td><td>Haas</td><td>1</td></tr>
+            <tr><td>3</td><td>Rafael Camara</td><td>Haas</td><td>2</td></tr>
+            <tr><td>4</td><td>Valtteri Bottas</td><td>Cadillac</td><td>1</td></tr>
+            <tr><td>5</td><td>Dino Beganovic</td><td>Ferrari</td><td>1</td></tr>
+            <tr><td>6</td><td>Jak Crawford</td><td>Aston Martin</td><td>1</td></tr>
+            <tr><td>7</td><td>Alexander Albon</td><td>Williams</td><td>1</td></tr>
+            <tr><td>8</td><td>Kimi Antonelli</td><td>Mercedes</td><td>1</td></tr>
+            <tr><td>9</td><td>Carlos Sainz</td><td>Williams</td><td>1</td></tr>
+            <tr><td>10</td><td>Isack Hadjar</td><td>Red Bull</td><td>1</td></tr>
+            <tr><td>11</td><td>Gabriel Bortoleto</td><td>Audi</td><td>1</td></tr>
+            <tr><td>12</td><td>Max Verstappen</td><td>Red Bull</td><td>1</td></tr>
+            <tr><td>13</td><td>Charles Leclerc</td><td>Ferrari</td><td>1</td></tr>
+            <tr><td>14</td><td>Nico Hulkenberg</td><td>Audi</td><td>1</td></tr>
+            <tr><td>15</td><td>George Russell</td><td>Mercedes</td><td>1</td></tr>
+            <tr><td>16</td><td>Pierre Gasly</td><td>Alpine</td><td>2</td></tr>
+            <tr><td>17</td><td>Franco Colapinto</td><td>Alpine</td><td>2</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">這張表不是名次，也沒有時間。順序與圈數照 FIA 的 FP1 新聞稿。名單上沒有 Lando Norris、Oscar Piastri、Lance Stroll、Liam Lawson、Arvid Lindblad。本稿不把「名單沒有」寫成一份還沒有的出車庫紀錄。檔案 11 刪了兩圈，都是進站圈：Albon 17:03:48、第 14 彎；Hulkenberg 17:17:06、第 14 彎。沒有飛馳圈時間可刪。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Practice Two</div>
+        <h2>FP2 前十：Russell 1:47.272</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>圈數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>George Russell</td><td>Mercedes</td><td>1:47.272</td><td>23</td></tr>
+            <tr><td>2</td><td>Pierre Gasly</td><td>Alpine</td><td>+0.071</td><td>16</td></tr>
+            <tr><td>3</td><td>Charles Leclerc</td><td>Ferrari</td><td>+0.333</td><td>28</td></tr>
+            <tr><td>4</td><td>Isack Hadjar</td><td>Red Bull</td><td>+1.135</td><td>20</td></tr>
+            <tr><td>5</td><td>Oscar Piastri</td><td>McLaren</td><td>+1.181</td><td>24</td></tr>
+            <tr><td>6</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+1.211</td><td>26</td></tr>
+            <tr><td>7</td><td>Lando Norris</td><td>McLaren</td><td>+1.565</td><td>22</td></tr>
+            <tr><td>8</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+1.771</td><td>23</td></tr>
+            <tr><td>9</td><td>Franco Colapinto</td><td>Alpine</td><td>+1.957</td><td>15</td></tr>
+            <tr><td>10</td><td>Fernando Alonso</td><td>Aston Martin</td><td>+1.959</td><td>21</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">FIA 分類，22 人都有時間。Russell 的 1:47.272 記在 21:00:30。Gasly 是 1:47.343，21:01:42。Leclerc 是 1:47.605，20:45:59。Hadjar 1:48.407（20:45:32），Piastri 1:48.453（21:00:42），Hamilton 1:48.483（20:59:57）。Colapinto 與 Alonso 差 0.002 秒。第十一到第二十二：Lance Stroll +2.510（23 圈）、Alexander Albon +2.557（23）、Max Verstappen +2.869（9）、Sergio Perez +3.159（17）、Oliver Bearman +3.427（22）、Liam Lawson +3.737（12）、Arvid Lindblad +3.876（13）、Carlos Sainz +4.299（11）、Nico Hulkenberg +4.535（16）、Gabriel Bortoleto +5.053（15）、Valtteri Bottas +5.522（14）、Rafael Camara +6.317（20）。單圈紀錄仍是 Verstappen 2025 年的 1:33.365。1:47.272 比它慢 13.907 秒。濕地中性胎和那圈的條件不同，這只是對照。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Practice Three</div>
+        <h2>FP3 前十：Russell 1:34.041</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>成績</th><th>圈數</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>George Russell</td><td>Mercedes</td><td>1:34.041</td><td>30</td></tr>
+            <tr><td>2</td><td>Kimi Antonelli</td><td>Mercedes</td><td>+0.911</td><td>29</td></tr>
+            <tr><td>3</td><td>Lando Norris</td><td>McLaren</td><td>+0.974</td><td>28</td></tr>
+            <tr><td>4</td><td>Charles Leclerc</td><td>Ferrari</td><td>+1.150</td><td>31</td></tr>
+            <tr><td>5</td><td>Franco Colapinto</td><td>Alpine</td><td>+1.157</td><td>29</td></tr>
+            <tr><td>6</td><td>Max Verstappen</td><td>Red Bull</td><td>+1.309</td><td>24</td></tr>
+            <tr><td>7</td><td>Liam Lawson</td><td>Racing Bulls</td><td>+1.361</td><td>31</td></tr>
+            <tr><td>8</td><td>Lewis Hamilton</td><td>Ferrari</td><td>+1.393</td><td>30</td></tr>
+            <tr><td>9</td><td>Pierre Gasly</td><td>Alpine</td><td>+1.402</td><td>30</td></tr>
+            <tr><td>10</td><td>Arvid Lindblad</td><td>Racing Bulls</td><td>+1.409</td><td>32</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">FIA 檔案 33，當地 17:45 發出，台灣時間 09:45。Formula1.com 成績頁的名次、差距、圈數與這份相同。Russell 的 1:34.041 記在 17:31:19。Antonelli 是 1:34.952，17:30:42，兩人差 0.911 秒。Norris 1:35.015（17:28:09），只比 Antonelli 慢 0.063 秒。Leclerc 1:35.191（17:29:41），Colapinto 1:35.198（17:30:17），差 0.007 秒。時刻表把這一節標成 17:30 固定結束。分類上的最快圈在 17:31:19。第十一到第二十二：Isack Hadjar +1.452（29 圈）、Oscar Piastri +1.763（29）、Carlos Sainz +1.945（29）、Nico Hulkenberg +2.350（22）、Alexander Albon +2.405（29）、Gabriel Bortoleto +2.706（29）、Oliver Bearman +2.897（30）、Rafael Camara +2.971（30）、Sergio Perez +3.091（28）、Fernando Alonso +3.208（29）、Lance Stroll +3.640（28）、Valtteri Bottas +3.655（27）。22 人都有時間。1:34.041 比單圈紀錄 1:33.365 慢 0.676 秒。練習圈和那圈的條件不同，這只是對照。這一節用什麼胎，官方過程稿還沒有，本稿不寫。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Saturday Read</div>
+        <h2>兩節之後能確定的三件事</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 同一個人最快，兩節的差距不一樣</strong>
+            <div>FP1 仍然沒有分類。FP2 是濕地，Russell 1:47.272，Gasly 差 0.071 秒。FP3 是 Russell 1:34.041，Antonelli 差 0.911 秒。比濕地那節快了 13.231 秒。Gasly 從第二落到第九，差距從 0.071 秒變成 1.402 秒。Norris 從第七升到第三。</div>
+          </div>
+          <div class="item">
+            <strong>2. 五張罰格已經做成，格子還沒排</strong>
+            <div>Piastri 罰退 10 格，Antonelli 罰退 5 格，Sainz 罰退 10 格，Stroll 罰退 10 格，Bearman 罰退 35 格。都是動力單元超額，對象是下一場他參加的正賽。排位還沒跑。本稿不排發車位。</div>
+          </div>
+          <div class="item">
+            <strong>3. 積分沒有動</strong>
+            <div>練習不計分。週五稿的榜仍是 Antonelli 390，車手冠軍已定。Verstappen 279，Russell 262，差 17 分。Mercedes 652，Ferrari 510，差 142。這站打完之前，第二名仍然定不下來。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">FP1 Line-up</div>
+        <h2>三個位子換了人</h2>
+        <ul>
+          <li><strong>Ferrari：</strong>Dino Beganovic 代 Lewis Hamilton。新聞稿圈數 1。這是他本季第 4 次 FP1。Hamilton 的 FP2 是第六，26 圈。</li>
+          <li><strong>Aston Martin：</strong>Jak Crawford 代 Fernando Alonso。新聞稿圈數 1。Formula1.com 寫，這是他 2026 年第 5 次坐上 Aston Martin。Alonso 的 FP2 是第十，21 圈。</li>
+          <li><strong>Haas：</strong>Ryo Hirakawa 代 Oliver Bearman，只跑 FP1，新聞稿圈數 1。Rafael Camara 是本週正選，不是這一節的代打。他 FP1 在名單上有 2 圈，FP2 第二十二，20 圈。</li>
+        </ul>
+        <div class="mini-note">誰可以上 FP1，出自檔案 10：Beganovic、Hirakawa、Crawford，依據 B1.7.3 與 B1.7.4。代誰開車，出自 Formula1.com 與 FIA 的 FP1 報導。Bearman 的 FP2 是第十五，22 圈。檔案 10 的正選名單沒有這三名代打。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Session Notes</div>
+        <h2>成績表外面的幾筆</h2>
+        <ul>
+          <li><strong>FP1：</strong>Perez 最先上路，全雨胎，跑完一圈安裝就回坑。Hirakawa、Camara 接著用全雨胎。Antonelli 回報全場都在水漂。Verstappen 把路面說成幾乎像溜冰場。Albon 煞車有困難。Leclerc 有一次滑動，Hulkenberg 鎖死。這些是兩篇官方報導對無線電與過程的轉述。</li>
+          <li><strong>FP2 開局：</strong>當地 20:00 開跑，賽道仍濕。先用全雨胎。FIA 新聞稿寫，第一個計時是 2:02.786，句子接在 Piastri 後面。Alonso 在第 5 彎衝深，差點碰到護欄。Norris 在第 14 彎衝出後回到賽道。新聞稿另寫 Verstappen 在第 7 彎衝過，Hulkenberg 在第 12 彎、接近 Leclerc 時有一次滑動。</li>
+          <li><strong>換成中性胎：</strong>乾線出來之後，Norris 是較早換上中性胎的人。FIA 寫他先到 1:54.615，再降到 1:52.432，然後 1:50.930。Leclerc 第一個進到 1:50 以內，1:49.166。Hadjar 一度以 1:48.407 領先，Leclerc 再以 1:47.605 超回。這兩圈就是兩人的分類成績，時間在 20:45。</li>
+          <li><strong>紅旗：</strong>還剩大約 10 分鐘時，短紅旗，最後一彎前有塑膠碎片被吹上賽道。碎片清走後維修區重開，還剩約 6 分鐘。收尾大家都在中性胎上。Hadjar 後段的單圈被 Bearman 擋在最後幾個彎。Russell 在方格旗揮下時做出 1:47.272，Gasly 也在最後加快，升上第二。報導沒有寫碎片來自哪一台車，文件清單也沒有這件事的罰單。本稿不補車號。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Stewards</div>
+        <h2>五張罰格，都還沒有格子</h2>
+        <ul>
+          <li><strong>Oscar Piastri（McLaren）：</strong>檔案 16，當地 21:21。第 5 具內燃機。先前用過 4 具，額度 4 具。違反 B8.2.2a（併 B8.2.3）。罰退 10 格，依據 B8.2.8a。週五稿寫的是 McLaren 事先確認、預計罰退。現在賽會文件已經做成。</li>
+          <li><strong>Kimi Antonelli（Mercedes）：</strong>檔案 17，同一分鐘。第 6 具內燃機。先前用過 5 具，額度同樣是 4 具。罰退 5 格，依據 B8.2.8b。</li>
+          <li><strong>Carlos Sainz（Williams）：</strong>檔案 18，21:22。第 5 具渦輪。先前用過 4 具，額度 4 具。違反 B8.2.2b。罰退 10 格，依據 B8.2.8a。</li>
+          <li><strong>Lance Stroll（Aston Martin）：</strong>檔案 19，21:22。第 9 具能量儲存、第 8 具控制電子。額度各 3 具。兩樣各 5 格，合計罰退 10 格，依據 B8.2.8b。</li>
+          <li><strong>Oliver Bearman（Haas）：</strong>檔案 20，21:22。第 5 具內燃機、第 5 具渦輪、第 5 套排氣、第 5 具 MGU-K。內燃機、渦輪、排氣各罰退 10 格，MGU-K 罰退 5 格，合計 35 格。裁決寫，要等 87 號車完成排位並列入成績，才按 B2.5.4b.iv 分配正賽格子。</li>
+        </ul>
+        <div class="mini-note">五張的事實時間都寫 20:03，來源是檔案 14。同份技術報告裡，Norris、Piastri、Antonelli、Albon、Gasly、Colapinto 的新渦輪在 4 具額度內。另有多筆新排氣與動力單元附屬零件也在額度內，沒有另開罰單。排位還沒跑，35 格也不等於已經排到最後一排。發車位等排位分類。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Deleted Laps</div>
+        <h2>成績圈不在刪除名單</h2>
+        <p>檔案 22 刪了 FP2 出界的 30 圈，彎位在第 1、5、8、12、14 彎。其中 Norris 20:08:32 的 2:10.719 在第 14 彎，對得上報導裡那次衝出。Alonso 20:06:01 在第 5 彎，是進站圈。Verstappen 被刪的是 20:07:57、第 8 彎、進站圈。新聞稿寫的第 7 彎衝過，文件寫的是第 8 彎。兩筆都留下，不併成同一件事。</p>
+        <p>檔案 23 另因雙黃旗刪 5 圈。Piastri 20:06:11 的 2:04.724 在裡面，比他後來的成績圈慢。Leclerc 有一圈 1:49.159 在 20:59:11 被刪，第 8 彎。那圈比他的成績 1:47.605 慢，名次不變。</p>
+        <div class="mini-note">分類上 22 個成績時間，沒有一個出現在檔案 22 或檔案 23 的時間欄。Russell 的 21:00:30 不在刪除名單。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Verstappen</div>
+        <h2>分類是 9 圈，新聞稿寫一圈計時</h2>
+        <p>檔案 15 把 Verstappen 放在第十三，1:50.141，9 圈，時間 21:00:06。FIA 新聞稿寫，他在這一節後段報了賽車問題，只做出一圈計時。兩個數字都留著。圈數以分類的 9 圈為準，不改成 1。</p>
+        <p>Formula1.com 引技術總監 Pierre Wache 的話。全雨胎那一段，他們本來不打算讓他跑，先檢查系統。賽道乾一點之後、紅旗之前，決定用中性胎出門，接著遇到紅旗，臨時把他送出去。他先碰到能量管理，Wache 說不是大問題；之後是平衡，要在 FP3 與排位之前弄清楚。他並說，下一節預期是乾地，輪胎會完全不同，週四的圈速很難拿來預測。這是他的判斷，不是賽會預報。</p>
+        <div class="mini-note">Hadjar 是第四，1:48.407。Wache 說這台車在這種路面上開得有信心。Hadjar 自己拿巴庫做對照：長直線、低速彎、低抓地，差在溫度。以上是英文報導的中文節錄，不是逐字對照。</div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Title Math</div>
+        <h2>17 分還在</h2>
+        <p>正賽還沒跑。Antonelli 390，Verstappen 279，Russell 262，Hamilton 261。Russell 要在這站超前，得分仍得比 Verstappen 多至少 18 分。Hamilton 至少多 19 分。</p>
+        <p>Antonelli 這張 5 格不改他的積分。車隊榜 Mercedes 652、Ferrari 510，這週誰也超不了 Ferrari 的第二名。Red Bull 415、McLaren 398，差 17，第三名這週會動。練習不計分。</p>
+        <div class="mini-note">分差沿用本站 <a href="./las-vegas-fri.html">拉斯維加斯週五稿</a>，來源是聖保羅後的 FIA Document 82。本站沒有新的完賽積分。</div>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Summons</div>
+        <h2>三件召集，都還沒裁決</h2>
+        <p>檔案 29：Verstappen。標題寫第 16 彎。正文是 16:33 涉嫌不穩定駕駛，18:00 到賽會。檔案 30：Albon。標題寫第 17 彎。正文是 17:03，18:10 到賽會。兩份都引 Appendix L 第四章第 2 條 e 款。</p>
+        <p>檔案 31、32：Verstappen 與 Russell，17:23 在第 14 彎。兩人 18:00 一起到賽會。條文是第 2 條 d 款及／或 e 款。18:00 是台灣時間今天 10:00。裁決還沒有，不寫罰單。Russell 的成績圈在 17:31:19，晚於 17:23。</p>
+      </article>
+
+      <article class="card third">
+        <div class="kicker">Still Ahead</div>
+        <h2>排位在今天中午</h2>
+        <p>排位台灣時間今天 12:00–13:00，拉斯維加斯週五 20:00–21:00。正賽台灣時間週日 12:00，當地週六 20:00，50 圈或 120 分鐘。</p>
+        <p>桿位、五張罰格套用後的發車位、完賽名次，都要等那兩節結束。本稿寫不到。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Schedule</div>
+        <h2>台灣時間對照</h2>
+        <table>
+          <thead>
+            <tr><th>台灣時間</th><th>拉斯維加斯當地</th><th>Session</th><th>本稿狀態</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>11-20 週五 08:30–09:30</td><td>11-19 週四 16:30–17:30</td><td>FP1</td><td>已結束。沒有官方單圈時間</td></tr>
+            <tr><td>11-20 週五 12:00–13:00</td><td>11-19 週四 20:00–21:00</td><td>FP2</td><td>已結束。Russell 1:47.272，分類見上表</td></tr>
+            <tr><td>11-21 週六 08:30–09:30</td><td>11-20 週五 16:30–17:30</td><td>FP3</td><td>已結束。Russell 1:34.041，分類 17:45 發出</td></tr>
+            <tr><td>11-21 週六 12:00–13:00</td><td>11-20 週五 20:00–21:00</td><td>Qualifying</td><td>尚未開始。無桿位、無發車位</td></tr>
+            <tr><td>11-22 週日 12:00</td><td>11-21 週六 20:00</td><td>Race</td><td>尚未開始。無完賽名次</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">換算基準與週五稿相同：時刻表第 3 版的當地時間加 16 小時。文件日期是 11 月 19 日 23:03，標題為 Timetable V3。FP3 註記是固定結束。時程官方註明仍可能更動。本站賽程表的 11-21 週六，指的是官方正賽日。F1 Academy、Pirelli Hot Laps 與車手遊行不是這份稿的成績項目。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>資料來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_free_practice_2_classification.pdf" target="_blank" rel="noreferrer">FIA，檔案 15，2026-11-19 21:20：FP2 成績分類（Russell 1:47.272，23 圈；22 人有時間）</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/2" target="_blank" rel="noreferrer">Formula1.com：2026 Las Vegas Grand Prix Practice 2</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/1" target="_blank" rel="noreferrer">Formula1.com：2026 Las Vegas Grand Prix Practice 1。成績頁沒有本節結果</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_free_practice_3_classification.pdf" target="_blank" rel="noreferrer">FIA，檔案 33，2026-11-20 17:45：FP3 成績分類（Russell 1:34.041，30 圈；22 人有時間）</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/practice/3" target="_blank" rel="noreferrer">Formula1.com：2026 Las Vegas Grand Prix Practice 3。名次與檔案 33 一致</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1300/las-vegas/qualifying" target="_blank" rel="noreferrer">Formula1.com：排位成績頁。核對時沒有結果</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_summons_-_car_3_-_alleged_erratic_driving_in_turn_16.pdf" target="_blank" rel="noreferrer">FIA，檔案 29：召集 Verstappen。16:33，標題為第 16 彎</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_summons_-_car_23_-_alleged_erratic_driving_in_turn_17.pdf" target="_blank" rel="noreferrer">FIA，檔案 30：召集 Albon。17:03，標題為第 17 彎</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_summons_-_car_3_-_alleged_incident_with_car_63.pdf" target="_blank" rel="noreferrer">FIA，檔案 31：召集 Verstappen。17:23 第 14 彎，與 63 號車</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_summons_-_car_63_-_alleged_incident_with_car_3.pdf" target="_blank" rel="noreferrer">FIA，檔案 32：召集 Russell。同一事件</a></li>
+          <li><a href="https://www.fia.com/news/f1-rain-limits-running-opening-practice-las-vegas-grand-prix" target="_blank" rel="noreferrer">FIA：FP1 新聞稿（沒有官方單圈時間、17 人圈數、水漂與溜冰場）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/fp1-wet-conditions-limit-running-in-first-practice-at-las-vegas-grand-prix.7H085JgIW1k8jM3ysejVqJ" target="_blank" rel="noreferrer">Formula1.com：FP1 報導（降雨風險 70%、16:30 綠燈、三名代打、沒有時間）</a></li>
+          <li><a href="https://www.fia.com/news/f1-russell-beats-gasly-and-leclerc-top-spot-wet-las-vegas-fp2" target="_blank" rel="noreferrer">FIA：FP2 新聞稿（1:47.272、紅旗、中性胎、Verstappen 一圈計時）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/fp2-russell-beats-gasly-and-leclerc-to-top-spot-in-wet-las-vegas-gp-practice.62NwXdkf1krQs0esgViJtc" target="_blank" rel="noreferrer">Formula1.com：FP2 報導（20:00 開跑、塑膠碎片、Bearman 擋住 Hadjar）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/red-bull-working-to-understand-and-fix-verstappens-balance-issues-after-tricky-las-vegas-practice.2CbSLmEnwmgW8h0V1Ujr03" target="_blank" rel="noreferrer">Formula1.com：Wache 談 Verstappen 的能量管理與平衡，Hadjar 第四</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_new_pu_elements_for_this_competition.pdf" target="_blank" rel="noreferrer">FIA，檔案 14：本站新動力單元。Piastri、Bearman 第 5 具內燃機；Antonelli 第 6 具</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_car_81_-_changes_to_pu_element.pdf" target="_blank" rel="noreferrer">FIA，檔案 16：Piastri 罰退 10 格</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_car_12_-_changes_to_pu_element.pdf" target="_blank" rel="noreferrer">FIA，檔案 17：Antonelli 罰退 5 格</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_car_55_-_changes_to_pu_element.pdf" target="_blank" rel="noreferrer">FIA，檔案 18：Sainz 罰退 10 格</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_car_18_-_changes_to_pu_elements.pdf" target="_blank" rel="noreferrer">FIA，檔案 19：Stroll 罰退 10 格</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_car_87_-_changes_to_pu_elements.pdf" target="_blank" rel="noreferrer">FIA，檔案 20：Bearman 罰退 35 格。格子等排位成績</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_free_practice_1_deleted_lap_times.pdf" target="_blank" rel="noreferrer">FIA，檔案 11：FP1 出界刪圈。Albon、Hulkenberg，都是進站圈</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_free_practice_2_deleted_lap_times.pdf" target="_blank" rel="noreferrer">FIA，檔案 22：FP2 出界刪圈</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_free_practice_2_deleted_lap_times_-_double_yellow_flags.pdf" target="_blank" rel="noreferrer">FIA，檔案 23：FP2 雙黃旗刪圈</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_entry_list.pdf" target="_blank" rel="noreferrer">FIA，檔案 10：出賽名單。FP1 另可上場的是 Beganovic、Hirakawa、Crawford</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_timetable_v3.pdf" target="_blank" rel="noreferrer">FIA，檔案 25：時刻表第 3 版（FP3 16:30、排位 20:00、正賽週六 20:00）</a></li>
+          <li><a href="https://www.formula1.com/en/racing/2026/las-vegas" target="_blank" rel="noreferrer">Formula1.com：Las Vegas Grand Prix 2026。單圈紀錄 1:33.365</a></li>
+          <li><a href="./las-vegas-fri.html">本站：拉斯維加斯週五開場稿（積分、賽程換算）</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文對應 2026-11-21 拉斯維加斯週六快報。時間以台灣時間記載。只含已結束的 FP1、FP2、FP3。排位（今天 12:00）與正賽（週日 12:00）不含成績。召集不是裁決。
+  </footer>
+</body>
+</html>
