@@ -1,5 +1,35 @@
 [
   {
+    "href": "f1/2026/las-vegas-review.html",
+    "league": "f1",
+    "type": "race",
+    "date": "2026-11-23",
+    "title": "F1 2026 拉斯維加斯大獎賽正賽：Verstappen 贏 0.639 秒，Hadjar 賽後加 10 秒",
+    "kicker": "Monday Review",
+    "summary": "2026 年 11 月 21 日拉斯維加斯 50 圈，Verstappen 從第一位獲勝，1:27:39.624。Norris 第二、差 0.639 秒，Piastri 第三。檔案 65 把 Hadjar 放到第 15。",
+    "secondary": "Antonelli 402，車手冠軍不變。Verstappen 304，Hamilton 267，差 37 分。Russell 與 Norris 都是 264。Mercedes 666，領先 Ferrari 149。",
+    "seasonLabel": "F1 2026 Round 21",
+    "tagLabel": "賽後回顧",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
+    "href": "f1/2026/qatar-preview.html",
+    "league": "f1",
+    "type": "preview",
+    "date": "2026-11-23",
+    "title": "F1 2026 卡達大獎賽賽前：第二名差 37 分，正賽在台灣時間週一 00:00",
+    "kicker": "Lusail · Race Preview",
+    "summary": "R22 卡達 11 月 27 日到 29 日，不是衝刺賽。57 圈、5.419 公里。台灣時間正賽 11 月 30 日週一 00:00。",
+    "secondary": "Antonelli 402，冠軍已定。Verstappen 304，Hamilton 267，差 37 分。Mercedes 666，領先 Ferrari 149。Perez 下一場罰退 5 格。",
+    "seasonLabel": "F1 2026 Round 22",
+    "tagLabel": "賽前預告",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 48%, #c2410c 100%)",
+    "featured": false,
+    "latest": false
+  },
+  {
     "href": "f1/2026/las-vegas-sun.html",
     "league": "f1",
     "type": "sun",
@@ -12,7 +42,7 @@
     "tagLabel": "週日焦點",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/las-vegas-sat.html",
