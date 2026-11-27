@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>卡達週五：FP1 還沒有成績，第二名還差 37 分</title>
+  <meta name="description" content="2026 年 11 月 27 日 F1 卡達站週五開場。57 圈，不是衝刺賽。FP1、FP2 都還沒開跑，官方成績頁沒有結果。Verstappen 領先 Hamilton 37 分。車手冠軍與車隊冠軍都已結束。" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: rgba(255, 251, 246, 0.94);
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --line: rgba(23, 32, 51, 0.12);
+      --night: #111827;
+      --orange: #c2410c;
+      --amber: #b88a44;
+      --sea: #0f766e;
+      --shadow: 0 22px 56px rgba(17, 24, 39, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", serif;
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(194, 65, 12, 0.13), transparent 22%),
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, 0.14), transparent 26%),
+        linear-gradient(180deg, #fbf7f2 0%, #eee4d7 100%);
+    }
+    a { color: #0f4c81; }
+    .hero {
+      padding: 60px 24px 54px;
+      color: #fff;
+      background:
+        radial-gradient(circle at top right, rgba(255,255,255,0.10), transparent 24%),
+        linear-gradient(135deg, rgba(17,24,39,0.98), rgba(15,118,110,0.84) 44%, rgba(194,65,12,0.88) 100%);
+    }
+    .hero::after {
+      content: "";
+      display: block;
+      width: min(1120px, calc(100% - 40px));
+      height: 1px;
+      margin: 28px auto 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+    }
+    .hero-inner, .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 12ch;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.04;
+    }
+    .hero p {
+      max-width: 820px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: rgba(255,255,255,0.92);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .meta span {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.08);
+      font: 500 13px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    main { padding: 34px 0 56px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      grid-column: span 12;
+      padding: 24px;
+      border-radius: 26px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+    .kicker {
+      margin-bottom: 10px;
+      color: var(--orange);
+      font: 700 12px/1.1 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    h2, h3 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 19px; }
+    .lede {
+      columns: 2;
+      column-gap: 28px;
+      font-size: 17px;
+    }
+    .lede p:first-child { margin-top: 0; }
+    .status {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--amber);
+      background: rgba(184, 138, 68, 0.12);
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font: 700 12px/1.2 "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .stack {
+      display: grid;
+      gap: 14px;
+    }
+    .item {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.74);
+    }
+    .item strong {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .hot {
+      background: linear-gradient(180deg, rgba(251,191,36,0.12), rgba(255,255,255,0.9));
+    }
+    .mini-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    ol, ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    li + li { margin-top: 8px; }
+    .sources li {
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    footer {
+      padding: 0 24px 42px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 920px) {
+      .half, .third { grid-column: span 12; }
+      .lede { columns: 1; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding-top: 42px; }
+      .hero-inner, .wrap { width: min(100% - 28px, 1120px); }
+    }
+  </style>
+</head>
+<body>
+  <nav style="position: sticky; top: 0; z-index: 999; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: rgba(23, 32, 51, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);">
+    <span style="font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.02em;">The Sports Report</span>
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #fff; font: 500 14px/1.2 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif; text-decoration: none; transition: background 0.2s;">← 報導首頁</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">F1 2026 Round 22 | Friday Dispatch</div>
+      <h1>成績還沒出來，第二名差 37 分</h1>
+      <p>2026 年 11 月 27 日台灣時間上午，Lusail International Circuit 的練習分類還沒有公布。FP1 排在當地週五 16:30，台灣時間今天 21:30。Formula1.com 的 FP1、FP2 成績頁都寫沒有結果。這站是 R22，57 圈，不是衝刺賽。Kimi Antonelli 的車手冠軍、Mercedes 的車隊冠軍都已經結束。Max Verstappen 304 分，Lewis Hamilton 267 分，差 37 分。</p>
+      <div class="meta">
+        <span>日期｜2026-11-27</span>
+        <span>賽事｜Formula 1 Qatar Airways Qatar Grand Prix 2026</span>
+        <span>kind = fri</span>
+        <span>地點｜Lusail International Circuit, Lusail</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="kicker">Verified Status</div>
+      <div class="lede">
+        <p>官方時刻表把本週末列為 11 月 27 日到 29 日。F1 項目是三次練習、排位、正賽。正賽 57 圈或 120 分鐘，當地時間週日 19:00。本站 <code>data/schedule.json</code> 的首站是 R22 卡達大獎賽，日期 11-29、週日。兩邊的正賽日都是 2026-11-29。台灣是 UTC+8，官方寫卡達比 UTC 快 3 小時，正賽落到台灣時間 11 月 30 日週一 00:00。</p>
+        <p>截至本稿核對成績頁，FP1 與 FP2 都沒有分類。時刻表的 FP1 是當地週五 16:30–17:30，台灣時間今天 21:30 才開始。FP2 是當地 20:00–21:00，台灣時間週六 01:00。兩節都還沒開跑，所以沒有名次，也沒有圈速。排位與正賽不在這份週五稿裡。</p>
+      </div>
+      <div class="status">核對範圍：賽程用 Formula1.com 全文時刻表，並對過本站賽程表的 11-29 週日。積分用本站拉斯維加斯週一回顧，來源是 FIA Document 66（2026-11-22）。Formula1.com 車手榜、車隊榜與這組數字相同。拉斯維加斯之後沒有再比完一站。賽道用賽事頁與 Need to Know。輪胎用 Formula1.com 引述的 Pirelli 週末說明。天氣用同一站的開賽時間頁，沒有逐節溫度，也沒有降雨百分比。Perez 的 5 格是拉斯維加斯 Document 61，Formula1.com 寫下一站是卡達。時刻表官方註明仍可能更動。</div>
+    </section>
+
+    <section class="grid">
+      <article class="card half">
+        <div class="kicker">Taipei Schedule</div>
+        <h2>台灣時間賽程</h2>
+        <table>
+          <thead>
+            <tr><th>台灣時間</th><th>卡達當地</th><th>Session</th><th>註記</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>11-27 週五 21:30–22:30</td><td>11-27 週五 16:30–17:30</td><td>FP1</td><td>60 分鐘。還沒開始，成績頁無分類</td></tr>
+            <tr><td>11-28 週六 01:00–02:00</td><td>11-27 週五 20:00–21:00</td><td>FP2</td><td>60 分鐘。還沒開始</td></tr>
+            <tr><td>11-28 週六 22:30–23:30</td><td>11-28 週六 17:30–18:30</td><td>FP3</td><td>60 分鐘，最後練習</td></tr>
+            <tr><td>11-29 週日 02:00–03:00</td><td>11-28 週六 21:00–22:00</td><td>Qualifying</td><td>決定發車位</td></tr>
+            <tr><td>11-30 週一 00:00–02:00</td><td>11-29 週日 19:00–21:00</td><td>Race</td><td>57 圈或 120 分鐘</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">換算基準：官方時刻表寫卡達比 UTC 快 3 小時。台灣 UTC+8，當地時間加 5 小時。本站賽程表的 11-29 週日，指的是官方正賽日，不是台灣的開跑日。同一篇時間稿的正賽對照表沒有台北；上海寫 00:00、東京寫 01:00，與 UTC+8、UTC+9 的跨日換算一致。表上的 F1 項目沒有衝刺賽。F2、車手遊行與國歌不列在這張表。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Circuit Frame</div>
+        <h2>Lusail 的官方數字</h2>
+        <table>
+          <thead>
+            <tr><th>項目</th><th>官方數字</th><th>出處</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>賽道長度</td><td>5.419 km</td><td>賽事頁、時刻表</td></tr>
+            <tr><td>彎數</td><td>16 個</td><td>Pirelli 週末說明，經 Formula1.com 引述</td></tr>
+            <tr><td>正賽圈數</td><td>57 圈</td><td>比賽距離 308.611 km</td></tr>
+            <tr><td>單圈紀錄</td><td>1:22.384</td><td>Lando Norris，McLaren，2024</td></tr>
+            <tr><td>首場大獎賽</td><td>2021</td><td>賽事頁、Need to Know。2022 沒有辦</td></tr>
+            <tr><td>最多勝場</td><td>Verstappen 3 勝</td><td>2023、2024、2025。2021 是 Hamilton</td></tr>
+            <tr><td>最多桿位</td><td>Verstappen 2 次</td><td>2024 最快圈是他，罰退 1 格後桿位記在 Russell</td></tr>
+            <tr><td>2025 年超車</td><td>41 次</td><td>Need to Know</td></tr>
+            <tr><td>進站時間損失</td><td>26.17 秒</td><td>Need to Know</td></tr>
+            <tr><td>安全車／虛擬安全車</td><td>75%／50%</td><td>前四屆卡達站</td></tr>
+            <tr><td>桿位到第一彎</td><td>403 公尺</td><td>Need to Know，煞車點</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">近四屆冠軍：2025、2024、2023 都是 Verstappen，2021 是 Hamilton。近四屆桿位：2025 Piastri、2024 Russell、2023 Verstappen、2021 Hamilton。主直線長過 1 公里。單圈紀錄不是 2026 年的速度預測。安全車、進站損失與超車次數都是既有統計。</div>
+      </article>
+
+      <article class="card half hot">
+        <div class="kicker">Title Window</div>
+        <h2>37 分領先，這週超不了，也定不下來</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>兩個冠軍都已經結束</strong>
+            <div>Antonelli 402 分，領先第二名 98 分。剩下兩站都不是衝刺賽，一位車手最多再拿 50 分。98 多過 50。Mercedes 666、Ferrari 517，差 149。單站最高按 25 加 18，是 43 分。兩站合計 86。149 多過 86。</div>
+          </div>
+          <div class="item">
+            <strong>第二名這週不會換人</strong>
+            <div>Verstappen 304，Hamilton 267，差 37。Russell 與 Norris 都是 264，比 Hamilton 少 3 分，比 Verstappen 少 40 分。單站最高 25 分。37 與 40 都大於 25。Hamilton 這週就算拿 25、Verstappen 拿 0，仍落後 12 分。Russell、Norris 仍落後 15 分。Leclerc 250，落後 54。兩站最多 50，已經不夠。</div>
+          </div>
+          <div class="item">
+            <strong>第二名也不會在這週定案</strong>
+            <div>卡達之後還有阿布達比，最多再拿 25 分。Verstappen 要讓 Hamilton 最後一站拿滿仍追不上，打完這站至少要領先 26 分。現在領先 37，所以這週最多只能比 Hamilton 少拿 11 分。少拿 12 分，領先變成 25，最後一站可能追平。對 Russell、Norris，最多少拿 14 分。少拿 15 分，同樣剩下 25 分。Document 66 沒有寫同分怎麼排。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Standings</div>
+        <h2>R21 拉斯維加斯後車手榜</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車手</th><th>車隊</th><th>積分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Kimi Antonelli</td><td>Mercedes</td><td>402</td></tr>
+            <tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td><td>304</td></tr>
+            <tr><td>3</td><td>Lewis Hamilton</td><td>Ferrari</td><td>267</td></tr>
+            <tr><td>4</td><td>George Russell</td><td>Mercedes</td><td>264</td></tr>
+            <tr><td>5</td><td>Lando Norris</td><td>McLaren</td><td>264</td></tr>
+            <tr><td>6</td><td>Charles Leclerc</td><td>Ferrari</td><td>250</td></tr>
+            <tr><td>7</td><td>Oscar Piastri</td><td>McLaren</td><td>167</td></tr>
+            <tr><td>8</td><td>Isack Hadjar</td><td>Red Bull</td><td>122</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">數字來自本站拉斯維加斯週一回顧，對應 FIA Document 66，並與 Formula1.com 車手榜相同。第九名 Lawson 89、第十名 Gasly 52。Russell 與 Norris 同分，Document 66 把 Russell 排第四、Norris 排第五。拉斯維加斯本站積分：Verstappen 25、Norris 18、Piastri 15、Antonelli 12、Hamilton 6、Russell 2、Leclerc 1。沒有最快圈加分。Piastri 落後第二名 137 分，50 分不夠。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Constructors</div>
+        <h2>R21 後車隊榜</h2>
+        <table>
+          <thead>
+            <tr><th>名次</th><th>車隊</th><th>積分</th><th>與前一段</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Mercedes</td><td>666</td><td>—</td></tr>
+            <tr><td>2</td><td>Ferrari</td><td>517</td><td>落後 149</td></tr>
+            <tr><td>3</td><td>Red Bull</td><td>440</td><td>落後 Ferrari 77</td></tr>
+            <tr><td>4</td><td>McLaren</td><td>431</td><td>落後 Red Bull 9</td></tr>
+          </tbody>
+        </table>
+        <div class="mini-note">車隊榜照 Formula1.com 車隊積分頁，不由車手積分加總。Mercedes 402 加 264 等於 666，Ferrari 267 加 250 等於 517，McLaren 264 加 167 等於 431，這三隊對得上。Red Bull 兩人是 426，車隊榜是 440。週一回顧在聖保羅後就留著這 14 分的差額，本稿不補。單站最高 43 分。77 與 86 都大於 43，這週沒有車隊能超車 Ferrari 的第二名。Red Bull 與 McLaren 只差 9，第三名這週會動。兩站合計 86。77 小於 86，Red Bull 還追得上 Ferrari。McLaren 兩站都拿 43、Ferrari 都是 0，會到 517，與 Ferrari 同分，超不過。Racing Bulls 114，Alpine 87，差 27。Haas 31，Audi 28，差 3。第五名與前四差 300 分以上。</div>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Friday Watchlist</div>
+        <h2>開練之前要盯的四件事</h2>
+        <div class="stack">
+          <div class="item">
+            <strong>1. 第二名這週追不完，車隊第三名追得完</strong>
+            <div>37 分大於 25 分。Hamilton、Russell、Norris 都不可能在卡達超前 Verstappen。後面還有阿布達比，所以第二名今晚也不會定案。車隊榜相反：Ferrari 的第二名這週守得住，Red Bull 對 McLaren 的 9 分守不住。</div>
+          </div>
+          <div class="item">
+            <strong>2. 每套輪胎最多 27 圈，正賽至少兩停</strong>
+            <div>硬胎 C1 兩套、中性胎 C2 三套、軟胎 C3 八套。中性雨胎與全雨胎都備著。進 Q3 的人另有一套軟胎。乾地正賽至少要用兩種乾胎。每套上限從去年卡達的 25 圈調成 27 圈。圈數把整個週末算進去，含安全車與虛擬安全車後面的圈。57 圈因此至少要進站兩次。Pirelli 寫，連續高速彎讓左前輪負荷高；路面相對平、賽道溫度高時，各配方都可能粒化。單圈速度掉得不一定多。這條上限是與 FIA 一起定的，用來避免輪胎用過結構負荷。去年這站有衝刺賽，今年時刻表沒有。</div>
+          </div>
+          <div class="item">
+            <strong>3. Perez 帶 5 格進來，格子還沒排</strong>
+            <div>拉斯維加斯 Document 61：Perez 在第 14 彎造成與 Rafael Camara 的碰撞。10 秒因退賽無法執行，改成下一場他參加的正賽罰退 5 格。Formula1.com 寫這一站就是卡達。發稿時，公開可核對的卡達起跑處分只有這一張。排位還沒跑，起跑格不在這份週五稿裡。</div>
+          </div>
+          <div class="item">
+            <strong>4. 夜間開跑，超車點集中在第 1 彎</strong>
+            <div>賽事頁寫，這條賽道在杜哈外圍，為 2004 年的 MotoGP 而建。快、順，中高速彎為主。主直線長過 1 公里，第 1 彎是超車點。Palmer 在 Need to Know 的點評：中速彎多，不是重煞車賽道，下壓力要找平衡。能超車的地方主要是這條長直線。路緣罰得很重。正賽在週日晚上，夜間對輪胎比午後高溫好一些。桿位到第 1 彎煞車點是 403 公尺。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Track Notes</div>
+        <h2>16 個彎，主直線超過 1 公里</h2>
+        <p>賽事頁寫，Lusail International Circuit 一年多完工。2021 年第一次列入大獎賽，並寫卡達從 2023 年起另有 10 年的主辦合約。2022 年沒有這站。正賽在週日 19:00 開跑，57 圈，5.419 公里，比賽距離 308.611 公里。</p>
+        <p>Need to Know 把前四屆的安全車機率寫成 75%、虛擬安全車 50%，進站損失 26.17 秒，2025 年超車 41 次。這些都是賽前統計，不是這週的預測。單圈紀錄仍是 Norris 2024 年的 1:22.384。</p>
+        <div class="mini-note">練習分類出來之前，本稿不寫任何 2026 年的圈速。FP1 台灣時間 21:30，FP2 週六 01:00。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Weather</div>
+        <h2>三天偏乾，沒有逐節溫度</h2>
+        <ul>
+          <li>Formula1.com 的開賽時間頁寫，卡達週末預期維持乾燥，三天降雨機會都低。頁面沒有給降雨百分比。</li>
+          <li>氣溫寫到週末會到攝氏 20 度的中段到後段。週六排位與週日正賽都在燈光下，預期再涼一些。沒有 FP1、FP2、FP3 的分段溫度。</li>
+          <li>這兩節練習落到台灣時間今天 21:30 與週六 01:00。排位是台灣時間週日 02:00。正賽是週一 00:00。</li>
+        </ul>
+        <div class="mini-note">以上不是逐節預報。賽事頁另有「這個時節平均約 28°C」的介紹，那不是本週末的預報，本稿不拿來填溫度。若週末更新，以賽事頁最新預報為準。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">Las Vegas Recap</div>
+        <h2>上一站一行</h2>
+        <p>拉斯維加斯：Verstappen 從第一位贏下 50 圈，1:27:39.624，Norris 第二，差 0.639 秒。Piastri 第三。Antonelli 第四、12 分，Russell 第九、2 分。Hamilton 第七、6 分，升到車手榜第三。</p>
+        <div class="mini-note">名次與分差見本站 <a href="./las-vegas-review.html">拉斯維加斯週一回顧</a>。賽前整理見 <a href="./qatar-preview.html">卡達預告</a>。預告發在 11 月 23 日，賽程與積分已經在裡面。本稿補上輪胎上限、天氣頁能核對的句子，以及成績頁仍無分類。</div>
+      </article>
+
+      <article class="card half">
+        <div class="kicker">What This Friday Is</div>
+        <h2>這份週五稿不寫成績</h2>
+        <p>台灣的週五上午，FP1 還沒開始。官方成績頁沒有分類。第一個可核對的速度，要等今天 21:30 之後的成績頁。</p>
+        <p>在那之前，這站的問題已經定了：37 分這週追不完，第二名不會在卡達換人；Red Bull 與 McLaren 的 9 分，車隊榜第三名這週會動。正賽 57 圈，台灣時間週一 00:00。每套輪胎最多 27 圈，所以至少兩停。</p>
+      </article>
+
+      <article class="card">
+        <div class="kicker">Sources</div>
+        <h2>來源</h2>
+        <ol class="sources">
+          <li><a href="https://www.formula1.com/en/latest/article/formula-1-qatar-airways-qatar-grand-prix-2026.3XJyoYSnpJEcuZovstTdcG" target="_blank" rel="noreferrer">Formula1.com：2026 Qatar Grand Prix full timetable（卡達比 UTC 快 3 小時；57 圈、5.419 公里；正賽 11 月 29 日 19:00）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-time-is-the-formula-1-2026-qatar-grand-prix-and-how-can-i-watch-it.XirX9Qy8hRZnH3O1Qhcch" target="_blank" rel="noreferrer">Formula1.com：開賽時間。FP1 當地 16:30，正賽 19:00。上海 00:00、東京 01:00。週末偏乾，氣溫在 20 度中後段</a></li>
+          <li><a href="https://www.formula1.com/en/racing/2026/qatar" target="_blank" rel="noreferrer">Formula1.com：Qatar Grand Prix 2026（5.419 km、57 圈、308.611 km、2021 首屆、Norris 2024 年 1:22.384、主直線超過 1 公里）</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1301/qatar/practice/1" target="_blank" rel="noreferrer">Formula1.com：卡達 FP1 成績頁。發稿時沒有本節結果</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/races/1301/qatar/practice/2" target="_blank" rel="noreferrer">Formula1.com：卡達 FP2 成績頁。發稿時沒有本節結果</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/need-to-know-the-most-important-facts-stats-and-trivia-ahead-of-the-2026-qatar-grand-prix.7Ayey9W9IVQ1yNkR8F6zEI" target="_blank" rel="noreferrer">Formula1.com：Need to Know（403 公尺、75%／50%、26.17 秒、41 次超車、近四屆、Palmer 點評）</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/what-tyres-will-the-teams-and-drivers-have-for-the-2026-qatar-grand-prix.7JllCRweDY5sW1N9LzdkLm" target="_blank" rel="noreferrer">Formula1.com：C1／C2／C3 套數、每套最多 27 圈、至少兩停、16 個彎</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/drivers" target="_blank" rel="noreferrer">Formula1.com：2026 車手榜。Antonelli 402，Verstappen 304，Hamilton 267，Russell 264，Norris 264</a></li>
+          <li><a href="https://www.formula1.com/en/results/2026/team" target="_blank" rel="noreferrer">Formula1.com：2026 車隊榜。Mercedes 666，Ferrari 517，Red Bull 440，McLaren 431</a></li>
+          <li><a href="https://www.formula1.com/en/latest/article/perez-hit-with-five-place-penalty-in-qatar-after-camara-clash-during-las-vegas-grand-prix.30GG7oJuJ1As0MrkavmStN" target="_blank" rel="noreferrer">Formula1.com：Perez 卡達罰退 5 格。引述賽會：10 秒無法執行，改下一場正賽</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_championship_points.pdf" target="_blank" rel="noreferrer">FIA，Document 66：拉斯維加斯後積分。本站週一回顧的積分來源</a></li>
+          <li><a href="https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_infringement_-_car_11_-_causing_a_collision_with_car_51.pdf" target="_blank" rel="noreferrer">FIA，Document 61：Perez 下一場出賽的正賽罰退 5 格</a></li>
+          <li><a href="./las-vegas-review.html">本站：拉斯維加斯週一回顧（名次與賽後積分）</a></li>
+          <li><a href="./qatar-preview.html">本站：卡達賽前預告（2026-11-23）</a></li>
+        </ol>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    本文為 Friday dispatch，截至 2026-11-27 Asia/Taipei 上午可核對內容整理。官方成績頁沒有 FP1、FP2 分類，不含練習名次與圈速。
+  </footer>
+</body>
+</html>
