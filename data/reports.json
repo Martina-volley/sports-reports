@@ -1,5 +1,20 @@
 [
   {
+    "href": "f1/2026/qatar-sat.html",
+    "league": "f1",
+    "type": "sat",
+    "date": "2026-11-28",
+    "title": "卡達週六：Antonelli FP2 1:23.077，FP3 與排位尚無官方成績",
+    "kicker": "Saturday Dispatch",
+    "summary": "FP1 Antonelli 1:23.217，Russell 差 0.507 秒。FP2 延長 13 分鐘，Antonelli 1:23.077，Russell 差 0.127 秒。FP3 與排位還沒開跑。",
+    "secondary": "Red Bull 因維修區不安全罰 30,000 歐元，其中 20,000 緩刑。Audi 維修區超速罰 500 歐元。正賽不在本稿。第二名仍差 37 分。",
+    "seasonLabel": "F1 2026 Round 22",
+    "tagLabel": "週六焦點",
+    "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
+    "featured": false,
+    "latest": true
+  },
+  {
     "href": "f1/2026/qatar-fri.html",
     "league": "f1",
     "type": "daily",
@@ -12,7 +27,7 @@
     "tagLabel": "週五快報",
     "accent": "linear-gradient(135deg, #111827 0%, #0f766e 46%, #c2410c 100%)",
     "featured": false,
-    "latest": true
+    "latest": false
   },
   {
     "href": "f1/2026/las-vegas-review.html",
